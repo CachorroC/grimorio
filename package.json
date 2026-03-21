@@ -16,7 +16,6 @@
     "db:test": "tsx scripts/test-database.ts",
     "db:studio": "prisma studio",
     "prisma:generate": "prisma generate && ts-node src/lib/scripts/generate-dmmf.ts"
-
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

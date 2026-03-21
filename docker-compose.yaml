@@ -1,9 +1,9 @@
 services:
-  portfolio:
-    image: portfolio
-    hostname: portfolio
+  grimorio:
+    image: grimorio
+    hostname: grimorio
     restart: always
-    container_name: portfolio
+    container_name: grimorio
     build:
       context: ./
       dockerfile: Dockerfile
@@ -18,7 +18,7 @@ services:
       DATABASE_URL: postgresql://postgres:Tengo1amo@postgres:5432/RyS?schema=public
       NODE_ENV: production
     ports:
-      - 7777:3000
+      - 8888:3000
     expose:
       - 3000
     networks:

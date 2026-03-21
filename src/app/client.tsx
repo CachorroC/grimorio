@@ -3,26 +3,30 @@
 
 import { useState, useEffect } from 'react';
 import { sendNotification } from './actions/notifications';
-import { usePushNotifications } from './Context/pushNotificationContext';
+import { usePushNotifications } from './context/pushNotificationContext';
 
 function PushNotificationManager() {
   const {
-    isSupported, subscription, subscribeToPush, unsubscribeFromPush 
+    isSupported, subscription, subscribeToPush, unsubscribeFromPush
   }
     = usePushNotifications();
 
   const [
     message,
     setMessage
-  ] = useState( '' );
+  ] = useState(
+    '' 
+  );
 
   async function sendTestNotification() {
     if ( subscription ) {
       const serializedSub = subscription.toJSON() as any;
       await sendNotification(
-        message, serializedSub 
+        message, serializedSub
       );
-      setMessage( '' );
+      setMessage(
+        '' 
+      );
     }
   }
 
@@ -42,8 +46,12 @@ function PushNotificationManager() {
                 type="text"
                 placeholder="Enter notification message"
                 value={message}
-                onChange={( e ) => {
-                  return setMessage( e.target.value );
+                onChange={(
+                  e 
+                ) => {
+                  return setMessage(
+                    e.target.value 
+                  );
                 }}
               />
               <button onClick={sendTestNotification}>Send Test</button>
@@ -63,19 +71,31 @@ function InstallPrompt() {
   const [
     isIOS,
     setIsIOS
-  ] = useState( false );
+  ] = useState(
+    false 
+  );
 
   const [
     isStandalone,
     setIsStandalone
-  ] = useState( false );
+  ] = useState(
+    false 
+  );
 
   useEffect(
     () => {
-      setIsIOS( /iPad|iPhone|iPod/.test( navigator.userAgent ) && !( window as any ).MSStream, );
+      setIsIOS(
+        /iPad|iPhone|iPod/.test(
+          navigator.userAgent 
+        ) && !( window as any ).MSStream, 
+      );
 
-      setIsStandalone( window.matchMedia( '(display-mode: standalone)' ).matches );
-    }, [] 
+      setIsStandalone(
+        window.matchMedia(
+          '(display-mode: standalone)' 
+        ).matches 
+      );
+    }, []
   );
 
   if ( isStandalone ) {

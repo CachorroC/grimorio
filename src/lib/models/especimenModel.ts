@@ -141,6 +141,7 @@ export default class EspecimenModel implements EspecimenType {
 
 export const romero: EspecimenType = {
   nombreCientifico: 'Salvia rosmarinus',
+  imageUrl        : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKN62Z67ri2NUtWJmCODzbEx-TcSH0bW_Hfg&s',
   nombresComunes  : [
     'romero'
   ],
