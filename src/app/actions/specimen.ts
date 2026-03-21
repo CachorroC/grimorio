@@ -9,13 +9,19 @@ import path from 'path';
 import clientPromise from '#@/lib/connection/mongodb';
 import { EspecimenType } from '#@/lib/types/especimenTypes';
 
-async function upsertSpecimenToDB( {
-  data
-}: { data: EspecimenType; } ) {
+async function upsertSpecimenToDB(
+  {
+    data
+  }: { data: EspecimenType; }
+) {
   try {
     const client = await clientPromise;
-    const database = client.db( 'botany_db' );
-    const specimens = database.collection<EspecimenType>( 'plantas_medicinales' );
+    const database = client.db(
+      'botany_db'
+    );
+    const specimens = database.collection<EspecimenType>(
+      'plantas_medicinales'
+    );
 
     const {
       _id, ...updateData
@@ -23,7 +29,9 @@ async function upsertSpecimenToDB( {
 
     const query = _id
       ? {
-          _id: new ObjectId( _id )
+          _id: new ObjectId(
+            _id
+          )
         }
       : {
           nombreCientifico: data.nombreCientifico
@@ -41,7 +49,9 @@ async function upsertSpecimenToDB( {
     );
 
     if ( !result ) {
-      throw new Error( 'Failed to update or create document in MongoDB.' );
+      throw new Error(
+        'Failed to update or create document in MongoDB.'
+      );
     }
 
     return {
@@ -65,27 +75,37 @@ async function upsertSpecimenToDB( {
   }
 }
 
-async function upsertSpecimenToJSON( {
-  data
-}:{data: EspecimenType} ) {
+async function upsertSpecimenToJSON(
+  {
+    data
+  }:{data: EspecimenType}
+) {
   try {
-    console.log( process.cwd() );
+    console.log(
+      process.cwd()
+    );
     const jsonFilePath = path.join(
       process.cwd(), 'src/lib/json/plantListDB.json'
     );
     const fileContents = await fs.readFile(
       jsonFilePath, 'utf8'
     );
-    const plantList = JSON.parse( fileContents ) as EspecimenType[];
+    const plantList = JSON.parse(
+      fileContents
+    ) as EspecimenType[];
 
     // Strip out _id if it was passed in the raw data, just like the original logic
     const {
       _id: _, ...jsonSafeData
     } = data as any;
 
-    const plantIndex = plantList.findIndex( ( plant ) => {
-      return plant.nombreCientifico === jsonSafeData.nombreCientifico;
-    } );
+    const plantIndex = plantList.findIndex(
+      (
+        plant
+      ) => {
+        return plant.nombreCientifico === jsonSafeData.nombreCientifico;
+      }
+    );
 
     if ( plantIndex !== -1 ) {
       plantList[ plantIndex ] = {
@@ -93,7 +113,9 @@ async function upsertSpecimenToJSON( {
         ...jsonSafeData,
       };
     } else {
-      plantList.push( jsonSafeData );
+      plantList.push(
+        jsonSafeData
+      );
     }
 
     await fs.writeFile(
@@ -122,21 +144,29 @@ async function upsertSpecimenToJSON( {
   }
 }
 
-export async function upsertSpecimen( {
-  data
-}:{data: EspecimenType } ) {// Execute both operations concurrently.
+export async function upsertSpecimen(
+  {
+    data
+  }:{data: EspecimenType }
+) {// Execute both operations concurrently.
   // Because they internally catch their own errors, Promise.all won't short-circuit.
   const [
     dbResult,
     fileResult
-  ] = await Promise.all( [
-    upsertSpecimenToDB( {
-      data
-    } ),
-    upsertSpecimenToJSON( {
-      data
-    } ),
-  ] );
+  ] = await Promise.all(
+    [
+      upsertSpecimenToDB(
+        {
+          data
+        }
+      ),
+      upsertSpecimenToJSON(
+        {
+          data
+        }
+      ),
+    ]
+  );
 
   // Case 1: Perfect Success
   if ( dbResult.success && fileResult.success ) {

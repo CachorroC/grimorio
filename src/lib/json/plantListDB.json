@@ -1,0 +1,117 @@
+[
+  {
+    "nombreCientifico": "Salvia rosmarinus",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKN62Z67ri2NUtWJmCODzbEx-TcSH0bW_Hfg&s",
+    "nombresComunes": [
+      "romero"
+    ],
+    "propiedadesMedicinales": [
+      "antioxidante",
+      "antiinflamatorio",
+      "digestiva",
+      "antimicrobiana",
+      "cicatrizante",
+      "estimula la circulacion"
+    ],
+    "correspondenciasEnergeticas": [
+      "proteccion",
+      "limpieza energetica",
+      "purificacion"
+    ],
+    "malesEmocionales": [
+      "conexión mente - cuerpo",
+      "falta de calidez",
+      "falta de memoria",
+      "arraigo terrenal"
+    ],
+    "malesFisicos": [
+      "dolores articulares",
+      "dolores musculares",
+      "artritis",
+      "reumatismo",
+      "digestion",
+      "gases",
+      "pesadez",
+      "problemas de la piel"
+    ],
+    "taxon": {
+      "dominio": "Eukaryota",
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "clase": "Magnoliopsida",
+      "orden": "Lamiales",
+      "familia": "Lamiaceae",
+      "genero": "Salvia",
+      "especie": "Salvia rosmarinus",
+      "clados": [
+        "Angiospermas",
+        "Edicotiledoneas",
+        "Astreidas"
+      ]
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "Dolor de estomago ",
+        "ingredientes": [
+          {
+            "ingrediente": "Romero en polvo",
+            "cantidad": "5 gramos"
+          },
+          {
+            "ingrediente": "agua",
+            "cantidad": "100 ml"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "Echar el romero en un recipiente vacio"
+          ],
+          [
+            2,
+            "echar el agua encima del romero en el recipiente"
+          ],
+          [
+            3,
+            "batir fuertemente"
+          ],
+          [
+            4,
+            "colar el liquido "
+          ]
+        ]
+      },
+      {
+        "usoTerapeutico": "dolor del higado",
+        "ingredientes": [
+          {
+            "ingrediente": "romero seco",
+            "cantidad": "100 gramos"
+          },
+          {
+            "ingrediente": "aceite vegetal (aceite de oliva, aceite de coco, etc)",
+            "cantidad": "100ml"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "colocar el romero en un recipiente"
+          ],
+          [
+            2,
+            "echar el aceite vegetal"
+          ],
+          [
+            3,
+            "dejar reposar por 20 días en un entorno oscuro y sin luz"
+          ],
+          [
+            4,
+            "sinecesitas la cocción inmediatamente, poner a baño de maría en fuego lento por 2 horas"
+          ]
+        ]
+      }
+    ]
+  }
+]

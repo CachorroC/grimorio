@@ -623,10 +623,12 @@ export default function EspecimenForm() {
           <label className={styles.label}>Nombre Científico</label>
           <input
             type="text"
-            name="nombreCientífico"
+            name="nombreCientifico"
             className={styles.input}
             value={formData.nombreCientifico}
-            onChange={handleInputChange}
+            onChange={ handleInputChange}
+
+
             required
           />
           <label className={styles.label}>URL de la imagen</label>

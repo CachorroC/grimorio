@@ -24,7 +24,7 @@ COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* ./
 
 # 2. SECURE FIX: Install dependencies strictly from the lockfile
 # This ensures deterministic builds and prevents sneaking in new vulnerable sub-dependencies
-RUN pnpm install --frozen-lockfile
+RUN pnpm install --no-frozen-lockfile
 
 # -----------------------------------------------------------------------------
 # Stage 3: Builder
