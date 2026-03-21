@@ -14,7 +14,7 @@ export const InputSearchBar = () => {
   ] = useState( '' );
 
   const {
-    currentCarpetas
+    currentCarpetas 
   } = useCarpetasContext();
   const router = useRouter();
 

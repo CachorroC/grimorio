@@ -1,12 +1,12 @@
 'use client';
 import styles from 'styles/layout.module.css';
 import { useNavigationContext } from '#@/app/context/navigation-context';
-import { DrawerMenuButton, NewNoteButton } from '../Buttons/nav-buttons';
 import { Drawer } from './Drawer';
 import { NavLink } from './NavLink';
 import { Route } from 'next';
 import { Loader } from '../Loader/main-loader';
 import { Suspense } from 'react';
+import { DrawerMenuButton } from '../buttons/nav-buttons';
 
 export const NavBar = () => {
   const {
@@ -15,124 +15,32 @@ export const NavBar = () => {
 
   return (
     <div className={styles.header}>
-      <DrawerMenuButton />
-      <NewNoteButton />
+
       <NavLink
         key={'home'}
         iconLabel={'home'}
         textLabel={'Inicio'}
-        hrefLabel={'/' as Route}
+        hrefLabel={'/'}
       />
-      <NavLink
-        iconLabel={'folder'}
-        textLabel={'Carpetas'}
-        hrefLabel={'/Carpetas'}
-      />
-      <NavLink
-        iconLabel={'folder'}
-        textLabel={'Carpetas Alternativo'}
-        hrefLabel={'/Carpetas_alt'}
-      />
+      <DrawerMenuButton />
+      <Suspense fallback={<Loader />}>
 
+        <DrawerMenuButton />
+        <NavLink
+          iconLabel={'cannabis'}
+          textLabel={'Nueva Hierba en el Grimorio'}
+          hrefLabel={'/hierba/nueva' as Route}
+        />
+
+      </Suspense>
       {isNavOpen && (
         <Suspense fallback={<Loader />}>
           <Drawer>
             <DrawerMenuButton />
             <NavLink
-              iconLabel={'payments'}
-              textLabel={'costos'}
-              hrefLabel={'/Costos'}
-            />
-            <NavLink
-              iconLabel={'contact_support'}
-              textLabel={'contacto'}
-              hrefLabel={'/Contacto'}
-            />
-            <NavLink
-              iconLabel={'task'}
-              textLabel={'Tareas'}
-              hrefLabel={'/Tareas' as Route}
-            />
-
-            <NavLink
-              iconLabel={'home'}
-              textLabel={'Inicio'}
-              hrefLabel={'/' as Route}
-            />
-            <NavLink
-              iconLabel={'park'}
-              textLabel={'christmas'}
-              hrefLabel={'/Ayudante/Navidad'}
-            />
-            <NavLink
-              iconLabel={'park'}
-              textLabel={'christmas'}
-              hrefLabel={'/Ayudante/Navidad/New'}
-            />
-            <NavLink
-              iconLabel={'forest'}
-              textLabel={'Christmas Router'}
-              hrefLabel={'/Ayudante/Navidad/Router'}
-            />
-            <NavLink
-              iconLabel={'forest'}
-              textLabel={'Christmas'}
-              hrefLabel={'/Ayudante/Navidad'}
-            />
-            <NavLink
-              iconLabel={'gavel'}
-              textLabel={'ultimas actuaciones'}
-              hrefLabel={'/Carpetas/UltimasActuaciones' as Route}
-            />
-
-            <NavLink
-              iconLabel={'folder_open'}
-              textLabel={'Carpetas'}
-              hrefLabel="/Carpetas"
-            />
-            <NavLink
-              iconLabel={'person_add'}
-              textLabel={'Nueva Carpeta'}
-              hrefLabel={'/Carpetas/Nueva'}
-            />
-
-            <NavLink
-              iconLabel={'add_shopping_cart'}
-              textLabel={'ingresar factura'}
-              hrefLabel={'/Contabilidad/NuevaFactura' as Route}
-            />
-
-            <NavLink
-              iconLabel={'task'}
-              textLabel={'tareas'}
-              hrefLabel={'/Tareas' as Route}
-            />
-            <NavLink
-              iconLabel={'sticky_note_2'}
-              textLabel={'Notas'}
-              hrefLabel={'/Notas'}
-            />
-            <NavLink
-              iconLabel={'note_add'}
-              textLabel={'Nueva Nota'}
-              hrefLabel={'/Notas/Nueva'}
-            />
-
-            <NavLink
-              iconLabel={'badge'}
-              textLabel={'Quienes Somos'}
-              hrefLabel={'/QuienesSomos'}
-            />
-
-            <NavLink
-              iconLabel={''}
-              textLabel={'Bancolombia'}
-              hrefLabel={'/Carpetas/Categorias/Bancolombia'}
-            />
-            <NavLink
-              iconLabel={''}
-              textLabel={'Reintegra'}
-              hrefLabel={'/Carpetas/Categorias/Reintegra'}
+              iconLabel={'cannabis'}
+              textLabel={'Nueva Hierba en el Grimorio'}
+              hrefLabel={'/hierba/nueva' as Route}
             />
           </Drawer>
         </Suspense>

@@ -1,5 +1,6 @@
 'use client';
-import useNotification from '../app/Hooks/useNotification';
+
+import useNotification from '#@/app/hooks/useNotification';
 
 export default function NotifierClientComponent( {
   titulo,
@@ -11,7 +12,7 @@ export default function NotifierClientComponent( {
   contenido?: string;
 } ) {
   const {
-    notify, close 
+    notify, close
   } = useNotification(
     titulo, {
       onClick: ( ev ) => {
@@ -26,7 +27,7 @@ export default function NotifierClientComponent( {
       onClose           : ( e ) => {
         console.log( e );
       },
-    } 
+    }
   );
 
   return (

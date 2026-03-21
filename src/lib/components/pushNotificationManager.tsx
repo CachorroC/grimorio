@@ -2,10 +2,10 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import styles from '#@/styles/PushNotifications.module.css';
+import styles from 'styles/PushNotifications.module.css';
 import { sendNotification } from '#@/app/actions/notifications';
-import { WebPushSubscription } from '#@/lib/pushUtils';
-import { usePushNotifications } from '#@/app/Context/pushNotificationContext';
+import { WebPushSubscription } from '#@/lib/utils/pushUtils';
+import { usePushNotifications } from '#@/app/context/pushNotificationContext';
 
 export function PushNotificationManager() {
   const {
@@ -13,7 +13,7 @@ export function PushNotificationManager() {
     isSubscribed,
     subscription,
     subscribeToPush,
-    unsubscribeFromPush
+    unsubscribeFromPush,
   } = usePushNotifications();
   const [
     message,
@@ -21,12 +21,14 @@ export function PushNotificationManager() {
   ] = useState( '' );
 
   if ( !isSupported ) {
-    return <p className={styles.statusText}>Push notifications not supported.</p>;
+    return (
+      <p className={styles.statusText}>Push notifications not supported.</p>
+    );
   }
 
   async function sendTestNotification() {
     if ( subscription && message.trim() ) {
-      const serializedSub = JSON.parse( JSON.stringify( subscription ) ) as WebPushSubscription;
+      const serializedSub = JSON.parse( JSON.stringify( subscription ), ) as WebPushSubscription;
       await sendNotification(
         message, serializedSub
       );
@@ -40,11 +42,18 @@ export function PushNotificationManager() {
       {isSubscribed
         ? (
             <div className={styles.flexGroup}>
-              <p className={styles.statusText} style={{
-                color: '#16a34a'
-              }}
-              >Status: Subscribed</p>
-              <button onClick={unsubscribeFromPush} className={`${ styles.button } ${ styles.btnGhost }`}>
+              <p
+                className={styles.statusText}
+                style={{
+                  color: '#16a34a',
+                }}
+              >
+                Status: Subscribed
+              </p>
+              <button
+                onClick={unsubscribeFromPush}
+                className={`${ styles.button } ${ styles.btnGhost }`}
+              >
                 Unsubscribe
               </button>
               <div className={styles.row}>
@@ -57,7 +66,10 @@ export function PushNotificationManager() {
                     return setMessage( e.target.value );
                   }}
                 />
-                <button onClick={sendTestNotification} className={`${ styles.button } ${ styles.btnPrimary }`}>
+                <button
+                  onClick={sendTestNotification}
+                  className={`${ styles.button } ${ styles.btnPrimary }`}
+                >
                   Send Test
                 </button>
               </div>
@@ -66,7 +78,10 @@ export function PushNotificationManager() {
         : (
             <div>
               <p className={styles.statusText}>Not currently subscribed.</p>
-              <button onClick={subscribeToPush} className={`${ styles.button } ${ styles.btnSuccess }`}>
+              <button
+                onClick={subscribeToPush}
+                className={`${ styles.button } ${ styles.btnSuccess }`}
+              >
                 Enable Notifications
               </button>
             </div>
@@ -74,7 +89,6 @@ export function PushNotificationManager() {
     </div>
   );
 }
-
 
 export function InstallPrompt() {
   const [
@@ -88,7 +102,8 @@ export function InstallPrompt() {
 
   useEffect(
     () => {
-      const isIOSDevice = /iPad|iPhone|iPod/.test( navigator.userAgent ) && !( window as any ).MSStream;
+      const isIOSDevice
+        = /iPad|iPhone|iPod/.test( navigator.userAgent ) && !( window as any ).MSStream;
       setIsIOS( isIOSDevice );
       setIsStandalone( window.matchMedia( '(display-mode: standalone)' ).matches );
     }, []

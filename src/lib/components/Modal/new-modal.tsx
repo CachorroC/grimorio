@@ -1,7 +1,7 @@
 'use client';
+import { useModalContext } from '#@/app/context/modal-context';
+import styles from '#@/lib/styles/modal.module.css';
 import { ReactNode } from 'react';
-import styles from './styles.module.css';
-import { useModalContext } from '#@/app/Context/modal-context';
 
 export default function NewModal( {
   children 

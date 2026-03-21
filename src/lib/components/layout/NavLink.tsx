@@ -2,8 +2,8 @@
 import React from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import styles from '#@/styles/layout.module.css';
-import { useNavigationContext } from '#@/app/Context/navigation-context';
+import styles from 'styles/layout.module.css';
+import { useNavigationContext } from '#@/app/context/navigation-context';
 import { Route } from 'next';
 
 export function NavLink<T extends string>( {
@@ -16,7 +16,7 @@ export function NavLink<T extends string>( {
   hrefLabel: Route<T> | URL;
 } ) {
   const {
-    isNavOpen, setIsNavOpen 
+    isNavOpen, setIsNavOpen
   } = useNavigationContext();
 
   const pathname = usePathname();

@@ -19,11 +19,11 @@
     "noImplicitAny": true,
     "noEmit": true,
     "paths": {
-      "#@/*": [ "./src/*" ],
-      "components/*": [ "./src/lib/components/*" ],
-      "styles/*": [ "./src/lib/styles/*" ],
-      "types/*": [ "./src/lib/types/*" ],
-      "lib/*": [ "./src/lib/*" ]
+      "#@/*": ["./src/*"],
+      "components/*": ["./src/lib/components/*"],
+      "styles/*": ["./src/lib/styles/*"],
+      "types/*": ["./src/lib/types/*"],
+      "lib/*": ["./src/lib/*"]
     },
     "plugins": [
       {
@@ -41,7 +41,7 @@
     "strict": true,
     "target": "ESNext"
   },
-  "exclude": [ "node_modules" ],
+  "exclude": ["node_modules"],
   "include": [
     "next-env.d.ts",
     "**/*.ts",

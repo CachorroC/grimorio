@@ -5,31 +5,22 @@ import { useState, useEffect } from 'react';
 import { sendNotification } from './actions/notifications';
 import { usePushNotifications } from './Context/pushNotificationContext';
 
-
-function PushNotificationManager () {
+function PushNotificationManager() {
   const {
-    isSupported,
-    subscription,
-    subscribeToPush,
-    unsubscribeFromPush
-  } = usePushNotifications();
-
+    isSupported, subscription, subscribeToPush, unsubscribeFromPush 
+  }
+    = usePushNotifications();
 
   const [
     message,
     setMessage
   ] = useState( '' );
 
-
-
-
-
-
   async function sendTestNotification() {
     if ( subscription ) {
       const serializedSub = subscription.toJSON() as any;
       await sendNotification(
-        message, serializedSub
+        message, serializedSub 
       );
       setMessage( '' );
     }
@@ -81,10 +72,10 @@ function InstallPrompt() {
 
   useEffect(
     () => {
-      setIsIOS( /iPad|iPhone|iPod/.test( navigator.userAgent, ) && !( window as any ).MSStream, );
+      setIsIOS( /iPad|iPhone|iPod/.test( navigator.userAgent ) && !( window as any ).MSStream, );
 
       setIsStandalone( window.matchMedia( '(display-mode: standalone)' ).matches );
-    }, []
+    }, [] 
   );
 
   if ( isStandalone ) {

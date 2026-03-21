@@ -1,12 +1,12 @@
 'use client';
 
-import { usePushNotifications } from '#@/app/Context/pushNotificationContext';
-
+import { usePushNotifications } from '#@/app/context/pushNotificationContext';
 
 export default function NotificationButton() {
   const {
     isSubscribed, subscribeToPush, unsubscribeFromPush, deviceId
-  } = usePushNotifications();
+  }
+    = usePushNotifications();
 
   return (
     <button

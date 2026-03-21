@@ -1,10 +1,10 @@
 import NotificationButton from '#@/lib/components/NotificationButton';
 import NotificationToggle from '#@/lib/components/NotificationToggle';
-import { InstallPrompt, PushNotificationManager } from '#@/lib/components/pushNotificationManager';
+import { InstallPrompt,
+  PushNotificationManager, } from '#@/lib/components/pushNotificationManager';
 import typography from '#@/lib/styles/fonts/typography.module.css';
 import layout from '#@/lib/styles/layout.module.css';
 import Link from 'next/link';
-
 
 export default function Page() {
   return (
@@ -30,9 +30,7 @@ export default function Page() {
         </Link>
         <h1>Grimorio Nativo</h1>
       </div>
-      <div className={layout.right}>
-
-      </div>
+      <div className={layout.right}></div>
     </>
   );
 }

@@ -1,22 +1,22 @@
-import layout from '#@/styles/layout.module.css';
-import modalStyles from '../Modal/styles.module.css';
+import styles from '#@/lib/styles/layout.module.css';
+import modalStyles from '#@/lib/styles/modal.module.css';
 
 export const TableLoader = () => {
   return (
     <td>
-      <div className={layout.loader}></div>;
+      <div className={styles.loader}></div>;
     </td>
   );
 };
 
-export function Loader() {
-  return <div className={layout.loader}></div>;
-}
+export const Loader = () => {
+  return <div className={styles.loader}></div>;
+};
 
 export const ModalLoader = () => {
   return (
     <div className={modalStyles.open}>
-      <div className={layout.loader}></div>
+      <div className={styles.loader}></div>
     </div>
   );
 };

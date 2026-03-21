@@ -1,8 +1,8 @@
 'use client';
 
-import styles from '#@/components/Card/card.module.css';
+import styles from 'styles/card.module.css';
 import { useEffect } from 'react';
-import typography from '#@/styles/fonts/typography.module.css';
+import typography from 'styles/fonts/typography.module.css';
 
 export default function Error( {
   error,
@@ -16,7 +16,7 @@ export default function Error( {
       console.error( error );
     }, [
       error
-    ] 
+    ]
   );
 
   return (

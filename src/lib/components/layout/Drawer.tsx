@@ -4,32 +4,44 @@ import { MouseEventHandler,
   useCallback,
   useEffect,
   useRef, } from 'react';
-import styles from './navbar.module.css';
-import { useNavigationContext } from '#@/app/Context/navigation-context';
+import { useNavigationContext } from '#@/app/context/navigation-context';
+import styles from '#@/lib/styles/navbar.module.css';
 
-export const Drawer = ( {
-  children 
-}: { children: ReactNode } ) => {
+export const Drawer = (
+  {
+    children
+  }: { children: ReactNode } 
+) => {
   const {
-    isNavOpen, setIsNavOpen 
+    isNavOpen, setIsNavOpen
   } = useNavigationContext();
 
-  const wrapper = useRef( null );
+  const wrapper = useRef(
+    null 
+  );
 
-  const overlay = useRef( null );
+  const overlay = useRef(
+    null 
+  );
 
   const onDismiss = useCallback(
     () => {
-      setIsNavOpen( ( n ) => {
-        return !n;
-      } );
+      setIsNavOpen(
+        (
+          n 
+        ) => {
+          return !n;
+        } 
+      );
     }, [
       setIsNavOpen
-    ] 
+    ]
   );
 
   const onClick: MouseEventHandler = useCallback(
-    ( e ) => {
+    (
+      e 
+    ) => {
       if ( e.target === overlay.current || e.target === wrapper.current ) {
         if ( onDismiss ) {
           onDismiss();
@@ -44,7 +56,9 @@ export const Drawer = ( {
   );
 
   const onKeyDown = useCallback(
-    ( e: KeyboardEvent ) => {
+    (
+      e: KeyboardEvent 
+    ) => {
       if ( e.key === 'Escape' ) {
         onDismiss();
       }
@@ -57,17 +71,17 @@ export const Drawer = ( {
   useEffect(
     () => {
       document.addEventListener(
-        'keydown', onKeyDown 
+        'keydown', onKeyDown
       );
 
       return () => {
         return document.removeEventListener(
-          'keydown', onKeyDown 
+          'keydown', onKeyDown
         );
       };
     }, [
       onKeyDown
-    ] 
+    ]
   );
 
   if ( !isNavOpen ) {

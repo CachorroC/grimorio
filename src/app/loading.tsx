@@ -1,7 +1,7 @@
-import { Loader } from '#@/components/Loader/main-loader';
-import { ProcesosCardSkeleton } from '#@/components/Proceso/skeleton';
-import styles from '#@/styles/layout.module.css';
-import typography from '#@/styles/fonts/typography.module.css';
+
+import styles from 'styles/layout.module.css';
+import typography from 'styles/fonts/typography.module.css';
+import { Loader } from '#@/lib/components/Loader/main-loader';
 
 export default function Loading() {
   return (
@@ -262,7 +262,6 @@ export default function Loading() {
           <Loader />
           <Loader />
           <Loader />
-          <ProcesosCardSkeleton />
         </section>
       </div>
     </>

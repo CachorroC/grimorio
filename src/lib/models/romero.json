@@ -1,0 +1,64 @@
+{
+  "nombreCientifico": "Salvia rosmarinus",
+  "nombresComunes": ["romero"],
+  "propiedadesMedicinales": [
+    "antioxidante",
+    "antiinflamatorio",
+    "digestiva",
+    "antimicrobiana",
+    "cicatrizante",
+    "estimula la circulacion"
+  ],
+  "correspondenciasEnergeticas": [
+    "proteccion",
+    "limpieza energetica",
+    "purificacion"
+  ],
+  "malesEmocionales": [
+    "coneccion mente - cuerpo",
+    "calidez",
+    "memoria",
+    "arraigo terrenal"
+  ],
+  "malesFisicos": [
+    "dolores articulares",
+    "dolores musculares",
+    "artritis",
+    "reumatismo",
+    "digestion",
+    "gases",
+    "pesadez",
+    "problemas de la piel"
+  ],
+  "taxon": {
+    "dominio": "Eukaryota",
+    "reino": "Plantae",
+    "filo": "Tracheophyta",
+    "clase": "Magnoliopsida",
+    "orden": "Lamiales",
+    "familia": "Lamiaceae",
+    "genero": "Salvia",
+    "especie": "Salvia rosmarinus",
+    "clados": ["Angiospermas", "Eudicotiledoneas", "Astreidas"]
+  },
+  "preparaciones": [
+    {
+      "usoTerapeutico": "dolor de estomago",
+      "ingredientes": [
+        {
+          "ingrediente": "romero en polvo",
+          "cantidad": "5 gramos"
+        },
+        {
+          "ingrediente": "agua",
+          "cantidad": "100ml"
+        }
+      ],
+      "pasos": [
+        [1, "echar el romero en un recipiente vacio"],
+        [2, "echar el agua encima del romero en el recipiente"],
+        [3, "batir fuertemente con un colador"]
+      ]
+    }
+  ]
+}
