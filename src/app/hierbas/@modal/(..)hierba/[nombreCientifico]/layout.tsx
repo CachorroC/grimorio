@@ -2,12 +2,10 @@ import { ModalLoader } from '#@/lib/components/Loader/main-loader';
 import { Modal } from '#@/lib/components/Modal';
 import { ReactNode, Suspense } from 'react';
 
-export default async function Layout(
+export default function Layout(
   {
-    params,
     children,
   }: {
-    params  : Promise<{ nombreCientifico: string }>;
     children: ReactNode;
   }
 ) {

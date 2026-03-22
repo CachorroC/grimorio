@@ -54,7 +54,52 @@ export default class EspecimenModel implements EspecimenType {
     this.partesUtiles = partesUtiles;
   }
 
+  static async getPlantaMedicinalByNombreCientifico (
+    {
+      nombreCientifico
+    }: { nombreCientifico: string; }
+  ) {
+    await connection();
 
+    try {
+
+      const client = await clientPromise;
+      const database = client.db(
+        'botany_db'
+      ); // Replace with your actual database name
+      const plantasMedicinalesCollection = database.collection<EspecimenType>(
+        'plantas_medicinales',
+      );
+      const especimenByNombre = await plantasMedicinalesCollection.findOne(
+        {
+          nombreCientifico: nombreCientifico,
+        }
+      );
+
+      if ( !especimenByNombre ) {
+        throw new Error(
+          `No specimen found with nombreCientifico: ${ nombreCientifico }`
+        );
+      }
+
+      return {
+        success: true,
+        data   : {
+          ...especimenByNombre,
+          _id: especimenByNombre._id.toString(),
+        },
+      };
+    } catch ( error ) {
+      console.error(
+        'Database Error:', error
+      );
+
+      return {
+        success: false,
+        error
+      };
+    }
+  }
   static async upsertPlantaMedicinal(
     {
       data

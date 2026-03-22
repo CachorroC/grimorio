@@ -6,12 +6,15 @@ import SendIcon from '@mui/icons-material/Send';
 import EspecimenForm from './form/especimenForm';
 import PlantCookbook from './display/plantCookbook';
 import { EspecimenType } from '../types/especimenTypes';
+import Link from 'next/link';
 
 export default function SpecimenEditSelection(
   {
     plantData,
+    isStandalone = false,
   }: {
-    plantData: EspecimenType;
+    plantData    : EspecimenType;
+    isStandalone?: boolean;
   }
 ) {
   const [
@@ -26,22 +29,28 @@ export default function SpecimenEditSelection(
   return (
     <Card
       sx={{
+        width        : '100%',
         maxWidth     : '100%',
         mx           : 'auto',
-        mt           : 4,
         boxShadow    : 3,
         borderRadius : 2,
-        // 1. Define this card as a container so internal elements can measure it
         containerType: 'inline-size',
         containerName: 'specimenCard',
+        // 1. Constrain the total height of the card so it doesn't grow infinitely off-screen
+        maxHeight    : isStandalone
+          ? '85vh'
+          : 'none',
+        display      : 'flex',
+        flexDirection: 'column',
       }}
     >
       <Box
         sx={{
           display                                     : 'flex',
-          // 2. Default to stacked (mobile-first / narrow container)
           flexDirection                               : 'column',
-          // 3. If the container itself is 400px or wider, switch to side-by-side
+          // 2. Prevent this wrapper from overflowing the card
+          flexGrow                                    : 1,
+          overflow                                    : 'hidden',
           '@container specimenCard (min-width: 800px)': {
             flexDirection: 'row',
           },
@@ -50,10 +59,10 @@ export default function SpecimenEditSelection(
         {/* --- LEFT COLUMN: IMAGE --- */}
         <Box
           sx={{
-            // Stacked width
             width                                       : '100%',
+            // Optional: prevent the image side from scrolling if the image is tall
+            overflow                                    : 'hidden',
             '@container specimenCard (min-width: 800px)': {
-              // Side-by-side width (roughly equivalent to Grid size 5)
               width: '41.66%',
             },
           }}
@@ -61,11 +70,9 @@ export default function SpecimenEditSelection(
           <CardMedia
             component="img"
             sx={{
-              // Default stacked height
               height                                      : 300,
               objectFit                                   : 'cover',
-              '@container specimenCard (min-width: 400px)': {
-                // Stretch full height when side-by-side
+              '@container specimenCard (min-width: 800px)': {
                 height: '100%',
               },
             }}
@@ -77,12 +84,14 @@ export default function SpecimenEditSelection(
         {/* --- RIGHT COLUMN: DATA --- */}
         <Box
           sx={{
-            // Stacked width
             width                                       : '100%',
             display                                     : 'flex',
             flexDirection                               : 'column',
+            // 3. THE FIX: Tell this specific column to scroll if content is too long
+            overflowY                                   : 'auto',
+            // 4. Add some padding so the scrollbar doesn't hug the text too tightly
+            p                                           : 2,
             '@container specimenCard (min-width: 800px)': {
-              // Side-by-side width (roughly equivalent to Grid size 7)
               width: '58.33%',
             },
           }}
@@ -115,12 +124,14 @@ export default function SpecimenEditSelection(
             }}
             endIcon={<SendIcon />}
             sx={{
-              m        : 2,
+              mt       : 'auto', // Pushes the button to the bottom if there's extra space
+              mb       : 2,
               alignSelf: 'flex-start'
             }}
           >
             Send
           </Button>
+          <Link href={`/hierba/${ plantData.nombreCientifico }`}>View Details</Link>
         </Box>
       </Box>
     </Card>
