@@ -4,6 +4,7 @@ export type EspecimenType = {
   imageUrl                   : string;
   nombresComunes             : string[];
   propiedadesMedicinales     : string[];
+  partesUtiles               : string[]
   correspondenciasEnergeticas: string[];
   malesEmocionales           : string[];
   malesFisicos               : string[];
@@ -20,7 +21,10 @@ export type PreparacionType = {
 
 export type IngredientesType = { ingrediente: string; cantidad: string };
 
-export type PasosTuple = [pasoNumero: number, instruccion: string];
+export type PasosTuple = [
+  pasoNumero: number,
+  instruccion: string
+];
 
 /**
  * Represents the standard 8 principal taxonomic ranks used in modern biology.

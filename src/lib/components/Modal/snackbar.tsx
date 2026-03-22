@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import { useSnackbarContext } from '#@/app/context/main-context';
-import { snackbar } from '#@/lib/styles/modal.module.css';
+import styles from '#@/lib/styles/modal.module.css';
 
 export function Snackbar(
   {

@@ -37,7 +37,7 @@ export default function LayoutProcesosMain(
         <div className={styles.top}>{top}</div>
       </Suspense>
       <Suspense fallback={<Loader />}>
-        <div className={styles.leftGrid}>{children}</div>
+        <div className={styles.left}>{children}</div>
       </Suspense>
       <Suspense fallback={<Loader />}>
         <div className={styles.right}>{right}</div>

@@ -2,8 +2,8 @@ import { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name                       : 'RyS Asesoria Juridica Especializada SAS',
-    short_name                 : 'RyS',
+    name                       : 'Grimorio Nativo',
+    short_name                 : 'Grimorio',
     background_color           : '#202b3a',
     theme_color                : '#7aa4dd',
     prefer_related_applications: false,
@@ -16,30 +16,6 @@ export default function manifest(): MetadataRoute.Manifest {
       'minimal-ui'
     ],
     shortcuts: [
-      {
-        name: 'Ultimas Actuaciones',
-        description:
-          'aquí encontrará los procesos ordenados a partir de sus últimas actuaciones, la fecha del movimiento y su relevancia',
-        url  : '/Carpetas/UltimasActuaciones',
-        icons: [
-          {
-            src    : '/icon1.png',
-            sizes  : '512x512',
-            purpose: 'any',
-          },
-        ],
-      },
-      {
-        name : 'Notas',
-        url  : '/Notas',
-        icons: [
-          {
-            src    : '/icon.svg',
-            sizes  : '150x150',
-            purpose: 'any',
-          },
-        ],
-      },
       {
         name : 'Carpetas',
         url  : '/Carpetas',

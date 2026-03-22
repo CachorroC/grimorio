@@ -11,7 +11,7 @@ export default function Page() {
     <>
       <div className={layout.top}>
         <h1 className={typography.displayLarge}>
-          {'R&S Asesoría Jurídica S.A.S'}
+          {'Grimorio Nativo'}
         </h1>
       </div>
       <div className={layout.leftGrid}>

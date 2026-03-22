@@ -146,7 +146,6 @@
 .left, .leftGrid, .leftColumn {
   box-sizing: border-box;
   width: 100%;
-  height: 100%;
   background-color: var(--surface);
   grid-area: left;
   border-radius: var(--shape-corner-large);
@@ -157,6 +156,8 @@
   flex-flow: column nowrap;
   gap: 1rem;
   counter-reset: num;
+  height: "100vh";
+  overflow-y: auto;
   /* Default Grid behavior for contents */
   grid-template-columns: repeat(4, 1fr);
   grid-auto-columns: 1fr;

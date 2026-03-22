@@ -1,7 +1,7 @@
 'use client';
 import searchbar from 'components/layout/search/searchbar.module.css';
 import { useState } from 'react';
-import typography from '#@/styles/fonts/typography.module.css';
+import typography from 'styles/fonts/typography.module.css';
 
 export const InputSearchBar = () => {
   const [

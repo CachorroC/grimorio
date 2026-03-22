@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
-import {  ChangeEvent, SubmitEventHandler, useState } from 'react';
+import {  ChangeEvent, Dispatch, SetStateAction, SubmitEventHandler, useState } from 'react';
 import styles from '#@/lib/styles/form.module.css';
 import { EspecimenType, IngredientesType, PreparacionType, Taxon } from '#@/lib/types/especimenTypes';
 import { displayLarge,  } from '#@/lib/styles/fonts/typography.module.css';
@@ -10,7 +10,10 @@ import { upsertSpecimen } from '#@/app/actions/specimen';
 const initialState: EspecimenType = {
   nombreCientifico: '',
   imageUrl        : '',
-  nombresComunes  : [
+  partesUtiles    : [
+    ''
+  ],
+  nombresComunes: [
     ''
   ],
   propiedadesMedicinales: [
@@ -41,12 +44,18 @@ const initialState: EspecimenType = {
   preparaciones: []
 };
 
-export default function EspecimenForm() {
+export default function EspecimenForm(
+  {
+    initialData, setIsEditing
+  }: { initialData?: EspecimenType;  setIsEditing?: Dispatch<SetStateAction<boolean>>}
+) {
   const [
     formData,
     setFormData
   ] = useState<EspecimenType>(
-    initialState
+    initialData
+      ? initialData
+      : initialState
   );
 
   // --- TOP LEVEL HANDLERS ---
@@ -460,6 +469,13 @@ export default function EspecimenForm() {
           return val.trim() !== '';
         }
       ),
+      partesUtiles: formData.partesUtiles.filter(
+        (
+          val
+        ) => {
+          return val.trim() !== '';
+        }
+      ),
       propiedadesMedicinales: formData.propiedadesMedicinales.filter(
         (
           val
@@ -521,6 +537,7 @@ export default function EspecimenForm() {
             ...savedData,
             // Ensure arrays are initialized even if DB returns null/undefined
             nombresComunes             : savedData.nombresComunes || [],
+            partesUtiles               : savedData.partesUtiles || [],
             propiedadesMedicinales     : savedData.propiedadesMedicinales || [],
             correspondenciasEnergeticas: savedData.correspondenciasEnergeticas || [],
             malesEmocionales           : savedData.malesEmocionales || [],
@@ -559,7 +576,11 @@ export default function EspecimenForm() {
       );
     }
 
-    // Assumin
+    if ( setIsEditing ) {
+      setIsEditing(
+        false
+      );
+    }
   };
 
   // --- HELPER RENDERER FOR SIMPLE STRING ARRAYS ---
@@ -571,7 +592,7 @@ export default function EspecimenForm() {
     return (
       <div className={styles.section}>
         <h3 className={styles.sectionTitle}>{title}</h3>
-        {arr.map(
+        {arr?.map(
           (
             item, index
           ) => {
@@ -636,17 +657,24 @@ export default function EspecimenForm() {
         <input name="imageUrl" className={styles.input} value={formData.imageUrl ?? ''} onChange={handleInputChange} />
 
       </div>
-
-      {renderStringArrayInput(
+      {
+        renderStringArrayInput(
+          'Partes utiles',
+          'partesUtiles'
+        )
+      }
+      { renderStringArrayInput(
         'Nombres Comunes',
         'nombresComunes'
       )}
       {renderStringArrayInput(
-        'Propiedades Medicinales', 'propiedadesMedicinales'
+        'Propiedades Medicinales',
+        'propiedadesMedicinales'
       )}
       {/* Note: Using exact spelling from your schema: correspondenciasEnergeticas */}
       {renderStringArrayInput(
-        'Correspondencias Energéticas', 'correspondenciasEnergeticas'
+        'Correspondencias Energéticas',
+        'correspondenciasEnergeticas'
       )}
       {renderStringArrayInput(
         'Males Emocionales',

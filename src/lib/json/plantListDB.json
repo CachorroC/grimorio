@@ -113,5 +113,214 @@
         ]
       }
     ]
+  },
+  {
+    "nombreCientifico": "Cannabis sativa",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Cannabis_sativa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-026.jpg",
+    "nombresComunes": [
+      "Marihuana",
+      "La mata que mata",
+      "weed",
+      "corinto",
+      "sativa",
+      "indica"
+    ],
+    "propiedadesMedicinales": [
+      "THC",
+      "CBD",
+      "Cannabinoides"
+    ],
+    "correspondenciasEnergeticas": [],
+    "malesEmocionales": [],
+    "malesFisicos": [
+      "Dolores crónicos",
+      "Nauseas por quimioterapia",
+      "Espasticidad por esclerosis multiple",
+      "epilepsia"
+    ],
+    "taxon": {
+      "dominio": "",
+      "reino": "",
+      "filo": "",
+      "clase": "",
+      "orden": "",
+      "familia": "",
+      "genero": "",
+      "especie": "",
+      "clados": []
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "Aceite de dolor",
+        "ingredientes": [
+          {
+            "ingrediente": "flor de cannabis sativa",
+            "cantidad": "5 gramos"
+          },
+          {
+            "ingrediente": "aceite vegetal (aceite de coco, aceite de oliva, aceite de risino)",
+            "cantidad": "100 ml"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "Se tritura la flor hasta que quede un polvo fino"
+          ],
+          [
+            2,
+            "se coloca la marihuana en un recipiente "
+          ],
+          [
+            3,
+            "se coloca el aceite vegetal hasta cubrir completamente la flor "
+          ],
+          [
+            4,
+            ""
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "nombreCientifico": "Artemisia absinthium",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Artemisia_absinthium_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-164.jpg",
+    "partesUtiles": [
+      "flor",
+      "hojas"
+    ],
+    "nombresComunes": [
+      "Ajenjo",
+      "Asensio",
+      "Hierba Santa",
+      "Ajenjo mayor"
+    ],
+    "propiedadesMedicinales": [
+      "tónico estomacal",
+      "control de parásitos 'oxiuriasis'",
+      "febrífugo",
+      "Calma el sistema nervioso",
+      "estimula la produccion de bilis",
+      "antiparasitario",
+      "Efecto expectorante"
+    ],
+    "correspondenciasEnergeticas": [
+      "limpieza de energias negativas",
+      "combate el mal de ojo "
+    ],
+    "malesEmocionales": [
+      "Estrés",
+      "Ansiedad",
+      "Fatiga mental",
+      "Melancolía",
+      "Corjaes o rabia",
+      "Agotamiento fisico-emocional"
+    ],
+    "malesFisicos": [
+      "Pezades estomacal",
+      "indigestion",
+      "gases",
+      "falta de apetito",
+      "Acidez",
+      "Flatulencias",
+      "colicos",
+      "calambres pélvicos ",
+      "dolores menstruales",
+      "dolores articulares o musculares",
+      "fiebres",
+      "resfriados",
+      "bronquitis",
+      "compresas o aceites para tratar quemaduras",
+      "compresas o aceites para lesiones cutáneas",
+      "compresas o aceites para picaduras o dolores "
+    ],
+    "taxon": {
+      "dominio": "Eukaryota",
+      "reino": "Plantae",
+      "filo": "Magnoliophyta",
+      "clase": "Magnoliopsida",
+      "orden": "Asterales",
+      "familia": "Asteraceae",
+      "genero": "Artemisia",
+      "especie": "Artemisia absinthium",
+      "clados": []
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "Compresas de Ajenjo",
+        "ingredientes": [
+          {
+            "ingrediente": "agua",
+            "cantidad": "300 ml"
+          },
+          {
+            "ingrediente": "hojas y flores secas de ajenjo",
+            "cantidad": "1 o 2 cucharadas"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "hervir 300ml de agua"
+          ],
+          [
+            2,
+            "añadir 1 o 2 cucharadas de hojas y flores secas de ajenjo"
+          ],
+          [
+            3,
+            "tapar y dejar reposar durante 10 minutos"
+          ],
+          [
+            4,
+            "colar la mezcla y dejar entibiar"
+          ],
+          [
+            5,
+            "empapar un paño limpio o gasa de infusión"
+          ],
+          [
+            6,
+            "escurrir ligeramente y aplicar sobre la zona afectada durante 15-20 minutos "
+          ]
+        ]
+      },
+      {
+        "usoTerapeutico": "Aceite de Ajenjo",
+        "ingredientes": [
+          {
+            "ingrediente": "Frasco de vidrio esterilizado",
+            "cantidad": "1 frasco"
+          },
+          {
+            "ingrediente": "planta seca, hojas y flores",
+            "cantidad": "mitad del frasco"
+          },
+          {
+            "ingrediente": "Aceite portador ",
+            "cantidad": "oliva, almendras o coco "
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "Llenar un frasco de vidrio esterilizado con la planta seca (hojas y flores) hasta la mitad o tres cuartas partes"
+          ],
+          [
+            2,
+            "Cubrir la planta por completo con un aceite portador (oliva, almendras dulces o coco)"
+          ],
+          [
+            3,
+            "cerrar el frasco y dejar macerar en un lugar cálido y oscuro durante 30 a 40 días, agitando diariamente"
+          ],
+          [
+            4,
+            "colar el aceite con una tela fina y guardarlo en un frasco de vidrio oscuro "
+          ]
+        ]
+      }
+    ]
   }
 ]

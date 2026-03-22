@@ -17,6 +17,12 @@ import { SearchProvider } from './context/search-context';
 import layout from '#@/lib/styles/layout.module.css';
 import { NavBar } from '#@/lib/components/layout/NavBar';
 import { MainProvider } from './context/main-context';
+import { CssBaseline,
+  InitColorSchemeScript,
+  ThemeProvider, } from '@mui/material';
+// This is MUI's official SSR cache provider for Next.js App Router
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
+import theme from './theme';
 
 const prefix = process.env.NODE_ENV === 'production'
   ? 'app'
@@ -105,31 +111,37 @@ export default function RootLayout(
 ) {
   return (
     <html lang="es-CO">
-      <body className={`${ playDisp.variable } ${ josefina.variable } ${ raleway.variable } ${ radio.variable } ${ ptserif.variable } [ color-scheme: light dark ]`}>
-        <MainProvider>
-          <PushNotificationProvider>
-            <NavigationContextProvider>
-              <SearchProvider>
-                <ModalProvider>
-                  <PushManagerComponent />
-                  <div className={layout.container}>
-                    <Suspense
-                      fallback={
-                        <nav>
-                          Cargando menú... <Loader />
-                        </nav>
-                      }
-                    >
-                      <NavBar />
-                    </Suspense>
-                    {children}
-                    {modal}
-                  </div>
-                </ModalProvider>
-              </SearchProvider>
-            </NavigationContextProvider>
-          </PushNotificationProvider>
-        </MainProvider>
+      <body className={ `${ playDisp.variable } ${ josefina.variable } ${ raleway.variable } ${ radio.variable } ${ ptserif.variable } [ color-scheme: light dark ]` }>
+        <InitColorSchemeScript defaultMode="system" />
+        <AppRouterCacheProvider>
+          <ThemeProvider theme={theme}>
+            <CssBaseline />
+            <MainProvider>
+              <PushNotificationProvider>
+                <NavigationContextProvider>
+                  <SearchProvider>
+                    <ModalProvider>
+                      <PushManagerComponent />
+                      <div className={layout.container}>
+                        <Suspense
+                          fallback={
+                            <nav>
+                              Cargando menú... <Loader />
+                            </nav>
+                          }
+                        >
+                          <NavBar />
+                        </Suspense>
+                        {children}
+                        {modal}
+                      </div>
+                    </ModalProvider>
+                  </SearchProvider>
+                </NavigationContextProvider>
+              </PushNotificationProvider>
+            </MainProvider>
+          </ThemeProvider>
+        </AppRouterCacheProvider>
         {/*  <Script
           src={`https://${ prefix }.rsasesorjuridico.com/install-service-worker.js`}
         /> */}

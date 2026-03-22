@@ -9,7 +9,7 @@ FROM node:20-alpine AS base
 RUN apk upgrade --no-cache && \
     apk add --no-cache libc6-compat openssl
 WORKDIR /app
-
+COPY . .
 # Enable pnpm via corepack
 RUN corepack enable
 
