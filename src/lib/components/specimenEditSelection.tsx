@@ -26,7 +26,7 @@ export default function SpecimenEditSelection(
   return (
     <Card
       sx={{
-        maxWidth     : 900,
+        maxWidth     : '100%',
         mx           : 'auto',
         mt           : 4,
         boxShadow    : 3,
