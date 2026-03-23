@@ -7,7 +7,6 @@ const nextConfig: NextConfig = {
   ],
   cacheComponents: true,
   output         : 'standalone',
-  reactCompiler  : true,
   typedRoutes    : true,
   async headers() {
     return [

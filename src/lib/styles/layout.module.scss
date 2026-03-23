@@ -45,7 +45,7 @@ $MaxSW: 480px;
     grid-template-rows: repeat(10, minmax(6svh, 1fr));
     /* Container assigns the entire content area to main */
     grid-template-areas:
-      "header top top top top top top top top top"
+      "header main main main main main main main main main"
       "header main main main main main main main main main"
       "header main main main main main main main main main"
       "header main main main main main main main main main"
@@ -90,6 +90,9 @@ $MaxSW: 480px;
       word-break: break-word; /* Extra safety for very long uninterrupted words */
     }
   }
+  @media (1200px < width) {
+    align-items: center;
+  }
 }
 
 .main {
@@ -98,9 +101,14 @@ $MaxSW: 480px;
   flex-direction: column; /* Stacks children vertically */
   align-items: stretch;
   gap: 1rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
   overflow-y: auto; /* The sole scrollable container */
   overflow-x: hidden;
   height: 100%;
+  @media (1200px < width) {
+    padding: 2rem;
+  }
 }
 
 .mainContent {

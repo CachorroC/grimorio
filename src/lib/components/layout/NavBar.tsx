@@ -7,6 +7,7 @@ import { Route } from 'next';
 import { Loader } from '../Loader/main-loader';
 import { Suspense } from 'react';
 import { DrawerMenuButton } from '../buttons/nav-buttons';
+import ThemeToggle from '../ThemeToggle';
 
 export const NavBar = () => {
   const {
@@ -33,6 +34,7 @@ export const NavBar = () => {
         <Suspense fallback={<Loader />}>
           <Drawer>
             <DrawerMenuButton />
+            <ThemeToggle />
             <NavLink
               iconLabel={'cannabis'}
               textLabel={'Nueva Hierba en el Grimorio'}

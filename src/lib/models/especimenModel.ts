@@ -59,7 +59,6 @@ export default class EspecimenModel implements EspecimenType {
       nombreCientifico
     }: { nombreCientifico: string; }
   ) {
-    await connection();
 
     try {
 
@@ -165,7 +164,6 @@ export default class EspecimenModel implements EspecimenType {
     }
   }
   static async getPlantasMedicinales () {
-    await connection();
     const client = await clientPromise;
     const database = client.db(
       'botany_db'

@@ -17,11 +17,6 @@ declare const styles: {
   readonly "row": string;
   readonly "section": string;
   readonly "sectionTitle": string;
-  readonly "segment": string;
-  readonly "segmentColumn": string;
-  readonly "segmentDetached": string;
-  readonly "segmentRow": string;
-  readonly "segmentRowWrap": string;
   readonly "selectArea": string;
   readonly "slider": string;
   readonly "stepNumber": string;

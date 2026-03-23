@@ -112,9 +112,9 @@ export default function RootLayout(
   }
 ) {
   return (
-    <html lang="es-CO">
+    <html lang="es-CO" suppressHydrationWarning>
       <body className={ `${ playDisp.variable } ${ josefina.variable } ${ raleway.variable } ${ radio.variable } ${ ptserif.variable } [ color-scheme: light dark ]` }>
-        <InitColorSchemeScript defaultMode="system" />
+        <InitColorSchemeScript attribute="data" defaultMode="system" />
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <CssBaseline />

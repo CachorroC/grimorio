@@ -5,19 +5,19 @@ const theme = createTheme(
   {
     cssVariables: {
     // Changed from 'data' to 'data-theme' to ensure an exact match with the script
-      colorSchemeSelector: 'data-theme',
+      colorSchemeSelector: 'data',
     },
     colorSchemes: {
       light: {
         palette: {
           primary: {
-            main: '#9575cd',
+            main: '#286b33',
           },
           secondary: {
-            main: '#9ccc65',
+            main: '#4b654a',
           },
           error: {
-            main: '#d32f2f',
+            main: '#ba1a1a',
           },
           warning: {
             main: '#fb8c00',
@@ -34,13 +34,13 @@ const theme = createTheme(
         palette: {
         // Slightly lighter shades usually work better for dark mode contrast
           primary: {
-            main: '#b39ddb',
+            main: '#9ce39e',
           },
           secondary: {
-            main: '#c5e1a5',
+            main: '#b1cead',
           },
           error: {
-            main: '#ef5350',
+            main: '#ffb4ab',
           },
           warning: {
             main: '#ffa726',
@@ -95,42 +95,7 @@ const theme = createTheme(
         fontFamily: 'Raleway',
       },
     },
-    components: {
-      MuiSwitch: {
-        styleOverrides: {
-          root: {
-            width  : 46,
-            height : 27,
-            padding: 0,
-            margin : 8,
-          },
-          switchBase: {
-            padding        : 1,
-            '&.Mui-checked': {
-              transform             : 'translateX(16px)',
-              color                 : '#fff',
-              '& + .MuiSwitch-track': {
-                opacity: 1,
-                border : 'none',
-              },
-            },
-          },
-          thumb: {
-            width : 24,
-            height: 24,
-          },
-          track: {
-            borderRadius   : 13,
-            border         : '1px solid #bdbdbd',
-            backgroundColor: '#fafafa',
-            opacity        : 1,
-            transition:
-            'background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
-          },
-        },
-      },
-    },
-  } 
+  }
 );
 
 export default theme;

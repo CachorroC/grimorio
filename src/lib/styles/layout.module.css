@@ -23,7 +23,7 @@
     grid-template-columns: 5rem repeat(9, minmax(8vw, 1fr));
     grid-template-rows: repeat(10, minmax(6svh, 1fr));
     /* Container assigns the entire content area to main */
-    grid-template-areas: "header top top top top top top top top top" "header main main main main main main main main main" "header main main main main main main main main main" "header main main main main main main main main main" "header main main main main main main main main main" "header main main main main main main main main main" "header main main main main main main main main main" "header main main main main main main main main main" "header main main main main main main main main main" "header main main main main main main main main main";
+    grid-template-areas: "header main main main main main main main main main" "header main main main main main main main main main" "header main main main main main main main main main" "header main main main main main main main main main" "header main main main main main main main main main" "header main main main main main main main main main" "header main main main main main main main main main" "header main main main main main main main main main" "header main main main main main main main main main" "header main main main main main main main main main";
   }
 }
 
@@ -57,6 +57,11 @@
   word-wrap: break-word;
   word-break: break-word; /* Extra safety for very long uninterrupted words */
 }
+@media (1200px < width) {
+  .header {
+    align-items: center;
+  }
+}
 
 .main {
   grid-area: main;
@@ -64,9 +69,16 @@
   flex-direction: column; /* Stacks children vertically */
   align-items: stretch;
   gap: 1rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
   overflow-y: auto; /* The sole scrollable container */
   overflow-x: hidden;
   height: 100%;
+}
+@media (1200px < width) {
+  .main {
+    padding: 2rem;
+  }
 }
 
 .mainContent, .mainContentGrid, .mainContentColumn {

@@ -657,16 +657,17 @@ export default function EspecimenForm(
         <input name="imageUrl" className={styles.input} value={formData.imageUrl ?? ''} onChange={handleInputChange} />
 
       </div>
+      { renderStringArrayInput(
+        'Nombres Comunes',
+        'nombresComunes'
+      )}
       {
         renderStringArrayInput(
           'Partes utiles',
           'partesUtiles'
         )
       }
-      { renderStringArrayInput(
-        'Nombres Comunes',
-        'nombresComunes'
-      )}
+
       {renderStringArrayInput(
         'Propiedades Medicinales',
         'propiedadesMedicinales'
