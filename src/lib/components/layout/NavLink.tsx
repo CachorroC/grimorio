@@ -2,9 +2,9 @@
 import React from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import styles from 'styles/layout.module.css';
 import { useNavigationContext } from '#@/app/context/navigation-context';
 import { Route } from 'next';
+import buttonStyles from '#@/lib/styles/buttons.module.css';
 
 export function NavLink<T extends string>(
   {
@@ -15,7 +15,7 @@ export function NavLink<T extends string>(
     iconLabel: string;
     textLabel: string;
     hrefLabel: Route<T> | URL;
-  } 
+  }
 ) {
   const {
     isNavOpen, setIsNavOpen
@@ -31,23 +31,23 @@ export function NavLink<T extends string>(
       className={
         isActive
           ? isNavOpen
-            ? styles.linkOpenActive
-            : styles.linkActive
+            ? buttonStyles.linkOpenActive
+            : buttonStyles.linkActive
           : isNavOpen
-            ? styles.linkOpen
-            : styles.link
+            ? buttonStyles.linkOpen
+            : buttonStyles.link
       }
       onClick={() => {
         setIsNavOpen(
-          false 
+          false
         );
       }}
       href={hrefLabel as Route}
     >
-      <span className={`material-symbols-outlined ${ styles.icon }`}>
+      <span className={`material-symbols-outlined ${ buttonStyles.icon }`}>
         {iconLabel}
       </span>
-      <h1 className={styles.text}>{textLabel}</h1>
+      <h1 className={buttonStyles.text}>{textLabel}</h1>
     </Link>
   );
 }

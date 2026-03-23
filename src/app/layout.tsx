@@ -24,11 +24,10 @@ import { CssBaseline,
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import theme from './theme';
 
-const prefix = process.env.NODE_ENV === 'production'
-  ? 'app'
-  : 'beta';
 
-const hostname = `https://${ prefix }.rsasesorjuridico.com`;
+const hostname =  process.env.NODE_ENV === 'production'
+  ? 'https://grimorio.suarez-ramirez.com'
+  : 'https://beta.rsasesorjuridico.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -70,9 +69,9 @@ export const metadata: Metadata = {
     title         : 'Grimorio Colombiano',
     statusBarStyle: 'black-translucent',
     startupImage  : [
-      'src/app/logo.svg',
+      '/icon.svg',
       {
-        url  : '/logo.svg',
+        url  : '/icon.svg',
         media: '(device-width: 768px) and (device-height: 1024px)',
       },
     ],

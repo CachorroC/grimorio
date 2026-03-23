@@ -6,71 +6,95 @@
  */
 const sw = /** @type {?} */ ( self );
 
-const CACHE_NAME = 'offline-v1';
+const CACHE_NAME = 'offline-v2';
 const OFFLINE_URL = '/offline.html';
 
 sw.addEventListener(
-  'install', ( event ) => {
-    event.waitUntil( ( async () => {
-      const cache = await caches.open( CACHE_NAME );
-      await cache.add( new Request(
-        OFFLINE_URL, {
-          cache: 'reload',
-        } 
-      ), );
-    } )(), );
+  'install', (
+    event
+  ) => {
+    event.waitUntil(
+      ( async () => {
+        const cache = await caches.open(
+          CACHE_NAME
+        );
+        await cache.add(
+          new Request(
+            OFFLINE_URL, {
+              cache: 'reload',
+            }
+          ),
+        );
+      } )(),
+    );
     sw.skipWaiting();
-  } 
+  }
 );
 
 sw.addEventListener(
-  'activate', ( event ) => {
-    event.waitUntil( ( async () => {
-      if ( 'navigationPreload' in sw.registration ) {
-        await sw.registration.navigationPreload.enable();
-      }
-    } )(), );
+  'activate', (
+    event
+  ) => {
+    event.waitUntil(
+      ( async () => {
+        if ( 'navigationPreload' in sw.registration ) {
+          await sw.registration.navigationPreload.enable();
+        }
+      } )(),
+    );
     sw.clients.claim();
-  } 
+  }
 );
 
 sw.addEventListener(
-  'fetch', ( event ) => {
+  'fetch', (
+    event
+  ) => {
     if ( event.request.mode === 'navigate' ) {
-      event.respondWith( ( async () => {
-        try {
-          const preloadResponse = await event.preloadResponse;
+      event.respondWith(
+        ( async () => {
+          try {
+            const preloadResponse = await event.preloadResponse;
 
-          if ( preloadResponse ) {
-            return preloadResponse;
-          }
+            if ( preloadResponse ) {
+              return preloadResponse;
+            }
 
-          return await fetch( event.request );
-        } catch ( error ) {
-          console.error(
-            'Fetch failed, returning offline page:', error 
-          );
-          const cache = await caches.open( CACHE_NAME );
-          const cachedResponse = await cache.match( OFFLINE_URL );
+            return await fetch(
+              event.request
+            );
+          } catch ( error ) {
+            console.error(
+              'Fetch failed, returning offline page:', error
+            );
+            const cache = await caches.open(
+              CACHE_NAME
+            );
+            const cachedResponse = await cache.match(
+              OFFLINE_URL
+            );
 
-          return (
-            cachedResponse
+            return (
+              cachedResponse
             || new Response(
               'Offline', {
                 headers: {
                   'Content-Type': 'text/html',
                 },
-              } 
+              }
             )
-          );
-        }
-      } )(), );
+            );
+          }
+        } )(),
+      );
     }
-  } 
+  }
 );
 
 sw.addEventListener(
-  'push', ( event ) => {
+  'push', (
+    event
+  ) => {
     if ( !event.data ) {
       return;
     }
@@ -83,11 +107,11 @@ sw.addEventListener(
       data = event.data.json();
       // FIX: Log the actual object structure
       console.log(
-        'Push data received:', data 
+        'Push data received:', data
       );
     } catch ( e ) {
       console.error(
-        'Failed to parse push data as JSON:', e 
+        'Failed to parse push data as JSON:', e
       );
       data = {
         title: 'Notificación',
@@ -96,34 +120,29 @@ sw.addEventListener(
     }
 
     const options = {
-      body   : data.body,
-      icon   : data.icon || '/icons/notification_icon.png',
-      badge  : '/icons/android-chrome-36x36.png',
-      data   : data.data || {}, // Safely default to empty object
-      actions: data.actions || [
-        {
-          action: 'openCarpeta',
-          title : 'Ver Carpeta',
-        },
-        {
-          action: 'openActuaciones',
-          title : 'Ver Actuaciones',
-        },
-      ],
+      body : data.body,
+      icon : data.icon || '/icons/shopping-cart-drug-basket-shop-buy-ecommerce-svgrepo-com.svg',
+      badge: '/icons/web-app-manifest-192x192.png',
+      data : data.data || {}, // Safely default to empty object
+
     };
 
-    event.waitUntil( sw.registration.showNotification(
-      data.title || 'Nuevo Mensaje', options 
-    ), );
-  } 
+    event.waitUntil(
+      sw.registration.showNotification(
+        data.title || 'Nuevo Mensaje', options
+      ),
+    );
+  }
 );
 
 sw.addEventListener(
-  'notificationclick', ( event ) => {
+  'notificationclick', (
+    event
+  ) => {
     event.notification.close();
 
     const {
-      action, notification 
+      action, notification
     } = event;
     const data = notification.data || {};
     let urlToOpen = '/'; // FIX: Default fallback URL
@@ -136,42 +155,54 @@ sw.addEventListener(
       urlToOpen = data.url;
     }
 
-    event.waitUntil( sw.clients
-      .matchAll( {
-        type               : 'window',
-        includeUncontrolled: true,
-      } )
-      .then( ( clientList ) => {
-        const targetUrl = new URL(
-          urlToOpen, self.location.origin 
-        ).href;
-
-        // Find ANY open tab for our app
-        for ( const client of clientList ) {
-          const clientUrlObj = new URL(
-            client.url, self.location.origin 
-          );
-          const targetUrlObj = new URL(
-            targetUrl, self.location.origin 
-          );
-
-          // FIX/UX UPGRADE: If they have our app open at all, focus it and navigate
-          if (
-            clientUrlObj.origin === targetUrlObj.origin
-            && 'focus' in client
-          ) {
-            client.navigate( targetUrl ); // Change the route of the existing tab
-
-            return client.focus(); // Bring it to the front
+    event.waitUntil(
+      sw.clients
+        .matchAll(
+          {
+            type               : 'window',
+            includeUncontrolled: true,
           }
-        }
+        )
+        .then(
+          (
+            clientList
+          ) => {
+            const targetUrl = new URL(
+              urlToOpen, self.location.origin
+            ).href;
 
-        // If no tabs are open, spawn a new one
-        if ( sw.clients.openWindow ) {
-          return sw.clients.openWindow( urlToOpen );
-        }
+            // Find ANY open tab for our app
+            for ( const client of clientList ) {
+              const clientUrlObj = new URL(
+                client.url, self.location.origin
+              );
+              const targetUrlObj = new URL(
+                targetUrl, self.location.origin
+              );
 
-        return null;
-      } ), );
-  } 
+              // FIX/UX UPGRADE: If they have our app open at all, focus it and navigate
+              if (
+                clientUrlObj.origin === targetUrlObj.origin
+            && 'focus' in client
+              ) {
+                client.navigate(
+                  targetUrl
+                ); // Change the route of the existing tab
+
+                return client.focus(); // Bring it to the front
+              }
+            }
+
+            // If no tabs are open, spawn a new one
+            if ( sw.clients.openWindow ) {
+              return sw.clients.openWindow(
+                urlToOpen
+              );
+            }
+
+            return null;
+          }
+        ),
+    );
+  }
 );

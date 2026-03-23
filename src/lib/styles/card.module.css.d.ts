@@ -1,8 +1,4 @@
 declare const styles: {
-  readonly "action": string;
-  readonly "actuacion": string;
-  readonly "actuacionContainer": string;
-  readonly "anotacion": string;
   readonly "button": string;
   readonly "buttonCategoryActive": string;
   readonly "buttonCategoryPasive": string;

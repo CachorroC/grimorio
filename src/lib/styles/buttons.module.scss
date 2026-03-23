@@ -1,36 +1,116 @@
 .button {
-  border: 0.07rem solid var(--outline);
-  box-sizing: border-box;
-  padding: 0.5rem;
-  flex: 1;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-items: stretch;
-  align-items: center;
-  justify-content: space-around;
-  align-content: center;
-  border-radius: var(--shape-corner-full);
-  transition: all 0.3s;
+  /* Base Layout & Styling */
   position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex: 1;
+  flex-flow: column nowrap;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 2vmin;
+  outline: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+
+  @media (600px < width < 1200px) {
+    flex-flow: row nowrap;
+  }
+
+  /* Unified Overlay for Hover/Focus/Active states */
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    opacity: 0;
+    transition: all 0.5s;
+    pointer-events: none;
+  }
+
+  /* Base Child Elements */
+  & > .icon {
+    font-size: 1.1rem;
+  }
+
+  & > .text {
+    font-family: var(--raleway);
+    word-wrap: break-word;
+    word-break: break-all;
+    font-style: var(--label-medium-font-family-style);
+    font-weight: var(--label-medium-font-weight);
+    font-size: var(--label-medium-font-size);
+    letter-spacing: var(--label-medium-tracking);
+    line-height: var(--label-medium-height);
+    text-transform: var(--label-medium-text-transform);
+    text-decoration: var(--label-medium-text-decoration);
+  }
+
+  & > .ButtonTextHelper {
+    display: none;
+    opacity: 0;
+    transition: all 1s;
+  }
+
+  /* Interaction States */
   &:hover {
-    &:before {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      content: '';
+    & > .icon {
+      font-variation-settings:
+        "FILL" 1,
+        "wght" 400,
+        "GRAD" 0,
+        "opsz" 48;
+      color: var(--primary-container);
+    }
+
+    &:after {
       opacity: 0.08;
+      background-color: currentColor;
     }
   }
+
+  &:focus,
+  &:active {
+    &:after {
+      opacity: 0.1;
+      background-color: currentColor;
+    }
+  }
+
+  /* Interaction Overrides */
+  &:hover,
+  &:active {
+    background-color: var(--primary-fixed);
+    box-shadow: var(--dp6);
+    border: 2px solid var(--outline);
+
+    & > span {
+      font-variation-settings:
+        "FILL" 1,
+        "wght" 400,
+        "GRAD" 200,
+        "opsz" 24;
+      color: var(--on-primary-fixed);
+    }
+  }
+
+  /* Modifiers */
   &Edit {
     @extend .button;
     background-color: var(--secondary-container);
     color: var(--on-secondary-container);
   }
+
   &ActiveCategory {
     @extend .button;
-    flex-flow: column nowrap;
     flex: 2;
     background-color: var(--secondary-container);
     color: var(--on-secondary-container);
@@ -38,72 +118,179 @@
 
     & > .icon,
     & > .text {
-      color: var(--on-secondary-container);
+      color: var(--on-surface);
     }
-    &:hover {
-      &:before {
-        opacity: 0.08;
-        background-color: var(--on-secondary-container);
-      }
-    }
-    &:focus,
-    &:active {
-      &:before {
-        opacity: 0.1;
-        background-color: var(--on-secondary-container);
-      }
+
+    &:hover:after,
+    &:focus:after,
+    &:active:after {
+      background-color: var(--on-secondary-container);
     }
   }
+
   &PassiveCategory {
     @extend .button;
-    flex: 1;
-    flex-flow: column nowrap;
     background-color: var(--surface-container-high);
     color: var(--secondary);
     border: 0.02rem solid var(--outline);
+
     & > .icon {
       color: var(--secondary);
     }
+
     & > .text {
       color: var(--on-surface);
     }
-    &:hover {
-      &:before {
-        opacity: 0.08;
-        background-color: var(--on-secondary-container);
+
+    &:hover:after,
+    &:focus:after,
+    &:active:after {
+      background-color: var(--on-secondary-container);
+    }
+  }
+
+  &Forward {
+    @extend .button;
+    padding: 0;
+    flex: 1 1 auto;
+    flex-flow: row nowrap;
+    grid-area: forwardButton;
+    background-color: var(--primary-container);
+    color: var(--on-primary-container);
+
+    & > .icon,
+    & > .text {
+      color: var(--on-primary-container);
+    }
+  }
+
+  &Backwards {
+    @extend .button;
+    padding: 0;
+    flex: 1 1 auto;
+    flex-flow: row nowrap;
+    grid-area: backwardsButton;
+    background-color: var(--primary-container);
+    color: var(--on-primary-container);
+
+    & > .icon,
+    & > .text {
+      color: var(--on-primary-container);
+    }
+  }
+
+  &Drawer {
+    @extend .button;
+    border: none;
+
+    &Closed {
+      @extend .button;
+      border: none;
+      background-color: rgba(0, 0, 0, 0);
+
+      & > .icon,
+      & > .text {
+        filter: drop-shadow(var(--scrim));
+        color: var(--on-surface-variant);
+      }
+
+      &:hover:after,
+      &:focus:after,
+      &:active:after {
+        background-color: var(--surface-variant);
       }
     }
-    &:focus,
-    &:active {
-      &:before {
-        opacity: 0.1;
-        background-color: var(--on-secondary-container);
+
+    &Open {
+      background-color: var(--secondary);
+    }
+  }
+
+  &DrawerMenu {
+    @extend .button;
+    flex: 2 1 auto;
+    grid-area: drawerMenuButton;
+    background-color: var(--secondary);
+    border: none;
+
+    &Closed {
+      @extend .button;
+      border: none;
+      height: 4rem;
+      width: auto;
+      background-color: rgba(0, 0, 0, 0);
+
+      & > .icon,
+      & > .text {
+        filter: drop-shadow(var(--scrim));
+        color: var(--on-surface-variant);
+      }
+
+      &:hover:after,
+      &:focus:after,
+      &:active:after {
+        background-color: var(--surface-variant);
+      }
+    }
+
+    &Open {
+      background-color: var(--secondary);
+      & > .icon {
+        color: var(--on-secondary);
       }
     }
   }
 
-  &Actuacion {
+  &Modal {
     @extend .button;
-    flex: 0 1 auto;
+    background-color: var(--primary-container);
+    color: var(--on-primary-container);
+
+    & > .icon,
+    & > .text {
+      color: var(--on-primary-container);
+    }
+
+    &:hover {
+      background-color: var(--surface-container);
+      box-shadow: var(--dp8);
+
+      &:after {
+        background-color: var(--on-primary);
+      }
+    }
+
+    &:focus,
+    &:active {
+      box-shadow: var(--dp9);
+
+      &:after {
+        background-color: var(--on-primary-container);
+      }
+    }
   }
+
+  &Home {
+    @extend .button;
+    flex: 2 1 auto;
+    grid-area: homeButton;
+    box-shadow: var(--dp2);
+    background-color: var(--primary);
+    color: var(--on-primary);
+
+    & > .icon,
+    & > .text {
+      color: var(--on-primary);
+    }
+  }
+
   &Chip {
     @extend .button;
     height: minmax(2rem, 3rem);
     flex: 0 1 auto;
-    box-sizing: border-box;
-  }
-  &:hover {
-    &:before {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      content: '';
-      top: 0;
-      left: 0;
-      opacity: 0.08;
-    }
   }
 }
+
 .active {
   background-color: var(--tertiary-container);
   color: var(--on-tertiary-container);
@@ -123,6 +310,7 @@
   left: 50%;
   bottom: 30px;
   font-size: 17px;
+
   &.show {
     visibility: visible;
     -webkit-animation:
@@ -175,5 +363,185 @@
   to {
     bottom: 0;
     opacity: 0;
+  }
+}
+
+.searchBarLink,
+.link {
+  /* Merged Base Layout & Styling */
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column wrap;
+  justify-items: stretch;
+  align-items: stretch;
+  justify-content: space-between;
+  align-content: stretch;
+  width: 100%;
+  min-width: 0;
+  max-height: 5rem;
+  padding: 0.5rem;
+  gap: 0.3rem;
+  border-radius: 2vmin;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+
+  /* Base Child Elements */
+  & > .icon {
+    text-align: center;
+    color: var(--on-surface-variant);
+  }
+
+  & > .text {
+    opacity: 1;
+    font-size: 0.7rem;
+    font-variation-settings: "wght" 500;
+    font-style: var(--label-medium-font-family-style);
+    font-weight: var(--label-medium-font-weight);
+    color: var(--on-surface-variant);
+    letter-spacing: var(--label-medium-tracking);
+    line-height: var(--label-medium-height);
+    text-transform: var(--label-medium-text-transform);
+    text-decoration: var(--label-medium-text-decoration);
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .date {
+    grid-area: date;
+    background-color: var(--surface);
+    padding: 0.2rem;
+    color: var(--on-surface);
+    font-family: var(--play-display);
+    border-radius: 2vmin;
+    align-self: center;
+  }
+
+  .sub {
+    color: var(--secondary);
+  }
+
+  /* Modifiers */
+  &Active {
+    @extend .link;
+
+    & > .text {
+      opacity: 1;
+      color: var(--on-surface);
+    }
+
+    & > .icon {
+      background-color: var(--secondary-container);
+      color: var(--on-secondary-container);
+      width: 3.5rem;
+      border-radius: 1rem;
+      padding: 0.2rem 0;
+      box-sizing: border-box;
+    }
+  }
+
+  &Open {
+    @extend .link;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    gap: 0.8rem;
+    padding: 1rem;
+    box-sizing: border-box;
+
+    &Active {
+      @extend .linkOpen;
+      width: 100%;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      gap: 0.8rem;
+      padding: 1rem;
+      box-sizing: border-box;
+      background-color: var(--secondary-container);
+      color: var(--on-secondary-container);
+
+      & > .text {
+        opacity: 1;
+        color: var(--on-secondary-container);
+      }
+
+      & > .icon {
+        width: 3.5rem;
+        border-radius: 1rem;
+        padding: 0.2rem 0;
+        color: var(--on-secondary-container);
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  &NotActive {
+    @extend .link;
+    background-color: var(--surface-container);
+    color: var(--on-surface);
+  }
+
+  &IsActive {
+    @extend .link;
+    background-color: var(--primary);
+    color: var(--on-primary);
+  }
+
+  /* Consolidated hover, focus, and active states */
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    opacity: 0;
+    background-color: var(--on-surface);
+    transition: all 0.5s;
+    pointer-events: none;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    & > .text {
+      opacity: 1;
+    }
+
+    & > .icon {
+      font-variation-settings:
+        "FILL" 1,
+        "wght" 600,
+        "GRAD" 200,
+        "opsz" 40;
+    }
+  }
+
+  &:hover:after {
+    opacity: 0.08;
+  }
+
+  &:focus:after,
+  &:active:after {
+    opacity: 0.1;
+  }
+}
+
+.notActive {
+  @extend .searchBarLink;
+  .date {
+    display: none;
+  }
+}
+
+.isActive {
+  @extend .searchBarLink;
+  .date {
+    display: flex;
   }
 }

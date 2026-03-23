@@ -18,10 +18,14 @@ export async function subscribeUser(
 ) {
   try {
     const client = await clientPromise;
-    const db = client.db( 'Actuaciones' ); // Replace with your DB name
+    const db = client.db(
+      'botany_db'
+    ); // Replace with your DB name
 
     // Upsert ensures we don't create duplicate entries for the same device
-    await db.collection( 'push_subscriptions' )
+    await db.collection(
+      'push_subscriptions'
+    )
       .updateOne(
         {
           endpoint: subscription.endpoint,
@@ -38,14 +42,16 @@ export async function subscribeUser(
         },
       );
 
-    revalidatePath( '/settings' ); // Refresh the UI state if needed
+    revalidatePath(
+      '/settings'
+    ); // Refresh the UI state if needed
 
     return {
       success: true,
     };
   } catch ( error ) {
     console.error(
-      'Failed to save subscription:', error 
+      'Failed to save subscription:', error
     );
 
     return {
@@ -55,23 +61,31 @@ export async function subscribeUser(
   }
 }
 
-export async function unSubscribeUser( userId: string ) {
+export async function unSubscribeUser(
+  userId: string
+) {
   try {
     const client = await clientPromise;
-    const db = client.db( 'Actuaciones' );
+    const db = client.db(
+      'botany_db'
+    );
 
     // Delete all subscriptions tied to this specific userId (deviceId)
-    await db.collection( 'push_subscriptions' )
-      .deleteMany( {
-        userId: userId,
-      } );
+    await db.collection(
+      'push_subscriptions'
+    )
+      .deleteMany(
+        {
+          userId: userId,
+        }
+      );
 
     return {
       success: true,
     };
   } catch ( error ) {
     console.error(
-      'Failed to remove subscription:', error 
+      'Failed to remove subscription:', error
     );
 
     return {
@@ -86,33 +100,21 @@ export async function sendNotification(
   subscription: WebPushSubscription | null,
 ) {
   if ( !subscription ) {
-    throw new Error( 'No subscription available' );
+    throw new Error(
+      'No subscription available'
+    );
   }
 
   try {
     await webpush.sendNotification(
       subscription,
-      JSON.stringify( {
-        icon: '/icons/notification_icon.png',
-        data: {
-          numero        : 0,
-          idProceso     : 0,
-          idRegActuacion: 'sin actuacion',
-          url           : '/Carpetas',
-        },
-        actions: [
-          {
-            action: 'openCarpeta',
-            title : 'Abrir Carpeta',
-          },
-          {
-            action: 'openActuaciones',
-            title : 'Abrir Actuaciones',
-          },
-        ],
-        title: 'Test Notification',
-        body : message,
-      } ),
+      JSON.stringify(
+        {
+          icon : '/icons/web-app-manifest-192x192.png',
+          title: 'Test Notification',
+          body : message,
+        }
+      ),
     );
 
     return {
@@ -120,7 +122,7 @@ export async function sendNotification(
     };
   } catch ( error ) {
     console.error(
-      'Error sending push notification:', error 
+      'Error sending push notification:', error
     );
 
     return {

@@ -1,57 +1,24 @@
 'use client';
-import { Box,
-  Card,
-  CardContent,
-  CardMedia,
-  Typography,
-  Chip,
-  Grid,
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
-  List,
-  ListItem,
-  ListItemText,
-  ListItemIcon,
-  Divider,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableRow,
-  Paper,
-  Button, } from '@mui/material';
+
+import { Box, CardContent, Typography, Chip, Grid, Accordion, AccordionSummary,
+  AccordionDetails, List, ListItem, ListItemText, ListItemIcon, Divider,
+  Table, TableBody, TableCell, TableContainer, TableRow, Paper, Button } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import CircleIcon from '@mui/icons-material/Circle';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import { EspecimenType } from '#@/lib/types/especimenTypes';
 import { Dispatch, SetStateAction } from 'react';
-
-// --- Types ---
+import { useAccordionScroll } from '#@/app/context/AcordionScrollContext';
 
 interface PlantCookbookProps {
   plant        : EspecimenType;
   setIsEditing?: Dispatch<SetStateAction<boolean>>;
 }
 
-// --- Helper Component for Tags ---
 const TagSection = (
   {
-    title,
-    tags,
-    color,
-  }: {
-    title: string;
-    tags : string[];
-    color:
-    | 'default'
-    | 'primary'
-    | 'secondary'
-    | 'error'
-    | 'info'
-    | 'success'
-    | 'warning';
-  }
+    title, tags, color
+  }: { title: string; tags: string[]; color: 'default' | 'primary' | 'secondary' | 'error' | 'info' | 'success' | 'warning'; }
 ) => {
   if ( !tags || tags.length === 0 ) {
     return null;
@@ -76,13 +43,7 @@ const TagSection = (
             tag, index
           ) => {
             return (
-              <Chip
-                key={index}
-                label={tag}
-                size="small"
-                color={color}
-                variant="outlined"
-              />
+              <Chip key={index} label={tag} size="small" color={color} variant="outlined" />
             );
           }
         )}
@@ -91,17 +52,18 @@ const TagSection = (
   );
 };
 
-// --- Main Component ---
 export default function PlantCookbook(
   {
     plant, setIsEditing
   }: PlantCookbookProps
 ) {
+  const {
+    expanded, handleAccordionChange
+  } = useAccordionScroll();
+
   return (
     <>
       <Grid container spacing={2}>
-
-
         <Grid sx={{
           xs: 12,
           md: 7
@@ -109,7 +71,6 @@ export default function PlantCookbook(
         >
           <CardContent
             sx={{
-              // Removed height: '100%' here as well
               display       : 'flex',
               flexDirection : 'column',
               justifyContent: 'center',
@@ -119,14 +80,10 @@ export default function PlantCookbook(
               },
             }}
           >
-            <Typography
-              variant="h3"
-              component="h1"
-              gutterBottom
-              sx={{
-                fontStyle : 'italic',
-                fontWeight: 'bold'
-              }}
+            <Typography variant="h3" component="h1" gutterBottom sx={{
+              fontStyle : 'italic',
+              fontWeight: 'bold'
+            }}
             >
               {plant.nombreCientifico}
             </Typography>
@@ -142,32 +99,14 @@ export default function PlantCookbook(
             }}
             />
 
-            {/* Properties Tags */}
-            <TagSection
-              title="Propiedades Medicinales"
-              tags={plant.propiedadesMedicinales}
-              color="success"
-            />
-            <TagSection
-              title="Males Físicos"
-              tags={plant.malesFisicos}
-              color="error"
-            />
-            <TagSection
-              title="Males Emocionales"
-              tags={plant.malesEmocionales}
-              color="info"
-            />
-            <TagSection
-              title="Correspondencias Energéticas"
-              tags={plant.correspondenciasEnergeticas}
-              color="secondary"
-            />
+            <TagSection title="Propiedades Medicinales" tags={plant.propiedadesMedicinales} color="success" />
+            <TagSection title="Males Físicos" tags={plant.malesFisicos} color="error" />
+            <TagSection title="Males Emocionales" tags={plant.malesEmocionales} color="info" />
+            <TagSection title="Correspondencias Energéticas" tags={plant.correspondenciasEnergeticas} color="secondary" />
           </CardContent>
         </Grid>
       </Grid>
 
-      {/* Taxonomy & Cookbook Sections */}
       <CardContent sx={{
         flexGrow: 1,
         px      : 0,
@@ -176,21 +115,16 @@ export default function PlantCookbook(
       }}
       >
         <Grid container spacing={4}>
-          {/* Taxonomy Section */}
           <Grid sx={{
             xs: 12,
             md: 4
           }}
           >
-            <Typography
-              variant="h5"
-              component="h2"
-              gutterBottom
-              sx={{
-                display   : 'flex',
-                alignItems: 'center',
-                gap       : 1
-              }}
+            <Typography variant="h5" component="h2" gutterBottom sx={{
+              display   : 'flex',
+              alignItems: 'center',
+              gap       : 1
+            }}
             >
               <InfoOutlinedIcon /> Taxonomía
             </Typography>
@@ -221,13 +155,10 @@ export default function PlantCookbook(
 
                         return (
                           <TableRow key={key}>
-                            <TableCell
-                              component="th"
-                              scope="row"
-                              sx={{
-                                fontWeight   : 'bold',
-                                textTransform: 'capitalize',
-                              }}
+                            <TableCell component="th" scope="row" sx={{
+                              fontWeight   : 'bold',
+                              textTransform: 'capitalize'
+                            }}
                             >
                               {key}
                             </TableCell>
@@ -241,34 +172,38 @@ export default function PlantCookbook(
             </TableContainer>
           </Grid>
 
-          {/* Cookbook / Preparations Section */}
           <Grid sx={{
             xs: 12,
             md: 8
           }}
           >
-            <Typography
-              variant="h5"
-              component="h2"
-              gutterBottom
-              sx={{
-                fontWeight  : 'bold',
-                borderBottom: '2px solid',
-                borderColor : 'primary.main',
-                pb          : 1,
-              }}
+            <Typography variant="h5" component="h2" gutterBottom sx={{
+              fontWeight  : 'bold',
+              borderBottom: '2px solid',
+              borderColor : 'primary.main',
+              pb          : 1
+            }}
             >
               Recetario / Preparaciones
             </Typography>
 
             {plant.preparaciones.map(
               (
-                prep, index
+                prep
               ) => {
+              // Create a unique ID for this specific accordion
+                const panelId = `${ plant.nombreCientifico }-prep-${ prep.usoTerapeutico }`;
+
                 return (
                   <Accordion
-                    key={index}
+                    key={panelId}
                     disableGutters
+                    // Check against the unique panel ID
+                    expanded={expanded === panelId}
+                    // Pass both the unique panel ID and the parent Card ID
+                    onChange={handleAccordionChange(
+                      panelId, plant.nombreCientifico
+                    )}
                     elevation={0}
                     sx={{
                       '&:before': {
@@ -280,18 +215,14 @@ export default function PlantCookbook(
                       borderRadius: 1,
                     }}
                   >
-                    <AccordionSummary
-                      expandIcon={<ExpandMoreIcon />}
-                      sx={{
-                        backgroundColor: 'action.hover'
-                      }}
+                    <AccordionSummary expandIcon={<ExpandMoreIcon />} sx={{
+                      backgroundColor: 'action.hover'
+                    }}
                     >
-                      <Typography
-                        variant="subtitle1"
-                        sx={{
-                          fontWeight   : 'bold',
-                          textTransform: 'capitalize',
-                        }}
+                      <Typography variant="subtitle1" sx={{
+                        fontWeight   : 'bold',
+                        textTransform: 'capitalize'
+                      }}
                       >
                         Para: {prep.usoTerapeutico}
                       </Typography>
@@ -299,27 +230,21 @@ export default function PlantCookbook(
 
                     <AccordionDetails>
                       <Grid container spacing={3}>
-                        {/* Ingredients */}
                         <Grid sx={{
                           xs: 12,
                           sm: 5
                         }}
                         >
-                          <Typography variant="h6" gutterBottom color="primary">
-                            Ingredientes
-                          </Typography>
+                          <Typography variant="h6" gutterBottom color="primary">Ingredientes</Typography>
                           <List dense disablePadding>
                             {prep.ingredientes.map(
                               (
                                 ing, i
                               ) => {
                                 return (
-                                  <ListItem
-                                    key={i}
-                                    disableGutters
-                                    sx={{
-                                      alignItems: 'flex-start'
-                                    }}
+                                  <ListItem key={i} disableGutters sx={{
+                                    alignItems: 'flex-start'
+                                  }}
                                   >
                                     <ListItemIcon sx={{
                                       minWidth: 24,
@@ -336,7 +261,7 @@ export default function PlantCookbook(
                                       secondary={ing.cantidad}
                                       primaryTypographyProps={{
                                         variant   : 'body2',
-                                        fontWeight: 'medium',
+                                        fontWeight: 'medium'
                                       }}
                                     />
                                   </ListItem>
@@ -346,15 +271,12 @@ export default function PlantCookbook(
                           </List>
                         </Grid>
 
-                        {/* Steps */}
                         <Grid sx={{
                           xs: 12,
                           sm: 7
                         }}
                         >
-                          <Typography variant="h6" gutterBottom color="primary">
-                            Preparación
-                          </Typography>
+                          <Typography variant="h6" gutterBottom color="primary">Preparación</Typography>
                           <List disablePadding>
                             {prep.pasos.map(
                               (
@@ -364,26 +286,21 @@ export default function PlantCookbook(
                                 ], i
                               ) => {
                                 return (
-                                  <ListItem
-                                    key={i}
-                                    disableGutters
-                                    alignItems="flex-start"
-                                  >
-                                    <Box
-                                      sx={{
-                                        display        : 'flex',
-                                        alignItems     : 'center',
-                                        justifyContent : 'center',
-                                        minWidth       : 24,
-                                        height         : 24,
-                                        borderRadius   : '50%',
-                                        backgroundColor: 'primary.main',
-                                        color          : 'primary.contrastText',
-                                        fontSize       : '0.875rem',
-                                        fontWeight     : 'bold',
-                                        mr             : 2,
-                                        mt             : 0.5,
-                                      }}
+                                  <ListItem key={i} disableGutters alignItems="flex-start">
+                                    <Box sx={{
+                                      display        : 'flex',
+                                      alignItems     : 'center',
+                                      justifyContent : 'center',
+                                      minWidth       : 24,
+                                      height         : 24,
+                                      borderRadius   : '50%',
+                                      backgroundColor: 'primary.main',
+                                      color          : 'primary.contrastText',
+                                      fontSize       : '0.875rem',
+                                      fontWeight     : 'bold',
+                                      mr             : 2,
+                                      mt             : 0.5
+                                    }}
                                     >
                                       {stepNumber}
                                     </Box>
@@ -404,16 +321,14 @@ export default function PlantCookbook(
         </Grid>
       </CardContent>
 
-      <Button onClick={ () => {
-        if ( setIsEditing ) {
-          setIsEditing(
-            (
-              e
-            ) => {
-              return !e;
-            }
-          );
-        }
+      <Button onClick={() => {
+        return setIsEditing?.(
+          (
+            e
+          ) => {
+            return !e;
+          }
+        );
       }}
       />
     </>

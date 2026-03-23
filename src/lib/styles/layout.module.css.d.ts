@@ -1,28 +1,10 @@
 declare const styles: {
-  readonly "button": string;
-  readonly "buttonActiveCategory": string;
-  readonly "buttonActuacion": string;
-  readonly "buttonBackwards": string;
-  readonly "buttonChip": string;
-  readonly "buttonDrawer": string;
-  readonly "buttonDrawerClosed": string;
-  readonly "buttonDrawerOpen": string;
-  readonly "buttonEdit": string;
-  readonly "buttonForward": string;
-  readonly "buttonHome": string;
-  readonly "buttonModal": string;
-  readonly "buttonPassiveCategory": string;
   readonly "complementaryContent": string;
   readonly "container": string;
   readonly "divission": string;
   readonly "gridContainer": string;
   readonly "header": string;
-  readonly "icon": string;
   readonly "label": string;
-  readonly "link": string;
-  readonly "linkActive": string;
-  readonly "linkOpen": string;
-  readonly "linkOpenActive": string;
   readonly "loader": string;
   readonly "main": string;
   readonly "mainContent": string;
@@ -38,7 +20,6 @@ declare const styles: {
   readonly "segmentRow": string;
   readonly "segmentRowWrap": string;
   readonly "spin": string;
-  readonly "text": string;
   readonly "title": string;
   readonly "titleInput": string;
 };

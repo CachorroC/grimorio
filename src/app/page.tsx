@@ -7,7 +7,7 @@ import layout from '#@/lib/styles/layout.module.css';
 
 export default function Page() {
   return (
-    <>
+    <div className={layout.main}>
       <div className={layout.mainContent}>
         <h1 className={ typography.displayLarge }>Grimorio Nativo</h1>
       </div>
@@ -15,6 +15,6 @@ export default function Page() {
         <PushNotificationManager />
         <NotificationToggle />
         <InstallPrompt /></div>
-    </>
+    </div>
   );
 }

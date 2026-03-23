@@ -7,6 +7,7 @@ import EspecimenForm from './form/especimenForm';
 import PlantCookbook from './display/plantCookbook';
 import { EspecimenType } from '../types/especimenTypes';
 import Link from 'next/link';
+import { useAccordionScroll } from '#@/app/context/AcordionScrollContext';
 
 export default function SpecimenEditSelection(
   {
@@ -15,16 +16,18 @@ export default function SpecimenEditSelection(
   }: {
     plantData    : EspecimenType;
     isStandalone?: boolean;
-  }
+  } 
 ) {
   const [
     isEditing,
     setIsEditing
   ] = useState(
-    false
+    false 
   );
-  const defaultImage
-    = 'https://via.placeholder.com/400x300?text=No+Image+Available';
+  const {
+    cardRefs 
+  } = useAccordionScroll();
+  const defaultImage = 'https://via.placeholder.com/400x300?text=No+Image+Available';
 
   return (
     <Card
@@ -36,19 +39,24 @@ export default function SpecimenEditSelection(
         borderRadius : 2,
         containerType: 'inline-size',
         containerName: 'specimenCard',
-        // 1. Constrain the total height of the card so it doesn't grow infinitely off-screen
         maxHeight    : isStandalone
           ? '85vh'
           : 'none',
         display      : 'flex',
         flexDirection: 'column',
       }}
+      ref={(
+        el: HTMLDivElement | null 
+      ) => {
+        if ( el ) {
+          cardRefs.current[ plantData.nombreCientifico ] = el;
+        }
+      }}
     >
       <Box
         sx={{
           display                                     : 'flex',
           flexDirection                               : 'column',
-          // 2. Prevent this wrapper from overflowing the card
           flexGrow                                    : 1,
           overflow                                    : 'hidden',
           '@container specimenCard (min-width: 800px)': {
@@ -56,11 +64,9 @@ export default function SpecimenEditSelection(
           },
         }}
       >
-        {/* --- LEFT COLUMN: IMAGE --- */}
         <Box
           sx={{
             width                                       : '100%',
-            // Optional: prevent the image side from scrolling if the image is tall
             overflow                                    : 'hidden',
             '@container specimenCard (min-width: 800px)': {
               width: '41.66%',
@@ -81,15 +87,12 @@ export default function SpecimenEditSelection(
           />
         </Box>
 
-        {/* --- RIGHT COLUMN: DATA --- */}
         <Box
           sx={{
             width                                       : '100%',
             display                                     : 'flex',
             flexDirection                               : 'column',
-            // 3. THE FIX: Tell this specific column to scroll if content is too long
             overflowY                                   : 'auto',
-            // 4. Add some padding so the scrollbar doesn't hug the text too tightly
             p                                           : 2,
             '@container specimenCard (min-width: 800px)': {
               width: '58.33%',
@@ -98,35 +101,29 @@ export default function SpecimenEditSelection(
         >
           {isEditing
             ? (
-                <EspecimenForm
-                  initialData={plantData}
-                  setIsEditing={setIsEditing}
-                />
+                <EspecimenForm initialData={plantData} setIsEditing={setIsEditing} />
               )
             : (
-                <PlantCookbook
-                  plant={plantData}
-                  setIsEditing={setIsEditing}
-                />
+                <PlantCookbook plant={plantData} setIsEditing={setIsEditing} />
               )}
 
           <Button
             variant="contained"
             color="secondary"
             onClick={() => {
-              setIsEditing(
+              return setIsEditing(
                 (
-                  edit
+                  edit 
                 ) => {
                   return !edit;
-                }
+                } 
               );
             }}
             endIcon={<SendIcon />}
             sx={{
-              mt       : 'auto', // Pushes the button to the bottom if there's extra space
+              mt       : 'auto',
               mb       : 2,
-              alignSelf: 'flex-start'
+              alignSelf: 'flex-start' 
             }}
           >
             Send

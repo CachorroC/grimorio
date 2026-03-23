@@ -1,24 +1,26 @@
 'use client';
+
 import { ReactNode } from 'react';
 import Masonry from '@mui/lab/Masonry';
-import { useMediaQuery } from '@mui/material';
+import { Box, useMediaQuery } from '@mui/material';
+import { useAccordionScroll } from '../context/AcordionScrollContext';
 
 export default function MasonryHolder(
   {
-    children
-  }: { children: NonNullable<ReactNode> }
+    children 
+  }: { children: NonNullable<ReactNode> } 
 ) {
-
-  // Custom media queries to target your specific width requirements
   const isLarge = useMediaQuery(
-    '(min-width:1200px)'
+    '(min-width:1200px)' 
   );
   const isSmall = useMediaQuery(
-    '(max-width:1099px)'
+    '(max-width:1099px)' 
   );
 
-  // Determine column count based on the active query.
-  // It defaults to 3 for viewports between 1100px and 1199px.
+  const {
+    mainScrollRef 
+  } = useAccordionScroll();
+
   let columns = 3;
 
   if ( isLarge ) {
@@ -28,8 +30,18 @@ export default function MasonryHolder(
   }
 
   return (
-    <Masonry columns={columns} spacing={2}>
-      {children}
-    </Masonry>
+    <Box
+      ref={mainScrollRef}
+      sx={{
+        // CRITICAL: These properties ensure the Box is the actual scrollable area.
+        // If your scrolling is handled by a parent div elsewhere, remove these two lines.
+        height   : '100vh',
+        overflowY: 'auto'
+      }}
+    >
+      <Masonry columns={columns} spacing={2}>
+        {children}
+      </Masonry>
+    </Box>
   );
 }

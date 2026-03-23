@@ -1,5 +1,5 @@
 'use client';
-import searchbar from 'components/layout/search/searchbar.module.css';
+import searchbar from '#@/lib/styles/searchbar.module.css';
 import { useState } from 'react';
 import typography from 'styles/fonts/typography.module.css';
 

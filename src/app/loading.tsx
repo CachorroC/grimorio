@@ -14,9 +14,6 @@ export default function Loading() {
               <th>cargando</th>
               <th>cargando</th>
               <th>cargando</th>
-              <th>Actuaciones</th>
-              <th>Revisado</th>
-              <th>expediente</th>
             </tr>
           </thead>
           <tbody>
@@ -33,26 +30,8 @@ export default function Loading() {
               <td>
                 <Loader />
               </td>
-              <td>
-                <Loader />
-              </td>
-              <td>
-                <Loader />
-              </td>
-              <td>
-                <Loader />
-              </td>
             </tr>
             <tr>
-              <td>
-                <Loader />
-              </td>
-              <td>
-                <Loader />
-              </td>
-              <td>
-                <Loader />
-              </td>
               <td>
                 <Loader />
               </td>
