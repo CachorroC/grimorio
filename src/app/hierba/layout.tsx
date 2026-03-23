@@ -19,27 +19,24 @@ import { ReactNode, Suspense } from 'react';
 export default function LayoutProcesosMain(
   {
     children,
-    top,
     right,
   }: {
     children: ReactNode;
-    top     : ReactNode;
     right   : ReactNode;
   }
 ) {
   return (
-    <Suspense fallback={<Loader />}>
-      {/* <LayoutAsyncProcess> */ }
-      <Suspense fallback={ <Loader /> }>
-        <div className={styles.top}>{top}</div>
-      </Suspense>
+    <div className={styles.main}>
       <Suspense fallback={<Loader />}>
-        <div className={styles.left}>{children}</div>
+
+        <Suspense fallback={<Loader />}>
+          <div className={styles.mainContent}>{children}</div>
+        </Suspense>
+        <Suspense fallback={<Loader />}>
+          <div className={styles.complementaryContent}>{right}</div>
+        </Suspense>
+        {/* </LayoutAsyncProcess> */}
       </Suspense>
-      <Suspense fallback={<Loader />}>
-        <div className={styles.right}>{right}</div>
-      </Suspense>
-      {/* </LayoutAsyncProcess> */}
-    </Suspense>
+    </div>
   );
 }

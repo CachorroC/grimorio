@@ -4,8 +4,8 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name                       : 'Grimorio Nativo',
     short_name                 : 'Grimorio',
-    background_color           : '#202b3a',
-    theme_color                : '#7aa4dd',
+    background_color           : '#9ce39e',
+    theme_color                : '#286b33',
     prefer_related_applications: false,
     display                    : 'standalone',
     start_url                  : '/',
@@ -17,8 +17,8 @@ export default function manifest(): MetadataRoute.Manifest {
     ],
     shortcuts: [
       {
-        name : 'Carpetas',
-        url  : '/Carpetas',
+        name : 'Hierbas',
+        url  : '/hierbas',
         icons: [
           {
             src    : '/icon.svg',
@@ -45,25 +45,29 @@ export default function manifest(): MetadataRoute.Manifest {
         sizes  : '150x150',
         purpose: 'any',
       },
-
       {
         src    : '/icon1.png',
         sizes  : '512x512',
         type   : 'image/png',
         purpose: 'maskable',
       },
-      {
-        src    : '/icon7.png',
-        sizes  : '512x512',
-        type   : 'image/png',
-        purpose: 'maskable',
-      },
-
       {
         src    : '/icon1.png',
         sizes  : '512x512',
         type   : 'image/png',
         purpose: 'any',
+      },
+      {
+        src    : '/icons/web-app-manifest-192x192.png',
+        sizes  : '192x192',
+        type   : 'image/png',
+        purpose: 'maskable',
+      },
+      {
+        src    : '/icons/web-app-manifest-512x512.png',
+        sizes  : '512x512',
+        type   : 'image/png',
+        purpose: 'maskable',
       },
     ],
   };

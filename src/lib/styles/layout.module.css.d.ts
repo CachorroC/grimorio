@@ -12,22 +12,23 @@ declare const styles: {
   readonly "buttonHome": string;
   readonly "buttonModal": string;
   readonly "buttonPassiveCategory": string;
+  readonly "complementaryContent": string;
   readonly "container": string;
   readonly "divission": string;
   readonly "gridContainer": string;
   readonly "header": string;
   readonly "icon": string;
   readonly "label": string;
-  readonly "left": string;
-  readonly "leftColumn": string;
-  readonly "leftGrid": string;
   readonly "link": string;
   readonly "linkActive": string;
   readonly "linkOpen": string;
   readonly "linkOpenActive": string;
   readonly "loader": string;
+  readonly "main": string;
+  readonly "mainContent": string;
+  readonly "mainContentColumn": string;
+  readonly "mainContentGrid": string;
   readonly "nav": string;
-  readonly "right": string;
   readonly "section": string;
   readonly "sectionColumn": string;
   readonly "sectionRow": string;
@@ -40,7 +41,6 @@ declare const styles: {
   readonly "text": string;
   readonly "title": string;
   readonly "titleInput": string;
-  readonly "top": string;
 };
 export = styles;
 

@@ -6,10 +6,7 @@ import { Loader } from '#@/lib/components/Loader/main-loader';
 export default function Loading() {
   return (
     <>
-      <div className={styles.top}>
-        <pre>cargando</pre>
-      </div>
-      <div className={styles.leftGrid}>
+      <div className={styles.mainContent}>
         <table>
           <thead>
             <tr>
@@ -256,7 +253,7 @@ export default function Loading() {
           </tbody>
         </table>
       </div>
-      <div className={styles.right}>
+      <div className={styles.complementaryContent}>
         <h4 className={typography.titleLarge}>Cargando</h4>
         <section className={styles.sectionColumn}>
           <Loader />
