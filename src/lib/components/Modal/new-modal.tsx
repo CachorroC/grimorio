@@ -1,13 +1,13 @@
 'use client';
-import { useModalContext } from '#@/app/context/modal-context';
+import { useModalContext } from '#@/app/context/ModalContext';
 import styles from '#@/lib/styles/modal.module.css';
 import { ReactNode } from 'react';
 
 export default function NewModal( {
-  children 
+  children
 }: { children: ReactNode } ) {
   const {
-    isModalOpen, setIsModalOpen 
+    isModalOpen, setIsModalOpen
   } = useModalContext();
 
   return (

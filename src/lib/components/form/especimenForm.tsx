@@ -1,11 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
-import {  ChangeEvent, Dispatch, SetStateAction, SubmitEventHandler, useState } from 'react';
+import { ChangeEvent, Dispatch, SetStateAction, SubmitEventHandler, useState } from 'react';
 import styles from '#@/lib/styles/form.module.css';
 import { EspecimenType, IngredientesType, PreparacionType, Taxon } from '#@/lib/types/especimenTypes';
-import { displayLarge,  } from '#@/lib/styles/fonts/typography.module.css';
+import { displayLarge } from '#@/lib/styles/fonts/typography.module.css';
 import { upsertSpecimen } from '#@/app/actions/specimen';
+
 // Initial empty state matching the schema
 const initialState: EspecimenType = {
   nombreCientifico: '',
@@ -17,6 +18,9 @@ const initialState: EspecimenType = {
     ''
   ],
   propiedadesMedicinales: [
+    ''
+  ],
+  esenciasFlorales: [
     ''
   ],
   correspondenciasEnergeticas: [
@@ -47,7 +51,7 @@ const initialState: EspecimenType = {
 export default function EspecimenForm(
   {
     initialData, setIsEditing
-  }: { initialData?: EspecimenType;  setIsEditing?: Dispatch<SetStateAction<boolean>>}
+  }: { initialData?: EspecimenType; setIsEditing?: Dispatch<SetStateAction<boolean>>}
 ) {
   const [
     formData,
@@ -214,9 +218,10 @@ export default function EspecimenForm(
   // --- PREPARACIONES HANDLERS ---
   const addPreparacion = () => {
     const newPrep: PreparacionType = {
-      usoTerapeutico: '',
-      ingredientes  : [],
-      pasos         : []
+      usoTerapeutico   : '',
+      formaDeAplicacion: '',
+      ingredientes     : [],
+      pasos            : []
     };
     setFormData(
       (
@@ -255,7 +260,7 @@ export default function EspecimenForm(
   };
 
   const updatePreparacionField = (
-    prepIndex: number, value: string
+    prepIndex: number, field: keyof Pick<PreparacionType, 'usoTerapeutico' | 'formaDeAplicacion'>, value: string
   ) => {
     setFormData(
       (
@@ -266,7 +271,7 @@ export default function EspecimenForm(
         ];
         newPreps[ prepIndex ] = {
           ...newPreps[ prepIndex ],
-          usoTerapeutico: value
+          [ field ]: value
         };
 
         return {
@@ -453,7 +458,6 @@ export default function EspecimenForm(
   };
 
   // --- SUBMIT ---
-  // --- SUBMIT ---
   const handleSubmit: SubmitEventHandler<HTMLFormElement> = async (
     e
   ) => {
@@ -470,6 +474,13 @@ export default function EspecimenForm(
         }
       ),
       partesUtiles: formData.partesUtiles.filter(
+        (
+          val
+        ) => {
+          return val.trim() !== '';
+        }
+      ),
+      esenciasFlorales: formData.esenciasFlorales.filter(
         (
           val
         ) => {
@@ -538,6 +549,7 @@ export default function EspecimenForm(
             // Ensure arrays are initialized even if DB returns null/undefined
             nombresComunes             : savedData.nombresComunes || [],
             partesUtiles               : savedData.partesUtiles || [],
+            esenciasFlorales           : savedData.esenciasFlorales || [],
             propiedadesMedicinales     : savedData.propiedadesMedicinales || [],
             correspondenciasEnergeticas: savedData.correspondenciasEnergeticas || [],
             malesEmocionales           : savedData.malesEmocionales || [],
@@ -648,42 +660,40 @@ export default function EspecimenForm(
             className={styles.input}
             value={formData.nombreCientifico}
             onChange={ handleInputChange}
-
-
             required
           />
           <label className={styles.label}>URL de la imagen</label>
         </div>
         <input name="imageUrl" className={styles.input} value={formData.imageUrl ?? ''} onChange={handleInputChange} />
-
       </div>
-      { renderStringArrayInput(
+
+      {renderStringArrayInput(
         'Nombres Comunes',
         'nombresComunes'
       )}
-      {
-        renderStringArrayInput(
-          'Partes utiles',
-          'partesUtiles'
-        )
-      }
-
+      {renderStringArrayInput(
+        'Partes Útiles',
+        'partesUtiles'
+      )}
       {renderStringArrayInput(
         'Propiedades Medicinales',
         'propiedadesMedicinales'
       )}
-      {/* Note: Using exact spelling from your schema: correspondenciasEnergeticas */}
       {renderStringArrayInput(
         'Correspondencias Energéticas',
         'correspondenciasEnergeticas'
       )}
       {renderStringArrayInput(
-        'Males Emocionales',
+        'Qué males emocionales cura',
         'malesEmocionales'
       )}
       {renderStringArrayInput(
-        'Males Físicos',
+        'Que males físicos cura',
         'malesFisicos'
+      )}
+      {renderStringArrayInput(
+        'Esencias Florales',
+        'esenciasFlorales'
       )}
 
       <div className={styles.section}>
@@ -790,10 +800,27 @@ export default function EspecimenForm(
                       e
                     ) => {
                       return updatePreparacionField(
-                        prepIndex, e.target.value
+                        prepIndex, 'usoTerapeutico', e.target.value
                       );
                     }}
                     placeholder="Ej. Para el dolor de estómago"
+                  />
+                </div>
+
+                <div className={styles.inputGroup}>
+                  <label className={styles.label}>Forma de Aplicación</label>
+                  <input
+                    type="text"
+                    className={styles.input}
+                    value={prep.formaDeAplicacion || ''}
+                    onChange={(
+                      e
+                    ) => {
+                      return updatePreparacionField(
+                        prepIndex, 'formaDeAplicacion', e.target.value
+                      );
+                    }}
+                    placeholder="Ej. Cataplasma, Infusión, Tintura..."
                   />
                 </div>
 

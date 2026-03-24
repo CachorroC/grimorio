@@ -10,23 +10,24 @@ import { josefina,
   raleway, } from '#@/lib/styles/fonts';
 import { Loader } from '#@/lib/components/Loader/main-loader';
 import PushManagerComponent from '#@/lib/components/PushManager';
-import { ModalProvider } from './context/modal-context';
+import { ModalProvider } from './context/ModalContext';
 import { NavigationContextProvider } from './context/navigation-context';
 import { PushNotificationProvider } from './context/pushNotificationContext';
 import { SearchProvider } from './context/search-context';
 import layout from '#@/lib/styles/layout.module.css';
 import { NavBar } from '#@/lib/components/layout/NavBar';
-import { MainProvider } from './context/main-context';
 import { CssBaseline,
   InitColorSchemeScript,
   ThemeProvider, } from '@mui/material';
 // This is MUI's official SSR cache provider for Next.js App Router
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import theme from './theme';
+import EspecimenModel from '#@/lib/models/especimenModel';
+import { EspecimenProvider } from './context/EspecimenContext';
 
 
 const hostname =  process.env.NODE_ENV === 'production'
-  ? 'https://grimorio.suarez-ramirez.com'
+  ? 'https://compendio.suarez-ramirez.com'
   : 'https://beta.rsasesorjuridico.com';
 
 export const metadata: Metadata = {
@@ -102,6 +103,20 @@ export const viewport: Viewport = {
   ],
 };
 
+async function ServerRequestHerbsContext(
+  {
+    children
+  }: {children: ReactNode}
+) {
+  const plants = await EspecimenModel.getPlantasMedicinales();
+
+  return (
+    <EspecimenProvider initialEspecimens={ plants}>
+      { children }
+    </EspecimenProvider>
+  );
+}
+
 export default function RootLayout(
   {
     children,
@@ -118,30 +133,35 @@ export default function RootLayout(
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <CssBaseline />
-            <MainProvider>
-              <PushNotificationProvider>
-                <NavigationContextProvider>
-                  <SearchProvider>
-                    <ModalProvider>
-                      <PushManagerComponent />
-                      <div className={layout.container}>
-                        <Suspense
-                          fallback={
-                            <nav>
-                              Cargando menú... <Loader />
-                            </nav>
-                          }
-                        >
-                          <NavBar />
-                        </Suspense>
-                        {children}
-                        {modal}
-                      </div>
-                    </ModalProvider>
-                  </SearchProvider>
-                </NavigationContextProvider>
-              </PushNotificationProvider>
-            </MainProvider>
+            <Suspense fallback={<Loader />}>
+              <ServerRequestHerbsContext>
+                <SearchProvider>
+                  <PushNotificationProvider>
+                    <NavigationContextProvider>
+                      <SearchProvider>
+                        <ModalProvider>
+                          <PushManagerComponent />
+                          <div className={layout.container}>
+                            <Suspense
+                              fallback={
+                                <nav>
+                                  Cargando menú... <Loader />
+                                </nav>
+                              }
+                            >
+                              <NavBar />
+                            </Suspense>
+                            {children}
+                            {modal}
+                          </div>
+                        </ModalProvider>
+                      </SearchProvider>
+
+                    </NavigationContextProvider>
+                  </PushNotificationProvider>
+                </SearchProvider>
+              </ServerRequestHerbsContext>
+            </Suspense>
           </ThemeProvider>
         </AppRouterCacheProvider>
         {/*  <Script

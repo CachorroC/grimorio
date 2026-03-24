@@ -28,7 +28,7 @@ export const NavBar = () => {
         textLabel={'Nueva Hierba en el Grimorio'}
         hrefLabel={'/hierba/nueva' as Route}
       />
-      <NavLink iconLabel={ 'potted_plant' } textLabel={ 'Hierbas del grimorio' } hrefLabel={ '/hierbas' } />
+      <NavLink iconLabel={ 'potted_plant' } textLabel={ 'Hierbas del compendio' } hrefLabel={ '/hierbas' } />
       <DrawerMenuButton />
       {isNavOpen && (
         <Suspense fallback={<Loader />}>
@@ -40,7 +40,7 @@ export const NavBar = () => {
               textLabel={'Nueva Hierba en el Grimorio'}
               hrefLabel={'/hierba/nueva' as Route}
             />
-            <NavLink iconLabel={ 'potted_plant' } textLabel={ 'Hierbas del grimorio' } hrefLabel={ '/hierbas' } />
+            <NavLink iconLabel={ 'potted_plant' } textLabel={ 'Hierbas del compendio' } hrefLabel={ '/hierbas' } />
           </Drawer>
         </Suspense>
       )}

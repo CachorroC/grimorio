@@ -1,9 +1,9 @@
 services:
-  grimorio:
-    image: grimorio
-    hostname: grimorio
+  compendio:
+    image: compendio
+    hostname: compendio
     restart: always
-    container_name: grimorio
+    container_name: compendio
     build:
       context: ./
       dockerfile: Dockerfile

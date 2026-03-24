@@ -1,6 +1,6 @@
 'use client';
 
-import { useModalContext } from '#@/app/context/modal-context';
+import { useModalContext } from '#@/app/context/ModalContext';
 import styles from '#@/lib/styles/modal.module.css';
 import { usePathname, useRouter } from 'next/navigation';
 import { MouseEventHandler,
@@ -10,12 +10,12 @@ import { MouseEventHandler,
   useRef, } from 'react';
 
 export function Modal( {
-  children 
+  children
 }: { children: ReactNode } ) {
   const pathname = usePathname();
 
   const {
-    setIsModalOpen 
+    setIsModalOpen
   } = useModalContext();
 
   const overlay = useRef( null );
@@ -32,7 +32,7 @@ export function Modal( {
     }, [
       router,
       setIsModalOpen
-    ] 
+    ]
   );
 
   const onBackspace = useCallback(
@@ -43,7 +43,7 @@ export function Modal( {
     }, [
       router,
       setIsModalOpen
-    ] 
+    ]
   );
 
   const onEnter = useCallback(
@@ -53,7 +53,7 @@ export function Modal( {
     }, [
       router,
       setIsModalOpen
-    ] 
+    ]
   );
 
   const onClick: MouseEventHandler = useCallback(
@@ -95,18 +95,18 @@ export function Modal( {
     () => {
       console.log( 'on useEffect' );
       document.addEventListener(
-        'keydown', onKeyDown 
+        'keydown', onKeyDown
       );
 
       return () => {
         return document.removeEventListener(
-          'keydown', onKeyDown 
+          'keydown', onKeyDown
         );
       };
     }, [
       pathname,
       onKeyDown
-    ] 
+    ]
   );
 
   return (

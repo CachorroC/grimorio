@@ -80,6 +80,9 @@
     padding: 2rem;
   }
 }
+.mainPage {
+  padding: 0;
+}
 
 .mainContent, .mainContentGrid, .mainContentColumn {
   box-sizing: border-box;

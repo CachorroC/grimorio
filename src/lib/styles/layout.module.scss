@@ -109,6 +109,9 @@ $MaxSW: 480px;
   @media (1200px < width) {
     padding: 2rem;
   }
+  &Page {
+    padding: 0;
+  }
 }
 
 .mainContent {

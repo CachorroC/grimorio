@@ -4,7 +4,8 @@ export type EspecimenType = {
   imageUrl                   : string;
   nombresComunes             : string[];
   propiedadesMedicinales     : string[];
-  partesUtiles               : string[]
+  partesUtiles               : string[];
+  esenciasFlorales           : string[]
   correspondenciasEnergeticas: string[];
   malesEmocionales           : string[];
   malesFisicos               : string[];
@@ -14,9 +15,10 @@ export type EspecimenType = {
 
 export type PreparacionType = {
   //responde al para qué se usa este método de preparación, ejemplo "para el dolor del alma preparar: ingredientes, pasos"
-  usoTerapeutico: string;
-  ingredientes  : IngredientesType[];
-  pasos         : PasosTuple[];
+  usoTerapeutico   : string;
+  formaDeAplicacion: string;
+  ingredientes     : IngredientesType[];
+  pasos            : PasosTuple[];
 };
 
 export type IngredientesType = { ingrediente: string; cantidad: string };

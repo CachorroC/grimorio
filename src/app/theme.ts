@@ -11,10 +11,12 @@ const theme = createTheme(
       light: {
         palette: {
           primary: {
-            main: '#286b33',
+            main: '#4A6741',
+            // Deep, calming forest green
+
           },
           secondary: {
-            main: '#4b654a',
+            main: '#8C5A40',
           },
           error: {
             main: '#ba1a1a',
@@ -26,7 +28,7 @@ const theme = createTheme(
             main: '#3949ab',
           },
           success: {
-            main: '#c5e1a5',
+            main: '#628e2e',
           },
         },
       },
@@ -55,45 +57,16 @@ const theme = createTheme(
       },
     },
     typography: {
-      h1: {
-        fontFamily: 'Josefin Sans',
+      fontFamily: '"Merriweather", "Georgia", serif', // Gives an ancestral, traditional feel
+      button    : {
+        textTransform: 'none',
+        fontFamily   : '"Inter", "Helvetica", sans-serif',
+        fontWeight   : 500,
+        letterSpacing: '0.05em',
       },
-      h2: {
-        fontFamily: 'Josefin Sans',
-      },
-      h3: {
-        fontFamily: 'Josefin Sans',
-      },
-      h4: {
-        fontFamily: 'Josefin Sans',
-      },
-      h5: {
-        fontFamily: 'Josefin Sans',
-      },
-      h6: {
-        fontFamily: 'Josefin Sans',
-      },
-      subtitle1: {
-        fontFamily: 'Josefin Sans',
-      },
-      subtitle2: {
-        fontFamily: 'Josefin Sans',
-      },
-      body1: {
-        fontFamily: 'Raleway',
-      },
-      body2: {
-        fontFamily: 'Raleway',
-      },
-      button: {
-        fontFamily: 'Raleway',
-      },
-      overline: {
-        fontFamily: 'Raleway',
-      },
-      caption: {
-        fontFamily: 'Raleway',
-      },
+    },
+    shape: {
+      borderRadius: 8,
     },
   }
 );

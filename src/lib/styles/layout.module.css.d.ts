@@ -10,6 +10,7 @@ declare const styles: {
   readonly "mainContent": string;
   readonly "mainContentColumn": string;
   readonly "mainContentGrid": string;
+  readonly "mainPage": string;
   readonly "nav": string;
   readonly "section": string;
   readonly "sectionColumn": string;
