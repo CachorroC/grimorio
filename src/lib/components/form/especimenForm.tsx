@@ -889,10 +889,14 @@ export default function EspecimenForm(
 
                 {/* Pasos (Tuple Handling) */}
                 <div className={styles.subSection} style={{
-                  backgroundColor: 'var(--primary)'
+                  backgroundColor: 'var(--primary-container)',
+                  color          : 'var(--on-primary-container)'
                 }}
                 >
-                  <label className={styles.label}>Pasos a seguir</label>
+                  <label className={styles.label} style={{
+                    color: 'var(--on-primary-container)'
+                  }}
+                  >Pasos a seguir</label>
                   {prep.pasos.map(
                     (
                       pasoTuple, pasoIndex

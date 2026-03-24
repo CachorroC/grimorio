@@ -2,7 +2,6 @@
 import { ObjectId } from 'mongodb';
 import clientPromise from '../connection/mongodb';
 import { EspecimenType, PreparacionType, Taxon } from '../types/especimenTypes';
-import { connection } from 'next/server';
 
 export default class EspecimenModel implements EspecimenType {
   nombreCientifico           : string;
@@ -16,7 +15,6 @@ export default class EspecimenModel implements EspecimenType {
   imageUrl                   : string;
   partesUtiles               : string[];
   _id                        : string | undefined;
-
   constructor(
     {
       nombreCientifico,
@@ -25,6 +23,7 @@ export default class EspecimenModel implements EspecimenType {
       correspondenciasEnergeticas,
       malesEmocionales,
       malesFisicos,
+      esenciasFlorales,
       taxon,
       preparaciones,
       imageUrl,
@@ -35,6 +34,7 @@ export default class EspecimenModel implements EspecimenType {
       nombresComunes             : string[];
       propiedadesMedicinales     : string[];
       correspondenciasEnergeticas: string[];
+      esenciasFlorales           : string[];
       malesEmocionales           : string[];
       partesUtiles               : string[]
       malesFisicos               : string[];
@@ -52,7 +52,9 @@ export default class EspecimenModel implements EspecimenType {
     this.preparaciones = preparaciones;
     this.imageUrl = imageUrl;
     this.partesUtiles = partesUtiles;
+    this.esenciasFlorales = esenciasFlorales;
   }
+  esenciasFlorales: string[];
 
   static async getPlantaMedicinalByNombreCientifico (
     {
