@@ -12,7 +12,9 @@ export const getOrCreateDeviceId = (): string => {
     return '';
   }
 
-  let deviceId = localStorage.getItem( 'anonymous_device_id' );
+  let deviceId = localStorage.getItem(
+    'anonymous_device_id' 
+  );
 
   if ( !deviceId ) {
     deviceId = crypto.randomUUID();
@@ -24,19 +26,29 @@ export const getOrCreateDeviceId = (): string => {
   return deviceId;
 };
 
-export function urlBase64ToUint8Array( base64String: string ): Uint8Array {
-  const padding = '='.repeat( ( 4 - ( base64String.length % 4 ) ) % 4 );
+export function urlBase64ToUint8Array(
+  base64String: string 
+): Uint8Array {
+  const padding = '='.repeat(
+    ( 4 - ( base64String.length % 4 ) ) % 4 
+  );
   const base64 = ( base64String + padding ).replace(
     /-/g, '+' 
   )
     .replace(
       /_/g, '/' 
     );
-  const rawData = window.atob( base64 );
-  const outputArray = new Uint8Array( rawData.length );
+  const rawData = window.atob(
+    base64 
+  );
+  const outputArray = new Uint8Array(
+    rawData.length 
+  );
 
   for ( let i = 0; i < rawData.length; ++i ) {
-    outputArray[ i ] = rawData.charCodeAt( i );
+    outputArray[ i ] = rawData.charCodeAt(
+      i 
+    );
   }
 
   return outputArray as unknown as Uint8Array;

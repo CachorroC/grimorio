@@ -1,5 +1,7 @@
 self.addEventListener(
-  'push', function ( event ) {
+  'push', function (
+    event 
+  ) {
     if ( event.data ) {
       const data = event.data.json();
 
@@ -18,18 +20,28 @@ self.addEventListener(
         },
       };
 
-      event.waitUntil( self.registration.showNotification(
-        data.title, options 
-      ) );
+      event.waitUntil(
+        self.registration.showNotification(
+          data.title, options 
+        ) 
+      );
     }
   } 
 );
 
 self.addEventListener(
-  'notificationclick', function ( event ) {
-    console.log( 'Notification click received.' );
+  'notificationclick', function (
+    event 
+  ) {
+    console.log(
+      'Notification click received.' 
+    );
     event.notification.close();
     // @ts-ignore
-    event.waitUntil( clients.openWindow( '<https://app.rsasesorjuridico.com>' ) );
+    event.waitUntil(
+      clients.openWindow(
+        '<https://app.rsasesorjuridico.com>' 
+      ) 
+    );
   } 
 );

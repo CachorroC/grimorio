@@ -22,8 +22,6 @@ import { CssBaseline,
 // This is MUI's official SSR cache provider for Next.js App Router
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import theme from './theme';
-import EspecimenModel from '#@/lib/models/especimenModel';
-import { EspecimenProvider } from './context/EspecimenContext';
 
 
 const hostname =  process.env.NODE_ENV === 'production'
@@ -103,19 +101,7 @@ export const viewport: Viewport = {
   ],
 };
 
-async function ServerRequestHerbsContext(
-  {
-    children
-  }: {children: ReactNode}
-) {
-  const plants = await EspecimenModel.getPlantasMedicinales();
 
-  return (
-    <EspecimenProvider initialEspecimens={ plants}>
-      { children }
-    </EspecimenProvider>
-  );
-}
 
 export default function RootLayout(
   {
@@ -134,33 +120,32 @@ export default function RootLayout(
           <ThemeProvider theme={theme}>
             <CssBaseline />
             <Suspense fallback={<Loader />}>
-              <ServerRequestHerbsContext>
-                <SearchProvider>
-                  <PushNotificationProvider>
-                    <NavigationContextProvider>
-                      <SearchProvider>
-                        <ModalProvider>
-                          <PushManagerComponent />
-                          <div className={layout.container}>
-                            <Suspense
-                              fallback={
-                                <nav>
-                                  Cargando menú... <Loader />
-                                </nav>
-                              }
-                            >
-                              <NavBar />
-                            </Suspense>
-                            {children}
-                            {modal}
-                          </div>
-                        </ModalProvider>
-                      </SearchProvider>
 
-                    </NavigationContextProvider>
-                  </PushNotificationProvider>
-                </SearchProvider>
-              </ServerRequestHerbsContext>
+              <SearchProvider>
+                <PushNotificationProvider>
+                  <NavigationContextProvider>
+                    <SearchProvider>
+                      <ModalProvider>
+                        <PushManagerComponent />
+                        <div className={layout.container}>
+                          <Suspense
+                            fallback={
+                              <nav>
+                                Cargando menú... <Loader />
+                              </nav>
+                            }
+                          >
+                            <NavBar />
+                          </Suspense>
+                          {children}
+                          {modal}
+                        </div>
+                      </ModalProvider>
+                    </SearchProvider>
+
+                  </NavigationContextProvider>
+                </PushNotificationProvider>
+              </SearchProvider>
             </Suspense>
           </ThemeProvider>
         </AppRouterCacheProvider>

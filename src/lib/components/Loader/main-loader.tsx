@@ -1,11 +1,16 @@
 import styles from '#@/lib/styles/layout.module.css';
 import modalStyles from '#@/lib/styles/modal.module.css';
 
-export const TableLoader = () => {
+export const MainLoader = () => {
   return (
-    <td>
-      <div className={styles.loader}></div>;
-    </td>
+    <div className={styles.main}>
+      <div className={ styles.mainContent }>
+        <Loader />
+      </div>
+      <div className={ styles.complementaryContent }>
+        <Loader />
+      </div>
+    </div>
   );
 };
 

@@ -18,9 +18,13 @@ const useNotification = (
   const [
     isPermissionGranted,
     setIsPermissionGranted
-  ] = useState<boolean>( Notification.permission === 'granted', );
+  ] = useState<boolean>(
+    Notification.permission === 'granted', 
+  );
 
-  const notification = useRef<Notification | null>( null );
+  const notification = useRef<Notification | null>(
+    null 
+  );
 
   const notify = () => {
     if ( isPermissionGranted ) {
@@ -54,9 +58,15 @@ const useNotification = (
     () => {
       if ( !isPermissionGranted ) {
         Notification.requestPermission()
-          .then( ( status ) => {
-            return setIsPermissionGranted( status === 'granted' );
-          } );
+          .then(
+            (
+              status 
+            ) => {
+              return setIsPermissionGranted(
+                status === 'granted' 
+              );
+            } 
+          );
       }
     }, [
       isPermissionGranted,

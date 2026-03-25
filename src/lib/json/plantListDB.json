@@ -322,5 +322,41 @@
         ]
       }
     ]
+  },
+  {
+    "nombreCientifico": "Baccharis bogotensis",
+    "imageUrl": "https://i.pinimg.com/736x/60/17/c2/6017c25b9ec598512873f4e1cdd0d36a.jpg",
+    "partesUtiles": [],
+    "nombresComunes": [
+      "Ciro",
+      "Chilca"
+    ],
+    "propiedadesMedicinales": [
+      "Antiinflamatoria",
+      "Analgésica"
+    ],
+    "esenciasFlorales": [],
+    "correspondenciasEnergeticas": [],
+    "malesEmocionales": [],
+    "malesFisicos": [],
+    "taxon": {
+      "dominio": "",
+      "reino": "",
+      "filo": "",
+      "clase": "",
+      "orden": "",
+      "familia": "",
+      "genero": "",
+      "especie": "",
+      "clados": []
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "Cataplasmas",
+        "formaDeAplicacion": "",
+        "ingredientes": [],
+        "pasos": []
+      }
+    ]
   }
 ]

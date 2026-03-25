@@ -4,10 +4,10 @@ import React, { createContext, useReducer, useContext, ReactNode, Dispatch } fro
 
 // --- State & Action Types ---
 interface EspecimenState {
-  data          : EspecimenType[];          // The unmodified master list
+  data          : EspecimenType[];  // The unmodified master list
   filteredData  : EspecimenType[];  // The list rendered by the UI
   searchTerm    : string;
-  filterProperty: string;         // e.g., filtering by a specific medicinal property
+  filterProperty: string;           // e.g., filtering by a specific medicinal property
   sortOrder     : 'ASC' | 'DESC' | 'NONE';
 }
 
@@ -18,11 +18,33 @@ type Action =
   | { type: 'SET_SORT'; payload: 'ASC' | 'DESC' | 'NONE' }
   | { type: 'RESET_FILTERS' };
 
+// --- Helper Functions ---
 
+/**
+ * Normalizes a string by converting it to lowercase and removing all accents/diacritics.
+ * This ensures that a search for "chilca" matches "Chílca", and "arnica" matches "Árnica".
+ */
+const normalizeText = (
+  text: string | undefined | null 
+): string => {
+  if ( !text ) {
+    return '';
+  }
 
-// --- Helper Function ---
-// This ensures that sorting, searching, and filtering stack correctly
-// without overwriting each other.
+  return text
+    .normalize(
+      'NFD' 
+    )                     // Deconstructs combined characters (e.g., 'á' becomes 'a' + '´')
+    .replace(
+      /[\u0300-\u036f]/g, '' 
+    )      // Removes the accent marks
+    .toLowerCase();                       // Converts to lowercase
+};
+
+/**
+ * Ensures that sorting, searching, and filtering stack correctly
+ * without overwriting each other.
+ */
 const applyCriteria = (
   state: EspecimenState
 ): EspecimenType[] => {
@@ -30,28 +52,44 @@ const applyCriteria = (
     ...state.data
   ];
 
-  // 1. Apply Search (Checking both scientific and common names)
+  // 1. Apply Search (Checking both scientific and common names safely)
   if ( state.searchTerm ) {
-    const lowerSearch = state.searchTerm.toLowerCase();
+    const normalizedSearch = normalizeText(
+      state.searchTerm 
+    );
+
     result = result.filter(
       (
-        e
+        e 
       ) => {
-        return e.nombreCientifico.toLowerCase()
+      // Safely normalize the scientific name
+        const matchCientifico = normalizeText(
+          e.nombreCientifico 
+        )
           .includes(
-            lowerSearch
-          )
-        || e.nombresComunes.some(
+            normalizedSearch 
+          );
+
+        // Safely fall back to an empty array to prevent .some() from crashing on undefined
+        const safeNombresComunes = e.nombresComunes || [];
+
+        // Check if ANY of the common names match the search term
+        const matchComunes = safeNombresComunes.some(
           (
-            nombre
+            nombre 
           ) => {
-            return nombre.toLowerCase()
+            return normalizeText(
+              nombre 
+            )
               .includes(
-                lowerSearch
+                normalizedSearch 
               );
-          }
+          } 
         );
-      }
+
+        // Include the plant if it matches EITHER the scientific name OR the common names
+        return matchCientifico || matchComunes;
+      } 
     );
   }
 
@@ -59,12 +97,14 @@ const applyCriteria = (
   if ( state.filterProperty ) {
     result = result.filter(
       (
-        e
+        e 
       ) => {
-        return e.propiedadesMedicinales.includes(
-          state.filterProperty
+        const safePropiedades = e.propiedadesMedicinales || [];
+
+        return safePropiedades.includes(
+          state.filterProperty 
         );
-      }
+      } 
     );
   }
 
@@ -72,21 +112,21 @@ const applyCriteria = (
   if ( state.sortOrder !== 'NONE' ) {
     result.sort(
       (
-        a, b
+        a, b 
       ) => {
-        const nameA = a.nombreCientifico.toLowerCase();
-        const nameB = b.nombreCientifico.toLowerCase();
+        const nameA = ( a.nombreCientifico || '' ).toLowerCase();
+        const nameB = ( b.nombreCientifico || '' ).toLowerCase();
 
         if ( state.sortOrder === 'ASC' ) {
           return nameA.localeCompare(
-            nameB
+            nameB 
           );
         }
 
         return nameB.localeCompare(
-          nameA
+          nameA 
         );
-      }
+      } 
     );
   }
 
@@ -98,7 +138,7 @@ const especimenReducer = (
   state: EspecimenState, action: Action
 ): EspecimenState => {
   const newState = {
-    ...state
+    ...state 
   };
 
   switch ( action.type ) {
@@ -129,13 +169,14 @@ const especimenReducer = (
         newState.sortOrder = 'NONE';
 
         break;
+
       default:
         return state;
   }
 
   // Recalculate the rendered array after any criteria changes
   newState.filteredData = applyCriteria(
-    newState
+    newState 
   );
 
   return newState;
@@ -148,7 +189,7 @@ interface ContextProps {
 }
 
 const EspecimenContext = createContext<ContextProps | null>(
-  null
+  null 
 );
 
 export const EspecimenProvider = (
@@ -167,17 +208,18 @@ export const EspecimenProvider = (
     filterProperty: '',
     sortOrder     : 'NONE',
   };
+
   const [
     state,
     dispatch
   ] = useReducer(
-    especimenReducer, initialState
+    especimenReducer, initialState 
   );
 
   return (
     <EspecimenContext.Provider value={{
       state,
-      dispatch
+      dispatch 
     }}
     >
       {children}
@@ -188,12 +230,12 @@ export const EspecimenProvider = (
 // --- Custom Hook ---
 export const useEspecimen = () => {
   const context = useContext(
-    EspecimenContext
+    EspecimenContext 
   );
 
   if ( !context ) {
     throw new Error(
-      'useEspecimen must be used within an EspecimenProvider'
+      'useEspecimen must be used within an EspecimenProvider' 
     );
   }
 

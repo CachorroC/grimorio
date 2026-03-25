@@ -2,7 +2,7 @@
 
 import { useEspecimen } from '#@/app/context/EspecimenContext';
 import { useSearch } from '#@/app/context/search-context';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import { bodyLarge } from '../styles/fonts/typography.module.css';
 import { searchContainer } from '../styles/landing.module.css';
 import searchbar from '../styles/searchbar.module.css';

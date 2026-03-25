@@ -14,44 +14,68 @@ interface PushContextType {
   unsubscribeFromPush: () => Promise<void>;
 }
 
-const PushNotificationContext = createContext<PushContextType | undefined>( undefined, );
+const PushNotificationContext = createContext<PushContextType | undefined>(
+  undefined, 
+);
 
-export function PushNotificationProvider( {
-  children,
-}: {
-  children: React.ReactNode;
-} ) {
+export function PushNotificationProvider(
+  {
+    children,
+  }: {
+    children: React.ReactNode;
+  } 
+) {
   const [
     isSupported,
     setIsSupported
-  ] = useState( false );
+  ] = useState(
+    false 
+  );
   const [
     isSubscribed,
     setIsSubscribed
-  ] = useState( false );
+  ] = useState(
+    false 
+  );
   const [
     deviceId,
     setDeviceId
-  ] = useState( '' );
+  ] = useState(
+    '' 
+  );
   const [
     subscription,
     setSubscription
-  ] = useState<PushSubscription | null>( null, );
+  ] = useState<PushSubscription | null>(
+    null, 
+  );
 
   useEffect(
     () => {
       if ( 'serviceWorker' in navigator && 'PushManager' in window ) {
-        setIsSupported( true );
+        setIsSupported(
+          true 
+        );
         const id = getOrCreateDeviceId();
-        setDeviceId( id );
-        navigator.serviceWorker.ready.then( async ( registration ) => {
-          const sub = await registration.pushManager.getSubscription();
+        setDeviceId(
+          id 
+        );
+        navigator.serviceWorker.ready.then(
+          async (
+            registration 
+          ) => {
+            const sub = await registration.pushManager.getSubscription();
 
-          if ( sub ) {
-            setSubscription( sub );
-            setIsSubscribed( true );
-          }
-        } );
+            if ( sub ) {
+              setSubscription(
+                sub 
+              );
+              setIsSubscribed(
+                true 
+              );
+            }
+          } 
+        );
       }
     }, [] 
   );
@@ -66,14 +90,20 @@ export function PushNotificationProvider( {
       const publicKey = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY;
 
       if ( !publicKey ) {
-        throw new Error( 'VAPID public key missing' );
+        throw new Error(
+          'VAPID public key missing' 
+        );
       }
 
-      const sub = await registration.pushManager.subscribe( {
-        userVisibleOnly     : true,
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        applicationServerKey: urlBase64ToUint8Array( publicKey ) as any,
-      } );
+      const sub = await registration.pushManager.subscribe(
+        {
+          userVisibleOnly: true,
+           
+          applicationServerKey: urlBase64ToUint8Array(
+            publicKey 
+          ) as any,
+        } 
+      );
 
       // THE FIX: Use .toJSON() to extract the hidden keys and cast it
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -84,8 +114,12 @@ export function PushNotificationProvider( {
       );
 
       if ( response?.success ) {
-        setSubscription( sub );
-        setIsSubscribed( true );
+        setSubscription(
+          sub 
+        );
+        setIsSubscribed(
+          true 
+        );
       }
     } catch ( error ) {
       console.error(
@@ -100,12 +134,18 @@ export function PushNotificationProvider( {
     }
 
     try {
-      const response = await unSubscribeUser( deviceId );
+      const response = await unSubscribeUser(
+        deviceId 
+      );
 
       if ( response?.success ) {
         await subscription.unsubscribe();
-        setSubscription( null );
-        setIsSubscribed( false );
+        setSubscription(
+          null 
+        );
+        setIsSubscribed(
+          false 
+        );
       }
     } catch ( error ) {
       console.error(
@@ -132,10 +172,14 @@ export function PushNotificationProvider( {
 
 // Custom Hook to easily consume the context
 export function usePushNotifications() {
-  const context = useContext( PushNotificationContext );
+  const context = useContext(
+    PushNotificationContext 
+  );
 
   if ( context === undefined ) {
-    throw new Error( 'usePushNotifications must be used within a PushNotificationProvider', );
+    throw new Error(
+      'usePushNotifications must be used within a PushNotificationProvider', 
+    );
   }
 
   return context;

@@ -3,6 +3,11 @@ import { ObjectId } from 'mongodb';
 import clientPromise from '../connection/mongodb';
 import { EspecimenType, PreparacionType, Taxon } from '../types/especimenTypes';
 
+/**
+ * @class EspecimenModel
+ * @description Model class for interacting with the 'plantas_medicinales' collection in MongoDB.
+ * Implements the EspecimenType interface to ensure data consistency.
+ */
 export default class EspecimenModel implements EspecimenType {
   nombreCientifico           : string;
   nombresComunes             : string[];
@@ -14,7 +19,9 @@ export default class EspecimenModel implements EspecimenType {
   preparaciones              : PreparacionType[];
   imageUrl                   : string;
   partesUtiles               : string[];
+  esenciasFlorales           : string[];
   _id                        : string | undefined;
+
   constructor(
     {
       nombreCientifico,
@@ -54,23 +61,30 @@ export default class EspecimenModel implements EspecimenType {
     this.partesUtiles = partesUtiles;
     this.esenciasFlorales = esenciasFlorales;
   }
-  esenciasFlorales: string[];
 
+  /**
+   * Retrieves a single medicinal plant document by its scientific name.
+   * Opts out of Next.js static caching to ensure fresh data.
+   * * @param {Object} params - The search parameters.
+   * @param {string} params.nombreCientifico - The scientific name to search for.
+   * @returns {Promise<{success: boolean, data?: EspecimenType, error?: unknown}>}
+   */
   static async getPlantaMedicinalByNombreCientifico (
     {
       nombreCientifico
     }: { nombreCientifico: string; }
   ) {
+    // Opt out of static rendering for this dynamic DB call
 
     try {
-
       const client = await clientPromise;
       const database = client.db(
         'botany_db'
-      ); // Replace with your actual database name
-      const plantasMedicinalesCollection = database.collection<EspecimenType>(
-        'plantas_medicinales',
       );
+      const plantasMedicinalesCollection = database.collection<EspecimenType>(
+        'plantas_medicinales'
+      );
+
       const especimenByNombre = await plantasMedicinalesCollection.findOne(
         {
           nombreCientifico: nombreCientifico,
@@ -101,6 +115,14 @@ export default class EspecimenModel implements EspecimenType {
       };
     }
   }
+
+  /**
+   * Updates an existing medicinal plant document or creates a new one if it doesn't exist.
+   * Matches against `_id` if provided, otherwise falls back to `nombreCientifico`.
+   * * @param {Object} params - The upsert parameters.
+   * @param {EspecimenType} params.data - The complete specimen data to save.
+   * @returns {Promise<{success: boolean, data?: EspecimenType, error?: string}>}
+   */
   static async upsertPlantaMedicinal(
     {
       data
@@ -110,21 +132,23 @@ export default class EspecimenModel implements EspecimenType {
       const client = await clientPromise;
       const database = client.db(
         'botany_db'
-      ); // Replace with your actual database name
-      const plantasMedicinalesCollection = database.collection<EspecimenType>(
-        'plantas_medicinales',
       );
+      const plantasMedicinalesCollection = database.collection<EspecimenType>(
+        'plantas_medicinales'
+      );
+
       const {
         _id, ...updateData
       } = data as any;
+
       const query = _id
         ? {
             _id: new ObjectId(
               _id
-            ),
+            )
           }
         : {
-            nombreCientifico: data.nombreCientifico,
+            nombreCientifico: data.nombreCientifico
           };
 
       const result = await plantasMedicinalesCollection.findOneAndUpdate(
@@ -158,21 +182,29 @@ export default class EspecimenModel implements EspecimenType {
 
       return {
         success: false,
-        error:
-          error instanceof Error
-            ? error.message
-            : 'Unknown database error',
+        error  : error instanceof Error
+          ? error.message
+          : 'Unknown database error',
       };
     }
   }
+
+  /**
+   * Retrieves all medicinal plant documents from the database.
+   * Opts out of Next.js static caching to prevent the `new Date()` prerender error.
+   * * @returns {Promise<EspecimenType[]>} Array of all medicinal plants.
+   */
   static async getPlantasMedicinales () {
+    // Opt out of static rendering for this dynamic DB call
+
     const client = await clientPromise;
     const database = client.db(
       'botany_db'
-    ); // Replace with your actual database name
-    const plantasMedicinalesCollection = database.collection<EspecimenType>(
-      'plantas_medicinales',
     );
+    const plantasMedicinalesCollection = database.collection<EspecimenType>(
+      'plantas_medicinales'
+    );
+
     const data = await plantasMedicinalesCollection.find(
       {}
     )

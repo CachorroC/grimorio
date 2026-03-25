@@ -12,12 +12,16 @@ export default function ThemeToggle() {
   const [
     mounted,
     setMounted
-  ] = useState( false );
+  ] = useState(
+    false 
+  );
 
   // We only want to render the toggle on the client to avoid hydration mismatch
   useEffect(
     () => {
-      setMounted( true );
+      setMounted(
+        true 
+      );
     }, [] 
   );
 
@@ -28,11 +32,17 @@ export default function ThemeToggle() {
   // Cycles through Light -> Dark -> System
   const handleToggle = () => {
     if ( mode === 'light' ) {
-      setMode( 'dark' );
+      setMode(
+        'dark' 
+      );
     } else if ( mode === 'dark' ) {
-      setMode( 'system' );
+      setMode(
+        'system' 
+      );
     } else {
-      setMode( 'light' );
+      setMode(
+        'light' 
+      );
     }
   };
 

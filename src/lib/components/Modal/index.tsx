@@ -9,25 +9,35 @@ import { MouseEventHandler,
   useEffect,
   useRef, } from 'react';
 
-export function Modal( {
-  children
-}: { children: ReactNode } ) {
+export function Modal(
+  {
+    children
+  }: { children: ReactNode } 
+) {
   const pathname = usePathname();
 
   const {
     setIsModalOpen
   } = useModalContext();
 
-  const overlay = useRef( null );
+  const overlay = useRef(
+    null 
+  );
 
-  const wrapper = useRef( null );
+  const wrapper = useRef(
+    null 
+  );
 
   const router = useRouter();
 
   const onDismiss = useCallback(
     () => {
-      console.log( 'onDismiss' );
-      setIsModalOpen( false );
+      console.log(
+        'onDismiss' 
+      );
+      setIsModalOpen(
+        false 
+      );
       router.back();
     }, [
       router,
@@ -37,8 +47,12 @@ export function Modal( {
 
   const onBackspace = useCallback(
     () => {
-      console.log( 'on backspace' );
-      setIsModalOpen( false );
+      console.log(
+        'on backspace' 
+      );
+      setIsModalOpen(
+        false 
+      );
       router.back();
     }, [
       router,
@@ -48,7 +62,9 @@ export function Modal( {
 
   const onEnter = useCallback(
     () => {
-      setIsModalOpen( false );
+      setIsModalOpen(
+        false 
+      );
       router.forward();
     }, [
       router,
@@ -57,8 +73,12 @@ export function Modal( {
   );
 
   const onClick: MouseEventHandler = useCallback(
-    ( e ) => {
-      console.log( 'onCLick' );
+    (
+      e 
+    ) => {
+      console.log(
+        'onCLick' 
+      );
 
       if ( e.target === overlay.current || e.target === wrapper.current ) {
         if ( onDismiss ) {
@@ -74,8 +94,12 @@ export function Modal( {
   );
 
   const onKeyDown = useCallback(
-    ( e: KeyboardEvent ) => {
-      console.log( 'onKeyDown' );
+    (
+      e: KeyboardEvent 
+    ) => {
+      console.log(
+        'onKeyDown' 
+      );
 
       if ( e.key === 'Enter' ) {
         onEnter();
@@ -93,7 +117,9 @@ export function Modal( {
 
   useEffect(
     () => {
-      console.log( 'on useEffect' );
+      console.log(
+        'on useEffect' 
+      );
       document.addEventListener(
         'keydown', onKeyDown
       );

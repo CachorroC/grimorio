@@ -18,7 +18,9 @@ export function PushNotificationManager() {
   const [
     message,
     setMessage
-  ] = useState( '' );
+  ] = useState(
+    '' 
+  );
 
   if ( !isSupported ) {
     return (
@@ -28,11 +30,17 @@ export function PushNotificationManager() {
 
   async function sendTestNotification() {
     if ( subscription && message.trim() ) {
-      const serializedSub = JSON.parse( JSON.stringify( subscription ), ) as WebPushSubscription;
+      const serializedSub = JSON.parse(
+        JSON.stringify(
+          subscription 
+        ), 
+      ) as WebPushSubscription;
       await sendNotification(
         message, serializedSub
       );
-      setMessage( '' );
+      setMessage(
+        '' 
+      );
     }
   }
 
@@ -62,8 +70,12 @@ export function PushNotificationManager() {
                   className={styles.inputField}
                   placeholder="Message..."
                   value={message}
-                  onChange={( e ) => {
-                    return setMessage( e.target.value );
+                  onChange={(
+                    e 
+                  ) => {
+                    return setMessage(
+                      e.target.value 
+                    );
                   }}
                 />
                 <button
@@ -94,18 +106,30 @@ export function InstallPrompt() {
   const [
     isIOS,
     setIsIOS
-  ] = useState( false );
+  ] = useState(
+    false 
+  );
   const [
     isStandalone,
     setIsStandalone
-  ] = useState( false );
+  ] = useState(
+    false 
+  );
 
   useEffect(
     () => {
       const isIOSDevice
-        = /iPad|iPhone|iPod/.test( navigator.userAgent ) && !( window as any ).MSStream;
-      setIsIOS( isIOSDevice );
-      setIsStandalone( window.matchMedia( '(display-mode: standalone)' ).matches );
+        = /iPad|iPhone|iPod/.test(
+          navigator.userAgent 
+        ) && !( window as any ).MSStream;
+      setIsIOS(
+        isIOSDevice 
+      );
+      setIsStandalone(
+        window.matchMedia(
+          '(display-mode: standalone)' 
+        ).matches 
+      );
     }, []
   );
 

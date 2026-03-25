@@ -91,7 +91,7 @@ export default function PlantCookbook(
               {plant.nombresComunes.join(
                 ', '
               )
-                .toUpperCase()}
+              }
             </Typography>
 
             <Divider sx={{
