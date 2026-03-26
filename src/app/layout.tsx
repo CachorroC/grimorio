@@ -25,20 +25,20 @@ import theme from './theme';
 
 
 const hostname =  process.env.NODE_ENV === 'production'
-  ? 'https://compendio.suarez-ramirez.com'
+  ? 'https://colombia-medicinal.suarez-ramirez.com'
   : 'https://beta.rsasesorjuridico.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(
     hostname
   ),
-  title          : 'Vademecum y Grimorio Colombiano',
+  title          : 'Vademecum y compendio Colombiano',
   description    : 'Una recopilación herbal orientada a la producción de saber sobre plantas medicinales ancestrales de Colombia.',
-  applicationName: 'Grimorio Nativo',
+  applicationName: 'Compendio Colombiano de hierbas medicinales',
   referrer       : 'origin-when-cross-origin',
   keywords       : [
     'Vademecum',
-    'Grimorio',
+    'compendio',
     'Colombia',
     'Vademecum Colombiano',
     'Hierbas Nativas de Colombia'
@@ -51,12 +51,12 @@ export const metadata: Metadata = {
       name: 'Juan Camilo Suárez',
     },
     {
-      name: 'Paola Giraldo'
+      name: 'Marlon Ochoa'
     }
   ],
 
   creator        : 'Juan Camilo Suárez',
-  publisher      : 'Rodriguez, Giraldo y Suárez',
+  publisher      : 'Rodriguez, Ochoa y Suárez',
   alternates     : {},
   formatDetection: {
     email    : false,
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   },
   appleWebApp: {
     capable       : true,
-    title         : 'Grimorio Colombiano',
+    title         : 'Compendio Colombiano de hierbas medicinales',
     statusBarStyle: 'black-translucent',
     startupImage  : [
       '/icon.svg',

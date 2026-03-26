@@ -2,8 +2,8 @@ import { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name                       : 'Grimorio Nativo',
-    short_name                 : 'Grimorio',
+    name                       : 'Compendio Colombiano de hierbas medicinales',
+    short_name                 : 'Compendio herbal colombiano',
     background_color           : '#9ce39e',
     theme_color                : '#286b33',
     prefer_related_applications: false,

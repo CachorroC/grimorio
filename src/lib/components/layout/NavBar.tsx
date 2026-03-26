@@ -25,7 +25,7 @@ export const NavBar = () => {
       />
       <NavLink
         iconLabel={'cannabis'}
-        textLabel={'Nueva Hierba en el Grimorio'}
+        textLabel={'Nueva Hierba en el compendio'}
         hrefLabel={'/hierba/nueva' as Route}
       />
       <NavLink iconLabel={ 'potted_plant' } textLabel={ 'Hierbas del compendio' } hrefLabel={ '/hierbas' } />
@@ -37,7 +37,7 @@ export const NavBar = () => {
             <ThemeToggle />
             <NavLink
               iconLabel={'cannabis'}
-              textLabel={'Nueva Hierba en el Grimorio'}
+              textLabel={'Nueva Hierba en el compendio'}
               hrefLabel={'/hierba/nueva' as Route}
             />
             <NavLink iconLabel={ 'potted_plant' } textLabel={ 'Hierbas del compendio' } hrefLabel={ '/hierbas' } />

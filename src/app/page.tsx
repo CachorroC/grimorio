@@ -1,18 +1,44 @@
-
 'use client';
 
-import { Button,  TextField } from '@mui/material';
+import {  useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { Button, TextField } from '@mui/material';
 
 import NotificationButton from '#@/lib/components/NotificationButton';
 import NotificationToggle from '#@/lib/components/NotificationToggle';
-import { InstallPrompt,
-  PushNotificationManager, } from '#@/lib/components/pushNotificationManager';
+import { InstallPrompt, PushNotificationManager } from '#@/lib/components/pushNotificationManager';
 import styles from '#@/lib/styles/landing.module.css';
 import layout from '#@/lib/styles/layout.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Page() {
+  const router = useRouter();
+  const [
+    searchTerm,
+    setSearchTerm
+  ] = useState(
+    ''
+  );
+
+  // Function to handle navigation
+  const handleSearch = () => {
+    if ( searchTerm.trim() ) {
+      // Encode the URI component to safely handle spaces and special characters
+      router.push(
+        `/hierbas?search=${ encodeURIComponent(
+          searchTerm.trim()
+        ) }`
+      );
+    } else {
+      router.push(
+        '/hierbas'
+      );
+    }
+  };
+
+
+
   return (
     <div className={layout.main}>
       <main className={styles.mainContainer}>
@@ -37,7 +63,7 @@ export default function Page() {
               Un refugio para el alivio del dolor y el bienestar del espíritu. Explora nuestro vademécum de plantas nativas, desde la serenidad de la Passiflora hasta la resiliencia de los páramos.
             </p>
 
-            {/* MUI Search Form mixed with CSS Modules layout */}
+            {/* MUI Search Form */}
             <div className={styles.searchContainer}>
               <TextField
                 id="search-plant"
@@ -45,6 +71,22 @@ export default function Page() {
                 variant="outlined"
                 fullWidth
                 color="primary"
+                value={searchTerm}
+                onChange={(
+                  e
+                ) => {
+                  return setSearchTerm(
+                    e.target.value
+                  );
+                }}
+                onKeyDown={(
+                  e
+                ) => {
+                  if ( e.key === 'Enter' ) {
+                    handleSearch();
+                  }
+                }
+                }
                 sx={{
                   backgroundColor           : '#FFFDFC',
                   borderRadius              : 1,
@@ -60,6 +102,7 @@ export default function Page() {
                 color="primary"
                 size="large"
                 className={styles.searchButton}
+                onClick={handleSearch}
                 sx={{
                   padding: '15px 30px'
                 }}
@@ -70,13 +113,15 @@ export default function Page() {
           </div>
 
           <div className={styles.heroImageWrapper}>
-            {/* Placeholder for an evocative, soft-focus image of a Colombian native plant like an Espeletia or a misty Andean forest */}
             <div className={ styles.imagePlaceholder }>
-              <Image src={ '/images/nature_4.png' } alt={ 'Healing'}  fill={true} style={{
-                objectFit: 'cover'
-              }}
+              <Image
+                src={ '/images/nature_4.png' }
+                alt={ 'Healing'}
+                fill={true}
+                style={{
+                  objectFit: 'cover'
+                }}
               />
-
             </div>
           </div>
         </section>
