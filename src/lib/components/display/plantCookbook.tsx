@@ -99,11 +99,11 @@ export default function PlantCookbook(
             }}
             />
 
-            <TagSection title="Partes Útiles" tags={plant.partesUtiles} color="warning" />
+            <TagSection title="Partes Útiles" tags={plant.partesUtiles} color="secondary" />
             <TagSection title="Propiedades Medicinales" tags={plant.propiedadesMedicinales} color="success" />
             <TagSection title="Males Físicos" tags={plant.malesFisicos} color="error" />
-            <TagSection title="Males Emocionales" tags={plant.malesEmocionales} color="info" />
-            <TagSection title="Correspondencias Energéticas" tags={plant.correspondenciasEnergeticas} color="secondary" />
+            <TagSection title="Males Emocionales" tags={plant.malesEmocionales} color="error" />
+            <TagSection title="Correspondencias Energéticas" tags={plant.correspondenciasEnergeticas} color="success" />
             <TagSection title="Esencias Florales" tags={plant.esenciasFlorales} color="primary" />
           </CardContent>
         </Grid>

@@ -8,7 +8,7 @@ import { josefina,
   ptserif,
   radio,
   raleway, } from '#@/lib/styles/fonts';
-import { Loader } from '#@/lib/components/Loader/main-loader';
+import { Loader } from '#@/lib/components/Loader/loader';
 import PushManagerComponent from '#@/lib/components/PushManager';
 import { ModalProvider } from './context/ModalContext';
 import { NavigationContextProvider } from './context/navigation-context';
@@ -22,6 +22,7 @@ import { CssBaseline,
 // This is MUI's official SSR cache provider for Next.js App Router
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import theme from './theme';
+import { MainLoader } from '#@/lib/components/Loader/main-loader';
 
 
 const hostname =  process.env.NODE_ENV === 'production'
@@ -119,7 +120,7 @@ export default function RootLayout(
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <CssBaseline />
-            <Suspense fallback={<Loader />}>
+            <Suspense fallback={<MainLoader/>}>
 
               <SearchProvider>
                 <PushNotificationProvider>

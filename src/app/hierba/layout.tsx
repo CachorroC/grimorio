@@ -1,4 +1,4 @@
-import { Loader } from '#@/lib/components/Loader/main-loader';
+import { Loader } from '#@/lib/components/Loader/loader';
 import styles from '#@/lib/styles/layout.module.css';
 import { ReactNode, Suspense } from 'react';
 

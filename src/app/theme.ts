@@ -1,4 +1,5 @@
 'use client';
+import { josefina } from '#@/lib/styles/fonts';
 import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme(
@@ -57,13 +58,7 @@ const theme = createTheme(
       },
     },
     typography: {
-      fontFamily: '"Merriweather", "Georgia", serif', // Gives an ancestral, traditional feel
-      button    : {
-        textTransform: 'none',
-        fontFamily   : '"Inter", "Helvetica", sans-serif',
-        fontWeight   : 500,
-        letterSpacing: '0.05em',
-      },
+      fontFamily: josefina.style.fontFamily,
     },
     shape: {
       borderRadius: 8,

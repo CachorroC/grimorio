@@ -5,7 +5,7 @@ import SpecimenEditSelection from '#@/lib/components/specimenEditSelection';
 import MasonryHolder from './MasonryHolder';
 import { useEspecimen } from '../context/EspecimenContext';
 import { InputSearchBar } from '#@/lib/components/InputSearchBar';
-import { Loader } from '#@/lib/components/Loader/main-loader';
+import { Loader } from '#@/lib/components/Loader/loader';
 
 // 1. Create an inner component that uses the hook and context
 function HierbasContent() {

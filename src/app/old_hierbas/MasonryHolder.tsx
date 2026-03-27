@@ -4,7 +4,7 @@ import { ReactNode, useEffect, useState } from 'react';
 import Masonry from '@mui/lab/Masonry';
 import { Box } from '@mui/material';
 import { useAccordionScroll } from '../context/AcordionScrollContext';
-import { Loader } from '#@/lib/components/Loader/main-loader';
+import { Loader } from '#@/lib/components/Loader/loader';
 
 export default function MasonryHolder(
   {

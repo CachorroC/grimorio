@@ -1,6 +1,6 @@
 
 
-import { Loader } from '#@/lib/components/Loader/main-loader';
+import { Loader } from '#@/lib/components/Loader/loader';
 import { Modal } from '#@/lib/components/Modal';
 import typography from 'styles/fonts/typography.module.css';
 import layout from 'styles/layout.module.css';

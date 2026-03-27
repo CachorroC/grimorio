@@ -106,9 +106,6 @@ $MaxSW: 480px;
   overflow-y: auto; /* The sole scrollable container */
   overflow-x: hidden;
   height: 100%;
-  @media (1200px < width) {
-    padding: 2rem;
-  }
   &Page {
     padding: 0;
   }

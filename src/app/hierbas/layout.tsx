@@ -1,15 +1,18 @@
-import { Loader, MainLoader } from '#@/lib/components/Loader/main-loader';
+import {  MainLoader } from '#@/lib/components/Loader/main-loader';
 import styles from '#@/lib/styles/layout.module.css';
 import { ReactNode, Suspense } from 'react';
 import { AccordionScrollProvider } from '../context/AcordionScrollContext';
 import { EspecimenProvider } from '../context/EspecimenContext';
 import EspecimenModel from '#@/lib/models/especimenModel';
+import { connection } from 'next/server';
+import { Loader } from '#@/lib/components/Loader/loader';
 
 async function ServerRequestHerbsContext(
   {
     children
   }: {children: ReactNode}
 ) {
+  await connection();
   const plants = await EspecimenModel.getPlantasMedicinales();
 
   return (

@@ -4,7 +4,7 @@ import { useNavigationContext } from '#@/app/context/navigation-context';
 import { Drawer } from './Drawer';
 import { NavLink } from './NavLink';
 import { Route } from 'next';
-import { Loader } from '../Loader/main-loader';
+import { Loader } from '../Loader/loader';
 import { Suspense } from 'react';
 import { DrawerMenuButton } from '../buttons/nav-buttons';
 import ThemeToggle from '../ThemeToggle';
