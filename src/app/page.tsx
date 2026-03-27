@@ -46,7 +46,6 @@ export default function Page() {
           <nav className={styles.nav}>
             <Link href="#vademecum" className={styles.navLink}>El Vademécum</Link>
             <Link href="/hierbas" className={ styles.navLink }>Lista de plantas medicinales</Link>
-            <Link href="/hierbasgrid" className={styles.navLink}>Lista de plantas medicinales</Link>
             <Link href="/hierba/nueva" className={styles.navLink}>Aporta tu conocimiento en el vademecum</Link>
           </nav>
         </header>

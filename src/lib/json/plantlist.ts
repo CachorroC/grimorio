@@ -3,8 +3,9 @@ import { EspecimenType } from '../types/especimenTypes';
 export const plantList: EspecimenType[] = [
   {
     nombreCientifico: 'Salvia rosmarinus',
-    imageUrl        : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKN62Z67ri2NUtWJmCODzbEx-TcSH0bW_Hfg&s',
-    nombresComunes  : [
+    imageUrl:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKN62Z67ri2NUtWJmCODzbEx-TcSH0bW_Hfg&s',
+    nombresComunes: [
       'romero'
     ],
     propiedadesMedicinales: [
@@ -82,7 +83,7 @@ export const plantList: EspecimenType[] = [
             'colar el liquido '
           ],
         ],
-        formaDeAplicacion: ''
+        formaDeAplicacion: '',
       },
       {
         usoTerapeutico: 'dolor del higado',
@@ -92,8 +93,9 @@ export const plantList: EspecimenType[] = [
             cantidad   : '100 gramos',
           },
           {
-            ingrediente: 'aceite vegetal (aceite de oliva, aceite de coco, etc)',
-            cantidad   : '100ml',
+            ingrediente:
+              'aceite vegetal (aceite de oliva, aceite de coco, etc)',
+            cantidad: '100ml',
           },
         ],
         pasos: [
@@ -114,16 +116,17 @@ export const plantList: EspecimenType[] = [
             'sinecesitas la cocción inmediatamente, poner a baño de maría en fuego lento por 2 horas',
           ],
         ],
-        formaDeAplicacion: ''
+        formaDeAplicacion: '',
       },
     ],
     partesUtiles    : [],
-    esenciasFlorales: []
+    esenciasFlorales: [],
   },
   {
     nombreCientifico: 'Cannabis sativa',
-    imageUrl        : 'https://upload.wikimedia.org/wikipedia/commons/f/f9/Cannabis_sativa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-026.jpg',
-    nombresComunes  : [
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/f/f9/Cannabis_sativa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-026.jpg',
+    nombresComunes: [
       'Marihuana',
       'La mata que mata',
       'weed',
@@ -164,8 +167,9 @@ export const plantList: EspecimenType[] = [
             cantidad   : '5 gramos',
           },
           {
-            ingrediente: 'aceite vegetal (aceite de coco, aceite de oliva, aceite de risino)',
-            cantidad   : '100 ml',
+            ingrediente:
+              'aceite vegetal (aceite de coco, aceite de oliva, aceite de risino)',
+            cantidad: '100 ml',
           },
         ],
         pasos: [
@@ -186,16 +190,17 @@ export const plantList: EspecimenType[] = [
             ''
           ],
         ],
-        formaDeAplicacion: ''
+        formaDeAplicacion: '',
       },
     ],
     partesUtiles    : [],
-    esenciasFlorales: []
+    esenciasFlorales: [],
   },
   {
     nombreCientifico: 'Artemisia absinthium',
-    imageUrl        : 'https://upload.wikimedia.org/wikipedia/commons/1/1f/Artemisia_absinthium_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-164.jpg',
-    partesUtiles    : [
+    imageUrl:
+      'https://upload.wikimedia.org/wikipedia/commons/1/1f/Artemisia_absinthium_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-164.jpg',
+    partesUtiles: [
       'flor',
       'hojas'
     ],
@@ -294,7 +299,7 @@ export const plantList: EspecimenType[] = [
             'escurrir ligeramente y aplicar sobre la zona afectada durante 15-20 minutos ',
           ],
         ],
-        formaDeAplicacion: ''
+        formaDeAplicacion: '',
       },
       {
         usoTerapeutico: 'Aceite de Ajenjo',
@@ -330,10 +335,10 @@ export const plantList: EspecimenType[] = [
             'colar el aceite con una tela fina y guardarlo en un frasco de vidrio oscuro ',
           ],
         ],
-        formaDeAplicacion: ''
+        formaDeAplicacion: '',
       },
     ],
-    esenciasFlorales: []
+    esenciasFlorales: [],
   },
   {
     nombreCientifico: 'Baccharis bogotensis',
@@ -7927,6 +7932,953 @@ export const plantList: EspecimenType[] = [
           [
             5,
             'La bebida resultante solo se administra en un entorno ceremonial, con dieta estricta previa (sin sal, azúcar, alcohol ni carnes rojas), debido a sus profundos efectos purgativos y psicoactivos.',
+          ],
+        ],
+      },
+    ],
+  },
+  {
+    nombreCientifico: 'Passiflora incarnata',
+    imageUrl        : 'https://www.google.com/search?q=Passiflora+incarnata&tbm=isch',
+    nombresComunes  : [
+      'Flor de la pasión',
+      'Pasionaria',
+      'Maypop'
+    ],
+    propiedadesMedicinales: [
+      'Sedante del sistema nervioso central',
+      'Ansiolítico',
+      'Antiespasmódico',
+      'Hipotensor leve',
+    ],
+    partesUtiles: [
+      'Hojas',
+      'Flores',
+      'Partes aéreas'
+    ],
+    esenciasFlorales: [
+      'Paz interior profunda',
+      'Conexión con la conciencia crística',
+      'Alivio del tormento espiritual y la culpa',
+    ],
+    correspondenciasEnergeticas: [
+      'Geometría sagrada (la corona de espinas)',
+      'Relajación del cuerpo etérico',
+      'Magia de sueño y viajes astrales pacíficos',
+    ],
+    malesEmocionales: [
+      'Ansiedad crónica y ataques de pánico',
+      'Insomnio por pensamientos acelerados',
+      'Estrés y agotamiento nervioso',
+    ],
+    malesFisicos: [
+      'Trastornos del sueño',
+      'Taquicardia nerviosa',
+      'Espasmos gastrointestinales por estrés',
+      'Neuralgias',
+    ],
+    taxon: {
+      dominio: 'Eukaryota',
+      reino  : 'Plantae',
+      filo   : 'Tracheophyta',
+      clase  : 'Magnoliopsida',
+      orden  : 'Malpighiales',
+      familia: 'Passifloraceae',
+      genero : 'Passiflora',
+      especie: 'incarnata',
+      clados : [
+        'Angiospermas',
+        'Eudicotiledóneas',
+        'Rósidas',
+        'Eurosidas I'
+      ],
+    },
+    preparaciones: [
+      {
+        usoTerapeutico:
+          'Para inducir el sueño, calmar la ansiedad generalizada y reducir palpitaciones nerviosas',
+        formaDeAplicacion:
+          'Beber 1 taza de infusión 45 minutos antes de dormir, o en momentos de crisis de ansiedad.',
+        ingredientes: [
+          {
+            ingrediente: 'Partes aéreas secas de Passiflora incarnata',
+            cantidad   : '1 cucharada (aprox 5g)',
+          },
+          {
+            ingrediente: 'Agua hirviendo',
+            cantidad   : '250 ml',
+          },
+        ],
+        pasos: [
+          [
+            1,
+            'Colocar la hierba seca en una taza de cerámica.'
+          ],
+          [
+            2,
+            'Verter el agua hirviendo y tapar inmediatamente para no perder aceites volátiles.',
+          ],
+          [
+            3,
+            'Dejar en infusión por 10 a 15 minutos.'
+          ],
+          [
+            4,
+            'Colar y endulzar ligeramente si se desea.'
+          ],
+          [
+            5,
+            'Beber en sorbos lentos en un ambiente tranquilo.'
+          ],
+        ],
+      },
+    ],
+  },
+  {
+    nombreCientifico: 'Passiflora edulis',
+    imageUrl        : 'https://www.google.com/search?q=Passiflora+edulis&tbm=isch',
+    nombresComunes  : [
+      'Maracuyá',
+      'Gulupa (variedad púrpura)',
+      'Fruta de la pasión',
+    ],
+    propiedadesMedicinales: [
+      'Hipotensor (reduce la presión arterial)',
+      'Sedante suave',
+      'Hipolipemiante (ayuda a reducir colesterol)',
+      'Antioxidante celular',
+    ],
+    partesUtiles: [
+      'Hojas (para medicina)',
+      'Fruto (alimento y jugo)'
+    ],
+    esenciasFlorales: [
+      'Pasión por la vida',
+      'Asimilación de la dulzura y la vitalidad',
+      'Reactivación de la alegría',
+    ],
+    correspondenciasEnergeticas: [
+      'Fertilidad y abundancia de la tierra tropical',
+      'Elemento Fuego y Agua equilibrados',
+      'Renovación de los fluidos corporales',
+    ],
+    malesEmocionales: [
+      'Irritabilidad y mal humor crónico',
+      'Estrés laboral agudo',
+      'Falta de entusiasmo',
+    ],
+    malesFisicos: [
+      'Hipertensión arterial',
+      'Niveles altos de colesterol (dislipidemia)',
+      'Tensión muscular en el cuello y hombros',
+      'Insomnio leve',
+    ],
+    taxon: {
+      dominio: 'Eukaryota',
+      reino  : 'Plantae',
+      filo   : 'Tracheophyta',
+      clase  : 'Magnoliopsida',
+      orden  : 'Malpighiales',
+      familia: 'Passifloraceae',
+      genero : 'Passiflora',
+      especie: 'edulis',
+      clados : [
+        'Angiospermas',
+        'Eudicotiledóneas',
+        'Rósidas',
+        'Eurosidas I'
+      ],
+    },
+    preparaciones: [
+      {
+        usoTerapeutico:
+          'Para bajar la presión arterial y relajar los nervios durante el día',
+        formaDeAplicacion:
+          'Tomar 1 taza de infusión de hojas de maracuyá a media tarde.',
+        ingredientes: [
+          {
+            ingrediente: 'Hojas verdes de maracuyá frescas o secas',
+            cantidad   : '2 hojas grandes',
+          },
+          {
+            ingrediente: 'Agua hirviendo',
+            cantidad   : '300 ml',
+          },
+        ],
+        pasos: [
+          [
+            1,
+            'Lavar las hojas de la enredadera.'
+          ],
+          [
+            2,
+            'Trozarlas con las manos y colocarlas en una tetera.'
+          ],
+          [
+            3,
+            'Agregar el agua caliente, tapar y dejar reposar 8 minutos.'
+          ],
+          [
+            4,
+            'Colar el líquido, que tendrá un color verde pálido.'
+          ],
+          [
+            5,
+            'Beber sin azúcar para maximizar el efecto hipotensor.'
+          ],
+        ],
+      },
+    ],
+  },
+  {
+    nombreCientifico: 'Passiflora ligularis',
+    imageUrl        : 'https://www.google.com/search?q=Passiflora+ligularis&tbm=isch',
+    nombresComunes  : [
+      'Granadilla',
+      'Granadilla andina'
+    ],
+    propiedadesMedicinales: [
+      'Regulador gástrico',
+      'Antiespasmódico infantil',
+      'Laxante muy suave (mucílagos del fruto)',
+      'Calmante nervioso leve',
+    ],
+    partesUtiles: [
+      'Fruto (pulpa y semillas)',
+      'Hojas tiernas'
+    ],
+    esenciasFlorales: [
+      'Nutrición afectiva materno-infantil',
+      'Consuelo en la tristeza pura',
+      'Protección de la inocencia',
+    ],
+    correspondenciasEnergeticas: [
+      'Elemento Agua',
+      'Fluidez emocional y suavidad',
+      'Sanación del niño interior',
+    ],
+    malesEmocionales: [
+      'Miedos nocturnos (especialmente en niños)',
+      'Llanto inexplicable',
+      'Dificultad para recibir afecto materno',
+    ],
+    malesFisicos: [
+      'Cólicos gastrointestinales infantiles',
+      'Estreñimiento leve',
+      'Acidez estomacal (reflujo)',
+    ],
+    taxon: {
+      dominio: 'Eukaryota',
+      reino  : 'Plantae',
+      filo   : 'Tracheophyta',
+      clase  : 'Magnoliopsida',
+      orden  : 'Malpighiales',
+      familia: 'Passifloraceae',
+      genero : 'Passiflora',
+      especie: 'ligularis',
+      clados : [
+        'Angiospermas',
+        'Eudicotiledóneas',
+        'Rósidas',
+        'Eurosidas I'
+      ],
+    },
+    preparaciones: [
+      {
+        usoTerapeutico:
+          'Para aliviar cólicos, acidez y calmar a los niños antes de dormir',
+        formaDeAplicacion:
+          'Consumir el jugo natural sin colar o comer la pulpa directamente.',
+        ingredientes: [
+          {
+            ingrediente: 'Frutos de granadilla maduros',
+            cantidad   : '2 unidades',
+          },
+        ],
+        pasos: [
+          [
+            1,
+            'Romper la cáscara dura de la granadilla.'
+          ],
+          [
+            2,
+            'Extraer toda la pulpa mucilaginosa y las semillas con una cuchara.',
+          ],
+          [
+            3,
+            'Para niños pequeños, se puede pasar por un colador presionando suavemente para obtener solo el néctar.',
+          ],
+          [
+            4,
+            'Para adultos, consumir directamente con las semillas masticándolas bien (aportan fibra).',
+          ],
+          [
+            5,
+            'Dar de beber a temperatura ambiente.'
+          ],
+        ],
+      },
+    ],
+  },
+  {
+    nombreCientifico: 'Passiflora quadrangularis',
+    imageUrl:
+      'https://www.google.com/search?q=Passiflora+quadrangularis&tbm=isch',
+    nombresComunes: [
+      'Badea',
+      'Corvejo',
+      'Granadilla gigante'
+    ],
+    propiedadesMedicinales: [
+      'Sedante fuerte',
+      'Diurético',
+      'Vermífugo (raíz en microdosis - tóxica en altas dosis)',
+    ],
+    partesUtiles: [
+      'Fruto (mesocarpio carnoso)',
+      'Hojas',
+      'Raíz (estricto uso tradicional)',
+    ],
+    esenciasFlorales: [
+      'Expansión de la consciencia',
+      'Apertura a la abundancia universal',
+      'Sanación del sentimiento de escasez',
+    ],
+    correspondenciasEnergeticas: [
+      'Fuerza expansiva de la selva húmeda',
+      'Limpieza de fluidos energéticos pesados',
+      'Nutrición profunda del cuerpo físico',
+    ],
+    malesEmocionales: [
+      'Agotamiento nervioso severo',
+      'Ansiedad crónica y pensamientos pesimistas',
+      'Falta de enraizamiento',
+    ],
+    malesFisicos: [
+      'Insomnio rebelde',
+      'Retención de líquidos',
+      'Parásitos intestinales (uso ancestral)',
+      'Cefaleas tensionales',
+    ],
+    taxon: {
+      dominio: 'Eukaryota',
+      reino  : 'Plantae',
+      filo   : 'Tracheophyta',
+      clase  : 'Magnoliopsida',
+      orden  : 'Malpighiales',
+      familia: 'Passifloraceae',
+      genero : 'Passiflora',
+      especie: 'quadrangularis',
+      clados : [
+        'Angiospermas',
+        'Eudicotiledóneas',
+        'Rósidas',
+        'Eurosidas I'
+      ],
+    },
+    preparaciones: [
+      {
+        usoTerapeutico:
+          'Para tratar el insomnio rebelde y refrescar el sistema nervioso sobrecargado',
+        formaDeAplicacion:
+          'Beber 1 taza de decocción de hojas en la noche o jugo del mesocarpio en el día.',
+        ingredientes: [
+          {
+            ingrediente: 'Hojas maduras de badea',
+            cantidad   : '5 gramos',
+          },
+          {
+            ingrediente: 'Agua',
+            cantidad   : '300 ml',
+          },
+        ],
+        pasos: [
+          [
+            1,
+            'Lavar las hojas grandes de la planta.'
+          ],
+          [
+            2,
+            'Colocarlas en el agua y llevar a fuego bajo.'
+          ],
+          [
+            3,
+            'Hervir por 5 minutos para extraer los alcaloides sedantes (passiflorina).',
+          ],
+          [
+            4,
+            'Dejar reposar, colar y consumir tibio.'
+          ],
+          [
+            5,
+            'Aviso: No ingerir decocciones de la raíz sin supervisión experta por riesgo de toxicidad.',
+          ],
+        ],
+      },
+    ],
+  },
+  {
+    nombreCientifico: 'Passiflora maliformis',
+    imageUrl        : 'https://www.google.com/search?q=Passiflora+maliformis&tbm=isch',
+    nombresComunes  : [
+      'Cholupa',
+      'Chulupa',
+      'Granadilla de piedra'
+    ],
+    propiedadesMedicinales: [
+      'Calmante nervioso',
+      'Febrífugo leve (refrescante)',
+      'Antioxidante',
+      'Antiespasmódico',
+    ],
+    partesUtiles: [
+      'Fruto',
+      'Hojas'
+    ],
+    esenciasFlorales: [
+      'Estabilidad emocional',
+      'Protección de la propia vulnerabilidad (representado en su cáscara dura como piedra)',
+      'Resiliencia',
+    ],
+    correspondenciasEnergeticas: [
+      'Sello protector del aura',
+      'Refrescamiento del \'fuego\' mental',
+      'Elemento Tierra y Agua',
+    ],
+    malesEmocionales: [
+      'Hiperreactividad emocional',
+      'Sensación de estar expuesto o vulnerable',
+      'Estrés por falta de límites personales',
+    ],
+    malesFisicos: [
+      'Sofocos y calores (menopausia)',
+      'Nerviosismo generalizado',
+      'Espasmos musculares leves',
+    ],
+    taxon: {
+      dominio: 'Eukaryota',
+      reino  : 'Plantae',
+      filo   : 'Tracheophyta',
+      clase  : 'Magnoliopsida',
+      orden  : 'Malpighiales',
+      familia: 'Passifloraceae',
+      genero : 'Passiflora',
+      especie: 'maliformis',
+      clados : [
+        'Angiospermas',
+        'Eudicotiledóneas',
+        'Rósidas',
+        'Eurosidas I'
+      ],
+    },
+    preparaciones: [
+      {
+        usoTerapeutico:
+          'Para bajar los sofocos corporales, refrescar el sistema nervioso y calmar la reactividad',
+        formaDeAplicacion: 'Consumir como jugo fresco durante el día.',
+        ingredientes     : [
+          {
+            ingrediente: 'Frutos de cholupa',
+            cantidad   : '3 unidades',
+          },
+          {
+            ingrediente: 'Agua purificada',
+            cantidad   : '500 ml',
+          },
+        ],
+        pasos: [
+          [
+            1,
+            'Quebrar la dura cáscara de la cholupa con un golpe seco.'
+          ],
+          [
+            2,
+            'Extraer la pulpa aromática.'
+          ],
+          [
+            3,
+            'Licuar a velocidad muy baja (pulsos) con el agua para no triturar completamente las semillas.',
+          ],
+          [
+            4,
+            'Colar para separar los fragmentos de semillas del jugo.'
+          ],
+          [
+            5,
+            'Servir frío y beber para refrescar el organismo.'
+          ],
+        ],
+      },
+    ],
+  },
+  {
+    nombreCientifico: 'Passiflora tarminiana',
+    imageUrl        : 'https://www.google.com/search?q=Passiflora+tarminiana&tbm=isch',
+    nombresComunes  : [
+      'Curuba de Castilla',
+      'Curuba india',
+      'Tacso'
+    ],
+    propiedadesMedicinales: [
+      'Astringente gástrico',
+      'Sedante estomacal',
+      'Antioxidante potente (vitamina C)',
+      'Vulnerario (hojas tópicas)',
+    ],
+    partesUtiles: [
+      'Fruto',
+      'Hojas secas'
+    ],
+    esenciasFlorales: [
+      'Adaptabilidad a entornos fríos o inexplorados',
+      'Fluidez emocional',
+      'Purificación de la voz y la expresión',
+    ],
+    correspondenciasEnergeticas: [
+      'Planta de las nieblas andinas',
+      'Cierre de heridas etéricas en el plexo solar',
+      'Elemento Aire y Agua',
+    ],
+    malesEmocionales: [
+      'Melancolía andina',
+      'Incapacidad para adaptarse a cambios bruscos',
+      'Nudo en el estómago por emociones no digeridas',
+    ],
+    malesFisicos: [
+      'Úlceras gástricas agravadas por estrés',
+      'Indigestión nerviosa',
+      'Picos de presión arterial',
+      'Afecciones de la piel (lavados)',
+    ],
+    taxon: {
+      dominio: 'Eukaryota',
+      reino  : 'Plantae',
+      filo   : 'Tracheophyta',
+      clase  : 'Magnoliopsida',
+      orden  : 'Malpighiales',
+      familia: 'Passifloraceae',
+      genero : 'Passiflora',
+      especie: 'tarminiana',
+      clados : [
+        'Angiospermas',
+        'Eudicotiledóneas',
+        'Rósidas',
+        'Eurosidas I'
+      ],
+    },
+    preparaciones: [
+      {
+        usoTerapeutico:
+          'Para calmar la acidez estomacal de origen nervioso y relajar el tracto gástrico',
+        formaDeAplicacion:
+          'Beber 1 taza de infusión de las hojas 30 minutos después de comer.',
+        ingredientes: [
+          {
+            ingrediente: 'Hojas de curuba de Castilla secas',
+            cantidad   : '1 cucharadita',
+          },
+          {
+            ingrediente: 'Agua hirviendo',
+            cantidad   : '200 ml',
+          },
+        ],
+        pasos: [
+          [
+            1,
+            'Triturar las hojas secas finamente.'
+          ],
+          [
+            2,
+            'Colocarlas en una taza y verter el agua caliente.'
+          ],
+          [
+            3,
+            'Tapar y dejar reposar 10 minutos.'
+          ],
+          [
+            4,
+            'Colar la infusión.'
+          ],
+          [
+            5,
+            'Beber tibio; sus taninos ayudarán a regular la mucosa estomacal irritada por el estrés.',
+          ],
+        ],
+      },
+    ],
+  },
+  {
+    nombreCientifico: 'Passiflora vitifolia',
+    imageUrl        : 'https://www.google.com/search?q=Passiflora+vitifolia&tbm=isch',
+    nombresComunes  : [
+      'Pasionaria roja',
+      'Granadilla de monte',
+      'Flor de la pasión escarlata',
+    ],
+    propiedadesMedicinales: [
+      'Vasodilatador',
+      'Antiinflamatorio celular',
+      'Antitusivo y expectorante',
+      'Antioxidante',
+    ],
+    partesUtiles: [
+      'Hojas',
+      'Flores rojas'
+    ],
+    esenciasFlorales: [
+      'Despertar de la fuerza de voluntad',
+      'Reactivación de la libido vital',
+      'Valentía para enfrentar el letargo',
+    ],
+    correspondenciasEnergeticas: [
+      'Magia de la sangre y el corazón',
+      'Elemento Fuego ardiente',
+      'Transmutación chamánica de energías paralizantes',
+    ],
+    malesEmocionales: [
+      'Apatía profunda y depresión inerte',
+      'Falta de motivación vital',
+      'Congelamiento emocional por trauma',
+    ],
+    malesFisicos: [
+      'Mala circulación periférica',
+      'Tos nerviosa e inflamación de las vías respiratorias',
+      'Dolores de cabeza por mala oxigenación',
+      'Hipertensión',
+    ],
+    taxon: {
+      dominio: 'Eukaryota',
+      reino  : 'Plantae',
+      filo   : 'Tracheophyta',
+      clase  : 'Magnoliopsida',
+      orden  : 'Malpighiales',
+      familia: 'Passifloraceae',
+      genero : 'Passiflora',
+      especie: 'vitifolia',
+      clados : [
+        'Angiospermas',
+        'Eudicotiledóneas',
+        'Rósidas',
+        'Eurosidas I'
+      ],
+    },
+    preparaciones: [
+      {
+        usoTerapeutico:
+          'Para reactivar la circulación sanguínea, bajar la presión arterial y desinflamar',
+        formaDeAplicacion: 'Beber 1 taza de decocción de hojas al día.',
+        ingredientes     : [
+          {
+            ingrediente: 'Hojas de pasionaria roja',
+            cantidad   : '10 gramos',
+          },
+          {
+            ingrediente: 'Agua',
+            cantidad   : '300 ml',
+          },
+        ],
+        pasos: [
+          [
+            1,
+            'Lavar las hojas (que se asemejan a las de la vid, de ahí \'vitifolia\').',
+          ],
+          [
+            2,
+            'Hervir en agua a fuego medio por 5 a 8 minutos.'
+          ],
+          [
+            3,
+            'Apagar y dejar en reposo.'
+          ],
+          [
+            4,
+            'Filtrar el líquido para retirar las vellosidades de la planta.'
+          ],
+          [
+            5,
+            'Tomar tibio para mejorar la vasodilatación.'
+          ],
+        ],
+      },
+    ],
+  },
+  {
+    nombreCientifico: 'Passiflora danielii',
+    imageUrl        : 'https://www.google.com/search?q=Passiflora+danielii&tbm=isch',
+    nombresComunes  : [
+      'Pasionaria de Antioquia',
+      'Flor de pasión endémica'
+    ],
+    propiedadesMedicinales: [
+      'Relajante del sistema nervioso',
+      'Ansiolítico leve',
+    ],
+    partesUtiles: [
+      'Hojas',
+      'Flores (uso estrictamente observacional/conservación)',
+    ],
+    esenciasFlorales: [
+      'Pertenencia territorial profunda',
+      'Memoria ancestral',
+      'Soporte en crisis de desarraigo',
+    ],
+    correspondenciasEnergeticas: [
+      'Guardián de los bosques de niebla de Antioquia',
+      'Energía de supervivencia y rareza biológica',
+      'Conexión con el espíritu de la montaña',
+    ],
+    malesEmocionales: [
+      'Desarraigo o pérdida de la identidad local',
+      'Olvido de las raíces familiares',
+      'Soledad por aislamiento',
+    ],
+    malesFisicos: [
+      'Tensión nerviosa por desplazamiento',
+      'Cefaleas tensionales',
+      'Alteraciones del sueño',
+    ],
+    taxon: {
+      dominio: 'Eukaryota',
+      reino  : 'Plantae',
+      filo   : 'Tracheophyta',
+      clase  : 'Magnoliopsida',
+      orden  : 'Malpighiales',
+      familia: 'Passifloraceae',
+      genero : 'Passiflora',
+      especie: 'danielii',
+      clados : [
+        'Angiospermas',
+        'Eudicotiledóneas',
+        'Rósidas',
+        'Eurosidas I'
+      ],
+    },
+    preparaciones: [
+      {
+        usoTerapeutico:
+          'Elaboración de esencia floral (método no destructivo) para tratar el desarraigo emocional y relajar la mente',
+        formaDeAplicacion:
+          'Tomar 4 gotas sublinguales de la esencia floral preparada, 4 veces al día.',
+        ingredientes: [
+          {
+            ingrediente:
+              'Flor viva de Passiflora danielii (Especie en Peligro Crítico - NO CORTAR)',
+            cantidad: '1 flor en la planta',
+          },
+          {
+            ingrediente: 'Agua de manantial y Brandy',
+            cantidad   : 'Para preparar la tintura madre',
+          },
+        ],
+        pasos: [
+          [
+            1,
+            'Llevar un cuenco de cristal con agua pura hasta la planta en su hábitat natural.',
+          ],
+          [
+            2,
+            'Sumergir la flor en el agua sin separarla de la enredadera madre.',
+          ],
+          [
+            3,
+            'Dejar expuesta a la luz solar durante 3 horas para imprimir su huella vibracional.',
+          ],
+          [
+            4,
+            'Retirar el cuenco cuidadosamente.'
+          ],
+          [
+            5,
+            'Mezclar el agua con brandy al 50% para conservar la esencia madre, que luego se diluirá en goteros comerciales.',
+          ],
+        ],
+      },
+    ],
+  },
+  {
+    nombreCientifico: 'Passiflora antioquiensis',
+    imageUrl:
+      'https://www.google.com/search?q=Passiflora+antioquiensis&tbm=isch',
+    nombresComunes: [
+      'Curuba antioqueña',
+      'Curuba de monte'
+    ],
+    propiedadesMedicinales: [
+      'Sedante nervioso',
+      'Ansiolítico',
+      'Vitamínico y remineralizante',
+    ],
+    partesUtiles: [
+      'Fruto',
+      'Hojas'
+    ],
+    esenciasFlorales: [
+      'Fuerza en la adversidad',
+      'Apertura a la propia belleza interior',
+      'Amor propio',
+    ],
+    correspondenciasEnergeticas: [
+      'Ascensión energética hacia los chakras superiores (por sus largas flores péndulas rojas)',
+      'Protección de la pureza emocional',
+      'Elemento Viento y Fuego',
+    ],
+    malesEmocionales: [
+      'Baja autoestima',
+      'Tristeza profunda por rechazo',
+      'Agotamiento emocional constante',
+    ],
+    malesFisicos: [
+      'Agotamiento físico y fatiga',
+      'Estrés sistémico',
+      'Insomnio de mantenimiento',
+    ],
+    taxon: {
+      dominio: 'Eukaryota',
+      reino  : 'Plantae',
+      filo   : 'Tracheophyta',
+      clase  : 'Magnoliopsida',
+      orden  : 'Malpighiales',
+      familia: 'Passifloraceae',
+      genero : 'Passiflora',
+      especie: 'antioquiensis',
+      clados : [
+        'Angiospermas',
+        'Eudicotiledóneas',
+        'Rósidas',
+        'Eurosidas I'
+      ],
+    },
+    preparaciones: [
+      {
+        usoTerapeutico:
+          'Para calmar la ansiedad, recuperar vitaminas y fomentar el descanso reparador',
+        formaDeAplicacion:
+          'Consumir jugo de la fruta en el día y una infusión de las hojas por la noche.',
+        ingredientes: [
+          {
+            ingrediente: 'Hojas de curuba antioqueña',
+            cantidad   : '5 gramos',
+          },
+          {
+            ingrediente: 'Agua hirviendo',
+            cantidad   : '250 ml',
+          },
+        ],
+        pasos: [
+          [
+            1,
+            'Para la infusión nocturna: Colocar las hojas limpias en una taza.',
+          ],
+          [
+            2,
+            'Añadir el agua caliente y tapar.'
+          ],
+          [
+            3,
+            'Infundir durante 10 minutos.'
+          ],
+          [
+            4,
+            'Filtrar el líquido resultante.'
+          ],
+          [
+            5,
+            'Beber en un ambiente oscuro y sin pantallas para relajar el sistema nervioso central.',
+          ],
+        ],
+      },
+    ],
+  },
+  {
+    nombreCientifico: 'Passiflora alata',
+    imageUrl        : 'https://www.google.com/search?q=Passiflora+alata&tbm=isch',
+    nombresComunes  : [
+      'Maracuyá dulce',
+      'Pasionaria fragante',
+      'Badea chica'
+    ],
+    propiedadesMedicinales: [
+      'Inductor del sueño profundo',
+      'Calmante',
+      'Regulador cardíaco (taquicardias menores)',
+    ],
+    partesUtiles: [
+      'Hojas grandes',
+      'Flores (altamente aromáticas)'
+    ],
+    esenciasFlorales: [
+      'Magnetismo personal',
+      'Dulzura en el trato',
+      'Atracción de relaciones pacíficas',
+    ],
+    correspondenciasEnergeticas: [
+      'Atracción de frecuencias de paz a través del aroma',
+      'Limpieza de espacios tensos',
+      'Equilibrio del Yin y el Yang',
+    ],
+    malesEmocionales: [
+      'Agitación mental severa',
+      'Irritabilidad sin causa',
+      'Sensación de urgencia constante',
+    ],
+    malesFisicos: [
+      'Taquicardia por ansiedad',
+      'Insomnio resistente',
+      'Temblores nerviosos',
+      'Espasmos en la musculatura lisa',
+    ],
+    taxon: {
+      dominio: 'Eukaryota',
+      reino  : 'Plantae',
+      filo   : 'Tracheophyta',
+      clase  : 'Magnoliopsida',
+      orden  : 'Malpighiales',
+      familia: 'Passifloraceae',
+      genero : 'Passiflora',
+      especie: 'alata',
+      clados : [
+        'Angiospermas',
+        'Eudicotiledóneas',
+        'Rósidas',
+        'Eurosidas I'
+      ],
+    },
+    preparaciones: [
+      {
+        usoTerapeutico:
+          'Para regular los latidos cardíacos acelerados por el estrés y forzar un estado de calma',
+        formaDeAplicacion:
+          'Beber 1 taza de decocción muy suave de hojas, endulzada ligeramente.',
+        ingredientes: [
+          {
+            ingrediente: 'Hojas de maracuyá dulce (alata)',
+            cantidad   : '10 gramos',
+          },
+          {
+            ingrediente: 'Agua',
+            cantidad   : '300 ml',
+          },
+        ],
+        pasos: [
+          [
+            1,
+            'Lavar las hojas, que se caracterizan por sus tallos cuadrangulares o alados.',
+          ],
+          [
+            2,
+            'Sumergir en el agua fría y llevar a ebullición muy suave por 3 minutos.',
+          ],
+          [
+            3,
+            'Retirar del fuego inmediatamente, tapar y dejar en reposo 10 minutos.',
+          ],
+          [
+            4,
+            'Colar la preparación.'
+          ],
+          [
+            5,
+            'Tomar a sorbos lentos, enfocándose conscientemente en disminuir el ritmo respiratorio.',
           ],
         ],
       },

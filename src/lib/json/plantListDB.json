@@ -115,75 +115,6 @@
     ]
   },
   {
-    "nombreCientifico": "Cannabis sativa",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Cannabis_sativa_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-026.jpg",
-    "nombresComunes": [
-      "Marihuana",
-      "La mata que mata",
-      "weed",
-      "corinto",
-      "sativa",
-      "indica"
-    ],
-    "propiedadesMedicinales": [
-      "THC",
-      "CBD",
-      "Cannabinoides"
-    ],
-    "correspondenciasEnergeticas": [ ],
-    "malesEmocionales": [ ],
-    "malesFisicos": [
-      "Dolores crónicos",
-      "Nauseas por quimioterapia",
-      "Espasticidad por esclerosis multiple",
-      "epilepsia"
-    ],
-    "taxon": {
-      "dominio": "",
-      "reino": "",
-      "filo": "",
-      "clase": "",
-      "orden": "",
-      "familia": "",
-      "genero": "",
-      "especie": "",
-      "clados": [ ]
-    },
-    "preparaciones": [
-      {
-        "usoTerapeutico": "Aceite de dolor",
-        "ingredientes": [
-          {
-            "ingrediente": "flor de cannabis sativa",
-            "cantidad": "5 gramos"
-          },
-          {
-            "ingrediente": "aceite vegetal (aceite de coco, aceite de oliva, aceite de risino)",
-            "cantidad": "100 ml"
-          }
-        ],
-        "pasos": [
-          [
-            1,
-            "Se tritura la flor hasta que quede un polvo fino"
-          ],
-          [
-            2,
-            "se coloca la marihuana en un recipiente "
-          ],
-          [
-            3,
-            "se coloca el aceite vegetal hasta cubrir completamente la flor "
-          ],
-          [
-            4,
-            ""
-          ]
-        ]
-      }
-    ]
-  },
-  {
     "nombreCientifico": "Artemisia absinthium",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Artemisia_absinthium_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-164.jpg",
     "partesUtiles": [
@@ -244,7 +175,7 @@
       "familia": "Asteraceae",
       "genero": "Artemisia",
       "especie": "Artemisia absinthium",
-      "clados": [ ]
+      "clados": []
     },
     "preparaciones": [
       {
@@ -326,7 +257,7 @@
   {
     "nombreCientifico": "Baccharis bogotensis",
     "imageUrl": "https://i.pinimg.com/736x/60/17/c2/6017c25b9ec598512873f4e1cdd0d36a.jpg",
-    "partesUtiles": [ ],
+    "partesUtiles": [],
     "nombresComunes": [
       "Ciro",
       "Chilca"
@@ -335,10 +266,10 @@
       "Antiinflamatoria",
       "Analgésica"
     ],
-    "esenciasFlorales": [ ],
-    "correspondenciasEnergeticas": [ ],
-    "malesEmocionales": [ ],
-    "malesFisicos": [ ],
+    "esenciasFlorales": [],
+    "correspondenciasEnergeticas": [],
+    "malesEmocionales": [],
+    "malesFisicos": [],
     "taxon": {
       "dominio": "",
       "reino": "",
@@ -348,14 +279,14 @@
       "familia": "",
       "genero": "",
       "especie": "",
-      "clados": [ ]
+      "clados": []
     },
     "preparaciones": [
       {
         "usoTerapeutico": "Cataplasmas",
         "formaDeAplicacion": "",
-        "ingredientes": [ ],
-        "pasos": [ ]
+        "ingredientes": [],
+        "pasos": []
       }
     ]
   },
@@ -432,11 +363,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Llevar el agua a ebullición en un recipiente que no sea de aluminio." ],
-          [ 2, "Añadir la corteza de roble al agua hirviendo." ],
-          [ 3, "Reducir el fuego y dejar hervir a fuego lento durante 15 minutos para extraer los taninos." ],
-          [ 4, "Retirar del fuego, tapar y dejar reposar por 10 minutos." ],
-          [ 5, "Colar la preparación y dejar entibiar antes de su uso." ]
+          [
+            1,
+            "Llevar el agua a ebullición en un recipiente que no sea de aluminio."
+          ],
+          [
+            2,
+            "Añadir la corteza de roble al agua hirviendo."
+          ],
+          [
+            3,
+            "Reducir el fuego y dejar hervir a fuego lento durante 15 minutos para extraer los taninos."
+          ],
+          [
+            4,
+            "Retirar del fuego, tapar y dejar reposar por 10 minutos."
+          ],
+          [
+            5,
+            "Colar la preparación y dejar entibiar antes de su uso."
+          ]
         ]
       }
     ]
@@ -511,11 +457,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Colocar las hojas o la corteza en una taza de cerámica." ],
-          [ 2, "Verter el agua hirviendo directamente sobre la planta." ],
-          [ 3, "Tapar la taza inmediatamente para evitar que los aceites esenciales volátiles escapen." ],
-          [ 4, "Dejar infundir entre 5 y 8 minutos." ],
-          [ 5, "Colar y consumir mientras aún está caliente." ]
+          [
+            1,
+            "Colocar las hojas o la corteza en una taza de cerámica."
+          ],
+          [
+            2,
+            "Verter el agua hirviendo directamente sobre la planta."
+          ],
+          [
+            3,
+            "Tapar la taza inmediatamente para evitar que los aceites esenciales volátiles escapen."
+          ],
+          [
+            4,
+            "Dejar infundir entre 5 y 8 minutos."
+          ],
+          [
+            5,
+            "Colar y consumir mientras aún está caliente."
+          ]
         ]
       }
     ]
@@ -590,11 +551,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar bien las hojas frescas de chilco." ],
-          [ 2, "Macerar o machacar las hojas en un mortero hasta obtener una pasta." ],
-          [ 3, "Agregar un poco de agua caliente o alcohol para humedecer y activar la pasta." ],
-          [ 4, "Calentar ligeramente la mezcla a baño maría (sin hervir)." ],
-          [ 5, "Aplicar la pasta tibia sobre una gasa y colocar sobre la articulación dolorida." ]
+          [
+            1,
+            "Lavar bien las hojas frescas de chilco."
+          ],
+          [
+            2,
+            "Macerar o machacar las hojas en un mortero hasta obtener una pasta."
+          ],
+          [
+            3,
+            "Agregar un poco de agua caliente o alcohol para humedecer y activar la pasta."
+          ],
+          [
+            4,
+            "Calentar ligeramente la mezcla a baño maría (sin hervir)."
+          ],
+          [
+            5,
+            "Aplicar la pasta tibia sobre una gasa y colocar sobre la articulación dolorida."
+          ]
         ]
       }
     ]
@@ -667,11 +643,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Hervir el litro de agua." ],
-          [ 2, "Agregar la corteza de aliso triturada." ],
-          [ 3, "Dejar hervir a fuego medio durante 15 minutos." ],
-          [ 4, "Dejar enfriar completamente y colar." ],
-          [ 5, "Empapar un paño limpio en el líquido y aplicar sobre la piel." ]
+          [
+            1,
+            "Hervir el litro de agua."
+          ],
+          [
+            2,
+            "Agregar la corteza de aliso triturada."
+          ],
+          [
+            3,
+            "Dejar hervir a fuego medio durante 15 minutos."
+          ],
+          [
+            4,
+            "Dejar enfriar completamente y colar."
+          ],
+          [
+            5,
+            "Empapar un paño limpio en el líquido y aplicar sobre la piel."
+          ]
         ]
       }
     ]
@@ -744,11 +735,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Utilizar guantes para manipular la raíz o las bayas." ],
-          [ 2, "Macerar (machacar) bien el material vegetal hasta exponer sus jugos ricos en saponinas." ],
-          [ 3, "Mezclar fuertemente con el agua tibia hasta que genere un poco de espuma." ],
-          [ 4, "Filtrar el líquido resultante." ],
-          [ 5, "Aplicar externamente sobre la piel afectada, dejar actuar 5 minutos y enjuagar profundamente." ]
+          [
+            1,
+            "Utilizar guantes para manipular la raíz o las bayas."
+          ],
+          [
+            2,
+            "Macerar (machacar) bien el material vegetal hasta exponer sus jugos ricos en saponinas."
+          ],
+          [
+            3,
+            "Mezclar fuertemente con el agua tibia hasta que genere un poco de espuma."
+          ],
+          [
+            4,
+            "Filtrar el líquido resultante."
+          ],
+          [
+            5,
+            "Aplicar externamente sobre la piel afectada, dejar actuar 5 minutos y enjuagar profundamente."
+          ]
         ]
       }
     ]
@@ -824,10 +830,22 @@
           }
         ],
         "pasos": [
-          [ 1, "Colocar las hojas y flores en el fondo de una taza." ],
-          [ 2, "Verter el agua hirviendo." ],
-          [ 3, "Tapar y dejar en infusión durante 10 a 15 minutos." ],
-          [ 4, "Colar y beber lentamente. Se puede endulzar con miel para potenciar la relajación." ]
+          [
+            1,
+            "Colocar las hojas y flores en el fondo de una taza."
+          ],
+          [
+            2,
+            "Verter el agua hirviendo."
+          ],
+          [
+            3,
+            "Tapar y dejar en infusión durante 10 a 15 minutos."
+          ],
+          [
+            4,
+            "Colar y beber lentamente. Se puede endulzar con miel para potenciar la relajación."
+          ]
         ]
       }
     ]
@@ -906,11 +924,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Extraer las semillas de las vainas grandes del balú." ],
-          [ 2, "Lavar las semillas y retirar la cutícula externa si se desea un puré más fino." ],
-          [ 3, "Hervir en agua con sal durante 45 minutos a 1 hora hasta que estén muy suaves." ],
-          [ 4, "Escurrir y procesar para hacer puré, o añadir directamente a una sopa." ],
-          [ 5, "Consumir caliente. (NUNCA consumir crudo debido a antinutrientes que se destruyen con calor)." ]
+          [
+            1,
+            "Extraer las semillas de las vainas grandes del balú."
+          ],
+          [
+            2,
+            "Lavar las semillas y retirar la cutícula externa si se desea un puré más fino."
+          ],
+          [
+            3,
+            "Hervir en agua con sal durante 45 minutos a 1 hora hasta que estén muy suaves."
+          ],
+          [
+            4,
+            "Escurrir y procesar para hacer puré, o añadir directamente a una sopa."
+          ],
+          [
+            5,
+            "Consumir caliente. (NUNCA consumir crudo debido a antinutrientes que se destruyen con calor)."
+          ]
         ]
       }
     ]
@@ -984,11 +1017,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar la corteza para retirar impurezas." ],
-          [ 2, "Colocar la corteza en el agua fría y llevar a fuego." ],
-          [ 3, "Hervir a fuego muy lento hasta que el líquido se reduzca a unos 400ml." ],
-          [ 4, "Dejar reposar, colar y embotellar." ],
-          [ 5, "Tomar en dosis pequeñas debido a su fuerte sabor amargo y potencia astringente." ]
+          [
+            1,
+            "Lavar la corteza para retirar impurezas."
+          ],
+          [
+            2,
+            "Colocar la corteza en el agua fría y llevar a fuego."
+          ],
+          [
+            3,
+            "Hervir a fuego muy lento hasta que el líquido se reduzca a unos 400ml."
+          ],
+          [
+            4,
+            "Dejar reposar, colar y embotellar."
+          ],
+          [
+            5,
+            "Tomar en dosis pequeñas debido a su fuerte sabor amargo y potencia astringente."
+          ]
         ]
       }
     ]
@@ -1061,11 +1109,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Fundir la cera de los frutos al baño maría a fuego muy bajo." ],
-          [ 2, "Una vez líquida, incorporar el aceite vegetal y remover suavemente para integrar." ],
-          [ 3, "Retirar del fuego antes de que humee." ],
-          [ 4, "Verter en un recipiente de vidrio estéril y dejar solidificar a temperatura ambiente." ],
-          [ 5, "Tomar pequeñas porciones con los dedos y masajear sobre las grietas cutáneas." ]
+          [
+            1,
+            "Fundir la cera de los frutos al baño maría a fuego muy bajo."
+          ],
+          [
+            2,
+            "Una vez líquida, incorporar el aceite vegetal y remover suavemente para integrar."
+          ],
+          [
+            3,
+            "Retirar del fuego antes de que humee."
+          ],
+          [
+            4,
+            "Verter en un recipiente de vidrio estéril y dejar solidificar a temperatura ambiente."
+          ],
+          [
+            5,
+            "Tomar pequeñas porciones con los dedos y masajear sobre las grietas cutáneas."
+          ]
         ]
       }
     ]
@@ -1137,11 +1200,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Triturar las semillas amargas de chocho en un mortero." ],
-          [ 2, "Hervir el agua y añadir las semillas trituradas." ],
-          [ 3, "Dejar hervir por 20 minutos para extraer los alcaloides tóxicos al agua." ],
-          [ 4, "Retirar del calor, dejar enfriar completamente y filtrar a través de una tela fina." ],
-          [ 5, "Aplicar el líquido resultante únicamente sobre el cuero cabelludo." ]
+          [
+            1,
+            "Triturar las semillas amargas de chocho en un mortero."
+          ],
+          [
+            2,
+            "Hervir el agua y añadir las semillas trituradas."
+          ],
+          [
+            3,
+            "Dejar hervir por 20 minutos para extraer los alcaloides tóxicos al agua."
+          ],
+          [
+            4,
+            "Retirar del calor, dejar enfriar completamente y filtrar a través de una tela fina."
+          ],
+          [
+            5,
+            "Aplicar el líquido resultante únicamente sobre el cuero cabelludo."
+          ]
         ]
       }
     ]
@@ -1215,11 +1293,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Hervir el agua en un recipiente limpio." ],
-          [ 2, "Añadir la corteza de encenillo y mantener a fuego lento por 10 minutos." ],
-          [ 3, "Apagar y dejar reposar tapado hasta que alcance temperatura ambiente." ],
-          [ 4, "Colar con un filtro fino para retirar cualquier astilla." ],
-          [ 5, "Empapar una gasa estéril y aplicar sobre la zona afectada." ]
+          [
+            1,
+            "Hervir el agua en un recipiente limpio."
+          ],
+          [
+            2,
+            "Añadir la corteza de encenillo y mantener a fuego lento por 10 minutos."
+          ],
+          [
+            3,
+            "Apagar y dejar reposar tapado hasta que alcance temperatura ambiente."
+          ],
+          [
+            4,
+            "Colar con un filtro fino para retirar cualquier astilla."
+          ],
+          [
+            5,
+            "Empapar una gasa estéril y aplicar sobre la zona afectada."
+          ]
         ]
       }
     ]
@@ -1295,11 +1388,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Hacer pequeñas incisiones en el tallo o arrancar una hoja para recolectar las gotas de látex." ],
-          [ 2, "Limpiar la zona de la piel donde hay dolor o la herida menor." ],
-          [ 3, "Untar el látex directamente sobre la piel." ],
-          [ 4, "Calentar ligeramente una hoja de gaque al fuego (sin quemarla) para ablandarla." ],
-          [ 5, "Colocar la hoja tibia sobre el látex a modo de parche natural y fijar con una venda." ]
+          [
+            1,
+            "Hacer pequeñas incisiones en el tallo o arrancar una hoja para recolectar las gotas de látex."
+          ],
+          [
+            2,
+            "Limpiar la zona de la piel donde hay dolor o la herida menor."
+          ],
+          [
+            3,
+            "Untar el látex directamente sobre la piel."
+          ],
+          [
+            4,
+            "Calentar ligeramente una hoja de gaque al fuego (sin quemarla) para ablandarla."
+          ],
+          [
+            5,
+            "Colocar la hoja tibia sobre el látex a modo de parche natural y fijar con una venda."
+          ]
         ]
       }
     ]
@@ -1371,11 +1479,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Calentar el agua hasta el punto de ebullición." ],
-          [ 2, "Agregar las hojas y las flores campanuladas rojas del raque." ],
-          [ 3, "Apagar el fuego, tapar y dejar infundir por 8 minutos." ],
-          [ 4, "Colar la infusión." ],
-          [ 5, "Tomar a sorbos lentos mientras aún está tibia." ]
+          [
+            1,
+            "Calentar el agua hasta el punto de ebullición."
+          ],
+          [
+            2,
+            "Agregar las hojas y las flores campanuladas rojas del raque."
+          ],
+          [
+            3,
+            "Apagar el fuego, tapar y dejar infundir por 8 minutos."
+          ],
+          [
+            4,
+            "Colar la infusión."
+          ],
+          [
+            5,
+            "Tomar a sorbos lentos mientras aún está tibia."
+          ]
         ]
       }
     ]
@@ -1453,11 +1576,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar cuidadosamente las hojas para retirar las pubescencias (pelitos) si son muy frescas." ],
-          [ 2, "Hervir el agua y añadir las hojas fragmentadas." ],
-          [ 3, "Dejar hervir por 5 minutos y luego apagar el fuego." ],
-          [ 4, "Dejar reposar tapado por 10 minutos y colar muy bien." ],
-          [ 5, "Servir caliente, agregar la miel, remover y consumir." ]
+          [
+            1,
+            "Lavar cuidadosamente las hojas para retirar las pubescencias (pelitos) si son muy frescas."
+          ],
+          [
+            2,
+            "Hervir el agua y añadir las hojas fragmentadas."
+          ],
+          [
+            3,
+            "Dejar hervir por 5 minutos y luego apagar el fuego."
+          ],
+          [
+            4,
+            "Dejar reposar tapado por 10 minutos y colar muy bien."
+          ],
+          [
+            5,
+            "Servir caliente, agregar la miel, remover y consumir."
+          ]
         ]
       }
     ]
@@ -1531,11 +1669,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Colocar las hojas secas en un recipiente o tetera." ],
-          [ 2, "Verter el agua hirviendo sobre las hojas." ],
-          [ 3, "Tapar y dejar infundir por 10 minutos para extraer los principios activos." ],
-          [ 4, "Colar la preparación." ],
-          [ 5, "Beber lentamente sin añadir azúcar para no alterar su efecto digestivo." ]
+          [
+            1,
+            "Colocar las hojas secas en un recipiente o tetera."
+          ],
+          [
+            2,
+            "Verter el agua hirviendo sobre las hojas."
+          ],
+          [
+            3,
+            "Tapar y dejar infundir por 10 minutos para extraer los principios activos."
+          ],
+          [
+            4,
+            "Colar la preparación."
+          ],
+          [
+            5,
+            "Beber lentamente sin añadir azúcar para no alterar su efecto digestivo."
+          ]
         ]
       }
     ]
@@ -1610,11 +1763,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar muy bien las hojas frescas." ],
-          [ 2, "Machacar las hojas en un mortero hasta formar una pasta verde oscuro." ],
-          [ 3, "Mezclar la pasta con un poco de aceite de ricino o de oliva." ],
-          [ 4, "Calentar la mezcla muy ligeramente al fuego (que sea soportable al tacto)." ],
-          [ 5, "Colocar la pasta tibia sobre el absceso, cubrir con una gasa y fijar con esparadrapo." ]
+          [
+            1,
+            "Lavar muy bien las hojas frescas."
+          ],
+          [
+            2,
+            "Machacar las hojas en un mortero hasta formar una pasta verde oscuro."
+          ],
+          [
+            3,
+            "Mezclar la pasta con un poco de aceite de ricino o de oliva."
+          ],
+          [
+            4,
+            "Calentar la mezcla muy ligeramente al fuego (que sea soportable al tacto)."
+          ],
+          [
+            5,
+            "Colocar la pasta tibia sobre el absceso, cubrir con una gasa y fijar con esparadrapo."
+          ]
         ]
       }
     ]
@@ -1685,11 +1853,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar muy bien la herida o corte con agua y jabón neutro." ],
-          [ 2, "Secar suavemente la zona afectada." ],
-          [ 3, "Extraer el látex de la corteza del árbol haciendo un pequeño corte (si se tiene acceso directo) o usar tintura de resina comercial." ],
-          [ 4, "Dejar caer las gotas directamente sobre la herida." ],
-          [ 5, "Dejar secar al aire libre; el látex formará una película protectora rojiza similar a una costra artificial." ]
+          [
+            1,
+            "Lavar muy bien la herida o corte con agua y jabón neutro."
+          ],
+          [
+            2,
+            "Secar suavemente la zona afectada."
+          ],
+          [
+            3,
+            "Extraer el látex de la corteza del árbol haciendo un pequeño corte (si se tiene acceso directo) o usar tintura de resina comercial."
+          ],
+          [
+            4,
+            "Dejar caer las gotas directamente sobre la herida."
+          ],
+          [
+            5,
+            "Dejar secar al aire libre; el látex formará una película protectora rojiza similar a una costra artificial."
+          ]
         ]
       }
     ]
@@ -1764,11 +1947,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar las hojas grandes y vellosas del arboloco." ],
-          [ 2, "Pasar las hojas rápidamente por una fuente de calor (comal o llama baja) para marchitarlas un poco y activar sus aceites, cuidando de no quemarlas." ],
-          [ 3, "Aplicar un poco de aceite de masaje sobre la articulación dolorida (opcional)." ],
-          [ 4, "Envolver la rodilla, codo o tobillo con las hojas calientes." ],
-          [ 5, "Fijar con una venda elástica y dejar el emplasto durante toda la noche." ]
+          [
+            1,
+            "Lavar las hojas grandes y vellosas del arboloco."
+          ],
+          [
+            2,
+            "Pasar las hojas rápidamente por una fuente de calor (comal o llama baja) para marchitarlas un poco y activar sus aceites, cuidando de no quemarlas."
+          ],
+          [
+            3,
+            "Aplicar un poco de aceite de masaje sobre la articulación dolorida (opcional)."
+          ],
+          [
+            4,
+            "Envolver la rodilla, codo o tobillo con las hojas calientes."
+          ],
+          [
+            5,
+            "Fijar con una venda elástica y dejar el emplasto durante toda la noche."
+          ]
         ]
       }
     ]
@@ -1842,11 +2040,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Para infusión hipoglucemiante: colocar la cucharada de hojas secas en una taza." ],
-          [ 2, "Añadir el agua hirviendo, tapar y dejar reposar 10 minutos." ],
-          [ 3, "Colar y beber sin azúcar." ],
-          [ 4, "Para el jugo (antioxidante/urinario): Lavar muy bien los frutos frescos del agraz/mortiño." ],
-          [ 5, "Licuar las bayas con un poco de agua fría, no colar (para aprovechar la fibra) y consumir inmediatamente." ]
+          [
+            1,
+            "Para infusión hipoglucemiante: colocar la cucharada de hojas secas en una taza."
+          ],
+          [
+            2,
+            "Añadir el agua hirviendo, tapar y dejar reposar 10 minutos."
+          ],
+          [
+            3,
+            "Colar y beber sin azúcar."
+          ],
+          [
+            4,
+            "Para el jugo (antioxidante/urinario): Lavar muy bien los frutos frescos del agraz/mortiño."
+          ],
+          [
+            5,
+            "Licuar las bayas con un poco de agua fría, no colar (para aprovechar la fibra) y consumir inmediatamente."
+          ]
         ]
       }
     ]
@@ -1920,11 +2133,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar y secar bien las hojas frescas." ],
-          [ 2, "Triturar ligeramente las hojas con las manos para romper sus glándulas y liberar el aroma característico a 'mentol/salicilato'." ],
-          [ 3, "Colocar las hojas en un frasco de vidrio oscuro." ],
-          [ 4, "Cubrir completamente con el alcohol, cerrar bien y dejar macerar en un lugar oscuro durante 15 días, agitando a diario." ],
-          [ 5, "Filtrar el alcohol y usarlo para masajear las zonas con dolor muscular o articular." ]
+          [
+            1,
+            "Lavar y secar bien las hojas frescas."
+          ],
+          [
+            2,
+            "Triturar ligeramente las hojas con las manos para romper sus glándulas y liberar el aroma característico a 'mentol/salicilato'."
+          ],
+          [
+            3,
+            "Colocar las hojas en un frasco de vidrio oscuro."
+          ],
+          [
+            4,
+            "Cubrir completamente con el alcohol, cerrar bien y dejar macerar en un lugar oscuro durante 15 días, agitando a diario."
+          ],
+          [
+            5,
+            "Filtrar el alcohol y usarlo para masajear las zonas con dolor muscular o articular."
+          ]
         ]
       }
     ]
@@ -1998,11 +2226,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar las hojas de arrayán." ],
-          [ 2, "Hervir el agua y añadir las hojas." ],
-          [ 3, "Mantener a fuego lento por 8 minutos para extraer los taninos." ],
-          [ 4, "Apagar, tapar y dejar enfriar hasta que esté tibio." ],
-          [ 5, "Colar y almacenar en un frasco limpio. No ingerir el enjuague." ]
+          [
+            1,
+            "Lavar las hojas de arrayán."
+          ],
+          [
+            2,
+            "Hervir el agua y añadir las hojas."
+          ],
+          [
+            3,
+            "Mantener a fuego lento por 8 minutos para extraer los taninos."
+          ],
+          [
+            4,
+            "Apagar, tapar y dejar enfriar hasta que esté tibio."
+          ],
+          [
+            5,
+            "Colar y almacenar en un frasco limpio. No ingerir el enjuague."
+          ]
         ]
       }
     ]
@@ -2076,10 +2319,22 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar cuidadosamente las bayas, retirando cualquier pedúnculo." ],
-          [ 2, "Licuar las bayas con el agua purificada." ],
-          [ 3, "Pasar por un colador para retirar las pequeñas semillas si se desea una textura más suave." ],
-          [ 4, "Consumir inmediatamente para aprovechar al máximo las vitaminas hidrosolubles." ]
+          [
+            1,
+            "Lavar cuidadosamente las bayas, retirando cualquier pedúnculo."
+          ],
+          [
+            2,
+            "Licuar las bayas con el agua purificada."
+          ],
+          [
+            3,
+            "Pasar por un colador para retirar las pequeñas semillas si se desea una textura más suave."
+          ],
+          [
+            4,
+            "Consumir inmediatamente para aprovechar al máximo las vitaminas hidrosolubles."
+          ]
         ]
       }
     ]
@@ -2153,11 +2408,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Recolectar las láminas secas de corteza que se desprenden naturalmente del tronco." ],
-          [ 2, "Hervir el agua y añadir la corteza." ],
-          [ 3, "Dejar en ebullición por 10 minutos." ],
-          [ 4, "Retirar del fuego y dejar enfriar completamente." ],
-          [ 5, "Filtrar el líquido para lavar la herida y utilizar parte de la corteza ablandada sobre el corte." ]
+          [
+            1,
+            "Recolectar las láminas secas de corteza que se desprenden naturalmente del tronco."
+          ],
+          [
+            2,
+            "Hervir el agua y añadir la corteza."
+          ],
+          [
+            3,
+            "Dejar en ebullición por 10 minutos."
+          ],
+          [
+            4,
+            "Retirar del fuego y dejar enfriar completamente."
+          ],
+          [
+            5,
+            "Filtrar el líquido para lavar la herida y utilizar parte de la corteza ablandada sobre el corte."
+          ]
         ]
       }
     ]
@@ -2229,11 +2499,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Trocear las ramas y hojas del rodamonte." ],
-          [ 2, "Poner a hervir los 2 litros de agua en una olla grande." ],
-          [ 3, "Añadir la planta y hervir a fuego fuerte durante 15 minutos." ],
-          [ 4, "Apagar el fuego y dejar reposar 10 minutos." ],
-          [ 5, "Verter la preparación, sin colar, en una tina de baño o usar en compresas muy calientes sobre las articulaciones." ]
+          [
+            1,
+            "Trocear las ramas y hojas del rodamonte."
+          ],
+          [
+            2,
+            "Poner a hervir los 2 litros de agua en una olla grande."
+          ],
+          [
+            3,
+            "Añadir la planta y hervir a fuego fuerte durante 15 minutos."
+          ],
+          [
+            4,
+            "Apagar el fuego y dejar reposar 10 minutos."
+          ],
+          [
+            5,
+            "Verter la preparación, sin colar, en una tina de baño o usar en compresas muy calientes sobre las articulaciones."
+          ]
         ]
       }
     ]
@@ -2305,11 +2590,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar las hojas del tuno." ],
-          [ 2, "Colocar las hojas en un recipiente de cerámica." ],
-          [ 3, "Verter el agua hirviendo y tapar inmediatamente." ],
-          [ 4, "Dejar infundir hasta que el líquido se enfríe." ],
-          [ 5, "Colar y usar el líquido para limpiar suavemente la piel." ]
+          [
+            1,
+            "Lavar las hojas del tuno."
+          ],
+          [
+            2,
+            "Colocar las hojas en un recipiente de cerámica."
+          ],
+          [
+            3,
+            "Verter el agua hirviendo y tapar inmediatamente."
+          ],
+          [
+            4,
+            "Dejar infundir hasta que el líquido se enfríe."
+          ],
+          [
+            5,
+            "Colar y usar el líquido para limpiar suavemente la piel."
+          ]
         ]
       }
     ]
@@ -2377,11 +2677,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Recolectar las hojas más jóvenes, que contienen la mayor cantidad de exudado resinoso." ],
-          [ 2, "Limpiar cuidadosamente la herida a tratar." ],
-          [ 3, "Macerar levemente las hojas para aumentar la liberación de la resina." ],
-          [ 4, "Colocar las hojas directamente sobre la herida o inflamación a modo de parche natural." ],
-          [ 5, "Fijar con una venda y dejar actuar por varias horas, cambiando el emplasto a diario." ]
+          [
+            1,
+            "Recolectar las hojas más jóvenes, que contienen la mayor cantidad de exudado resinoso."
+          ],
+          [
+            2,
+            "Limpiar cuidadosamente la herida a tratar."
+          ],
+          [
+            3,
+            "Macerar levemente las hojas para aumentar la liberación de la resina."
+          ],
+          [
+            4,
+            "Colocar las hojas directamente sobre la herida o inflamación a modo de parche natural."
+          ],
+          [
+            5,
+            "Fijar con una venda y dejar actuar por varias horas, cambiando el emplasto a diario."
+          ]
         ]
       }
     ]
@@ -2454,11 +2769,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Colocar las hojas de ciro en una taza." ],
-          [ 2, "Agregar el agua hirviendo." ],
-          [ 3, "Tapar inmediatamente para no perder los aceites esenciales volátiles responsables de su acción digestiva." ],
-          [ 4, "Dejar infundir por 5 a 7 minutos." ],
-          [ 5, "Colar y beber lentamente mientras esté caliente." ]
+          [
+            1,
+            "Colocar las hojas de ciro en una taza."
+          ],
+          [
+            2,
+            "Agregar el agua hirviendo."
+          ],
+          [
+            3,
+            "Tapar inmediatamente para no perder los aceites esenciales volátiles responsables de su acción digestiva."
+          ],
+          [
+            4,
+            "Dejar infundir por 5 a 7 minutos."
+          ],
+          [
+            5,
+            "Colar y beber lentamente mientras esté caliente."
+          ]
         ]
       }
     ]
@@ -2532,11 +2862,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar y secar muy bien las hojas de romero de páramo." ],
-          [ 2, "Introducirlas en un frasco de vidrio oscuro y esterilizado." ],
-          [ 3, "Cubrir completamente con el alcohol." ],
-          [ 4, "Cerrar herméticamente y dejar macerar en un lugar fresco y oscuro durante 21 días, agitando cada 2 días." ],
-          [ 5, "Filtrar la tintura y usarla para realizar masajes vigorosos en articulaciones y extremidades frías." ]
+          [
+            1,
+            "Lavar y secar muy bien las hojas de romero de páramo."
+          ],
+          [
+            2,
+            "Introducirlas en un frasco de vidrio oscuro y esterilizado."
+          ],
+          [
+            3,
+            "Cubrir completamente con el alcohol."
+          ],
+          [
+            4,
+            "Cerrar herméticamente y dejar macerar en un lugar fresco y oscuro durante 21 días, agitando cada 2 días."
+          ],
+          [
+            5,
+            "Filtrar la tintura y usarla para realizar masajes vigorosos en articulaciones y extremidades frías."
+          ]
         ]
       }
     ]
@@ -2608,11 +2953,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Calentar la tetera o taza previamente con un poco de agua caliente y desecharla." ],
-          [ 2, "Colocar las hojas secas en el recipiente caliente." ],
-          [ 3, "Verter los 250ml de agua a punto de ebullición sobre las hojas." ],
-          [ 4, "Tapar y dejar reposar entre 3 y 5 minutos (más tiempo puede amargar la bebida)." ],
-          [ 5, "Colar y consumir, puede endulzarse ligeramente si se desea." ]
+          [
+            1,
+            "Calentar la tetera o taza previamente con un poco de agua caliente y desecharla."
+          ],
+          [
+            2,
+            "Colocar las hojas secas en el recipiente caliente."
+          ],
+          [
+            3,
+            "Verter los 250ml de agua a punto de ebullición sobre las hojas."
+          ],
+          [
+            4,
+            "Tapar y dejar reposar entre 3 y 5 minutos (más tiempo puede amargar la bebida)."
+          ],
+          [
+            5,
+            "Colar y consumir, puede endulzarse ligeramente si se desea."
+          ]
         ]
       }
     ]
@@ -2684,11 +3044,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar muy bien la raíz o la corteza obtenida." ],
-          [ 2, "Colocar la corteza en el agua fría en un recipiente que no sea de aluminio." ],
-          [ 3, "Llevar a fuego y hervir lentamente durante 15 minutos para extraer la berberina (el líquido se tornará amarillento)." ],
-          [ 4, "Dejar reposar, colar y desechar la corteza." ],
-          [ 5, "Beber la decocción amarga. Precaución: Está contraindicado en mujeres embarazadas." ]
+          [
+            1,
+            "Lavar muy bien la raíz o la corteza obtenida."
+          ],
+          [
+            2,
+            "Colocar la corteza en el agua fría en un recipiente que no sea de aluminio."
+          ],
+          [
+            3,
+            "Llevar a fuego y hervir lentamente durante 15 minutos para extraer la berberina (el líquido se tornará amarillento)."
+          ],
+          [
+            4,
+            "Dejar reposar, colar y desechar la corteza."
+          ],
+          [
+            5,
+            "Beber la decocción amarga. Precaución: Está contraindicado en mujeres embarazadas."
+          ]
         ]
       }
     ]
@@ -2764,11 +3139,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Recolectar únicamente las hojas secas que cuelgan del tallo, nunca arrancar el cogollo vivo." ],
-          [ 2, "Hervir el agua en un recipiente con tapa." ],
-          [ 3, "Añadir las hojas y dejar hervir a fuego muy lento por 5 minutos para extraer la resina atrapada en la pubescencia." ],
-          [ 4, "Retirar del fuego y respirar el vapor con cuidado (vahos)." ],
-          [ 5, "Colar pasándolo por un filtro de tela fina (para evitar los pelillos), endulzar y beber caliente." ]
+          [
+            1,
+            "Recolectar únicamente las hojas secas que cuelgan del tallo, nunca arrancar el cogollo vivo."
+          ],
+          [
+            2,
+            "Hervir el agua en un recipiente con tapa."
+          ],
+          [
+            3,
+            "Añadir las hojas y dejar hervir a fuego muy lento por 5 minutos para extraer la resina atrapada en la pubescencia."
+          ],
+          [
+            4,
+            "Retirar del fuego y respirar el vapor con cuidado (vahos)."
+          ],
+          [
+            5,
+            "Colar pasándolo por un filtro de tela fina (para evitar los pelillos), endulzar y beber caliente."
+          ]
         ]
       }
     ]
@@ -2843,11 +3233,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Hervir el agua junto con la panela hasta formar un melado o almíbar ligero." ],
-          [ 2, "Añadir las hojas de frailejón al almíbar hirviendo." ],
-          [ 3, "Bajar el fuego al mínimo y cocinar tapado durante 20 minutos para que la resina se integre con el azúcar." ],
-          [ 4, "Apagar el fuego y dejar reposar hasta que esté tibio." ],
-          [ 5, "Colar a través de una manta o filtro fino para retirar todos los pelos foliares y envasar en vidrio oscuro." ]
+          [
+            1,
+            "Hervir el agua junto con la panela hasta formar un melado o almíbar ligero."
+          ],
+          [
+            2,
+            "Añadir las hojas de frailejón al almíbar hirviendo."
+          ],
+          [
+            3,
+            "Bajar el fuego al mínimo y cocinar tapado durante 20 minutos para que la resina se integre con el azúcar."
+          ],
+          [
+            4,
+            "Apagar el fuego y dejar reposar hasta que esté tibio."
+          ],
+          [
+            5,
+            "Colar a través de una manta o filtro fino para retirar todos los pelos foliares y envasar en vidrio oscuro."
+          ]
         ]
       }
     ]
@@ -2921,11 +3326,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Desprender suavemente las láminas de corteza suelta del árbol sin dañar el tronco interior." ],
-          [ 2, "Lavar la corteza para retirar polvo o musgo." ],
-          [ 3, "Hervir en el agua durante 15 minutos." ],
-          [ 4, "Dejar reposar y enfriar completamente." ],
-          [ 5, "Filtrar el líquido, el cual tendrá un tono rojizo/ambarino rico en taninos, y aplicar sobre la piel." ]
+          [
+            1,
+            "Desprender suavemente las láminas de corteza suelta del árbol sin dañar el tronco interior."
+          ],
+          [
+            2,
+            "Lavar la corteza para retirar polvo o musgo."
+          ],
+          [
+            3,
+            "Hervir en el agua durante 15 minutos."
+          ],
+          [
+            4,
+            "Dejar reposar y enfriar completamente."
+          ],
+          [
+            5,
+            "Filtrar el líquido, el cual tendrá un tono rojizo/ambarino rico en taninos, y aplicar sobre la piel."
+          ]
         ]
       }
     ]
@@ -2997,11 +3417,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar las hojas tiernas (brotes) del chusque." ],
-          [ 2, "Trozar las hojas finamente con las manos o tijeras." ],
-          [ 3, "Colocar en una taza y verter el agua hirviendo." ],
-          [ 4, "Tapar y dejar infundir por 10 minutos." ],
-          [ 5, "Colar y consumir la bebida (tiene un sabor muy neutro, ligeramente a pasto fresco)." ]
+          [
+            1,
+            "Lavar las hojas tiernas (brotes) del chusque."
+          ],
+          [
+            2,
+            "Trozar las hojas finamente con las manos o tijeras."
+          ],
+          [
+            3,
+            "Colocar en una taza y verter el agua hirviendo."
+          ],
+          [
+            4,
+            "Tapar y dejar infundir por 10 minutos."
+          ],
+          [
+            5,
+            "Colar y consumir la bebida (tiene un sabor muy neutro, ligeramente a pasto fresco)."
+          ]
         ]
       }
     ]
@@ -3072,11 +3507,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar la paja para retirar tierra superficial." ],
-          [ 2, "Hervir los 5 litros de agua en una olla grande." ],
-          [ 3, "Introducir la paja y dejar hervir a fuego fuerte durante 20 minutos para extraer sus sílices y aceites suaves." ],
-          [ 4, "Verter la decocción (con todo y pajas si se desea) en una tina con agua caliente suficiente para inmersión." ],
-          [ 5, "Sumergirse en el baño termal artesanal hasta que el cuerpo recupere su temperatura natural." ]
+          [
+            1,
+            "Lavar la paja para retirar tierra superficial."
+          ],
+          [
+            2,
+            "Hervir los 5 litros de agua en una olla grande."
+          ],
+          [
+            3,
+            "Introducir la paja y dejar hervir a fuego fuerte durante 20 minutos para extraer sus sílices y aceites suaves."
+          ],
+          [
+            4,
+            "Verter la decocción (con todo y pajas si se desea) en una tina con agua caliente suficiente para inmersión."
+          ],
+          [
+            5,
+            "Sumergirse en el baño termal artesanal hasta que el cuerpo recupere su temperatura natural."
+          ]
         ]
       }
     ]
@@ -3144,11 +3594,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Con mucho cuidado y guantes gruesos, extraer una de las hojas desde la base." ],
-          [ 2, "Pelar las espinas laterales y la cutícula exterior dura." ],
-          [ 3, "Extraer el interior blanco, mucilaginoso y carnoso (similar al aloe vera)." ],
-          [ 4, "Macerar esta pulpa hasta formar un gel espeso." ],
-          [ 5, "Aplicar directamente sobre el hematoma o la inflamación." ]
+          [
+            1,
+            "Con mucho cuidado y guantes gruesos, extraer una de las hojas desde la base."
+          ],
+          [
+            2,
+            "Pelar las espinas laterales y la cutícula exterior dura."
+          ],
+          [
+            3,
+            "Extraer el interior blanco, mucilaginoso y carnoso (similar al aloe vera)."
+          ],
+          [
+            4,
+            "Macerar esta pulpa hasta formar un gel espeso."
+          ],
+          [
+            5,
+            "Aplicar directamente sobre el hematoma o la inflamación."
+          ]
         ]
       }
     ]
@@ -3222,11 +3687,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Colocar las ramitas de pino de páramo en un bol o recipiente amplio que soporte calor." ],
-          [ 2, "Verter el litro de agua hirviendo sobre las plantas." ],
-          [ 3, "Inmediatamente, inclinar el rostro sobre el recipiente a una distancia segura para no quemarse." ],
-          [ 4, "Cubrir la cabeza y el recipiente con una toalla grande para crear una carpa de vapor." ],
-          [ 5, "Respirar profunda y calmadamente por la nariz y exhalar por la boca para absorber los aceites balsámicos." ]
+          [
+            1,
+            "Colocar las ramitas de pino de páramo en un bol o recipiente amplio que soporte calor."
+          ],
+          [
+            2,
+            "Verter el litro de agua hirviendo sobre las plantas."
+          ],
+          [
+            3,
+            "Inmediatamente, inclinar el rostro sobre el recipiente a una distancia segura para no quemarse."
+          ],
+          [
+            4,
+            "Cubrir la cabeza y el recipiente con una toalla grande para crear una carpa de vapor."
+          ],
+          [
+            5,
+            "Respirar profunda y calmadamente por la nariz y exhalar por la boca para absorber los aceites balsámicos."
+          ]
         ]
       }
     ]
@@ -3300,11 +3780,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Colocar la planta seca en una taza pequeña." ],
-          [ 2, "Verter el agua caliente." ],
-          [ 3, "Tapar y dejar reposar brevemente, solo entre 3 a 5 minutos (es extremadamente amarga)." ],
-          [ 4, "Colar la bebida." ],
-          [ 5, "Tomar a pequeños sorbos. NUNCA endulzar, ya que el sabor amargo en la lengua es el que desencadena el reflejo digestivo y hepático." ]
+          [
+            1,
+            "Colocar la planta seca en una taza pequeña."
+          ],
+          [
+            2,
+            "Verter el agua caliente."
+          ],
+          [
+            3,
+            "Tapar y dejar reposar brevemente, solo entre 3 a 5 minutos (es extremadamente amarga)."
+          ],
+          [
+            4,
+            "Colar la bebida."
+          ],
+          [
+            5,
+            "Tomar a pequeños sorbos. NUNCA endulzar, ya que el sabor amargo en la lengua es el que desencadena el reflejo digestivo y hepático."
+          ]
         ]
       }
     ]
@@ -3379,11 +3874,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar los frutos y las hojas gruesas del cerote." ],
-          [ 2, "Colocarlos en el agua fría en una olla pequeña." ],
-          [ 3, "Llevar a punto de ebullición y dejar hervir a fuego medio por 10 a 15 minutos." ],
-          [ 4, "Retirar del fuego y dejar enfriar hasta que esté tibio." ],
-          [ 5, "Colar presionando los frutos para extraer sus taninos, y beber el líquido astringente." ]
+          [
+            1,
+            "Lavar los frutos y las hojas gruesas del cerote."
+          ],
+          [
+            2,
+            "Colocarlos en el agua fría en una olla pequeña."
+          ],
+          [
+            3,
+            "Llevar a punto de ebullición y dejar hervir a fuego medio por 10 a 15 minutos."
+          ],
+          [
+            4,
+            "Retirar del fuego y dejar enfriar hasta que esté tibio."
+          ],
+          [
+            5,
+            "Colar presionando los frutos para extraer sus taninos, y beber el líquido astringente."
+          ]
         ]
       }
     ]
@@ -3459,11 +3969,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Recolectar las flores amarillas preferiblemente al mediodía cuando hay sol." ],
-          [ 2, "Colocar las flores ligeramente machacadas en un frasco de vidrio transparente." ],
-          [ 3, "Cubrir completamente con el aceite de oliva." ],
-          [ 4, "Cerrar el frasco y dejar macerar bajo la luz directa del sol durante 40 días (el aceite se tornará rojo sangre gracias a la hipericina)." ],
-          [ 5, "Filtrar a través de una tela de algodón, envasar en frasco oscuro y usar tópicamente." ]
+          [
+            1,
+            "Recolectar las flores amarillas preferiblemente al mediodía cuando hay sol."
+          ],
+          [
+            2,
+            "Colocar las flores ligeramente machacadas en un frasco de vidrio transparente."
+          ],
+          [
+            3,
+            "Cubrir completamente con el aceite de oliva."
+          ],
+          [
+            4,
+            "Cerrar el frasco y dejar macerar bajo la luz directa del sol durante 40 días (el aceite se tornará rojo sangre gracias a la hipericina)."
+          ],
+          [
+            5,
+            "Filtrar a través de una tela de algodón, envasar en frasco oscuro y usar tópicamente."
+          ]
         ]
       }
     ]
@@ -3538,11 +4063,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Llevar el agua a punto de ebullición." ],
-          [ 2, "Añadir las hojas (nunca verdes, siempre las secas de la base) y cocinar a fuego lento 5 minutos." ],
-          [ 3, "Apagar el fuego, tapar y dejar reposar 10 minutos." ],
-          [ 4, "Filtrar la infusión muy bien, preferiblemente con un colador de tela fina para retirar los pelos microscópicos de la planta." ],
-          [ 5, "Beber la preparación lo más caliente que se tolere." ]
+          [
+            1,
+            "Llevar el agua a punto de ebullición."
+          ],
+          [
+            2,
+            "Añadir las hojas (nunca verdes, siempre las secas de la base) y cocinar a fuego lento 5 minutos."
+          ],
+          [
+            3,
+            "Apagar el fuego, tapar y dejar reposar 10 minutos."
+          ],
+          [
+            4,
+            "Filtrar la infusión muy bien, preferiblemente con un colador de tela fina para retirar los pelos microscópicos de la planta."
+          ],
+          [
+            5,
+            "Beber la preparación lo más caliente que se tolere."
+          ]
         ]
       }
     ]
@@ -3618,11 +4158,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Llevar el agua a ebullición en una olla de acero o cerámica." ],
-          [ 2, "Añadir las hojas, tapar inmediatamente y retirar del fuego." ],
-          [ 3, "Dejar en infusión por 10 minutos para extraer los principios emolientes." ],
-          [ 4, "Colar con filtro muy fino." ],
-          [ 5, "Añadir la cucharada de miel, remover bien y consumir." ]
+          [
+            1,
+            "Llevar el agua a ebullición en una olla de acero o cerámica."
+          ],
+          [
+            2,
+            "Añadir las hojas, tapar inmediatamente y retirar del fuego."
+          ],
+          [
+            3,
+            "Dejar en infusión por 10 minutos para extraer los principios emolientes."
+          ],
+          [
+            4,
+            "Colar con filtro muy fino."
+          ],
+          [
+            5,
+            "Añadir la cucharada de miel, remover bien y consumir."
+          ]
         ]
       }
     ]
@@ -3694,11 +4249,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Calentar el agua sin dejar que llegue a ebullición fuerte." ],
-          [ 2, "Agregar las flores y las hojas ricas en resina." ],
-          [ 3, "Dejar reposar tapado hasta que el agua extraiga las resinas y alcance temperatura ambiente." ],
-          [ 4, "Filtrar el líquido para retirar el material vegetal." ],
-          [ 5, "Lavar la herida meticulosamente con la preparación fría." ]
+          [
+            1,
+            "Calentar el agua sin dejar que llegue a ebullición fuerte."
+          ],
+          [
+            2,
+            "Agregar las flores y las hojas ricas en resina."
+          ],
+          [
+            3,
+            "Dejar reposar tapado hasta que el agua extraiga las resinas y alcance temperatura ambiente."
+          ],
+          [
+            4,
+            "Filtrar el líquido para retirar el material vegetal."
+          ],
+          [
+            5,
+            "Lavar la herida meticulosamente con la preparación fría."
+          ]
         ]
       }
     ]
@@ -3765,11 +4335,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Con guantes protectores, cortar las bases de las hojas evitando las espinas de los bordes." ],
-          [ 2, "Retirar la cutícula dura exterior con un cuchillo limpio." ],
-          [ 3, "Extraer la pulpa o gel interior, que tiene una textura muy mucilaginosa." ],
-          [ 4, "Macerar o triturar un poco la pulpa blanca hasta lograr una consistencia manejable." ],
-          [ 5, "Colocar directamente sobre el golpe o la quemadura y fijar con un vendaje ligero." ]
+          [
+            1,
+            "Con guantes protectores, cortar las bases de las hojas evitando las espinas de los bordes."
+          ],
+          [
+            2,
+            "Retirar la cutícula dura exterior con un cuchillo limpio."
+          ],
+          [
+            3,
+            "Extraer la pulpa o gel interior, que tiene una textura muy mucilaginosa."
+          ],
+          [
+            4,
+            "Macerar o triturar un poco la pulpa blanca hasta lograr una consistencia manejable."
+          ],
+          [
+            5,
+            "Colocar directamente sobre el golpe o la quemadura y fijar con un vendaje ligero."
+          ]
         ]
       }
     ]
@@ -3841,11 +4426,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Macerar las semillas crudas y amargas en un mortero profundo." ],
-          [ 2, "Hervir el agua y añadir las semillas trituradas." ],
-          [ 3, "Cocinar a fuego vivo por 20 a 30 minutos para forzar la extracción de los alcaloides tóxicos hacia el agua." ],
-          [ 4, "Dejar enfriar completamente y colar con un paño para evitar residuos." ],
-          [ 5, "Aplicar el líquido como loción tópica de forma sumamente cuidadosa y lavar las manos después del uso." ]
+          [
+            1,
+            "Macerar las semillas crudas y amargas en un mortero profundo."
+          ],
+          [
+            2,
+            "Hervir el agua y añadir las semillas trituradas."
+          ],
+          [
+            3,
+            "Cocinar a fuego vivo por 20 a 30 minutos para forzar la extracción de los alcaloides tóxicos hacia el agua."
+          ],
+          [
+            4,
+            "Dejar enfriar completamente y colar con un paño para evitar residuos."
+          ],
+          [
+            5,
+            "Aplicar el líquido como loción tópica de forma sumamente cuidadosa y lavar las manos después del uso."
+          ]
         ]
       }
     ]
@@ -3918,11 +4518,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar y secar meticulosamente las flores y hojas amarillas." ],
-          [ 2, "Trozarlas con las manos y colocarlas en un frasco de vidrio oscuro." ],
-          [ 3, "Cubrir completamente el material vegetal con el alcohol." ],
-          [ 4, "Dejar macerar en un lugar oscuro y fresco por 15 a 21 días, agitando el frasco cada 2 días." ],
-          [ 5, "Colar el líquido amarillento y guardarlo en un gotero o rociador para uso externo como linimento." ]
+          [
+            1,
+            "Lavar y secar meticulosamente las flores y hojas amarillas."
+          ],
+          [
+            2,
+            "Trozarlas con las manos y colocarlas en un frasco de vidrio oscuro."
+          ],
+          [
+            3,
+            "Cubrir completamente el material vegetal con el alcohol."
+          ],
+          [
+            4,
+            "Dejar macerar en un lugar oscuro y fresco por 15 a 21 días, agitando el frasco cada 2 días."
+          ],
+          [
+            5,
+            "Colar el líquido amarillento y guardarlo en un gotero o rociador para uso externo como linimento."
+          ]
         ]
       }
     ]
@@ -3993,11 +4608,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Llevar el medio litro de agua a ebullición." ],
-          [ 2, "Añadir las hojas de la planta hemiparásita y cocinar a fuego lento por 10 minutos." ],
-          [ 3, "Retirar del fuego, tapar y dejar enfriar a temperatura ambiente." ],
-          [ 4, "Filtrar cuidadosamente usando un colador o tela limpia." ],
-          [ 5, "Usar el líquido exclusivamente para asepsia tópica en zonas afectadas." ]
+          [
+            1,
+            "Llevar el medio litro de agua a ebullición."
+          ],
+          [
+            2,
+            "Añadir las hojas de la planta hemiparásita y cocinar a fuego lento por 10 minutos."
+          ],
+          [
+            3,
+            "Retirar del fuego, tapar y dejar enfriar a temperatura ambiente."
+          ],
+          [
+            4,
+            "Filtrar cuidadosamente usando un colador o tela limpia."
+          ],
+          [
+            5,
+            "Usar el líquido exclusivamente para asepsia tópica en zonas afectadas."
+          ]
         ]
       }
     ]
@@ -4070,11 +4700,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Colocar las hojas secas en el fondo de una taza grande de cerámica." ],
-          [ 2, "Verter el agua caliente recién hervida." ],
-          [ 3, "Tapar la taza para no perder los aceites volátiles y dejar infundir por 5 a 7 minutos." ],
-          [ 4, "Colar para retirar el material vegetal." ],
-          [ 5, "Beber la infusión sin añadir azúcares para no alterar su efecto depurativo sobre el riñón y el hígado." ]
+          [
+            1,
+            "Colocar las hojas secas en el fondo de una taza grande de cerámica."
+          ],
+          [
+            2,
+            "Verter el agua caliente recién hervida."
+          ],
+          [
+            3,
+            "Tapar la taza para no perder los aceites volátiles y dejar infundir por 5 a 7 minutos."
+          ],
+          [
+            4,
+            "Colar para retirar el material vegetal."
+          ],
+          [
+            5,
+            "Beber la infusión sin añadir azúcares para no alterar su efecto depurativo sobre el riñón y el hígado."
+          ]
         ]
       }
     ]
@@ -4145,11 +4790,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Calentar el agua hasta alcanzar el punto de ebullición." ],
-          [ 2, "Añadir las pequeñas flores secas blanquecinas en forma de botón estrellado." ],
-          [ 3, "Apagar el fuego, tapar el recipiente y dejar infundir durante 8 a 10 minutos." ],
-          [ 4, "Colar la bebida (las cabezuelas se pueden compostar)." ],
-          [ 5, "Beber lentamente; si se toma para el insomnio, se puede endulzar con una pizca de miel." ]
+          [
+            1,
+            "Calentar el agua hasta alcanzar el punto de ebullición."
+          ],
+          [
+            2,
+            "Añadir las pequeñas flores secas blanquecinas en forma de botón estrellado."
+          ],
+          [
+            3,
+            "Apagar el fuego, tapar el recipiente y dejar infundir durante 8 a 10 minutos."
+          ],
+          [
+            4,
+            "Colar la bebida (las cabezuelas se pueden compostar)."
+          ],
+          [
+            5,
+            "Beber lentamente; si se toma para el insomnio, se puede endulzar con una pizca de miel."
+          ]
         ]
       }
     ]
@@ -4221,11 +4881,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar las hojas pequeñas de la planta." ],
-          [ 2, "Machacarlas en un mortero levemente para romper las células vegetales y liberar los compuestos analgésicos." ],
-          [ 3, "Colocar las hojas machacadas en un envase de vidrio limpio con tapa hermética y añadir el alcohol." ],
-          [ 4, "Dejar macerar por 2 semanas en un armario o lugar oscuro, agitando un poco el frasco a diario." ],
-          [ 5, "Filtrar todo el líquido y usar exclusivamente para realizar masajes externos en músculos o articulaciones con dolor." ]
+          [
+            1,
+            "Lavar las hojas pequeñas de la planta."
+          ],
+          [
+            2,
+            "Machacarlas en un mortero levemente para romper las células vegetales y liberar los compuestos analgésicos."
+          ],
+          [
+            3,
+            "Colocar las hojas machacadas en un envase de vidrio limpio con tapa hermética y añadir el alcohol."
+          ],
+          [
+            4,
+            "Dejar macerar por 2 semanas en un armario o lugar oscuro, agitando un poco el frasco a diario."
+          ],
+          [
+            5,
+            "Filtrar todo el líquido y usar exclusivamente para realizar masajes externos en músculos o articulaciones con dolor."
+          ]
         ]
       }
     ]
@@ -4299,11 +4974,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar las ramas finas de la planta." ],
-          [ 2, "Trozar las ramas y hojas e introducirlas en una tetera." ],
-          [ 3, "Verter el agua a punto de ebullición sobre la planta." ],
-          [ 4, "Tapar y dejar infundir por 10 minutos para extraer los compuestos astringentes." ],
-          [ 5, "Colar y consumir tibio sin endulzar." ]
+          [
+            1,
+            "Lavar las ramas finas de la planta."
+          ],
+          [
+            2,
+            "Trozar las ramas y hojas e introducirlas en una tetera."
+          ],
+          [
+            3,
+            "Verter el agua a punto de ebullición sobre la planta."
+          ],
+          [
+            4,
+            "Tapar y dejar infundir por 10 minutos para extraer los compuestos astringentes."
+          ],
+          [
+            5,
+            "Colar y consumir tibio sin endulzar."
+          ]
         ]
       }
     ]
@@ -4377,11 +5067,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Extraer con cuidado las escamas de corteza suelta del árbol." ],
-          [ 2, "Lavar la corteza y las hojas frescas." ],
-          [ 3, "Hervir en el agua durante 15 minutos para liberar sus taninos hemostáticos." ],
-          [ 4, "Retirar del fuego y dejar enfriar completamente." ],
-          [ 5, "Filtrar el líquido para el lavado de la herida, aplicando luego los restos blandos de la decocción sobre el corte." ]
+          [
+            1,
+            "Extraer con cuidado las escamas de corteza suelta del árbol."
+          ],
+          [
+            2,
+            "Lavar la corteza y las hojas frescas."
+          ],
+          [
+            3,
+            "Hervir en el agua durante 15 minutos para liberar sus taninos hemostáticos."
+          ],
+          [
+            4,
+            "Retirar del fuego y dejar enfriar completamente."
+          ],
+          [
+            5,
+            "Filtrar el líquido para el lavado de la herida, aplicando luego los restos blandos de la decocción sobre el corte."
+          ]
         ]
       }
     ]
@@ -4458,11 +5163,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar minuciosamente las hojas para eliminar polvillo y pelusas naturales de la planta." ],
-          [ 2, "Trozar las hojas y colocarlas en el agua fría." ],
-          [ 3, "Hervir a fuego medio durante 10 minutos." ],
-          [ 4, "Tapar la olla y dejar reposar 5 minutos más." ],
-          [ 5, "Colar con filtro fino, añadir la miel y beber mientras emana vapor." ]
+          [
+            1,
+            "Lavar minuciosamente las hojas para eliminar polvillo y pelusas naturales de la planta."
+          ],
+          [
+            2,
+            "Trozar las hojas y colocarlas en el agua fría."
+          ],
+          [
+            3,
+            "Hervir a fuego medio durante 10 minutos."
+          ],
+          [
+            4,
+            "Tapar la olla y dejar reposar 5 minutos más."
+          ],
+          [
+            5,
+            "Colar con filtro fino, añadir la miel y beber mientras emana vapor."
+          ]
         ]
       }
     ]
@@ -4536,11 +5256,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Colocar la salvia roja en una taza resistente al calor." ],
-          [ 2, "Verter el agua hirviendo y tapar herméticamente (los aceites esenciales son muy volátiles)." ],
-          [ 3, "Dejar infundir durante 8 minutos." ],
-          [ 4, "Destapar y respirar profundamente el aroma medicinal antes de colar." ],
-          [ 5, "Colar y consumir inmediatamente." ]
+          [
+            1,
+            "Colocar la salvia roja en una taza resistente al calor."
+          ],
+          [
+            2,
+            "Verter el agua hirviendo y tapar herméticamente (los aceites esenciales son muy volátiles)."
+          ],
+          [
+            3,
+            "Dejar infundir durante 8 minutos."
+          ],
+          [
+            4,
+            "Destapar y respirar profundamente el aroma medicinal antes de colar."
+          ],
+          [
+            5,
+            "Colar y consumir inmediatamente."
+          ]
         ]
       }
     ]
@@ -4611,11 +5346,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Llevar el agua a punto de ebullición en una olla grande." ],
-          [ 2, "Añadir las hojas secas maduras." ],
-          [ 3, "Hervir a fuego lento por 10 minutos para liberar las resinas." ],
-          [ 4, "Retirar del fuego, cubrir la cabeza con una toalla sobre la olla y aspirar los vapores calientes por 10 minutos." ],
-          [ 5, "Colar muy bien una pequeña porción del líquido restante, endulzar con miel y beber tibio." ]
+          [
+            1,
+            "Llevar el agua a punto de ebullición en una olla grande."
+          ],
+          [
+            2,
+            "Añadir las hojas secas maduras."
+          ],
+          [
+            3,
+            "Hervir a fuego lento por 10 minutos para liberar las resinas."
+          ],
+          [
+            4,
+            "Retirar del fuego, cubrir la cabeza con una toalla sobre la olla y aspirar los vapores calientes por 10 minutos."
+          ],
+          [
+            5,
+            "Colar muy bien una pequeña porción del líquido restante, endulzar con miel y beber tibio."
+          ]
         ]
       }
     ]
@@ -4689,11 +5439,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar y secar muy bien las ramas del romero de páramo." ],
-          [ 2, "Macerarlas o golpearlas suavemente para liberar sus aceites esenciales resinosos." ],
-          [ 3, "Introducirlas en un recipiente de vidrio." ],
-          [ 4, "Añadir el alcohol, sellar y dejar macerar en la oscuridad durante 15 días." ],
-          [ 5, "Usar el líquido filtrado directamente sobre la piel para generar calor local." ]
+          [
+            1,
+            "Lavar y secar muy bien las ramas del romero de páramo."
+          ],
+          [
+            2,
+            "Macerarlas o golpearlas suavemente para liberar sus aceites esenciales resinosos."
+          ],
+          [
+            3,
+            "Introducirlas en un recipiente de vidrio."
+          ],
+          [
+            4,
+            "Añadir el alcohol, sellar y dejar macerar en la oscuridad durante 15 días."
+          ],
+          [
+            5,
+            "Usar el líquido filtrado directamente sobre la piel para generar calor local."
+          ]
         ]
       }
     ]
@@ -4764,11 +5529,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Recolectar las hojas del injerto (es importante saber de qué árbol huésped proviene)." ],
-          [ 2, "Pesar exactamente la planta, ya que es potente y no debe sobredosificarse." ],
-          [ 3, "Colocar en una taza y verter el agua caliente." ],
-          [ 4, "Infundir tapado por solo 5 minutos." ],
-          [ 5, "Colar y consumir. (En la medicina tradicional andina esta preparación es supervisada por sabedores)." ]
+          [
+            1,
+            "Recolectar las hojas del injerto (es importante saber de qué árbol huésped proviene)."
+          ],
+          [
+            2,
+            "Pesar exactamente la planta, ya que es potente y no debe sobredosificarse."
+          ],
+          [
+            3,
+            "Colocar en una taza y verter el agua caliente."
+          ],
+          [
+            4,
+            "Infundir tapado por solo 5 minutos."
+          ],
+          [
+            5,
+            "Colar y consumir. (En la medicina tradicional andina esta preparación es supervisada por sabedores)."
+          ]
         ]
       }
     ]
@@ -4844,11 +5624,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Colocar la planta seca y troceada en una tetera." ],
-          [ 2, "Añadir el agua hirviendo inmediatamente." ],
-          [ 3, "Tapar y dejar reposar durante 15 minutos para extraer los alcaloides y flavonoides sedantes." ],
-          [ 4, "Colar finamente." ],
-          [ 5, "Beber en sorbos lentos en un ambiente ya oscuro y relajado." ]
+          [
+            1,
+            "Colocar la planta seca y troceada en una tetera."
+          ],
+          [
+            2,
+            "Añadir el agua hirviendo inmediatamente."
+          ],
+          [
+            3,
+            "Tapar y dejar reposar durante 15 minutos para extraer los alcaloides y flavonoides sedantes."
+          ],
+          [
+            4,
+            "Colar finamente."
+          ],
+          [
+            5,
+            "Beber en sorbos lentos en un ambiente ya oscuro y relajado."
+          ]
         ]
       }
     ]
@@ -4923,11 +5718,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Seleccionar las flores rojas del clavellino y retirarles el polvo." ],
-          [ 2, "Depositarlas en una taza de porcelana o vidrio templado." ],
-          [ 3, "Verter el agua hirviendo suavemente sobre los pétalos." ],
-          [ 4, "Tapar y dejar infundir por 7 minutos, el agua tomará un color ámbar-rojizo." ],
-          [ 5, "Colar y consumir lentamente para revitalizar el cuerpo y la mente." ]
+          [
+            1,
+            "Seleccionar las flores rojas del clavellino y retirarles el polvo."
+          ],
+          [
+            2,
+            "Depositarlas en una taza de porcelana o vidrio templado."
+          ],
+          [
+            3,
+            "Verter el agua hirviendo suavemente sobre los pétalos."
+          ],
+          [
+            4,
+            "Tapar y dejar infundir por 7 minutos, el agua tomará un color ámbar-rojizo."
+          ],
+          [
+            5,
+            "Colar y consumir lentamente para revitalizar el cuerpo y la mente."
+          ]
         ]
       }
     ]
@@ -5004,11 +5814,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Método del Dr. Bach modificado: No cortar la flor debido a su estado de amenaza (En peligro EN)." ],
-          [ 2, "Colocar el bol de cristal con agua de manantial de manera que la flor viva quede sumergida o rozando la superficie del agua." ],
-          [ 3, "Dejar expuesta la flor y el bol a la luz del sol matutino durante 3 a 4 horas para transferir la 'firma vibracional' de la orquídea al agua." ],
-          [ 4, "Retirar el bol con cuidado de no dañar la planta." ],
-          [ 5, "Mezclar el agua activada con brandy a partes iguales para crear la 'Tintura Madre', y diluir posteriormente para el uso en frascos goteros." ]
+          [
+            1,
+            "Método del Dr. Bach modificado: No cortar la flor debido a su estado de amenaza (En peligro EN)."
+          ],
+          [
+            2,
+            "Colocar el bol de cristal con agua de manantial de manera que la flor viva quede sumergida o rozando la superficie del agua."
+          ],
+          [
+            3,
+            "Dejar expuesta la flor y el bol a la luz del sol matutino durante 3 a 4 horas para transferir la 'firma vibracional' de la orquídea al agua."
+          ],
+          [
+            4,
+            "Retirar el bol con cuidado de no dañar la planta."
+          ],
+          [
+            5,
+            "Mezclar el agua activada con brandy a partes iguales para crear la 'Tintura Madre', y diluir posteriormente para el uso en frascos goteros."
+          ]
         ]
       }
     ]
@@ -5080,11 +5905,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar las hojas y la corteza cuidadosamente." ],
-          [ 2, "Hervir el agua en una olla grande." ],
-          [ 3, "Añadir el material vegetal y dejar hervir a fuego medio durante 15 minutos." ],
-          [ 4, "Retirar del fuego y dejar reposar 5 minutos." ],
-          [ 5, "Sumergir un paño limpio en el líquido caliente (soportable al tacto) y colocar sobre el músculo contraído." ]
+          [
+            1,
+            "Lavar las hojas y la corteza cuidadosamente."
+          ],
+          [
+            2,
+            "Hervir el agua en una olla grande."
+          ],
+          [
+            3,
+            "Añadir el material vegetal y dejar hervir a fuego medio durante 15 minutos."
+          ],
+          [
+            4,
+            "Retirar del fuego y dejar reposar 5 minutos."
+          ],
+          [
+            5,
+            "Sumergir un paño limpio en el líquido caliente (soportable al tacto) y colocar sobre el músculo contraído."
+          ]
         ]
       }
     ]
@@ -5154,11 +5994,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Recolectar el polvillo ceroso que recubre el estípite (tronco) de la palma con mucho cuidado." ],
-          [ 2, "Colocar la cera en un recipiente de vidrio resistente al calor." ],
-          [ 3, "Fundir al baño maría junto con el aceite de almendras hasta que se integren por completo." ],
-          [ 4, "Retirar del fuego y dejar enfriar hasta que solidifique como una pomada." ],
-          [ 5, "Tomar una pequeña cantidad y frotar sobre las áreas resecas o agrietadas." ]
+          [
+            1,
+            "Recolectar el polvillo ceroso que recubre el estípite (tronco) de la palma con mucho cuidado."
+          ],
+          [
+            2,
+            "Colocar la cera en un recipiente de vidrio resistente al calor."
+          ],
+          [
+            3,
+            "Fundir al baño maría junto con el aceite de almendras hasta que se integren por completo."
+          ],
+          [
+            4,
+            "Retirar del fuego y dejar enfriar hasta que solidifique como una pomada."
+          ],
+          [
+            5,
+            "Tomar una pequeña cantidad y frotar sobre las áreas resecas o agrietadas."
+          ]
         ]
       }
     ]
@@ -5226,11 +6081,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Quebrar cuidadosamente un tallo u hoja fresca para liberar el látex blanco (usar guantes para no irritar las manos)." ],
-          [ 2, "Proteger la piel sana alrededor de la verruga con vaselina." ],
-          [ 3, "Aplicar la gota de látex directamente sobre la lesión." ],
-          [ 4, "Dejar secar al aire libre." ],
-          [ 5, "Lavar bien las manos después de la aplicación y evitar cualquier contacto con los ojos o la boca." ]
+          [
+            1,
+            "Quebrar cuidadosamente un tallo u hoja fresca para liberar el látex blanco (usar guantes para no irritar las manos)."
+          ],
+          [
+            2,
+            "Proteger la piel sana alrededor de la verruga con vaselina."
+          ],
+          [
+            3,
+            "Aplicar la gota de látex directamente sobre la lesión."
+          ],
+          [
+            4,
+            "Dejar secar al aire libre."
+          ],
+          [
+            5,
+            "Lavar bien las manos después de la aplicación y evitar cualquier contacto con los ojos o la boca."
+          ]
         ]
       }
     ]
@@ -5303,11 +6173,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Colocar las flores secas en una taza." ],
-          [ 2, "Verter el agua recién hervida sobre las flores." ],
-          [ 3, "Tapar y dejar en infusión por 8 minutos." ],
-          [ 4, "Colar para retirar los restos de la planta." ],
-          [ 5, "Consumir tibio. Precaución: puede interactuar con medicamentos antidepresivos convencionales." ]
+          [
+            1,
+            "Colocar las flores secas en una taza."
+          ],
+          [
+            2,
+            "Verter el agua recién hervida sobre las flores."
+          ],
+          [
+            3,
+            "Tapar y dejar en infusión por 8 minutos."
+          ],
+          [
+            4,
+            "Colar para retirar los restos de la planta."
+          ],
+          [
+            5,
+            "Consumir tibio. Precaución: puede interactuar con medicamentos antidepresivos convencionales."
+          ]
         ]
       }
     ]
@@ -5377,11 +6262,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar las hojas, que suelen ser afelpadas." ],
-          [ 2, "Hervir el agua e introducir las hojas trituradas." ],
-          [ 3, "Dejar hervir por 10 minutos para una correcta extracción." ],
-          [ 4, "Retirar del fuego y dejar enfriar a temperatura ambiente." ],
-          [ 5, "Filtrar el líquido y usar en compresas sobre la frente para fiebre o como lavado para desinfectar." ]
+          [
+            1,
+            "Lavar las hojas, que suelen ser afelpadas."
+          ],
+          [
+            2,
+            "Hervir el agua e introducir las hojas trituradas."
+          ],
+          [
+            3,
+            "Dejar hervir por 10 minutos para una correcta extracción."
+          ],
+          [
+            4,
+            "Retirar del fuego y dejar enfriar a temperatura ambiente."
+          ],
+          [
+            5,
+            "Filtrar el líquido y usar en compresas sobre la frente para fiebre o como lavado para desinfectar."
+          ]
         ]
       }
     ]
@@ -5454,11 +6354,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Trozar las hojas aromáticas para exponer sus aceites esenciales." ],
-          [ 2, "Colocar en un recipiente y verter el agua a punto de ebullición." ],
-          [ 3, "Tapar herméticamente de inmediato para que los aromas no se evaporen." ],
-          [ 4, "Infundir durante 10 minutos." ],
-          [ 5, "Colar y beber lentamente después de las comidas." ]
+          [
+            1,
+            "Trozar las hojas aromáticas para exponer sus aceites esenciales."
+          ],
+          [
+            2,
+            "Colocar en un recipiente y verter el agua a punto de ebullición."
+          ],
+          [
+            3,
+            "Tapar herméticamente de inmediato para que los aromas no se evaporen."
+          ],
+          [
+            4,
+            "Infundir durante 10 minutos."
+          ],
+          [
+            5,
+            "Colar y beber lentamente después de las comidas."
+          ]
         ]
       }
     ]
@@ -5531,11 +6446,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Poner a hervir el litro de agua en una olla amplia." ],
-          [ 2, "Añadir las hojas y dejar hervir por 3 minutos." ],
-          [ 3, "Retirar del fuego y colocar sobre una mesa segura." ],
-          [ 4, "Cubrir la cabeza con una toalla formando una carpa sobre la olla." ],
-          [ 5, "Inhalar el vapor profundamente por la nariz, con cuidado de no acercarse demasiado al agua hirviendo." ]
+          [
+            1,
+            "Poner a hervir el litro de agua en una olla amplia."
+          ],
+          [
+            2,
+            "Añadir las hojas y dejar hervir por 3 minutos."
+          ],
+          [
+            3,
+            "Retirar del fuego y colocar sobre una mesa segura."
+          ],
+          [
+            4,
+            "Cubrir la cabeza con una toalla formando una carpa sobre la olla."
+          ],
+          [
+            5,
+            "Inhalar el vapor profundamente por la nariz, con cuidado de no acercarse demasiado al agua hirviendo."
+          ]
         ]
       }
     ]
@@ -5611,11 +6541,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar la corteza y trozarla en pedazos pequeños." ],
-          [ 2, "Hervir en el agua durante 15 a 20 minutos para extraer correctamente los taninos." ],
-          [ 3, "Retirar del fuego y dejar enfriar por completo." ],
-          [ 4, "Colar para asegurar que no queden astillas o residuos." ],
-          [ 5, "Usar el líquido como enjuague bucal sin tragarlo." ]
+          [
+            1,
+            "Lavar la corteza y trozarla en pedazos pequeños."
+          ],
+          [
+            2,
+            "Hervir en el agua durante 15 a 20 minutos para extraer correctamente los taninos."
+          ],
+          [
+            3,
+            "Retirar del fuego y dejar enfriar por completo."
+          ],
+          [
+            4,
+            "Colar para asegurar que no queden astillas o residuos."
+          ],
+          [
+            5,
+            "Usar el líquido como enjuague bucal sin tragarlo."
+          ]
         ]
       }
     ]
@@ -5688,11 +6633,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar los pétalos de las flores rojas/anaranjadas." ],
-          [ 2, "Colocarlos en una taza y verter el agua caliente." ],
-          [ 3, "Infundir durante no más de 5 a 7 minutos." ],
-          [ 4, "Colar y endulzar ligeramente si se desea." ],
-          [ 5, "Beber en la noche. No administrar a niños, mujeres embarazadas o personas medicadas con sedantes, dado el contenido de alcaloides." ]
+          [
+            1,
+            "Lavar los pétalos de las flores rojas/anaranjadas."
+          ],
+          [
+            2,
+            "Colocarlos en una taza y verter el agua caliente."
+          ],
+          [
+            3,
+            "Infundir durante no más de 5 a 7 minutos."
+          ],
+          [
+            4,
+            "Colar y endulzar ligeramente si se desea."
+          ],
+          [
+            5,
+            "Beber en la noche. No administrar a niños, mujeres embarazadas o personas medicadas con sedantes, dado el contenido de alcaloides."
+          ]
         ]
       }
     ]
@@ -5764,16 +6724,30 @@
           }
         ],
         "pasos": [
-          [ 1, "Recolectar las ramas tiernas con flores de la planta." ],
-          [ 2, "Hervir el agua y añadir el material vegetal triturado." ],
-          [ 3, "Mantener en ebullición suave por 10 minutos." ],
-          [ 4, "Retirar, tapar y dejar enfriar por completo." ],
-          [ 5, "Filtrar a través de una tela limpia y aplicar el líquido a modo de lavado sobre la piel afectada." ]
+          [
+            1,
+            "Recolectar las ramas tiernas con flores de la planta."
+          ],
+          [
+            2,
+            "Hervir el agua y añadir el material vegetal triturado."
+          ],
+          [
+            3,
+            "Mantener en ebullición suave por 10 minutos."
+          ],
+          [
+            4,
+            "Retirar, tapar y dejar enfriar por completo."
+          ],
+          [
+            5,
+            "Filtrar a través de una tela limpia y aplicar el líquido a modo de lavado sobre la piel afectada."
+          ]
         ]
       }
     ]
-  }
-  ,
+  },
   {
     "nombreCientifico": "Erythroxylum novogranatense",
     "imageUrl": "https://www.google.com/search?q=Erythroxylum+novogranatense&tbm=isch",
@@ -5844,11 +6818,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Para infusión: colocar 3 a 5 hojas en una taza y verter agua hirviendo, dejar reposar 5 minutos." ],
-          [ 2, "Para uso tradicional (mambeo o boleo): Limpiar las hojas tostadas." ],
-          [ 3, "Introducir un puñado de hojas en el carrillo (interior de la mejilla) sin tragarlas." ],
-          [ 4, "Humedecer con la saliva hasta formar un bolo (acuyico)." ],
-          [ 5, "Agregar la pizca de cal/ceniza para activar la extracción alcaloide y mantener el bolo en la boca liberando su jugo." ]
+          [
+            1,
+            "Para infusión: colocar 3 a 5 hojas en una taza y verter agua hirviendo, dejar reposar 5 minutos."
+          ],
+          [
+            2,
+            "Para uso tradicional (mambeo o boleo): Limpiar las hojas tostadas."
+          ],
+          [
+            3,
+            "Introducir un puñado de hojas en el carrillo (interior de la mejilla) sin tragarlas."
+          ],
+          [
+            4,
+            "Humedecer con la saliva hasta formar un bolo (acuyico)."
+          ],
+          [
+            5,
+            "Agregar la pizca de cal/ceniza para activar la extracción alcaloide y mantener el bolo en la boca liberando su jugo."
+          ]
         ]
       }
     ]
@@ -5921,11 +6910,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Para inhalaciones: Hervir el litro de agua." ],
-          [ 2, "Retirar del fuego y disolver la resina en el agua caliente." ],
-          [ 3, "Cubrir la cabeza con una toalla e inhalar profundamente los vapores aromáticos por 15 minutos." ],
-          [ 4, "Para uso oral: Mezclar 1 gramo de resina con una cucharada de miel pura de abejas." ],
-          [ 5, "Tomar la mezcla lentamente permitiendo que recubra la garganta, máximo 2 veces al día." ]
+          [
+            1,
+            "Para inhalaciones: Hervir el litro de agua."
+          ],
+          [
+            2,
+            "Retirar del fuego y disolver la resina en el agua caliente."
+          ],
+          [
+            3,
+            "Cubrir la cabeza con una toalla e inhalar profundamente los vapores aromáticos por 15 minutos."
+          ],
+          [
+            4,
+            "Para uso oral: Mezclar 1 gramo de resina con una cucharada de miel pura de abejas."
+          ],
+          [
+            5,
+            "Tomar la mezcla lentamente permitiendo que recubra la garganta, máximo 2 veces al día."
+          ]
         ]
       }
     ]
@@ -5999,11 +7003,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar la corteza y molerla hasta obtener un polvo grueso." ],
-          [ 2, "Colocar en el agua fría y llevar a fuego." ],
-          [ 3, "Hervir lentamente por 20 minutos para extraer los alcaloides amargos." ],
-          [ 4, "Retirar, dejar reposar hasta que se enfríe y colar cuidadosamente." ],
-          [ 5, "Tomar en pequeñas dosis (es extremadamente amarga). No consumir en embarazo ni en dosis altas prolongadas." ]
+          [
+            1,
+            "Lavar la corteza y molerla hasta obtener un polvo grueso."
+          ],
+          [
+            2,
+            "Colocar en el agua fría y llevar a fuego."
+          ],
+          [
+            3,
+            "Hervir lentamente por 20 minutos para extraer los alcaloides amargos."
+          ],
+          [
+            4,
+            "Retirar, dejar reposar hasta que se enfríe y colar cuidadosamente."
+          ],
+          [
+            5,
+            "Tomar en pequeñas dosis (es extremadamente amarga). No consumir en embarazo ni en dosis altas prolongadas."
+          ]
         ]
       }
     ]
@@ -6071,11 +7090,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar rápidamente las hojas frescas bajo el agua." ],
-          [ 2, "Triturarlas entre las manos limpias o en un mortero hasta extraer un jugo verdoso oscuro." ],
-          [ 3, "Colocar la masa vegetal directamente sobre el corte o herida que está sangrando." ],
-          [ 4, "Presionar firmemente con una gasa o venda." ],
-          [ 5, "Dejar actuar hasta que el sangrado se detenga por completo. El matico actuará como un 'tapón' biológico." ]
+          [
+            1,
+            "Lavar rápidamente las hojas frescas bajo el agua."
+          ],
+          [
+            2,
+            "Triturarlas entre las manos limpias o en un mortero hasta extraer un jugo verdoso oscuro."
+          ],
+          [
+            3,
+            "Colocar la masa vegetal directamente sobre el corte o herida que está sangrando."
+          ],
+          [
+            4,
+            "Presionar firmemente con una gasa o venda."
+          ],
+          [
+            5,
+            "Dejar actuar hasta que el sangrado se detenga por completo. El matico actuará como un 'tapón' biológico."
+          ]
         ]
       }
     ]
@@ -6148,11 +7182,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar las hojas y secarlas cuidadosamente." ],
-          [ 2, "Untar la superficie de la hoja con un poco de aceite." ],
-          [ 3, "Pasar la hoja rápidamente por el fuego de la estufa para ablandarla y liberar sus alcaloides, sin dejar que se queme." ],
-          [ 4, "Aplicar la hoja caliente directamente sobre la rodilla, codo o zona con reumatismo severo." ],
-          [ 5, "Fijar con una venda. Lavarse las manos exhaustivamente con agua y jabón inmediatamente después de manipular la planta." ]
+          [
+            1,
+            "Lavar las hojas y secarlas cuidadosamente."
+          ],
+          [
+            2,
+            "Untar la superficie de la hoja con un poco de aceite."
+          ],
+          [
+            3,
+            "Pasar la hoja rápidamente por el fuego de la estufa para ablandarla y liberar sus alcaloides, sin dejar que se queme."
+          ],
+          [
+            4,
+            "Aplicar la hoja caliente directamente sobre la rodilla, codo o zona con reumatismo severo."
+          ],
+          [
+            5,
+            "Fijar con una venda. Lavarse las manos exhaustivamente con agua y jabón inmediatamente después de manipular la planta."
+          ]
         ]
       }
     ]
@@ -6229,11 +7278,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Abrir el fruto maduro (que debe estar muy suave, de color pardo) y extraer la pulpa con una cuchara." ],
-          [ 2, "Colocar la pulpa en la licuadora junto con el agua o la leche." ],
-          [ 3, "Añadir la miel o panela." ],
-          [ 4, "Licuar a velocidad media hasta obtener un batido denso y espumoso." ],
-          [ 5, "Pasar por un colador grueso para retirar las semillas y consumir de inmediato para aprovechar sus vitaminas hidrosolubles." ]
+          [
+            1,
+            "Abrir el fruto maduro (que debe estar muy suave, de color pardo) y extraer la pulpa con una cuchara."
+          ],
+          [
+            2,
+            "Colocar la pulpa en la licuadora junto con el agua o la leche."
+          ],
+          [
+            3,
+            "Añadir la miel o panela."
+          ],
+          [
+            4,
+            "Licuar a velocidad media hasta obtener un batido denso y espumoso."
+          ],
+          [
+            5,
+            "Pasar por un colador grueso para retirar las semillas y consumir de inmediato para aprovechar sus vitaminas hidrosolubles."
+          ]
         ]
       }
     ]
@@ -6302,11 +7366,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Quebrar una rama tierna, pedúnculo foliar o hacer una incisión en la corteza de la planta." ],
-          [ 2, "Recolectar las gotas de látex espeso y anaranjado que emergen casi de inmediato." ],
-          [ 3, "Proteger la piel sana alrededor de la verruga o callo con un poco de vaselina." ],
-          [ 4, "Aplicar la gota de látex exclusivamente sobre el tejido anormal a tratar." ],
-          [ 5, "Dejar secar; el área se teñirá de un color oscuro. Repetir diariamente sin intentar arrancar la verruga a la fuerza." ]
+          [
+            1,
+            "Quebrar una rama tierna, pedúnculo foliar o hacer una incisión en la corteza de la planta."
+          ],
+          [
+            2,
+            "Recolectar las gotas de látex espeso y anaranjado que emergen casi de inmediato."
+          ],
+          [
+            3,
+            "Proteger la piel sana alrededor de la verruga o callo con un poco de vaselina."
+          ],
+          [
+            4,
+            "Aplicar la gota de látex exclusivamente sobre el tejido anormal a tratar."
+          ],
+          [
+            5,
+            "Dejar secar; el área se teñirá de un color oscuro. Repetir diariamente sin intentar arrancar la verruga a la fuerza."
+          ]
         ]
       }
     ]
@@ -6379,11 +7458,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Lavar muy bien las raíces para retirar toda la tierra." ],
-          [ 2, "Triturarlas ligeramente (liberarán un fuerte olor característico, similar a tierra húmeda o calcetín sucio)." ],
-          [ 3, "Colocar en el agua y llevar al fuego." ],
-          [ 4, "Apenas rompa a hervir, apagar inmediatamente (no hervir en exceso para no degradar los valepotriatos)." ],
-          [ 5, "Tapar, dejar reposar 10 minutos, colar y beber. (No mezclar con alcohol ni medicación psiquiátrica sedante)." ]
+          [
+            1,
+            "Lavar muy bien las raíces para retirar toda la tierra."
+          ],
+          [
+            2,
+            "Triturarlas ligeramente (liberarán un fuerte olor característico, similar a tierra húmeda o calcetín sucio)."
+          ],
+          [
+            3,
+            "Colocar en el agua y llevar al fuego."
+          ],
+          [
+            4,
+            "Apenas rompa a hervir, apagar inmediatamente (no hervir en exceso para no degradar los valepotriatos)."
+          ],
+          [
+            5,
+            "Tapar, dejar reposar 10 minutos, colar y beber. (No mezclar con alcohol ni medicación psiquiátrica sedante)."
+          ]
         ]
       }
     ]
@@ -6454,11 +7548,26 @@
           }
         ],
         "pasos": [
-          [ 1, "Adquirir aceite de cacay 100% puro prensado en frío (extraerlo artesanalmente requiere maquinaria de prensado oleaginoso)." ],
-          [ 2, "Lavar y secar muy bien el rostro o la zona de la piel afectada con la cicatriz." ],
-          [ 3, "Colocar de 3 a 5 gotas de aceite de cacay en la palma de la mano." ],
-          [ 4, "Calentar ligeramente el aceite frotando las yemas de los dedos." ],
-          [ 5, "Masajear suavemente sobre la piel con movimientos circulares ascendentes hasta su total absorción. Dejar actuar toda la noche." ]
+          [
+            1,
+            "Adquirir aceite de cacay 100% puro prensado en frío (extraerlo artesanalmente requiere maquinaria de prensado oleaginoso)."
+          ],
+          [
+            2,
+            "Lavar y secar muy bien el rostro o la zona de la piel afectada con la cicatriz."
+          ],
+          [
+            3,
+            "Colocar de 3 a 5 gotas de aceite de cacay en la palma de la mano."
+          ],
+          [
+            4,
+            "Calentar ligeramente el aceite frotando las yemas de los dedos."
+          ],
+          [
+            5,
+            "Masajear suavemente sobre la piel con movimientos circulares ascendentes hasta su total absorción. Dejar actuar toda la noche."
+          ]
         ]
       }
     ]
@@ -6536,11 +7645,26 @@
           }
         ],
         "pasos": [
-          [ 1, "El sabedor (Taita o Chamán) machaca el bejuco con mazos de madera rezando la medicina." ],
-          [ 2, "Se coloca el bejuco y las hojas de la planta acompañante (para el DMT) en grandes ollas con agua." ],
-          [ 3, "Se somete a un proceso de cocción a fuego de leña que puede durar desde 12 hasta 24 horas continuas." ],
-          [ 4, "Se reduce y filtra constantemente hasta obtener una decocción densa, oscura y muy amarga." ],
-          [ 5, "La bebida resultante solo se administra en un entorno ceremonial, con dieta estricta previa (sin sal, azúcar, alcohol ni carnes rojas), debido a sus profundos efectos purgativos y psicoactivos." ]
+          [
+            1,
+            "El sabedor (Taita o Chamán) machaca el bejuco con mazos de madera rezando la medicina."
+          ],
+          [
+            2,
+            "Se coloca el bejuco y las hojas de la planta acompañante (para el DMT) en grandes ollas con agua."
+          ],
+          [
+            3,
+            "Se somete a un proceso de cocción a fuego de leña que puede durar desde 12 hasta 24 horas continuas."
+          ],
+          [
+            4,
+            "Se reduce y filtra constantemente hasta obtener una decocción densa, oscura y muy amarga."
+          ],
+          [
+            5,
+            "La bebida resultante solo se administra en un entorno ceremonial, con dieta estricta previa (sin sal, azúcar, alcohol ni carnes rojas), debido a sus profundos efectos purgativos y psicoactivos."
+          ]
         ]
       }
     ]

@@ -8,6 +8,9 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import clientPromise from '#@/lib/connection/mongodb';
 import { EspecimenType } from '#@/lib/types/especimenTypes';
+import { revalidatePath } from 'next/cache';
+
+// --- UPSERT ACTIONS ---
 
 async function upsertSpecimenToDB(
   {
@@ -81,9 +84,6 @@ async function upsertSpecimenToJSON(
   }:{data: EspecimenType}
 ) {
   try {
-    console.log(
-      process.cwd()
-    );
     const jsonFilePath = path.join(
       process.cwd(), 'src/lib/json/plantListDB.json'
     );
@@ -94,7 +94,6 @@ async function upsertSpecimenToJSON(
       fileContents
     ) as EspecimenType[];
 
-    // Strip out _id if it was passed in the raw data, just like the original logic
     const {
       _id: _, ...jsonSafeData
     } = data as any;
@@ -148,8 +147,7 @@ export async function upsertSpecimen(
   {
     data
   }:{data: EspecimenType }
-) {// Execute both operations concurrently.
-  // Because they internally catch their own errors, Promise.all won't short-circuit.
+) {
   const [
     dbResult,
     fileResult
@@ -168,8 +166,11 @@ export async function upsertSpecimen(
     ]
   );
 
-  // Case 1: Perfect Success
   if ( dbResult.success && fileResult.success ) {
+    revalidatePath(
+      '/hierbas', 'layout'
+    );
+
     return {
       success: true,
       data   : dbResult.data,
@@ -177,7 +178,6 @@ export async function upsertSpecimen(
     };
   }
 
-  // Case 2: Partial or Total Failure
   let failed: 'database' | 'file' | 'both' = 'both';
 
   if ( dbResult.success && !fileResult.success ) {
@@ -186,7 +186,6 @@ export async function upsertSpecimen(
     failed = 'database';
   }
 
-  // Construct detailed error message
   const errors = {
     ...( dbResult.error && {
       db: dbResult.error
@@ -197,11 +196,176 @@ export async function upsertSpecimen(
   };
 
   return {
-    success: false,     // Explicitly marking as not successful per your requirements
-    failed,             // Tells you exactly which one(s) failed
-    errors,             // Contains the specific error strings for debugging
+    success: false,
+    failed,
+    errors,
     data   : dbResult.success
       ? dbResult.data
-      : undefined, // Still passes db data if it succeeded
+      : undefined,
+  };
+}
+
+// --- DELETE ACTIONS ---
+
+async function deleteSpecimenFromDB(
+  {
+    id, nombreCientifico
+  }: { id?: string; nombreCientifico: string }
+) {
+  try {
+    const client = await clientPromise;
+    const database = client.db(
+      'botany_db'
+    );
+    const specimens = database.collection<EspecimenType>(
+      'plantas_medicinales'
+    );
+
+    const query = id
+      ? {
+          _id: new ObjectId(
+            id
+          )
+        }
+      : {
+          nombreCientifico
+        };
+    const result = await specimens.deleteOne(
+      query
+    );
+
+    if ( result.deletedCount === 0 ) {
+      throw new Error(
+        'No document found to delete in MongoDB.'
+      );
+    }
+
+    return {
+      success: true
+    };
+  } catch ( error ) {
+    console.error(
+      'Database Delete Error:', error
+    );
+
+    return {
+      success: false,
+      error  : error instanceof Error
+        ? error.message
+        : 'Unknown database deletion error',
+    };
+  }
+}
+
+async function deleteSpecimenFromJSON(
+  {
+    nombreCientifico
+  }: { nombreCientifico: string }
+) {
+  try {
+    const jsonFilePath = path.join(
+      process.cwd(), 'src/lib/json/plantListDB.json'
+    );
+    const fileContents = await fs.readFile(
+      jsonFilePath, 'utf8'
+    );
+    let plantList = JSON.parse(
+      fileContents
+    ) as EspecimenType[];
+
+    const initialLength = plantList.length;
+    plantList = plantList.filter(
+      (
+        plant
+      ) => {
+        return plant.nombreCientifico !== nombreCientifico;
+      }
+    );
+
+    if ( plantList.length === initialLength ) {
+      throw new Error(
+        'No document found to delete in JSON.'
+      );
+    }
+
+    await fs.writeFile(
+      jsonFilePath, JSON.stringify(
+        plantList, null, 2
+      ), 'utf8'
+    );
+
+    return {
+      success: true
+    };
+  } catch ( error ) {
+    console.error(
+      'File System Delete Error:', error
+    );
+
+    return {
+      success: false,
+      error  : error instanceof Error
+        ? error.message
+        : 'Unknown file system deletion error',
+    };
+  }
+}
+
+export async function deleteSpecimen(
+  {
+    id, nombreCientifico
+  }: { id?: string; nombreCientifico: string }
+) {
+  const [
+    dbResult,
+    fileResult
+  ] = await Promise.all(
+    [
+      deleteSpecimenFromDB(
+        {
+          id,
+          nombreCientifico
+        }
+      ),
+      deleteSpecimenFromJSON(
+        {
+          nombreCientifico
+        }
+      ),
+    ]
+  );
+
+  if ( dbResult.success && fileResult.success ) {
+    revalidatePath(
+      '/hierbas', 'layout'
+    );
+
+    return {
+      success: true,
+      failed : 'none'
+    };
+  }
+
+  let failed: 'database' | 'file' | 'both' = 'both';
+
+  if ( dbResult.success && !fileResult.success ) {
+    failed = 'file';
+  } else if ( !dbResult.success && fileResult.success ) {
+    failed = 'database';
+  }
+
+  const errors = {
+    ...( dbResult.error && {
+      db: dbResult.error
+    } ),
+    ...( fileResult.error && {
+      file: fileResult.error
+    } ),
+  };
+
+  return {
+    success: false,
+    failed,
+    errors,
   };
 }

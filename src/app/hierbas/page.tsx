@@ -43,18 +43,32 @@ function HierbasContent() {
   );
 
   return (
-    <MasonryHolder>
-      <InputSearchBar />
-      { state.filteredData.map(
-        (
-          especimen
-        ) => {
-          return (
-            <SpecimenEditSelection plantData={ especimen } key={ especimen.nombreCientifico }/>
-          );
+    <><InputSearchBar />
+      <MasonryHolder>
+
+        { [
+          ...state.filteredData
+        ].sort(
+          (
+            a, b
+          ) => {
+            return a.nombreCientifico.localeCompare(
+              b.nombreCientifico
+            );
+          }
+        )
+          .map(
+            (
+              especimen
+            ) => {
+              return (
+                <SpecimenEditSelection plantData={ especimen } key={ especimen.nombreCientifico }/>
+              );
+            }
+          )
         }
-      )}
-    </MasonryHolder>
+      </MasonryHolder>
+    </>
   );
 }
 

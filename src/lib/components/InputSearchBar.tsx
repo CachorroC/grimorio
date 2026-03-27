@@ -1,10 +1,11 @@
 'use client';
 import { useEspecimen } from '#@/app/context/EspecimenContext';
 import { useSearch } from '#@/app/context/search-context';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 import { bodyLarge } from '../styles/fonts/typography.module.css';
 import { searchContainer } from '../styles/landing.module.css';
 import searchbar from '../styles/searchbar.module.css';
+import { Route } from 'next';
 
 export const InputSearchBar = () => {
   const {
@@ -15,9 +16,17 @@ export const InputSearchBar = () => {
   } = useEspecimen();
 
   const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
 
   return (
-    <div className={searchContainer}>
+    <div className={searchContainer} style={{
+      position       : 'fixed',
+      top            : '10%',
+      right          : '10%',
+      backgroundColor: 'var(--primary-container)'
+    }}
+    >
       <datalist id="lista_hierbas">
         {state.data.map(
           (
@@ -38,7 +47,7 @@ export const InputSearchBar = () => {
         )}
       </datalist>
       <input
-        type={'textarea'}
+        type={'text'}
         list="lista_hierbas"
         name={'search'}
         placeholder={'Buscar'}
@@ -50,7 +59,7 @@ export const InputSearchBar = () => {
           dispatch(
             {
               type   : 'SET_SEARCH',
-              payload: e.target.value
+              payload: e.target.value,
             }
           );
 
@@ -67,7 +76,7 @@ export const InputSearchBar = () => {
           return dispatch(
             {
               type   : 'SET_SORT',
-              payload: e.target.value as 'ASC' | 'DESC' | 'NONE'
+              payload: e.target.value as 'ASC' | 'DESC' | 'NONE',
             }
           );
         }}
@@ -81,13 +90,30 @@ export const InputSearchBar = () => {
         className={searchbar.icon}
         type="button"
         onClick={() => {
+          // 1. Reset Context & State Filters
           setSearch(
             ''
           );
-
           dispatch(
             {
-              type: 'RESET_FILTERS'
+              type: 'RESET_FILTERS',
+            }
+          );
+
+          // 2. Safely remove search params from the URL
+          const params = new URLSearchParams(
+            searchParams.toString()
+          );
+
+          // Delete the URL parameter (change 'search' if your query param name is different, e.g., 'q')
+          params.delete(
+            'search'
+          );
+
+          // 3. Update the URL without reloading the page
+          router.replace(
+            `${ pathname }?${ params.toString() }` as Route, {
+              scroll: false
             }
           );
         }}

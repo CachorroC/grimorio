@@ -8,7 +8,7 @@ import PlantCookbook from './display/plantCookbook';
 import { EspecimenType } from '../types/especimenTypes';
 import Link from 'next/link';
 import { useAccordionScroll } from '#@/app/context/AcordionScrollContext';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import buttonStyles from '../styles/buttons.module.css';
 
 export default function SpecimenEditSelection(
   {
@@ -106,38 +106,44 @@ export default function SpecimenEditSelection(
               )
             : (
                 <PlantCookbook plant={plantData} setIsEditing={setIsEditing} />
-              )}
+              ) }
+          <div style={{
+            display : 'flex',
+            flexFlow: 'row nowrap'
+          }}
+          >
+            <Button
+              variant="contained"
+              color="secondary"
+              onClick={() => {
+                return setIsEditing(
+                  (
+                    edit
+                  ) => {
+                    return !edit;
+                  }
+                );
+              }}
+              endIcon={<EditIcon />}
+              sx={{
+                mt       : 'auto',
+                mb       : 2,
+                alignSelf: 'flex-start'
+              }}
+            >
+              Editar
+            </Button>
 
-          <Button
-            variant="contained"
-            color="secondary"
-            onClick={() => {
-              return setIsEditing(
-                (
-                  edit
-                ) => {
-                  return !edit;
-                }
-              );
-            }}
-            endIcon={<EditIcon />}
-            sx={{
-              mt       : 'auto',
-              mb       : 2,
+            <Link href={`/hierba/${ plantData.nombreCientifico }`} className={buttonStyles.buttonActiveCategory} style={{
               alignSelf: 'flex-start'
             }}
-          >
-            Editar
-          </Button>
-          <Button
-            variant="contained"
-            color="secondary"
-            startIcon={<ExpandMoreIcon />}
-            href={ `/hierba/${ plantData.nombreCientifico }` }
-          >
-            Ver detalles
-          </Button>
-          <Link href={`/hierba/${ plantData.nombreCientifico }`}>View Details</Link>
+            >
+              <span className={`material-symbols-outlined ${ buttonStyles.icon }`}>
+                expand_all
+              </span>
+              <p className={buttonStyles.text}>ver más</p>
+            </Link>
+          </div>
         </Box>
       </Box>
     </Card>

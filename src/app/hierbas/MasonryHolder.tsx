@@ -1,38 +1,17 @@
 'use client';
 
-import { ReactNode, useEffect, useState } from 'react';
-import Masonry from '@mui/lab/Masonry';
+import { ReactNode } from 'react';
 import { Box } from '@mui/material';
 import { useAccordionScroll } from '../context/AcordionScrollContext';
-import { Loader } from '#@/lib/components/Loader/main-loader';
 
-export default function MasonryHolder(
+export default function GridHolder(
   {
     children
-  }: {
-    children: NonNullable<ReactNode>
-  }
+  }: { children: NonNullable<ReactNode> }
 ) {
   const {
     mainScrollRef
   } = useAccordionScroll();
-
-  // 1. Create a state to track if we are running in the browser
-  const [
-    isMounted,
-    setIsMounted
-  ] = useState(
-    false
-  );
-
-  // 2. useEffect only runs on the client. Once it fires, we know it's safe to render Masonry.
-  useEffect(
-    () => {
-      setIsMounted(
-        true
-      );
-    }, []
-  );
 
   return (
     <Box
@@ -40,38 +19,37 @@ export default function MasonryHolder(
       sx={{
         width    : '100%',
         flexGrow : 1,
-        minHeight: 0,
+        // Constrain the height so it becomes the scrollable container
         height   : '100vh',
-        // Ensure overflow is set so the ref can capture the scroll events
         overflowY: 'auto',
+        // Optional: add some padding so cards don't touch the very edges of the screen
+        p        : 2,
       }}
     >
-      {/* 3. Only render the Masonry component if we are fully mounted in the browser */}
-      { isMounted
-        ? (
-            <Masonry
-              columns={{
-                xs: 1,
-                sm: 2,
-                md: 3,
-                lg: 4
-              }}
-              spacing={2}
-              sx={{
-                margin: 0
-              }}
-            >
-              {children}
-            </Masonry>
-          )
-        : (
-      // Optional: You can put a loading spinner or skeleton here
-      // to prevent a flash of empty space on F5.
-            <div style={{
-              opacity: 0
-            }}
-            >Loading layout... <Loader /></div>
-          )}
+      {/* 2. The CSS Grid Container */}
+      <Box
+        sx={{
+          display: 'grid',
+          // Space between the cards
+          gap    : 2,
+
+          // Pure CSS responsive columns!
+          // MUI translates this directly into CSS @media queries, completely bypassing the SSR F5 bug.
+          gridTemplateColumns: {
+            xs: '1fr',               // 1 column on mobile (0px+)
+            sm: 'repeat(2, 1fr)',    // 2 columns on tablets (600px+)
+            md: 'repeat(3, 1fr)',    // 3 columns on small desktops (900px+)
+            lg: 'repeat(4, 1fr)',    // 4 columns on large screens (1200px+)
+          },
+
+          // CRITICAL FOR FULL HEIGHT:
+          // By default, CSS Grid stretches all items in a row to match the tallest item.
+          // 'alignItems: start' tells each card to only be as tall as its own content.
+          alignItems: 'start',
+        }}
+      >
+        {children}
+      </Box>
     </Box>
   );
 }

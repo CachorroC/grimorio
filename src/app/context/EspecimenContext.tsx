@@ -1,13 +1,18 @@
 'use client';
 import { EspecimenType } from '#@/lib/types/especimenTypes';
-import React, { createContext, useReducer, useContext, ReactNode, Dispatch } from 'react';
+import React, { createContext,
+  useReducer,
+  useContext,
+  ReactNode,
+  Dispatch,
+  useEffect, } from 'react';
 
 // --- State & Action Types ---
 interface EspecimenState {
-  data          : EspecimenType[];  // The unmodified master list
-  filteredData  : EspecimenType[];  // The list rendered by the UI
+  data          : EspecimenType[]; // The unmodified master list
+  filteredData  : EspecimenType[]; // The list rendered by the UI
   searchTerm    : string;
-  filterProperty: string;           // e.g., filtering by a specific medicinal property
+  filterProperty: string; // e.g., filtering by a specific medicinal property
   sortOrder     : 'ASC' | 'DESC' | 'NONE';
 }
 
@@ -34,11 +39,11 @@ const normalizeText = (
   return text
     .normalize(
       'NFD' 
-    )                     // Deconstructs combined characters (e.g., 'á' becomes 'a' + '´')
+    ) // Deconstructs combined characters (e.g., 'á' becomes 'a' + '´')
     .replace(
       /[\u0300-\u036f]/g, '' 
-    )      // Removes the accent marks
-    .toLowerCase();                       // Converts to lowercase
+    ) // Removes the accent marks
+    .toLowerCase(); // Converts to lowercase
 };
 
 /**
@@ -46,7 +51,7 @@ const normalizeText = (
  * without overwriting each other.
  */
 const applyCriteria = (
-  state: EspecimenState
+  state: EspecimenState 
 ): EspecimenType[] => {
   let result = [
     ...state.data
@@ -67,7 +72,7 @@ const applyCriteria = (
           e.nombreCientifico 
         )
           .includes(
-            normalizedSearch 
+            normalizedSearch,
           );
 
         // Safely fall back to an empty array to prevent .some() from crashing on undefined
@@ -135,18 +140,21 @@ const applyCriteria = (
 
 // --- Reducer ---
 const especimenReducer = (
-  state: EspecimenState, action: Action
+  state: EspecimenState,
+  action: Action,
 ): EspecimenState => {
   const newState = {
-    ...state 
+    ...state,
   };
 
   switch ( action.type ) {
       case 'INIT_DATA':
+      // Update the master data list with the fresh payload
         newState.data = action.payload;
-        newState.filteredData = action.payload;
 
-        return newState; // Return early here so we don't apply filters to empty data
+        // Do NOT return early here. We must let it fall through to applyCriteria
+        // so that if the user deletes an item while searching, the search remains active!
+        break;
 
       case 'SET_SEARCH':
         newState.searchTerm = action.payload;
@@ -174,7 +182,7 @@ const especimenReducer = (
         return state;
   }
 
-  // Recalculate the rendered array after any criteria changes
+  // Recalculate the rendered array after ANY criteria change OR data initialization
   newState.filteredData = applyCriteria(
     newState 
   );
@@ -194,8 +202,12 @@ const EspecimenContext = createContext<ContextProps | null>(
 
 export const EspecimenProvider = (
   {
-    children, initialEspecimens
-  }: { children: ReactNode; initialEspecimens: EspecimenType[] }
+    children,
+    initialEspecimens,
+  }: {
+    children         : ReactNode;
+    initialEspecimens: EspecimenType[];
+  } 
 ) => {
   const initialState: EspecimenState = {
     data: [
@@ -216,11 +228,29 @@ export const EspecimenProvider = (
     especimenReducer, initialState 
   );
 
+  // CRITICAL ADDITION:
+  // Listen for changes to the initialEspecimens prop.
+  // When revalidatePath runs on the server, Next.js pushes the new DB data down here.
+  // This hook catches it and updates the reducer safely.
+  useEffect(
+    () => {
+      dispatch(
+        {
+          type   : 'INIT_DATA',
+          payload: initialEspecimens,
+        } 
+      );
+    }, [
+      initialEspecimens
+    ] 
+  );
+
   return (
-    <EspecimenContext.Provider value={{
-      state,
-      dispatch 
-    }}
+    <EspecimenContext.Provider
+      value={{
+        state,
+        dispatch,
+      }}
     >
       {children}
     </EspecimenContext.Provider>

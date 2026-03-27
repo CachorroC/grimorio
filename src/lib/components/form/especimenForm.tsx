@@ -5,12 +5,10 @@ import { ChangeEvent, Dispatch, SetStateAction, SubmitEventHandler, useState } f
 import styles from '#@/lib/styles/form.module.css';
 import { EspecimenType, IngredientesType, PreparacionType, Taxon } from '#@/lib/types/especimenTypes';
 import { displayLarge } from '#@/lib/styles/fonts/typography.module.css';
-import { upsertSpecimen } from '#@/app/actions/specimen';
+import { upsertSpecimen, deleteSpecimen } from '#@/app/actions/specimen'; // IMPORTANT: Adjust this path to where you saved ConfirmModal.tsx
+import { icon } from '#@/lib/styles/buttons.module.css';
+import ConfirmModal from '../confirmModal';
 
-/**
- * Initial empty state matching the EspecimenType schema.
- * Provides a safe baseline to prevent undefined errors when creating a new specimen.
- */
 const initialState: EspecimenType = {
   nombreCientifico: '',
   imageUrl        : '',
@@ -51,35 +49,24 @@ const initialState: EspecimenType = {
   preparaciones: []
 };
 
-/**
- * @component EspecimenForm
- * @description A complex form component for creating or editing botanical/medicinal specimens.
- * * ### Form Flow:
- * 1. **Initialization:** The form initializes its state (`formData`) by deeply merging `initialData` (if provided)
- * with `initialState`. This ensures all arrays and nested objects exist, preventing runtime crashes.
- * 2. **Interaction:** Users interact with top-level fields, arrays, and deeply nested arrays
- * (e.g., `preparaciones[i].ingredientes`). Specialized handlers clone the necessary parts of the state
- * to maintain React's immutability rules.
- * 3. **Sanitization:** Upon submission (`handleSubmit`), the form cleans up the data by removing empty
- * strings from arrays so that blank inputs aren't saved to the database.
- * 4. **Submission:** Sends the sanitized payload to the server via `upsertSpecimen`. On success,
- * it updates the local state and optionally closes the editing view.
- *
- * @param {Object} props - The component props.
- * @param {EspecimenType} [props.initialData] - The existing specimen data to populate the form for editing.
- * @param {Dispatch<SetStateAction<boolean>>} [props.setIsEditing] - State setter to toggle the form's visibility or edit mode.
- */
 export default function EspecimenForm(
   {
     initialData, setIsEditing
   }: { initialData?: EspecimenType; setIsEditing?: Dispatch<SetStateAction<boolean>>}
 ) {
+  const [
+    isProcessing,
+    setIsProcessing
+  ] = useState(
+    false
+  );
+  const [
+    isDeleteModalOpen,
+    setIsDeleteModalOpen
+  ] = useState(
+    false
+  );
 
-  /**
-   * State initialization:
-   * We use a lazy initialization function to safely merge incoming `initialData`
-   * and ensure that no array fields are left as `undefined` or `null`.
-   */
   const [
     formData,
     setFormData
@@ -109,16 +96,9 @@ export default function EspecimenForm(
     }
   );
 
-  // --- TOP LEVEL HANDLERS ---
-
-  /**
-   * Updates top-level primitive fields in the form state (e.g., `nombreCientifico`, `imageUrl`).
-   * @param {ChangeEvent<HTMLInputElement>} e - The input change event.
-   */
   const handleInputChange = (
     e: ChangeEvent<HTMLInputElement>
   ) => {
-    // FIX: Use previous state callback to avoid stale state bugs
     setFormData(
       (
         prev
@@ -131,15 +111,9 @@ export default function EspecimenForm(
     );
   };
 
-  /**
-   * Updates fields specifically within the nested `taxon` object.
-   * @param {keyof Taxon} field - The specific taxonomy rank to update (e.g., 'dominio', 'reino').
-   * @param {string} value - The new value for the taxonomic rank.
-   */
   const handleTaxonChange = (
     field: keyof Taxon, value: string
   ) => {
-    // FIX: Use previous state callback to avoid stale state bugs
     setFormData(
       (
         prev
@@ -155,14 +129,6 @@ export default function EspecimenForm(
     );
   };
 
-  // --- SIMPLE STRING ARRAY HANDLERS ---
-
-  /**
-   * Updates a specific value within a generic top-level string array.
-   * @param {keyof EspecimenType} field - The key of the array in the state (e.g., 'nombresComunes').
-   * @param {number} index - The index of the item being modified.
-   * @param {string} value - The new string value.
-   */
   const handleStringArrayChange = (
     field: keyof EspecimenType, index: number, value: string
   ) => {
@@ -184,10 +150,6 @@ export default function EspecimenForm(
     );
   };
 
-  /**
-   * Appends a new, empty string to a generic top-level string array.
-   * @param {keyof EspecimenType} field - The key of the array to append to.
-   */
   const addStringArrayItem = (
     field: keyof EspecimenType
   ) => {
@@ -208,11 +170,6 @@ export default function EspecimenForm(
     );
   };
 
-  /**
-   * Removes an item from a generic top-level string array by its index.
-   * @param {keyof EspecimenType} field - The key of the array to modify.
-   * @param {number} indexToRemove - The index of the item to delete.
-   */
   const removeStringArrayItem = (
     field: keyof EspecimenType, indexToRemove: number
   ) => {
@@ -236,13 +193,6 @@ export default function EspecimenForm(
     );
   };
 
-  // --- TAXON CLADOS HANDLERS ---
-
-  /**
-   * Updates a specific value within the deeply nested `taxon.clados` string array.
-   * @param {number} index - The index of the clade being modified.
-   * @param {string} value - The new clade value.
-   */
   const handleCladoChange = (
     index: number, value: string
   ) => {
@@ -266,9 +216,6 @@ export default function EspecimenForm(
     );
   };
 
-  /**
-   * Appends a new, empty string to the `taxon.clados` array.
-   */
   const addClado = () => {
     setFormData(
       (
@@ -288,10 +235,6 @@ export default function EspecimenForm(
     );
   };
 
-  /**
-   * Removes a clade from the `taxon.clados` array by its index.
-   * @param {number} indexToRemove - The index of the clade to delete.
-   */
   const removeClado = (
     indexToRemove: number
   ) => {
@@ -316,11 +259,6 @@ export default function EspecimenForm(
     );
   };
 
-  // --- PREPARACIONES HANDLERS ---
-
-  /**
-   * Adds a completely new, empty preparation object to the `preparaciones` array.
-   */
   const addPreparacion = () => {
     const newPrep: PreparacionType = {
       usoTerapeutico   : '',
@@ -343,10 +281,6 @@ export default function EspecimenForm(
     );
   };
 
-  /**
-   * Removes an entire preparation object from the `preparaciones` array.
-   * @param {number} indexToRemove - The index of the preparation to delete.
-   */
   const removePreparacion = (
     indexToRemove: number
   ) => {
@@ -368,12 +302,6 @@ export default function EspecimenForm(
     );
   };
 
-  /**
-   * Updates top-level string fields inside a specific preparation object.
-   * @param {number} prepIndex - The index of the preparation being modified.
-   * @param {keyof Pick<PreparacionType, 'usoTerapeutico' | 'formaDeAplicacion'>} field - The field to update.
-   * @param {string} value - The new value for the field.
-   */
   const updatePreparacionField = (
     prepIndex: number, field: keyof Pick<PreparacionType, 'usoTerapeutico' | 'formaDeAplicacion'>, value: string
   ) => {
@@ -397,12 +325,6 @@ export default function EspecimenForm(
     );
   };
 
-  // --- INGREDIENTES HANDLERS ---
-
-  /**
-   * Adds an empty ingredient object to a specific preparation.
-   * @param {number} prepIndex - The index of the preparation receiving the new ingredient.
-   */
   const addIngrediente = (
     prepIndex: number
   ) => {
@@ -413,7 +335,6 @@ export default function EspecimenForm(
         const newPreps = [
           ...( prev.preparaciones || [] )
         ];
-
         newPreps[ prepIndex ] = {
           ...newPreps[ prepIndex ],
           ingredientes: [
@@ -433,13 +354,6 @@ export default function EspecimenForm(
     );
   };
 
-  /**
-   * Updates a specific field within a specific ingredient of a specific preparation.
-   * @param {number} prepIndex - The index of the parent preparation.
-   * @param {number} ingIndex - The index of the ingredient being modified.
-   * @param {keyof IngredientesType} field - The field to update ('ingrediente' or 'cantidad').
-   * @param {string} value - The new value.
-   */
   const updateIngrediente = (
     prepIndex: number, ingIndex: number, field: keyof IngredientesType, value: string
   ) => {
@@ -453,12 +367,10 @@ export default function EspecimenForm(
         const newIngs = [
           ...( newPreps[ prepIndex ].ingredientes || [] )
         ];
-
         newIngs[ ingIndex ] = {
           ...newIngs[ ingIndex ],
           [ field ]: value
         };
-
         newPreps[ prepIndex ] = {
           ...newPreps[ prepIndex ],
           ingredientes: newIngs
@@ -472,11 +384,6 @@ export default function EspecimenForm(
     );
   };
 
-  /**
-   * Removes an ingredient from a specific preparation.
-   * @param {number} prepIndex - The index of the parent preparation.
-   * @param {number} ingIndexToRemove - The index of the ingredient to delete.
-   */
   const removeIngrediente = (
     prepIndex: number, ingIndexToRemove: number
   ) => {
@@ -487,7 +394,6 @@ export default function EspecimenForm(
         const newPreps = [
           ...( prev.preparaciones || [] )
         ];
-
         newPreps[ prepIndex ] = {
           ...newPreps[ prepIndex ],
           ingredientes: ( newPreps[ prepIndex ].ingredientes || [] ).filter(
@@ -507,13 +413,6 @@ export default function EspecimenForm(
     );
   };
 
-  // --- PASOS HANDLERS ---
-
-  /**
-   * Adds a new step (tuple of `[stepNumber, instructionString]`) to a specific preparation.
-   * Automatically calculates the next logical step number to avoid key collisions.
-   * @param {number} prepIndex - The index of the parent preparation.
-   */
   const addPaso = (
     prepIndex: number
   ) => {
@@ -525,8 +424,6 @@ export default function EspecimenForm(
           ...( prev.preparaciones || [] )
         ];
         const pasos = newPreps[ prepIndex ].pasos || [];
-
-        // Calculate next step number based on the highest existing number
         const nextStepNum = pasos.length > 0
           ? Math.max(
             ...pasos.map(
@@ -536,7 +433,6 @@ export default function EspecimenForm(
             )
           ) + 1
           : 1;
-
         newPreps[ prepIndex ] = {
           ...newPreps[ prepIndex ],
           pasos: [
@@ -556,12 +452,6 @@ export default function EspecimenForm(
     );
   };
 
-  /**
-   * Updates the instruction text of a specific step tuple within a preparation.
-   * @param {number} prepIndex - The index of the parent preparation.
-   * @param {number} pasoIndex - The array index of the tuple being modified.
-   * @param {string} value - The new instruction text for the step.
-   */
   const updatePaso = (
     prepIndex: number, pasoIndex: number, value: string
   ) => {
@@ -575,14 +465,10 @@ export default function EspecimenForm(
         const newPasos = [
           ...( newPreps[ prepIndex ].pasos || [] )
         ];
-
-        // Tuple: [stepNumber, instructionString]
-        // We keep the stepNumber intact and only update the instruction string
         newPasos[ pasoIndex ] = [
           newPasos[ pasoIndex ][ 0 ],
           value
         ];
-
         newPreps[ prepIndex ] = {
           ...newPreps[ prepIndex ],
           pasos: newPasos
@@ -596,11 +482,6 @@ export default function EspecimenForm(
     );
   };
 
-  /**
-   * Removes a step tuple from a specific preparation.
-   * @param {number} prepIndex - The index of the parent preparation.
-   * @param {number} pasoIndexToRemove - The array index of the tuple to delete.
-   */
   const removePaso = (
     prepIndex: number, pasoIndexToRemove: number
   ) => {
@@ -611,7 +492,6 @@ export default function EspecimenForm(
         const newPreps = [
           ...( prev.preparaciones || [] )
         ];
-
         newPreps[ prepIndex ] = {
           ...newPreps[ prepIndex ],
           pasos: ( newPreps[ prepIndex ].pasos || [] ).filter(
@@ -632,19 +512,14 @@ export default function EspecimenForm(
   };
 
   // --- SUBMISSION HANDLER ---
-
-  /**
-   * Handles form submission.
-   * Cleans the state by filtering out empty strings from arrays before sending it to the server.
-   * Parses the response and updates the local UI state with the safely returned database object.
-   * @param {React.FormEvent<HTMLFormElement>} e - The form submission event.
-   */
   const handleSubmit: SubmitEventHandler<HTMLFormElement> = async (
     e
   ) => {
     e.preventDefault();
+    setIsProcessing(
+      true
+    );
 
-    // 1. Sanitization: Clean up the payload by removing any empty strings from string arrays
     const payloadToSave: EspecimenType = {
       ...formData,
       nombresComunes: ( formData.nombresComunes || [] ).filter(
@@ -693,18 +568,14 @@ export default function EspecimenForm(
     };
 
     try {
-      // 2. Server Request: Call the server action
       const response = await upsertSpecimen(
         {
           data: payloadToSave
         }
       );
 
-      // 3. Response Handling: Treat as success if perfect success OR if DB succeeded but JSON backup failed
       if ( response.success || ( response.data && response.failed === 'file' ) ) {
         const savedData = response.data as any as EspecimenType;
-
-        // Update local UI state directly with the sanitized, saved data
         setFormData(
           {
             ...savedData,
@@ -723,54 +594,86 @@ export default function EspecimenForm(
           }
         );
 
-        console.log(
-          'Successfully saved to MongoDB:', savedData
-        );
-
-        // Soft warning if the secondary backup process failed
         if ( response.failed === 'file' ) {
           console.warn(
             'Note: Database updated, but JSON backup failed:', response.errors?.file
           );
         }
 
+        if ( setIsEditing ) {
+          setIsEditing(
+            false
+          );
+        }
       } else {
         console.error(
           'Failed to save. Point of failure:', response.failed
-        );
-        console.error(
-          'Error details:', response.errors
         );
       }
     } catch ( error ) {
       console.error(
         'Network or server error:', error
       );
-    }
-
-    console.log(
-      'fin del submit'
-    );
-
-    // 4. Cleanup: Close the editing view if a setter was provided
-    if ( setIsEditing ) {
-      console.log(
-        'si hay setIsEditing'
-      );
-      setIsEditing(
+    } finally {
+      setIsProcessing(
         false
       );
     }
   };
 
-  // --- RENDER HELPERS ---
+  // --- DELETE HANDLER (Triggers Server Action) ---
+  const executeDelete = async () => {
+    if ( !initialData ) {
+      return;
+    }
 
-  /**
-   * Helper function to DRY up the JSX for rendering generic string array inputs.
-   * @param {string} title - The display title for the section (e.g., 'Nombres Comunes').
-   * @param {keyof EspecimenType} field - The key of the array in the form data.
-   * @returns JSX.Element
-   */
+    setIsProcessing(
+      true
+    );
+
+    try {
+      const response = await deleteSpecimen(
+        {
+          id              : ( initialData as any )._id,
+          nombreCientifico: initialData.nombreCientifico
+        }
+      );
+
+      if ( response.success || response.failed === 'file' ) {
+        console.log(
+          'Successfully deleted specimen.'
+        );
+        setIsDeleteModalOpen(
+          false
+        );
+
+        if ( setIsEditing ) {
+          setIsEditing(
+            false
+          );
+        }
+      } else {
+        console.error(
+          'Failed to delete. Point of failure:', response.failed, response.errors
+        );
+        alert(
+          'Hubo un error al intentar eliminar el espécimen.'
+        );
+      }
+    } catch ( error ) {
+      console.error(
+        'Network or server error during deletion:', error
+      );
+      alert(
+        'Hubo un error de red al intentar eliminar.'
+      );
+    } finally {
+      setIsProcessing(
+        false
+      );
+    }
+  };
+
   const renderStringArrayInput = (
     title: string, field: keyof EspecimenType
   ) => {
@@ -829,332 +732,384 @@ export default function EspecimenForm(
   };
 
   return (
-    <form className={styles.formContainer} onSubmit={handleSubmit}>
-      <h2 className={displayLarge}>Registrar Espécimen</h2>
-      <div className={styles.section}>
-        <h3 className={styles.sectionTitle}>Información Principal</h3>
-        <div className={styles.inputGroup}>
-          <label className={styles.label}>Nombre Científico</label>
-          <input
-            type="text"
-            name="nombreCientifico"
-            className={styles.inputFilled}
-            value={formData.nombreCientifico}
-            onChange={handleInputChange}
-            required
-          />
-          <label className={styles.label}>URL de la imagen</label>
-        </div>
-        <input name="imageUrl" className={styles.inputFilled} value={formData.imageUrl ?? ''} onChange={handleInputChange} />
-      </div>
-
-      {renderStringArrayInput(
-        'Nombres Comunes', 'nombresComunes'
-      )}
-      {renderStringArrayInput(
-        'Partes Útiles', 'partesUtiles'
-      )}
-      {renderStringArrayInput(
-        'Propiedades Medicinales', 'propiedadesMedicinales'
-      )}
-      {renderStringArrayInput(
-        'Correspondencias Energéticas', 'correspondenciasEnergeticas'
-      )}
-      {renderStringArrayInput(
-        'Qué males emocionales cura', 'malesEmocionales'
-      )}
-      {renderStringArrayInput(
-        'Que males físicos cura', 'malesFisicos'
-      )}
-      {renderStringArrayInput(
-        'Esencias Florales', 'esenciasFlorales'
-      )}
-
-      <div className={styles.section}>
-        <h3 className={styles.sectionTitle}>Taxonomía</h3>
-        <div className={styles.row}>
-          {[
-            'dominio',
-            'reino',
-            'filo',
-            'clase',
-            'orden',
-            'familia',
-            'genero',
-            'especie'
-          ].map(
-            (
-              taxRank
-            ) => {
-              return (
-                <div key={taxRank} className={`${ styles.inputGroup } ${ styles.flex1 }`} style={{
-                  minWidth: '200px'
-                }}
-                >
-                  <label className={styles.label}>{taxRank.charAt(
-                    0
-                  )
-                    .toUpperCase() + taxRank.slice(
-                    1
-                  )}</label>
-                  <input
-                    type="text"
-                    className={styles.inputFilled}
-                    value={formData.taxon[ taxRank as keyof Taxon ] as string || ''}
-                    onChange={(
-                      e
-                    ) => {
-                      return handleTaxonChange(
-                        taxRank as keyof Taxon, e.target.value
-                      );
-                    }}
-                  />
-                </div>
-              );
-            }
-          )}
+    <>
+      <form className={styles.formContainer} onSubmit={handleSubmit}>
+        <h2 className={displayLarge}>Registrar Espécimen</h2>
+        <div className={styles.section}>
+          <h3 className={styles.sectionTitle}>Información Principal</h3>
+          <div className={styles.inputGroup}>
+            <label className={styles.label}>Nombre Científico</label>
+            <input
+              type="text"
+              name="nombreCientifico"
+              className={styles.inputFilled}
+              value={formData.nombreCientifico}
+              onChange={handleInputChange}
+              required
+            />
+            <label className={styles.label}>URL de la imagen</label>
+          </div>
+          <input name="imageUrl" className={styles.inputFilled} value={formData.imageUrl ?? ''} onChange={handleInputChange} />
         </div>
 
-        <div className={styles.subSection} style={{
-          marginTop: '1rem'
-        }}
-        >
-          <h4>Clados</h4>
-          {( formData.taxon.clados || [] ).map(
-            (
-              clado, index
-            ) => {
-              return (
-                <div key={`clado-${ index }`} className={styles.arrayItem}>
-                  <input
-                    type="text"
-                    className={styles.inputOutlined}
-                    value={clado}
-                    onChange={(
-                      e
-                    ) => {
-                      return handleCladoChange(
-                        index, e.target.value
-                      );
-                    }}
-                    placeholder="Ej. Angiospermas"
-                  />
-                  <button
-                    type="button"
-                    className={`${ styles.button } ${ styles.deleteBtn }`}
-                    onClick={() => {
-                      return removeClado(
-                        index
-                      );
-                    }}
-                  >
-                    X
-                  </button>
-                </div>
-              );
-            }
-          )}
-          <button type="button" className={`${ styles.button } ${ styles.addBtn }`} onClick={addClado}>
-            + Añadir Clado
-          </button>
-        </div>
-      </div>
+        {renderStringArrayInput(
+          'Nombres Comunes', 'nombresComunes'
+        )}
+        {renderStringArrayInput(
+          'Partes Útiles', 'partesUtiles'
+        )}
+        {renderStringArrayInput(
+          'Propiedades Medicinales', 'propiedadesMedicinales'
+        )}
+        {renderStringArrayInput(
+          'Correspondencias Energéticas', 'correspondenciasEnergeticas'
+        )}
+        {renderStringArrayInput(
+          'Qué males emocionales cura', 'malesEmocionales'
+        )}
+        {renderStringArrayInput(
+          'Que males físicos cura', 'malesFisicos'
+        )}
+        {renderStringArrayInput(
+          'Esencias Florales', 'esenciasFlorales'
+        )}
 
-      <div className={styles.section}>
-        <h3 className={styles.sectionTitle}>Preparaciones</h3>
-        {( formData.preparaciones || [] ).map(
-          (
-            prep, prepIndex
-          ) => {
-            return (
-              <div key={`prep-${ prepIndex }`} className={styles.subSection}>
-                <div className={styles.inputGroup}>
-                  <label className={styles.label}>Uso Terapéutico</label>
-                  <input
-                    type="text"
-                    className={styles.inputFilled}
-                    value={prep.usoTerapeutico}
-                    onChange={(
-                      e
-                    ) => {
-                      return updatePreparacionField(
-                        prepIndex, 'usoTerapeutico', e.target.value
-                      );
-                    }}
-                    placeholder="Ej. Para el dolor de estómago"
-                  />
-                </div>
-
-                <div className={styles.inputGroup}>
-                  <label className={styles.label}>Forma de Aplicación</label>
-                  <input
-                    type="text"
-                    className={styles.inputFilled}
-                    value={prep.formaDeAplicacion || ''}
-                    onChange={(
-                      e
-                    ) => {
-                      return updatePreparacionField(
-                        prepIndex, 'formaDeAplicacion', e.target.value
-                      );
-                    }}
-                    placeholder="Ej. Cataplasma, Infusión, Tintura..."
-                  />
-                </div>
-
-                {/* Ingredientes */}
-                <div className={styles.subSection} style={{
-                  backgroundColor: 'var(--surface-container-high)'
-                }}
-                >
-                  <label className={styles.label}>Ingredientes</label>
-                  {( prep.ingredientes || [] ).map(
-                    (
-                      ing, ingIndex
-                    ) => {
-                      return (
-                        <div key={`ing-${ prepIndex }-${ ingIndex }`} className={styles.row} style={{
-                          marginBottom: '0.5rem'
-                        }}
-                        >
-                          <input
-                            type="text"
-                            className={styles.inputOutlined}
-                            placeholder="Ingrediente (Ej. Romero en polvo)"
-                            value={ing.ingrediente}
-                            onChange={(
-                              e
-                            ) => {
-                              return updateIngrediente(
-                                prepIndex, ingIndex, 'ingrediente', e.target.value
-                              );
-                            }}
-                          />
-                          <input
-                            type="text"
-                            className={styles.inputOutlined}
-                            placeholder="Cantidad (Ej. 5 gramos)"
-                            value={ing.cantidad}
-                            onChange={(
-                              e
-                            ) => {
-                              return updateIngrediente(
-                                prepIndex, ingIndex, 'cantidad', e.target.value
-                              );
-                            }}
-                          />
-                          <button
-                            type="button"
-                            className={`${ styles.button } ${ styles.deleteBtn }`}
-                            onClick={() => {
-                              return removeIngrediente(
-                                prepIndex, ingIndex
-                              );
-                            }}
-                          >
-                            X
-                          </button>
-                        </div>
-                      );
-                    }
-                  )}
-                  <button type="button" className={`${ styles.button } ${ styles.addBtn }`} onClick={() => {
-                    return addIngrediente(
-                      prepIndex
-                    );
+        <div className={styles.section}>
+          <h3 className={styles.sectionTitle}>Taxonomía</h3>
+          <div className={styles.row}>
+            {[
+              'dominio',
+              'reino',
+              'filo',
+              'clase',
+              'orden',
+              'familia',
+              'genero',
+              'especie'
+            ].map(
+              (
+                taxRank
+              ) => {
+                return (
+                  <div key={taxRank} className={`${ styles.inputGroup } ${ styles.flex1 }`} style={{
+                    minWidth: '200px'
                   }}
                   >
-                    + Añadir Ingrediente
-                  </button>
-                </div>
+                    <label className={styles.label}>{taxRank.charAt(
+                      0
+                    )
+                      .toUpperCase() + taxRank.slice(
+                      1
+                    )}</label>
+                    <input
+                      type="text"
+                      className={styles.inputFilled}
+                      value={formData.taxon[ taxRank as keyof Taxon ] as string || ''}
+                      onChange={(
+                        e
+                      ) => {
+                        return handleTaxonChange(
+                          taxRank as keyof Taxon, e.target.value
+                        );
+                      }}
+                    />
+                  </div>
+                );
+              }
+            )}
+          </div>
 
-                {/* Pasos */}
-                <div
-                  className={styles.subSection}
-                  style={{
+          <div className={styles.subSection} style={{
+            marginTop: '1rem'
+          }}
+          >
+            <h4>Clados</h4>
+            {( formData.taxon.clados || [] ).map(
+              (
+                clado, index
+              ) => {
+                return (
+                  <div key={`clado-${ index }`} className={styles.arrayItem}>
+                    <input
+                      type="text"
+                      className={styles.inputOutlined}
+                      value={clado}
+                      onChange={(
+                        e
+                      ) => {
+                        return handleCladoChange(
+                          index, e.target.value
+                        );
+                      }}
+                      placeholder="Ej. Angiospermas"
+                    />
+                    <button
+                      type="button"
+                      className={`${ styles.button } ${ styles.deleteBtn }`}
+                      onClick={() => {
+                        return removeClado(
+                          index
+                        );
+                      }}
+                    >
+                      X
+                    </button>
+                  </div>
+                );
+              }
+            )}
+            <button type="button" className={`${ styles.button } ${ styles.addBtn }`} onClick={addClado}>
+              + Añadir Clado
+            </button>
+          </div>
+        </div>
+
+        <div className={styles.section}>
+          <h3 className={styles.sectionTitle}>Preparaciones</h3>
+          {( formData.preparaciones || [] ).map(
+            (
+              prep, prepIndex
+            ) => {
+              return (
+                <div key={`prep-${ prepIndex }`} className={styles.subSection}>
+                  <div className={styles.inputGroup}>
+                    <label className={styles.label}>Uso Terapéutico</label>
+                    <input
+                      type="text"
+                      className={styles.inputFilled}
+                      value={prep.usoTerapeutico}
+                      onChange={(
+                        e
+                      ) => {
+                        return updatePreparacionField(
+                          prepIndex, 'usoTerapeutico', e.target.value
+                        );
+                      }}
+                      placeholder="Ej. Para el dolor de estómago"
+                    />
+                  </div>
+
+                  <div className={styles.inputGroup}>
+                    <label className={styles.label}>Forma de Aplicación</label>
+                    <input
+                      type="text"
+                      className={styles.inputFilled}
+                      value={prep.formaDeAplicacion || ''}
+                      onChange={(
+                        e
+                      ) => {
+                        return updatePreparacionField(
+                          prepIndex, 'formaDeAplicacion', e.target.value
+                        );
+                      }}
+                      placeholder="Ej. Cataplasma, Infusión, Tintura..."
+                    />
+                  </div>
+
+                  <div className={styles.subSection} style={{
+                    backgroundColor: 'var(--surface-container-high)'
+                  }}
+                  >
+                    <label className={styles.label}>Ingredientes</label>
+                    {( prep.ingredientes || [] ).map(
+                      (
+                        ing, ingIndex
+                      ) => {
+                        return (
+                          <div key={`ing-${ prepIndex }-${ ingIndex }`} className={styles.row} style={{
+                            marginBottom: '0.5rem'
+                          }}
+                          >
+                            <input
+                              type="text"
+                              className={styles.inputOutlined}
+                              placeholder="Ingrediente (Ej. Romero en polvo)"
+                              value={ing.ingrediente}
+                              onChange={(
+                                e
+                              ) => {
+                                return updateIngrediente(
+                                  prepIndex, ingIndex, 'ingrediente', e.target.value
+                                );
+                              }}
+                            />
+                            <input
+                              type="text"
+                              className={styles.inputOutlined}
+                              placeholder="Cantidad (Ej. 5 gramos)"
+                              value={ing.cantidad}
+                              onChange={(
+                                e
+                              ) => {
+                                return updateIngrediente(
+                                  prepIndex, ingIndex, 'cantidad', e.target.value
+                                );
+                              }}
+                            />
+                            <button
+                              type="button"
+                              className={`${ styles.button } ${ styles.deleteBtn }`}
+                              onClick={() => {
+                                return removeIngrediente(
+                                  prepIndex, ingIndex
+                                );
+                              }}
+                            >
+                              X
+                            </button>
+                          </div>
+                        );
+                      }
+                    )}
+                    <button type="button" className={`${ styles.button } ${ styles.addBtn }`} onClick={() => {
+                      return addIngrediente(
+                        prepIndex
+                      );
+                    }}
+                    >
+                      + Añadir Ingrediente
+                    </button>
+                  </div>
+
+                  <div className={styles.subSection} style={{
                     backgroundColor: 'var(--surface-container-high)',
                     color          : 'var(--on-surface)'
                   }}
-                >
-                  <label className={styles.label}>
-                    Pasos a seguir
-                  </label>
-                  {( prep.pasos || [] ).map(
-                    (
-                      pasoTuple, pasoIndex
-                    ) => {
-                      const [
-                        pasoNum,
-                        instruction
-                      ] = pasoTuple;
-
-                      return (
-                        <div key={`paso-${ prepIndex }-${ pasoNum }`} className={styles.arrayItem}>
-                          <div className={styles.stepNumber}>{pasoNum}</div>
-                          <input
-                            type="text"
-                            className={styles.inputOutlined}
-                            placeholder="Instrucción del paso"
-                            value={instruction}
-                            onChange={(
-                              e
-                            ) => {
-                              return updatePaso(
-                                prepIndex, pasoIndex, e.target.value
-                              );
-                            }}
-                          />
-                          <button
-                            type="button"
-                            className={`${ styles.button } ${ styles.deleteBtn }`}
-                            onClick={() => {
-                              return removePaso(
-                                prepIndex, pasoIndex
-                              );
-                            }}
-                          >
-                            X
-                          </button>
-                        </div>
-                      );
-                    }
-                  )}
-                  <button type="button" className={`${ styles.button } ${ styles.addBtn }`} onClick={() => {
-                    return addPaso(
-                      prepIndex
-                    );
-                  }}
                   >
-                    + Añadir Paso
+                    <label className={styles.label}>Pasos a seguir</label>
+                    {( prep.pasos || [] ).map(
+                      (
+                        pasoTuple, pasoIndex
+                      ) => {
+                        const [
+                          pasoNum,
+                          instruction
+                        ] = pasoTuple;
+
+                        return (
+                          <div key={`paso-${ prepIndex }-${ pasoNum }`} className={styles.arrayItem}>
+                            <div className={styles.stepNumber}>{pasoNum}</div>
+                            <input
+                              type="text"
+                              className={styles.inputOutlined}
+                              placeholder="Instrucción del paso"
+                              value={instruction}
+                              onChange={(
+                                e
+                              ) => {
+                                return updatePaso(
+                                  prepIndex, pasoIndex, e.target.value
+                                );
+                              }}
+                            />
+                            <button
+                              type="button"
+                              className={`${ styles.button } ${ styles.deleteBtn }`}
+                              onClick={() => {
+                                return removePaso(
+                                  prepIndex, pasoIndex
+                                );
+                              }}
+                            >
+                              X
+                            </button>
+                          </div>
+                        );
+                      }
+                    )}
+                    <button type="button" className={`${ styles.button } ${ styles.addBtn }`} onClick={() => {
+                      return addPaso(
+                        prepIndex
+                      );
+                    }}
+                    >
+                      + Añadir Paso
+                    </button>
+                  </div>
+
+                  <button
+                    type="button"
+                    className={`${ styles.button } ${ styles.deleteBtn }`}
+                    style={{
+                      marginTop: '1rem'
+                    }}
+                    onClick={() => {
+                      return removePreparacion(
+                        prepIndex
+                      );
+                    }}
+                  >
+                    Eliminar Preparación Completa
                   </button>
                 </div>
+              );
+            }
+          )}
+          <button type="button" className={`${ styles.button } ${ styles.addBtn }`} onClick={addPreparacion}>
+            + Añadir Nueva Preparación
+          </button>
+        </div>
 
-                <button
-                  type="button"
-                  className={`${ styles.button } ${ styles.deleteBtn }`}
-                  style={{
-                    marginTop: '1rem'
-                  }}
-                  onClick={() => {
-                    return removePreparacion(
-                      prepIndex
-                    );
-                  }}
-                >
-                  Eliminar Preparación Completa
-                </button>
-              </div>
-            );
-          }
-        )}
-        <button type="button" className={`${ styles.button } ${ styles.addBtn }`} onClick={addPreparacion}>
-          + Añadir Nueva Preparación
-        </button>
-      </div>
+        {/* Main Action Buttons */}
+        <div style={{
+          display  : 'flex',
+          gap      : '1rem',
+          marginTop: '2rem'
+        }}
+        >
+          {initialData && (
+            <button
+              type="button"
+              className={`${ styles.button } ${ styles.deleteBtn }`}
+              style={{
+                display        : 'flex',
+                alignItems     : 'center',
+                gap            : '0.5rem',
+                padding        : '0.75rem 1.5rem',
+                backgroundColor: '#dc3545',
+                color          : '#fff'
+              }}
+              onClick={() => {
+                return setIsDeleteModalOpen(
+                  true
+                );
+              }} // Open the modal instead of window.confirm
+              disabled={isProcessing}
+            >
+              <span className={`material-symbols-outlined ${ icon }`}>
+                delete_forever
+              </span>
+              Eliminar Espécimen
+            </button>
+          )}
+          <button
+            type="submit"
+            className={`${ styles.button } ${ styles.submitBtn }`}
+            style={{
+              flex: 1
+            }}
+            disabled={isProcessing}
+          >
+            {isProcessing
+              ? 'Procesando...'
+              : 'Guardar Espécimen'}
+          </button>
+        </div>
+      </form>
 
-      <button type="submit" className={`${ styles.button } ${ styles.submitBtn }`}>
-        Guardar Espécimen
-      </button>
-    </form>
+      {/* The Confirmation Modal */}
+      <ConfirmModal
+        isOpen={isDeleteModalOpen}
+        onClose={() => {
+          return setIsDeleteModalOpen(
+            false
+          );
+        }}
+        onConfirm={executeDelete}
+        title="Confirmar Eliminación"
+        message={`¿Estás seguro de que deseas eliminar permanentemente el espécimen "${ initialData?.nombreCientifico }"? Esta acción no se puede deshacer.`}
+        isProcessing={isProcessing}
+      />
+    </>
   );
 }
