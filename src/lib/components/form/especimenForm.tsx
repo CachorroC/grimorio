@@ -118,10 +118,15 @@ export default function EspecimenForm(
   const handleInputChange = (
     e: ChangeEvent<HTMLInputElement>
   ) => {
+    // FIX: Use previous state callback to avoid stale state bugs
     setFormData(
-      {
-        ...formData,
-        [ e.target.name ]: e.target.value
+      (
+        prev
+      ) => {
+        return {
+          ...prev,
+          [ e.target.name ]: e.target.value
+        };
       }
     );
   };
@@ -134,13 +139,18 @@ export default function EspecimenForm(
   const handleTaxonChange = (
     field: keyof Taxon, value: string
   ) => {
+    // FIX: Use previous state callback to avoid stale state bugs
     setFormData(
-      {
-        ...formData,
-        taxon: {
-          ...formData.taxon,
-          [ field ]: value
-        }
+      (
+        prev
+      ) => {
+        return {
+          ...prev,
+          taxon: {
+            ...prev.taxon,
+            [ field ]: value
+          }
+        };
       }
     );
   };
@@ -403,13 +413,17 @@ export default function EspecimenForm(
         const newPreps = [
           ...( prev.preparaciones || [] )
         ];
-        newPreps[ prepIndex ].ingredientes = [
-          ...( newPreps[ prepIndex ].ingredientes || [] ),
-          {
-            ingrediente: '',
-            cantidad   : ''
-          }
-        ];
+
+        newPreps[ prepIndex ] = {
+          ...newPreps[ prepIndex ],
+          ingredientes: [
+            ...( newPreps[ prepIndex ].ingredientes || [] ),
+            {
+              ingrediente: '',
+              cantidad   : ''
+            }
+          ]
+        };
 
         return {
           ...prev,
@@ -444,7 +458,11 @@ export default function EspecimenForm(
           ...newIngs[ ingIndex ],
           [ field ]: value
         };
-        newPreps[ prepIndex ].ingredientes = newIngs;
+
+        newPreps[ prepIndex ] = {
+          ...newPreps[ prepIndex ],
+          ingredientes: newIngs
+        };
 
         return {
           ...prev,
@@ -469,13 +487,17 @@ export default function EspecimenForm(
         const newPreps = [
           ...( prev.preparaciones || [] )
         ];
-        newPreps[ prepIndex ].ingredientes = ( newPreps[ prepIndex ].ingredientes || [] ).filter(
-          (
-            _, i
-          ) => {
-            return i !== ingIndexToRemove;
-          }
-        );
+
+        newPreps[ prepIndex ] = {
+          ...newPreps[ prepIndex ],
+          ingredientes: ( newPreps[ prepIndex ].ingredientes || [] ).filter(
+            (
+              _, i
+            ) => {
+              return i !== ingIndexToRemove;
+            }
+          )
+        };
 
         return {
           ...prev,
@@ -515,13 +537,16 @@ export default function EspecimenForm(
           ) + 1
           : 1;
 
-        newPreps[ prepIndex ].pasos = [
-          ...pasos,
-          [
-            nextStepNum,
-            ''
+        newPreps[ prepIndex ] = {
+          ...newPreps[ prepIndex ],
+          pasos: [
+            ...pasos,
+            [
+              nextStepNum,
+              ''
+            ]
           ]
-        ];
+        };
 
         return {
           ...prev,
@@ -557,7 +582,11 @@ export default function EspecimenForm(
           newPasos[ pasoIndex ][ 0 ],
           value
         ];
-        newPreps[ prepIndex ].pasos = newPasos;
+
+        newPreps[ prepIndex ] = {
+          ...newPreps[ prepIndex ],
+          pasos: newPasos
+        };
 
         return {
           ...prev,
@@ -582,13 +611,17 @@ export default function EspecimenForm(
         const newPreps = [
           ...( prev.preparaciones || [] )
         ];
-        newPreps[ prepIndex ].pasos = ( newPreps[ prepIndex ].pasos || [] ).filter(
-          (
-            _, i
-          ) => {
-            return i !== pasoIndexToRemove;
-          }
-        );
+
+        newPreps[ prepIndex ] = {
+          ...newPreps[ prepIndex ],
+          pasos: ( newPreps[ prepIndex ].pasos || [] ).filter(
+            (
+              _, i
+            ) => {
+              return i !== pasoIndexToRemove;
+            }
+          )
+        };
 
         return {
           ...prev,
