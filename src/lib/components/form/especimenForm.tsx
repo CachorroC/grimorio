@@ -106,7 +106,7 @@ export default function EspecimenForm(
           clados: initialData.taxon?.clados || []
         }
       };
-    } 
+    }
   );
 
   // --- TOP LEVEL HANDLERS ---
@@ -116,13 +116,13 @@ export default function EspecimenForm(
    * @param {ChangeEvent<HTMLInputElement>} e - The input change event.
    */
   const handleInputChange = (
-    e: ChangeEvent<HTMLInputElement> 
+    e: ChangeEvent<HTMLInputElement>
   ) => {
     setFormData(
       {
         ...formData,
         [ e.target.name ]: e.target.value
-      } 
+      }
     );
   };
 
@@ -132,7 +132,7 @@ export default function EspecimenForm(
    * @param {string} value - The new value for the taxonomic rank.
    */
   const handleTaxonChange = (
-    field: keyof Taxon, value: string 
+    field: keyof Taxon, value: string
   ) => {
     setFormData(
       {
@@ -141,7 +141,7 @@ export default function EspecimenForm(
           ...formData.taxon,
           [ field ]: value
         }
-      } 
+      }
     );
   };
 
@@ -154,11 +154,11 @@ export default function EspecimenForm(
    * @param {string} value - The new string value.
    */
   const handleStringArrayChange = (
-    field: keyof EspecimenType, index: number, value: string 
+    field: keyof EspecimenType, index: number, value: string
   ) => {
     setFormData(
       (
-        prev 
+        prev
       ) => {
         const safeArray = ( prev[ field ] as string[] ) || [];
         const newArray = [
@@ -170,7 +170,7 @@ export default function EspecimenForm(
           ...prev,
           [ field ]: newArray
         };
-      } 
+      }
     );
   };
 
@@ -179,11 +179,11 @@ export default function EspecimenForm(
    * @param {keyof EspecimenType} field - The key of the array to append to.
    */
   const addStringArrayItem = (
-    field: keyof EspecimenType 
+    field: keyof EspecimenType
   ) => {
     setFormData(
       (
-        prev 
+        prev
       ) => {
         const safeArray = ( prev[ field ] as string[] ) || [];
 
@@ -194,7 +194,7 @@ export default function EspecimenForm(
             ''
           ]
         };
-      } 
+      }
     );
   };
 
@@ -204,11 +204,11 @@ export default function EspecimenForm(
    * @param {number} indexToRemove - The index of the item to delete.
    */
   const removeStringArrayItem = (
-    field: keyof EspecimenType, indexToRemove: number 
+    field: keyof EspecimenType, indexToRemove: number
   ) => {
     setFormData(
       (
-        prev 
+        prev
       ) => {
         const safeArray = ( prev[ field ] as string[] ) || [];
 
@@ -216,13 +216,13 @@ export default function EspecimenForm(
           ...prev,
           [ field ]: safeArray.filter(
             (
-              _, index 
+              _, index
             ) => {
               return index !== indexToRemove;
-            } 
+            }
           )
         };
-      } 
+      }
     );
   };
 
@@ -234,11 +234,11 @@ export default function EspecimenForm(
    * @param {string} value - The new clade value.
    */
   const handleCladoChange = (
-    index: number, value: string 
+    index: number, value: string
   ) => {
     setFormData(
       (
-        prev 
+        prev
       ) => {
         const newClados = [
           ...( prev.taxon.clados || [] )
@@ -252,7 +252,7 @@ export default function EspecimenForm(
             clados: newClados
           }
         };
-      } 
+      }
     );
   };
 
@@ -262,7 +262,7 @@ export default function EspecimenForm(
   const addClado = () => {
     setFormData(
       (
-        prev 
+        prev
       ) => {
         return {
           ...prev,
@@ -274,7 +274,7 @@ export default function EspecimenForm(
             ]
           }
         };
-      } 
+      }
     );
   };
 
@@ -283,11 +283,11 @@ export default function EspecimenForm(
    * @param {number} indexToRemove - The index of the clade to delete.
    */
   const removeClado = (
-    indexToRemove: number 
+    indexToRemove: number
   ) => {
     setFormData(
       (
-        prev 
+        prev
       ) => {
         return {
           ...prev,
@@ -295,14 +295,14 @@ export default function EspecimenForm(
             ...prev.taxon,
             clados: ( prev.taxon.clados || [] ).filter(
               (
-                _, index 
+                _, index
               ) => {
                 return index !== indexToRemove;
-              } 
+              }
             )
           }
         };
-      } 
+      }
     );
   };
 
@@ -320,7 +320,7 @@ export default function EspecimenForm(
     };
     setFormData(
       (
-        prev 
+        prev
       ) => {
         return {
           ...prev,
@@ -329,7 +329,7 @@ export default function EspecimenForm(
             newPrep
           ]
         };
-      } 
+      }
     );
   };
 
@@ -338,23 +338,23 @@ export default function EspecimenForm(
    * @param {number} indexToRemove - The index of the preparation to delete.
    */
   const removePreparacion = (
-    indexToRemove: number 
+    indexToRemove: number
   ) => {
     setFormData(
       (
-        prev 
+        prev
       ) => {
         return {
           ...prev,
           preparaciones: ( prev.preparaciones || [] ).filter(
             (
-              _, index 
+              _, index
             ) => {
               return index !== indexToRemove;
-            } 
+            }
           )
         };
-      } 
+      }
     );
   };
 
@@ -369,7 +369,7 @@ export default function EspecimenForm(
   ) => {
     setFormData(
       (
-        prev 
+        prev
       ) => {
         const newPreps = [
           ...( prev.preparaciones || [] )
@@ -383,7 +383,7 @@ export default function EspecimenForm(
           ...prev,
           preparaciones: newPreps
         };
-      } 
+      }
     );
   };
 
@@ -394,11 +394,11 @@ export default function EspecimenForm(
    * @param {number} prepIndex - The index of the preparation receiving the new ingredient.
    */
   const addIngrediente = (
-    prepIndex: number 
+    prepIndex: number
   ) => {
     setFormData(
       (
-        prev 
+        prev
       ) => {
         const newPreps = [
           ...( prev.preparaciones || [] )
@@ -407,7 +407,7 @@ export default function EspecimenForm(
           ...( newPreps[ prepIndex ].ingredientes || [] ),
           {
             ingrediente: '',
-            cantidad   : '' 
+            cantidad   : ''
           }
         ];
 
@@ -415,7 +415,7 @@ export default function EspecimenForm(
           ...prev,
           preparaciones: newPreps
         };
-      } 
+      }
     );
   };
 
@@ -431,7 +431,7 @@ export default function EspecimenForm(
   ) => {
     setFormData(
       (
-        prev 
+        prev
       ) => {
         const newPreps = [
           ...( prev.preparaciones || [] )
@@ -450,7 +450,7 @@ export default function EspecimenForm(
           ...prev,
           preparaciones: newPreps
         };
-      } 
+      }
     );
   };
 
@@ -460,18 +460,18 @@ export default function EspecimenForm(
    * @param {number} ingIndexToRemove - The index of the ingredient to delete.
    */
   const removeIngrediente = (
-    prepIndex: number, ingIndexToRemove: number 
+    prepIndex: number, ingIndexToRemove: number
   ) => {
     setFormData(
       (
-        prev 
+        prev
       ) => {
         const newPreps = [
           ...( prev.preparaciones || [] )
         ];
         newPreps[ prepIndex ].ingredientes = ( newPreps[ prepIndex ].ingredientes || [] ).filter(
           (
-            _, i 
+            _, i
           ) => {
             return i !== ingIndexToRemove;
           }
@@ -481,7 +481,7 @@ export default function EspecimenForm(
           ...prev,
           preparaciones: newPreps
         };
-      } 
+      }
     );
   };
 
@@ -493,11 +493,11 @@ export default function EspecimenForm(
    * @param {number} prepIndex - The index of the parent preparation.
    */
   const addPaso = (
-    prepIndex: number 
+    prepIndex: number
   ) => {
     setFormData(
       (
-        prev 
+        prev
       ) => {
         const newPreps = [
           ...( prev.preparaciones || [] )
@@ -510,8 +510,8 @@ export default function EspecimenForm(
             ...pasos.map(
               p => {
                 return p[ 0 ];
-              } 
-            ) 
+              }
+            )
           ) + 1
           : 1;
 
@@ -527,7 +527,7 @@ export default function EspecimenForm(
           ...prev,
           preparaciones: newPreps
         };
-      } 
+      }
     );
   };
 
@@ -538,11 +538,11 @@ export default function EspecimenForm(
    * @param {string} value - The new instruction text for the step.
    */
   const updatePaso = (
-    prepIndex: number, pasoIndex: number, value: string 
+    prepIndex: number, pasoIndex: number, value: string
   ) => {
     setFormData(
       (
-        prev 
+        prev
       ) => {
         const newPreps = [
           ...( prev.preparaciones || [] )
@@ -563,7 +563,7 @@ export default function EspecimenForm(
           ...prev,
           preparaciones: newPreps
         };
-      } 
+      }
     );
   };
 
@@ -573,18 +573,18 @@ export default function EspecimenForm(
    * @param {number} pasoIndexToRemove - The array index of the tuple to delete.
    */
   const removePaso = (
-    prepIndex: number, pasoIndexToRemove: number 
+    prepIndex: number, pasoIndexToRemove: number
   ) => {
     setFormData(
       (
-        prev 
+        prev
       ) => {
         const newPreps = [
           ...( prev.preparaciones || [] )
         ];
         newPreps[ prepIndex ].pasos = ( newPreps[ prepIndex ].pasos || [] ).filter(
           (
-            _, i 
+            _, i
           ) => {
             return i !== pasoIndexToRemove;
           }
@@ -594,7 +594,7 @@ export default function EspecimenForm(
           ...prev,
           preparaciones: newPreps
         };
-      } 
+      }
     );
   };
 
@@ -607,7 +607,7 @@ export default function EspecimenForm(
    * @param {React.FormEvent<HTMLFormElement>} e - The form submission event.
    */
   const handleSubmit: SubmitEventHandler<HTMLFormElement> = async (
-    e 
+    e
   ) => {
     e.preventDefault();
 
@@ -617,44 +617,44 @@ export default function EspecimenForm(
       nombresComunes: ( formData.nombresComunes || [] ).filter(
         val => {
           return val.trim() !== '';
-        } 
+        }
       ),
       partesUtiles: ( formData.partesUtiles || [] ).filter(
         val => {
           return val.trim() !== '';
-        } 
+        }
       ),
       esenciasFlorales: ( formData.esenciasFlorales || [] ).filter(
         val => {
           return val.trim() !== '';
-        } 
+        }
       ),
       propiedadesMedicinales: ( formData.propiedadesMedicinales || [] ).filter(
         val => {
           return val.trim() !== '';
-        } 
+        }
       ),
       correspondenciasEnergeticas: ( formData.correspondenciasEnergeticas || [] ).filter(
         val => {
           return val.trim() !== '';
-        } 
+        }
       ),
       malesEmocionales: ( formData.malesEmocionales || [] ).filter(
         val => {
           return val.trim() !== '';
-        } 
+        }
       ),
       malesFisicos: ( formData.malesFisicos || [] ).filter(
         val => {
           return val.trim() !== '';
-        } 
+        }
       ),
       taxon: {
         ...formData.taxon,
         clados: ( formData.taxon.clados || [] ).filter(
           val => {
             return val.trim() !== '';
-          } 
+          }
         ),
       },
     };
@@ -663,8 +663,8 @@ export default function EspecimenForm(
       // 2. Server Request: Call the server action
       const response = await upsertSpecimen(
         {
-          data: payloadToSave 
-        } 
+          data: payloadToSave
+        }
       );
 
       // 3. Response Handling: Treat as success if perfect success OR if DB succeeded but JSON backup failed
@@ -687,45 +687,45 @@ export default function EspecimenForm(
               ...savedData.taxon,
               clados: savedData.taxon?.clados || []
             }
-          } 
+          }
         );
 
         console.log(
-          'Successfully saved to MongoDB:', savedData 
+          'Successfully saved to MongoDB:', savedData
         );
 
         // Soft warning if the secondary backup process failed
         if ( response.failed === 'file' ) {
           console.warn(
-            'Note: Database updated, but JSON backup failed:', response.errors?.file 
+            'Note: Database updated, but JSON backup failed:', response.errors?.file
           );
         }
 
       } else {
         console.error(
-          'Failed to save. Point of failure:', response.failed 
+          'Failed to save. Point of failure:', response.failed
         );
         console.error(
-          'Error details:', response.errors 
+          'Error details:', response.errors
         );
       }
     } catch ( error ) {
       console.error(
-        'Network or server error:', error 
+        'Network or server error:', error
       );
     }
 
     console.log(
-      'fin del submit' 
+      'fin del submit'
     );
 
     // 4. Cleanup: Close the editing view if a setter was provided
     if ( setIsEditing ) {
       console.log(
-        'si hay setIsEditing' 
+        'si hay setIsEditing'
       );
       setIsEditing(
-        false 
+        false
       );
     }
   };
@@ -739,7 +739,7 @@ export default function EspecimenForm(
    * @returns JSX.Element
    */
   const renderStringArrayInput = (
-    title: string, field: keyof EspecimenType 
+    title: string, field: keyof EspecimenType
   ) => {
     const arr = ( formData[ field ] as string[] ) || [];
 
@@ -748,19 +748,19 @@ export default function EspecimenForm(
         <h3 className={styles.sectionTitle}>{title}</h3>
         {arr.map(
           (
-            item, index 
+            item, index
           ) => {
             return (
               <div key={`${ field }-${ index }`} className={styles.arrayItem}>
                 <input
                   type="text"
-                  className={styles.input}
+                  className={styles.inputFilled}
                   value={item}
                   onChange={(
-                    e 
+                    e
                   ) => {
                     return handleStringArrayChange(
-                      field, index, e.target.value 
+                      field, index, e.target.value
                     );
                   }}
                   placeholder={`Añadir ${ title.toLowerCase() }`}
@@ -770,7 +770,7 @@ export default function EspecimenForm(
                   className={`${ styles.button } ${ styles.deleteBtn }`}
                   onClick={() => {
                     return removeStringArrayItem(
-                      field, index 
+                      field, index
                     );
                   }}
                 >
@@ -778,14 +778,14 @@ export default function EspecimenForm(
                 </button>
               </div>
             );
-          } 
+          }
         )}
         <button
           type="button"
           className={`${ styles.button } ${ styles.addBtn }`}
           onClick={() => {
             return addStringArrayItem(
-              field 
+              field
             );
           }}
         >
@@ -805,36 +805,36 @@ export default function EspecimenForm(
           <input
             type="text"
             name="nombreCientifico"
-            className={styles.input}
+            className={styles.inputFilled}
             value={formData.nombreCientifico}
             onChange={handleInputChange}
             required
           />
           <label className={styles.label}>URL de la imagen</label>
         </div>
-        <input name="imageUrl" className={styles.input} value={formData.imageUrl ?? ''} onChange={handleInputChange} />
+        <input name="imageUrl" className={styles.inputFilled} value={formData.imageUrl ?? ''} onChange={handleInputChange} />
       </div>
 
       {renderStringArrayInput(
-        'Nombres Comunes', 'nombresComunes' 
+        'Nombres Comunes', 'nombresComunes'
       )}
       {renderStringArrayInput(
-        'Partes Útiles', 'partesUtiles' 
+        'Partes Útiles', 'partesUtiles'
       )}
       {renderStringArrayInput(
-        'Propiedades Medicinales', 'propiedadesMedicinales' 
+        'Propiedades Medicinales', 'propiedadesMedicinales'
       )}
       {renderStringArrayInput(
-        'Correspondencias Energéticas', 'correspondenciasEnergeticas' 
+        'Correspondencias Energéticas', 'correspondenciasEnergeticas'
       )}
       {renderStringArrayInput(
-        'Qué males emocionales cura', 'malesEmocionales' 
+        'Qué males emocionales cura', 'malesEmocionales'
       )}
       {renderStringArrayInput(
-        'Que males físicos cura', 'malesFisicos' 
+        'Que males físicos cura', 'malesFisicos'
       )}
       {renderStringArrayInput(
-        'Esencias Florales', 'esenciasFlorales' 
+        'Esencias Florales', 'esenciasFlorales'
       )}
 
       <div className={styles.section}>
@@ -851,57 +851,57 @@ export default function EspecimenForm(
             'especie'
           ].map(
             (
-              taxRank 
+              taxRank
             ) => {
               return (
                 <div key={taxRank} className={`${ styles.inputGroup } ${ styles.flex1 }`} style={{
-                  minWidth: '200px' 
+                  minWidth: '200px'
                 }}
                 >
                   <label className={styles.label}>{taxRank.charAt(
-                    0 
+                    0
                   )
                     .toUpperCase() + taxRank.slice(
-                    1 
+                    1
                   )}</label>
                   <input
                     type="text"
-                    className={styles.input}
+                    className={styles.inputFilled}
                     value={formData.taxon[ taxRank as keyof Taxon ] as string || ''}
                     onChange={(
-                      e 
+                      e
                     ) => {
                       return handleTaxonChange(
-                        taxRank as keyof Taxon, e.target.value 
+                        taxRank as keyof Taxon, e.target.value
                       );
                     }}
                   />
                 </div>
               );
-            } 
+            }
           )}
         </div>
 
         <div className={styles.subSection} style={{
-          marginTop: '1rem' 
+          marginTop: '1rem'
         }}
         >
           <h4>Clados</h4>
           {( formData.taxon.clados || [] ).map(
             (
-              clado, index 
+              clado, index
             ) => {
               return (
                 <div key={`clado-${ index }`} className={styles.arrayItem}>
                   <input
                     type="text"
-                    className={styles.input}
+                    className={styles.inputOutlined}
                     value={clado}
                     onChange={(
-                      e 
+                      e
                     ) => {
                       return handleCladoChange(
-                        index, e.target.value 
+                        index, e.target.value
                       );
                     }}
                     placeholder="Ej. Angiospermas"
@@ -911,7 +911,7 @@ export default function EspecimenForm(
                     className={`${ styles.button } ${ styles.deleteBtn }`}
                     onClick={() => {
                       return removeClado(
-                        index 
+                        index
                       );
                     }}
                   >
@@ -919,7 +919,7 @@ export default function EspecimenForm(
                   </button>
                 </div>
               );
-            } 
+            }
           )}
           <button type="button" className={`${ styles.button } ${ styles.addBtn }`} onClick={addClado}>
             + Añadir Clado
@@ -931,7 +931,7 @@ export default function EspecimenForm(
         <h3 className={styles.sectionTitle}>Preparaciones</h3>
         {( formData.preparaciones || [] ).map(
           (
-            prep, prepIndex 
+            prep, prepIndex
           ) => {
             return (
               <div key={`prep-${ prepIndex }`} className={styles.subSection}>
@@ -939,13 +939,13 @@ export default function EspecimenForm(
                   <label className={styles.label}>Uso Terapéutico</label>
                   <input
                     type="text"
-                    className={styles.input}
+                    className={styles.inputFilled}
                     value={prep.usoTerapeutico}
                     onChange={(
-                      e 
+                      e
                     ) => {
                       return updatePreparacionField(
-                        prepIndex, 'usoTerapeutico', e.target.value 
+                        prepIndex, 'usoTerapeutico', e.target.value
                       );
                     }}
                     placeholder="Ej. Para el dolor de estómago"
@@ -956,13 +956,13 @@ export default function EspecimenForm(
                   <label className={styles.label}>Forma de Aplicación</label>
                   <input
                     type="text"
-                    className={styles.input}
+                    className={styles.inputFilled}
                     value={prep.formaDeAplicacion || ''}
                     onChange={(
-                      e 
+                      e
                     ) => {
                       return updatePreparacionField(
-                        prepIndex, 'formaDeAplicacion', e.target.value 
+                        prepIndex, 'formaDeAplicacion', e.target.value
                       );
                     }}
                     placeholder="Ej. Cataplasma, Infusión, Tintura..."
@@ -971,42 +971,42 @@ export default function EspecimenForm(
 
                 {/* Ingredientes */}
                 <div className={styles.subSection} style={{
-                  backgroundColor: '#fff' 
+                  backgroundColor: 'var(--surface-container-high)'
                 }}
                 >
                   <label className={styles.label}>Ingredientes</label>
                   {( prep.ingredientes || [] ).map(
                     (
-                      ing, ingIndex 
+                      ing, ingIndex
                     ) => {
                       return (
                         <div key={`ing-${ prepIndex }-${ ingIndex }`} className={styles.row} style={{
-                          marginBottom: '0.5rem' 
+                          marginBottom: '0.5rem'
                         }}
                         >
                           <input
                             type="text"
-                            className={styles.input}
+                            className={styles.inputOutlined}
                             placeholder="Ingrediente (Ej. Romero en polvo)"
                             value={ing.ingrediente}
                             onChange={(
-                              e 
+                              e
                             ) => {
                               return updateIngrediente(
-                                prepIndex, ingIndex, 'ingrediente', e.target.value 
+                                prepIndex, ingIndex, 'ingrediente', e.target.value
                               );
                             }}
                           />
                           <input
                             type="text"
-                            className={styles.input}
+                            className={styles.inputOutlined}
                             placeholder="Cantidad (Ej. 5 gramos)"
                             value={ing.cantidad}
                             onChange={(
-                              e 
+                              e
                             ) => {
                               return updateIngrediente(
-                                prepIndex, ingIndex, 'cantidad', e.target.value 
+                                prepIndex, ingIndex, 'cantidad', e.target.value
                               );
                             }}
                           />
@@ -1015,7 +1015,7 @@ export default function EspecimenForm(
                             className={`${ styles.button } ${ styles.deleteBtn }`}
                             onClick={() => {
                               return removeIngrediente(
-                                prepIndex, ingIndex 
+                                prepIndex, ingIndex
                               );
                             }}
                           >
@@ -1023,11 +1023,11 @@ export default function EspecimenForm(
                           </button>
                         </div>
                       );
-                    } 
+                    }
                   )}
                   <button type="button" className={`${ styles.button } ${ styles.addBtn }`} onClick={() => {
                     return addIngrediente(
-                      prepIndex 
+                      prepIndex
                     );
                   }}
                   >
@@ -1039,19 +1039,16 @@ export default function EspecimenForm(
                 <div
                   className={styles.subSection}
                   style={{
-                    backgroundColor: 'var(--primary-container)',
-                    color          : 'var(--on-primary-container)' 
+                    backgroundColor: 'var(--surface-container-high)',
+                    color          : 'var(--on-surface)'
                   }}
                 >
-                  <label className={styles.label} style={{
-                    color: 'var(--on-primary-container)' 
-                  }}
-                  >
+                  <label className={styles.label}>
                     Pasos a seguir
                   </label>
                   {( prep.pasos || [] ).map(
                     (
-                      pasoTuple, pasoIndex 
+                      pasoTuple, pasoIndex
                     ) => {
                       const [
                         pasoNum,
@@ -1063,14 +1060,14 @@ export default function EspecimenForm(
                           <div className={styles.stepNumber}>{pasoNum}</div>
                           <input
                             type="text"
-                            className={styles.input}
+                            className={styles.inputOutlined}
                             placeholder="Instrucción del paso"
                             value={instruction}
                             onChange={(
-                              e 
+                              e
                             ) => {
                               return updatePaso(
-                                prepIndex, pasoIndex, e.target.value 
+                                prepIndex, pasoIndex, e.target.value
                               );
                             }}
                           />
@@ -1079,7 +1076,7 @@ export default function EspecimenForm(
                             className={`${ styles.button } ${ styles.deleteBtn }`}
                             onClick={() => {
                               return removePaso(
-                                prepIndex, pasoIndex 
+                                prepIndex, pasoIndex
                               );
                             }}
                           >
@@ -1087,11 +1084,11 @@ export default function EspecimenForm(
                           </button>
                         </div>
                       );
-                    } 
+                    }
                   )}
                   <button type="button" className={`${ styles.button } ${ styles.addBtn }`} onClick={() => {
                     return addPaso(
-                      prepIndex 
+                      prepIndex
                     );
                   }}
                   >
@@ -1103,11 +1100,11 @@ export default function EspecimenForm(
                   type="button"
                   className={`${ styles.button } ${ styles.deleteBtn }`}
                   style={{
-                    marginTop: '1rem' 
+                    marginTop: '1rem'
                   }}
                   onClick={() => {
                     return removePreparacion(
-                      prepIndex 
+                      prepIndex
                     );
                   }}
                 >
@@ -1115,7 +1112,7 @@ export default function EspecimenForm(
                 </button>
               </div>
             );
-          } 
+          }
         )}
         <button type="button" className={`${ styles.button } ${ styles.addBtn }`} onClick={addPreparacion}>
           + Añadir Nueva Preparación

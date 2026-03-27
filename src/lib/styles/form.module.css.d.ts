@@ -12,7 +12,9 @@ declare const styles: {
   readonly "icon": string;
   readonly "input": string;
   readonly "inputElement": string;
+  readonly "inputFilled": string;
   readonly "inputGroup": string;
+  readonly "inputOutlined": string;
   readonly "label": string;
   readonly "row": string;
   readonly "section": string;

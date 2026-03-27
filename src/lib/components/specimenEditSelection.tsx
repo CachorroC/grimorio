@@ -2,12 +2,13 @@
 
 import { useState } from 'react';
 import { Button, Card, CardMedia, Box } from '@mui/material';
-import SendIcon from '@mui/icons-material/Send';
+import EditIcon from '@mui/icons-material/Edit';
 import EspecimenForm from './form/especimenForm';
 import PlantCookbook from './display/plantCookbook';
 import { EspecimenType } from '../types/especimenTypes';
 import Link from 'next/link';
 import { useAccordionScroll } from '#@/app/context/AcordionScrollContext';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export default function SpecimenEditSelection(
   {
@@ -16,16 +17,16 @@ export default function SpecimenEditSelection(
   }: {
     plantData    : EspecimenType;
     isStandalone?: boolean;
-  } 
+  }
 ) {
   const [
     isEditing,
     setIsEditing
   ] = useState(
-    false 
+    false
   );
   const {
-    cardRefs 
+    cardRefs
   } = useAccordionScroll();
   const defaultImage = 'https://via.placeholder.com/400x300?text=No+Image+Available';
 
@@ -46,7 +47,7 @@ export default function SpecimenEditSelection(
         flexDirection: 'column',
       }}
       ref={(
-        el: HTMLDivElement | null 
+        el: HTMLDivElement | null
       ) => {
         if ( el ) {
           cardRefs.current[ plantData.nombreCientifico ] = el;
@@ -113,20 +114,28 @@ export default function SpecimenEditSelection(
             onClick={() => {
               return setIsEditing(
                 (
-                  edit 
+                  edit
                 ) => {
                   return !edit;
-                } 
+                }
               );
             }}
-            endIcon={<SendIcon />}
+            endIcon={<EditIcon />}
             sx={{
               mt       : 'auto',
               mb       : 2,
-              alignSelf: 'flex-start' 
+              alignSelf: 'flex-start'
             }}
           >
-            Send
+            Editar
+          </Button>
+          <Button
+            variant="contained"
+            color="secondary"
+            startIcon={<ExpandMoreIcon />}
+            href={ `/hierba/${ plantData.nombreCientifico }` }
+          >
+            Ver detalles
           </Button>
           <Link href={`/hierba/${ plantData.nombreCientifico }`}>View Details</Link>
         </Box>
