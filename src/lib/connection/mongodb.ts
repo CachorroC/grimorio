@@ -1,13 +1,13 @@
 // lib/mongodb.ts
 import { MongoClient } from 'mongodb';
 
-if ( !process.env.MONGODB_URI ) {
+/* if ( !process.env.MONGODB_URI ) {
   throw new Error(
-    'Invalid/Missing environment variable: "MONGODB_URI"' 
+    'Invalid/Missing environment variable: "MONGODB_URI"'
   );
-}
+} */
 
-const uri = process.env.MONGODB_URI;
+const uri = process.env.MONGODB_URI || 'mongodb+srv://cachorro_cami:Tengo1amo@cluster0.ffbyjzl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 const options = {};
 
 let client;
@@ -22,7 +22,7 @@ if ( process.env.NODE_ENV === 'development' ) {
 
   if ( !globalWithMongo._mongoClientPromise ) {
     client = new MongoClient(
-      uri, options 
+      uri, options
     );
     globalWithMongo._mongoClientPromise = client.connect();
   }
@@ -31,7 +31,7 @@ if ( process.env.NODE_ENV === 'development' ) {
 } else {
   // In production mode, it's best to not use a global variable.
   client = new MongoClient(
-    uri, options 
+    uri, options
   );
   clientPromise = client.connect();
 }

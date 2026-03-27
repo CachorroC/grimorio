@@ -1,148 +1,62 @@
 'use client';
-
-import { useEffect } from 'react';
 import { useEspecimen } from '#@/app/context/EspecimenContext';
 import { useSearch } from '#@/app/context/search-context';
-import { useRouter, useSearchParams, usePathname } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import { bodyLarge } from '../styles/fonts/typography.module.css';
 import { searchContainer } from '../styles/landing.module.css';
 import searchbar from '../styles/searchbar.module.css';
-import { Route } from 'next';
 
 export const InputSearchBar = () => {
   const {
-    setSearch
+    search, setSearch
   } = useSearch();
   const {
     state, dispatch
   } = useEspecimen();
 
   const router = useRouter();
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
-
-  // 1. Sync URL -> Context
-  useEffect(
-    () => {
-      const urlSearch = searchParams.get(
-        'search'
-      ) || '';
-
-      if ( urlSearch && urlSearch !== state.searchTerm ) {
-        dispatch(
-          {
-            type   : 'SET_SEARCH',
-            payload: urlSearch
-          }
-        );
-        setSearch(
-          urlSearch
-        );
-      }
-    }, [
-      searchParams,
-      dispatch,
-      setSearch,
-      state.searchTerm
-    ]
-  );
-
-  // 2. Sync Context -> URL (Debounced)
-  useEffect(
-    () => {
-      const timeoutId = setTimeout(
-        () => {
-          const params = new URLSearchParams(
-            searchParams.toString()
-          );
-
-          if ( state.searchTerm ) {
-            params.set(
-              'search', state.searchTerm
-            );
-          } else {
-            params.delete(
-              'search'
-            );
-          }
-
-          router.replace(
-            `${ pathname }?${ params.toString() }` as Route, {
-              scroll: false
-            }
-          );
-        }, 400
-      );
-
-      return () => {
-        return clearTimeout(
-          timeoutId
-        );
-      };
-    }, [
-      state.searchTerm,
-      pathname,
-      router,
-      searchParams
-    ]
-  );
 
   return (
     <div className={searchContainer}>
       <datalist id="lista_hierbas">
         {state.data.map(
           (
-            planta
+            carpeta
           ) => {
             return (
               <option
-                value={planta.nombreCientifico}
-                key={planta.nombreCientifico}
-              // onClick removed from here to ensure cross-browser compatibility
+                value={carpeta.nombreCientifico}
+                key={carpeta.nombreCientifico}
+                onClick={() => {
+                  return router.push(
+                    `/hierba/${ carpeta.nombreCientifico }`
+                  );
+                }}
               />
             );
           }
         )}
       </datalist>
       <input
-        type="text"
+        type={'textarea'}
         list="lista_hierbas"
-        name="search"
-        placeholder="Buscar"
-        value={state.searchTerm}
+        name={'search'}
+        placeholder={'Buscar'}
+        value={search}
         className={`${ bodyLarge } ${ searchbar.input }`}
         onChange={(
           e
         ) => {
-          const newValue = e.target.value;
-
-          // 1. Update the contexts immediately
           dispatch(
             {
               type   : 'SET_SEARCH',
-              payload: newValue
-            }
-          );
-          setSearch(
-            newValue
-          );
-
-          // 2. DATALIST FIX: Check if the typed/selected value exactly matches a plant
-          const exactMatch = state.data.find(
-            (
-              planta
-            ) => {
-              return planta.nombreCientifico === newValue;
+              payload: e.target.value
             }
           );
 
-          // If there's an exact match, the user selected it from the datalist (or typed it perfectly)
-          // We can route them to the specific page immediately
-          if ( exactMatch ) {
-            router.push(
-              `/hierba/${ exactMatch.nombreCientifico }`
-            );
-          }
+          return setSearch(
+            e.target.value
+          );
         }}
       />
       <select
@@ -170,6 +84,7 @@ export const InputSearchBar = () => {
           setSearch(
             ''
           );
+
           dispatch(
             {
               type: 'RESET_FILTERS'

@@ -24,9 +24,7 @@
     height: 90svh;
     box-sizing: border-box;
     padding: 2vmin;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    display: flex;
     gap: 8px;
     flex-flow: column nowrap;
     justify-content: flex-start;

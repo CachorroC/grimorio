@@ -29,6 +29,7 @@ export const NavBar = () => {
         hrefLabel={'/hierba/nueva' as Route}
       />
       <NavLink iconLabel={ 'potted_plant' } textLabel={ 'Hierbas del compendio' } hrefLabel={ '/hierbas' } />
+      <NavLink iconLabel={ 'potted_plant' } textLabel={ 'Hierbas del compendio en cuadricula' } hrefLabel={ '/hierbasgrid' } />
       <DrawerMenuButton />
       {isNavOpen && (
         <Suspense fallback={<Loader />}>

@@ -1,9 +1,7 @@
 'use client';
-
 import {  useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Button, TextField } from '@mui/material';
-
 import NotificationButton from '#@/lib/components/NotificationButton';
 import NotificationToggle from '#@/lib/components/NotificationToggle';
 import { InstallPrompt, PushNotificationManager } from '#@/lib/components/pushNotificationManager';
@@ -47,7 +45,8 @@ export default function Page() {
           <div className={styles.logo}>Raíces & Alivio</div>
           <nav className={styles.nav}>
             <Link href="#vademecum" className={styles.navLink}>El Vademécum</Link>
-            <Link href="/hierbas" className={styles.navLink}>Lista de plantas medicinales</Link>
+            <Link href="/hierbas" className={ styles.navLink }>Lista de plantas medicinales</Link>
+            <Link href="/hierbasgrid" className={styles.navLink}>Lista de plantas medicinales</Link>
             <Link href="/hierba/nueva" className={styles.navLink}>Aporta tu conocimiento en el vademecum</Link>
           </nav>
         </header>
@@ -87,15 +86,7 @@ export default function Page() {
                   }
                 }
                 }
-                sx={{
-                  backgroundColor           : '#FFFDFC',
-                  borderRadius              : 1,
-                  '& .MuiOutlinedInput-root': {
-                    '& fieldset': {
-                      borderColor: '#D0C9B4'
-                    },
-                  }
-                }}
+
               />
               <Button
                 variant="contained"

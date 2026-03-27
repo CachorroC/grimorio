@@ -191,10 +191,10 @@ export default function PlantCookbook(
 
             {plant.preparaciones.map(
               (
-                prep
+                prep, index
               ) => {
               // Create a unique ID for this specific accordion
-                const panelId = `${ plant.nombreCientifico }-prep-${ prep.usoTerapeutico }`;
+                const panelId = `${ plant.nombreCientifico }-prep-${ prep.usoTerapeutico }-${ index }`;
 
                 return (
                   <Accordion
