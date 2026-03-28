@@ -7,11 +7,12 @@ import { Loader } from './loader';
 // 1. Individual Skeleton Card mimicking a specimen item
 const SkeletonCard = () => {
   return (
-    <Box sx={{
-      display      : 'flex',
-      flexDirection: 'column',
-      gap          : 1
-    }}
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 1,
+      }}
     >
       {/* Image placeholder */}
       <Skeleton
@@ -19,7 +20,7 @@ const SkeletonCard = () => {
         height={250}
         animation="wave"
         sx={{
-          borderRadius: 2
+          borderRadius: 2,
         }}
       />
       {/* Scientific name / Title placeholder */}
@@ -28,7 +29,7 @@ const SkeletonCard = () => {
         animation="wave"
         sx={{
           fontSize: '1.5rem',
-          width   : '80%'
+          width: '80%',
         }}
       />
       {/* Subtitle / Description placeholder */}
@@ -36,7 +37,7 @@ const SkeletonCard = () => {
         variant="text"
         animation="wave"
         sx={{
-          width: '60%'
+          width: '60%',
         }}
       />
     </Box>
@@ -48,46 +49,39 @@ export const GridSkeletonLoader = () => {
   // Generate an array of 8 placeholder items to fill the screen
   const skeletons = Array.from(
     {
-      length: 8
-    }, (
-      _, i
-    ) => {
+      length: 8,
+    },
+    (_, i) => {
       return i;
-    }
+    },
   );
 
   return (
     <Box
       sx={{
-        width    : '100%',
-        flexGrow : 1,
-        height   : '100vh',
+        width: '100%',
+        flexGrow: 1,
+        height: '100vh',
         overflowY: 'hidden', // Prevents scrolling on the skeleton itself
-        p        : 2,
+        p: 2,
       }}
     >
       <Box
         sx={{
-          display            : 'grid',
-          gap                : 2,
+          display: 'grid',
+          gap: 2,
           gridTemplateColumns: {
-            xs: '1fr',               // 1 column
-            sm: 'repeat(2, 1fr)',    // 2 columns
-            md: 'repeat(3, 1fr)',    // 3 columns
-            lg: 'repeat(4, 1fr)',    // 4 columns
+            xs: '1fr', // 1 column
+            sm: 'repeat(2, 1fr)', // 2 columns
+            md: 'repeat(3, 1fr)', // 3 columns
+            lg: 'repeat(4, 1fr)', // 4 columns
           },
           alignItems: 'start',
         }}
       >
-        {skeletons.map(
-          (
-            index
-          ) => {
-            return (
-              <SkeletonCard key={index} />
-            );
-          }
-        )}
+        {skeletons.map((index) => {
+          return <SkeletonCard key={index} />;
+        })}
       </Box>
     </Box>
   );
@@ -97,10 +91,10 @@ export const GridSkeletonLoader = () => {
 export const MainLoader = () => {
   return (
     <div className={styles.main}>
-      <div className={ styles.mainContent }>
+      <div className={styles.mainContent}>
         <GridSkeletonLoader />
       </div>
-      <div className={ styles.complementaryContent }>
+      <div className={styles.complementaryContent}>
         <Loader />
       </div>
     </div>

@@ -5,9 +5,7 @@ export const plantList: EspecimenType[] = [
     nombreCientifico: 'Salvia rosmarinus',
     imageUrl:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKN62Z67ri2NUtWJmCODzbEx-TcSH0bW_Hfg&s',
-    nombresComunes: [
-      'romero'
-    ],
+    nombresComunes: ['romero'],
     propiedadesMedicinales: [
       'antioxidante',
       'antiinflamatorio',
@@ -39,58 +37,42 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Lamiales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Lamiales',
       familia: 'Lamiaceae',
-      genero : 'Salvia',
+      genero: 'Salvia',
       especie: 'Salvia rosmarinus',
-      clados : [
-        'Angiospermas',
-        'Edicotiledoneas',
-        'Astreidas'
-      ],
+      clados: ['Angiospermas', 'Edicotiledoneas', 'Astreidas'],
     },
     preparaciones: [
       {
         usoTerapeutico: 'Dolor de estomago ',
-        ingredientes  : [
+        ingredientes: [
           {
             ingrediente: 'Romero en polvo',
-            cantidad   : '5 gramos',
+            cantidad: '5 gramos',
           },
           {
             ingrediente: 'agua',
-            cantidad   : '100 ml',
+            cantidad: '100 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Echar el romero en un recipiente vacio'
-          ],
-          [
-            2,
-            'echar el agua encima del romero en el recipiente'
-          ],
-          [
-            3,
-            'batir fuertemente'
-          ],
-          [
-            4,
-            'colar el liquido '
-          ],
+          [1, 'Echar el romero en un recipiente vacio'],
+          [2, 'echar el agua encima del romero en el recipiente'],
+          [3, 'batir fuertemente'],
+          [4, 'colar el liquido '],
         ],
         formaDeAplicacion: '',
       },
       {
         usoTerapeutico: 'dolor del higado',
-        ingredientes  : [
+        ingredientes: [
           {
             ingrediente: 'romero seco',
-            cantidad   : '100 gramos',
+            cantidad: '100 gramos',
           },
           {
             ingrediente:
@@ -99,18 +81,9 @@ export const plantList: EspecimenType[] = [
           },
         ],
         pasos: [
-          [
-            1,
-            'colocar el romero en un recipiente'
-          ],
-          [
-            2,
-            'echar el aceite vegetal'
-          ],
-          [
-            3,
-            'dejar reposar por 20 días en un entorno oscuro y sin luz'
-          ],
+          [1, 'colocar el romero en un recipiente'],
+          [2, 'echar el aceite vegetal'],
+          [3, 'dejar reposar por 20 días en un entorno oscuro y sin luz'],
           [
             4,
             'sinecesitas la cocción inmediatamente, poner a baño de maría en fuego lento por 2 horas',
@@ -119,7 +92,7 @@ export const plantList: EspecimenType[] = [
         formaDeAplicacion: '',
       },
     ],
-    partesUtiles    : [],
+    partesUtiles: [],
     esenciasFlorales: [],
   },
   {
@@ -134,14 +107,10 @@ export const plantList: EspecimenType[] = [
       'sativa',
       'indica',
     ],
-    propiedadesMedicinales: [
-      'THC',
-      'CBD',
-      'Cannabinoides'
-    ],
+    propiedadesMedicinales: ['THC', 'CBD', 'Cannabinoides'],
     correspondenciasEnergeticas: [],
-    malesEmocionales           : [],
-    malesFisicos               : [
+    malesEmocionales: [],
+    malesFisicos: [
       'Dolores crónicos',
       'Nauseas por quimioterapia',
       'Espasticidad por esclerosis multiple',
@@ -149,22 +118,22 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: '',
-      reino  : '',
-      filo   : '',
-      clase  : '',
-      orden  : '',
+      reino: '',
+      filo: '',
+      clase: '',
+      orden: '',
       familia: '',
-      genero : '',
+      genero: '',
       especie: '',
-      clados : [],
+      clados: [],
     },
     preparaciones: [
       {
         usoTerapeutico: 'Aceite de dolor',
-        ingredientes  : [
+        ingredientes: [
           {
             ingrediente: 'flor de cannabis sativa',
-            cantidad   : '5 gramos',
+            cantidad: '5 gramos',
           },
           {
             ingrediente:
@@ -173,43 +142,26 @@ export const plantList: EspecimenType[] = [
           },
         ],
         pasos: [
-          [
-            1,
-            'Se tritura la flor hasta que quede un polvo fino'
-          ],
-          [
-            2,
-            'se coloca la marihuana en un recipiente '
-          ],
+          [1, 'Se tritura la flor hasta que quede un polvo fino'],
+          [2, 'se coloca la marihuana en un recipiente '],
           [
             3,
             'se coloca el aceite vegetal hasta cubrir completamente la flor ',
           ],
-          [
-            4,
-            ''
-          ],
+          [4, ''],
         ],
         formaDeAplicacion: '',
       },
     ],
-    partesUtiles    : [],
+    partesUtiles: [],
     esenciasFlorales: [],
   },
   {
     nombreCientifico: 'Artemisia absinthium',
     imageUrl:
       'https://upload.wikimedia.org/wikipedia/commons/1/1f/Artemisia_absinthium_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-164.jpg',
-    partesUtiles: [
-      'flor',
-      'hojas'
-    ],
-    nombresComunes: [
-      'Ajenjo',
-      'Asensio',
-      'Hierba Santa',
-      'Ajenjo mayor'
-    ],
+    partesUtiles: ['flor', 'hojas'],
+    nombresComunes: ['Ajenjo', 'Asensio', 'Hierba Santa', 'Ajenjo mayor'],
     propiedadesMedicinales: [
       'tónico estomacal',
       'control de parásitos oxiuriasis',
@@ -251,49 +203,34 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Magnoliophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Asterales',
+      reino: 'Plantae',
+      filo: 'Magnoliophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Asterales',
       familia: 'Asteraceae',
-      genero : 'Artemisia',
+      genero: 'Artemisia',
       especie: 'Artemisia absinthium',
-      clados : [],
+      clados: [],
     },
     preparaciones: [
       {
         usoTerapeutico: 'Compresas de Ajenjo',
-        ingredientes  : [
+        ingredientes: [
           {
             ingrediente: 'agua',
-            cantidad   : '300 ml',
+            cantidad: '300 ml',
           },
           {
             ingrediente: 'hojas y flores secas de ajenjo',
-            cantidad   : '1 o 2 cucharadas',
+            cantidad: '1 o 2 cucharadas',
           },
         ],
         pasos: [
-          [
-            1,
-            'hervir 300ml de agua'
-          ],
-          [
-            2,
-            'añadir 1 o 2 cucharadas de hojas y flores secas de ajenjo'
-          ],
-          [
-            3,
-            'tapar y dejar reposar durante 10 minutos'
-          ],
-          [
-            4,
-            'colar la mezcla y dejar entibiar'
-          ],
-          [
-            5,
-            'empapar un paño limpio o gasa de infusión'
-          ],
+          [1, 'hervir 300ml de agua'],
+          [2, 'añadir 1 o 2 cucharadas de hojas y flores secas de ajenjo'],
+          [3, 'tapar y dejar reposar durante 10 minutos'],
+          [4, 'colar la mezcla y dejar entibiar'],
+          [5, 'empapar un paño limpio o gasa de infusión'],
           [
             6,
             'escurrir ligeramente y aplicar sobre la zona afectada durante 15-20 minutos ',
@@ -303,18 +240,18 @@ export const plantList: EspecimenType[] = [
       },
       {
         usoTerapeutico: 'Aceite de Ajenjo',
-        ingredientes  : [
+        ingredientes: [
           {
             ingrediente: 'Frasco de vidrio esterilizado',
-            cantidad   : '1 frasco',
+            cantidad: '1 frasco',
           },
           {
             ingrediente: 'planta seca, hojas y flores',
-            cantidad   : 'mitad del frasco',
+            cantidad: 'mitad del frasco',
           },
           {
             ingrediente: 'Aceite portador ',
-            cantidad   : 'oliva, almendras o coco ',
+            cantidad: 'oliva, almendras o coco ',
           },
         ],
         pasos: [
@@ -344,36 +281,30 @@ export const plantList: EspecimenType[] = [
     nombreCientifico: 'Baccharis bogotensis',
     imageUrl:
       'https://i.pinimg.com/736x/60/17/c2/6017c25b9ec598512873f4e1cdd0d36a.jpg',
-    partesUtiles  : [],
-    nombresComunes: [
-      'Ciro',
-      'Chilca'
-    ],
-    propiedadesMedicinales: [
-      'Antiinflamatoria',
-      'Analgésica'
-    ],
-    esenciasFlorales           : [],
+    partesUtiles: [],
+    nombresComunes: ['Ciro', 'Chilca'],
+    propiedadesMedicinales: ['Antiinflamatoria', 'Analgésica'],
+    esenciasFlorales: [],
     correspondenciasEnergeticas: [],
-    malesEmocionales           : [],
-    malesFisicos               : [],
-    taxon                      : {
+    malesEmocionales: [],
+    malesFisicos: [],
+    taxon: {
       dominio: '',
-      reino  : '',
-      filo   : '',
-      clase  : '',
-      orden  : '',
+      reino: '',
+      filo: '',
+      clase: '',
+      orden: '',
       familia: '',
-      genero : '',
+      genero: '',
       especie: '',
-      clados : [],
+      clados: [],
     },
     preparaciones: [
       {
-        usoTerapeutico   : 'Cataplasmas',
+        usoTerapeutico: 'Cataplasmas',
         formaDeAplicacion: '',
-        ingredientes     : [],
-        pasos            : [],
+        ingredientes: [],
+        pasos: [],
       },
     ],
   },
@@ -381,11 +312,7 @@ export const plantList: EspecimenType[] = [
     nombreCientifico: 'Quercus humboldtii',
     imageUrl:
       'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjJt8_Rt78kA-vjyLNoxTcb9CyqzhTM4w0KQ&s',
-    nombresComunes: [
-      'Roble colombiano',
-      'Roble Andino',
-      'Roble negro'
-    ],
+    nombresComunes: ['Roble colombiano', 'Roble Andino', 'Roble negro'],
     propiedadesMedicinales: [
       'Astringente',
       'Cicatrizante',
@@ -393,11 +320,7 @@ export const plantList: EspecimenType[] = [
       'Antiinflamatorio',
       'Antiséptico',
     ],
-    partesUtiles: [
-      'Corteza',
-      'Hojas',
-      'Bellotas'
-    ],
+    partesUtiles: ['Corteza', 'Hojas', 'Bellotas'],
     esenciasFlorales: [
       'Aporta fuerza y estructura',
       'Ayuda a superar el agotamiento profundo',
@@ -423,18 +346,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Fagales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Fagales',
       familia: 'Fagaceae',
-      genero : 'Quercus',
+      genero: 'Quercus',
       especie: 'humboldtii',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas'],
     },
     preparaciones: [
       {
@@ -445,11 +364,11 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Corteza de roble seca y triturada',
-            cantidad   : '15 gramos',
+            cantidad: '15 gramos',
           },
           {
             ingrediente: 'Agua filtrada',
-            cantidad   : '500 ml',
+            cantidad: '500 ml',
           },
         ],
         pasos: [
@@ -457,34 +376,21 @@ export const plantList: EspecimenType[] = [
             1,
             'Llevar el agua a ebullición en un recipiente que no sea de aluminio.',
           ],
-          [
-            2,
-            'Añadir la corteza de roble al agua hirviendo.'
-          ],
+          [2, 'Añadir la corteza de roble al agua hirviendo.'],
           [
             3,
             'Reducir el fuego y dejar hervir a fuego lento durante 15 minutos para extraer los taninos.',
           ],
-          [
-            4,
-            'Retirar del fuego, tapar y dejar reposar por 10 minutos.'
-          ],
-          [
-            5,
-            'Colar la preparación y dejar entibiar antes de su uso.'
-          ],
+          [4, 'Retirar del fuego, tapar y dejar reposar por 10 minutos.'],
+          [5, 'Colar la preparación y dejar entibiar antes de su uso.'],
         ],
       },
     ],
   },
   {
     nombreCientifico: 'Drimys granadensis',
-    imageUrl        : 'https://www.google.com/search?q=Drimys+granadensis&tbm=isch',
-    nombresComunes  : [
-      'Ají de páramo',
-      'Canelo de Páramo',
-      'Palo de ají'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Drimys+granadensis&tbm=isch',
+    nombresComunes: ['Ají de páramo', 'Canelo de Páramo', 'Palo de ají'],
     propiedadesMedicinales: [
       'Estimulante digestivo',
       'Carminativo',
@@ -492,10 +398,7 @@ export const plantList: EspecimenType[] = [
       'Analgésico leve',
       'Antibacteriano',
     ],
-    partesUtiles: [
-      'Corteza',
-      'Hojas'
-    ],
+    partesUtiles: ['Corteza', 'Hojas'],
     esenciasFlorales: [
       'Estimula el fuego interior',
       'Disuelve la apatía',
@@ -520,17 +423,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Canellales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Canellales',
       familia: 'Winteraceae',
-      genero : 'Drimys',
+      genero: 'Drimys',
       especie: 'granadensis',
-      clados : [
-        'Angiospermas',
-        'Magnolíidas'
-      ],
+      clados: ['Angiospermas', 'Magnolíidas'],
     },
     preparaciones: [
       {
@@ -546,42 +446,26 @@ export const plantList: EspecimenType[] = [
           },
           {
             ingrediente: 'Agua hirviendo',
-            cantidad   : '250 ml',
+            cantidad: '250 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Colocar las hojas o la corteza en una taza de cerámica.'
-          ],
-          [
-            2,
-            'Verter el agua hirviendo directamente sobre la planta.'
-          ],
+          [1, 'Colocar las hojas o la corteza en una taza de cerámica.'],
+          [2, 'Verter el agua hirviendo directamente sobre la planta.'],
           [
             3,
             'Tapar la taza inmediatamente para evitar que los aceites esenciales volátiles escapen.',
           ],
-          [
-            4,
-            'Dejar infundir entre 5 y 8 minutos.'
-          ],
-          [
-            5,
-            'Colar y consumir mientras aún está caliente.'
-          ],
+          [4, 'Dejar infundir entre 5 y 8 minutos.'],
+          [5, 'Colar y consumir mientras aún está caliente.'],
         ],
       },
     ],
   },
   {
     nombreCientifico: 'Baccharis latifolia',
-    imageUrl        : 'https://www.google.com/search?q=Baccharis+latifolia&tbm=isch',
-    nombresComunes  : [
-      'Chilco común',
-      'Chilco',
-      'Chilca'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Baccharis+latifolia&tbm=isch',
+    nombresComunes: ['Chilco común', 'Chilco', 'Chilca'],
     propiedadesMedicinales: [
       'Antiinflamatorio potente',
       'Antirreumático',
@@ -589,10 +473,7 @@ export const plantList: EspecimenType[] = [
       'Antiséptico',
       'Febrífugo',
     ],
-    partesUtiles: [
-      'Hojas',
-      'Tallos tiernos'
-    ],
+    partesUtiles: ['Hojas', 'Tallos tiernos'],
     esenciasFlorales: [
       'Flexibilidad mental',
       'Ayuda a soltar la rigidez en los pensamientos',
@@ -616,18 +497,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Asterales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Asterales',
       familia: 'Asteraceae',
-      genero : 'Baccharis',
+      genero: 'Baccharis',
       especie: 'latifolia',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas'],
     },
     preparaciones: [
       {
@@ -638,18 +515,15 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas frescas de chilco',
-            cantidad   : '100 gramos',
+            cantidad: '100 gramos',
           },
           {
             ingrediente: 'Agua o alcohol de fricción',
-            cantidad   : '20 ml',
+            cantidad: '20 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar bien las hojas frescas de chilco.'
-          ],
+          [1, 'Lavar bien las hojas frescas de chilco.'],
           [
             2,
             'Macerar o machacar las hojas en un mortero hasta obtener una pasta.',
@@ -658,10 +532,7 @@ export const plantList: EspecimenType[] = [
             3,
             'Agregar un poco de agua caliente o alcohol para humedecer y activar la pasta.',
           ],
-          [
-            4,
-            'Calentar ligeramente la mezcla a baño maría (sin hervir).'
-          ],
+          [4, 'Calentar ligeramente la mezcla a baño maría (sin hervir).'],
           [
             5,
             'Aplicar la pasta tibia sobre una gasa y colocar sobre la articulación dolorida.',
@@ -674,21 +545,14 @@ export const plantList: EspecimenType[] = [
     nombreCientifico: 'Alnus acuminata',
     imageUrl:
       'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Alnus_acuminata_1.jpg/250px-Alnus_acuminata_1.jpg',
-    nombresComunes: [
-      'Aliso',
-      'Aliso andino',
-      'Cerezo (en algunas regiones)'
-    ],
+    nombresComunes: ['Aliso', 'Aliso andino', 'Cerezo (en algunas regiones)'],
     propiedadesMedicinales: [
       'Astringente',
       'Antiséptico',
       'Antirreumático',
       'Cicatrizante cutáneo',
     ],
-    partesUtiles: [
-      'Hojas',
-      'Corteza'
-    ],
+    partesUtiles: ['Hojas', 'Corteza'],
     esenciasFlorales: [
       'Aceptación de la propia sombra',
       'Fluidez emocional',
@@ -711,18 +575,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Fagales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Fagales',
       familia: 'Betulaceae',
-      genero : 'Alnus',
+      genero: 'Alnus',
       especie: 'acuminata',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas'],
     },
     preparaciones: [
       {
@@ -733,42 +593,27 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Corteza de aliso triturada',
-            cantidad   : '20 gramos',
+            cantidad: '20 gramos',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '1 litro',
+            cantidad: '1 litro',
           },
         ],
         pasos: [
-          [
-            1,
-            'Hervir el litro de agua.'
-          ],
-          [
-            2,
-            'Agregar la corteza de aliso triturada.'
-          ],
-          [
-            3,
-            'Dejar hervir a fuego medio durante 15 minutos.'
-          ],
-          [
-            4,
-            'Dejar enfriar completamente y colar.'
-          ],
-          [
-            5,
-            'Empapar un paño limpio en el líquido y aplicar sobre la piel.'
-          ],
+          [1, 'Hervir el litro de agua.'],
+          [2, 'Agregar la corteza de aliso triturada.'],
+          [3, 'Dejar hervir a fuego medio durante 15 minutos.'],
+          [4, 'Dejar enfriar completamente y colar.'],
+          [5, 'Empapar un paño limpio en el líquido y aplicar sobre la piel.'],
         ],
       },
     ],
   },
   {
     nombreCientifico: 'Phytolacca bogotensis',
-    imageUrl        : 'https://google.com/search?q=Phytolacca+bogotensis',
-    nombresComunes  : [
+    imageUrl: 'https://google.com/search?q=Phytolacca+bogotensis',
+    nombresComunes: [
       'Guaba',
       'Jaboncillo',
       'Altamisa (erróneamente en algunas zonas)',
@@ -779,11 +624,7 @@ export const plantList: EspecimenType[] = [
       'Antiinflamatorio (uso tópico estricto)',
       'Saponificante superficial',
     ],
-    partesUtiles: [
-      'Raíz',
-      'Hojas',
-      'Frutos (Tóxicos si se ingieren)'
-    ],
+    partesUtiles: ['Raíz', 'Hojas', 'Frutos (Tóxicos si se ingieren)'],
     esenciasFlorales: [
       'Purificación profunda',
       'Ayuda a soltar toxicidad en relaciones',
@@ -806,17 +647,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Caryophyllales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Caryophyllales',
       familia: 'Phytolaccaceae',
-      genero : 'Phytolacca',
+      genero: 'Phytolacca',
       especie: 'bogotensis',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas'],
     },
     preparaciones: [
       {
@@ -827,18 +665,15 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Raíz o bayas maceradas de guaba',
-            cantidad   : '15 gramos',
+            cantidad: '15 gramos',
           },
           {
             ingrediente: 'Agua tibia',
-            cantidad   : '500 ml',
+            cantidad: '500 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Utilizar guantes para manipular la raíz o las bayas.'
-          ],
+          [1, 'Utilizar guantes para manipular la raíz o las bayas.'],
           [
             2,
             'Macerar (machacar) bien el material vegetal hasta exponer sus jugos ricos en saponinas.',
@@ -847,10 +682,7 @@ export const plantList: EspecimenType[] = [
             3,
             'Mezclar fuertemente con el agua tibia hasta que genere un poco de espuma.',
           ],
-          [
-            4,
-            'Filtrar el líquido resultante.'
-          ],
+          [4, 'Filtrar el líquido resultante.'],
           [
             5,
             'Aplicar externamente sobre la piel afectada, dejar actuar 5 minutos y enjuagar profundamente.',
@@ -861,23 +693,15 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Passiflora mixta',
-    imageUrl        : 'https://www.google.com/search?q=Passiflora+mixta&tbm=isch',
-    nombresComunes  : [
-      'Curuba de monte',
-      'Curuba india',
-      'Tumbo'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Passiflora+mixta&tbm=isch',
+    nombresComunes: ['Curuba de monte', 'Curuba india', 'Tumbo'],
     propiedadesMedicinales: [
       'Sedante nervioso',
       'Ansiolítico leve',
       'Antiespasmódico',
       'Hipotensor',
     ],
-    partesUtiles: [
-      'Hojas',
-      'Flores',
-      'Fruto (alimenticio)'
-    ],
+    partesUtiles: ['Hojas', 'Flores', 'Fruto (alimenticio)'],
     esenciasFlorales: [
       'Paz interior',
       'Asimilación espiritual',
@@ -902,18 +726,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Malpighiales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Malpighiales',
       familia: 'Passifloraceae',
-      genero : 'Passiflora',
+      genero: 'Passiflora',
       especie: 'mixta',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas'],
     },
     preparaciones: [
       {
@@ -924,26 +744,17 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas y flores secas de curuba de monte',
-            cantidad   : '2 cucharaditas (aprox 4g)',
+            cantidad: '2 cucharaditas (aprox 4g)',
           },
           {
             ingrediente: 'Agua hirviendo',
-            cantidad   : '250 ml',
+            cantidad: '250 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Colocar las hojas y flores en el fondo de una taza.'
-          ],
-          [
-            2,
-            'Verter el agua hirviendo.'
-          ],
-          [
-            3,
-            'Tapar y dejar en infusión durante 10 a 15 minutos.'
-          ],
+          [1, 'Colocar las hojas y flores en el fondo de una taza.'],
+          [2, 'Verter el agua hirviendo.'],
+          [3, 'Tapar y dejar en infusión durante 10 a 15 minutos.'],
           [
             4,
             'Colar y beber lentamente. Se puede endulzar con miel para potenciar la relajación.',
@@ -954,23 +765,15 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Erythrina edulis',
-    imageUrl        : 'https://www.google.com/search?q=Erythrina+edulis&tbm=isch',
-    nombresComunes  : [
-      'Chachafruto',
-      'Balú',
-      'Frijol nupal'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Erythrina+edulis&tbm=isch',
+    nombresComunes: ['Chachafruto', 'Balú', 'Frijol nupal'],
     propiedadesMedicinales: [
       'Diurético',
       'Hipotensor',
       'Nutracéutico (alto en proteínas)',
       'Galactagogo (estimula la leche materna)',
     ],
-    partesUtiles: [
-      'Semillas (cocidas)',
-      'Hojas',
-      'Flores'
-    ],
+    partesUtiles: ['Semillas (cocidas)', 'Hojas', 'Flores'],
     esenciasFlorales: [
       'Nutrición maternal',
       'Abundancia y generosidad',
@@ -994,18 +797,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Fabales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Fabales',
       familia: 'Fabaceae',
-      genero : 'Erythrina',
+      genero: 'Erythrina',
       especie: 'edulis',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas'],
     },
     preparaciones: [
       {
@@ -1016,22 +815,19 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Semillas de chachafruto (vainas frescas)',
-            cantidad   : '250 gramos',
+            cantidad: '250 gramos',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '1 litro',
+            cantidad: '1 litro',
           },
           {
             ingrediente: 'Sal o especias',
-            cantidad   : 'Al gusto',
+            cantidad: 'Al gusto',
           },
         ],
         pasos: [
-          [
-            1,
-            'Extraer las semillas de las vainas grandes del balú.'
-          ],
+          [1, 'Extraer las semillas de las vainas grandes del balú.'],
           [
             2,
             'Lavar las semillas y retirar la cutícula externa si se desea un puré más fino.',
@@ -1056,21 +852,14 @@ export const plantList: EspecimenType[] = [
     nombreCientifico: 'Cedrela montana',
     imageUrl:
       'https://catalogofloravalleaburra.eia.edu.co/storage/images/5937e15ea21a329476b6ff6a39cbb81df1520f16.jpg',
-    nombresComunes: [
-      'Cedro de altura',
-      'Cedro rosado',
-      'Cedro cebollo'
-    ],
+    nombresComunes: ['Cedro de altura', 'Cedro rosado', 'Cedro cebollo'],
     propiedadesMedicinales: [
       'Febrífugo',
       'Tónico amargo',
       'Astringente',
       'Antiséptico',
     ],
-    partesUtiles: [
-      'Corteza',
-      'Madera (aserrín/viruta)'
-    ],
+    partesUtiles: ['Corteza', 'Madera (aserrín/viruta)'],
     esenciasFlorales: [
       'Estructura moral',
       'Limpieza de pensamientos parasitarios',
@@ -1094,18 +883,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Sapindales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Sapindales',
       familia: 'Meliaceae',
-      genero : 'Cedrela',
+      genero: 'Cedrela',
       especie: 'montana',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas'],
     },
     preparaciones: [
       {
@@ -1116,30 +901,21 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Corteza de cedro de altura',
-            cantidad   : '10 gramos',
+            cantidad: '10 gramos',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '600 ml',
+            cantidad: '600 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar la corteza para retirar impurezas.'
-          ],
-          [
-            2,
-            'Colocar la corteza en el agua fría y llevar a fuego.'
-          ],
+          [1, 'Lavar la corteza para retirar impurezas.'],
+          [2, 'Colocar la corteza en el agua fría y llevar a fuego.'],
           [
             3,
             'Hervir a fuego muy lento hasta que el líquido se reduzca a unos 400ml.',
           ],
-          [
-            4,
-            'Dejar reposar, colar y embotellar.'
-          ],
+          [4, 'Dejar reposar, colar y embotellar.'],
           [
             5,
             'Tomar en dosis pequeñas debido a su fuerte sabor amargo y potencia astringente.',
@@ -1152,21 +928,14 @@ export const plantList: EspecimenType[] = [
     nombreCientifico: 'Morella parvifolia',
     imageUrl:
       'https://plantasdecolombia.com/wp-content/uploads/2011/10/morella-parvifolia1.jpg',
-    nombresComunes: [
-      'Laurel de cera',
-      'Laurel de Olivo',
-      'Árbol de cera'
-    ],
+    nombresComunes: ['Laurel de cera', 'Laurel de Olivo', 'Árbol de cera'],
     propiedadesMedicinales: [
       'Cicatrizante',
       'Emoliente (la cera)',
       'Anticatarral',
       'Astringente leve',
     ],
-    partesUtiles: [
-      'Frutos (cera)',
-      'Hojas'
-    ],
+    partesUtiles: ['Frutos (cera)', 'Hojas'],
     esenciasFlorales: [
       'Iluminación interior',
       'Claridad en momentos de oscuridad mental',
@@ -1177,11 +946,7 @@ export const plantList: EspecimenType[] = [
       'Elemento Fuego y Aire',
       'Rituales de iluminación y apertura de caminos',
     ],
-    malesEmocionales: [
-      'Pesimismo',
-      'Dureza de corazón',
-      'Confusión vital'
-    ],
+    malesEmocionales: ['Pesimismo', 'Dureza de corazón', 'Confusión vital'],
     malesFisicos: [
       'Resequedad severa en la piel',
       'Congestión nasal (inhalaciones)',
@@ -1189,18 +954,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Fagales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Fagales',
       familia: 'Myricaceae',
-      genero : 'Morella',
+      genero: 'Morella',
       especie: 'parvifolia',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas'],
     },
     preparaciones: [
       {
@@ -1211,26 +972,20 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Cera extraída de los frutos del laurel',
-            cantidad   : '30 gramos',
+            cantidad: '30 gramos',
           },
           {
             ingrediente: 'Aceite vegetal (ej. oliva o almendras)',
-            cantidad   : '20 ml',
+            cantidad: '20 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Fundir la cera de los frutos al baño maría a fuego muy bajo.'
-          ],
+          [1, 'Fundir la cera de los frutos al baño maría a fuego muy bajo.'],
           [
             2,
             'Una vez líquida, incorporar el aceite vegetal y remover suavemente para integrar.',
           ],
-          [
-            3,
-            'Retirar del fuego antes de que humee.'
-          ],
+          [3, 'Retirar del fuego antes de que humee.'],
           [
             4,
             'Verter en un recipiente de vidrio estéril y dejar solidificar a temperatura ambiente.',
@@ -1245,12 +1000,8 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Lupinus bogotensis',
-    imageUrl        : 'https://www.google.com/search?q=Lupinus+bogotensis&tbm=isch',
-    nombresComunes  : [
-      'Chocho',
-      'Chochito',
-      'Altramuz de Bogotá'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Lupinus+bogotensis&tbm=isch',
+    nombresComunes: ['Chocho', 'Chochito', 'Altramuz de Bogotá'],
     propiedadesMedicinales: [
       'Desparasitante (altamente tóxico si no se procesa)',
       'Ectoparasiticida (uso veterinario/externo)',
@@ -1282,18 +1033,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Fabales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Fabales',
       familia: 'Fabaceae',
-      genero : 'Lupinus',
+      genero: 'Lupinus',
       especie: 'bogotensis',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas'],
     },
     preparaciones: [
       {
@@ -1309,18 +1056,12 @@ export const plantList: EspecimenType[] = [
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '1 litro',
+            cantidad: '1 litro',
           },
         ],
         pasos: [
-          [
-            1,
-            'Triturar las semillas amargas de chocho en un mortero.'
-          ],
-          [
-            2,
-            'Hervir el agua y añadir las semillas trituradas.'
-          ],
+          [1, 'Triturar las semillas amargas de chocho en un mortero.'],
+          [2, 'Hervir el agua y añadir las semillas trituradas.'],
           [
             3,
             'Dejar hervir por 20 minutos para extraer los alcaloides tóxicos al agua.',
@@ -1341,20 +1082,14 @@ export const plantList: EspecimenType[] = [
     nombreCientifico: 'Weinmannia tomentosa',
     imageUrl:
       'https://inaturalist-open-data.s3.amazonaws.com/photos/54317988/large.jpeg',
-    nombresComunes: [
-      'Encenillo',
-      'Encenillo de páramo'
-    ],
+    nombresComunes: ['Encenillo', 'Encenillo de páramo'],
     propiedadesMedicinales: [
       'Astringente',
       'Hemostático',
       'Cicatrizante',
       'Antiséptico',
     ],
-    partesUtiles: [
-      'Corteza',
-      'Hojas'
-    ],
+    partesUtiles: ['Corteza', 'Hojas'],
     esenciasFlorales: [
       'Anclaje a la realidad',
       'Protección del campo áurico',
@@ -1378,19 +1113,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Oxalidales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Oxalidales',
       familia: 'Cunoniaceae',
-      genero : 'Weinmannia',
+      genero: 'Weinmannia',
       especie: 'tomentosa',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Eurosidas I'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Eurosidas I'],
     },
     preparaciones: [
       {
@@ -1401,18 +1131,15 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Corteza triturada de encenillo',
-            cantidad   : '15 gramos',
+            cantidad: '15 gramos',
           },
           {
             ingrediente: 'Agua purificada',
-            cantidad   : '500 ml',
+            cantidad: '500 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Hervir el agua en un recipiente limpio.'
-          ],
+          [1, 'Hervir el agua en un recipiente limpio.'],
           [
             2,
             'Añadir la corteza de encenillo y mantener a fuego lento por 10 minutos.',
@@ -1421,14 +1148,8 @@ export const plantList: EspecimenType[] = [
             3,
             'Apagar y dejar reposar tapado hasta que alcance temperatura ambiente.',
           ],
-          [
-            4,
-            'Colar con un filtro fino para retirar cualquier astilla.'
-          ],
-          [
-            5,
-            'Empapar una gasa estéril y aplicar sobre la zona afectada.'
-          ],
+          [4, 'Colar con un filtro fino para retirar cualquier astilla.'],
+          [5, 'Empapar una gasa estéril y aplicar sobre la zona afectada.'],
         ],
       },
     ],
@@ -1437,22 +1158,14 @@ export const plantList: EspecimenType[] = [
     nombreCientifico: 'Clusia multiflora',
     imageUrl:
       'https://plantasdecolombia.com/wp-content/uploads/2018/07/2017-07-18-15-01-49.jpg',
-    nombresComunes: [
-      'Gaque',
-      'Chagualo',
-      'Cucharo'
-    ],
+    nombresComunes: ['Gaque', 'Chagualo', 'Cucharo'],
     propiedadesMedicinales: [
       'Cicatrizante potente (látex)',
       'Analgésico local',
       'Antirreumático',
       'Antimicrobiano',
     ],
-    partesUtiles: [
-      'Látex (resina amarilla o blanca)',
-      'Hojas',
-      'Flores'
-    ],
+    partesUtiles: ['Látex (resina amarilla o blanca)', 'Hojas', 'Flores'],
     esenciasFlorales: [
       'Apertura del chakra del corazón',
       'Sanación de heridas afectivas profundas',
@@ -1476,19 +1189,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Malpighiales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Malpighiales',
       familia: 'Clusiaceae',
-      genero : 'Clusia',
+      genero: 'Clusia',
       especie: 'multiflora',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Eurosidas I'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Eurosidas I'],
     },
     preparaciones: [
       {
@@ -1499,11 +1207,11 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Látex/resina fresca de gaque',
-            cantidad   : '10 gramos',
+            cantidad: '10 gramos',
           },
           {
             ingrediente: 'Hojas grandes de la misma planta',
-            cantidad   : '2 unidades',
+            cantidad: '2 unidades',
           },
         ],
         pasos: [
@@ -1511,14 +1219,8 @@ export const plantList: EspecimenType[] = [
             1,
             'Hacer pequeñas incisiones en el tallo o arrancar una hoja para recolectar las gotas de látex.',
           ],
-          [
-            2,
-            'Limpiar la zona de la piel donde hay dolor o la herida menor.'
-          ],
-          [
-            3,
-            'Untar el látex directamente sobre la piel.'
-          ],
+          [2, 'Limpiar la zona de la piel donde hay dolor o la herida menor.'],
+          [3, 'Untar el látex directamente sobre la piel.'],
           [
             4,
             'Calentar ligeramente una hoja de gaque al fuego (sin quemarla) para ablandarla.',
@@ -1535,20 +1237,13 @@ export const plantList: EspecimenType[] = [
     nombreCientifico: 'Vallea stipularis',
     imageUrl:
       'https://www.picturethisai.com/wiki-image/1080/357136825710116864.jpeg',
-    nombresComunes: [
-      'Raque',
-      'Palo de cruz'
-    ],
+    nombresComunes: ['Raque', 'Palo de cruz'],
     propiedadesMedicinales: [
       'Antiinflamatorio',
       'Febrífugo',
       'Astringente leve',
     ],
-    partesUtiles: [
-      'Hojas',
-      'Flores',
-      'Corteza tierna'
-    ],
+    partesUtiles: ['Hojas', 'Flores', 'Corteza tierna'],
     esenciasFlorales: [
       'Fomenta la alegría de vivir',
       'Alivia el pesimismo',
@@ -1571,18 +1266,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Oxalidales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Oxalidales',
       familia: 'Elaeocarpaceae',
-      genero : 'Vallea',
+      genero: 'Vallea',
       especie: 'stipularis',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas'],
     },
     preparaciones: [
       {
@@ -1593,34 +1284,19 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas y flores frescas de raque',
-            cantidad   : '1 cucharada',
+            cantidad: '1 cucharada',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '250 ml',
+            cantidad: '250 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Calentar el agua hasta el punto de ebullición.'
-          ],
-          [
-            2,
-            'Agregar las hojas y las flores campanuladas rojas del raque.'
-          ],
-          [
-            3,
-            'Apagar el fuego, tapar y dejar infundir por 8 minutos.'
-          ],
-          [
-            4,
-            'Colar la infusión.'
-          ],
-          [
-            5,
-            'Tomar a sorbos lentos mientras aún está tibia.'
-          ],
+          [1, 'Calentar el agua hasta el punto de ebullición.'],
+          [2, 'Agregar las hojas y las flores campanuladas rojas del raque.'],
+          [3, 'Apagar el fuego, tapar y dejar infundir por 8 minutos.'],
+          [4, 'Colar la infusión.'],
+          [5, 'Tomar a sorbos lentos mientras aún está tibia.'],
         ],
       },
     ],
@@ -1629,20 +1305,14 @@ export const plantList: EspecimenType[] = [
     nombreCientifico: 'Oreopanax bogotensis',
     imageUrl:
       'https://bs.plantnet.org/image/o/081392eacd408487213af3cc9f02db55759f1416',
-    nombresComunes: [
-      'Mano de oso',
-      'Pate danta'
-    ],
+    nombresComunes: ['Mano de oso', 'Pate danta'],
     propiedadesMedicinales: [
       'Expectorante',
       'Antitusivo (Béquico)',
       'Vulnerario (cura heridas)',
       'Emoliente',
     ],
-    partesUtiles: [
-      'Hojas',
-      'Brotes tiernos'
-    ],
+    partesUtiles: ['Hojas', 'Brotes tiernos'],
     esenciasFlorales: [
       'Otorga protección y contención',
       'Ayuda a establecer límites personales',
@@ -1666,19 +1336,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Apiales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Apiales',
       familia: 'Araliaceae',
-      genero : 'Oreopanax',
+      genero: 'Oreopanax',
       especie: 'bogotensis',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas',
-        'Campanúlidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas', 'Campanúlidas'],
     },
     preparaciones: [
       {
@@ -1689,15 +1354,15 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas limpias de mano de oso (preferiblemente secas)',
-            cantidad   : '10 gramos',
+            cantidad: '10 gramos',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '500 ml',
+            cantidad: '500 ml',
           },
           {
             ingrediente: 'Miel de abejas',
-            cantidad   : '1 cucharadita',
+            cantidad: '1 cucharadita',
           },
         ],
         pasos: [
@@ -1705,44 +1370,25 @@ export const plantList: EspecimenType[] = [
             1,
             'Lavar cuidadosamente las hojas para retirar las pubescencias (pelitos) si son muy frescas.',
           ],
-          [
-            2,
-            'Hervir el agua y añadir las hojas fragmentadas.'
-          ],
-          [
-            3,
-            'Dejar hervir por 5 minutos y luego apagar el fuego.'
-          ],
-          [
-            4,
-            'Dejar reposar tapado por 10 minutos y colar muy bien.'
-          ],
-          [
-            5,
-            'Servir caliente, agregar la miel, remover y consumir.'
-          ],
+          [2, 'Hervir el agua y añadir las hojas fragmentadas.'],
+          [3, 'Dejar hervir por 5 minutos y luego apagar el fuego.'],
+          [4, 'Dejar reposar tapado por 10 minutos y colar muy bien.'],
+          [5, 'Servir caliente, agregar la miel, remover y consumir.'],
         ],
       },
     ],
   },
   {
     nombreCientifico: 'Myrsine dependens',
-    imageUrl        : 'https://www.google.com/search?q=Myrsine+dependens&tbm=isch',
-    nombresComunes  : [
-      'Cucharo de páramo',
-      'Cucharito',
-      'Sanalo todo'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Myrsine+dependens&tbm=isch',
+    nombresComunes: ['Cucharo de páramo', 'Cucharito', 'Sanalo todo'],
     propiedadesMedicinales: [
       'Antimicrobiano',
       'Digestivo',
       'Antidiarreico',
       'Depurativo sanguíneo',
     ],
-    partesUtiles: [
-      'Hojas',
-      'Frutos (pequeñas drupas)'
-    ],
+    partesUtiles: ['Hojas', 'Frutos (pequeñas drupas)'],
     esenciasFlorales: [
       'Limpieza de resentimientos',
       'Favorece el perdón',
@@ -1766,18 +1412,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Ericales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Ericales',
       familia: 'Primulaceae',
-      genero : 'Myrsine',
+      genero: 'Myrsine',
       especie: 'dependens',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas'],
     },
     preparaciones: [
       {
@@ -1788,30 +1430,21 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas secas de cucharo de páramo',
-            cantidad   : '1 cucharadita (5g)',
+            cantidad: '1 cucharadita (5g)',
           },
           {
             ingrediente: 'Agua hirviendo',
-            cantidad   : '250 ml',
+            cantidad: '250 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Colocar las hojas secas en un recipiente o tetera.'
-          ],
-          [
-            2,
-            'Verter el agua hirviendo sobre las hojas.'
-          ],
+          [1, 'Colocar las hojas secas en un recipiente o tetera.'],
+          [2, 'Verter el agua hirviendo sobre las hojas.'],
           [
             3,
             'Tapar y dejar infundir por 10 minutos para extraer los principios activos.',
           ],
-          [
-            4,
-            'Colar la preparación.'
-          ],
+          [4, 'Colar la preparación.'],
           [
             5,
             'Beber lentamente sin añadir azúcar para no alterar su efecto digestivo.',
@@ -1822,22 +1455,15 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Solanum ovalifolium',
-    imageUrl        : 'https://www.google.com/search?q=Solanum+ovalifolium&tbm=isch',
-    nombresComunes  : [
-      'Cucubo',
-      'Tomatillo',
-      'Falso lulo'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Solanum+ovalifolium&tbm=isch',
+    nombresComunes: ['Cucubo', 'Tomatillo', 'Falso lulo'],
     propiedadesMedicinales: [
       'Desinfectante externo',
       'Cicatrizante',
       'Resolutivo (ayuda a madurar abscesos)',
       'Antimicótico tópico',
     ],
-    partesUtiles: [
-      'Hojas (uso estrictamente externo)',
-      'Tallo'
-    ],
+    partesUtiles: ['Hojas (uso estrictamente externo)', 'Tallo'],
     esenciasFlorales: [
       'Aceptación de la propia sombra',
       'Transmutación de la vergüenza',
@@ -1861,19 +1487,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Solanales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Solanales',
       familia: 'Solanaceae',
-      genero : 'Solanum',
+      genero: 'Solanum',
       especie: 'ovalifolium',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas',
-        'Lamíidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas', 'Lamíidas'],
     },
     preparaciones: [
       {
@@ -1884,26 +1505,20 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas frescas de cucubo',
-            cantidad   : '5 hojas grandes',
+            cantidad: '5 hojas grandes',
           },
           {
             ingrediente: 'Aceite de ricino o de oliva',
-            cantidad   : '1 cucharadita',
+            cantidad: '1 cucharadita',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar muy bien las hojas frescas.'
-          ],
+          [1, 'Lavar muy bien las hojas frescas.'],
           [
             2,
             'Machacar las hojas en un mortero hasta formar una pasta verde oscuro.',
           ],
-          [
-            3,
-            'Mezclar la pasta con un poco de aceite de ricino o de oliva.'
-          ],
+          [3, 'Mezclar la pasta con un poco de aceite de ricino o de oliva.'],
           [
             4,
             'Calentar la mezcla muy ligeramente al fuego (que sea soportable al tacto).',
@@ -1918,8 +1533,8 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Croton bogotanus',
-    imageUrl        : 'https://www.google.com/search?q=Croton+bogotanus&tbm=isch',
-    nombresComunes  : [
+    imageUrl: 'https://www.google.com/search?q=Croton+bogotanus&tbm=isch',
+    nombresComunes: [
       'Sangregado',
       'Sangre de drago (variante andina)',
       'Mosquero',
@@ -1930,10 +1545,7 @@ export const plantList: EspecimenType[] = [
       'Hemostático',
       'Antiulceroso',
     ],
-    partesUtiles: [
-      'Látex rojo (savia)',
-      'Corteza'
-    ],
+    partesUtiles: ['Látex rojo (savia)', 'Corteza'],
     esenciasFlorales: [
       'Regeneración vital',
       'Cura de heridas en el alma',
@@ -1957,19 +1569,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Malpighiales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Malpighiales',
       familia: 'Euphorbiaceae',
-      genero : 'Croton',
+      genero: 'Croton',
       especie: 'bogotanus',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Eurosidas I'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Eurosidas I'],
     },
     preparaciones: [
       {
@@ -1980,26 +1587,17 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Látex fresco de sangregado (resina roja)',
-            cantidad   : '3 a 5 gotas',
+            cantidad: '3 a 5 gotas',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar muy bien la herida o corte con agua y jabón neutro.'
-          ],
-          [
-            2,
-            'Secar suavemente la zona afectada.'
-          ],
+          [1, 'Lavar muy bien la herida o corte con agua y jabón neutro.'],
+          [2, 'Secar suavemente la zona afectada.'],
           [
             3,
             'Extraer el látex de la corteza del árbol haciendo un pequeño corte (si se tiene acceso directo) o usar tintura de resina comercial.',
           ],
-          [
-            4,
-            'Dejar caer las gotas directamente sobre la herida.'
-          ],
+          [4, 'Dejar caer las gotas directamente sobre la herida.'],
           [
             5,
             'Dejar secar al aire libre; el látex formará una película protectora rojiza similar a una costra artificial.',
@@ -2012,21 +1610,14 @@ export const plantList: EspecimenType[] = [
     nombreCientifico: 'Smallanthus pyramidalis',
     imageUrl:
       'https://www.google.com/search?q=Smallanthus+pyramidalis&tbm=isch',
-    nombresComunes: [
-      'Arboloco',
-      'Palo bobo',
-      'Falso girasol'
-    ],
+    nombresComunes: ['Arboloco', 'Palo bobo', 'Falso girasol'],
     propiedadesMedicinales: [
       'Antiinflamatorio articular',
       'Emoliente',
       'Analgésico externo',
       'Vulnerario',
     ],
-    partesUtiles: [
-      'Hojas grandes',
-      'Médula del tallo (esponjosa)'
-    ],
+    partesUtiles: ['Hojas grandes', 'Médula del tallo (esponjosa)'],
     esenciasFlorales: [
       'Orden mental',
       'Estabilidad en tiempos de crecimiento rápido y caótico',
@@ -2050,19 +1641,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Asterales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Asterales',
       familia: 'Asteraceae',
-      genero : 'Smallanthus',
+      genero: 'Smallanthus',
       especie: 'pyramidalis',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas',
-        'Campanúlidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas', 'Campanúlidas'],
     },
     preparaciones: [
       {
@@ -2073,18 +1659,15 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas frescas y enteras de arboloco',
-            cantidad   : '2 a 3 hojas grandes',
+            cantidad: '2 a 3 hojas grandes',
           },
           {
             ingrediente: 'Aceite para masaje (opcional)',
-            cantidad   : 'Unas gotas',
+            cantidad: 'Unas gotas',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar las hojas grandes y vellosas del arboloco.'
-          ],
+          [1, 'Lavar las hojas grandes y vellosas del arboloco.'],
           [
             2,
             'Pasar las hojas rápidamente por una fuente de calor (comal o llama baja) para marchitarlas un poco y activar sus aceites, cuidando de no quemarlas.',
@@ -2093,10 +1676,7 @@ export const plantList: EspecimenType[] = [
             3,
             'Aplicar un poco de aceite de masaje sobre la articulación dolorida (opcional).',
           ],
-          [
-            4,
-            'Envolver la rodilla, codo o tobillo con las hojas calientes.'
-          ],
+          [4, 'Envolver la rodilla, codo o tobillo con las hojas calientes.'],
           [
             5,
             'Fijar con una venda elástica y dejar el emplasto durante toda la noche.',
@@ -2107,22 +1687,15 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Vaccinium floribundum',
-    imageUrl        : 'https://www.google.com/search?q=Vaccinium+floribundum&tbm=isch',
-    nombresComunes  : [
-      'Mortiño',
-      'Agráz',
-      'Mortiño de páramo'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Vaccinium+floribundum&tbm=isch',
+    nombresComunes: ['Mortiño', 'Agráz', 'Mortiño de páramo'],
     propiedadesMedicinales: [
       'Antioxidante de altísimo espectro',
       'Hipoglucemiante (regula el azúcar)',
       'Protector capilar y cardiovascular',
       'Antiséptico urinario',
     ],
-    partesUtiles: [
-      'Frutos (bayas)',
-      'Hojas'
-    ],
+    partesUtiles: ['Frutos (bayas)', 'Hojas'],
     esenciasFlorales: [
       'Claridad de visión (física y mental)',
       'Vitalidad y rejuvenecimiento',
@@ -2146,18 +1719,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Ericales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Ericales',
       familia: 'Ericaceae',
-      genero : 'Vaccinium',
+      genero: 'Vaccinium',
       especie: 'floribundum',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas'],
     },
     preparaciones: [
       {
@@ -2173,7 +1742,7 @@ export const plantList: EspecimenType[] = [
           },
           {
             ingrediente: 'Agua hirviendo (para hojas) o agua fría (para jugo)',
-            cantidad   : '250 ml',
+            cantidad: '250 ml',
           },
         ],
         pasos: [
@@ -2181,14 +1750,8 @@ export const plantList: EspecimenType[] = [
             1,
             'Para infusión hipoglucemiante: colocar la cucharada de hojas secas en una taza.',
           ],
-          [
-            2,
-            'Añadir el agua hirviendo, tapar y dejar reposar 10 minutos.'
-          ],
-          [
-            3,
-            'Colar y beber sin azúcar.'
-          ],
+          [2, 'Añadir el agua hirviendo, tapar y dejar reposar 10 minutos.'],
+          [3, 'Colar y beber sin azúcar.'],
           [
             4,
             'Para el jugo (antioxidante/urinario): Lavar muy bien los frutos frescos del agraz/mortiño.',
@@ -2216,10 +1779,7 @@ export const plantList: EspecimenType[] = [
       'Antirreumático externo',
       'Rubefaciente',
     ],
-    partesUtiles: [
-      'Hojas',
-      'Frutos (consumo muy moderado)'
-    ],
+    partesUtiles: ['Hojas', 'Frutos (consumo muy moderado)'],
     esenciasFlorales: [
       'Liberación de tensión extrema',
       'Ruptura de patrones de estrés crónico',
@@ -2243,18 +1803,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Ericales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Ericales',
       familia: 'Ericaceae',
-      genero : 'Gaultheria',
+      genero: 'Gaultheria',
       especie: 'anastomosans',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas'],
     },
     preparaciones: [
       {
@@ -2265,26 +1821,20 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas frescas de reventadera',
-            cantidad   : '50 gramos',
+            cantidad: '50 gramos',
           },
           {
             ingrediente: 'Alcohol etílico al 70% o alcohol de fricción',
-            cantidad   : '250 ml',
+            cantidad: '250 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar y secar bien las hojas frescas.'
-          ],
+          [1, 'Lavar y secar bien las hojas frescas.'],
           [
             2,
             'Triturar ligeramente las hojas con las manos para romper sus glándulas y liberar el aroma característico a mentol/salicilato.',
           ],
-          [
-            3,
-            'Colocar las hojas en un frasco de vidrio oscuro.'
-          ],
+          [3, 'Colocar las hojas en un frasco de vidrio oscuro.'],
           [
             4,
             'Cubrir completamente con el alcohol, cerrar bien y dejar macerar en un lugar oscuro durante 15 días, agitando a diario.',
@@ -2301,21 +1851,14 @@ export const plantList: EspecimenType[] = [
     nombreCientifico: 'Myrcianthes leucoxyla',
     imageUrl:
       'https://www.reddearboles.org/nwlib6/includes/phpthumb/phpThumb.php?src=/imagenes/nwproject5.forms.f_productoscatalogo/1/myrcianthesleucoxylass23.jpg&w=550&f=webp',
-    nombresComunes: [
-      'Arrayán blanco',
-      'Arrayán',
-      'Guayabillo'
-    ],
+    nombresComunes: ['Arrayán blanco', 'Arrayán', 'Guayabillo'],
     propiedadesMedicinales: [
       'Astringente',
       'Antiséptico bucal',
       'Antidiarreico',
       'Tónico estomacal',
     ],
-    partesUtiles: [
-      'Hojas',
-      'Frutos'
-    ],
+    partesUtiles: ['Hojas', 'Frutos'],
     esenciasFlorales: [
       'Limpieza de apegos del pasado',
       'Frescura y renovación mental',
@@ -2339,18 +1882,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Myrtales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Myrtales',
       familia: 'Myrtaceae',
-      genero : 'Myrcianthes',
+      genero: 'Myrcianthes',
       especie: 'leucoxyla',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas'],
     },
     preparaciones: [
       {
@@ -2361,56 +1900,34 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas frescas o secas de arrayán',
-            cantidad   : '10 gramos',
+            cantidad: '10 gramos',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '500 ml',
+            cantidad: '500 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar las hojas de arrayán.'
-          ],
-          [
-            2,
-            'Hervir el agua y añadir las hojas.'
-          ],
-          [
-            3,
-            'Mantener a fuego lento por 8 minutos para extraer los taninos.'
-          ],
-          [
-            4,
-            'Apagar, tapar y dejar enfriar hasta que esté tibio.'
-          ],
-          [
-            5,
-            'Colar y almacenar en un frasco limpio. No ingerir el enjuague.'
-          ],
+          [1, 'Lavar las hojas de arrayán.'],
+          [2, 'Hervir el agua y añadir las hojas.'],
+          [3, 'Mantener a fuego lento por 8 minutos para extraer los taninos.'],
+          [4, 'Apagar, tapar y dejar enfriar hasta que esté tibio.'],
+          [5, 'Colar y almacenar en un frasco limpio. No ingerir el enjuague.'],
         ],
       },
     ],
   },
   {
     nombreCientifico: 'Macleania rupestris',
-    imageUrl        : 'https://www.google.com/search?q=Macleania+rupestris&tbm=isch',
-    nombresComunes  : [
-      'Uva camarona',
-      'Camarona',
-      'Joyapa'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Macleania+rupestris&tbm=isch',
+    nombresComunes: ['Uva camarona', 'Camarona', 'Joyapa'],
     propiedadesMedicinales: [
       'Antioxidante',
       'Vitamínico (alto en Vitamina C y antocianinas)',
       'Astringente leve',
       'Expectorante suave',
     ],
-    partesUtiles: [
-      'Frutos (bayas carnosas)',
-      'Hojas'
-    ],
+    partesUtiles: ['Frutos (bayas carnosas)', 'Hojas'],
     esenciasFlorales: [
       'Apertura a la dulzura de la vida',
       'Nutrición del niño interior',
@@ -2434,18 +1951,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Ericales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Ericales',
       familia: 'Ericaceae',
-      genero : 'Macleania',
+      genero: 'Macleania',
       especie: 'rupestris',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas'],
     },
     preparaciones: [
       {
@@ -2456,22 +1969,16 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Frutos maduros de uva camarona',
-            cantidad   : '100 gramos',
+            cantidad: '100 gramos',
           },
           {
             ingrediente: 'Agua purificada',
-            cantidad   : '200 ml',
+            cantidad: '200 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar cuidadosamente las bayas, retirando cualquier pedúnculo.'
-          ],
-          [
-            2,
-            'Licuar las bayas con el agua purificada.'
-          ],
+          [1, 'Lavar cuidadosamente las bayas, retirando cualquier pedúnculo.'],
+          [2, 'Licuar las bayas con el agua purificada.'],
           [
             3,
             'Pasar por un colador para retirar las pequeñas semillas si se desea una textura más suave.',
@@ -2486,11 +1993,8 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Tibouchina lepidota',
-    imageUrl        : 'https://www.google.com/search?q=Tibouchina+lepidota&tbm=isch',
-    nombresComunes  : [
-      'Sietecueros',
-      'Flor de mayo'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Tibouchina+lepidota&tbm=isch',
+    nombresComunes: ['Sietecueros', 'Flor de mayo'],
     propiedadesMedicinales: [
       'Hemostático (detiene sangrados)',
       'Cicatrizante',
@@ -2525,18 +2029,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Myrtales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Myrtales',
       familia: 'Melastomataceae',
-      genero : 'Tibouchina',
+      genero: 'Tibouchina',
       especie: 'lepidota',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas'],
     },
     preparaciones: [
       {
@@ -2547,11 +2047,11 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Corteza suelta (cueros) del sietecueros',
-            cantidad   : '15 gramos',
+            cantidad: '15 gramos',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '500 ml',
+            cantidad: '500 ml',
           },
         ],
         pasos: [
@@ -2559,18 +2059,9 @@ export const plantList: EspecimenType[] = [
             1,
             'Recolectar las láminas secas de corteza que se desprenden naturalmente del tronco.',
           ],
-          [
-            2,
-            'Hervir el agua y añadir la corteza.'
-          ],
-          [
-            3,
-            'Dejar en ebullición por 10 minutos.'
-          ],
-          [
-            4,
-            'Retirar del fuego y dejar enfriar completamente.'
-          ],
+          [2, 'Hervir el agua y añadir la corteza.'],
+          [3, 'Dejar en ebullición por 10 minutos.'],
+          [4, 'Retirar del fuego y dejar enfriar completamente.'],
           [
             5,
             'Filtrar el líquido para lavar la herida y utilizar parte de la corteza ablandada sobre el corte.',
@@ -2583,20 +2074,14 @@ export const plantList: EspecimenType[] = [
     nombreCientifico: 'Escallonia myrtilloides',
     imageUrl:
       'https://www.google.com/search?q=Escallonia+myrtilloides&tbm=isch',
-    nombresComunes: [
-      'Rodamonte',
-      'Tibar (en algunas zonas)'
-    ],
+    nombresComunes: ['Rodamonte', 'Tibar (en algunas zonas)'],
     propiedadesMedicinales: [
       'Antirreumático',
       'Béquico (para la tos)',
       'Febrífugo',
       'Astringente',
     ],
-    partesUtiles: [
-      'Hojas',
-      'Ramas tiernas'
-    ],
+    partesUtiles: ['Hojas', 'Ramas tiernas'],
     esenciasFlorales: [
       'Resistencia extrema',
       'Paciencia ante las adversidades prolongadas',
@@ -2619,18 +2104,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Escalloniales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Escalloniales',
       familia: 'Escalloniaceae',
-      genero : 'Escallonia',
+      genero: 'Escallonia',
       especie: 'myrtilloides',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas'],
     },
     preparaciones: [
       {
@@ -2641,30 +2122,18 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Ramas y hojas frescas de rodamonte',
-            cantidad   : '100 gramos',
+            cantidad: '100 gramos',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '2 litros',
+            cantidad: '2 litros',
           },
         ],
         pasos: [
-          [
-            1,
-            'Trocear las ramas y hojas del rodamonte.'
-          ],
-          [
-            2,
-            'Poner a hervir los 2 litros de agua en una olla grande.'
-          ],
-          [
-            3,
-            'Añadir la planta y hervir a fuego fuerte durante 15 minutos.'
-          ],
-          [
-            4,
-            'Apagar el fuego y dejar reposar 10 minutos.'
-          ],
+          [1, 'Trocear las ramas y hojas del rodamonte.'],
+          [2, 'Poner a hervir los 2 litros de agua en una olla grande.'],
+          [3, 'Añadir la planta y hervir a fuego fuerte durante 15 minutos.'],
+          [4, 'Apagar el fuego y dejar reposar 10 minutos.'],
           [
             5,
             'Verter la preparación, sin colar, en una tina de baño o usar en compresas muy calientes sobre las articulaciones.',
@@ -2675,21 +2144,14 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Miconia squamulosa',
-    imageUrl        : 'https://www.google.com/search?q=Miconia+squamulosa&tbm=isch',
-    nombresComunes  : [
-      'Tuno esmeraldo',
-      'Tuno',
-      'Pava'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Miconia+squamulosa&tbm=isch',
+    nombresComunes: ['Tuno esmeraldo', 'Tuno', 'Pava'],
     propiedadesMedicinales: [
       'Cicatrizante',
       'Astringente',
       'Colorante natural (uso tradicional para la piel)',
     ],
-    partesUtiles: [
-      'Hojas',
-      'Frutos'
-    ],
+    partesUtiles: ['Hojas', 'Frutos'],
     esenciasFlorales: [
       'Limpieza de la propia imagen',
       'Aceptación de la belleza única',
@@ -2705,25 +2167,17 @@ export const plantList: EspecimenType[] = [
       'Timidez excesiva',
       'Aislamiento social',
     ],
-    malesFisicos: [
-      'Erupciones cutáneas leves',
-      'Raspones',
-      'Diarrea leve'
-    ],
+    malesFisicos: ['Erupciones cutáneas leves', 'Raspones', 'Diarrea leve'],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Myrtales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Myrtales',
       familia: 'Melastomataceae',
-      genero : 'Miconia',
+      genero: 'Miconia',
       especie: 'squamulosa',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas'],
     },
     preparaciones: [
       {
@@ -2734,55 +2188,33 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas de tuno esmeraldo',
-            cantidad   : '15 gramos',
+            cantidad: '15 gramos',
           },
           {
             ingrediente: 'Agua hirviendo',
-            cantidad   : '500 ml',
+            cantidad: '500 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar las hojas del tuno.'
-          ],
-          [
-            2,
-            'Colocar las hojas en un recipiente de cerámica.'
-          ],
-          [
-            3,
-            'Verter el agua hirviendo y tapar inmediatamente.'
-          ],
-          [
-            4,
-            'Dejar infundir hasta que el líquido se enfríe.'
-          ],
-          [
-            5,
-            'Colar y usar el líquido para limpiar suavemente la piel.'
-          ],
+          [1, 'Lavar las hojas del tuno.'],
+          [2, 'Colocar las hojas en un recipiente de cerámica.'],
+          [3, 'Verter el agua hirviendo y tapar inmediatamente.'],
+          [4, 'Dejar infundir hasta que el líquido se enfríe.'],
+          [5, 'Colar y usar el líquido para limpiar suavemente la piel.'],
         ],
       },
     ],
   },
   {
     nombreCientifico: 'Bucquetia glutinosa',
-    imageUrl        : 'https://www.google.com/search?q=Bucquetia+glutinosa&tbm=isch',
-    nombresComunes  : [
-      'Saltón',
-      'Charne',
-      'Tuno pegajoso'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Bucquetia+glutinosa&tbm=isch',
+    nombresComunes: ['Saltón', 'Charne', 'Tuno pegajoso'],
     propiedadesMedicinales: [
       'Vulnerario (cura heridas)',
       'Emoliente tópico (resina/exudado)',
       'Antiinflamatorio local',
     ],
-    partesUtiles: [
-      'Hojas tiernas y resinosas',
-      'Flores'
-    ],
+    partesUtiles: ['Hojas tiernas y resinosas', 'Flores'],
     esenciasFlorales: [
       'Cohesión en las relaciones',
       'Ayuda a reparar vínculos rotos',
@@ -2805,18 +2237,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Myrtales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Myrtales',
       familia: 'Melastomataceae',
-      genero : 'Bucquetia',
+      genero: 'Bucquetia',
       especie: 'glutinosa',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas'],
     },
     preparaciones: [
       {
@@ -2827,7 +2255,7 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas jóvenes y glutinosas (pegajosas) de charne',
-            cantidad   : '5 a 10 hojas',
+            cantidad: '5 a 10 hojas',
           },
         ],
         pasos: [
@@ -2835,10 +2263,7 @@ export const plantList: EspecimenType[] = [
             1,
             'Recolectar las hojas más jóvenes, que contienen la mayor cantidad de exudado resinoso.',
           ],
-          [
-            2,
-            'Limpiar cuidadosamente la herida a tratar.'
-          ],
+          [2, 'Limpiar cuidadosamente la herida a tratar.'],
           [
             3,
             'Macerar levemente las hojas para aumentar la liberación de la resina.',
@@ -2857,21 +2282,15 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Baccharis bogotensis',
-    imageUrl        : 'https://www.google.com/search?q=Baccharis+bogotensis&tbm=isch',
-    nombresComunes  : [
-      'Ciro',
-      'Chilca blanca'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Baccharis+bogotensis&tbm=isch',
+    nombresComunes: ['Ciro', 'Chilca blanca'],
     propiedadesMedicinales: [
       'Digestivo',
       'Carminativo (alivia gases)',
       'Antiespasmódico',
       'Febrífugo leve',
     ],
-    partesUtiles: [
-      'Hojas',
-      'Sumidades floridas'
-    ],
+    partesUtiles: ['Hojas', 'Sumidades floridas'],
     esenciasFlorales: [
       'Digestión de emociones difíciles',
       'Ligereza de espíritu',
@@ -2895,18 +2314,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Asterales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Asterales',
       familia: 'Asteraceae',
-      genero : 'Baccharis',
+      genero: 'Baccharis',
       especie: 'bogotensis',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas'],
     },
     preparaciones: [
       {
@@ -2917,34 +2332,22 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas frescas o secas de ciro',
-            cantidad   : '1 cucharadita (3g)',
+            cantidad: '1 cucharadita (3g)',
           },
           {
             ingrediente: 'Agua hirviendo',
-            cantidad   : '250 ml',
+            cantidad: '250 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Colocar las hojas de ciro en una taza.'
-          ],
-          [
-            2,
-            'Agregar el agua hirviendo.'
-          ],
+          [1, 'Colocar las hojas de ciro en una taza.'],
+          [2, 'Agregar el agua hirviendo.'],
           [
             3,
             'Tapar inmediatamente para no perder los aceites esenciales volátiles responsables de su acción digestiva.',
           ],
-          [
-            4,
-            'Dejar infundir por 5 a 7 minutos.'
-          ],
-          [
-            5,
-            'Colar y beber lentamente mientras esté caliente.'
-          ],
+          [4, 'Dejar infundir por 5 a 7 minutos.'],
+          [5, 'Colar y beber lentamente mientras esté caliente.'],
         ],
       },
     ],
@@ -2953,21 +2356,14 @@ export const plantList: EspecimenType[] = [
     nombreCientifico: 'Diplostephium rosmarinifolium',
     imageUrl:
       'https://www.google.com/search?q=Diplostephium+rosmarinifolium&tbm=isch',
-    nombresComunes: [
-      'Romero blanco',
-      'Romero de páramo',
-      'Romero andino'
-    ],
+    nombresComunes: ['Romero blanco', 'Romero de páramo', 'Romero andino'],
     propiedadesMedicinales: [
       'Rubefaciente (calienta la piel y músculos)',
       'Antirreumático',
       'Estimulante circulatorio tópico',
       'Anticatarral',
     ],
-    partesUtiles: [
-      'Ramas foliosas',
-      'Hojas'
-    ],
+    partesUtiles: ['Ramas foliosas', 'Hojas'],
     esenciasFlorales: [
       'Recuperación de la memoria vital',
       'Despierta el letargo espiritual',
@@ -2991,18 +2387,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Asterales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Asterales',
       familia: 'Asteraceae',
-      genero : 'Diplostephium',
+      genero: 'Diplostephium',
       especie: 'rosmarinifolium',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas'],
     },
     preparaciones: [
       {
@@ -3013,26 +2405,17 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas frescas de romero de páramo',
-            cantidad   : '50 gramos',
+            cantidad: '50 gramos',
           },
           {
             ingrediente: 'Alcohol etílico o aguardiente blanco',
-            cantidad   : '250 ml',
+            cantidad: '250 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar y secar muy bien las hojas de romero de páramo.'
-          ],
-          [
-            2,
-            'Introducirlas en un frasco de vidrio oscuro y esterilizado.'
-          ],
-          [
-            3,
-            'Cubrir completamente con el alcohol.'
-          ],
+          [1, 'Lavar y secar muy bien las hojas de romero de páramo.'],
+          [2, 'Introducirlas en un frasco de vidrio oscuro y esterilizado.'],
+          [3, 'Cubrir completamente con el alcohol.'],
           [
             4,
             'Cerrar herméticamente y dejar macerar en un lugar fresco y oscuro durante 21 días, agitando cada 2 días.',
@@ -3047,19 +2430,15 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Symplocos theiformis',
-    imageUrl        : 'https://www.google.com/search?q=Symplocos+theiformis&tbm=isch',
-    nombresComunes  : [
-      'Té de Bogotá'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Symplocos+theiformis&tbm=isch',
+    nombresComunes: ['Té de Bogotá'],
     propiedadesMedicinales: [
       'Estimulante del sistema nervioso central leve',
       'Digestivo',
       'Diurético suave',
       'Tónico general',
     ],
-    partesUtiles: [
-      'Hojas'
-    ],
+    partesUtiles: ['Hojas'],
     esenciasFlorales: [
       'Agudeza mental',
       'Enfoque y concentración',
@@ -3084,18 +2463,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Ericales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Ericales',
       familia: 'Symplocaceae',
-      genero : 'Symplocos',
+      genero: 'Symplocos',
       especie: 'theiformis',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas'],
     },
     preparaciones: [
       {
@@ -3106,11 +2481,11 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas secas de té de Bogotá',
-            cantidad   : '1 cucharada rasa',
+            cantidad: '1 cucharada rasa',
           },
           {
             ingrediente: 'Agua hirviendo',
-            cantidad   : '250 ml',
+            cantidad: '250 ml',
           },
         ],
         pasos: [
@@ -3118,10 +2493,7 @@ export const plantList: EspecimenType[] = [
             1,
             'Calentar la tetera o taza previamente con un poco de agua caliente y desecharla.',
           ],
-          [
-            2,
-            'Colocar las hojas secas en el recipiente caliente.'
-          ],
+          [2, 'Colocar las hojas secas en el recipiente caliente.'],
           [
             3,
             'Verter los 250ml de agua a punto de ebullición sobre las hojas.',
@@ -3130,18 +2502,15 @@ export const plantList: EspecimenType[] = [
             4,
             'Tapar y dejar reposar entre 3 y 5 minutos (más tiempo puede amargar la bebida).',
           ],
-          [
-            5,
-            'Colar y consumir, puede endulzarse ligeramente si se desea.'
-          ],
+          [5, 'Colar y consumir, puede endulzarse ligeramente si se desea.'],
         ],
       },
     ],
   },
   {
     nombreCientifico: 'Berberis rigidifolia',
-    imageUrl        : 'https://www.google.com/search?q=Berberis+rigidifolia&tbm=isch',
-    nombresComunes  : [
+    imageUrl: 'https://www.google.com/search?q=Berberis+rigidifolia&tbm=isch',
+    nombresComunes: [
       'Espino',
       'Uña de gato andina (erróneamente por las espinas)',
     ],
@@ -3151,10 +2520,7 @@ export const plantList: EspecimenType[] = [
       'Antimicrobiano (alto contenido de berberina)',
       'Antiparasitario intestinal',
     ],
-    partesUtiles: [
-      'Raíz',
-      'Corteza del tallo (parte amarilla interior)'
-    ],
+    partesUtiles: ['Raíz', 'Corteza del tallo (parte amarilla interior)'],
     esenciasFlorales: [
       'Definición de límites personales',
       'Protección contra invasiones energéticas',
@@ -3178,17 +2544,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Ranunculales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Ranunculales',
       familia: 'Berberidaceae',
-      genero : 'Berberis',
+      genero: 'Berberis',
       especie: 'rigidifolia',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas'],
     },
     preparaciones: [
       {
@@ -3199,18 +2562,15 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Corteza de la raíz de espino (interior amarillo)',
-            cantidad   : '5 gramos',
+            cantidad: '5 gramos',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '300 ml',
+            cantidad: '300 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar muy bien la raíz o la corteza obtenida.'
-          ],
+          [1, 'Lavar muy bien la raíz o la corteza obtenida.'],
           [
             2,
             'Colocar la corteza en el agua fría en un recipiente que no sea de aluminio.',
@@ -3219,10 +2579,7 @@ export const plantList: EspecimenType[] = [
             3,
             'Llevar a fuego y hervir lentamente durante 15 minutos para extraer la berberina (el líquido se tornará amarillento).',
           ],
-          [
-            4,
-            'Dejar reposar, colar y desechar la corteza.'
-          ],
+          [4, 'Dejar reposar, colar y desechar la corteza.'],
           [
             5,
             'Beber la decocción amarga. Precaución: Está contraindicado en mujeres embarazadas.',
@@ -3233,22 +2590,15 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Espeletia grandiflora',
-    imageUrl        : 'https://www.google.com/search?q=Espeletia+grandiflora&tbm=isch',
-    nombresComunes  : [
-      'Frailejón gigante',
-      'Frailejón Mayor',
-      'Frailejón'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Espeletia+grandiflora&tbm=isch',
+    nombresComunes: ['Frailejón gigante', 'Frailejón Mayor', 'Frailejón'],
     propiedadesMedicinales: [
       'Antiasmático',
       'Béquico (alivia la tos)',
       'Antiinflamatorio respiratorio',
       'Hipotensor leve',
     ],
-    partesUtiles: [
-      'Hojas secas',
-      'Resina (exudado del tallo)'
-    ],
+    partesUtiles: ['Hojas secas', 'Resina (exudado del tallo)'],
     esenciasFlorales: [
       'Sabiduría ancestral',
       'Paciencia infinita',
@@ -3273,19 +2623,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Asterales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Asterales',
       familia: 'Asteraceae',
-      genero : 'Espeletia',
+      genero: 'Espeletia',
       especie: 'grandiflora',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas',
-        'Campanúlidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas', 'Campanúlidas'],
     },
     preparaciones: [
       {
@@ -3296,11 +2641,11 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas secas (marrones) de frailejón',
-            cantidad   : '10 gramos',
+            cantidad: '10 gramos',
           },
           {
             ingrediente: 'Agua purificada',
-            cantidad   : '500 ml',
+            cantidad: '500 ml',
           },
         ],
         pasos: [
@@ -3308,18 +2653,12 @@ export const plantList: EspecimenType[] = [
             1,
             'Recolectar únicamente las hojas secas que cuelgan del tallo, nunca arrancar el cogollo vivo.',
           ],
-          [
-            2,
-            'Hervir el agua en un recipiente con tapa.'
-          ],
+          [2, 'Hervir el agua en un recipiente con tapa.'],
           [
             3,
             'Añadir las hojas y dejar hervir a fuego muy lento por 5 minutos para extraer la resina atrapada en la pubescencia.',
           ],
-          [
-            4,
-            'Retirar del fuego y respirar el vapor con cuidado (vahos).'
-          ],
+          [4, 'Retirar del fuego y respirar el vapor con cuidado (vahos).'],
           [
             5,
             'Colar pasándolo por un filtro de tela fina (para evitar los pelillos), endulzar y beber caliente.',
@@ -3330,19 +2669,14 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Espeletiopsis rabanalensis',
-    imageUrl        : 'https://static.inaturalist.org/photos/39748543/large.jpg',
-    nombresComunes  : [
-      'Frailejón de Rabanal'
-    ],
+    imageUrl: 'https://static.inaturalist.org/photos/39748543/large.jpg',
+    nombresComunes: ['Frailejón de Rabanal'],
     propiedadesMedicinales: [
       'Expectorante',
       'Antiespasmódico bronquial',
       'Emoliente (suaviza mucosas)',
     ],
-    partesUtiles: [
-      'Hojas maduras',
-      'Resina'
-    ],
+    partesUtiles: ['Hojas maduras', 'Resina'],
     esenciasFlorales: [
       'Resiliencia extrema ante la pérdida',
       'Adaptabilidad a entornos hostiles',
@@ -3365,19 +2699,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Asterales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Asterales',
       familia: 'Asteraceae',
-      genero : 'Espeletiopsis',
+      genero: 'Espeletiopsis',
       especie: 'rabanalensis',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas',
-        'Campanúlidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas', 'Campanúlidas'],
     },
     preparaciones: [
       {
@@ -3388,15 +2717,15 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas de frailejón limpias y troceadas',
-            cantidad   : '50 gramos',
+            cantidad: '50 gramos',
           },
           {
             ingrediente: 'Panela (chancaca) o miel',
-            cantidad   : '250 gramos',
+            cantidad: '250 gramos',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '250 ml',
+            cantidad: '250 ml',
           },
         ],
         pasos: [
@@ -3404,18 +2733,12 @@ export const plantList: EspecimenType[] = [
             1,
             'Hervir el agua junto con la panela hasta formar un melado o almíbar ligero.',
           ],
-          [
-            2,
-            'Añadir las hojas de frailejón al almíbar hirviendo.'
-          ],
+          [2, 'Añadir las hojas de frailejón al almíbar hirviendo.'],
           [
             3,
             'Bajar el fuego al mínimo y cocinar tapado durante 20 minutos para que la resina se integre con el azúcar.',
           ],
-          [
-            4,
-            'Apagar el fuego y dejar reposar hasta que esté tibio.'
-          ],
+          [4, 'Apagar el fuego y dejar reposar hasta que esté tibio.'],
           [
             5,
             'Colar a través de una manta o filtro fino para retirar todos los pelos foliares y envasar en vidrio oscuro.',
@@ -3426,21 +2749,15 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Polylepis quadrijuga',
-    imageUrl        : 'https://www.google.com/search?q=Polylepis+quadrijuga&tbm=isch',
-    nombresComunes  : [
-      'Coloradito',
-      'Siete Cueros de páramo',
-      'Colorado'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Polylepis+quadrijuga&tbm=isch',
+    nombresComunes: ['Coloradito', 'Siete Cueros de páramo', 'Colorado'],
     propiedadesMedicinales: [
       'Astringente',
       'Hemostático',
       'Cicatrizante',
       'Tónico respiratorio',
     ],
-    partesUtiles: [
-      'Corteza exfoliante (las láminas rojas)'
-    ],
+    partesUtiles: ['Corteza exfoliante (las láminas rojas)'],
     esenciasFlorales: [
       'Despojarse del dolor pasado',
       'Abrigo emocional en la frialdad',
@@ -3464,19 +2781,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Rosales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Rosales',
       familia: 'Rosaceae',
-      genero : 'Polylepis',
+      genero: 'Polylepis',
       especie: 'quadrijuga',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Eurosidas I'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Eurosidas I'],
     },
     preparaciones: [
       {
@@ -3487,11 +2799,11 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Láminas de corteza roja de coloradito',
-            cantidad   : '15 gramos',
+            cantidad: '15 gramos',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '500 ml',
+            cantidad: '500 ml',
           },
         ],
         pasos: [
@@ -3499,18 +2811,9 @@ export const plantList: EspecimenType[] = [
             1,
             'Desprender suavemente las láminas de corteza suelta del árbol sin dañar el tronco interior.',
           ],
-          [
-            2,
-            'Lavar la corteza para retirar polvo o musgo.'
-          ],
-          [
-            3,
-            'Hervir en el agua durante 15 minutos.'
-          ],
-          [
-            4,
-            'Dejar reposar y enfriar completamente.'
-          ],
+          [2, 'Lavar la corteza para retirar polvo o musgo.'],
+          [3, 'Hervir en el agua durante 15 minutos.'],
+          [4, 'Dejar reposar y enfriar completamente.'],
           [
             5,
             'Filtrar el líquido, el cual tendrá un tono rojizo/ambarino rico en taninos, y aplicar sobre la piel.',
@@ -3521,12 +2824,8 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Chusquea tessellata',
-    imageUrl        : 'https://www.google.com/search?q=Chusquea+tessellata&tbm=isch',
-    nombresComunes  : [
-      'Chusque',
-      'Bambú de páramo',
-      'Carrizo'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Chusquea+tessellata&tbm=isch',
+    nombresComunes: ['Chusque', 'Bambú de páramo', 'Carrizo'],
     propiedadesMedicinales: [
       'Diurético suave',
       'Depurativo',
@@ -3558,18 +2857,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Liliopsida',
-      orden  : 'Poales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Liliopsida',
+      orden: 'Poales',
       familia: 'Poaceae',
-      genero : 'Chusquea',
+      genero: 'Chusquea',
       especie: 'tessellata',
-      clados : [
-        'Angiospermas',
-        'Monocotiledóneas',
-        'Comelínidas'
-      ],
+      clados: ['Angiospermas', 'Monocotiledóneas', 'Comelínidas'],
     },
     preparaciones: [
       {
@@ -3580,30 +2875,18 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas frescas y tiernas de chusque',
-            cantidad   : '10 gramos',
+            cantidad: '10 gramos',
           },
           {
             ingrediente: 'Agua hirviendo',
-            cantidad   : '300 ml',
+            cantidad: '300 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar las hojas tiernas (brotes) del chusque.'
-          ],
-          [
-            2,
-            'Trozar las hojas finamente con las manos o tijeras.'
-          ],
-          [
-            3,
-            'Colocar en una taza y verter el agua hirviendo.'
-          ],
-          [
-            4,
-            'Tapar y dejar infundir por 10 minutos.'
-          ],
+          [1, 'Lavar las hojas tiernas (brotes) del chusque.'],
+          [2, 'Trozar las hojas finamente con las manos o tijeras.'],
+          [3, 'Colocar en una taza y verter el agua hirviendo.'],
+          [4, 'Tapar y dejar infundir por 10 minutos.'],
           [
             5,
             'Colar y consumir la bebida (tiene un sabor muy neutro, ligeramente a pasto fresco).',
@@ -3614,20 +2897,14 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Calamagrostis effusa',
-    imageUrl        : 'https://www.google.com/search?q=Calamagrostis+effusa&tbm=isch',
-    nombresComunes  : [
-      'Paja de páramo',
-      'Pajonal',
-      'Paja maciega'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Calamagrostis+effusa&tbm=isch',
+    nombresComunes: ['Paja de páramo', 'Pajonal', 'Paja maciega'],
     propiedadesMedicinales: [
       'Termorregulador (aislante térmico uso externo)',
       'Antiinflamatorio leve (en baños)',
       'Relajante muscular (hidroterapia)',
     ],
-    partesUtiles: [
-      'Tallos y hojas secas'
-    ],
+    partesUtiles: ['Tallos y hojas secas'],
     esenciasFlorales: [
       'Sentido de comunidad',
       'Humildad y servicio',
@@ -3650,18 +2927,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Liliopsida',
-      orden  : 'Poales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Liliopsida',
+      orden: 'Poales',
       familia: 'Poaceae',
-      genero : 'Calamagrostis',
+      genero: 'Calamagrostis',
       especie: 'effusa',
-      clados : [
-        'Angiospermas',
-        'Monocotiledóneas',
-        'Comelínidas'
-      ],
+      clados: ['Angiospermas', 'Monocotiledóneas', 'Comelínidas'],
     },
     preparaciones: [
       {
@@ -3672,22 +2945,16 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Manojo grande de paja de páramo seca',
-            cantidad   : '500 gramos',
+            cantidad: '500 gramos',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '5 litros (para preparar concentrado)',
+            cantidad: '5 litros (para preparar concentrado)',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar la paja para retirar tierra superficial.'
-          ],
-          [
-            2,
-            'Hervir los 5 litros de agua en una olla grande.'
-          ],
+          [1, 'Lavar la paja para retirar tierra superficial.'],
+          [2, 'Hervir los 5 litros de agua en una olla grande.'],
           [
             3,
             'Introducir la paja y dejar hervir a fuego fuerte durante 20 minutos para extraer sus sílices y aceites suaves.',
@@ -3706,21 +2973,14 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Puya nitida',
-    imageUrl        : 'https://www.google.com/search?q=Puya+nitida&tbm=isch',
-    nombresComunes  : [
-      'Puya',
-      'Cardón',
-      'Piña de páramo'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Puya+nitida&tbm=isch',
+    nombresComunes: ['Puya', 'Cardón', 'Piña de páramo'],
     propiedadesMedicinales: [
       'Purgante fuerte (uso ancestral muy restringido)',
       'Vulnerario (uso externo)',
       'Antiinflamatorio tópico',
     ],
-    partesUtiles: [
-      'Corazón (médula carnosa)',
-      'Raíz'
-    ],
+    partesUtiles: ['Corazón (médula carnosa)', 'Raíz'],
     esenciasFlorales: [
       'Protección feroz del mundo interior',
       'Revelación de la belleza oculta',
@@ -3743,18 +3003,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Liliopsida',
-      orden  : 'Poales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Liliopsida',
+      orden: 'Poales',
       familia: 'Bromeliaceae',
-      genero : 'Puya',
+      genero: 'Puya',
       especie: 'nitida',
-      clados : [
-        'Angiospermas',
-        'Monocotiledóneas',
-        'Comelínidas'
-      ],
+      clados: ['Angiospermas', 'Monocotiledóneas', 'Comelínidas'],
     },
     preparaciones: [
       {
@@ -3765,7 +3021,7 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Médula o corazón carnoso de las hojas de la puya',
-            cantidad   : '50 gramos',
+            cantidad: '50 gramos',
           },
         ],
         pasos: [
@@ -3773,43 +3029,28 @@ export const plantList: EspecimenType[] = [
             1,
             'Con mucho cuidado y guantes gruesos, extraer una de las hojas desde la base.',
           ],
-          [
-            2,
-            'Pelar las espinas laterales y la cutícula exterior dura.'
-          ],
+          [2, 'Pelar las espinas laterales y la cutícula exterior dura.'],
           [
             3,
             'Extraer el interior blanco, mucilaginoso y carnoso (similar al aloe vera).',
           ],
-          [
-            4,
-            'Macerar esta pulpa hasta formar un gel espeso.'
-          ],
-          [
-            5,
-            'Aplicar directamente sobre el hematoma o la inflamación.'
-          ],
+          [4, 'Macerar esta pulpa hasta formar un gel espeso.'],
+          [5, 'Aplicar directamente sobre el hematoma o la inflamación.'],
         ],
       },
     ],
   },
   {
     nombreCientifico: 'Aragoa cleefii',
-    imageUrl        : 'https://www.google.com/search?q=Aragoa+cleefii&tbm=isch',
-    nombresComunes  : [
-      'Pino de páramo',
-      'Pinito'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Aragoa+cleefii&tbm=isch',
+    nombresComunes: ['Pino de páramo', 'Pinito'],
     propiedadesMedicinales: [
       'Antiséptico respiratorio',
       'Expectorante pulmonar',
       'Balsámico',
       'Rubefaciente',
     ],
-    partesUtiles: [
-      'Ramas tiernas',
-      'Hojas aciculares (agujas)'
-    ],
+    partesUtiles: ['Ramas tiernas', 'Hojas aciculares (agujas)'],
     esenciasFlorales: [
       'Elevación del pensamiento',
       'Visión superior y perspectiva',
@@ -3833,19 +3074,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Lamiales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Lamiales',
       familia: 'Plantaginaceae',
-      genero : 'Aragoa',
+      genero: 'Aragoa',
       especie: 'cleefii',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas',
-        'Lamíidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas', 'Lamíidas'],
     },
     preparaciones: [
       {
@@ -3856,11 +3092,11 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Ramitas frescas de pino de páramo',
-            cantidad   : '1 puñado (aprox 30g)',
+            cantidad: '1 puñado (aprox 30g)',
           },
           {
             ingrediente: 'Agua hirviendo',
-            cantidad   : '1 litro',
+            cantidad: '1 litro',
           },
         ],
         pasos: [
@@ -3868,10 +3104,7 @@ export const plantList: EspecimenType[] = [
             1,
             'Colocar las ramitas de pino de páramo en un bol o recipiente amplio que soporte calor.',
           ],
-          [
-            2,
-            'Verter el litro de agua hirviendo sobre las plantas.'
-          ],
+          [2, 'Verter el litro de agua hirviendo sobre las plantas.'],
           [
             3,
             'Inmediatamente, inclinar el rostro sobre el recipiente a una distancia segura para no quemarse.',
@@ -3890,21 +3123,15 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Halenia asclepiadea',
-    imageUrl        : 'https://www.google.com/search?q=Halenia+asclepiadea&tbm=isch',
-    nombresComunes  : [
-      'Cachitos',
-      'Flor de cuernos'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Halenia+asclepiadea&tbm=isch',
+    nombresComunes: ['Cachitos', 'Flor de cuernos'],
     propiedadesMedicinales: [
       'Tónico amargo intenso',
       'Colagogo (estimula la liberación de bilis)',
       'Digestivo estomacal',
       'Estimulante del apetito',
     ],
-    partesUtiles: [
-      'Flores',
-      'Hojas superiores'
-    ],
+    partesUtiles: ['Flores', 'Hojas superiores'],
     esenciasFlorales: [
       'Digestión de la amargura de la vida',
       'Apertura a la magia y al asombro',
@@ -3928,19 +3155,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Gentianales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Gentianales',
       familia: 'Gentianaceae',
-      genero : 'Halenia',
+      genero: 'Halenia',
       especie: 'asclepiadea',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas',
-        'Lamíidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas', 'Lamíidas'],
     },
     preparaciones: [
       {
@@ -3951,30 +3173,21 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Flores secas y hojas de cachitos',
-            cantidad   : '1 cucharadita (2g)',
+            cantidad: '1 cucharadita (2g)',
           },
           {
             ingrediente: 'Agua hirviendo',
-            cantidad   : '150 ml',
+            cantidad: '150 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Colocar la planta seca en una taza pequeña.'
-          ],
-          [
-            2,
-            'Verter el agua caliente.'
-          ],
+          [1, 'Colocar la planta seca en una taza pequeña.'],
+          [2, 'Verter el agua caliente.'],
           [
             3,
             'Tapar y dejar reposar brevemente, solo entre 3 a 5 minutos (es extremadamente amarga).',
           ],
-          [
-            4,
-            'Colar la bebida.'
-          ],
+          [4, 'Colar la bebida.'],
           [
             5,
             'Tomar a pequeños sorbos. NUNCA endulzar, ya que el sabor amargo en la lengua es el que desencadena el reflejo digestivo y hepático.',
@@ -3998,10 +3211,7 @@ export const plantList: EspecimenType[] = [
       'Antioxidante nutritivo',
       'Tónico capilar (raíz)',
     ],
-    partesUtiles: [
-      'Frutos (pequeñas drupas)',
-      'Hojas'
-    ],
+    partesUtiles: ['Frutos (pequeñas drupas)', 'Hojas'],
     esenciasFlorales: [
       'Nutrición afectiva',
       'Firmeza y enraizamiento',
@@ -4025,19 +3235,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Rosales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Rosales',
       familia: 'Rosaceae',
-      genero : 'Hesperomeles',
+      genero: 'Hesperomeles',
       especie: 'goudotiana',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Eurosidas I'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Eurosidas I'],
     },
     preparaciones: [
       {
@@ -4048,30 +3253,21 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas de cerote y algunos frutos secos',
-            cantidad   : '1 cucharada colmada',
+            cantidad: '1 cucharada colmada',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '300 ml',
+            cantidad: '300 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar los frutos y las hojas gruesas del cerote.'
-          ],
-          [
-            2,
-            'Colocarlos en el agua fría en una olla pequeña.'
-          ],
+          [1, 'Lavar los frutos y las hojas gruesas del cerote.'],
+          [2, 'Colocarlos en el agua fría en una olla pequeña.'],
           [
             3,
             'Llevar a punto de ebullición y dejar hervir a fuego medio por 10 a 15 minutos.',
           ],
-          [
-            4,
-            'Retirar del fuego y dejar enfriar hasta que esté tibio.'
-          ],
+          [4, 'Retirar del fuego y dejar enfriar hasta que esté tibio.'],
           [
             5,
             'Colar presionando los frutos para extraer sus taninos, y beber el líquido astringente.',
@@ -4082,22 +3278,15 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Hypericum juniperinum',
-    imageUrl        : 'https://www.google.com/search?q=Hypericum+juniperinum&tbm=isch',
-    nombresComunes  : [
-      'Chite',
-      'Guardarocío',
-      'Hierba de San Juan andina'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Hypericum+juniperinum&tbm=isch',
+    nombresComunes: ['Chite', 'Guardarocío', 'Hierba de San Juan andina'],
     propiedadesMedicinales: [
       'Antidepresivo natural',
       'Vulnerario (cura heridas y quemaduras)',
       'Antiviral (tópico)',
       'Analgésico nervioso (neuralgias)',
     ],
-    partesUtiles: [
-      'Sumidades floridas (flores amarillas)',
-      'Hojas'
-    ],
+    partesUtiles: ['Sumidades floridas (flores amarillas)', 'Hojas'],
     esenciasFlorales: [
       'Luz interior',
       'Ahuyenta las sombras y la melancolía',
@@ -4122,19 +3311,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Malpighiales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Malpighiales',
       familia: 'Hypericaceae',
-      genero : 'Hypericum',
+      genero: 'Hypericum',
       especie: 'juniperinum',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Eurosidas I'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Eurosidas I'],
     },
     preparaciones: [
       {
@@ -4145,11 +3329,11 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Flores frescas de chite',
-            cantidad   : '100 gramos',
+            cantidad: '100 gramos',
           },
           {
             ingrediente: 'Aceite de oliva virgen extra',
-            cantidad   : '250 ml',
+            cantidad: '250 ml',
           },
         ],
         pasos: [
@@ -4161,10 +3345,7 @@ export const plantList: EspecimenType[] = [
             2,
             'Colocar las flores ligeramente machacadas en un frasco de vidrio transparente.',
           ],
-          [
-            3,
-            'Cubrir completamente con el aceite de oliva.'
-          ],
+          [3, 'Cubrir completamente con el aceite de oliva.'],
           [
             4,
             'Cerrar el frasco y dejar macerar bajo la luz directa del sol durante 40 días (el aceite se tornará rojo sangre gracias a la hipericina).',
@@ -4179,22 +3360,15 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Espeletia argentea',
-    imageUrl        : 'https://www.google.com/search?q=Espeletia+argentea&tbm=isch',
-    nombresComunes  : [
-      'Frailejón plateado',
-      'Frailejón blanco'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Espeletia+argentea&tbm=isch',
+    nombresComunes: ['Frailejón plateado', 'Frailejón blanco'],
     propiedadesMedicinales: [
       'Antiinflamatorio respiratorio',
       'Antitusivo',
       'Expectorante',
       'Cicatrizante',
     ],
-    partesUtiles: [
-      'Hojas secas',
-      'Resina',
-      'Pelusa (pubescencia)'
-    ],
+    partesUtiles: ['Hojas secas', 'Resina', 'Pelusa (pubescencia)'],
     esenciasFlorales: [
       'Purificación del campo astral',
       'Elevación de la conciencia',
@@ -4218,76 +3392,56 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Asterales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Asterales',
       familia: 'Asteraceae',
-      genero : 'Espeletia',
+      genero: 'Espeletia',
       especie: 'argentea',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas',
-        'Campanúlidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas', 'Campanúlidas'],
     },
     preparaciones: [
       {
         usoTerapeutico:
           'Para calmar la tos crónica y desinflamar vías respiratorias en climas fríos',
         formaDeAplicacion: 'Tomar 1 taza de decocción caliente 2 veces al día.',
-        ingredientes     : [
+        ingredientes: [
           {
             ingrediente: 'Hojas secas de frailejón plateado',
-            cantidad   : '10 gramos',
+            cantidad: '10 gramos',
           },
           {
             ingrediente: 'Agua purificada',
-            cantidad   : '500 ml',
+            cantidad: '500 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Llevar el agua a punto de ebullición.'
-          ],
+          [1, 'Llevar el agua a punto de ebullición.'],
           [
             2,
             'Añadir las hojas (nunca verdes, siempre las secas de la base) y cocinar a fuego lento 5 minutos.',
           ],
-          [
-            3,
-            'Apagar el fuego, tapar y dejar reposar 10 minutos.'
-          ],
+          [3, 'Apagar el fuego, tapar y dejar reposar 10 minutos.'],
           [
             4,
             'Filtrar la infusión muy bien, preferiblemente con un colador de tela fina para retirar los pelos microscópicos de la planta.',
           ],
-          [
-            5,
-            'Beber la preparación lo más caliente que se tolere.'
-          ],
+          [5, 'Beber la preparación lo más caliente que se tolere.'],
         ],
       },
     ],
   },
   {
     nombreCientifico: 'Espeletia corymbosa',
-    imageUrl        : 'https://www.google.com/search?q=Espeletia+corymbosa&tbm=isch',
-    nombresComunes  : [
-      'Frailejón liso',
-      'Frailejón de flores agrupadas'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Espeletia+corymbosa&tbm=isch',
+    nombresComunes: ['Frailejón liso', 'Frailejón de flores agrupadas'],
     propiedadesMedicinales: [
       'Emoliente de mucosas',
       'Béquico (calma la tos)',
       'Antiespasmódico respiratorio',
     ],
-    partesUtiles: [
-      'Hojas maduras',
-      'Resina (trementina de páramo)'
-    ],
+    partesUtiles: ['Hojas maduras', 'Resina (trementina de páramo)'],
     esenciasFlorales: [
       'Suavidad en la palabra',
       'Ayuda a la comunicación compasiva',
@@ -4310,19 +3464,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Asterales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Asterales',
       familia: 'Asteraceae',
-      genero : 'Espeletia',
+      genero: 'Espeletia',
       especie: 'corymbosa',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas',
-        'Campanúlidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas', 'Campanúlidas'],
     },
     preparaciones: [
       {
@@ -4333,59 +3482,40 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas maduras de frailejón liso',
-            cantidad   : '8 gramos',
+            cantidad: '8 gramos',
           },
           {
             ingrediente: 'Miel de abejas',
-            cantidad   : '1 cucharada',
+            cantidad: '1 cucharada',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '300 ml',
+            cantidad: '300 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Llevar el agua a ebullición en una olla de acero o cerámica.'
-          ],
-          [
-            2,
-            'Añadir las hojas, tapar inmediatamente y retirar del fuego.'
-          ],
+          [1, 'Llevar el agua a ebullición en una olla de acero o cerámica.'],
+          [2, 'Añadir las hojas, tapar inmediatamente y retirar del fuego.'],
           [
             3,
             'Dejar en infusión por 10 minutos para extraer los principios emolientes.',
           ],
-          [
-            4,
-            'Colar con filtro muy fino.'
-          ],
-          [
-            5,
-            'Añadir la cucharada de miel, remover bien y consumir.'
-          ],
+          [4, 'Colar con filtro muy fino.'],
+          [5, 'Añadir la cucharada de miel, remover bien y consumir.'],
         ],
       },
     ],
   },
   {
     nombreCientifico: 'Bejaria resinosa',
-    imageUrl        : 'https://www.google.com/search?q=Bejaria+resinosa&tbm=isch',
-    nombresComunes  : [
-      'Pegamosco',
-      'Rosa de los Andes',
-      'Azalea andina'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Bejaria+resinosa&tbm=isch',
+    nombresComunes: ['Pegamosco', 'Rosa de los Andes', 'Azalea andina'],
     propiedadesMedicinales: [
       'Purgante fuerte (uso ancestral muy restringido)',
       'Antiséptico externo',
       'Vulnerario tópico',
     ],
-    partesUtiles: [
-      'Flores resinosas',
-      'Hojas'
-    ],
+    partesUtiles: ['Flores resinosas', 'Hojas'],
     esenciasFlorales: [
       'Atrapasueños energético',
       'Retención de las experiencias positivas',
@@ -4408,18 +3538,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Ericales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Ericales',
       familia: 'Ericaceae',
-      genero : 'Bejaria',
+      genero: 'Bejaria',
       especie: 'resinosa',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas'],
     },
     preparaciones: [
       {
@@ -4430,54 +3556,36 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Flores y hojas pegajosas de pegamosco',
-            cantidad   : '15 gramos',
+            cantidad: '15 gramos',
           },
           {
             ingrediente: 'Agua purificada',
-            cantidad   : '500 ml',
+            cantidad: '500 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Calentar el agua sin dejar que llegue a ebullición fuerte.'
-          ],
-          [
-            2,
-            'Agregar las flores y las hojas ricas en resina.'
-          ],
+          [1, 'Calentar el agua sin dejar que llegue a ebullición fuerte.'],
+          [2, 'Agregar las flores y las hojas ricas en resina.'],
           [
             3,
             'Dejar reposar tapado hasta que el agua extraiga las resinas y alcance temperatura ambiente.',
           ],
-          [
-            4,
-            'Filtrar el líquido para retirar el material vegetal.'
-          ],
-          [
-            5,
-            'Lavar la herida meticulosamente con la preparación fría.'
-          ],
+          [4, 'Filtrar el líquido para retirar el material vegetal.'],
+          [5, 'Lavar la herida meticulosamente con la preparación fría.'],
         ],
       },
     ],
   },
   {
     nombreCientifico: 'Puya goudotiana',
-    imageUrl        : 'https://www.google.com/search?q=Puya+goudotiana&tbm=isch',
-    nombresComunes  : [
-      'Cardón',
-      'Puya',
-      'Piñuela de páramo'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Puya+goudotiana&tbm=isch',
+    nombresComunes: ['Cardón', 'Puya', 'Piñuela de páramo'],
     propiedadesMedicinales: [
       'Antiinflamatorio tópico',
       'Emoliente',
       'Cicatrizante',
     ],
-    partesUtiles: [
-      'Base carnosa de las hojas (médula blanca)'
-    ],
+    partesUtiles: ['Base carnosa de las hojas (médula blanca)'],
     esenciasFlorales: [
       'Defensa de la propia vulnerabilidad',
       'Fuerza para sostener el espacio vital',
@@ -4500,18 +3608,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Liliopsida',
-      orden  : 'Poales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Liliopsida',
+      orden: 'Poales',
       familia: 'Bromeliaceae',
-      genero : 'Puya',
+      genero: 'Puya',
       especie: 'goudotiana',
-      clados : [
-        'Angiospermas',
-        'Monocotiledóneas',
-        'Comelínidas'
-      ],
+      clados: ['Angiospermas', 'Monocotiledóneas', 'Comelínidas'],
     },
     preparaciones: [
       {
@@ -4522,7 +3626,7 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Bases carnosas de las hojas de puya',
-            cantidad   : '3 o 4 piezas de hojas anchas',
+            cantidad: '3 o 4 piezas de hojas anchas',
           },
         ],
         pasos: [
@@ -4530,10 +3634,7 @@ export const plantList: EspecimenType[] = [
             1,
             'Con guantes protectores, cortar las bases de las hojas evitando las espinas de los bordes.',
           ],
-          [
-            2,
-            'Retirar la cutícula dura exterior con un cuchillo limpio.'
-          ],
+          [2, 'Retirar la cutícula dura exterior con un cuchillo limpio.'],
           [
             3,
             'Extraer la pulpa o gel interior, que tiene una textura muy mucilaginosa.',
@@ -4552,20 +3653,14 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Lupinus alopecuroides',
-    imageUrl        : 'https://www.google.com/search?q=Lupinus+alopecuroides&tbm=isch',
-    nombresComunes  : [
-      'Chocho de páramo',
-      'Lupino lanudo'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Lupinus+alopecuroides&tbm=isch',
+    nombresComunes: ['Chocho de páramo', 'Lupino lanudo'],
     propiedadesMedicinales: [
       'Ectoparasiticida externo potente',
       'Antifúngico',
       'Tóxico (contiene alcaloides quinolizidínicos, letal si se ingiere sin procesamiento riguroso)',
     ],
-    partesUtiles: [
-      'Semillas (uso externo)',
-      'Hojas'
-    ],
+    partesUtiles: ['Semillas (uso externo)', 'Hojas'],
     esenciasFlorales: [
       'Calor de hogar interior',
       'Aceptación de la propia rareza o diferencia',
@@ -4588,19 +3683,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Fabales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Fabales',
       familia: 'Fabaceae',
-      genero : 'Lupinus',
+      genero: 'Lupinus',
       especie: 'alopecuroides',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Eurosidas I'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Eurosidas I'],
     },
     preparaciones: [
       {
@@ -4611,22 +3701,16 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Semillas de chocho crudas y trituradas',
-            cantidad   : '30 gramos',
+            cantidad: '30 gramos',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '1 litro',
+            cantidad: '1 litro',
           },
         ],
         pasos: [
-          [
-            1,
-            'Macerar las semillas crudas y amargas en un mortero profundo.'
-          ],
-          [
-            2,
-            'Hervir el agua y añadir las semillas trituradas.'
-          ],
+          [1, 'Macerar las semillas crudas y amargas en un mortero profundo.'],
+          [2, 'Hervir el agua y añadir las semillas trituradas.'],
           [
             3,
             'Cocinar a fuego vivo por 20 a 30 minutos para forzar la extracción de los alcaloides tóxicos hacia el agua.',
@@ -4645,20 +3729,14 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Pentacalia pulchella',
-    imageUrl        : 'https://www.google.com/search?q=Pentacalia+pulchella&tbm=isch',
-    nombresComunes  : [
-      'Arnica de monte',
-      'Margarita amarilla de páramo'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Pentacalia+pulchella&tbm=isch',
+    nombresComunes: ['Arnica de monte', 'Margarita amarilla de páramo'],
     propiedadesMedicinales: [
       'Analgésico tópico',
       'Antiinflamatorio articular y muscular',
       'Vulnerario (traumatismos cerrados)',
     ],
-    partesUtiles: [
-      'Flores',
-      'Hojas tiernas'
-    ],
+    partesUtiles: ['Flores', 'Hojas tiernas'],
     esenciasFlorales: [
       'Consuelo en el trauma agudo',
       'Recuperación de choques emocionales',
@@ -4682,19 +3760,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Asterales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Asterales',
       familia: 'Asteraceae',
-      genero : 'Pentacalia',
+      genero: 'Pentacalia',
       especie: 'pulchella',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas',
-        'Campanúlidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas', 'Campanúlidas'],
     },
     preparaciones: [
       {
@@ -4705,26 +3778,20 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Flores y hojas frescas de árnica de monte',
-            cantidad   : '20 gramos',
+            cantidad: '20 gramos',
           },
           {
             ingrediente: 'Alcohol antiséptico al 70%',
-            cantidad   : '200 ml',
+            cantidad: '200 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar y secar meticulosamente las flores y hojas amarillas.'
-          ],
+          [1, 'Lavar y secar meticulosamente las flores y hojas amarillas.'],
           [
             2,
             'Trozarlas con las manos y colocarlas en un frasco de vidrio oscuro.',
           ],
-          [
-            3,
-            'Cubrir completamente el material vegetal con el alcohol.'
-          ],
+          [3, 'Cubrir completamente el material vegetal con el alcohol.'],
           [
             4,
             'Dejar macerar en un lugar oscuro y fresco por 15 a 21 días, agitando el frasco cada 2 días.',
@@ -4739,21 +3806,14 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Gaiadendron punctatum',
-    imageUrl        : 'https://www.google.com/search?q=Gaiadendron+punctatum&tbm=isch',
-    nombresComunes  : [
-      'Tagua',
-      'Fosforito',
-      'Matapalo de tierra'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Gaiadendron+punctatum&tbm=isch',
+    nombresComunes: ['Tagua', 'Fosforito', 'Matapalo de tierra'],
     propiedadesMedicinales: [
       'Antimicrobiano',
       'Astringente',
       'Potencial antitumoral y modulador (bajo estudio por ser hemiparásita radical)',
     ],
-    partesUtiles: [
-      'Hojas',
-      'Flores amarillas tubulares'
-    ],
+    partesUtiles: ['Hojas', 'Flores amarillas tubulares'],
     esenciasFlorales: [
       'Simbiosis equilibrada',
       'Independencia emocional',
@@ -4776,17 +3836,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Santalales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Santalales',
       familia: 'Loranthaceae',
-      genero : 'Gaiadendron',
+      genero: 'Gaiadendron',
       especie: 'punctatum',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas'],
     },
     preparaciones: [
       {
@@ -4797,18 +3854,15 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas secas de fosforito',
-            cantidad   : '10 gramos',
+            cantidad: '10 gramos',
           },
           {
             ingrediente: 'Agua purificada',
-            cantidad   : '500 ml',
+            cantidad: '500 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Llevar el medio litro de agua a ebullición.'
-          ],
+          [1, 'Llevar el medio litro de agua a ebullición.'],
           [
             2,
             'Añadir las hojas de la planta hemiparásita y cocinar a fuego lento por 10 minutos.',
@@ -4817,10 +3871,7 @@ export const plantList: EspecimenType[] = [
             3,
             'Retirar del fuego, tapar y dejar enfriar a temperatura ambiente.',
           ],
-          [
-            4,
-            'Filtrar cuidadosamente usando un colador o tela limpia.'
-          ],
+          [4, 'Filtrar cuidadosamente usando un colador o tela limpia.'],
           [
             5,
             'Usar el líquido exclusivamente para asepsia tópica en zonas afectadas.',
@@ -4831,22 +3882,15 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Clethra fimbriata',
-    imageUrl        : 'https://www.google.com/search?q=Clethra+fimbriata&tbm=isch',
-    nombresComunes  : [
-      'Tíbar',
-      'Jabonero',
-      'Cucharo blanco'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Clethra+fimbriata&tbm=isch',
+    nombresComunes: ['Tíbar', 'Jabonero', 'Cucharo blanco'],
     propiedadesMedicinales: [
       'Depurativo sanguíneo',
       'Diurético',
       'Antirreumático',
       'Saponificante externo (jabón natural)',
     ],
-    partesUtiles: [
-      'Corteza interna',
-      'Hojas'
-    ],
+    partesUtiles: ['Corteza interna', 'Hojas'],
     esenciasFlorales: [
       'Limpieza de culpa',
       'Apertura a nuevas oportunidades vitales',
@@ -4869,18 +3913,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Ericales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Ericales',
       familia: 'Clethraceae',
-      genero : 'Clethra',
+      genero: 'Clethra',
       especie: 'fimbriata',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas'],
     },
     preparaciones: [
       {
@@ -4891,11 +3931,11 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas secas de tíbar',
-            cantidad   : '5 gramos',
+            cantidad: '5 gramos',
           },
           {
             ingrediente: 'Agua hirviendo',
-            cantidad   : '250 ml',
+            cantidad: '250 ml',
           },
         ],
         pasos: [
@@ -4903,18 +3943,12 @@ export const plantList: EspecimenType[] = [
             1,
             'Colocar las hojas secas en el fondo de una taza grande de cerámica.',
           ],
-          [
-            2,
-            'Verter el agua caliente recién hervida.'
-          ],
+          [2, 'Verter el agua caliente recién hervida.'],
           [
             3,
             'Tapar la taza para no perder los aceites volátiles y dejar infundir por 5 a 7 minutos.',
           ],
-          [
-            4,
-            'Colar para retirar el material vegetal.'
-          ],
+          [4, 'Colar para retirar el material vegetal.'],
           [
             5,
             'Beber la infusión sin añadir azúcares para no alterar su efecto depurativo sobre el riñón y el hígado.',
@@ -4925,20 +3959,14 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Paepalanthus alpinus',
-    imageUrl        : 'https://www.google.com/search?q=Paepalanthus+alpinus&tbm=isch',
-    nombresComunes  : [
-      'Estrella de páramo',
-      'Botoncillo',
-      'Pajilla blanca'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Paepalanthus+alpinus&tbm=isch',
+    nombresComunes: ['Estrella de páramo', 'Botoncillo', 'Pajilla blanca'],
     propiedadesMedicinales: [
       'Diurético suave',
       'Antiinflamatorio de vías urinarias',
       'Relajante nervioso leve (uso en aromaterapia andina)',
     ],
-    partesUtiles: [
-      'Inflorescencias (cabezuelas florales secas)'
-    ],
+    partesUtiles: ['Inflorescencias (cabezuelas florales secas)'],
     esenciasFlorales: [
       'Geometría sagrada interior',
       'Encuentro con la luz divina en medio de la oscuridad',
@@ -4961,18 +3989,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Liliopsida',
-      orden  : 'Poales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Liliopsida',
+      orden: 'Poales',
       familia: 'Eriocaulaceae',
-      genero : 'Paepalanthus',
+      genero: 'Paepalanthus',
       especie: 'alpinus',
-      clados : [
-        'Angiospermas',
-        'Monocotiledóneas',
-        'Comelínidas'
-      ],
+      clados: ['Angiospermas', 'Monocotiledóneas', 'Comelínidas'],
     },
     preparaciones: [
       {
@@ -4983,18 +4007,15 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Inflorescencias (estrellas) secas',
-            cantidad   : '1 cucharadita (aprox 2g)',
+            cantidad: '1 cucharadita (aprox 2g)',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '250 ml',
+            cantidad: '250 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Calentar el agua hasta alcanzar el punto de ebullición.'
-          ],
+          [1, 'Calentar el agua hasta alcanzar el punto de ebullición.'],
           [
             2,
             'Añadir las pequeñas flores secas blanquecinas en forma de botón estrellado.',
@@ -5003,10 +4024,7 @@ export const plantList: EspecimenType[] = [
             3,
             'Apagar el fuego, tapar el recipiente y dejar infundir durante 8 a 10 minutos.',
           ],
-          [
-            4,
-            'Colar la bebida (las cabezuelas se pueden compostar).'
-          ],
+          [4, 'Colar la bebida (las cabezuelas se pueden compostar).'],
           [
             5,
             'Beber lentamente; si se toma para el insomnio, se puede endulzar con una pizca de miel.',
@@ -5017,12 +4035,8 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Pernettya prostrata',
-    imageUrl        : 'https://www.google.com/search?q=Pernettya+prostrata&tbm=isch',
-    nombresComunes  : [
-      'Reventadera',
-      'Ericácea',
-      'Borrachera de páramo'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Pernettya+prostrata&tbm=isch',
+    nombresComunes: ['Reventadera', 'Ericácea', 'Borrachera de páramo'],
     propiedadesMedicinales: [
       'Tóxico narcótico (afecta severamente el SNC si se ingiere, produciendo embriaguez o delirio)',
       'Analgésico articular externo potente (por aceites volátiles)',
@@ -5054,18 +4068,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Ericales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Ericales',
       familia: 'Ericaceae',
-      genero : 'Pernettya',
+      genero: 'Pernettya',
       especie: 'prostrata',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas'],
     },
     preparaciones: [
       {
@@ -5076,18 +4086,15 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas frescas de reventadera',
-            cantidad   : '30 gramos',
+            cantidad: '30 gramos',
           },
           {
             ingrediente: 'Alcohol de fricción o aguardiente blanco',
-            cantidad   : '250 ml',
+            cantidad: '250 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar las hojas pequeñas de la planta.'
-          ],
+          [1, 'Lavar las hojas pequeñas de la planta.'],
           [
             2,
             'Machacarlas en un mortero levemente para romper las células vegetales y liberar los compuestos analgésicos.',
@@ -5110,21 +4117,14 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Arcytophyllum nitidum',
-    imageUrl        : 'https://www.google.com/search?q=Arcytophyllum+nitidum&tbm=isch',
-    nombresComunes  : [
-      'Piquito',
-      'Mortiño',
-      'Huesito'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Arcytophyllum+nitidum&tbm=isch',
+    nombresComunes: ['Piquito', 'Mortiño', 'Huesito'],
     propiedadesMedicinales: [
       'Astringente',
       'Diurético suave',
       'Antiséptico de vías urinarias',
     ],
-    partesUtiles: [
-      'Hojas pequeñas',
-      'Ramas tiernas'
-    ],
+    partesUtiles: ['Hojas pequeñas', 'Ramas tiernas'],
     esenciasFlorales: [
       'Firmeza en las decisiones',
       'Establecimiento de límites saludables',
@@ -5148,19 +4148,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Gentianales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Gentianales',
       familia: 'Rubiaceae',
-      genero : 'Arcytophyllum',
+      genero: 'Arcytophyllum',
       especie: 'nitidum',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas',
-        'Lamíidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas', 'Lamíidas'],
     },
     preparaciones: [
       {
@@ -5171,56 +4166,36 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas y ramas finas de piquito',
-            cantidad   : '10 gramos',
+            cantidad: '10 gramos',
           },
           {
             ingrediente: 'Agua hirviendo',
-            cantidad   : '300 ml',
+            cantidad: '300 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar las ramas finas de la planta.'
-          ],
-          [
-            2,
-            'Trozar las ramas y hojas e introducirlas en una tetera.'
-          ],
-          [
-            3,
-            'Verter el agua a punto de ebullición sobre la planta.'
-          ],
+          [1, 'Lavar las ramas finas de la planta.'],
+          [2, 'Trozar las ramas y hojas e introducirlas en una tetera.'],
+          [3, 'Verter el agua a punto de ebullición sobre la planta.'],
           [
             4,
             'Tapar y dejar infundir por 10 minutos para extraer los compuestos astringentes.',
           ],
-          [
-            5,
-            'Colar y consumir tibio sin endulzar.'
-          ],
+          [5, 'Colar y consumir tibio sin endulzar.'],
         ],
       },
     ],
   },
   {
     nombreCientifico: 'Tibouchina grossa',
-    imageUrl        : 'https://www.google.com/search?q=Tibouchina+grossa&tbm=isch',
-    nombresComunes  : [
-      'Tuno roso',
-      'Mayo',
-      'Sietecueros rojo'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Tibouchina+grossa&tbm=isch',
+    nombresComunes: ['Tuno roso', 'Mayo', 'Sietecueros rojo'],
     propiedadesMedicinales: [
       'Cicatrizante',
       'Hemostático (detiene sangrados)',
       'Antioxidante',
     ],
-    partesUtiles: [
-      'Flores rojas',
-      'Hojas',
-      'Corteza escamosa'
-    ],
+    partesUtiles: ['Flores rojas', 'Hojas', 'Corteza escamosa'],
     esenciasFlorales: [
       'Pasión por la vida',
       'Reactivación del fuego interior',
@@ -5244,18 +4219,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Myrtales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Myrtales',
       familia: 'Melastomataceae',
-      genero : 'Tibouchina',
+      genero: 'Tibouchina',
       especie: 'grossa',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas'],
     },
     preparaciones: [
       {
@@ -5266,30 +4237,21 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Corteza y hojas de tuno roso',
-            cantidad   : '20 gramos',
+            cantidad: '20 gramos',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '500 ml',
+            cantidad: '500 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Extraer con cuidado las escamas de corteza suelta del árbol.'
-          ],
-          [
-            2,
-            'Lavar la corteza y las hojas frescas.'
-          ],
+          [1, 'Extraer con cuidado las escamas de corteza suelta del árbol.'],
+          [2, 'Lavar la corteza y las hojas frescas.'],
           [
             3,
             'Hervir en el agua durante 15 minutos para liberar sus taninos hemostáticos.',
           ],
-          [
-            4,
-            'Retirar del fuego y dejar enfriar completamente.'
-          ],
+          [4, 'Retirar del fuego y dejar enfriar completamente.'],
           [
             5,
             'Filtrar el líquido para el lavado de la herida, aplicando luego los restos blandos de la decocción sobre el corte.',
@@ -5300,20 +4262,14 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Oreopanax incisus',
-    imageUrl        : 'https://google.com/search?q=Oreopanax+incisus',
-    nombresComunes  : [
-      'Mano de Oso',
-      'Pate danta'
-    ],
+    imageUrl: 'https://google.com/search?q=Oreopanax+incisus',
+    nombresComunes: ['Mano de Oso', 'Pate danta'],
     propiedadesMedicinales: [
       'Expectorante profundo',
       'Antitusivo',
       'Vulnerario (reparación de tejidos)',
     ],
-    partesUtiles: [
-      'Hojas lobuladas',
-      'Brotes tiernos'
-    ],
+    partesUtiles: ['Hojas lobuladas', 'Brotes tiernos'],
     esenciasFlorales: [
       'Sensación de abrazo materno/paterno',
       'Sostén durante crisis de pánico',
@@ -5337,19 +4293,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Apiales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Apiales',
       familia: 'Araliaceae',
-      genero : 'Oreopanax',
+      genero: 'Oreopanax',
       especie: 'incisus',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas',
-        'Campanúlidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas', 'Campanúlidas'],
     },
     preparaciones: [
       {
@@ -5360,15 +4311,15 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas grandes y limpias de mano de oso',
-            cantidad   : '10 gramos',
+            cantidad: '10 gramos',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '400 ml',
+            cantidad: '400 ml',
           },
           {
             ingrediente: 'Miel de eucalipto',
-            cantidad   : '1 cucharada',
+            cantidad: '1 cucharada',
           },
         ],
         pasos: [
@@ -5376,18 +4327,9 @@ export const plantList: EspecimenType[] = [
             1,
             'Lavar minuciosamente las hojas para eliminar polvillo y pelusas naturales de la planta.',
           ],
-          [
-            2,
-            'Trozar las hojas y colocarlas en el agua fría.'
-          ],
-          [
-            3,
-            'Hervir a fuego medio durante 10 minutos.'
-          ],
-          [
-            4,
-            'Tapar la olla y dejar reposar 5 minutos más.'
-          ],
+          [2, 'Trozar las hojas y colocarlas en el agua fría.'],
+          [3, 'Hervir a fuego medio durante 10 minutos.'],
+          [4, 'Tapar la olla y dejar reposar 5 minutos más.'],
           [
             5,
             'Colar con filtro fino, añadir la miel y beber mientras emana vapor.',
@@ -5398,21 +4340,15 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Salvia rufula',
-    imageUrl        : 'https://google.com/search?q=Salvia+rufula',
-    nombresComunes  : [
-      'Salvia roja',
-      'Salvia de páramo'
-    ],
+    imageUrl: 'https://google.com/search?q=Salvia+rufula',
+    nombresComunes: ['Salvia roja', 'Salvia de páramo'],
     propiedadesMedicinales: [
       'Emenagogo (regula el ciclo menstrual)',
       'Digestivo',
       'Tónico circulatorio',
       'Antimicrobiano',
     ],
-    partesUtiles: [
-      'Sumidades floridas',
-      'Hojas'
-    ],
+    partesUtiles: ['Sumidades floridas', 'Hojas'],
     esenciasFlorales: [
       'Sabiduría femenina ancestral',
       'Purificación de linajes familiares',
@@ -5436,19 +4372,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Lamiales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Lamiales',
       familia: 'Lamiaceae',
-      genero : 'Salvia',
+      genero: 'Salvia',
       especie: 'rufula',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas',
-        'Lamíidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas', 'Lamíidas'],
     },
     preparaciones: [
       {
@@ -5459,53 +4390,39 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Flores rojas y hojas frescas de salvia',
-            cantidad   : '1 cucharada',
+            cantidad: '1 cucharada',
           },
           {
             ingrediente: 'Agua hirviendo',
-            cantidad   : '250 ml',
+            cantidad: '250 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Colocar la salvia roja en una taza resistente al calor.'
-          ],
+          [1, 'Colocar la salvia roja en una taza resistente al calor.'],
           [
             2,
             'Verter el agua hirviendo y tapar herméticamente (los aceites esenciales son muy volátiles).',
           ],
-          [
-            3,
-            'Dejar infundir durante 8 minutos.'
-          ],
+          [3, 'Dejar infundir durante 8 minutos.'],
           [
             4,
             'Destapar y respirar profundamente el aroma medicinal antes de colar.',
           ],
-          [
-            5,
-            'Colar y consumir inmediatamente.'
-          ],
+          [5, 'Colar y consumir inmediatamente.'],
         ],
       },
     ],
   },
   {
     nombreCientifico: 'Espeletia chocontana',
-    imageUrl        : 'https://www.google.com/search?q=Espeletia+chocontana&tbm=isch',
-    nombresComunes  : [
-      'Frailejón de Chocontá'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Espeletia+chocontana&tbm=isch',
+    nombresComunes: ['Frailejón de Chocontá'],
     propiedadesMedicinales: [
       'Antiasmático',
       'Expectorante de vías bajas',
       'Antiinflamatorio de vías respiratorias',
     ],
-    partesUtiles: [
-      'Hojas secas (necromasa foliar)',
-      'Resina'
-    ],
+    partesUtiles: ['Hojas secas (necromasa foliar)', 'Resina'],
     esenciasFlorales: [
       'Arraigo territorial',
       'Sentido de pertenencia',
@@ -5528,19 +4445,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Asterales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Asterales',
       familia: 'Asteraceae',
-      genero : 'Espeletia',
+      genero: 'Espeletia',
       especie: 'chocontana',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas',
-        'Campanúlidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas', 'Campanúlidas'],
     },
     preparaciones: [
       {
@@ -5551,26 +4463,17 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas secas de la base del frailejón de Chocontá',
-            cantidad   : '15 gramos',
+            cantidad: '15 gramos',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '1 litro',
+            cantidad: '1 litro',
           },
         ],
         pasos: [
-          [
-            1,
-            'Llevar el agua a punto de ebullición en una olla grande.'
-          ],
-          [
-            2,
-            'Añadir las hojas secas maduras.'
-          ],
-          [
-            3,
-            'Hervir a fuego lento por 10 minutos para liberar las resinas.'
-          ],
+          [1, 'Llevar el agua a punto de ebullición en una olla grande.'],
+          [2, 'Añadir las hojas secas maduras.'],
+          [3, 'Hervir a fuego lento por 10 minutos para liberar las resinas.'],
           [
             4,
             'Retirar del fuego, cubrir la cabeza con una toalla sobre la olla y aspirar los vapores calientes por 10 minutos.',
@@ -5585,21 +4488,15 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Aragoa cupressina',
-    imageUrl        : 'https://www.google.com/search?q=Aragoa+cupressina&tbm=isch',
-    nombresComunes  : [
-      'Romero de Páramo',
-      'Pinito'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Aragoa+cupressina&tbm=isch',
+    nombresComunes: ['Romero de Páramo', 'Pinito'],
     propiedadesMedicinales: [
       'Balsámico',
       'Anticatarral',
       'Rubefaciente (calienta el cuerpo)',
       'Analgésico articular',
     ],
-    partesUtiles: [
-      'Ramas tiernas',
-      'Hojas aciculares'
-    ],
+    partesUtiles: ['Ramas tiernas', 'Hojas aciculares'],
     esenciasFlorales: [
       'Claridad mental cristalina',
       'Corteza espiritual contra malas influencias',
@@ -5623,19 +4520,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Lamiales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Lamiales',
       familia: 'Plantaginaceae',
-      genero : 'Aragoa',
+      genero: 'Aragoa',
       especie: 'cupressina',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas',
-        'Lamíidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas', 'Lamíidas'],
     },
     preparaciones: [
       {
@@ -5646,26 +4538,20 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Ramas de romero de páramo',
-            cantidad   : '40 gramos',
+            cantidad: '40 gramos',
           },
           {
             ingrediente: 'Alcohol etílico al 70%',
-            cantidad   : '300 ml',
+            cantidad: '300 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar y secar muy bien las ramas del romero de páramo.'
-          ],
+          [1, 'Lavar y secar muy bien las ramas del romero de páramo.'],
           [
             2,
             'Macerarlas o golpearlas suavemente para liberar sus aceites esenciales resinosos.',
           ],
-          [
-            3,
-            'Introducirlas en un recipiente de vidrio.'
-          ],
+          [3, 'Introducirlas en un recipiente de vidrio.'],
           [
             4,
             'Añadir el alcohol, sellar y dejar macerar en la oscuridad durante 15 días.',
@@ -5680,21 +4566,14 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Aetanthus mutisii',
-    imageUrl        : 'https://www.google.com/search?q=Aetanthus+mutisii&tbm=isch',
-    nombresComunes  : [
-      'Matapalo',
-      'Injerto',
-      'Muérdago andino'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Aetanthus+mutisii&tbm=isch',
+    nombresComunes: ['Matapalo', 'Injerto', 'Muérdago andino'],
     propiedadesMedicinales: [
       'Hipotensor (baja la presión arterial, requiere dosificación experta)',
       'Antiespasmódico nervioso',
       'Cicatrizante externo',
     ],
-    partesUtiles: [
-      'Hojas',
-      'Flores rojas tubulares'
-    ],
+    partesUtiles: ['Hojas', 'Flores rojas tubulares'],
     esenciasFlorales: [
       'Independencia vital',
       'Ruptura de lazos de vampirismo energético',
@@ -5717,31 +4596,28 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Santalales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Santalales',
       familia: 'Loranthaceae',
-      genero : 'Aetanthus',
+      genero: 'Aetanthus',
       especie: 'mutisii',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas'],
     },
     preparaciones: [
       {
         usoTerapeutico:
           'Para bajar la presión arterial originada por nervios o estrés severo (Bajo estricta supervisión)',
         formaDeAplicacion: 'Beber 1 taza de infusión débil al día.',
-        ingredientes     : [
+        ingredientes: [
           {
             ingrediente: 'Hojas secas de matapalo',
-            cantidad   : '3 gramos',
+            cantidad: '3 gramos',
           },
           {
             ingrediente: 'Agua hirviendo',
-            cantidad   : '250 ml',
+            cantidad: '250 ml',
           },
         ],
         pasos: [
@@ -5753,14 +4629,8 @@ export const plantList: EspecimenType[] = [
             2,
             'Pesar exactamente la planta, ya que es potente y no debe sobredosificarse.',
           ],
-          [
-            3,
-            'Colocar en una taza y verter el agua caliente.'
-          ],
-          [
-            4,
-            'Infundir tapado por solo 5 minutos.'
-          ],
+          [3, 'Colocar en una taza y verter el agua caliente.'],
+          [4, 'Infundir tapado por solo 5 minutos.'],
           [
             5,
             'Colar y consumir. (En la medicina tradicional andina esta preparación es supervisada por sabedores).',
@@ -5771,22 +4641,15 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Passiflora bogotensis',
-    imageUrl        : 'https://www.google.com/search?q=Passiflora+bogotensis&tbm=isch',
-    nombresComunes  : [
-      'Curuba de monte',
-      'Curuba silvestre'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Passiflora+bogotensis&tbm=isch',
+    nombresComunes: ['Curuba de monte', 'Curuba silvestre'],
     propiedadesMedicinales: [
       'Sedante fuerte',
       'Ansiolítico',
       'Antiespasmódico',
       'Hipotensor leve',
     ],
-    partesUtiles: [
-      'Hojas',
-      'Zarcillos',
-      'Flores'
-    ],
+    partesUtiles: ['Hojas', 'Zarcillos', 'Flores'],
     esenciasFlorales: [
       'Paz espiritual absoluta',
       'Trascendencia del sufrimiento',
@@ -5811,19 +4674,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Malpighiales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Malpighiales',
       familia: 'Passifloraceae',
-      genero : 'Passiflora',
+      genero: 'Passiflora',
       especie: 'bogotensis',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Eurosidas I'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Eurosidas I'],
     },
     preparaciones: [
       {
@@ -5834,56 +4692,37 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas, flores y zarcillos secos de curuba de monte',
-            cantidad   : '10 gramos',
+            cantidad: '10 gramos',
           },
           {
             ingrediente: 'Agua hirviendo',
-            cantidad   : '250 ml',
+            cantidad: '250 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Colocar la planta seca y troceada en una tetera.'
-          ],
-          [
-            2,
-            'Añadir el agua hirviendo inmediatamente.'
-          ],
+          [1, 'Colocar la planta seca y troceada en una tetera.'],
+          [2, 'Añadir el agua hirviendo inmediatamente.'],
           [
             3,
             'Tapar y dejar reposar durante 15 minutos para extraer los alcaloides y flavonoides sedantes.',
           ],
-          [
-            4,
-            'Colar finamente.'
-          ],
-          [
-            5,
-            'Beber en sorbos lentos en un ambiente ya oscuro y relajado.'
-          ],
+          [4, 'Colar finamente.'],
+          [5, 'Beber en sorbos lentos en un ambiente ya oscuro y relajado.'],
         ],
       },
     ],
   },
   {
     nombreCientifico: 'Mutisia clematis',
-    imageUrl        : 'https://www.google.com/search?q=Mutisia+clematis&tbm=isch',
-    nombresComunes  : [
-      'Clavellino',
-      'Bejuco',
-      'Flor de Mutis'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Mutisia+clematis&tbm=isch',
+    nombresComunes: ['Clavellino', 'Bejuco', 'Flor de Mutis'],
     propiedadesMedicinales: [
       'Tónico cardiaco (uso ancestral)',
       'Béquico (para tos persistente)',
       'Antidepresivo natural',
       'Estimulante digestivo',
     ],
-    partesUtiles: [
-      'Flores (péndulas y rojas)',
-      'Hojas'
-    ],
+    partesUtiles: ['Flores (péndulas y rojas)', 'Hojas'],
     esenciasFlorales: [
       'Apertura del corazón a la alegría',
       'Expansión y asimilación de experiencias hermosas',
@@ -5907,19 +4746,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Asterales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Asterales',
       familia: 'Asteraceae',
-      genero : 'Mutisia',
+      genero: 'Mutisia',
       especie: 'clematis',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas',
-        'Campanúlidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas', 'Campanúlidas'],
     },
     preparaciones: [
       {
@@ -5930,11 +4764,11 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Flores secas de clavellino',
-            cantidad   : '5 gramos (aprox 3 flores)',
+            cantidad: '5 gramos (aprox 3 flores)',
           },
           {
             ingrediente: 'Agua hirviendo',
-            cantidad   : '250 ml',
+            cantidad: '250 ml',
           },
         ],
         pasos: [
@@ -5942,14 +4776,8 @@ export const plantList: EspecimenType[] = [
             1,
             'Seleccionar las flores rojas del clavellino y retirarles el polvo.',
           ],
-          [
-            2,
-            'Depositarlas en una taza de porcelana o vidrio templado.'
-          ],
-          [
-            3,
-            'Verter el agua hirviendo suavemente sobre los pétalos.'
-          ],
+          [2, 'Depositarlas en una taza de porcelana o vidrio templado.'],
+          [3, 'Verter el agua hirviendo suavemente sobre los pétalos.'],
           [
             4,
             'Tapar y dejar infundir por 7 minutos, el agua tomará un color ámbar-rojizo.',
@@ -5964,8 +4792,8 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Masdevallia coccinea',
-    imageUrl        : 'https://www.google.com/search?q=Masdevallia+coccinea&tbm=isch',
-    nombresComunes  : [
+    imageUrl: 'https://www.google.com/search?q=Masdevallia+coccinea&tbm=isch',
+    nombresComunes: [
       'Orquídea Banderita',
       'Banderita colombiana',
       'Orquídea de sangre',
@@ -6003,17 +4831,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Liliopsida',
-      orden  : 'Asparagales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Liliopsida',
+      orden: 'Asparagales',
       familia: 'Orchidaceae',
-      genero : 'Masdevallia',
+      genero: 'Masdevallia',
       especie: 'coccinea',
-      clados : [
-        'Angiospermas',
-        'Monocotiledóneas'
-      ],
+      clados: ['Angiospermas', 'Monocotiledóneas'],
     },
     preparaciones: [
       {
@@ -6024,15 +4849,15 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Agua de manantial purificada',
-            cantidad   : '1 bol de cristal',
+            cantidad: '1 bol de cristal',
           },
           {
             ingrediente: 'Orquídea Banderita viva (sin cortarla)',
-            cantidad   : '1 flor intacta',
+            cantidad: '1 flor intacta',
           },
           {
             ingrediente: 'Brandy o coñac (como conservante)',
-            cantidad   : '50% de la botella final',
+            cantidad: '50% de la botella final',
           },
         ],
         pasos: [
@@ -6048,10 +4873,7 @@ export const plantList: EspecimenType[] = [
             3,
             'Dejar expuesta la flor y el bol a la luz del sol matutino durante 3 a 4 horas para transferir la firma vibracional de la orquídea al agua.',
           ],
-          [
-            4,
-            'Retirar el bol con cuidado de no dañar la planta.'
-          ],
+          [4, 'Retirar el bol con cuidado de no dañar la planta.'],
           [
             5,
             'Mezclar el agua activada con brandy a partes iguales para crear la Tintura Madre, y diluir posteriormente para el uso en frascos goteros.',
@@ -6062,20 +4884,14 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Viburnum suratense',
-    imageUrl        : 'https://www.google.com/search?q=Viburnum+suratense&tbm=isch',
-    nombresComunes  : [
-      'Garrocho',
-      'Pela'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Viburnum+suratense&tbm=isch',
+    nombresComunes: ['Garrocho', 'Pela'],
     propiedadesMedicinales: [
       'Antiespasmódico',
       'Astringente',
       'Antiinflamatorio tópico',
     ],
-    partesUtiles: [
-      'Hojas',
-      'Corteza'
-    ],
+    partesUtiles: ['Hojas', 'Corteza'],
     esenciasFlorales: [
       'Relajación de la tensión extrema',
       'Ayuda a soltar el control',
@@ -6098,19 +4914,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Dipsacales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Dipsacales',
       familia: 'Adoxaceae',
-      genero : 'Viburnum',
+      genero: 'Viburnum',
       especie: 'suratense',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas',
-        'Campanúlidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas', 'Campanúlidas'],
     },
     preparaciones: [
       {
@@ -6121,30 +4932,21 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas y corteza de garrocho',
-            cantidad   : '20 gramos',
+            cantidad: '20 gramos',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '1 litro',
+            cantidad: '1 litro',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar las hojas y la corteza cuidadosamente.'
-          ],
-          [
-            2,
-            'Hervir el agua en una olla grande.'
-          ],
+          [1, 'Lavar las hojas y la corteza cuidadosamente.'],
+          [2, 'Hervir el agua en una olla grande.'],
           [
             3,
             'Añadir el material vegetal y dejar hervir a fuego medio durante 15 minutos.',
           ],
-          [
-            4,
-            'Retirar del fuego y dejar reposar 5 minutos.'
-          ],
+          [4, 'Retirar del fuego y dejar reposar 5 minutos.'],
           [
             5,
             'Sumergir un paño limpio en el líquido caliente (soportable al tacto) y colocar sobre el músculo contraído.',
@@ -6155,19 +4957,14 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Ceroxylon vogelianum',
-    imageUrl        : 'https://www.google.com/search?q=Ceroxylon+vogelianum&tbm=isch',
-    nombresComunes  : [
-      'Palma de Cera',
-      'Palma de ramo'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Ceroxylon+vogelianum&tbm=isch',
+    nombresComunes: ['Palma de Cera', 'Palma de ramo'],
     propiedadesMedicinales: [
       'Cicatrizante (cera)',
       'Emoliente cutáneo',
       'Protector dérmico',
     ],
-    partesUtiles: [
-      'Cera del tronco (recolección no destructiva)'
-    ],
+    partesUtiles: ['Cera del tronco (recolección no destructiva)'],
     esenciasFlorales: [
       'Elevación del espíritu',
       'Conexión Cielo-Tierra',
@@ -6190,18 +4987,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Liliopsida',
-      orden  : 'Arecales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Liliopsida',
+      orden: 'Arecales',
       familia: 'Arecaceae',
-      genero : 'Ceroxylon',
+      genero: 'Ceroxylon',
       especie: 'vogelianum',
-      clados : [
-        'Angiospermas',
-        'Monocotiledóneas',
-        'Comelínidas'
-      ],
+      clados: ['Angiospermas', 'Monocotiledóneas', 'Comelínidas'],
     },
     preparaciones: [
       {
@@ -6212,11 +5005,11 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Cera raspada del tronco (sin lastimar la palma)',
-            cantidad   : '10 gramos',
+            cantidad: '10 gramos',
           },
           {
             ingrediente: 'Aceite de almendras o de oliva',
-            cantidad   : '10 ml',
+            cantidad: '10 ml',
           },
         ],
         pasos: [
@@ -6246,20 +5039,14 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Centropogon granulosus',
-    imageUrl        : 'https://www.google.com/search?q=Centropogon+granulosus&tbm=isch',
-    nombresComunes  : [
-      'Campanilla',
-      'Bocado de puerco'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Centropogon+granulosus&tbm=isch',
+    nombresComunes: ['Campanilla', 'Bocado de puerco'],
     propiedadesMedicinales: [
       'Vulnerario',
       'Antimicótico tópico (látex)',
       'Tóxico (uso interno estrictamente prohibido)',
     ],
-    partesUtiles: [
-      'Látex blanco',
-      'Hojas maceradas'
-    ],
+    partesUtiles: ['Látex blanco', 'Hojas maceradas'],
     esenciasFlorales: [
       'Aceptación de la propia intuición',
       'Despierta la voz interior',
@@ -6282,19 +5069,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Asterales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Asterales',
       familia: 'Campanulaceae',
-      genero : 'Centropogon',
+      genero: 'Centropogon',
       especie: 'granulosus',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas',
-        'Campanúlidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas', 'Campanúlidas'],
     },
     preparaciones: [
       {
@@ -6305,7 +5087,7 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Látex fresco de campanilla',
-            cantidad   : '2 a 3 gotas',
+            cantidad: '2 a 3 gotas',
           },
         ],
         pasos: [
@@ -6313,18 +5095,9 @@ export const plantList: EspecimenType[] = [
             1,
             'Quebrar cuidadosamente un tallo u hoja fresca para liberar el látex blanco (usar guantes para no irritar las manos).',
           ],
-          [
-            2,
-            'Proteger la piel sana alrededor de la verruga con vaselina.'
-          ],
-          [
-            3,
-            'Aplicar la gota de látex directamente sobre la lesión.'
-          ],
-          [
-            4,
-            'Dejar secar al aire libre.'
-          ],
+          [2, 'Proteger la piel sana alrededor de la verruga con vaselina.'],
+          [3, 'Aplicar la gota de látex directamente sobre la lesión.'],
+          [4, 'Dejar secar al aire libre.'],
           [
             5,
             'Lavar bien las manos después de la aplicación y evitar cualquier contacto con los ojos o la boca.',
@@ -6335,21 +5108,15 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Hypericum goyanesii',
-    imageUrl        : 'https://www.google.com/search?q=Hypericum+goyanesii&tbm=isch',
-    nombresComunes  : [
-      'Chite',
-      'San Juanito de páramo'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Hypericum+goyanesii&tbm=isch',
+    nombresComunes: ['Chite', 'San Juanito de páramo'],
     propiedadesMedicinales: [
       'Antidepresivo',
       'Vulnerario (excelente cicatrizante)',
       'Antiespasmódico',
       'Antiséptico',
     ],
-    partesUtiles: [
-      'Flores',
-      'Hojas'
-    ],
+    partesUtiles: ['Flores', 'Hojas'],
     esenciasFlorales: [
       'Optimismo y vitalidad',
       'Disuelve la melancolía profunda',
@@ -6372,19 +5139,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Malpighiales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Malpighiales',
       familia: 'Hypericaceae',
-      genero : 'Hypericum',
+      genero: 'Hypericum',
       especie: 'goyanesii',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Eurosidas I'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Eurosidas I'],
     },
     preparaciones: [
       {
@@ -6395,30 +5157,18 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Sumidades floridas secas de chite',
-            cantidad   : '1 cucharadita (3 gramos)',
+            cantidad: '1 cucharadita (3 gramos)',
           },
           {
             ingrediente: 'Agua hirviendo',
-            cantidad   : '250 ml',
+            cantidad: '250 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Colocar las flores secas en una taza.'
-          ],
-          [
-            2,
-            'Verter el agua recién hervida sobre las flores.'
-          ],
-          [
-            3,
-            'Tapar y dejar en infusión por 8 minutos.'
-          ],
-          [
-            4,
-            'Colar para retirar los restos de la planta.'
-          ],
+          [1, 'Colocar las flores secas en una taza.'],
+          [2, 'Verter el agua recién hervida sobre las flores.'],
+          [3, 'Tapar y dejar en infusión por 8 minutos.'],
+          [4, 'Colar para retirar los restos de la planta.'],
           [
             5,
             'Consumir tibio. Precaución: puede interactuar con medicamentos antidepresivos convencionales.',
@@ -6429,19 +5179,14 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Buddleja bullata',
-    imageUrl        : 'https://www.google.com/search?q=Buddleja+bullata&tbm=isch',
-    nombresComunes  : [
-      'Salvia de Páramo',
-      'Lengua de vaca'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Buddleja+bullata&tbm=isch',
+    nombresComunes: ['Salvia de Páramo', 'Lengua de vaca'],
     propiedadesMedicinales: [
       'Vulnerario (lava y sella heridas)',
       'Antiinflamatorio tópico',
       'Febrífugo (en baños)',
     ],
-    partesUtiles: [
-      'Hojas'
-    ],
+    partesUtiles: ['Hojas'],
     esenciasFlorales: [
       'Comunicación pacífica',
       'Enfriamiento de la ira',
@@ -6457,25 +5202,17 @@ export const plantList: EspecimenType[] = [
       'Frustración desbordada',
       'Dificultad para perdonar ofensas',
     ],
-    malesFisicos: [
-      'Fiebre alta',
-      'Heridas infectadas',
-      'Hinchazón por golpes'
-    ],
+    malesFisicos: ['Fiebre alta', 'Heridas infectadas', 'Hinchazón por golpes'],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Lamiales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Lamiales',
       familia: 'Scrophulariaceae',
-      genero : 'Buddleja',
+      genero: 'Buddleja',
       especie: 'bullata',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas'],
     },
     preparaciones: [
       {
@@ -6486,30 +5223,18 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas frescas de salvia de páramo',
-            cantidad   : '30 gramos',
+            cantidad: '30 gramos',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '1 litro',
+            cantidad: '1 litro',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar las hojas, que suelen ser afelpadas.'
-          ],
-          [
-            2,
-            'Hervir el agua e introducir las hojas trituradas.'
-          ],
-          [
-            3,
-            'Dejar hervir por 10 minutos para una correcta extracción.'
-          ],
-          [
-            4,
-            'Retirar del fuego y dejar enfriar a temperatura ambiente.'
-          ],
+          [1, 'Lavar las hojas, que suelen ser afelpadas.'],
+          [2, 'Hervir el agua e introducir las hojas trituradas.'],
+          [3, 'Dejar hervir por 10 minutos para una correcta extracción.'],
+          [4, 'Retirar del fuego y dejar enfriar a temperatura ambiente.'],
           [
             5,
             'Filtrar el líquido y usar en compresas sobre la frente para fiebre o como lavado para desinfectar.',
@@ -6522,21 +5247,14 @@ export const plantList: EspecimenType[] = [
     nombreCientifico: 'Hedyosmum bonplandianum',
     imageUrl:
       'https://www.google.com/search?q=Hedyosmum+bonplandianum&tbm=isch',
-    nombresComunes: [
-      'Granizo',
-      'Silbador',
-      'Bebedero'
-    ],
+    nombresComunes: ['Granizo', 'Silbador', 'Bebedero'],
     propiedadesMedicinales: [
       'Antiespasmódico estomacal',
       'Analgésico articular (planta caliente)',
       'Diurético',
       'Anticatarral',
     ],
-    partesUtiles: [
-      'Hojas (muy aromáticas)',
-      'Tallos tiernos'
-    ],
+    partesUtiles: ['Hojas (muy aromáticas)', 'Tallos tiernos'],
     esenciasFlorales: [
       'Recuperación de la fluidez vital',
       'Limpieza de miedos paralizantes',
@@ -6560,17 +5278,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Chloranthales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Chloranthales',
       familia: 'Chloranthaceae',
-      genero : 'Hedyosmum',
+      genero: 'Hedyosmum',
       especie: 'bonplandianum',
-      clados : [
-        'Angiospermas',
-        'Magnolíidas'
-      ],
+      clados: ['Angiospermas', 'Magnolíidas'],
     },
     preparaciones: [
       {
@@ -6581,11 +5296,11 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas frescas de granizo',
-            cantidad   : '10 gramos',
+            cantidad: '10 gramos',
           },
           {
             ingrediente: 'Agua hirviendo',
-            cantidad   : '300 ml',
+            cantidad: '300 ml',
           },
         ],
         pasos: [
@@ -6601,35 +5316,23 @@ export const plantList: EspecimenType[] = [
             3,
             'Tapar herméticamente de inmediato para que los aromas no se evaporen.',
           ],
-          [
-            4,
-            'Infundir durante 10 minutos.'
-          ],
-          [
-            5,
-            'Colar y beber lentamente después de las comidas.'
-          ],
+          [4, 'Infundir durante 10 minutos.'],
+          [5, 'Colar y beber lentamente después de las comidas.'],
         ],
       },
     ],
   },
   {
     nombreCientifico: 'Myrica pubescens',
-    imageUrl        : 'https://www.google.com/search?q=Myrica+pubescens&tbm=isch',
-    nombresComunes  : [
-      'Laurel de Cera',
-      'Laurel andino'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Myrica+pubescens&tbm=isch',
+    nombresComunes: ['Laurel de Cera', 'Laurel andino'],
     propiedadesMedicinales: [
       'Astringente',
       'Cicatrizante (cera)',
       'Emoliente cutáneo',
       'Anticatarral (vahos)',
     ],
-    partesUtiles: [
-      'Hojas',
-      'Cera de los frutos'
-    ],
+    partesUtiles: ['Hojas', 'Cera de los frutos'],
     esenciasFlorales: [
       'Iluminación del camino vital',
       'Constancia y dedicación',
@@ -6652,19 +5355,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Fagales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Fagales',
       familia: 'Myricaceae',
-      genero : 'Myrica',
+      genero: 'Myrica',
       especie: 'pubescens',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Fábidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Fábidas'],
     },
     preparaciones: [
       {
@@ -6675,26 +5373,17 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas frescas de laurel de cera',
-            cantidad   : '15 gramos',
+            cantidad: '15 gramos',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '1 litro',
+            cantidad: '1 litro',
           },
         ],
         pasos: [
-          [
-            1,
-            'Poner a hervir el litro de agua en una olla amplia.'
-          ],
-          [
-            2,
-            'Añadir las hojas y dejar hervir por 3 minutos.'
-          ],
-          [
-            3,
-            'Retirar del fuego y colocar sobre una mesa segura.'
-          ],
+          [1, 'Poner a hervir el litro de agua en una olla amplia.'],
+          [2, 'Añadir las hojas y dejar hervir por 3 minutos.'],
+          [3, 'Retirar del fuego y colocar sobre una mesa segura.'],
           [
             4,
             'Cubrir la cabeza con una toalla formando una carpa sobre la olla.',
@@ -6709,23 +5398,15 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Inga edulis',
-    imageUrl        : 'https://www.google.com/search?q=Inga+edulis&tbm=isch',
-    nombresComunes  : [
-      'Guamo',
-      'Guaba',
-      'Guamo machete'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Inga+edulis&tbm=isch',
+    nombresComunes: ['Guamo', 'Guaba', 'Guamo machete'],
     propiedadesMedicinales: [
       'Astringente (corteza)',
       'Antiinflamatorio',
       'Cicatrizante',
       'Digestivo (arilo del fruto)',
     ],
-    partesUtiles: [
-      'Corteza',
-      'Hojas',
-      'Arilo blanco (comestible)'
-    ],
+    partesUtiles: ['Corteza', 'Hojas', 'Arilo blanco (comestible)'],
     esenciasFlorales: [
       'Nutrición del alma',
       'Generosidad y altruismo',
@@ -6749,19 +5430,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Fabales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Fabales',
       familia: 'Fabaceae',
-      genero : 'Inga',
+      genero: 'Inga',
       especie: 'edulis',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Eurosidas I'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Eurosidas I'],
     },
     preparaciones: [
       {
@@ -6772,55 +5448,36 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Corteza triturada de guamo',
-            cantidad   : '15 gramos',
+            cantidad: '15 gramos',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '500 ml',
+            cantidad: '500 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar la corteza y trozarla en pedazos pequeños.'
-          ],
+          [1, 'Lavar la corteza y trozarla en pedazos pequeños.'],
           [
             2,
             'Hervir en el agua durante 15 a 20 minutos para extraer correctamente los taninos.',
           ],
-          [
-            3,
-            'Retirar del fuego y dejar enfriar por completo.'
-          ],
-          [
-            4,
-            'Colar para asegurar que no queden astillas o residuos.'
-          ],
-          [
-            5,
-            'Usar el líquido como enjuague bucal sin tragarlo.'
-          ],
+          [3, 'Retirar del fuego y dejar enfriar por completo.'],
+          [4, 'Colar para asegurar que no queden astillas o residuos.'],
+          [5, 'Usar el líquido como enjuague bucal sin tragarlo.'],
         ],
       },
     ],
   },
   {
     nombreCientifico: 'Erythrina poeppigiana',
-    imageUrl        : 'https://www.google.com/search?q=Erythrina+poeppigiana&tbm=isch',
-    nombresComunes  : [
-      'Bucare',
-      'Cámbulo',
-      'Pízamo'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Erythrina+poeppigiana&tbm=isch',
+    nombresComunes: ['Bucare', 'Cámbulo', 'Pízamo'],
     propiedadesMedicinales: [
       'Sedante nervioso (requiere precaución por alcaloides)',
       'Antiespasmódico',
       'Sudorífico (diaforético)',
     ],
-    partesUtiles: [
-      'Flores',
-      'Corteza (uso muy restringido)'
-    ],
+    partesUtiles: ['Flores', 'Corteza (uso muy restringido)'],
     esenciasFlorales: [
       'Paz profunda',
       'Aceptación del ciclo de descanso',
@@ -6836,26 +5493,17 @@ export const plantList: EspecimenType[] = [
       'Culpa por descansar',
       'Insomnio por sobrecarga de pensamientos',
     ],
-    malesFisicos: [
-      'Nerviosismo agudo',
-      'Insomnio',
-      'Espasmos musculares'
-    ],
+    malesFisicos: ['Nerviosismo agudo', 'Insomnio', 'Espasmos musculares'],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Fabales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Fabales',
       familia: 'Fabaceae',
-      genero : 'Erythrina',
+      genero: 'Erythrina',
       especie: 'poeppigiana',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Eurosidas I'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Eurosidas I'],
     },
     preparaciones: [
       {
@@ -6866,30 +5514,18 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Flores frescas o secas de bucare',
-            cantidad   : '1 o 2 flores (no exceder)',
+            cantidad: '1 o 2 flores (no exceder)',
           },
           {
             ingrediente: 'Agua hirviendo',
-            cantidad   : '150 ml',
+            cantidad: '150 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar los pétalos de las flores rojas/anaranjadas.'
-          ],
-          [
-            2,
-            'Colocarlos en una taza y verter el agua caliente.'
-          ],
-          [
-            3,
-            'Infundir durante no más de 5 a 7 minutos.'
-          ],
-          [
-            4,
-            'Colar y endulzar ligeramente si se desea.'
-          ],
+          [1, 'Lavar los pétalos de las flores rojas/anaranjadas.'],
+          [2, 'Colocarlos en una taza y verter el agua caliente.'],
+          [3, 'Infundir durante no más de 5 a 7 minutos.'],
+          [4, 'Colar y endulzar ligeramente si se desea.'],
           [
             5,
             'Beber en la noche. No administrar a niños, mujeres embarazadas o personas medicadas con sedantes, dado el contenido de alcaloides.',
@@ -6900,20 +5536,14 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Dalea coerulea',
-    imageUrl        : 'https://www.google.com/search?q=Dalea+coerulea&tbm=isch',
-    nombresComunes  : [
-      'Dalea',
-      'Falso añil'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Dalea+coerulea&tbm=isch',
+    nombresComunes: ['Dalea', 'Falso añil'],
     propiedadesMedicinales: [
       'Vulnerario (cura heridas)',
       'Antiséptico cutáneo',
       'Antiinflamatorio externo',
     ],
-    partesUtiles: [
-      'Hojas',
-      'Flores azules/violáceas'
-    ],
+    partesUtiles: ['Hojas', 'Flores azules/violáceas'],
     esenciasFlorales: [
       'Confianza en el propio valor',
       'Tranquilidad ante la adversidad',
@@ -6936,19 +5566,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Fabales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Fabales',
       familia: 'Fabaceae',
-      genero : 'Dalea',
+      genero: 'Dalea',
       especie: 'coerulea',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Eurosidas I'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Eurosidas I'],
     },
     preparaciones: [
       {
@@ -6959,30 +5584,18 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas y sumidades floridas de dalea',
-            cantidad   : '15 gramos',
+            cantidad: '15 gramos',
           },
           {
             ingrediente: 'Agua purificada',
-            cantidad   : '500 ml',
+            cantidad: '500 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Recolectar las ramas tiernas con flores de la planta.'
-          ],
-          [
-            2,
-            'Hervir el agua y añadir el material vegetal triturado.'
-          ],
-          [
-            3,
-            'Mantener en ebullición suave por 10 minutos.'
-          ],
-          [
-            4,
-            'Retirar, tapar y dejar enfriar por completo.'
-          ],
+          [1, 'Recolectar las ramas tiernas con flores de la planta.'],
+          [2, 'Hervir el agua y añadir el material vegetal triturado.'],
+          [3, 'Mantener en ebullición suave por 10 minutos.'],
+          [4, 'Retirar, tapar y dejar enfriar por completo.'],
           [
             5,
             'Filtrar a través de una tela limpia y aplicar el líquido a modo de lavado sobre la piel afectada.',
@@ -6995,21 +5608,14 @@ export const plantList: EspecimenType[] = [
     nombreCientifico: 'Erythroxylum novogranatense',
     imageUrl:
       'https://www.google.com/search?q=Erythroxylum+novogranatense&tbm=isch',
-    nombresComunes: [
-      'Coca colombiana',
-      'Pajarito',
-      'Ayo',
-      'Hayó'
-    ],
+    nombresComunes: ['Coca colombiana', 'Pajarito', 'Ayo', 'Hayó'],
     propiedadesMedicinales: [
       'Estimulante del sistema nervioso central',
       'Anestésico local',
       'Supresor del apetito',
       'Estimulante respiratorio (mal de altura)',
     ],
-    partesUtiles: [
-      'Hojas'
-    ],
+    partesUtiles: ['Hojas'],
     esenciasFlorales: [
       'Asimilación de la palabra y el pensamiento',
       'Fomenta la escucha activa y la comunidad',
@@ -7033,19 +5639,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Malpighiales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Malpighiales',
       familia: 'Erythroxylaceae',
-      genero : 'Erythroxylum',
+      genero: 'Erythroxylum',
       especie: 'novogranatense',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Fábidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Fábidas'],
     },
     preparaciones: [
       {
@@ -7056,7 +5657,7 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas enteras tostadas de coca colombiana',
-            cantidad   : '10 gramos',
+            cantidad: '10 gramos',
           },
           {
             ingrediente:
@@ -7077,10 +5678,7 @@ export const plantList: EspecimenType[] = [
             3,
             'Introducir un puñado de hojas en el carrillo (interior de la mejilla) sin tragarlas.',
           ],
-          [
-            4,
-            'Humedecer con la saliva hasta formar un bolo (acuyico).'
-          ],
+          [4, 'Humedecer con la saliva hasta formar un bolo (acuyico).'],
           [
             5,
             'Agregar la pizca de cal/ceniza para activar la extracción alcaloide y mantener el bolo en la boca liberando su jugo.',
@@ -7091,20 +5689,14 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Myroxylon balsamum',
-    imageUrl        : 'https://www.google.com/search?q=Myroxylon+balsamum&tbm=isch',
-    nombresComunes  : [
-      'Bálsamo de Tolú',
-      'Tolu'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Myroxylon+balsamum&tbm=isch',
+    nombresComunes: ['Bálsamo de Tolú', 'Tolu'],
     propiedadesMedicinales: [
       'Expectorante profundo',
       'Antiséptico pulmonar y de vías urinarias',
       'Cicatrizante',
     ],
-    partesUtiles: [
-      'Resina oleosa (bálsamo)',
-      'Corteza'
-    ],
+    partesUtiles: ['Resina oleosa (bálsamo)', 'Corteza'],
     esenciasFlorales: [
       'Bálsamo para el dolor emocional',
       'Suaviza el temperamento irritable',
@@ -7128,19 +5720,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Fabales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Fabales',
       familia: 'Fabaceae',
-      genero : 'Myroxylon',
+      genero: 'Myroxylon',
       especie: 'balsamum',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Fábidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Fábidas'],
     },
     preparaciones: [
       {
@@ -7151,22 +5738,16 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Resina de Bálsamo de Tolú pura',
-            cantidad   : '10 gramos',
+            cantidad: '10 gramos',
           },
           {
             ingrediente: 'Agua hirviendo',
-            cantidad   : '1 litro (para vahos)',
+            cantidad: '1 litro (para vahos)',
           },
         ],
         pasos: [
-          [
-            1,
-            'Para inhalaciones: Hervir el litro de agua.'
-          ],
-          [
-            2,
-            'Retirar del fuego y disolver la resina en el agua caliente.'
-          ],
+          [1, 'Para inhalaciones: Hervir el litro de agua.'],
+          [2, 'Retirar del fuego y disolver la resina en el agua caliente.'],
           [
             3,
             'Cubrir la cabeza con una toalla e inhalar profundamente los vapores aromáticos por 15 minutos.',
@@ -7185,21 +5766,15 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Cinchona pitayensis',
-    imageUrl        : 'https://www.google.com/search?q=Cinchona+pitayensis&tbm=isch',
-    nombresComunes  : [
-      'Quina andina',
-      'Quina del Cauca',
-      'Cascarilla'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Cinchona+pitayensis&tbm=isch',
+    nombresComunes: ['Quina andina', 'Quina del Cauca', 'Cascarilla'],
     propiedadesMedicinales: [
       'Antipalúdico (cura la malaria por su contenido de quinina)',
       'Antipirético potente (baja la fiebre)',
       'Analgésico',
       'Tónico amargo digestivo',
     ],
-    partesUtiles: [
-      'Corteza'
-    ],
+    partesUtiles: ['Corteza'],
     esenciasFlorales: [
       'Restauración del orden mental ante el caos',
       'Ayuda a asimilar lecciones kármicas repetitivas',
@@ -7223,19 +5798,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Gentianales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Gentianales',
       familia: 'Rubiaceae',
-      genero : 'Cinchona',
+      genero: 'Cinchona',
       especie: 'pitayensis',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas',
-        'Lamíidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas', 'Lamíidas'],
     },
     preparaciones: [
       {
@@ -7246,22 +5816,16 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Corteza seca y triturada de Quina',
-            cantidad   : '5 gramos',
+            cantidad: '5 gramos',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '500 ml',
+            cantidad: '500 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar la corteza y molerla hasta obtener un polvo grueso.'
-          ],
-          [
-            2,
-            'Colocar en el agua fría y llevar a fuego.'
-          ],
+          [1, 'Lavar la corteza y molerla hasta obtener un polvo grueso.'],
+          [2, 'Colocar en el agua fría y llevar a fuego.'],
           [
             3,
             'Hervir lentamente por 20 minutos para extraer los alcaloides amargos.',
@@ -7280,21 +5844,15 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Piper bogotense',
-    imageUrl        : 'https://www.google.com/search?q=Piper+bogotense&tbm=isch',
-    nombresComunes  : [
-      'Cordoncillo',
-      'Matico andino'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Piper+bogotense&tbm=isch',
+    nombresComunes: ['Cordoncillo', 'Matico andino'],
     propiedadesMedicinales: [
       'Hemostático muy potente (detiene el sangrado al instante)',
       'Vulnerario (cierra heridas)',
       'Analgésico local',
       'Astringente',
     ],
-    partesUtiles: [
-      'Hojas frescas',
-      'Sumidades florales (espigas)'
-    ],
+    partesUtiles: ['Hojas frescas', 'Sumidades florales (espigas)'],
     esenciasFlorales: [
       'Cierre de ciclos abiertos',
       'Cicatrización del aura',
@@ -7318,17 +5876,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Piperales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Piperales',
       familia: 'Piperaceae',
-      genero : 'Piper',
+      genero: 'Piper',
       especie: 'bogotense',
-      clados : [
-        'Angiospermas',
-        'Magnolíidas'
-      ],
+      clados: ['Angiospermas', 'Magnolíidas'],
     },
     preparaciones: [
       {
@@ -7339,14 +5894,11 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas frescas de cordoncillo',
-            cantidad   : '10 hojas',
+            cantidad: '10 hojas',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar rápidamente las hojas frescas bajo el agua.'
-          ],
+          [1, 'Lavar rápidamente las hojas frescas bajo el agua.'],
           [
             2,
             'Triturarlas entre las manos limpias o en un mortero hasta extraer un jugo verdoso oscuro.',
@@ -7355,10 +5907,7 @@ export const plantList: EspecimenType[] = [
             3,
             'Colocar la masa vegetal directamente sobre el corte o herida que está sangrando.',
           ],
-          [
-            4,
-            'Presionar firmemente con una gasa o venda.'
-          ],
+          [4, 'Presionar firmemente con una gasa o venda.'],
           [
             5,
             'Dejar actuar hasta que el sangrado se detenga por completo. El matico actuará como un tapón biológico.',
@@ -7369,21 +5918,14 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Brugmansia sanguinea',
-    imageUrl        : 'https://www.google.com/search?q=Brugmansia+sanguinea&tbm=isch',
-    nombresComunes  : [
-      'Cacao sabanero',
-      'Borrachera roja',
-      'Floripondio rojo'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Brugmansia+sanguinea&tbm=isch',
+    nombresComunes: ['Cacao sabanero', 'Borrachera roja', 'Floripondio rojo'],
     propiedadesMedicinales: [
       'Analgésico articular extremo (Tópico)',
       'Antiespasmódico (Tópico)',
       'Tóxico delirante (altísimo riesgo si se ingiere, contiene escopolamina y atropina)',
     ],
-    partesUtiles: [
-      'Hojas frescas',
-      'Flores (solo uso externo/ritual)'
-    ],
+    partesUtiles: ['Hojas frescas', 'Flores (solo uso externo/ritual)'],
     esenciasFlorales: [
       'Despertar espiritual',
       'Confrontación profunda con la propia sombra',
@@ -7406,19 +5948,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Solanales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Solanales',
       familia: 'Solanaceae',
-      genero : 'Brugmansia',
+      genero: 'Brugmansia',
       especie: 'sanguinea',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas',
-        'Lamíidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas', 'Lamíidas'],
     },
     preparaciones: [
       {
@@ -7429,22 +5966,16 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas frescas de cacao sabanero',
-            cantidad   : '2 hojas grandes',
+            cantidad: '2 hojas grandes',
           },
           {
             ingrediente: 'Aceite mineral o de almendras',
-            cantidad   : 'Unas gotas',
+            cantidad: 'Unas gotas',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar las hojas y secarlas cuidadosamente.'
-          ],
-          [
-            2,
-            'Untar la superficie de la hoja con un poco de aceite.'
-          ],
+          [1, 'Lavar las hojas y secarlas cuidadosamente.'],
+          [2, 'Untar la superficie de la hoja con un poco de aceite.'],
           [
             3,
             'Pasar la hoja rápidamente por el fuego de la estufa para ablandarla y liberar sus alcaloides, sin dejar que se queme.',
@@ -7463,20 +5994,15 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Borojoa patinoi',
-    imageUrl        : 'https://www.google.com/search?q=Borojoa+patinoi&tbm=isch',
-    nombresComunes  : [
-      'Borojó',
-      'Fruta de la energía'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Borojoa+patinoi&tbm=isch',
+    nombresComunes: ['Borojó', 'Fruta de la energía'],
     propiedadesMedicinales: [
       'Vitamínico y remineralizante de alto impacto',
       'Estimulante y energizante celular',
       'Hipotensor (regula presión arterial)',
       'Equilibrador del azúcar en sangre',
     ],
-    partesUtiles: [
-      'Fruto maduro'
-    ],
+    partesUtiles: ['Fruto maduro'],
     esenciasFlorales: [
       'Recarga de la batería vital',
       'Pasión y fuerza física',
@@ -7500,19 +6026,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Gentianales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Gentianales',
       familia: 'Rubiaceae',
-      genero : 'Borojoa',
+      genero: 'Borojoa',
       especie: 'patinoi',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas',
-        'Lamíidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas', 'Lamíidas'],
     },
     preparaciones: [
       {
@@ -7523,15 +6044,15 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Pulpa madura de borojó',
-            cantidad   : '100 gramos',
+            cantidad: '100 gramos',
           },
           {
             ingrediente: 'Agua o leche (animal o vegetal)',
-            cantidad   : '250 ml',
+            cantidad: '250 ml',
           },
           {
             ingrediente: 'Miel o panela',
-            cantidad   : 'Al gusto',
+            cantidad: 'Al gusto',
           },
         ],
         pasos: [
@@ -7539,14 +6060,8 @@ export const plantList: EspecimenType[] = [
             1,
             'Abrir el fruto maduro (que debe estar muy suave, de color pardo) y extraer la pulpa con una cuchara.',
           ],
-          [
-            2,
-            'Colocar la pulpa en la licuadora junto con el agua o la leche.'
-          ],
-          [
-            3,
-            'Añadir la miel o panela.'
-          ],
+          [2, 'Colocar la pulpa en la licuadora junto con el agua o la leche.'],
+          [3, 'Añadir la miel o panela.'],
           [
             4,
             'Licuar a velocidad media hasta obtener un batido denso y espumoso.',
@@ -7561,22 +6076,15 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Bocconia frutescens',
-    imageUrl        : 'https://www.google.com/search?q=Bocconia+frutescens&tbm=isch',
-    nombresComunes  : [
-      'Trompeto',
-      'Siete camisas',
-      'Celidonia andina'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Bocconia+frutescens&tbm=isch',
+    nombresComunes: ['Trompeto', 'Siete camisas', 'Celidonia andina'],
     propiedadesMedicinales: [
       'Queratolítico (destruye verrugas y callos)',
       'Cicatrizante externo',
       'Antiséptico potente',
       'Antimicrobiano tópico',
     ],
-    partesUtiles: [
-      'Látex anaranjado/amarillo',
-      'Hojas'
-    ],
+    partesUtiles: ['Látex anaranjado/amarillo', 'Hojas'],
     esenciasFlorales: [
       'Desprendimiento de viejas estructuras',
       'Renovación de la perspectiva',
@@ -7600,17 +6108,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Ranunculales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Ranunculales',
       familia: 'Papaveraceae',
-      genero : 'Bocconia',
+      genero: 'Bocconia',
       especie: 'frutescens',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas'],
     },
     preparaciones: [
       {
@@ -7621,7 +6126,7 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Látex fresco anaranjado del trompeto',
-            cantidad   : '1 o 2 gotas',
+            cantidad: '1 o 2 gotas',
           },
         ],
         pasos: [
@@ -7651,19 +6156,14 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Valeriana clematitis',
-    imageUrl        : 'https://www.google.com/search?q=Valeriana+clematitis&tbm=isch',
-    nombresComunes  : [
-      'Valeriana de páramo',
-      'Valeriana andina'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Valeriana+clematitis&tbm=isch',
+    nombresComunes: ['Valeriana de páramo', 'Valeriana andina'],
     propiedadesMedicinales: [
       'Sedante poderoso del sistema nervioso',
       'Inductor del sueño',
       'Antiespasmódico gastrointestinal (de origen nervioso)',
     ],
-    partesUtiles: [
-      'Raíces y rizomas (característico olor penetrante)'
-    ],
+    partesUtiles: ['Raíces y rizomas (característico olor penetrante)'],
     esenciasFlorales: [
       'Paz en la tormenta',
       'Desconexión del ruido mental',
@@ -7688,19 +6188,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Dipsacales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Dipsacales',
       familia: 'Caprifoliaceae',
-      genero : 'Valeriana',
+      genero: 'Valeriana',
       especie: 'clematitis',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Astéridas',
-        'Campanúlidas'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Astéridas', 'Campanúlidas'],
     },
     preparaciones: [
       {
@@ -7711,26 +6206,20 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Raíz limpia y triturada de valeriana andina',
-            cantidad   : '5 gramos',
+            cantidad: '5 gramos',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '250 ml',
+            cantidad: '250 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar muy bien las raíces para retirar toda la tierra.'
-          ],
+          [1, 'Lavar muy bien las raíces para retirar toda la tierra.'],
           [
             2,
             'Triturarlas ligeramente (liberarán un fuerte olor característico, similar a tierra húmeda o calcetín sucio).',
           ],
-          [
-            3,
-            'Colocar en el agua y llevar al fuego.'
-          ],
+          [3, 'Colocar en el agua y llevar al fuego.'],
           [
             4,
             'Apenas rompa a hervir, apagar inmediatamente (no hervir en exceso para no degradar los valepotriatos).',
@@ -7747,21 +6236,14 @@ export const plantList: EspecimenType[] = [
     nombreCientifico: 'Caryodendron orinocense',
     imageUrl:
       'https://www.google.com/search?q=Caryodendron+orinocense&tbm=isch',
-    nombresComunes: [
-      'Cacay',
-      'Inchi',
-      'Nuez de Barinas'
-    ],
+    nombresComunes: ['Cacay', 'Inchi', 'Nuez de Barinas'],
     propiedadesMedicinales: [
       'Regenerador celular cutáneo avanzado',
       'Antioxidante tópico',
       'Cicatrizante',
       'Nutracéutico (almendra)',
     ],
-    partesUtiles: [
-      'Aceite extraído de la nuez/semilla',
-      'Almendras'
-    ],
+    partesUtiles: ['Aceite extraído de la nuez/semilla', 'Almendras'],
     esenciasFlorales: [
       'Rejuvenecimiento espiritual',
       'Recuperación de la autoestima',
@@ -7785,19 +6267,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Malpighiales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Malpighiales',
       familia: 'Euphorbiaceae',
-      genero : 'Caryodendron',
+      genero: 'Caryodendron',
       especie: 'orinocense',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Eurosidas I'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Eurosidas I'],
     },
     preparaciones: [
       {
@@ -7839,21 +6316,15 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Banisteriopsis caapi',
-    imageUrl        : 'https://www.google.com/search?q=Banisteriopsis+caapi&tbm=isch',
-    nombresComunes  : [
-      'Yagé',
-      'Ayahuasca',
-      'Bejuco del alma'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Banisteriopsis+caapi&tbm=isch',
+    nombresComunes: ['Yagé', 'Ayahuasca', 'Bejuco del alma'],
     propiedadesMedicinales: [
       'Antidepresivo potente (inhibidor de la MAO natural)',
       'Purgante físico y espiritual (emético/catártico)',
       'Desparasitante profundo',
       'Enteógeno (induce estados alterados de conciencia)',
     ],
-    partesUtiles: [
-      'Corteza del bejuco maduro'
-    ],
+    partesUtiles: ['Corteza del bejuco maduro'],
     esenciasFlorales: [
       'Visión profunda de la verdad cósmica',
       'Limpieza absoluta del inconsciente',
@@ -7877,19 +6348,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Malpighiales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Malpighiales',
       familia: 'Malpighiaceae',
-      genero : 'Banisteriopsis',
+      genero: 'Banisteriopsis',
       especie: 'caapi',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Eurosidas I'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Eurosidas I'],
     },
     preparaciones: [
       {
@@ -7900,7 +6366,7 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Trozos macerados de bejuco de Yagé',
-            cantidad   : '1 kilo (para varias dosis grupales)',
+            cantidad: '1 kilo (para varias dosis grupales)',
           },
           {
             ingrediente:
@@ -7909,7 +6375,7 @@ export const plantList: EspecimenType[] = [
           },
           {
             ingrediente: 'Agua purificada',
-            cantidad   : 'Varios litros',
+            cantidad: 'Varios litros',
           },
         ],
         pasos: [
@@ -7939,23 +6405,15 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Passiflora incarnata',
-    imageUrl        : 'https://www.google.com/search?q=Passiflora+incarnata&tbm=isch',
-    nombresComunes  : [
-      'Flor de la pasión',
-      'Pasionaria',
-      'Maypop'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Passiflora+incarnata&tbm=isch',
+    nombresComunes: ['Flor de la pasión', 'Pasionaria', 'Maypop'],
     propiedadesMedicinales: [
       'Sedante del sistema nervioso central',
       'Ansiolítico',
       'Antiespasmódico',
       'Hipotensor leve',
     ],
-    partesUtiles: [
-      'Hojas',
-      'Flores',
-      'Partes aéreas'
-    ],
+    partesUtiles: ['Hojas', 'Flores', 'Partes aéreas'],
     esenciasFlorales: [
       'Paz interior profunda',
       'Conexión con la conciencia crística',
@@ -7979,19 +6437,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Malpighiales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Malpighiales',
       familia: 'Passifloraceae',
-      genero : 'Passiflora',
+      genero: 'Passiflora',
       especie: 'incarnata',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Eurosidas I'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Eurosidas I'],
     },
     preparaciones: [
       {
@@ -8002,42 +6455,30 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Partes aéreas secas de Passiflora incarnata',
-            cantidad   : '1 cucharada (aprox 5g)',
+            cantidad: '1 cucharada (aprox 5g)',
           },
           {
             ingrediente: 'Agua hirviendo',
-            cantidad   : '250 ml',
+            cantidad: '250 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Colocar la hierba seca en una taza de cerámica.'
-          ],
+          [1, 'Colocar la hierba seca en una taza de cerámica.'],
           [
             2,
             'Verter el agua hirviendo y tapar inmediatamente para no perder aceites volátiles.',
           ],
-          [
-            3,
-            'Dejar en infusión por 10 a 15 minutos.'
-          ],
-          [
-            4,
-            'Colar y endulzar ligeramente si se desea.'
-          ],
-          [
-            5,
-            'Beber en sorbos lentos en un ambiente tranquilo.'
-          ],
+          [3, 'Dejar en infusión por 10 a 15 minutos.'],
+          [4, 'Colar y endulzar ligeramente si se desea.'],
+          [5, 'Beber en sorbos lentos en un ambiente tranquilo.'],
         ],
       },
     ],
   },
   {
     nombreCientifico: 'Passiflora edulis',
-    imageUrl        : 'https://www.google.com/search?q=Passiflora+edulis&tbm=isch',
-    nombresComunes  : [
+    imageUrl: 'https://www.google.com/search?q=Passiflora+edulis&tbm=isch',
+    nombresComunes: [
       'Maracuyá',
       'Gulupa (variedad púrpura)',
       'Fruta de la pasión',
@@ -8048,10 +6489,7 @@ export const plantList: EspecimenType[] = [
       'Hipolipemiante (ayuda a reducir colesterol)',
       'Antioxidante celular',
     ],
-    partesUtiles: [
-      'Hojas (para medicina)',
-      'Fruto (alimento y jugo)'
-    ],
+    partesUtiles: ['Hojas (para medicina)', 'Fruto (alimento y jugo)'],
     esenciasFlorales: [
       'Pasión por la vida',
       'Asimilación de la dulzura y la vitalidad',
@@ -8075,19 +6513,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Malpighiales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Malpighiales',
       familia: 'Passifloraceae',
-      genero : 'Passiflora',
+      genero: 'Passiflora',
       especie: 'edulis',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Eurosidas I'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Eurosidas I'],
     },
     preparaciones: [
       {
@@ -8098,55 +6531,34 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas verdes de maracuyá frescas o secas',
-            cantidad   : '2 hojas grandes',
+            cantidad: '2 hojas grandes',
           },
           {
             ingrediente: 'Agua hirviendo',
-            cantidad   : '300 ml',
+            cantidad: '300 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar las hojas de la enredadera.'
-          ],
-          [
-            2,
-            'Trozarlas con las manos y colocarlas en una tetera.'
-          ],
-          [
-            3,
-            'Agregar el agua caliente, tapar y dejar reposar 8 minutos.'
-          ],
-          [
-            4,
-            'Colar el líquido, que tendrá un color verde pálido.'
-          ],
-          [
-            5,
-            'Beber sin azúcar para maximizar el efecto hipotensor.'
-          ],
+          [1, 'Lavar las hojas de la enredadera.'],
+          [2, 'Trozarlas con las manos y colocarlas en una tetera.'],
+          [3, 'Agregar el agua caliente, tapar y dejar reposar 8 minutos.'],
+          [4, 'Colar el líquido, que tendrá un color verde pálido.'],
+          [5, 'Beber sin azúcar para maximizar el efecto hipotensor.'],
         ],
       },
     ],
   },
   {
     nombreCientifico: 'Passiflora ligularis',
-    imageUrl        : 'https://www.google.com/search?q=Passiflora+ligularis&tbm=isch',
-    nombresComunes  : [
-      'Granadilla',
-      'Granadilla andina'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Passiflora+ligularis&tbm=isch',
+    nombresComunes: ['Granadilla', 'Granadilla andina'],
     propiedadesMedicinales: [
       'Regulador gástrico',
       'Antiespasmódico infantil',
       'Laxante muy suave (mucílagos del fruto)',
       'Calmante nervioso leve',
     ],
-    partesUtiles: [
-      'Fruto (pulpa y semillas)',
-      'Hojas tiernas'
-    ],
+    partesUtiles: ['Fruto (pulpa y semillas)', 'Hojas tiernas'],
     esenciasFlorales: [
       'Nutrición afectiva materno-infantil',
       'Consuelo en la tristeza pura',
@@ -8169,19 +6581,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Malpighiales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Malpighiales',
       familia: 'Passifloraceae',
-      genero : 'Passiflora',
+      genero: 'Passiflora',
       especie: 'ligularis',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Eurosidas I'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Eurosidas I'],
     },
     preparaciones: [
       {
@@ -8192,14 +6599,11 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Frutos de granadilla maduros',
-            cantidad   : '2 unidades',
+            cantidad: '2 unidades',
           },
         ],
         pasos: [
-          [
-            1,
-            'Romper la cáscara dura de la granadilla.'
-          ],
+          [1, 'Romper la cáscara dura de la granadilla.'],
           [
             2,
             'Extraer toda la pulpa mucilaginosa y las semillas con una cuchara.',
@@ -8212,10 +6616,7 @@ export const plantList: EspecimenType[] = [
             4,
             'Para adultos, consumir directamente con las semillas masticándolas bien (aportan fibra).',
           ],
-          [
-            5,
-            'Dar de beber a temperatura ambiente.'
-          ],
+          [5, 'Dar de beber a temperatura ambiente.'],
         ],
       },
     ],
@@ -8224,11 +6625,7 @@ export const plantList: EspecimenType[] = [
     nombreCientifico: 'Passiflora quadrangularis',
     imageUrl:
       'https://www.google.com/search?q=Passiflora+quadrangularis&tbm=isch',
-    nombresComunes: [
-      'Badea',
-      'Corvejo',
-      'Granadilla gigante'
-    ],
+    nombresComunes: ['Badea', 'Corvejo', 'Granadilla gigante'],
     propiedadesMedicinales: [
       'Sedante fuerte',
       'Diurético',
@@ -8262,19 +6659,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Malpighiales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Malpighiales',
       familia: 'Passifloraceae',
-      genero : 'Passiflora',
+      genero: 'Passiflora',
       especie: 'quadrangularis',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Eurosidas I'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Eurosidas I'],
     },
     preparaciones: [
       {
@@ -8285,30 +6677,21 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas maduras de badea',
-            cantidad   : '5 gramos',
+            cantidad: '5 gramos',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '300 ml',
+            cantidad: '300 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Lavar las hojas grandes de la planta.'
-          ],
-          [
-            2,
-            'Colocarlas en el agua y llevar a fuego bajo.'
-          ],
+          [1, 'Lavar las hojas grandes de la planta.'],
+          [2, 'Colocarlas en el agua y llevar a fuego bajo.'],
           [
             3,
             'Hervir por 5 minutos para extraer los alcaloides sedantes (passiflorina).',
           ],
-          [
-            4,
-            'Dejar reposar, colar y consumir tibio.'
-          ],
+          [4, 'Dejar reposar, colar y consumir tibio.'],
           [
             5,
             'Aviso: No ingerir decocciones de la raíz sin supervisión experta por riesgo de toxicidad.',
@@ -8319,22 +6702,15 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Passiflora maliformis',
-    imageUrl        : 'https://www.google.com/search?q=Passiflora+maliformis&tbm=isch',
-    nombresComunes  : [
-      'Cholupa',
-      'Chulupa',
-      'Granadilla de piedra'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Passiflora+maliformis&tbm=isch',
+    nombresComunes: ['Cholupa', 'Chulupa', 'Granadilla de piedra'],
     propiedadesMedicinales: [
       'Calmante nervioso',
       'Febrífugo leve (refrescante)',
       'Antioxidante',
       'Antiespasmódico',
     ],
-    partesUtiles: [
-      'Fruto',
-      'Hojas'
-    ],
+    partesUtiles: ['Fruto', 'Hojas'],
     esenciasFlorales: [
       'Estabilidad emocional',
       'Protección de la propia vulnerabilidad (representado en su cáscara dura como piedra)',
@@ -8342,7 +6718,7 @@ export const plantList: EspecimenType[] = [
     ],
     correspondenciasEnergeticas: [
       'Sello protector del aura',
-      'Refrescamiento del \'fuego\' mental',
+      "Refrescamiento del 'fuego' mental",
       'Elemento Tierra y Agua',
     ],
     malesEmocionales: [
@@ -8357,78 +6733,54 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Malpighiales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Malpighiales',
       familia: 'Passifloraceae',
-      genero : 'Passiflora',
+      genero: 'Passiflora',
       especie: 'maliformis',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Eurosidas I'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Eurosidas I'],
     },
     preparaciones: [
       {
         usoTerapeutico:
           'Para bajar los sofocos corporales, refrescar el sistema nervioso y calmar la reactividad',
         formaDeAplicacion: 'Consumir como jugo fresco durante el día.',
-        ingredientes     : [
+        ingredientes: [
           {
             ingrediente: 'Frutos de cholupa',
-            cantidad   : '3 unidades',
+            cantidad: '3 unidades',
           },
           {
             ingrediente: 'Agua purificada',
-            cantidad   : '500 ml',
+            cantidad: '500 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Quebrar la dura cáscara de la cholupa con un golpe seco.'
-          ],
-          [
-            2,
-            'Extraer la pulpa aromática.'
-          ],
+          [1, 'Quebrar la dura cáscara de la cholupa con un golpe seco.'],
+          [2, 'Extraer la pulpa aromática.'],
           [
             3,
             'Licuar a velocidad muy baja (pulsos) con el agua para no triturar completamente las semillas.',
           ],
-          [
-            4,
-            'Colar para separar los fragmentos de semillas del jugo.'
-          ],
-          [
-            5,
-            'Servir frío y beber para refrescar el organismo.'
-          ],
+          [4, 'Colar para separar los fragmentos de semillas del jugo.'],
+          [5, 'Servir frío y beber para refrescar el organismo.'],
         ],
       },
     ],
   },
   {
     nombreCientifico: 'Passiflora tarminiana',
-    imageUrl        : 'https://www.google.com/search?q=Passiflora+tarminiana&tbm=isch',
-    nombresComunes  : [
-      'Curuba de Castilla',
-      'Curuba india',
-      'Tacso'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Passiflora+tarminiana&tbm=isch',
+    nombresComunes: ['Curuba de Castilla', 'Curuba india', 'Tacso'],
     propiedadesMedicinales: [
       'Astringente gástrico',
       'Sedante estomacal',
       'Antioxidante potente (vitamina C)',
       'Vulnerario (hojas tópicas)',
     ],
-    partesUtiles: [
-      'Fruto',
-      'Hojas secas'
-    ],
+    partesUtiles: ['Fruto', 'Hojas secas'],
     esenciasFlorales: [
       'Adaptabilidad a entornos fríos o inexplorados',
       'Fluidez emocional',
@@ -8452,19 +6804,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Malpighiales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Malpighiales',
       familia: 'Passifloraceae',
-      genero : 'Passiflora',
+      genero: 'Passiflora',
       especie: 'tarminiana',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Eurosidas I'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Eurosidas I'],
     },
     preparaciones: [
       {
@@ -8475,30 +6822,18 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas de curuba de Castilla secas',
-            cantidad   : '1 cucharadita',
+            cantidad: '1 cucharadita',
           },
           {
             ingrediente: 'Agua hirviendo',
-            cantidad   : '200 ml',
+            cantidad: '200 ml',
           },
         ],
         pasos: [
-          [
-            1,
-            'Triturar las hojas secas finamente.'
-          ],
-          [
-            2,
-            'Colocarlas en una taza y verter el agua caliente.'
-          ],
-          [
-            3,
-            'Tapar y dejar reposar 10 minutos.'
-          ],
-          [
-            4,
-            'Colar la infusión.'
-          ],
+          [1, 'Triturar las hojas secas finamente.'],
+          [2, 'Colocarlas en una taza y verter el agua caliente.'],
+          [3, 'Tapar y dejar reposar 10 minutos.'],
+          [4, 'Colar la infusión.'],
           [
             5,
             'Beber tibio; sus taninos ayudarán a regular la mucosa estomacal irritada por el estrés.',
@@ -8509,8 +6844,8 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Passiflora vitifolia',
-    imageUrl        : 'https://www.google.com/search?q=Passiflora+vitifolia&tbm=isch',
-    nombresComunes  : [
+    imageUrl: 'https://www.google.com/search?q=Passiflora+vitifolia&tbm=isch',
+    nombresComunes: [
       'Pasionaria roja',
       'Granadilla de monte',
       'Flor de la pasión escarlata',
@@ -8521,10 +6856,7 @@ export const plantList: EspecimenType[] = [
       'Antitusivo y expectorante',
       'Antioxidante',
     ],
-    partesUtiles: [
-      'Hojas',
-      'Flores rojas'
-    ],
+    partesUtiles: ['Hojas', 'Flores rojas'],
     esenciasFlorales: [
       'Despertar de la fuerza de voluntad',
       'Reactivación de la libido vital',
@@ -8548,67 +6880,47 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Malpighiales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Malpighiales',
       familia: 'Passifloraceae',
-      genero : 'Passiflora',
+      genero: 'Passiflora',
       especie: 'vitifolia',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Eurosidas I'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Eurosidas I'],
     },
     preparaciones: [
       {
         usoTerapeutico:
           'Para reactivar la circulación sanguínea, bajar la presión arterial y desinflamar',
         formaDeAplicacion: 'Beber 1 taza de decocción de hojas al día.',
-        ingredientes     : [
+        ingredientes: [
           {
             ingrediente: 'Hojas de pasionaria roja',
-            cantidad   : '10 gramos',
+            cantidad: '10 gramos',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '300 ml',
+            cantidad: '300 ml',
           },
         ],
         pasos: [
           [
             1,
-            'Lavar las hojas (que se asemejan a las de la vid, de ahí \'vitifolia\').',
+            "Lavar las hojas (que se asemejan a las de la vid, de ahí 'vitifolia').",
           ],
-          [
-            2,
-            'Hervir en agua a fuego medio por 5 a 8 minutos.'
-          ],
-          [
-            3,
-            'Apagar y dejar en reposo.'
-          ],
-          [
-            4,
-            'Filtrar el líquido para retirar las vellosidades de la planta.'
-          ],
-          [
-            5,
-            'Tomar tibio para mejorar la vasodilatación.'
-          ],
+          [2, 'Hervir en agua a fuego medio por 5 a 8 minutos.'],
+          [3, 'Apagar y dejar en reposo.'],
+          [4, 'Filtrar el líquido para retirar las vellosidades de la planta.'],
+          [5, 'Tomar tibio para mejorar la vasodilatación.'],
         ],
       },
     ],
   },
   {
     nombreCientifico: 'Passiflora danielii',
-    imageUrl        : 'https://www.google.com/search?q=Passiflora+danielii&tbm=isch',
-    nombresComunes  : [
-      'Pasionaria de Antioquia',
-      'Flor de pasión endémica'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Passiflora+danielii&tbm=isch',
+    nombresComunes: ['Pasionaria de Antioquia', 'Flor de pasión endémica'],
     propiedadesMedicinales: [
       'Relajante del sistema nervioso',
       'Ansiolítico leve',
@@ -8639,19 +6951,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Malpighiales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Malpighiales',
       familia: 'Passifloraceae',
-      genero : 'Passiflora',
+      genero: 'Passiflora',
       especie: 'danielii',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Eurosidas I'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Eurosidas I'],
     },
     preparaciones: [
       {
@@ -8667,7 +6974,7 @@ export const plantList: EspecimenType[] = [
           },
           {
             ingrediente: 'Agua de manantial y Brandy',
-            cantidad   : 'Para preparar la tintura madre',
+            cantidad: 'Para preparar la tintura madre',
           },
         ],
         pasos: [
@@ -8683,10 +6990,7 @@ export const plantList: EspecimenType[] = [
             3,
             'Dejar expuesta a la luz solar durante 3 horas para imprimir su huella vibracional.',
           ],
-          [
-            4,
-            'Retirar el cuenco cuidadosamente.'
-          ],
+          [4, 'Retirar el cuenco cuidadosamente.'],
           [
             5,
             'Mezclar el agua con brandy al 50% para conservar la esencia madre, que luego se diluirá en goteros comerciales.',
@@ -8699,19 +7003,13 @@ export const plantList: EspecimenType[] = [
     nombreCientifico: 'Passiflora antioquiensis',
     imageUrl:
       'https://www.google.com/search?q=Passiflora+antioquiensis&tbm=isch',
-    nombresComunes: [
-      'Curuba antioqueña',
-      'Curuba de monte'
-    ],
+    nombresComunes: ['Curuba antioqueña', 'Curuba de monte'],
     propiedadesMedicinales: [
       'Sedante nervioso',
       'Ansiolítico',
       'Vitamínico y remineralizante',
     ],
-    partesUtiles: [
-      'Fruto',
-      'Hojas'
-    ],
+    partesUtiles: ['Fruto', 'Hojas'],
     esenciasFlorales: [
       'Fuerza en la adversidad',
       'Apertura a la propia belleza interior',
@@ -8734,19 +7032,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Malpighiales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Malpighiales',
       familia: 'Passifloraceae',
-      genero : 'Passiflora',
+      genero: 'Passiflora',
       especie: 'antioquiensis',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Eurosidas I'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Eurosidas I'],
     },
     preparaciones: [
       {
@@ -8757,11 +7050,11 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas de curuba antioqueña',
-            cantidad   : '5 gramos',
+            cantidad: '5 gramos',
           },
           {
             ingrediente: 'Agua hirviendo',
-            cantidad   : '250 ml',
+            cantidad: '250 ml',
           },
         ],
         pasos: [
@@ -8769,18 +7062,9 @@ export const plantList: EspecimenType[] = [
             1,
             'Para la infusión nocturna: Colocar las hojas limpias en una taza.',
           ],
-          [
-            2,
-            'Añadir el agua caliente y tapar.'
-          ],
-          [
-            3,
-            'Infundir durante 10 minutos.'
-          ],
-          [
-            4,
-            'Filtrar el líquido resultante.'
-          ],
+          [2, 'Añadir el agua caliente y tapar.'],
+          [3, 'Infundir durante 10 minutos.'],
+          [4, 'Filtrar el líquido resultante.'],
           [
             5,
             'Beber en un ambiente oscuro y sin pantallas para relajar el sistema nervioso central.',
@@ -8791,21 +7075,14 @@ export const plantList: EspecimenType[] = [
   },
   {
     nombreCientifico: 'Passiflora alata',
-    imageUrl        : 'https://www.google.com/search?q=Passiflora+alata&tbm=isch',
-    nombresComunes  : [
-      'Maracuyá dulce',
-      'Pasionaria fragante',
-      'Badea chica'
-    ],
+    imageUrl: 'https://www.google.com/search?q=Passiflora+alata&tbm=isch',
+    nombresComunes: ['Maracuyá dulce', 'Pasionaria fragante', 'Badea chica'],
     propiedadesMedicinales: [
       'Inductor del sueño profundo',
       'Calmante',
       'Regulador cardíaco (taquicardias menores)',
     ],
-    partesUtiles: [
-      'Hojas grandes',
-      'Flores (altamente aromáticas)'
-    ],
+    partesUtiles: ['Hojas grandes', 'Flores (altamente aromáticas)'],
     esenciasFlorales: [
       'Magnetismo personal',
       'Dulzura en el trato',
@@ -8829,19 +7106,14 @@ export const plantList: EspecimenType[] = [
     ],
     taxon: {
       dominio: 'Eukaryota',
-      reino  : 'Plantae',
-      filo   : 'Tracheophyta',
-      clase  : 'Magnoliopsida',
-      orden  : 'Malpighiales',
+      reino: 'Plantae',
+      filo: 'Tracheophyta',
+      clase: 'Magnoliopsida',
+      orden: 'Malpighiales',
       familia: 'Passifloraceae',
-      genero : 'Passiflora',
+      genero: 'Passiflora',
       especie: 'alata',
-      clados : [
-        'Angiospermas',
-        'Eudicotiledóneas',
-        'Rósidas',
-        'Eurosidas I'
-      ],
+      clados: ['Angiospermas', 'Eudicotiledóneas', 'Rósidas', 'Eurosidas I'],
     },
     preparaciones: [
       {
@@ -8852,11 +7124,11 @@ export const plantList: EspecimenType[] = [
         ingredientes: [
           {
             ingrediente: 'Hojas de maracuyá dulce (alata)',
-            cantidad   : '10 gramos',
+            cantidad: '10 gramos',
           },
           {
             ingrediente: 'Agua',
-            cantidad   : '300 ml',
+            cantidad: '300 ml',
           },
         ],
         pasos: [
@@ -8872,10 +7144,7 @@ export const plantList: EspecimenType[] = [
             3,
             'Retirar del fuego inmediatamente, tapar y dejar en reposo 10 minutos.',
           ],
-          [
-            4,
-            'Colar la preparación.'
-          ],
+          [4, 'Colar la preparación.'],
           [
             5,
             'Tomar a sorbos lentos, enfocándose conscientemente en disminuir el ritmo respiratorio.',

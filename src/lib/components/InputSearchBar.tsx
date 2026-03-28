@@ -9,10 +9,12 @@ import { Route } from 'next';
 
 export const InputSearchBar = () => {
   const {
-    search, setSearch
+    search,
+    setSearch
   } = useSearch();
   const {
-    state, dispatch
+    state,
+    dispatch
   } = useEspecimen();
 
   const router = useRouter();
@@ -20,13 +22,7 @@ export const InputSearchBar = () => {
   const searchParams = useSearchParams();
 
   return (
-    <div className={searchContainer} style={{
-      position       : 'fixed',
-      top            : '10%',
-      right          : '10%',
-      backgroundColor: 'var(--primary-container)'
-    }}
-    >
+    <div className={searchContainer}>
       <datalist id="lista_hierbas">
         {state.data.map(
           (
@@ -58,7 +54,7 @@ export const InputSearchBar = () => {
         ) => {
           dispatch(
             {
-              type   : 'SET_SEARCH',
+              type   : 'SET_SEARCH_NAME',
               payload: e.target.value,
             }
           );
@@ -90,7 +86,6 @@ export const InputSearchBar = () => {
         className={searchbar.icon}
         type="button"
         onClick={() => {
-          // 1. Reset Context & State Filters
           setSearch(
             ''
           );
@@ -99,21 +94,16 @@ export const InputSearchBar = () => {
               type: 'RESET_FILTERS',
             }
           );
-
-          // 2. Safely remove search params from the URL
           const params = new URLSearchParams(
             searchParams.toString()
           );
 
-          // Delete the URL parameter (change 'search' if your query param name is different, e.g., 'q')
           params.delete(
             'search'
           );
-
-          // 3. Update the URL without reloading the page
           router.replace(
             `${ pathname }?${ params.toString() }` as Route, {
-              scroll: false
+              scroll: false,
             }
           );
         }}

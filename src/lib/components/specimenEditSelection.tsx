@@ -28,7 +28,8 @@ export default function SpecimenEditSelection(
   const {
     cardRefs
   } = useAccordionScroll();
-  const defaultImage = 'https://via.placeholder.com/400x300?text=No+Image+Available';
+  const defaultImage
+    = 'https://via.placeholder.com/400x300?text=No+Image+Available';
 
   return (
     <Card
@@ -60,7 +61,7 @@ export default function SpecimenEditSelection(
           flexDirection                               : 'column',
           flexGrow                                    : 1,
           overflow                                    : 'hidden',
-          '@container specimenCard (min-width: 800px)': {
+          '@container specimenCard (min-width: 600px)': {
             flexDirection: 'row',
           },
         }}
@@ -69,7 +70,7 @@ export default function SpecimenEditSelection(
           sx={{
             width                                       : '100%',
             overflow                                    : 'hidden',
-            '@container specimenCard (min-width: 800px)': {
+            '@container specimenCard (min-width: 600px)': {
               width: '41.66%',
             },
           }}
@@ -77,9 +78,9 @@ export default function SpecimenEditSelection(
           <CardMedia
             component="img"
             sx={{
-              height                                      : 300,
+              height                                      : 400,
               objectFit                                   : 'cover',
-              '@container specimenCard (min-width: 800px)': {
+              '@container specimenCard (min-width: 600px)': {
                 height: '100%',
               },
             }}
@@ -95,26 +96,32 @@ export default function SpecimenEditSelection(
             flexDirection                               : 'column',
             overflowY                                   : 'auto',
             p                                           : 2,
-            '@container specimenCard (min-width: 800px)': {
+            '@container specimenCard (min-width: 600px)': {
               width: '58.33%',
             },
           }}
         >
           {isEditing
             ? (
-                <EspecimenForm initialData={plantData} setIsEditing={setIsEditing} />
+                <EspecimenForm
+                  initialData={plantData}
+                  setIsEditing={setIsEditing}
+                />
               )
             : (
-                <PlantCookbook plant={plantData} setIsEditing={setIsEditing} />
-              ) }
-          <div style={{
-            display : 'flex',
-            flexFlow: 'row nowrap'
-          }}
+                <PlantCookbook
+                  plant={plantData}
+                  setIsEditing={setIsEditing}
+                />
+              )}
+          <div
+            style={{
+              display : 'flex',
+              flexFlow: 'row nowrap',
+            }}
           >
-            <Button
-              variant="contained"
-              color="secondary"
+            <button
+              className={`${ buttonStyles.md3Btn } ${ buttonStyles.md3BtnTonalPrimary }`}
               onClick={() => {
                 return setIsEditing(
                   (
@@ -124,21 +131,22 @@ export default function SpecimenEditSelection(
                   }
                 );
               }}
-              endIcon={<EditIcon />}
-              sx={{
-                mt       : 'auto',
-                mb       : 2,
-                alignSelf: 'flex-start'
-              }}
             >
-              Editar
-            </Button>
+              <span
+                className={`material-symbols-outlined ${ buttonStyles.md3BtnIcon }`}
+              >
+                edit
+              </span>
+              <p>editar</p>
+            </button>
 
-            <Link href={`/hierba/${ plantData.nombreCientifico }`} className={buttonStyles.buttonActiveCategory} style={{
-              alignSelf: 'flex-start'
-            }}
+            <Link
+              href={`/hierba/${ plantData.nombreCientifico }`}
+              className={`${ buttonStyles.md3Btn } ${ buttonStyles.md3BtnTonal }`}
             >
-              <span className={`material-symbols-outlined ${ buttonStyles.icon }`}>
+              <span
+                className={`material-symbols-outlined ${ buttonStyles.md3BtnIcon }`}
+              >
                 expand_all
               </span>
               <p className={buttonStyles.text}>ver más</p>

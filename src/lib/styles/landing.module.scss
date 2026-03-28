@@ -4,7 +4,7 @@
   min-height: 100vh;
   background-color: var(--background);
   color: var(--on-background);
-  font-family: "Inter", system-ui, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
@@ -20,7 +20,7 @@
 }
 
 .logo {
-  font-family: "Merriweather", serif;
+  font-family: 'Merriweather', serif;
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary);
@@ -71,7 +71,7 @@
 }
 
 .title {
-  font-family: "Merriweather", serif;
+  font-family: 'Merriweather', serif;
   font-size: clamp(2.5rem, 5vw, 4rem);
   line-height: 1.15;
   color: var(--on-surface);
@@ -111,7 +111,11 @@
 .imagePlaceholder {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, var(--primary-container) 0%, var(--surface-variant) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--primary-container) 0%,
+    var(--surface-variant) 100%
+  );
   position: absolute;
   top: 0;
   left: 0;
@@ -127,7 +131,11 @@
   transform: translate(-50%, -50%);
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, var(--surface-bright) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    var(--surface-bright) 0%,
+    transparent 70%
+  );
   filter: blur(40px);
   opacity: 0.6;
 }
@@ -141,7 +149,7 @@
 }
 
 .sectionTitle {
-  font-family: "Merriweather", serif;
+  font-family: 'Merriweather', serif;
   font-size: 2.2rem;
   color: var(--on-surface);
   margin-bottom: 1.5rem;
@@ -181,7 +189,7 @@
 }
 
 .card h3 {
-  font-family: "Merriweather", serif;
+  font-family: 'Merriweather', serif;
   color: var(--primary);
   margin-bottom: 1rem;
   font-size: 1.3rem;

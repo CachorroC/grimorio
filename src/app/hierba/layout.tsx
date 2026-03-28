@@ -16,19 +16,16 @@ import { ReactNode, Suspense } from 'react';
   );
 } */
 
-export default function LayoutProcesosMain(
-  {
-    children,
-    right,
-  }: {
-    children: ReactNode;
-    right   : ReactNode;
-  }
-) {
+export default function LayoutProcesosMain({
+  children,
+  right,
+}: {
+  children: ReactNode;
+  right: ReactNode;
+}) {
   return (
     <div className={styles.main}>
       <Suspense fallback={<Loader />}>
-
         <Suspense fallback={<Loader />}>
           <div className={styles.mainContent}>{children}</div>
         </Suspense>

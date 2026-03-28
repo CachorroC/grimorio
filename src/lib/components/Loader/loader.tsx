@@ -1,4 +1,3 @@
-
 import styles from '#@/lib/styles/layout.module.css';
 
 export const Loader = () => {

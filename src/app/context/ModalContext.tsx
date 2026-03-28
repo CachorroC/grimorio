@@ -1,28 +1,19 @@
 'use client';
-import React, { createContext,
+import React, {
+  createContext,
   Dispatch,
   SetStateAction,
   useState,
-  useContext, } from 'react';
+  useContext,
+} from 'react';
 
 const ModalContext = createContext<{
-  isModalOpen   : boolean;
+  isModalOpen: boolean;
   setIsModalOpen: Dispatch<SetStateAction<boolean>>;
-} | null>(
-  null 
-);
+} | null>(null);
 
-export function ModalProvider(
-  {
-    children
-  }: { children: React.ReactNode } 
-) {
-  const [
-    isModalOpen,
-    setIsModalOpen
-  ] = useState(
-    false 
-  );
+export function ModalProvider({ children }: { children: React.ReactNode }) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <ModalContext.Provider
@@ -37,14 +28,10 @@ export function ModalProvider(
 }
 
 export function useModalContext() {
-  const context = useContext(
-    ModalContext 
-  );
+  const context = useContext(ModalContext);
 
-  if ( context === null ) {
-    throw new Error(
-      'useModalContext must be used inside a ModalProvider' 
-    );
+  if (context === null) {
+    throw new Error('useModalContext must be used inside a ModalProvider');
   }
 
   return context;

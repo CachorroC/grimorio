@@ -27,6 +27,10 @@ declare const styles: {
   readonly "linkNotActive": string;
   readonly "linkOpen": string;
   readonly "linkOpenActive": string;
+  readonly "md3Btn": string;
+  readonly "md3BtnIcon": string;
+  readonly "md3BtnTonal": string;
+  readonly "md3BtnTonalPrimary": string;
   readonly "notActive": string;
   readonly "searchBarLink": string;
   readonly "searchBarLinkActive": string;

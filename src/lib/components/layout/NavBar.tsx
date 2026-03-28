@@ -10,13 +10,10 @@ import { DrawerMenuButton } from '../buttons/nav-buttons';
 import ThemeToggle from '../ThemeToggle';
 
 export const NavBar = () => {
-  const {
-    isNavOpen
-  } = useNavigationContext();
+  const { isNavOpen } = useNavigationContext();
 
   return (
     <div className={styles.header}>
-
       <NavLink
         key={'home'}
         iconLabel={'home'}
@@ -28,7 +25,11 @@ export const NavBar = () => {
         textLabel={'Nueva Hierba en el compendio'}
         hrefLabel={'/hierba/nueva' as Route}
       />
-      <NavLink iconLabel={ 'potted_plant' } textLabel={ 'Hierbas del compendio' } hrefLabel={ '/hierbas' } />
+      <NavLink
+        iconLabel={'potted_plant'}
+        textLabel={'Hierbas del compendio'}
+        hrefLabel={'/hierbas'}
+      />
       <DrawerMenuButton />
       {isNavOpen && (
         <Suspense fallback={<Loader />}>
@@ -40,7 +41,11 @@ export const NavBar = () => {
               textLabel={'Nueva Hierba en el compendio'}
               hrefLabel={'/hierba/nueva' as Route}
             />
-            <NavLink iconLabel={ 'potted_plant' } textLabel={ 'Hierbas del compendio' } hrefLabel={ '/hierbas' } />
+            <NavLink
+              iconLabel={'potted_plant'}
+              textLabel={'Hierbas del compendio'}
+              hrefLabel={'/hierbas'}
+            />
           </Drawer>
         </Suspense>
       )}

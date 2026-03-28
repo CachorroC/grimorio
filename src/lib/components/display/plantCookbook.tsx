@@ -1,8 +1,25 @@
 'use client';
 
-import { Box, CardContent, Typography, Chip, Grid, Accordion, AccordionSummary,
-  AccordionDetails, List, ListItem, ListItemText, ListItemIcon, Divider,
-  Table, TableBody, TableCell, TableContainer, TableRow, Paper, Button } from '@mui/material';
+import { Box,
+  CardContent,
+  Typography,
+  Chip,
+  Grid,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+  List,
+  ListItem,
+  ListItemText,
+  ListItemIcon,
+  Divider,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableRow,
+  Paper,
+  Button, } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import CircleIcon from '@mui/icons-material/Circle';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
@@ -17,33 +34,58 @@ interface PlantCookbookProps {
 
 const TagSection = (
   {
-    title, tags, color
-  }: { title: string; tags: string[]; color: 'default' | 'primary' | 'secondary' | 'error' | 'info' | 'success' | 'warning'; }
+    title,
+    tags,
+    color,
+  }: {
+    title: string;
+    tags : string[];
+    color:
+    | 'default'
+    | 'primary'
+    | 'secondary'
+    | 'error'
+    | 'info'
+    | 'success'
+    | 'warning';
+  }
 ) => {
   if ( !tags || tags.length === 0 ) {
     return null;
   }
 
   return (
-    <Box sx={{
-      mb: 2
-    }}
+    <Box
+      sx={{
+        mb: 2,
+      }}
     >
-      <Typography variant="subtitle2" color="text.secondary" gutterBottom>
+      <Typography
+        variant="subtitle1"
+        color="textPrimary"
+        gutterBottom
+      >
         {title}
       </Typography>
-      <Box sx={{
-        display : 'flex',
-        flexWrap: 'wrap',
-        gap     : 1
-      }}
+      <Box
+        sx={{
+          display : 'flex',
+          flexWrap: 'wrap',
+          gap     : 1,
+        }}
       >
         {tags.map(
           (
             tag, index
           ) => {
             return (
-              <Chip key={index} label={tag} size="small" color={color} variant="outlined" />
+              <Chip
+                key={index}
+                label={tag}
+                size="small"
+                color={color}
+                variant='outlined'
+              />
             );
           }
         )}
@@ -54,7 +96,8 @@ const TagSection = (
 
 export default function PlantCookbook(
   {
-    plant, setIsEditing
+    plant,
+    setIsEditing,
   }: PlantCookbookProps
 ) {
   const {
@@ -63,11 +106,15 @@ export default function PlantCookbook(
 
   return (
     <>
-      <Grid container spacing={2}>
-        <Grid sx={{
-          xs: 12,
-          md: 7
-        }}
+      <Grid
+        container
+        spacing={2}
+      >
+        <Grid
+          sx={{
+            xs: 12,
+            md: 7,
+          }}
         >
           <CardContent
             sx={{
@@ -76,61 +123,108 @@ export default function PlantCookbook(
               justifyContent: 'center',
               p             : {
                 xs: 0,
-                md: 2
+                md: 2,
               },
             }}
           >
-            <Typography variant="h3" component="h1" gutterBottom sx={{
-              fontStyle : 'italic',
-              fontWeight: 'bold'
-            }}
+            <Typography
+              variant="h3"
+              component="h1"
+              gutterBottom
+              sx={{
+                fontStyle : 'italic',
+                fontWeight: 'bold',
+              }}
             >
               {plant.nombreCientifico}
             </Typography>
-            <Typography variant="h6" color="text.secondary" gutterBottom>
+            <Typography
+              variant="h6"
+              color="text.secondary"
+              gutterBottom
+            >
               {plant.nombresComunes.join(
                 ', '
-              )
-              }
+              )}
             </Typography>
 
-            <Divider sx={{
-              my: 2
-            }}
+            <Divider
+              sx={{
+                my: 2,
+              }}
             />
 
-            <TagSection title="Partes Útiles" tags={plant.partesUtiles} color="secondary" />
-            <TagSection title="Propiedades Medicinales" tags={plant.propiedadesMedicinales} color="success" />
-            <TagSection title="Males Físicos" tags={plant.malesFisicos} color="error" />
-            <TagSection title="Males Emocionales" tags={plant.malesEmocionales} color="error" />
-            <TagSection title="Correspondencias Energéticas" tags={plant.correspondenciasEnergeticas} color="success" />
-            <TagSection title="Esencias Florales" tags={plant.esenciasFlorales} color="primary" />
+            <TagSection
+              title="Partes Útiles"
+              tags={plant.partesUtiles}
+              color="secondary"
+            />
+            <TagSection
+              title="Esencias Florales"
+              tags={plant.esenciasFlorales}
+              color="primary"
+            />
+            <TagSection
+              title="Propiedades Medicinales"
+              tags={plant.propiedadesMedicinales}
+              color="success"
+            />
+            <TagSection
+              title="Correspondencias Energéticas"
+              tags={plant.correspondenciasEnergeticas}
+              color="success"
+            />
+            <TagSection
+              title="Males Físicos"
+              tags={plant.malesFisicos}
+              color="error"
+            />
+            <TagSection
+              title="Males Emocionales"
+              tags={plant.malesEmocionales}
+              color="error"
+            />
+
+
           </CardContent>
         </Grid>
       </Grid>
 
-      <CardContent sx={{
-        flexGrow: 1,
-        px      : 0,
-        mt      : 2,
-        p       : 2
-      }}
+      <CardContent
+        sx={{
+          flexGrow: 1,
+          px      : 0,
+          mt      : 2,
+          p       : 2,
+        }}
       >
-        <Grid container spacing={4}>
-          <Grid sx={{
-            xs: 12,
-            md: 4
-          }}
-          >
-            <Typography variant="h5" component="h2" gutterBottom sx={{
-              display   : 'flex',
-              alignItems: 'center',
-              gap       : 1
+        <Grid
+          container
+          spacing={4}
+        >
+          <Grid
+            sx={{
+              xs: 12,
+              md: 4,
             }}
+          >
+            <Typography
+              variant="h5"
+              component="h2"
+              gutterBottom
+              sx={{
+                display   : 'flex',
+                alignItems: 'center',
+                gap       : 1,
+              }}
             >
               <InfoOutlinedIcon /> Taxonomía
             </Typography>
-            <TableContainer component={Paper} variant="outlined">
+            <TableContainer
+              component={ Paper }
+              elevation={8}
+              variant="elevation"
+            >
               <Table size="small">
                 <TableBody>
                   {Object.entries(
@@ -157,10 +251,13 @@ export default function PlantCookbook(
 
                         return (
                           <TableRow key={key}>
-                            <TableCell component="th" scope="row" sx={{
-                              fontWeight   : 'bold',
-                              textTransform: 'capitalize'
-                            }}
+                            <TableCell
+                              component="th"
+                              scope="row"
+                              sx={{
+                                fontWeight   : 'bold',
+                                textTransform: 'capitalize',
+                              }}
                             >
                               {key}
                             </TableCell>
@@ -174,17 +271,22 @@ export default function PlantCookbook(
             </TableContainer>
           </Grid>
 
-          <Grid sx={{
-            xs: 12,
-            md: 8
-          }}
-          >
-            <Typography variant="h5" component="h2" gutterBottom sx={{
-              fontWeight  : 'bold',
-              borderBottom: '2px solid',
-              borderColor : 'primary.main',
-              pb          : 1
+          <Grid
+            sx={{
+              xs: 12,
+              md: 8,
             }}
+          >
+            <Typography
+              variant="h5"
+              component="h2"
+              gutterBottom
+              sx={{
+                fontWeight  : 'bold',
+                borderBottom: '2px solid',
+                borderColor : 'primary.main',
+                pb          : 1,
+              }}
             >
               Recetario / Preparaciones
             </Typography>
@@ -204,12 +306,13 @@ export default function PlantCookbook(
                     expanded={expanded === panelId}
                     // Pass both the unique panel ID and the parent Card ID
                     onChange={handleAccordionChange(
-                      panelId, plant.nombreCientifico
+                      panelId,
+                      plant.nombreCientifico,
                     )}
                     elevation={0}
                     sx={{
                       '&:before': {
-                        display: 'none'
+                        display: 'none',
                       },
                       border      : '1px solid',
                       borderColor : 'divider',
@@ -217,46 +320,67 @@ export default function PlantCookbook(
                       borderRadius: 1,
                     }}
                   >
-                    <AccordionSummary expandIcon={<ExpandMoreIcon />} sx={{
-                      backgroundColor: 'action.hover'
-                    }}
-                    >
-                      <Typography variant="subtitle1" sx={{
-                        fontWeight   : 'bold',
-                        textTransform: 'capitalize'
+                    <AccordionSummary
+                      expandIcon={<ExpandMoreIcon />}
+                      sx={{
+                        backgroundColor: 'action.hover',
                       }}
+                    >
+                      <Typography
+                        variant="subtitle1"
+                        sx={{
+                          fontWeight   : 'bold',
+                          textTransform: 'capitalize',
+                        }}
                       >
                         Para: {prep.usoTerapeutico}
                       </Typography>
-
                     </AccordionSummary>
 
                     <AccordionDetails>
-                      <Grid container spacing={3}>
-                        <Grid sx={{
-                          xs: 12,
-                          sm: 5
-                        }}
+                      <Grid
+                        container
+                        spacing={3}
+                      >
+                        <Grid
+                          sx={{
+                            xs: 12,
+                            sm: 5,
+                          }}
                         >
-                          <Typography variant="h6" gutterBottom color="primary">Ingredientes</Typography>
-                          <List dense disablePadding>
+                          <Typography
+                            variant="h6"
+                            gutterBottom
+                            color="primary"
+                          >
+                            Ingredientes
+                          </Typography>
+                          <List
+                            dense
+                            disablePadding
+                          >
                             {prep.ingredientes.map(
                               (
                                 ing, i
                               ) => {
                                 return (
-                                  <ListItem key={i} disableGutters sx={{
-                                    alignItems: 'flex-start'
-                                  }}
-                                  >
-                                    <ListItemIcon sx={{
-                                      minWidth: 24,
-                                      mt      : 0.5
+                                  <ListItem
+                                    key={i}
+                                    disableGutters
+                                    sx={{
+                                      alignItems: 'flex-start',
                                     }}
-                                    >
-                                      <CircleIcon sx={{
-                                        fontSize: 8
+                                  >
+                                    <ListItemIcon
+                                      sx={{
+                                        minWidth: 24,
+                                        mt      : 0.5,
                                       }}
+                                    >
+                                      <CircleIcon
+                                        sx={{
+                                          fontSize: 8,
+                                        }}
                                       />
                                     </ListItemIcon>
                                     <ListItemText
@@ -264,7 +388,7 @@ export default function PlantCookbook(
                                       secondary={ing.cantidad}
                                       primaryTypographyProps={{
                                         variant   : 'body2',
-                                        fontWeight: 'medium'
+                                        fontWeight: 'medium',
                                       }}
                                     />
                                   </ListItem>
@@ -274,12 +398,19 @@ export default function PlantCookbook(
                           </List>
                         </Grid>
 
-                        <Grid sx={{
-                          xs: 12,
-                          sm: 7
-                        }}
+                        <Grid
+                          sx={{
+                            xs: 12,
+                            sm: 7,
+                          }}
                         >
-                          <Typography variant="h6" gutterBottom color="primary">Preparación</Typography>
+                          <Typography
+                            variant="h6"
+                            gutterBottom
+                            color="primary"
+                          >
+                            Preparación
+                          </Typography>
                           <List disablePadding>
                             {prep.pasos.map(
                               (
@@ -289,21 +420,26 @@ export default function PlantCookbook(
                                 ], i
                               ) => {
                                 return (
-                                  <ListItem key={i} disableGutters alignItems="flex-start">
-                                    <Box sx={{
-                                      display        : 'flex',
-                                      alignItems     : 'center',
-                                      justifyContent : 'center',
-                                      minWidth       : 24,
-                                      height         : 24,
-                                      borderRadius   : '50%',
-                                      backgroundColor: 'primary.main',
-                                      color          : 'primary.contrastText',
-                                      fontSize       : '0.875rem',
-                                      fontWeight     : 'bold',
-                                      mr             : 2,
-                                      mt             : 0.5
-                                    }}
+                                  <ListItem
+                                    key={i}
+                                    disableGutters
+                                    alignItems="flex-start"
+                                  >
+                                    <Box
+                                      sx={{
+                                        display        : 'flex',
+                                        alignItems     : 'center',
+                                        justifyContent : 'center',
+                                        minWidth       : 24,
+                                        height         : 24,
+                                        borderRadius   : '50%',
+                                        backgroundColor: 'primary.main',
+                                        color          : 'primary.contrastText',
+                                        fontSize       : '0.875rem',
+                                        fontWeight     : 'bold',
+                                        mr             : 2,
+                                        mt             : 0.5,
+                                      }}
                                     >
                                       {stepNumber}
                                     </Box>
@@ -313,10 +449,12 @@ export default function PlantCookbook(
                               }
                             )}
                           </List>
-                          <Typography variant="subtitle2" sx={{
-                            fontWeight   : 'bold',
-                            textTransform: 'capitalize'
-                          }}
+                          <Typography
+                            variant="subtitle2"
+                            sx={{
+                              fontWeight   : 'bold',
+                              textTransform: 'capitalize',
+                            }}
                           >
                             Forma de aplicación: {prep.formaDeAplicacion}
                           </Typography>
@@ -331,15 +469,16 @@ export default function PlantCookbook(
         </Grid>
       </CardContent>
 
-      <Button onClick={() => {
-        return setIsEditing?.(
-          (
-            e
-          ) => {
-            return !e;
-          }
-        );
-      }}
+      <Button
+        onClick={() => {
+          return setIsEditing?.(
+            (
+              e
+            ) => {
+              return !e;
+            }
+          );
+        }}
       />
     </>
   );

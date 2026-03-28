@@ -1,4 +1,3 @@
-
 import { Loader } from '#@/lib/components/Loader/loader';
 import { Modal } from '#@/lib/components/Modal';
 import typography from 'styles/fonts/typography.module.css';

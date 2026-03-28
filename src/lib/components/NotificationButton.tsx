@@ -3,16 +3,12 @@
 import { usePushNotifications } from '#@/app/context/pushNotificationContext';
 
 export default function NotificationButton() {
-  const {
-    isSubscribed, subscribeToPush, unsubscribeFromPush, deviceId
-  }
-    = usePushNotifications();
+  const { isSubscribed, subscribeToPush, unsubscribeFromPush, deviceId } =
+    usePushNotifications();
 
   return (
     <button
-      onClick={isSubscribed
-        ? unsubscribeFromPush
-        : subscribeToPush}
+      onClick={isSubscribed ? unsubscribeFromPush : subscribeToPush}
       disabled={!deviceId}
     >
       {isSubscribed

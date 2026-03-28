@@ -1,138 +1,101 @@
 'use client';
 import { EspecimenType } from '#@/lib/types/especimenTypes';
-import React, { createContext,
+import React, {
+  createContext,
   useReducer,
   useContext,
   ReactNode,
   Dispatch,
-  useEffect, } from 'react';
+  useEffect,
+} from 'react';
 
 // --- State & Action Types ---
 interface EspecimenState {
-  data          : EspecimenType[]; // The unmodified master list
-  filteredData  : EspecimenType[]; // The list rendered by the UI
-  searchTerm    : string;
-  filterProperty: string; // e.g., filtering by a specific medicinal property
-  sortOrder     : 'ASC' | 'DESC' | 'NONE';
+  data: EspecimenType[];
+  filteredData: EspecimenType[];
+  searchName: string;
+  searchDolor: string;
+  filterProperty: string;
+  sortOrder: 'ASC' | 'DESC' | 'NONE';
 }
 
 type Action =
   | { type: 'INIT_DATA'; payload: EspecimenType[] }
-  | { type: 'SET_SEARCH'; payload: string }
+  | { type: 'SET_SEARCH_NAME'; payload: string }
+  | { type: 'SET_SEARCH_DOLOR'; payload: string }
   | { type: 'SET_FILTER_PROPERTY'; payload: string }
   | { type: 'SET_SORT'; payload: 'ASC' | 'DESC' | 'NONE' }
   | { type: 'RESET_FILTERS' };
 
 // --- Helper Functions ---
 
-/**
- * Normalizes a string by converting it to lowercase and removing all accents/diacritics.
- * This ensures that a search for "chilca" matches "Chílca", and "arnica" matches "Árnica".
- */
-const normalizeText = (
-  text: string | undefined | null 
-): string => {
-  if ( !text ) {
+const normalizeText = (text: string | undefined | null): string => {
+  if (!text) {
     return '';
   }
 
   return text
-    .normalize(
-      'NFD' 
-    ) // Deconstructs combined characters (e.g., 'á' becomes 'a' + '´')
-    .replace(
-      /[\u0300-\u036f]/g, '' 
-    ) // Removes the accent marks
-    .toLowerCase(); // Converts to lowercase
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase();
 };
 
-/**
- * Ensures that sorting, searching, and filtering stack correctly
- * without overwriting each other.
- */
-const applyCriteria = (
-  state: EspecimenState 
-): EspecimenType[] => {
-  let result = [
-    ...state.data
-  ];
+const applyCriteria = (state: EspecimenState): EspecimenType[] => {
+  let result = [...state.data];
 
-  // 1. Apply Search (Checking both scientific and common names safely)
-  if ( state.searchTerm ) {
-    const normalizedSearch = normalizeText(
-      state.searchTerm 
-    );
+  // 1. Apply Search by Name (Scientific and Common names)
+  if (state.searchName) {
+    const normalizedNameSearch = normalizeText(state.searchName);
 
-    result = result.filter(
-      (
-        e 
-      ) => {
-      // Safely normalize the scientific name
-        const matchCientifico = normalizeText(
-          e.nombreCientifico 
-        )
-          .includes(
-            normalizedSearch,
-          );
+    result = result.filter((e) => {
+      const matchCientifico = normalizeText(e.nombreCientifico).includes(
+        normalizedNameSearch,
+      );
 
-        // Safely fall back to an empty array to prevent .some() from crashing on undefined
-        const safeNombresComunes = e.nombresComunes || [];
+      const safeNombresComunes = e.nombresComunes || [];
 
-        // Check if ANY of the common names match the search term
-        const matchComunes = safeNombresComunes.some(
-          (
-            nombre 
-          ) => {
-            return normalizeText(
-              nombre 
-            )
-              .includes(
-                normalizedSearch 
-              );
-          } 
-        );
+      const matchComunes = safeNombresComunes.some((nombre) => {
+        return normalizeText(nombre).includes(normalizedNameSearch);
+      });
 
-        // Include the plant if it matches EITHER the scientific name OR the common names
-        return matchCientifico || matchComunes;
-      } 
-    );
+      return matchCientifico || matchComunes;
+    });
   }
 
-  // 2. Apply Filter (e.g., filtering by 'propiedadesMedicinales')
-  if ( state.filterProperty ) {
-    result = result.filter(
-      (
-        e 
-      ) => {
-        const safePropiedades = e.propiedadesMedicinales || [];
+  // 2. Apply Search by Illness/Dolor (malesFisicos)
+  if (state.searchDolor) {
+    const normalizedDolorSearch = normalizeText(state.searchDolor);
 
-        return safePropiedades.includes(
-          state.filterProperty 
-        );
-      } 
-    );
+    result = result.filter((e) => {
+      const safeMalesFisicos = e.malesFisicos || [];
+
+      return safeMalesFisicos.some((mal) => {
+        return normalizeText(mal).includes(normalizedDolorSearch);
+      });
+    });
   }
 
-  // 3. Apply Sort (Alphabetically by nombreCientifico)
-  if ( state.sortOrder !== 'NONE' ) {
-    result.sort(
-      (
-        a, b 
-      ) => {
-        const nameA = ( a.nombreCientifico || '' ).toLowerCase();
-        const nameB = ( b.nombreCientifico || '' ).toLowerCase();
+  // 3. Apply Filter (e.g., filtering by 'propiedadesMedicinales')
+  if (state.filterProperty) {
+    result = result.filter((e) => {
+      const safePropiedades = e.propiedadesMedicinales || [];
 
-        if ( state.sortOrder === 'ASC' ) {
-          return nameA.localeCompare(
-            nameB 
-          );
-        }
+      return safePropiedades.includes(state.filterProperty);
+    });
+  }
 
-        return nameB.localeCompare(
-          nameA 
-        );
-      } 
-    );
+  // 4. Apply Sort (Alphabetically by nombreCientifico)
+  if (state.sortOrder !== 'NONE') {
+    result.sort((a, b) => {
+      const nameA = (a.nombreCientifico || '').toLowerCase();
+      const nameB = (b.nombreCientifico || '').toLowerCase();
+
+      if (state.sortOrder === 'ASC') {
+        return nameA.localeCompare(nameB);
+      }
+
+      return nameB.localeCompare(nameA);
+    });
   }
 
   return result;
@@ -147,103 +110,81 @@ const especimenReducer = (
     ...state,
   };
 
-  switch ( action.type ) {
-      case 'INIT_DATA':
-      // Update the master data list with the fresh payload
-        newState.data = action.payload;
+  switch (action.type) {
+    case 'INIT_DATA':
+      newState.data = action.payload;
 
-        // Do NOT return early here. We must let it fall through to applyCriteria
-        // so that if the user deletes an item while searching, the search remains active!
-        break;
+      break;
 
-      case 'SET_SEARCH':
-        newState.searchTerm = action.payload;
+    case 'SET_SEARCH_NAME':
+      newState.searchName = action.payload;
 
-        break;
+      break;
 
-      case 'SET_FILTER_PROPERTY':
-        newState.filterProperty = action.payload;
+    case 'SET_SEARCH_DOLOR':
+      newState.searchDolor = action.payload;
 
-        break;
+      break;
 
-      case 'SET_SORT':
-        newState.sortOrder = action.payload;
+    case 'SET_FILTER_PROPERTY':
+      newState.filterProperty = action.payload;
 
-        break;
+      break;
 
-      case 'RESET_FILTERS':
-        newState.searchTerm = '';
-        newState.filterProperty = '';
-        newState.sortOrder = 'NONE';
+    case 'SET_SORT':
+      newState.sortOrder = action.payload;
 
-        break;
+      break;
 
-      default:
-        return state;
+    case 'RESET_FILTERS':
+      newState.searchName = '';
+      newState.searchDolor = '';
+      newState.filterProperty = '';
+      newState.sortOrder = 'NONE';
+
+      break;
+
+    default:
+      return state;
   }
 
-  // Recalculate the rendered array after ANY criteria change OR data initialization
-  newState.filteredData = applyCriteria(
-    newState 
-  );
+  newState.filteredData = applyCriteria(newState);
 
   return newState;
 };
 
 // --- Context Setup ---
 interface ContextProps {
-  state   : EspecimenState;
+  state: EspecimenState;
   dispatch: Dispatch<Action>;
 }
 
-const EspecimenContext = createContext<ContextProps | null>(
-  null 
-);
+const EspecimenContext = createContext<ContextProps | null>(null);
 
-export const EspecimenProvider = (
-  {
-    children,
-    initialEspecimens,
-  }: {
-    children         : ReactNode;
-    initialEspecimens: EspecimenType[];
-  } 
-) => {
+export const EspecimenProvider = ({
+  children,
+  initialEspecimens,
+}: {
+  children: ReactNode;
+  initialEspecimens: EspecimenType[];
+}) => {
   const initialState: EspecimenState = {
-    data: [
-      ...initialEspecimens
-    ],
-    filteredData: [
-      ...initialEspecimens
-    ],
-    searchTerm    : '',
+    data: [...initialEspecimens],
+    filteredData: [...initialEspecimens],
+    searchName: '',
+    searchDolor: '',
     filterProperty: '',
-    sortOrder     : 'NONE',
+    sortOrder: 'NONE',
   };
 
-  const [
-    state,
-    dispatch
-  ] = useReducer(
-    especimenReducer, initialState 
-  );
+  const [state, dispatch] = useReducer(especimenReducer, initialState);
 
-  // CRITICAL ADDITION:
-  // Listen for changes to the initialEspecimens prop.
-  // When revalidatePath runs on the server, Next.js pushes the new DB data down here.
-  // This hook catches it and updates the reducer safely.
-  useEffect(
-    () => {
-      dispatch(
-        {
-          type   : 'INIT_DATA',
-          payload: initialEspecimens,
-        } 
-      );
-    }, [
-      initialEspecimens
-    ] 
-  );
+  useEffect(() => {
+    dispatch({
+      type: 'INIT_DATA',
+      payload: initialEspecimens,
+    });
+  }, [initialEspecimens]);
 
   return (
     <EspecimenContext.Provider
@@ -259,14 +200,10 @@ export const EspecimenProvider = (
 
 // --- Custom Hook ---
 export const useEspecimen = () => {
-  const context = useContext(
-    EspecimenContext 
-  );
+  const context = useContext(EspecimenContext);
 
-  if ( !context ) {
-    throw new Error(
-      'useEspecimen must be used within an EspecimenProvider' 
-    );
+  if (!context) {
+    throw new Error('useEspecimen must be used within an EspecimenProvider');
   }
 
   return context;

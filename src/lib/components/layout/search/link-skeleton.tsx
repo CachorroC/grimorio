@@ -1,4 +1,3 @@
-
 import searchbar from '#@/lib/styles/buttons.module.css';
 import styles from 'styles/card.module.css';
 import typography from 'styles/fonts/typography.module.css';

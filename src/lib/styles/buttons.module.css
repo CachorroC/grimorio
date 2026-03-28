@@ -1,13 +1,41 @@
+/* =========================================
+   Mixins & Utilities
+   ========================================= */
+/* =========================================
+   Animations
+   ========================================= */
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+/* =========================================
+   Components
+   ========================================= */
+/* --- Base Button --- */
 .button, .buttonChip, .buttonHome, .buttonModal, .buttonDrawerMenuClosed, .buttonDrawerMenu, .buttonDrawerClosed, .buttonDrawer, .buttonBackwards, .buttonForward, .buttonPassiveCategory, .buttonActiveCategory, .buttonEdit {
-  /* Base Layout & Styling */
   position: relative;
   box-sizing: border-box;
   display: flex;
   flex: 1;
   flex-flow: column nowrap;
-  justify-items: center;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   align-content: center;
   gap: 0.5rem;
   padding: 1rem;
@@ -22,21 +50,22 @@
     flex-flow: row nowrap;
   }
 }
-.button, .buttonChip, .buttonHome, .buttonModal, .buttonDrawerMenuClosed, .buttonDrawerMenu, .buttonDrawerClosed, .buttonDrawer, .buttonBackwards, .buttonForward, .buttonPassiveCategory, .buttonActiveCategory, .buttonEdit {
-  /* Unified Overlay for Hover/Focus/Active states */
-}
-.button:after, .buttonChip:after, .buttonHome:after, .buttonModal:after, .buttonDrawerMenuClosed:after, .buttonDrawerMenu:after, .buttonDrawerClosed:after, .buttonDrawer:after, .buttonBackwards:after, .buttonForward:after, .buttonPassiveCategory:after, .buttonActiveCategory:after, .buttonEdit:after {
+.button::after, .buttonChip::after, .buttonHome::after, .buttonModal::after, .buttonDrawerMenuClosed::after, .buttonDrawerMenu::after, .buttonDrawerClosed::after, .buttonDrawer::after, .buttonBackwards::after, .buttonForward::after, .buttonPassiveCategory::after, .buttonActiveCategory::after, .buttonEdit::after {
   content: "";
   position: absolute;
   display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   border-radius: inherit;
   opacity: 0;
   transition: all 0.5s;
   pointer-events: none;
+  background-color: currentColor;
+}
+.button:hover::after, .buttonChip:hover::after, .buttonHome:hover::after, .buttonModal:hover::after, .buttonDrawerMenuClosed:hover::after, .buttonDrawerMenu:hover::after, .buttonDrawerClosed:hover::after, .buttonDrawer:hover::after, .buttonBackwards:hover::after, .buttonForward:hover::after, .buttonPassiveCategory:hover::after, .buttonActiveCategory:hover::after, .buttonEdit:hover::after {
+  opacity: 0.08;
+}
+.button:focus::after, .buttonChip:focus::after, .buttonHome:focus::after, .buttonModal:focus::after, .buttonDrawerMenuClosed:focus::after, .buttonDrawerMenu:focus::after, .buttonDrawerClosed:focus::after, .buttonDrawer:focus::after, .buttonBackwards:focus::after, .buttonForward:focus::after, .buttonPassiveCategory:focus::after, .buttonActiveCategory:focus::after, .buttonEdit:focus::after, .button:active::after, .buttonChip:active::after, .buttonHome:active::after, .buttonModal:active::after, .buttonDrawerMenuClosed:active::after, .buttonDrawerMenu:active::after, .buttonDrawerClosed:active::after, .buttonDrawer:active::after, .buttonBackwards:active::after, .buttonForward:active::after, .buttonPassiveCategory:active::after, .buttonActiveCategory:active::after, .buttonEdit:active::after, .button:focus-visible::after, .buttonChip:focus-visible::after, .buttonHome:focus-visible::after, .buttonModal:focus-visible::after, .buttonDrawerMenuClosed:focus-visible::after, .buttonDrawerMenu:focus-visible::after, .buttonDrawerClosed:focus-visible::after, .buttonDrawer:focus-visible::after, .buttonBackwards:focus-visible::after, .buttonForward:focus-visible::after, .buttonPassiveCategory:focus-visible::after, .buttonActiveCategory:focus-visible::after, .buttonEdit:focus-visible::after {
+  opacity: 0.1;
 }
 .button, .buttonChip, .buttonHome, .buttonModal, .buttonDrawerMenuClosed, .buttonDrawerMenu, .buttonDrawerClosed, .buttonDrawer, .buttonBackwards, .buttonForward, .buttonPassiveCategory, .buttonActiveCategory, .buttonEdit {
   /* Base Child Elements */
@@ -62,22 +91,11 @@
   transition: all 1s;
 }
 .button, .buttonChip, .buttonHome, .buttonModal, .buttonDrawerMenuClosed, .buttonDrawerMenu, .buttonDrawerClosed, .buttonDrawer, .buttonBackwards, .buttonForward, .buttonPassiveCategory, .buttonActiveCategory, .buttonEdit {
-  /* Interaction States */
+  /* Specific Interaction Overrides */
 }
 .button:hover > .icon, .buttonChip:hover > .icon, .buttonHome:hover > .icon, .buttonModal:hover > .icon, .buttonDrawerMenuClosed:hover > .icon, .buttonDrawerMenu:hover > .icon, .buttonDrawerClosed:hover > .icon, .buttonDrawer:hover > .icon, .buttonBackwards:hover > .icon, .buttonForward:hover > .icon, .buttonPassiveCategory:hover > .icon, .buttonActiveCategory:hover > .icon, .buttonEdit:hover > .icon {
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
   color: var(--primary-container);
-}
-.button:hover:after, .buttonChip:hover:after, .buttonHome:hover:after, .buttonModal:hover:after, .buttonDrawerMenuClosed:hover:after, .buttonDrawerMenu:hover:after, .buttonDrawerClosed:hover:after, .buttonDrawer:hover:after, .buttonBackwards:hover:after, .buttonForward:hover:after, .buttonPassiveCategory:hover:after, .buttonActiveCategory:hover:after, .buttonEdit:hover:after {
-  opacity: 0.08;
-  background-color: currentColor;
-}
-.button:focus:after, .buttonChip:focus:after, .buttonHome:focus:after, .buttonModal:focus:after, .buttonDrawerMenuClosed:focus:after, .buttonDrawerMenu:focus:after, .buttonDrawerClosed:focus:after, .buttonDrawer:focus:after, .buttonBackwards:focus:after, .buttonForward:focus:after, .buttonPassiveCategory:focus:after, .buttonActiveCategory:focus:after, .buttonEdit:focus:after, .button:active:after, .buttonChip:active:after, .buttonHome:active:after, .buttonModal:active:after, .buttonDrawerMenuClosed:active:after, .buttonDrawerMenu:active:after, .buttonDrawerClosed:active:after, .buttonDrawer:active:after, .buttonBackwards:active:after, .buttonForward:active:after, .buttonPassiveCategory:active:after, .buttonActiveCategory:active:after, .buttonEdit:active:after {
-  opacity: 0.1;
-  background-color: currentColor;
-}
-.button, .buttonChip, .buttonHome, .buttonModal, .buttonDrawerMenuClosed, .buttonDrawerMenu, .buttonDrawerClosed, .buttonDrawer, .buttonBackwards, .buttonForward, .buttonPassiveCategory, .buttonActiveCategory, .buttonEdit {
-  /* Interaction Overrides */
 }
 .button:hover, .buttonChip:hover, .buttonHome:hover, .buttonModal:hover, .buttonDrawerMenuClosed:hover, .buttonDrawerMenu:hover, .buttonDrawerClosed:hover, .buttonDrawer:hover, .buttonBackwards:hover, .buttonForward:hover, .buttonPassiveCategory:hover, .buttonActiveCategory:hover, .buttonEdit:hover, .button:active, .buttonChip:active, .buttonHome:active, .buttonModal:active, .buttonDrawerMenuClosed:active, .buttonDrawerMenu:active, .buttonDrawerClosed:active, .buttonDrawer:active, .buttonBackwards:active, .buttonForward:active, .buttonPassiveCategory:active, .buttonActiveCategory:active, .buttonEdit:active {
   background-color: var(--primary-fixed);
@@ -101,10 +119,11 @@
   color: var(--on-secondary-container);
   border: 0.02rem solid var(--outline);
 }
-.buttonActiveCategory > .icon, .buttonActiveCategory > .text {
+.buttonActiveCategory > .icon,
+.buttonActiveCategory > .text {
   color: var(--on-surface);
 }
-.buttonActiveCategory:hover:after, .buttonActiveCategory:focus:after, .buttonActiveCategory:active:after {
+.buttonActiveCategory::after {
   background-color: var(--on-secondary-container);
 }
 .buttonPassiveCategory {
@@ -118,7 +137,7 @@
 .buttonPassiveCategory > .text {
   color: var(--on-surface);
 }
-.buttonPassiveCategory:hover:after, .buttonPassiveCategory:focus:after, .buttonPassiveCategory:active:after {
+.buttonPassiveCategory::after {
   background-color: var(--on-secondary-container);
 }
 .buttonForward {
@@ -129,7 +148,8 @@
   background-color: var(--primary-container);
   color: var(--on-primary-container);
 }
-.buttonForward > .icon, .buttonForward > .text {
+.buttonForward > .icon,
+.buttonForward > .text {
   color: var(--on-primary-container);
 }
 .buttonBackwards {
@@ -140,7 +160,8 @@
   background-color: var(--primary-container);
   color: var(--on-primary-container);
 }
-.buttonBackwards > .icon, .buttonBackwards > .text {
+.buttonBackwards > .icon,
+.buttonBackwards > .text {
   color: var(--on-primary-container);
 }
 .buttonDrawer {
@@ -148,13 +169,14 @@
 }
 .buttonDrawerClosed {
   border: none;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
 }
-.buttonDrawerClosed > .icon, .buttonDrawerClosed > .text {
+.buttonDrawerClosed > .icon,
+.buttonDrawerClosed > .text {
   filter: drop-shadow(var(--scrim));
   color: var(--on-surface-variant);
 }
-.buttonDrawerClosed:hover:after, .buttonDrawerClosed:focus:after, .buttonDrawerClosed:active:after {
+.buttonDrawerClosed::after {
   background-color: var(--surface-variant);
 }
 .buttonDrawerOpen {
@@ -170,13 +192,14 @@
   border: none;
   height: 4rem;
   width: auto;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
 }
-.buttonDrawerMenuClosed > .icon, .buttonDrawerMenuClosed > .text {
+.buttonDrawerMenuClosed > .icon,
+.buttonDrawerMenuClosed > .text {
   filter: drop-shadow(var(--scrim));
   color: var(--on-surface-variant);
 }
-.buttonDrawerMenuClosed:hover:after, .buttonDrawerMenuClosed:focus:after, .buttonDrawerMenuClosed:active:after {
+.buttonDrawerMenuClosed::after {
   background-color: var(--surface-variant);
 }
 .buttonDrawerMenuOpen {
@@ -189,20 +212,21 @@
   background-color: var(--primary-container);
   color: var(--on-primary-container);
 }
-.buttonModal > .icon, .buttonModal > .text {
+.buttonModal > .icon,
+.buttonModal > .text {
   color: var(--on-primary-container);
 }
 .buttonModal:hover {
   background-color: var(--surface-container);
   box-shadow: var(--dp8);
 }
-.buttonModal:hover:after {
+.buttonModal:hover::after {
   background-color: var(--on-primary);
 }
 .buttonModal:focus, .buttonModal:active {
   box-shadow: var(--dp9);
 }
-.buttonModal:focus:after, .buttonModal:active:after {
+.buttonModal:focus::after, .buttonModal:active::after {
   background-color: var(--on-primary-container);
 }
 .buttonHome {
@@ -212,7 +236,8 @@
   background-color: var(--primary);
   color: var(--on-primary);
 }
-.buttonHome > .icon, .buttonHome > .text {
+.buttonHome > .icon,
+.buttonHome > .text {
   color: var(--on-primary);
 }
 .buttonChip {
@@ -220,6 +245,7 @@
   flex: 0 1 auto;
 }
 
+/* --- Utilities --- */
 .active {
   background-color: var(--tertiary-container);
   color: var(--on-tertiary-container);
@@ -242,50 +268,10 @@
 }
 .snackbar.show {
   visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
-@-webkit-keyframes fadein {
-  from {
-    bottom: 0;
-    opacity: 0;
-  }
-  to {
-    bottom: 30px;
-    opacity: 1;
-  }
-}
-@keyframes fadein {
-  from {
-    bottom: 0;
-    opacity: 0;
-  }
-  to {
-    bottom: 30px;
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadeout {
-  from {
-    bottom: 30px;
-    opacity: 1;
-  }
-  to {
-    bottom: 0;
-    opacity: 0;
-  }
-}
-@keyframes fadeout {
-  from {
-    bottom: 30px;
-    opacity: 1;
-  }
-  to {
-    bottom: 0;
-    opacity: 0;
-  }
-}
+/* --- Links & Search Bars --- */
 .searchBarLink, .isActive, .notActive,
 .link,
 .searchBarLinkIsActive,
@@ -298,14 +284,12 @@
 .linkOpenActive,
 .searchBarLinkActive,
 .linkActive {
-  /* Merged Base Layout & Styling */
   position: relative;
   box-sizing: border-box;
   display: flex;
   flex-flow: column nowrap;
-  justify-items: stretch;
-  align-items: stretch;
   justify-content: space-between;
+  align-items: stretch;
   align-content: stretch;
   width: 100%;
   min-width: 0;
@@ -316,7 +300,92 @@
   text-align: center;
   text-decoration: none;
   transition: all 0.3s;
-  /* Base Child Elements */
+}
+.searchBarLink::after, .isActive::after, .notActive::after,
+.link::after,
+.searchBarLinkIsActive::after,
+.linkIsActive::after,
+.searchBarLinkNotActive::after,
+.linkNotActive::after,
+.searchBarLinkOpen::after,
+.linkOpen::after,
+.searchBarLinkOpenActive::after,
+.linkOpenActive::after,
+.searchBarLinkActive::after,
+.linkActive::after {
+  content: "";
+  position: absolute;
+  display: block;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  transition: all 0.5s;
+  pointer-events: none;
+  background-color: currentColor;
+}
+.searchBarLink:hover::after, .isActive:hover::after, .notActive:hover::after,
+.link:hover::after,
+.searchBarLinkIsActive:hover::after,
+.linkIsActive:hover::after,
+.searchBarLinkNotActive:hover::after,
+.linkNotActive:hover::after,
+.searchBarLinkOpen:hover::after,
+.linkOpen:hover::after,
+.searchBarLinkOpenActive:hover::after,
+.linkOpenActive:hover::after,
+.searchBarLinkActive:hover::after,
+.linkActive:hover::after {
+  opacity: 0.08;
+}
+.searchBarLink:focus::after, .isActive:focus::after, .notActive:focus::after, .searchBarLink:active::after, .isActive:active::after, .notActive:active::after, .searchBarLink:focus-visible::after, .isActive:focus-visible::after, .notActive:focus-visible::after,
+.link:focus::after,
+.searchBarLinkIsActive:focus::after,
+.linkIsActive:focus::after,
+.searchBarLinkNotActive:focus::after,
+.linkNotActive:focus::after,
+.searchBarLinkOpen:focus::after,
+.linkOpen:focus::after,
+.searchBarLinkOpenActive:focus::after,
+.linkOpenActive:focus::after,
+.searchBarLinkActive:focus::after,
+.linkActive:focus::after,
+.link:active::after,
+.searchBarLinkIsActive:active::after,
+.linkIsActive:active::after,
+.searchBarLinkNotActive:active::after,
+.linkNotActive:active::after,
+.searchBarLinkOpen:active::after,
+.linkOpen:active::after,
+.searchBarLinkOpenActive:active::after,
+.linkOpenActive:active::after,
+.searchBarLinkActive:active::after,
+.linkActive:active::after,
+.link:focus-visible::after,
+.searchBarLinkIsActive:focus-visible::after,
+.linkIsActive:focus-visible::after,
+.searchBarLinkNotActive:focus-visible::after,
+.linkNotActive:focus-visible::after,
+.searchBarLinkOpen:focus-visible::after,
+.linkOpen:focus-visible::after,
+.searchBarLinkOpenActive:focus-visible::after,
+.linkOpenActive:focus-visible::after,
+.searchBarLinkActive:focus-visible::after,
+.linkActive:focus-visible::after {
+  opacity: 0.1;
+}
+.searchBarLink::after, .isActive::after, .notActive::after,
+.link::after,
+.searchBarLinkIsActive::after,
+.linkIsActive::after,
+.searchBarLinkNotActive::after,
+.linkNotActive::after,
+.searchBarLinkOpen::after,
+.linkOpen::after,
+.searchBarLinkOpenActive::after,
+.linkOpenActive::after,
+.searchBarLinkActive::after,
+.linkActive::after {
+  background-color: var(--on-surface);
 }
 .searchBarLink > .icon, .isActive > .icon, .notActive > .icon,
 .link > .icon,
@@ -410,7 +479,6 @@
 }
 .searchBarLinkActive > .text,
 .linkActive > .text {
-  opacity: 1;
   color: var(--on-surface);
 }
 .searchBarLinkActive > .icon,
@@ -426,27 +494,18 @@
 .linkOpen,
 .searchBarLinkOpenActive,
 .linkOpenActive {
-  width: 100%;
   flex-flow: row nowrap;
   justify-content: flex-start;
   gap: 0.8rem;
   padding: 1rem;
-  box-sizing: border-box;
 }
 .searchBarLinkOpenActive,
 .linkOpenActive {
-  width: 100%;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  gap: 0.8rem;
-  padding: 1rem;
-  box-sizing: border-box;
   background-color: var(--secondary-container);
   color: var(--on-secondary-container);
 }
 .searchBarLinkOpenActive > .text,
 .linkOpenActive > .text {
-  opacity: 1;
   color: var(--on-secondary-container);
 }
 .searchBarLinkOpenActive > .icon,
@@ -455,7 +514,6 @@
   border-radius: 1rem;
   padding: 0.2rem 0;
   color: var(--on-secondary-container);
-  box-sizing: border-box;
 }
 .searchBarLinkNotActive,
 .linkNotActive {
@@ -479,68 +537,7 @@
 .linkOpenActive,
 .searchBarLinkActive,
 .linkActive {
-  /* Consolidated hover, focus, and active states */
-}
-.searchBarLink:after, .isActive:after, .notActive:after,
-.link:after,
-.searchBarLinkActive:after,
-.linkActive:after,
-.searchBarLinkOpen:after,
-.linkOpen:after,
-.searchBarLinkOpenActive:after,
-.linkOpenActive:after,
-.searchBarLinkNotActive:after,
-.linkNotActive:after,
-.searchBarLinkIsActive:after,
-.linkIsActive:after {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-  opacity: 0;
-  background-color: var(--on-surface);
-  transition: all 0.5s;
-  pointer-events: none;
-}
-.searchBarLink:hover > .text, .isActive:hover > .text, .notActive:hover > .text, .searchBarLink:focus > .text, .isActive:focus > .text, .notActive:focus > .text, .searchBarLink:active > .text, .isActive:active > .text, .notActive:active > .text,
-.link:hover > .text,
-.searchBarLinkActive:hover > .text,
-.linkActive:hover > .text,
-.searchBarLinkOpen:hover > .text,
-.linkOpen:hover > .text,
-.searchBarLinkOpenActive:hover > .text,
-.linkOpenActive:hover > .text,
-.searchBarLinkNotActive:hover > .text,
-.linkNotActive:hover > .text,
-.searchBarLinkIsActive:hover > .text,
-.linkIsActive:hover > .text,
-.link:focus > .text,
-.searchBarLinkActive:focus > .text,
-.linkActive:focus > .text,
-.searchBarLinkOpen:focus > .text,
-.linkOpen:focus > .text,
-.searchBarLinkOpenActive:focus > .text,
-.linkOpenActive:focus > .text,
-.searchBarLinkNotActive:focus > .text,
-.linkNotActive:focus > .text,
-.searchBarLinkIsActive:focus > .text,
-.linkIsActive:focus > .text,
-.link:active > .text,
-.searchBarLinkActive:active > .text,
-.linkActive:active > .text,
-.searchBarLinkOpen:active > .text,
-.linkOpen:active > .text,
-.searchBarLinkOpenActive:active > .text,
-.linkOpenActive:active > .text,
-.searchBarLinkNotActive:active > .text,
-.linkNotActive:active > .text,
-.searchBarLinkIsActive:active > .text,
-.linkIsActive:active > .text {
-  opacity: 1;
+  /* Hover Overrides */
 }
 .searchBarLink:hover > .icon, .isActive:hover > .icon, .notActive:hover > .icon, .searchBarLink:focus > .icon, .isActive:focus > .icon, .notActive:focus > .icon, .searchBarLink:active > .icon, .isActive:active > .icon, .notActive:active > .icon,
 .link:hover > .icon,
@@ -578,45 +575,6 @@
 .linkIsActive:active > .icon {
   font-variation-settings: "FILL" 1, "wght" 600, "GRAD" 200, "opsz" 40;
 }
-.searchBarLink:hover:after, .isActive:hover:after, .notActive:hover:after,
-.link:hover:after,
-.searchBarLinkActive:hover:after,
-.linkActive:hover:after,
-.searchBarLinkOpen:hover:after,
-.linkOpen:hover:after,
-.searchBarLinkOpenActive:hover:after,
-.linkOpenActive:hover:after,
-.searchBarLinkNotActive:hover:after,
-.linkNotActive:hover:after,
-.searchBarLinkIsActive:hover:after,
-.linkIsActive:hover:after {
-  opacity: 0.08;
-}
-.searchBarLink:focus:after, .isActive:focus:after, .notActive:focus:after, .searchBarLink:active:after, .isActive:active:after, .notActive:active:after,
-.link:focus:after,
-.searchBarLinkActive:focus:after,
-.linkActive:focus:after,
-.searchBarLinkOpen:focus:after,
-.linkOpen:focus:after,
-.searchBarLinkOpenActive:focus:after,
-.linkOpenActive:focus:after,
-.searchBarLinkNotActive:focus:after,
-.linkNotActive:focus:after,
-.searchBarLinkIsActive:focus:after,
-.linkIsActive:focus:after,
-.link:active:after,
-.searchBarLinkActive:active:after,
-.linkActive:active:after,
-.searchBarLinkOpen:active:after,
-.linkOpen:active:after,
-.searchBarLinkOpenActive:active:after,
-.linkOpenActive:active:after,
-.searchBarLinkNotActive:active:after,
-.linkNotActive:active:after,
-.searchBarLinkIsActive:active:after,
-.linkIsActive:active:after {
-  opacity: 0.1;
-}
 
 .notActive .date {
   display: none;
@@ -624,4 +582,129 @@
 
 .isActive .date {
   display: flex;
+}
+
+/* --- Material Design 3 Buttons --- */
+.md3Btn, .md3BtnTonalPrimary, .md3BtnTonal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  vertical-align: middle;
+  background: transparent;
+  text-decoration: none;
+  margin: 8px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  /* Typography */
+  font-family: var(--label-large-font-family-name);
+  font-size: var(--label-large-font-size);
+  font-weight: var(--label-large-font-weight);
+  line-height: var(--label-large-line-height);
+  letter-spacing: var(--label-large-letter-spacing);
+  /* Layout & Shape */
+  border-radius: var(--shape-corner-full);
+  padding: 0 var(--md-btn-padding-inline);
+  gap: var(--md-btn-gap);
+  transition: background-color var(--md-sys-motion-duration-short) var(--md-sys-motion-easing-standard), color var(--md-sys-motion-duration-short) var(--md-sys-motion-easing-standard);
+}
+.md3Btn *, .md3BtnTonalPrimary *, .md3BtnTonal *, .md3Btn:link, .md3BtnTonalPrimary:link, .md3BtnTonal:link, .md3Btn:visited, .md3BtnTonalPrimary:visited, .md3BtnTonal:visited {
+  color: var(--on-secondary-container);
+}
+.md3Btn, .md3BtnTonalPrimary, .md3BtnTonal {
+  /* Asymmetric Padding for Buttons with Icons */
+}
+.md3Btn:has(.md3BtnIcon), .md3BtnTonalPrimary:has(.md3BtnIcon), .md3BtnTonal:has(.md3BtnIcon) {
+  padding-left: var(--md-btn-icon-padding-start);
+  padding-right: var(--md-btn-icon-padding-end);
+}
+
+/* Icon Sizing & Alignment */
+.md3BtnIcon {
+  width: var(--md-btn-icon-size);
+  height: var(--md-btn-icon-size);
+  color: var(--on-secondary-container);
+  flex-shrink: 0;
+}
+
+/* Tonal Buttons utilizing the new Mixin */
+.md3BtnTonal {
+  background-color: var(--secondary-container);
+  color: var(--on-secondary-container);
+}
+.md3BtnTonal:hover, .md3BtnTonal:active, .md3BtnTonal:focus {
+  background-color: var(--secondary);
+  color: var(--on-secondary);
+}
+.md3BtnTonal::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--on-secondary-container);
+  opacity: 0;
+  transition: opacity var(--md-sys-motion-duration-short) var(--md-sys-motion-easing-standard);
+}
+.md3BtnTonal > * {
+  z-index: 1;
+  position: relative;
+}
+.md3BtnTonal:hover::before {
+  opacity: var(--md-sys-state-hover);
+}
+.md3BtnTonal:focus-visible::before {
+  opacity: var(--md-sys-state-focus);
+}
+.md3BtnTonal:active::before {
+  opacity: var(--md-sys-state-pressed);
+}
+.md3BtnTonal:disabled {
+  background-color: color-mix(in srgb, var(--on-surface) 12%, transparent);
+  color: color-mix(in srgb, var(--on-surface) 38%, transparent);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.md3BtnTonal:disabled::before {
+  display: none;
+}
+
+.md3BtnTonalPrimary {
+  background-color: var(--primary);
+  color: var(--on-primary);
+}
+.md3BtnTonalPrimary:hover, .md3BtnTonalPrimary:active, .md3BtnTonalPrimary:focus {
+  background-color: var(--primary-container);
+  color: var(--on-primary-container);
+}
+.md3BtnTonalPrimary::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--on-primary-container);
+  opacity: 0;
+  transition: opacity var(--md-sys-motion-duration-short) var(--md-sys-motion-easing-standard);
+}
+.md3BtnTonalPrimary > * {
+  z-index: 1;
+  position: relative;
+}
+.md3BtnTonalPrimary:hover::before {
+  opacity: var(--md-sys-state-hover);
+}
+.md3BtnTonalPrimary:focus-visible::before {
+  opacity: var(--md-sys-state-focus);
+}
+.md3BtnTonalPrimary:active::before {
+  opacity: var(--md-sys-state-pressed);
+}
+.md3BtnTonalPrimary:disabled {
+  background-color: color-mix(in srgb, var(--on-surface) 12%, transparent);
+  color: color-mix(in srgb, var(--on-surface) 38%, transparent);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.md3BtnTonalPrimary:disabled::before {
+  display: none;
 }

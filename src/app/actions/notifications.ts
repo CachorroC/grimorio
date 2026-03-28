@@ -18,79 +18,59 @@ export async function subscribeUser(
 ) {
   try {
     const client = await clientPromise;
-    const db = client.db(
-      'botany_db'
-    ); // Replace with your DB name
+    const db = client.db('botany_db'); // Replace with your DB name
 
     // Upsert ensures we don't create duplicate entries for the same device
-    await db.collection(
-      'push_subscriptions'
-    )
-      .updateOne(
-        {
-          endpoint: subscription.endpoint,
+    await db.collection('push_subscriptions').updateOne(
+      {
+        endpoint: subscription.endpoint,
+      },
+      {
+        $set: {
+          subscription: subscription,
+          userId: userId,
+          updatedAt: new Date(),
         },
-        {
-          $set: {
-            subscription: subscription,
-            userId      : userId,
-            updatedAt   : new Date(),
-          },
-        },
-        {
-          upsert: true,
-        },
-      );
+      },
+      {
+        upsert: true,
+      },
+    );
 
-    revalidatePath(
-      '/settings'
-    ); // Refresh the UI state if needed
+    revalidatePath('/settings'); // Refresh the UI state if needed
 
     return {
       success: true,
     };
-  } catch ( error ) {
-    console.error(
-      'Failed to save subscription:', error
-    );
+  } catch (error) {
+    console.error('Failed to save subscription:', error);
 
     return {
       success: false,
-      error  : 'Database error',
+      error: 'Database error',
     };
   }
 }
 
-export async function unSubscribeUser(
-  userId: string
-) {
+export async function unSubscribeUser(userId: string) {
   try {
     const client = await clientPromise;
-    const db = client.db(
-      'botany_db'
-    );
+    const db = client.db('botany_db');
 
     // Delete all subscriptions tied to this specific userId (deviceId)
-    await db.collection(
-      'push_subscriptions'
-    )
-      .deleteMany(
-        {
-          userId: userId,
-        }
-      );
+    await db.collection('push_subscriptions').deleteMany({
+      userId: userId,
+    });
 
     return {
       success: true,
     };
-  } catch ( error ) {
-    console.error(
-      'Failed to remove subscription:', error
-    );
+  } catch (error) {
+    console.error('Failed to remove subscription:', error);
 
     return {
       success: false,
-      error  : 'Database error',
+      error: 'Database error',
     };
   }
 }
@@ -99,35 +79,29 @@ export async function sendNotification(
   message: string,
   subscription: WebPushSubscription | null,
 ) {
-  if ( !subscription ) {
-    throw new Error(
-      'No subscription available'
-    );
+  if (!subscription) {
+    throw new Error('No subscription available');
   }
 
   try {
     await webpush.sendNotification(
       subscription,
-      JSON.stringify(
-        {
-          icon : '/icons/web-app-manifest-192x192.png',
-          title: 'Test Notification',
-          body : message,
-        }
-      ),
+      JSON.stringify({
+        icon: '/icons/web-app-manifest-192x192.png',
+        title: 'Test Notification',
+        body: message,
+      }),
     );
 
     return {
       success: true,
     };
-  } catch ( error ) {
-    console.error(
-      'Error sending push notification:', error
-    );
+  } catch (error) {
+    console.error('Error sending push notification:', error);
 
     return {
       success: false,
-      error  : 'Failed to send notification',
+      error: 'Failed to send notification',
     };
   }
 }

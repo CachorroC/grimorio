@@ -71,7 +71,7 @@
   color: var(--secondary);
   font-family: var(--josefa);
   font-weight: 500;
-  font-variation-settings: "wght" 500;
+  font-variation-settings: 'wght' 500;
 }
 
 .titleInput,
@@ -137,7 +137,7 @@
   &:focus {
     &:after {
       transition: all 0.5s;
-      content: "";
+      content: '';
       position: absolute;
       display: block;
       top: 0;
@@ -221,10 +221,10 @@
     color: var(--on-secondary);
     transition: all 1s;
     font-variation-settings:
-      "FILL" 0,
-      "wght" 300,
-      "GRAD" 0,
-      "opsz" 24;
+      'FILL' 0,
+      'wght' 300,
+      'GRAD' 0,
+      'opsz' 24;
   }
 
   .text {
@@ -237,10 +237,10 @@
     box-shadow: var(--dp8);
     & > span {
       font-variation-settings:
-        "FILL" 1,
-        "wght" 400,
-        "GRAD" 200,
-        "opsz" 24;
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 200,
+        'opsz' 24;
       color: var(--tertiary);
     }
   }
@@ -281,10 +281,10 @@
   & > span {
     color: var(--on-secondary);
     font-variation-settings:
-      "FILL" 0,
-      "wght" 300,
-      "GRAD" 0,
-      "opsz" 24;
+      'FILL' 0,
+      'wght' 300,
+      'GRAD' 0,
+      'opsz' 24;
   }
 
   &:hover,
@@ -293,10 +293,10 @@
     box-shadow: var(--dp8);
     & > span {
       font-variation-settings:
-        "FILL" 1,
-        "wght" 600,
-        "GRAD" 200,
-        "opsz" 48;
+        'FILL' 1,
+        'wght' 600,
+        'GRAD' 200,
+        'opsz' 48;
       color: var(--on-secondary);
     }
   }
@@ -357,9 +357,15 @@
 
 /* The switchBox - the box around the slider */
 .switchBox {
-  width: calc((var(--switch-input-thumb-size) * 2) + (var(--switch-input-gutter) * 4));
-  height: calc(var(--switch-input-thumb-size) + (var(--switch-input-gutter) * 3));
-  border-radius: calc(var(--switch-input-thumb-size) + var(--switch-input-gutter));
+  width: calc(
+    (var(--switch-input-thumb-size) * 2) + (var(--switch-input-gutter) * 4)
+  );
+  height: calc(
+    var(--switch-input-thumb-size) + (var(--switch-input-gutter) * 3)
+  );
+  border-radius: calc(
+    var(--switch-input-thumb-size) + var(--switch-input-gutter)
+  );
   padding: var(--switch-input-gutter);
   box-sizing: border-box;
   background: var(--switch-input-off-bg);
@@ -378,8 +384,12 @@
     background: var(--switch-input-on-bg);
     color: var(--switch-input-on-text);
     border: none;
-    width: calc((var(--switch-input-thumb-size) * 2) + (var(--switch-input-gutter) * 3));
-    height: calc(var(--switch-input-thumb-size) + (var(--switch-input-gutter) * 2));
+    width: calc(
+      (var(--switch-input-thumb-size) * 2) + (var(--switch-input-gutter) * 3)
+    );
+    height: calc(
+      var(--switch-input-thumb-size) + (var(--switch-input-gutter) * 2)
+    );
     .thumb {
       background-color: var(--on-secondary);
     }
@@ -399,7 +409,7 @@
   user-select: none;
 }
 
-.decor[data-switch-input-state="off"] {
+.decor[data-switch-input-state='off'] {
   justify-content: flex-end;
 }
 .thumb {
@@ -422,7 +432,9 @@
 }
 
 .switchBox:has(:checked) .thumb {
-  inset-inline-start: calc(var(--switch-input-thumb-size) + (var(--switch-input-gutter) * 2));
+  inset-inline-start: calc(
+    var(--switch-input-thumb-size) + (var(--switch-input-gutter) * 2)
+  );
 }
 
 .switchBox .inputElement {
@@ -454,7 +466,7 @@
 .slider:before {
   border-radius: 50vw;
   position: absolute;
-  content: "";
+  content: '';
   height: 0.8rem;
   width: 0.8rem;
   left: 0.03rem;
