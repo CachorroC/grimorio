@@ -1,8 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Button, Card, CardMedia, Box } from '@mui/material';
-import EditIcon from '@mui/icons-material/Edit';
+import { Card, CardMedia, Box } from '@mui/material';
 import EspecimenForm from './form/especimenForm';
 import PlantCookbook from './display/plantCookbook';
 import { EspecimenType } from '../types/especimenTypes';
@@ -34,18 +33,20 @@ export default function SpecimenEditSelection(
   return (
     <Card
       sx={{
-        width        : '100%',
-        maxWidth     : '100%',
-        mx           : 'auto',
-        boxShadow    : 3,
-        borderRadius : 2,
-        containerType: 'inline-size',
-        containerName: 'specimenCard',
-        maxHeight    : isStandalone
+        width          : '100%',
+        maxWidth       : '100%',
+        mx             : 'auto',
+        boxShadow      : 3,
+        borderRadius   : 2,
+        containerType  : 'inline-size',
+        containerName  : 'specimenCard',
+        display        : 'flex',
+        flexDirection  : 'column',
+        backgroundColor: 'var(--surface-container-lowest)',
+        maxHeight      : isStandalone
           ? '85vh'
           : 'none',
-        display      : 'flex',
-        flexDirection: 'column',
+
       }}
       ref={(
         el: HTMLDivElement | null
@@ -116,8 +117,9 @@ export default function SpecimenEditSelection(
               )}
           <div
             style={{
-              display : 'flex',
-              flexFlow: 'row nowrap',
+              display       : 'flex',
+              flexFlow      : 'row nowrap',
+              justifyContent: 'space-around'
             }}
           >
             <button
@@ -149,7 +151,7 @@ export default function SpecimenEditSelection(
               >
                 expand_all
               </span>
-              <p className={buttonStyles.text}>ver más</p>
+              <p>ver más</p>
             </Link>
           </div>
         </Box>

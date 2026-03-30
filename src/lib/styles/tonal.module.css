@@ -1,20 +1,37 @@
 .button {
-  border: none;
-  background-color: var(--secondary-container);
   box-sizing: border-box;
-  flex: 1;
   display: flex;
+  flex: 1;
   flex-flow: row nowrap;
+  justify-content: space-around;
   justify-items: stretch;
   align-items: center;
-  height: 2.5rem;
-  justify-content: space-around;
   align-content: center;
+  height: 2.5rem;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--secondary-container);
+  border: none;
   border-radius: var(--shape-corner-full);
   box-shadow: var(--elevation-0);
   transition: all 0.3s;
-  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   position: relative;
+}
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  opacity: 0;
+  background-color: var(--surface-container-low);
+  transition: opacity 0.3s;
+  pointer-events: none;
+  z-index: auto;
+}
+.button:hover::before {
+  opacity: 0.08;
+}
+.button:focus::before, .button:active::before, .button:focus-visible::before {
+  opacity: 0.1;
 }
 .button > .icon, .button > .text {
   color: var(--on-secondary-container);
@@ -24,15 +41,4 @@
 }
 .button:hover {
   box-shadow: var(--elevation-1);
-}
-.button:hover:before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  content: "";
-  background-color: var(--surface-container-low);
-  border-radius: var(--shape-corner-full);
-  top: 0;
-  left: 0;
-  opacity: 0.08;
 }

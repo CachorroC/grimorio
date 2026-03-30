@@ -1,9 +1,3 @@
-/* =========================================
-   Mixins & Utilities
-   ========================================= */
-/* =========================================
-   Animations
-   ========================================= */
 @keyframes fadein {
   from {
     bottom: 0;
@@ -24,10 +18,6 @@
     opacity: 0;
   }
 }
-/* =========================================
-   Components
-   ========================================= */
-/* --- Base Button --- */
 .button, .buttonChip, .buttonHome, .buttonModal, .buttonDrawerMenuClosed, .buttonDrawerMenu, .buttonDrawerClosed, .buttonDrawer, .buttonBackwards, .buttonForward, .buttonPassiveCategory, .buttonActiveCategory, .buttonEdit {
   position: relative;
   box-sizing: border-box;
@@ -50,25 +40,25 @@
     flex-flow: row nowrap;
   }
 }
-.button::after, .buttonChip::after, .buttonHome::after, .buttonModal::after, .buttonDrawerMenuClosed::after, .buttonDrawerMenu::after, .buttonDrawerClosed::after, .buttonDrawer::after, .buttonBackwards::after, .buttonForward::after, .buttonPassiveCategory::after, .buttonActiveCategory::after, .buttonEdit::after {
+.button, .buttonChip, .buttonHome, .buttonModal, .buttonDrawerMenuClosed, .buttonDrawerMenu, .buttonDrawerClosed, .buttonDrawer, .buttonBackwards, .buttonForward, .buttonPassiveCategory, .buttonActiveCategory, .buttonEdit {
+  position: relative;
+}
+.button::before, .buttonChip::before, .buttonHome::before, .buttonModal::before, .buttonDrawerMenuClosed::before, .buttonDrawerMenu::before, .buttonDrawerClosed::before, .buttonDrawer::before, .buttonBackwards::before, .buttonForward::before, .buttonPassiveCategory::before, .buttonActiveCategory::before, .buttonEdit::before {
   content: "";
   position: absolute;
-  display: block;
   inset: 0;
   border-radius: inherit;
   opacity: 0;
-  transition: all 0.5s;
-  pointer-events: none;
   background-color: currentColor;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  z-index: auto;
 }
-.button:hover::after, .buttonChip:hover::after, .buttonHome:hover::after, .buttonModal:hover::after, .buttonDrawerMenuClosed:hover::after, .buttonDrawerMenu:hover::after, .buttonDrawerClosed:hover::after, .buttonDrawer:hover::after, .buttonBackwards:hover::after, .buttonForward:hover::after, .buttonPassiveCategory:hover::after, .buttonActiveCategory:hover::after, .buttonEdit:hover::after {
+.button:hover::before, .buttonChip:hover::before, .buttonHome:hover::before, .buttonModal:hover::before, .buttonDrawerMenuClosed:hover::before, .buttonDrawerMenu:hover::before, .buttonDrawerClosed:hover::before, .buttonDrawer:hover::before, .buttonBackwards:hover::before, .buttonForward:hover::before, .buttonPassiveCategory:hover::before, .buttonActiveCategory:hover::before, .buttonEdit:hover::before {
   opacity: 0.08;
 }
-.button:focus::after, .buttonChip:focus::after, .buttonHome:focus::after, .buttonModal:focus::after, .buttonDrawerMenuClosed:focus::after, .buttonDrawerMenu:focus::after, .buttonDrawerClosed:focus::after, .buttonDrawer:focus::after, .buttonBackwards:focus::after, .buttonForward:focus::after, .buttonPassiveCategory:focus::after, .buttonActiveCategory:focus::after, .buttonEdit:focus::after, .button:active::after, .buttonChip:active::after, .buttonHome:active::after, .buttonModal:active::after, .buttonDrawerMenuClosed:active::after, .buttonDrawerMenu:active::after, .buttonDrawerClosed:active::after, .buttonDrawer:active::after, .buttonBackwards:active::after, .buttonForward:active::after, .buttonPassiveCategory:active::after, .buttonActiveCategory:active::after, .buttonEdit:active::after, .button:focus-visible::after, .buttonChip:focus-visible::after, .buttonHome:focus-visible::after, .buttonModal:focus-visible::after, .buttonDrawerMenuClosed:focus-visible::after, .buttonDrawerMenu:focus-visible::after, .buttonDrawerClosed:focus-visible::after, .buttonDrawer:focus-visible::after, .buttonBackwards:focus-visible::after, .buttonForward:focus-visible::after, .buttonPassiveCategory:focus-visible::after, .buttonActiveCategory:focus-visible::after, .buttonEdit:focus-visible::after {
+.button:focus::before, .buttonChip:focus::before, .buttonHome:focus::before, .buttonModal:focus::before, .buttonDrawerMenuClosed:focus::before, .buttonDrawerMenu:focus::before, .buttonDrawerClosed:focus::before, .buttonDrawer:focus::before, .buttonBackwards:focus::before, .buttonForward:focus::before, .buttonPassiveCategory:focus::before, .buttonActiveCategory:focus::before, .buttonEdit:focus::before, .button:active::before, .buttonChip:active::before, .buttonHome:active::before, .buttonModal:active::before, .buttonDrawerMenuClosed:active::before, .buttonDrawerMenu:active::before, .buttonDrawerClosed:active::before, .buttonDrawer:active::before, .buttonBackwards:active::before, .buttonForward:active::before, .buttonPassiveCategory:active::before, .buttonActiveCategory:active::before, .buttonEdit:active::before, .button:focus-visible::before, .buttonChip:focus-visible::before, .buttonHome:focus-visible::before, .buttonModal:focus-visible::before, .buttonDrawerMenuClosed:focus-visible::before, .buttonDrawerMenu:focus-visible::before, .buttonDrawerClosed:focus-visible::before, .buttonDrawer:focus-visible::before, .buttonBackwards:focus-visible::before, .buttonForward:focus-visible::before, .buttonPassiveCategory:focus-visible::before, .buttonActiveCategory:focus-visible::before, .buttonEdit:focus-visible::before {
   opacity: 0.1;
-}
-.button, .buttonChip, .buttonHome, .buttonModal, .buttonDrawerMenuClosed, .buttonDrawerMenu, .buttonDrawerClosed, .buttonDrawer, .buttonBackwards, .buttonForward, .buttonPassiveCategory, .buttonActiveCategory, .buttonEdit {
-  /* Base Child Elements */
 }
 .button > .icon, .buttonChip > .icon, .buttonHome > .icon, .buttonModal > .icon, .buttonDrawerMenuClosed > .icon, .buttonDrawerMenu > .icon, .buttonDrawerClosed > .icon, .buttonDrawer > .icon, .buttonBackwards > .icon, .buttonForward > .icon, .buttonPassiveCategory > .icon, .buttonActiveCategory > .icon, .buttonEdit > .icon {
   font-size: 1.1rem;
@@ -90,12 +80,9 @@
   opacity: 0;
   transition: all 1s;
 }
-.button, .buttonChip, .buttonHome, .buttonModal, .buttonDrawerMenuClosed, .buttonDrawerMenu, .buttonDrawerClosed, .buttonDrawer, .buttonBackwards, .buttonForward, .buttonPassiveCategory, .buttonActiveCategory, .buttonEdit {
-  /* Specific Interaction Overrides */
-}
 .button:hover > .icon, .buttonChip:hover > .icon, .buttonHome:hover > .icon, .buttonModal:hover > .icon, .buttonDrawerMenuClosed:hover > .icon, .buttonDrawerMenu:hover > .icon, .buttonDrawerClosed:hover > .icon, .buttonDrawer:hover > .icon, .buttonBackwards:hover > .icon, .buttonForward:hover > .icon, .buttonPassiveCategory:hover > .icon, .buttonActiveCategory:hover > .icon, .buttonEdit:hover > .icon {
-  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
   color: var(--primary-container);
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 .button:hover, .buttonChip:hover, .buttonHome:hover, .buttonModal:hover, .buttonDrawerMenuClosed:hover, .buttonDrawerMenu:hover, .buttonDrawerClosed:hover, .buttonDrawer:hover, .buttonBackwards:hover, .buttonForward:hover, .buttonPassiveCategory:hover, .buttonActiveCategory:hover, .buttonEdit:hover, .button:active, .buttonChip:active, .buttonHome:active, .buttonModal:active, .buttonDrawerMenuClosed:active, .buttonDrawerMenu:active, .buttonDrawerClosed:active, .buttonDrawer:active, .buttonBackwards:active, .buttonForward:active, .buttonPassiveCategory:active, .buttonActiveCategory:active, .buttonEdit:active {
   background-color: var(--primary-fixed);
@@ -103,11 +90,8 @@
   border: 2px solid var(--outline);
 }
 .button:hover > span, .buttonChip:hover > span, .buttonHome:hover > span, .buttonModal:hover > span, .buttonDrawerMenuClosed:hover > span, .buttonDrawerMenu:hover > span, .buttonDrawerClosed:hover > span, .buttonDrawer:hover > span, .buttonBackwards:hover > span, .buttonForward:hover > span, .buttonPassiveCategory:hover > span, .buttonActiveCategory:hover > span, .buttonEdit:hover > span, .button:active > span, .buttonChip:active > span, .buttonHome:active > span, .buttonModal:active > span, .buttonDrawerMenuClosed:active > span, .buttonDrawerMenu:active > span, .buttonDrawerClosed:active > span, .buttonDrawer:active > span, .buttonBackwards:active > span, .buttonForward:active > span, .buttonPassiveCategory:active > span, .buttonActiveCategory:active > span, .buttonEdit:active > span {
-  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 200, "opsz" 24;
   color: var(--on-primary-fixed);
-}
-.button, .buttonChip, .buttonHome, .buttonModal, .buttonDrawerMenuClosed, .buttonDrawerMenu, .buttonDrawerClosed, .buttonDrawer, .buttonBackwards, .buttonForward, .buttonPassiveCategory, .buttonActiveCategory, .buttonEdit {
-  /* Modifiers */
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 200, "opsz" 24;
 }
 .buttonEdit {
   background-color: var(--secondary-container);
@@ -123,7 +107,7 @@
 .buttonActiveCategory > .text {
   color: var(--on-surface);
 }
-.buttonActiveCategory::after {
+.buttonActiveCategory::before {
   background-color: var(--on-secondary-container);
 }
 .buttonPassiveCategory {
@@ -137,14 +121,14 @@
 .buttonPassiveCategory > .text {
   color: var(--on-surface);
 }
-.buttonPassiveCategory::after {
+.buttonPassiveCategory::before {
   background-color: var(--on-secondary-container);
 }
 .buttonForward {
-  padding: 0;
+  grid-area: forwardButton;
   flex: 1 1 auto;
   flex-flow: row nowrap;
-  grid-area: forwardButton;
+  padding: 0;
   background-color: var(--primary-container);
   color: var(--on-primary-container);
 }
@@ -153,10 +137,10 @@
   color: var(--on-primary-container);
 }
 .buttonBackwards {
-  padding: 0;
+  grid-area: backwardsButton;
   flex: 1 1 auto;
   flex-flow: row nowrap;
-  grid-area: backwardsButton;
+  padding: 0;
   background-color: var(--primary-container);
   color: var(--on-primary-container);
 }
@@ -173,33 +157,33 @@
 }
 .buttonDrawerClosed > .icon,
 .buttonDrawerClosed > .text {
-  filter: drop-shadow(var(--scrim));
   color: var(--on-surface-variant);
+  filter: drop-shadow(var(--scrim));
 }
-.buttonDrawerClosed::after {
+.buttonDrawerClosed::before {
   background-color: var(--surface-variant);
 }
 .buttonDrawerOpen {
   background-color: var(--secondary);
 }
 .buttonDrawerMenu {
-  flex: 2 1 auto;
   grid-area: drawerMenuButton;
+  flex: 2 1 auto;
   background-color: var(--secondary);
   border: none;
 }
 .buttonDrawerMenuClosed {
-  border: none;
-  height: 4rem;
   width: auto;
+  height: 4rem;
+  border: none;
   background-color: transparent;
 }
 .buttonDrawerMenuClosed > .icon,
 .buttonDrawerMenuClosed > .text {
-  filter: drop-shadow(var(--scrim));
   color: var(--on-surface-variant);
+  filter: drop-shadow(var(--scrim));
 }
-.buttonDrawerMenuClosed::after {
+.buttonDrawerMenuClosed::before {
   background-color: var(--surface-variant);
 }
 .buttonDrawerMenuOpen {
@@ -220,58 +204,56 @@
   background-color: var(--surface-container);
   box-shadow: var(--dp8);
 }
-.buttonModal:hover::after {
+.buttonModal:hover::before {
   background-color: var(--on-primary);
 }
 .buttonModal:focus, .buttonModal:active {
   box-shadow: var(--dp9);
 }
-.buttonModal:focus::after, .buttonModal:active::after {
+.buttonModal:focus::before, .buttonModal:active::before {
   background-color: var(--on-primary-container);
 }
 .buttonHome {
-  flex: 2 1 auto;
   grid-area: homeButton;
-  box-shadow: var(--dp2);
+  flex: 2 1 auto;
   background-color: var(--primary);
   color: var(--on-primary);
+  box-shadow: var(--dp2);
 }
 .buttonHome > .icon,
 .buttonHome > .text {
   color: var(--on-primary);
 }
 .buttonChip {
-  height: minmax(2rem, 3rem);
   flex: 0 1 auto;
+  height: minmax(2rem, 3rem);
 }
 
-/* --- Utilities --- */
 .active {
   background-color: var(--tertiary-container);
   color: var(--on-tertiary-container);
 }
 
 .snackbar {
-  visibility: hidden;
-  min-width: 250px;
-  margin-left: -125px;
-  background-color: var(--inverse-surface);
-  color: var(--inverse-on-surface);
-  text-align: center;
-  border-radius: 2px;
-  padding: 16px;
   position: fixed;
   z-index: 1;
-  left: 50%;
   bottom: 30px;
+  left: 50%;
+  min-width: 250px;
+  margin-left: -125px;
+  padding: 16px;
+  background-color: var(--inverse-surface);
+  color: var(--inverse-on-surface);
   font-size: 17px;
+  text-align: center;
+  border-radius: 2px;
+  visibility: hidden;
 }
 .snackbar.show {
   visibility: visible;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
-/* --- Links & Search Bars --- */
 .searchBarLink, .isActive, .notActive,
 .link,
 .searchBarLinkIsActive,
@@ -284,7 +266,6 @@
 .linkOpenActive,
 .searchBarLinkActive,
 .linkActive {
-  position: relative;
   box-sizing: border-box;
   display: flex;
   flex-flow: column nowrap;
@@ -293,99 +274,86 @@
   align-content: stretch;
   width: 100%;
   min-width: 0;
-  padding: 0.2rem;
   max-height: 5rem;
+  padding: 0.2rem;
   gap: 0.3rem;
   border-radius: 2vmin;
   text-align: center;
   text-decoration: none;
   transition: all 0.3s;
+  position: relative;
 }
-.searchBarLink::after, .isActive::after, .notActive::after,
-.link::after,
-.searchBarLinkIsActive::after,
-.linkIsActive::after,
-.searchBarLinkNotActive::after,
-.linkNotActive::after,
-.searchBarLinkOpen::after,
-.linkOpen::after,
-.searchBarLinkOpenActive::after,
-.linkOpenActive::after,
-.searchBarLinkActive::after,
-.linkActive::after {
+.searchBarLink::before, .isActive::before, .notActive::before,
+.link::before,
+.searchBarLinkIsActive::before,
+.linkIsActive::before,
+.searchBarLinkNotActive::before,
+.linkNotActive::before,
+.searchBarLinkOpen::before,
+.linkOpen::before,
+.searchBarLinkOpenActive::before,
+.linkOpenActive::before,
+.searchBarLinkActive::before,
+.linkActive::before {
   content: "";
   position: absolute;
-  display: block;
   inset: 0;
   border-radius: inherit;
   opacity: 0;
-  transition: all 0.5s;
+  background-color: var(--on-surface);
+  transition: opacity 0.3s;
   pointer-events: none;
-  background-color: currentColor;
+  z-index: auto;
 }
-.searchBarLink:hover::after, .isActive:hover::after, .notActive:hover::after,
-.link:hover::after,
-.searchBarLinkIsActive:hover::after,
-.linkIsActive:hover::after,
-.searchBarLinkNotActive:hover::after,
-.linkNotActive:hover::after,
-.searchBarLinkOpen:hover::after,
-.linkOpen:hover::after,
-.searchBarLinkOpenActive:hover::after,
-.linkOpenActive:hover::after,
-.searchBarLinkActive:hover::after,
-.linkActive:hover::after {
+.searchBarLink:hover::before, .isActive:hover::before, .notActive:hover::before,
+.link:hover::before,
+.searchBarLinkIsActive:hover::before,
+.linkIsActive:hover::before,
+.searchBarLinkNotActive:hover::before,
+.linkNotActive:hover::before,
+.searchBarLinkOpen:hover::before,
+.linkOpen:hover::before,
+.searchBarLinkOpenActive:hover::before,
+.linkOpenActive:hover::before,
+.searchBarLinkActive:hover::before,
+.linkActive:hover::before {
   opacity: 0.08;
 }
-.searchBarLink:focus::after, .isActive:focus::after, .notActive:focus::after, .searchBarLink:active::after, .isActive:active::after, .notActive:active::after, .searchBarLink:focus-visible::after, .isActive:focus-visible::after, .notActive:focus-visible::after,
-.link:focus::after,
-.searchBarLinkIsActive:focus::after,
-.linkIsActive:focus::after,
-.searchBarLinkNotActive:focus::after,
-.linkNotActive:focus::after,
-.searchBarLinkOpen:focus::after,
-.linkOpen:focus::after,
-.searchBarLinkOpenActive:focus::after,
-.linkOpenActive:focus::after,
-.searchBarLinkActive:focus::after,
-.linkActive:focus::after,
-.link:active::after,
-.searchBarLinkIsActive:active::after,
-.linkIsActive:active::after,
-.searchBarLinkNotActive:active::after,
-.linkNotActive:active::after,
-.searchBarLinkOpen:active::after,
-.linkOpen:active::after,
-.searchBarLinkOpenActive:active::after,
-.linkOpenActive:active::after,
-.searchBarLinkActive:active::after,
-.linkActive:active::after,
-.link:focus-visible::after,
-.searchBarLinkIsActive:focus-visible::after,
-.linkIsActive:focus-visible::after,
-.searchBarLinkNotActive:focus-visible::after,
-.linkNotActive:focus-visible::after,
-.searchBarLinkOpen:focus-visible::after,
-.linkOpen:focus-visible::after,
-.searchBarLinkOpenActive:focus-visible::after,
-.linkOpenActive:focus-visible::after,
-.searchBarLinkActive:focus-visible::after,
-.linkActive:focus-visible::after {
+.searchBarLink:focus::before, .isActive:focus::before, .notActive:focus::before, .searchBarLink:active::before, .isActive:active::before, .notActive:active::before, .searchBarLink:focus-visible::before, .isActive:focus-visible::before, .notActive:focus-visible::before,
+.link:focus::before,
+.searchBarLinkIsActive:focus::before,
+.linkIsActive:focus::before,
+.searchBarLinkNotActive:focus::before,
+.linkNotActive:focus::before,
+.searchBarLinkOpen:focus::before,
+.linkOpen:focus::before,
+.searchBarLinkOpenActive:focus::before,
+.linkOpenActive:focus::before,
+.searchBarLinkActive:focus::before,
+.linkActive:focus::before,
+.link:active::before,
+.searchBarLinkIsActive:active::before,
+.linkIsActive:active::before,
+.searchBarLinkNotActive:active::before,
+.linkNotActive:active::before,
+.searchBarLinkOpen:active::before,
+.linkOpen:active::before,
+.searchBarLinkOpenActive:active::before,
+.linkOpenActive:active::before,
+.searchBarLinkActive:active::before,
+.linkActive:active::before,
+.link:focus-visible::before,
+.searchBarLinkIsActive:focus-visible::before,
+.linkIsActive:focus-visible::before,
+.searchBarLinkNotActive:focus-visible::before,
+.linkNotActive:focus-visible::before,
+.searchBarLinkOpen:focus-visible::before,
+.linkOpen:focus-visible::before,
+.searchBarLinkOpenActive:focus-visible::before,
+.linkOpenActive:focus-visible::before,
+.searchBarLinkActive:focus-visible::before,
+.linkActive:focus-visible::before {
   opacity: 0.1;
-}
-.searchBarLink::after, .isActive::after, .notActive::after,
-.link::after,
-.searchBarLinkIsActive::after,
-.linkIsActive::after,
-.searchBarLinkNotActive::after,
-.linkNotActive::after,
-.searchBarLinkOpen::after,
-.linkOpen::after,
-.searchBarLinkOpenActive::after,
-.linkOpenActive::after,
-.searchBarLinkActive::after,
-.linkActive::after {
-  background-color: var(--on-surface);
 }
 .searchBarLink > .icon, .isActive > .icon, .notActive > .icon,
 .link > .icon,
@@ -399,8 +367,8 @@
 .linkOpenActive > .icon,
 .searchBarLinkActive > .icon,
 .linkActive > .icon {
-  text-align: center;
   color: var(--on-surface-variant);
+  text-align: center;
 }
 .searchBarLink > .text, .isActive > .text, .notActive > .text,
 .link > .text,
@@ -414,20 +382,21 @@
 .linkOpenActive > .text,
 .searchBarLinkActive > .text,
 .linkActive > .text {
-  opacity: 1;
-  font-size: 0.7rem;
-  font-variation-settings: "wght" 500;
+  width: 100%;
+  color: var(--on-surface-variant);
+  font-family: inherit;
   font-style: var(--label-medium-font-family-style);
   font-weight: var(--label-medium-font-weight);
-  color: var(--on-surface-variant);
+  font-size: 0.7rem;
+  font-variation-settings: "wght" 500;
   letter-spacing: var(--label-medium-tracking);
   line-height: var(--label-medium-height);
+  text-align: center;
   text-transform: var(--label-medium-text-transform);
   text-decoration: var(--label-medium-text-decoration);
-  width: 100%;
-  text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
+  opacity: 1;
 }
 .searchBarLink .date, .isActive .date, .notActive .date,
 .link .date,
@@ -442,12 +411,12 @@
 .searchBarLinkActive .date,
 .linkActive .date {
   grid-area: date;
-  background-color: var(--surface);
-  padding: 0.2rem;
-  color: var(--on-surface);
-  font-family: var(--play-display);
-  border-radius: 2vmin;
   align-self: center;
+  padding: 0.2rem;
+  background-color: var(--surface);
+  color: var(--on-surface);
+  border-radius: 2vmin;
+  font-family: var(--play-display);
 }
 .searchBarLink .sub, .isActive .sub, .notActive .sub,
 .link .sub,
@@ -463,32 +432,18 @@
 .linkActive .sub {
   color: var(--secondary);
 }
-.searchBarLink, .isActive, .notActive,
-.link,
-.searchBarLinkIsActive,
-.linkIsActive,
-.searchBarLinkNotActive,
-.linkNotActive,
-.searchBarLinkOpen,
-.linkOpen,
-.searchBarLinkOpenActive,
-.linkOpenActive,
-.searchBarLinkActive,
-.linkActive {
-  /* Modifiers */
-}
 .searchBarLinkActive > .text,
 .linkActive > .text {
   color: var(--on-surface);
 }
 .searchBarLinkActive > .icon,
 .linkActive > .icon {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.2rem 0;
   background-color: var(--secondary-container);
   color: var(--on-secondary-container);
-  width: 100%;
   border-radius: 1rem;
-  padding: 0.2rem 0;
-  box-sizing: border-box;
 }
 .searchBarLinkOpen,
 .linkOpen,
@@ -496,8 +451,8 @@
 .linkOpenActive {
   flex-flow: row nowrap;
   justify-content: flex-start;
-  gap: 0.8rem;
   padding: 1rem;
+  gap: 0.8rem;
 }
 .searchBarLinkOpenActive,
 .linkOpenActive {
@@ -511,9 +466,9 @@
 .searchBarLinkOpenActive > .icon,
 .linkOpenActive > .icon {
   width: 3.5rem;
-  border-radius: 1rem;
   padding: 0.2rem 0;
   color: var(--on-secondary-container);
+  border-radius: 1rem;
 }
 .searchBarLinkNotActive,
 .linkNotActive {
@@ -524,20 +479,6 @@
 .linkIsActive {
   background-color: var(--primary);
   color: var(--on-primary);
-}
-.searchBarLink, .isActive, .notActive,
-.link,
-.searchBarLinkIsActive,
-.linkIsActive,
-.searchBarLinkNotActive,
-.linkNotActive,
-.searchBarLinkOpen,
-.linkOpen,
-.searchBarLinkOpenActive,
-.linkOpenActive,
-.searchBarLinkActive,
-.linkActive {
-  /* Hover Overrides */
 }
 .searchBarLink:hover > .icon, .isActive:hover > .icon, .notActive:hover > .icon, .searchBarLink:focus > .icon, .isActive:focus > .icon, .notActive:focus > .icon, .searchBarLink:active > .icon, .isActive:active > .icon, .notActive:active > .icon,
 .link:hover > .icon,
@@ -584,59 +525,53 @@
   display: flex;
 }
 
-/* --- Material Design 3 Buttons --- */
 .md3Btn, .md3BtnTonalPrimary, .md3BtnTonal {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
   box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: var(--md-btn-gap);
+  background: transparent;
   border: none;
+  border-radius: var(--shape-corner-full);
   outline: none;
   vertical-align: middle;
-  background: transparent;
   text-decoration: none;
-  margin: 8px;
-  position: relative;
-  overflow: hidden;
   cursor: pointer;
-  /* Typography */
+  overflow: hidden;
+  transition: background-color var(--md-sys-motion-duration-short) var(--md-sys-motion-easing-standard), color var(--md-sys-motion-duration-short) var(--md-sys-motion-easing-standard);
   font-family: var(--label-large-font-family-name);
   font-size: var(--label-large-font-size);
   font-weight: var(--label-large-font-weight);
   line-height: var(--label-large-line-height);
   letter-spacing: var(--label-large-letter-spacing);
-  /* Layout & Shape */
-  border-radius: var(--shape-corner-full);
-  padding: 0 var(--md-btn-padding-inline);
-  gap: var(--md-btn-gap);
-  transition: background-color var(--md-sys-motion-duration-short) var(--md-sys-motion-easing-standard), color var(--md-sys-motion-duration-short) var(--md-sys-motion-easing-standard);
-}
-.md3Btn *, .md3BtnTonalPrimary *, .md3BtnTonal *, .md3Btn:link, .md3BtnTonalPrimary:link, .md3BtnTonal:link, .md3Btn:visited, .md3BtnTonalPrimary:visited, .md3BtnTonal:visited {
-  color: var(--on-secondary-container);
-}
-.md3Btn, .md3BtnTonalPrimary, .md3BtnTonal {
-  /* Asymmetric Padding for Buttons with Icons */
 }
 .md3Btn:has(.md3BtnIcon), .md3BtnTonalPrimary:has(.md3BtnIcon), .md3BtnTonal:has(.md3BtnIcon) {
   padding-left: var(--md-btn-icon-padding-start);
   padding-right: var(--md-btn-icon-padding-end);
 }
 
-/* Icon Sizing & Alignment */
 .md3BtnIcon {
+  flex-shrink: 0;
   width: var(--md-btn-icon-size);
   height: var(--md-btn-icon-size);
-  color: var(--on-secondary-container);
-  flex-shrink: 0;
+  transition: color var(--md-sys-motion-duration-short) var(--md-sys-motion-easing-standard);
 }
 
-/* Tonal Buttons utilizing the new Mixin */
 .md3BtnTonal {
   background-color: var(--secondary-container);
   color: var(--on-secondary-container);
 }
+.md3BtnTonal .md3BtnIcon {
+  color: var(--on-secondary-container);
+}
 .md3BtnTonal:hover, .md3BtnTonal:active, .md3BtnTonal:focus {
   background-color: var(--secondary);
+  color: var(--on-secondary);
+}
+.md3BtnTonal:hover .md3BtnIcon, .md3BtnTonal:active .md3BtnIcon, .md3BtnTonal:focus .md3BtnIcon {
   color: var(--on-secondary);
 }
 .md3BtnTonal::before {
@@ -666,6 +601,9 @@
   cursor: not-allowed;
   pointer-events: none;
 }
+.md3BtnTonal:disabled .md3BtnIcon {
+  color: color-mix(in srgb, var(--on-surface) 38%, transparent);
+}
 .md3BtnTonal:disabled::before {
   display: none;
 }
@@ -674,8 +612,14 @@
   background-color: var(--primary);
   color: var(--on-primary);
 }
+.md3BtnTonalPrimary .md3BtnIcon {
+  color: var(--on-primary);
+}
 .md3BtnTonalPrimary:hover, .md3BtnTonalPrimary:active, .md3BtnTonalPrimary:focus {
   background-color: var(--primary-container);
+  color: var(--on-primary-container);
+}
+.md3BtnTonalPrimary:hover .md3BtnIcon, .md3BtnTonalPrimary:active .md3BtnIcon, .md3BtnTonalPrimary:focus .md3BtnIcon {
   color: var(--on-primary-container);
 }
 .md3BtnTonalPrimary::before {
@@ -704,6 +648,9 @@
   color: color-mix(in srgb, var(--on-surface) 38%, transparent);
   cursor: not-allowed;
   pointer-events: none;
+}
+.md3BtnTonalPrimary:disabled .md3BtnIcon {
+  color: color-mix(in srgb, var(--on-surface) 38%, transparent);
 }
 .md3BtnTonalPrimary:disabled::before {
   display: none;

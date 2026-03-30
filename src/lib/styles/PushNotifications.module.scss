@@ -1,60 +1,64 @@
 .container {
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
   margin-top: 1rem;
-  font-family: sans-serif;
+  padding: 1rem;
+  border: 1px solid var(--outline);
+  border-radius: 8px;
 }
 
 .title {
+  margin-bottom: 0.5rem;
   font-size: 1.25rem;
   font-weight: bold;
-  margin-bottom: 0.5rem;
 }
 
 .statusText {
-  font-size: 0.875rem;
   margin-bottom: 0.5rem;
+  font-size: 0.875rem;
 }
 
 .inputField {
-  border: 1px solid #ccc;
-  padding: 0.5rem;
-  border-radius: 4px;
-  margin-right: 0.5rem;
-  width: 100%;
   box-sizing: border-box;
+  width: 100%;
   max-width: 300px;
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--outline);
+  border-radius: 4px;
 }
 
 .button {
   padding: 0.5rem 1rem;
-  border-radius: 4px;
   border: none;
-  cursor: pointer;
+  border-radius: 4px;
   font-weight: 500;
+  cursor: pointer;
   transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
-.button:hover {
-  opacity: 0.8;
-}
+.btn {
+  &Primary {
+    background-color: var(--primary);
+    color: var(--on-primary);
+  }
 
-.btnPrimary {
-  background-color: #2563eb;
-  color: white;
-}
-.btnSecondary {
-  background-color: #ef4444;
-  color: white;
-}
-.btnSuccess {
-  background-color: #16a34a;
-  color: white;
-}
-.btnGhost {
-  background-color: #e5e7eb;
-  color: #374151;
+  &Secondary {
+    background-color: var(--secondary);
+    color: var(--on-secondary);
+  }
+
+  &Success {
+    background-color: #16a34a;
+    color: white;
+  }
+
+  &Ghost {
+    background-color: #e5e7eb;
+    color: #374151;
+  }
 }
 
 .flexGroup {
@@ -65,6 +69,6 @@
 
 .row {
   display: flex;
-  gap: 0.5rem;
   align-items: center;
+  gap: 0.5rem;
 }
