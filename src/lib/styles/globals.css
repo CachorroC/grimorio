@@ -315,25 +315,25 @@
     --surface-container-high: rgb(41 42 39);
     --surface-container-highest: rgb(52 53 50);
     /* Chakras */
-    --chakra-rojo: #ef5350; /* Lighter, slightly softer red */
-    --chakra-naranja: #ffb74d; /* Softer, more pastel orange */
-    --chakra-amarillo: #ffee58; /* Less harsh yellow for dark backgrounds */
-    --chakra-verde: #66bb6a; /* Lighter, readable green */
-    --chakra-azul: #4fc3f7; /* Brighter light blue for contrast */
-    --chakra-indigo: #7986cb; /* Lighter indigo to avoid blending into dark greys */
-    --chakra-violeta: #ba68c8; /* Lighter violet */
-    --chakra-default: #bdbdbd; /* Lighter grey for better visibility */
+    --chakra-rojo: #f8b1b0; /* Lighter, slightly softer red */
+    --chakra-naranja: #fed69a; /* Softer, more pastel orange */
+    --chakra-amarillo: #fff59e; /* Less harsh yellow for dark backgrounds */
+    --chakra-verde: #b4dfb6; /* Lighter, readable green */
+    --chakra-azul: #ade2fa; /* Brighter light blue for contrast */
+    --chakra-indigo: #d0d4ec; /* Lighter indigo to avoid blending into dark greys */
+    --chakra-violeta: #e2c0e8; /* Lighter violet */
+    --chakra-default: #e6e5e5; /* Lighter grey for better visibility */
     /* Gender/Polarity */
-    --masculine-color: #64b5f6; /* Lighter blue */
-    --feminine-color: #f06292; /* Lighter pink */
+    --masculine-color: #c5e3fc; /* Lighter blue */
+    --feminine-color: #fac2d5; /* Lighter pink */
     /* Elements */
-    --element-metal: #bdbdbd; /* Lighter grey */
-    --element-madera: #81c784; /* Lighter, softer green */
-    --element-fuego: #e57373; /* Lighter red */
-    --element-tierra: #a1887f; /* Lighter, slightly warmer brown */
-    --element-aire: #4dd0e1; /* Brighter cyan */
-    --element-agua: #64b5f6; /* Lighter blue */
-    --element-default: #bdbdbd; /* Lighter grey */
+    --element-metal: #e6e5e5; /* Lighter grey */
+    --element-madera: #c4e3c6; /* Lighter, softer green */
+    --element-fuego: #f2b5b5; /* Lighter red */
+    --element-tierra: #d0c6c3; /* Lighter, slightly warmer brown */
+    --element-aire: #a8e7f0; /* Brighter cyan */
+    --element-agua: #b7dcfa; /* Lighter blue */
+    --element-default: #eeeded; /* Lighter grey */
   }
 }
 

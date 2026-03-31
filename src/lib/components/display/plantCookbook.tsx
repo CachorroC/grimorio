@@ -206,15 +206,17 @@ const CustomColorTagSection = (
                 label={tag.label}
                 size="small"
                 variant="outlined"
-                sx={{
-                  borderColor    : tag.hexColor,
-                  color          : tag.hexColor,
-                  backgroundColor: `${ tag.hexColor }1A`, // 10% opacity
-                  fontWeight     : 500,
-                  cursor         : tag.tooltipContent
-                    ? 'help'
-                    : 'default',
-                }}
+                sx={
+                  {
+                    borderColor     : tag.hexColor,
+                    color           : tag.hexColor,
+                    bacºkgroundColor: tag.hexColor,
+                    fontWeight      : 500,
+                    cursor          : tag.tooltipContent
+                      ? 'help'
+                      : 'default',
+                  }
+                }
               />
             );
 
