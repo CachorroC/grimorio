@@ -1,5 +1,6 @@
 'use client';
 
+import React, { Dispatch, SetStateAction } from 'react';
 import { Box,
   CardContent,
   Typography,
@@ -19,14 +20,14 @@ import { Box,
   TableContainer,
   TableRow,
   Paper,
-  Button, } from '@mui/material';
+  Button,
+  Tooltip, } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import CircleIcon from '@mui/icons-material/Circle';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import { EspecimenType,
   ChakraType,
   ElementosType, } from '#@/lib/types/especimenTypes';
-import { Dispatch, SetStateAction } from 'react';
 import { useAccordionScroll } from '#@/app/context/AcordionScrollContext';
 
 interface PlantCookbookProps {
@@ -41,27 +42,27 @@ const getChakraColor = (
 ): string => {
   switch ( colorDescription ) {
       case 'Rojo':
-        return '#e53935'; // Red
+        return 'var(--chakra-rojo)'; // Red
 
       case 'Naranja':
-        return '#fb8c00'; // Orange
+        return 'var(--chakra-naranja)'; // Orange
 
       case 'Amarillo':
-        return '#fdd835'; // Yellow
+        return 'var(--chakra-amarillo)'; // Yellow
 
       case 'Verde o rosa':
-        return '#43a047'; // Green
+        return 'var(--chakra-verde)'; // Green
 
       case 'Azul claro':
-        return '#03a9f4'; // Light Blue
+        return 'var(--chakra-azul)'; // Light Blue
 
       case 'Índigo':
-        return '#3949ab'; // Indigo
+        return 'var(--chakra-indigo)'; // Indigo
 
       case 'Blanco o violeta':
-        return '#8e24aa'; // Violet
+        return 'var(--chakra-violeta)'; // Violet
       default:
-        return '#9e9e9e';
+        return 'var(--chakra-default)';
   }
 };
 
@@ -69,8 +70,8 @@ const getPolarityColor = (
   polarity: 'Masculine' | 'Feminine'
 ): string => {
   return polarity === 'Masculine'
-    ? '#1976d2'
-    : '#d81b60'; // Strong Blue vs Deep Pink
+    ? 'var(--masculine-color)'
+    : 'var(--feminine-color)'; // Strong Blue vs Deep Pink
 };
 
 const getElementColor = (
@@ -78,24 +79,24 @@ const getElementColor = (
 ): string => {
   switch ( element ) {
       case 'Metal':
-        return '#9e9e9e'; // Grey/Silver
+        return 'var(--element-metal)'; // Grey/Silver
 
       case 'Madera':
-        return '#4caf50'; // Green
+        return 'var(--element-madera)'; // Green
 
       case 'Fuego':
-        return '#f44336'; // Red
+        return 'var(--element-fuego)'; // Red
 
       case 'Tierra':
-        return '#8d6e63'; // Brown
+        return 'var(--element-tierra)'; // Brown
 
       case 'Aire':
-        return '#00bcd4'; // Cyan
+        return 'var(--element-aire)'; // Cyan
 
       case 'Agua':
-        return '#1e88e5'; // Blue
+        return 'var(--element-agua)'; // Blue
       default:
-        return '#9e9e9e';
+        return 'var(--element-default)';
   }
 };
 
@@ -169,7 +170,7 @@ const CustomColorTagSection = (
     tags,
   }: {
     title: string;
-    tags : { label: string; hexColor: string }[];
+    tags : { label: string; hexColor: string; tooltipContent?: React.ReactNode }[];
   }
 ) => {
   if ( !tags || tags.length === 0 ) {
@@ -200,9 +201,8 @@ const CustomColorTagSection = (
           (
             tag, index
           ) => {
-            return (
+            const chip = (
               <Chip
-                key={index}
                 label={tag.label}
                 size="small"
                 variant="outlined"
@@ -211,9 +211,24 @@ const CustomColorTagSection = (
                   color          : tag.hexColor,
                   backgroundColor: `${ tag.hexColor }1A`, // 10% opacity
                   fontWeight     : 500,
+                  cursor         : tag.tooltipContent
+                    ? 'help'
+                    : 'default',
                 }}
               />
             );
+
+            // Wrap in a Tooltip if tooltipContent is provided
+            if ( tag.tooltipContent ) {
+              return (
+                <Tooltip key={index} title={tag.tooltipContent} arrow placement="top">
+                  {chip}
+                </Tooltip>
+              );
+            }
+
+            // Otherwise, return just the chip with the key applied
+            return <React.Fragment key={index}>{chip}</React.Fragment>;
           }
         )}
       </Box>
@@ -312,55 +327,91 @@ export default function PlantCookbook(
               color="error"
             />
 
-            {plant.chakrasAsociados && (
-              <CustomColorTagSection
-                title="Chakras Asociados"
-                tags={plant.chakrasAsociados.map(
-                  (
-                    chakra
-                  ) => {
-                    return {
-                      label   : chakra.nombre,
-                      hexColor: getChakraColor(
-                        chakra.color
-                      ),
-                    };
-                  }
-                )}
-              />
-            )}
+            <Box
+              sx={{
+                display : 'flex',
+                flexWrap: 'wrap',
+                gap     : {
+                  xs: 0,
+                  sm: 4
+                }
+              }}
+            >
+              {plant.chakrasAsociados && (
+                <CustomColorTagSection
+                  title="Chakras Asociados"
+                  tags={plant.chakrasAsociados.map(
+                    (
+                      chakra
+                    ) => {
+                      return {
+                        label   : chakra.nombre,
+                        hexColor: getChakraColor(
+                          chakra.color
+                        ),
+                        // Building the custom hover popup content here
+                        tooltipContent: (
+                          <Box sx={{
+                            p       : 0.5,
+                            maxWidth: 280
+                          }}
+                          >
+                            <Typography variant="subtitle2" sx={{
+                              fontWeight: 'bold',
+                              mb        : 0.5
+                            }}
+                            >
+                              {chakra.nombreSanscrito}
+                            </Typography>
+                            <Typography variant="body2" sx={{
+                              mb: 0.5
+                            }}
+                            >
+                              <strong>Ubicación:</strong> {chakra.ubicacion}
+                            </Typography>
+                            <Typography variant="body2">
+                              <strong>Significado:</strong> {chakra.significado}
+                            </Typography>
+                          </Box>
+                        )
+                      };
+                    }
+                  )}
+                />
+              )}
 
-            {plant.polaridadEnergetica && (
-              <CustomColorTagSection
-                title="Polaridad Energética"
-                tags={plant.polaridadEnergetica.map(
-                  (
-                    polaridad
-                  ) => {
-                    return {
-                      label   : polaridad,
-                      hexColor: getPolarityColor(
-                        polaridad
-                      ),
-                    };
-                  }
-                )}
-              />
-            )}
+              {plant.polaridadEnergetica && (
+                <CustomColorTagSection
+                  title="Polaridad Energética"
+                  tags={plant.polaridadEnergetica.map(
+                    (
+                      polaridad
+                    ) => {
+                      return {
+                        label   : polaridad,
+                        hexColor: getPolarityColor(
+                          polaridad
+                        ),
+                      };
+                    }
+                  )}
+                />
+              )}
 
-            {plant.elementosAsociados && (
-              <CustomColorTagSection
-                title="Elemento Asociado"
-                tags={[
-                  {
-                    label   : plant.elementosAsociados,
-                    hexColor: getElementColor(
-                      plant.elementosAsociados
-                    ),
-                  },
-                ]}
-              />
-            )}
+              {plant.elementosAsociados && (
+                <CustomColorTagSection
+                  title="Elemento Asociado"
+                  tags={[
+                    {
+                      label   : plant.elementosAsociados,
+                      hexColor: getElementColor(
+                        plant.elementosAsociados
+                      ),
+                    },
+                  ]}
+                />
+              )}
+            </Box>
           </CardContent>
         </Grid>
       </Grid>
