@@ -14,9 +14,11 @@ import {
   IngredientesType,
   PreparacionType,
   Taxon,
+  PolaridadEnergeticaType,
+  listaChakras,
 } from '#@/lib/types/especimenTypes';
 import { displayLarge } from '#@/lib/styles/fonts/typography.module.css';
-import { upsertSpecimen, deleteSpecimen } from '#@/app/actions/specimen'; // IMPORTANT: Adjust this path to where you saved ConfirmModal.tsx
+import { upsertSpecimen, deleteSpecimen } from '#@/app/actions/specimen';
 import { icon } from '#@/lib/styles/buttons.module.css';
 import ConfirmModal from '../confirmModal';
 
@@ -42,6 +44,9 @@ const initialState: EspecimenType = {
     clados: [''],
   },
   preparaciones: [],
+  elementosAsociados: 'Tierra', // Default base value
+  chakrasAsociados: [],
+  polaridadEnergetica: ['Feminine'], // Requires at least one value to satisfy the tuple
 };
 
 export default function EspecimenForm({
@@ -76,10 +81,15 @@ export default function EspecimenForm({
         ...(initialData.taxon || {}),
         clados: initialData.taxon?.clados || [],
       },
+      elementosAsociados: initialData.elementosAsociados || 'Tierra',
+      chakrasAsociados: initialData.chakrasAsociados || [],
+      polaridadEnergética: initialData.polaridadEnergetica || ['Feminine'],
     };
   });
 
-  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLSelectElement>,
+  ) => {
     setFormData((prev) => {
       return {
         ...prev,
@@ -141,6 +151,58 @@ export default function EspecimenForm({
           return index !== indexToRemove;
         }),
       };
+    });
+  };
+
+  const togglePolaridad = (val: 'Masculine' | 'Feminine') => {
+    setFormData((prev) => {
+      const current = prev.polaridadEnergetica || [];
+      let next = current.includes(val)
+        ? current.filter((p) => {
+            return p !== val;
+          })
+        : [...current, val];
+
+      // Enforce the tuple type requirement: array must have at least one element
+      if (next.length === 0) {
+        next = [val];
+      }
+
+      return {
+        ...prev,
+        polaridadEnergética: next as PolaridadEnergeticaType,
+      };
+    });
+  };
+
+  const toggleChakra = (chakraNombre: string) => {
+    setFormData((prev) => {
+      const current = prev.chakrasAsociados || [];
+      const exists = current.some((c) => {
+        return c.nombre === chakraNombre;
+      });
+
+      if (exists) {
+        return {
+          ...prev,
+          chakrasAsociados: current.filter((c) => {
+            return c.nombre !== chakraNombre;
+          }),
+        };
+      }
+
+      const chakraToAdd = listaChakras.find((c) => {
+        return c.nombre === chakraNombre;
+      });
+
+      if (chakraToAdd) {
+        return {
+          ...prev,
+          chakrasAsociados: [...current, chakraToAdd],
+        };
+      }
+
+      return prev;
     });
   };
 
@@ -353,7 +415,6 @@ export default function EspecimenForm({
     });
   };
 
-  // --- SUBMISSION HANDLER ---
   const handleSubmit: SubmitEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
     setIsProcessing(true);
@@ -415,6 +476,9 @@ export default function EspecimenForm({
             ...savedData.taxon,
             clados: savedData.taxon?.clados || [],
           },
+          elementosAsociados: savedData.elementosAsociados || 'Tierra',
+          chakrasAsociados: savedData.chakrasAsociados || [],
+          polaridadEnergetica: savedData.polaridadEnergetica || ['Feminine'],
         });
 
         if (response.failed === 'file') {
@@ -475,14 +539,14 @@ export default function EspecimenForm({
   };
 
   const renderStringArrayInput = (
-    title: string,
+    Subtitle: string,
     field: keyof EspecimenType,
   ) => {
     const arr = (formData[field] as string[]) || [];
 
     return (
       <div className={styles.section}>
-        <h3 className={styles.sectionTitle}>{title}</h3>
+        <h3 className={styles.sectionSubTitle}>{Subtitle}</h3>
         {arr.map((item, index) => {
           return (
             <div
@@ -496,7 +560,7 @@ export default function EspecimenForm({
                 onChange={(e) => {
                   return handleStringArrayChange(field, index, e.target.value);
                 }}
-                placeholder={`Añadir ${title.toLowerCase()}`}
+                placeholder={`Añadir ${Subtitle.toLowerCase()}`}
               />
               <button
                 type="button"
@@ -517,7 +581,7 @@ export default function EspecimenForm({
             return addStringArrayItem(field);
           }}
         >
-          + Añadir {title}
+          + Añadir {Subtitle}
         </button>
       </div>
     );
@@ -530,8 +594,10 @@ export default function EspecimenForm({
         onSubmit={handleSubmit}
       >
         <h2 className={displayLarge}>Registrar Espécimen</h2>
+
+        {/* Main Information */}
         <div className={styles.section}>
-          <h3 className={styles.sectionTitle}>Información Principal</h3>
+          <h3 className={styles.sectionSubTitle}>Información Principal</h3>
           <div className={styles.inputGroup}>
             <label className={styles.label}>Nombre Científico</label>
             <input
@@ -552,16 +618,14 @@ export default function EspecimenForm({
           />
         </div>
 
+        {/* Arrays */}
         {renderStringArrayInput('Nombres Comunes', 'nombresComunes')}
         {renderStringArrayInput('Partes Útiles', 'partesUtiles')}
         {renderStringArrayInput(
           'Propiedades Medicinales',
           'propiedadesMedicinales',
         )}
-        {renderStringArrayInput(
-          'Correspondencias Energéticas',
-          'correspondenciasEnergeticas',
-        )}
+
         {renderStringArrayInput(
           'Qué males emocionales cura',
           'malesEmocionales',
@@ -570,7 +634,136 @@ export default function EspecimenForm({
         {renderStringArrayInput('Esencias Florales', 'esenciasFlorales')}
 
         <div className={styles.section}>
-          <h3 className={styles.sectionTitle}>Taxonomía</h3>
+          <h3 className={styles.sectionTitle}>Propiedades Energéticas</h3>
+          {renderStringArrayInput(
+            'Correspondencias Energéticas',
+            'correspondenciasEnergeticas',
+          )}
+          {renderStringArrayInput('Esencias Florales', 'esenciasFlorales')}
+          <div className={styles.inputGroup}>
+            <label className={styles.label}>Elemento Asociado</label>
+            <select
+              name="elementosAsociados"
+              className={styles.inputFilled}
+              value={formData.elementosAsociados}
+              onChange={handleInputChange}
+            >
+              {['Metal', 'Madera', 'Fuego', 'Tierra', 'Aire', 'Agua'].map(
+                (el) => {
+                  return (
+                    <option
+                      key={el}
+                      value={el}
+                    >
+                      {el}
+                    </option>
+                  );
+                },
+              )}
+            </select>
+          </div>
+
+          {/* Polaridad Energética */}
+          <div
+            className={styles.inputGroup}
+            style={{
+              marginTop: '1rem',
+            }}
+          >
+            <label className={styles.label}>Polaridad Energética</label>
+            <div
+              style={{
+                display: 'flex',
+                gap: '1.5rem',
+                marginTop: '0.5rem',
+              }}
+            >
+              <label
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                }}
+              >
+                <input
+                  type="checkbox"
+                  checked={formData.polaridadEnergetica.includes('Masculine')}
+                  onChange={() => {
+                    return togglePolaridad('Masculine');
+                  }}
+                />
+                Masculina
+              </label>
+              <label
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
+                }}
+              >
+                <input
+                  type="checkbox"
+                  checked={formData.polaridadEnergetica.includes('Feminine')}
+                  onChange={() => {
+                    return togglePolaridad('Feminine');
+                  }}
+                />
+                Femenina
+              </label>
+            </div>
+          </div>
+
+          {/* Chakras Asociados */}
+          <div
+            className={styles.inputGroup}
+            style={{
+              marginTop: '1.5rem',
+            }}
+          >
+            <label className={styles.label}>Chakras Asociados</label>
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '0.5rem',
+                marginTop: '0.5rem',
+              }}
+            >
+              {listaChakras.map((chakra) => {
+                const isChecked = formData.chakrasAsociados.some((c) => {
+                  return c.nombre === chakra.nombre;
+                });
+
+                return (
+                  <label
+                    key={chakra.nombre}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '0.5rem',
+                    }}
+                  >
+                    <input
+                      type="checkbox"
+                      checked={isChecked}
+                      onChange={() => {
+                        return toggleChakra(chakra.nombre);
+                      }}
+                    />
+                    <span>
+                      <strong>{chakra.nombre}</strong> -{' '}
+                      <em>{chakra.nombreSanscrito}</em> ({chakra.color})
+                    </span>
+                  </label>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+
+        {/* Taxonomía */}
+        <div className={styles.section}>
+          <h3 className={styles.sectionSubTitle}>Taxonomía</h3>
           <div className={styles.row}>
             {[
               'dominio',
@@ -655,8 +848,9 @@ export default function EspecimenForm({
           </div>
         </div>
 
+        {/* Preparaciones */}
         <div className={styles.section}>
-          <h3 className={styles.sectionTitle}>Preparaciones</h3>
+          <h3 className={styles.sectionSubTitle}>Preparaciones</h3>
           {(formData.preparaciones || []).map((prep, prepIndex) => {
             return (
               <div
@@ -863,7 +1057,7 @@ export default function EspecimenForm({
               }}
               onClick={() => {
                 return setIsDeleteModalOpen(true);
-              }} // Open the modal instead of window.confirm
+              }}
               disabled={isProcessing}
             >
               <span className={`material-symbols-outlined ${icon}`}>

@@ -18,6 +18,7 @@ declare const styles: {
   readonly "label": string;
   readonly "row": string;
   readonly "section": string;
+  readonly "sectionSubTitle": string;
   readonly "sectionTitle": string;
   readonly "selectArea": string;
   readonly "slider": string;

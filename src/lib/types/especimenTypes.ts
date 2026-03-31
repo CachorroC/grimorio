@@ -11,17 +11,23 @@ export type EspecimenType = {
   malesFisicos               : string[];
   taxon                      : Taxon;
   preparaciones              : PreparacionType[];
-  elementosAsociados         : ElementosType
+  elementosAsociados         : ElementosType;
   chakrasAsociados           : ChakraType[];
-  polaridadEnergética        : ( 'Masculine' | 'Feminine' )[] | PolaridadEnergeticaType
+  polaridadEnergetica        : PolaridadEnergeticaType;
 };
 
 export type PolaridadEnergeticaType = [
   'Masculine' | 'Feminine',
-  ...( 'Masculine' | 'Feminine' )[]
+  ...( 'Masculine' | 'Feminine' )[],
 ];
 
-export type ElementosType = 'Metal' | 'Madera' | 'Fuego' | 'Tierra' | 'Aire' | 'Agua';
+export type ElementosType =
+  | 'Metal'
+  | 'Madera'
+  | 'Fuego'
+  | 'Tierra'
+  | 'Aire'
+  | 'Agua';
 
 export type PreparacionType = {
   //responde al para qué se usa este método de preparación, ejemplo "para el dolor del alma preparar: ingredientes, pasos"
@@ -53,7 +59,6 @@ export type Taxon = {
    */
   clados?: string[] | null;
 };
-
 
 // 1. Definimos un tipo estricto para cada chakra individualmente
 export type ChakraRaiz = {

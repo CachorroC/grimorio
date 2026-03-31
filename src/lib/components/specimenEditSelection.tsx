@@ -9,59 +9,45 @@ import Link from 'next/link';
 import { useAccordionScroll } from '#@/app/context/AcordionScrollContext';
 import buttonStyles from '../styles/buttons.module.css';
 
-export default function SpecimenEditSelection(
-  {
-    plantData,
-    isStandalone = false,
-  }: {
-    plantData    : EspecimenType;
-    isStandalone?: boolean;
-  }
-) {
-  const [
-    isEditing,
-    setIsEditing
-  ] = useState(
-    false
-  );
-  const {
-    cardRefs
-  } = useAccordionScroll();
-  const defaultImage
-    = 'https://via.placeholder.com/400x300?text=No+Image+Available';
+export default function SpecimenEditSelection({
+  plantData,
+  isStandalone = false,
+}: {
+  plantData: EspecimenType;
+  isStandalone?: boolean;
+}) {
+  const [isEditing, setIsEditing] = useState(false);
+  const { cardRefs } = useAccordionScroll();
+  const defaultImage =
+    'https://via.placeholder.com/400x300?text=No+Image+Available';
 
   return (
     <Card
       sx={{
-        width          : '100%',
-        maxWidth       : '100%',
-        mx             : 'auto',
-        boxShadow      : 3,
-        borderRadius   : 2,
-        containerType  : 'inline-size',
-        containerName  : 'specimenCard',
-        display        : 'flex',
-        flexDirection  : 'column',
+        width: '100%',
+        maxWidth: '100%',
+        mx: 'auto',
+        boxShadow: 3,
+        borderRadius: 2,
+        containerType: 'inline-size',
+        containerName: 'specimenCard',
+        display: 'flex',
+        flexDirection: 'column',
         backgroundColor: 'var(--surface-container-lowest)',
-        maxHeight      : isStandalone
-          ? '85vh'
-          : 'none',
-
+        maxHeight: isStandalone ? '85vh' : 'none',
       }}
-      ref={(
-        el: HTMLDivElement | null
-      ) => {
-        if ( el ) {
-          cardRefs.current[ plantData.nombreCientifico ] = el;
+      ref={(el: HTMLDivElement | null) => {
+        if (el) {
+          cardRefs.current[plantData.nombreCientifico] = el;
         }
       }}
     >
       <Box
         sx={{
-          display                                     : 'flex',
-          flexDirection                               : 'column',
-          flexGrow                                    : 1,
-          overflow                                    : 'hidden',
+          display: 'flex',
+          flexDirection: 'column',
+          flexGrow: 1,
+          overflow: 'hidden',
           '@container specimenCard (min-width: 600px)': {
             flexDirection: 'row',
           },
@@ -69,8 +55,8 @@ export default function SpecimenEditSelection(
       >
         <Box
           sx={{
-            width                                       : '100%',
-            overflow                                    : 'hidden',
+            width: '100%',
+            overflow: 'hidden',
             '@container specimenCard (min-width: 600px)': {
               width: '41.66%',
             },
@@ -79,8 +65,8 @@ export default function SpecimenEditSelection(
           <CardMedia
             component="img"
             sx={{
-              height                                      : 400,
-              objectFit                                   : 'cover',
+              height: 400,
+              objectFit: 'cover',
               '@container specimenCard (min-width: 600px)': {
                 height: '100%',
               },
@@ -92,50 +78,44 @@ export default function SpecimenEditSelection(
 
         <Box
           sx={{
-            width                                       : '100%',
-            display                                     : 'flex',
-            flexDirection                               : 'column',
-            overflowY                                   : 'auto',
-            p                                           : 2,
+            width: '100%',
+            display: 'flex',
+            flexDirection: 'column',
+            overflowY: 'auto',
+            p: 2,
             '@container specimenCard (min-width: 600px)': {
               width: '58.33%',
             },
           }}
         >
-          {isEditing
-            ? (
-                <EspecimenForm
-                  initialData={plantData}
-                  setIsEditing={setIsEditing}
-                />
-              )
-            : (
-                <PlantCookbook
-                  plant={plantData}
-                  setIsEditing={setIsEditing}
-                />
-              )}
+          {isEditing ? (
+            <EspecimenForm
+              initialData={plantData}
+              setIsEditing={setIsEditing}
+            />
+          ) : (
+            <PlantCookbook
+              plant={plantData}
+              setIsEditing={setIsEditing}
+            />
+          )}
           <div
             style={{
-              display       : 'flex',
-              flexFlow      : 'row nowrap',
-              justifyContent: 'space-around'
+              display: 'flex',
+              flexFlow: 'row nowrap',
+              justifyContent: 'space-around',
             }}
           >
             <button
-              className={`${ buttonStyles.md3Btn } ${ buttonStyles.md3BtnTonalPrimary }`}
+              className={`${buttonStyles.md3Btn} ${buttonStyles.md3BtnTonalPrimary}`}
               onClick={() => {
-                return setIsEditing(
-                  (
-                    edit
-                  ) => {
-                    return !edit;
-                  }
-                );
+                return setIsEditing((edit) => {
+                  return !edit;
+                });
               }}
             >
               <span
-                className={`material-symbols-outlined ${ buttonStyles.md3BtnIcon }`}
+                className={`material-symbols-outlined ${buttonStyles.md3BtnIcon}`}
               >
                 edit
               </span>
@@ -143,11 +123,11 @@ export default function SpecimenEditSelection(
             </button>
 
             <Link
-              href={`/hierba/${ plantData.nombreCientifico }`}
-              className={`${ buttonStyles.md3Btn } ${ buttonStyles.md3BtnTonal }`}
+              href={`/hierba/${plantData.nombreCientifico}`}
+              className={`${buttonStyles.md3Btn} ${buttonStyles.md3BtnTonal}`}
             >
               <span
-                className={`material-symbols-outlined ${ buttonStyles.md3BtnIcon }`}
+                className={`material-symbols-outlined ${buttonStyles.md3BtnIcon}`}
               >
                 expand_all
               </span>

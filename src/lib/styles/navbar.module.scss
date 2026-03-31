@@ -21,18 +21,18 @@
   opacity: 1;
   transition: all 1.5s ease-in-out;
   grid-template-areas:
-    "title              title              title              title              drawerMenuButton"
-    ".                  inputSearchBar     inputSearchBar     inputSearchBar     drawerMenuButton"
-    "ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList"
-    "ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList"
-    "ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList"
-    "ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList"
-    "ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList"
-    "ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList"
-    "ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList"
-    "ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList"
-    "ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList"
-    "ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList";
+    'title              title              title              title              drawerMenuButton'
+    '.                  inputSearchBar     inputSearchBar     inputSearchBar     drawerMenuButton'
+    'ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList'
+    'ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList'
+    'ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList'
+    'ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList'
+    'ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList'
+    'ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList'
+    'ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList'
+    'ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList'
+    'ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList'
+    'ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList';
 
   .sidenav {
     box-sizing: border-box;
@@ -63,16 +63,16 @@
     width: 100vw;
 
     grid-template-areas:
-      "ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList"
-      "ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList"
-      "ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList"
-      "ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList"
-      "ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList"
-      "ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList"
-      "ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList"
-      "ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList"
-      "drawerMenuButton   Title              homeButton"
-      "backwardsButton    inputSearchBar     forwardButton";
+      'ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList'
+      'ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList'
+      'ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList'
+      'ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList'
+      'ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList'
+      'ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList'
+      'ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList'
+      'ProcesosLayoutList ProcesosLayoutList ProcesosLayoutList'
+      'drawerMenuButton   Title              homeButton'
+      'backwardsButton    inputSearchBar     forwardButton';
 
     .menu {
       display: flex;

@@ -1,16 +1,21 @@
 @mixin material-icon($fill: 0, $wght: 300, $grad: 0, $opsz: 24) {
   font-variation-settings:
-    "FILL" $fill,
-    "wght" $wght,
-    "GRAD" $grad,
-    "opsz" $opsz;
+    'FILL' $fill,
+    'wght' $wght,
+    'GRAD' $grad,
+    'opsz' $opsz;
 }
 
-@mixin interaction-layer($bg-color: currentColor, $hover-op: 0.08, $active-op: 0.1, $z-index: auto) {
+@mixin interaction-layer(
+  $bg-color: currentColor,
+  $hover-op: 0.08,
+  $active-op: 0.1,
+  $z-index: auto
+) {
   position: relative;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     inset: 0;
     border-radius: inherit;
@@ -34,7 +39,7 @@
 
 @mixin interaction-overlay($hover-opacity: 0.08, $focus-opacity: 0.1) {
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     display: block;
     inset: 0;
@@ -84,12 +89,13 @@
   }
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     inset: 0;
     background-color: $overlay-color;
     opacity: 0;
-    transition: opacity var(--md-sys-motion-duration-short) var(--md-sys-motion-easing-standard);
+    transition: opacity var(--md-sys-motion-duration-short)
+      var(--md-sys-motion-easing-standard);
   }
 
   > * {

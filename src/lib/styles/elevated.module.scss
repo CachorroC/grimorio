@@ -1,4 +1,4 @@
-@use "mixins" as m;
+@use 'mixins' as m;
 
 .container {
   position: relative;
@@ -16,7 +16,7 @@
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     inset: 0;
     display: block;

@@ -8,14 +8,8 @@ import searchbar from '../styles/searchbar.module.css';
 import { Route } from 'next';
 
 export const InputSearchBar = () => {
-  const {
-    search,
-    setSearch
-  } = useSearch();
-  const {
-    state,
-    dispatch
-  } = useEspecimen();
+  const { search, setSearch } = useSearch();
+  const { state, dispatch } = useEspecimen();
 
   const router = useRouter();
   const pathname = usePathname();
@@ -24,23 +18,17 @@ export const InputSearchBar = () => {
   return (
     <div className={searchContainer}>
       <datalist id="lista_hierbas">
-        {state.data.map(
-          (
-            carpeta
-          ) => {
-            return (
-              <option
-                value={carpeta.nombreCientifico}
-                key={carpeta.nombreCientifico}
-                onClick={() => {
-                  return router.push(
-                    `/hierba/${ carpeta.nombreCientifico }`
-                  );
-                }}
-              />
-            );
-          }
-        )}
+        {state.data.map((carpeta) => {
+          return (
+            <option
+              value={carpeta.nombreCientifico}
+              key={carpeta.nombreCientifico}
+              onClick={() => {
+                return router.push(`/hierba/${carpeta.nombreCientifico}`);
+              }}
+            />
+          );
+        })}
       </datalist>
       <input
         type={'text'}
@@ -48,33 +36,23 @@ export const InputSearchBar = () => {
         name={'search'}
         placeholder={'Buscar'}
         value={search}
-        className={`${ bodyLarge } ${ searchbar.input }`}
-        onChange={(
-          e
-        ) => {
-          dispatch(
-            {
-              type   : 'SET_SEARCH_NAME',
-              payload: e.target.value,
-            }
-          );
+        className={`${bodyLarge} ${searchbar.input}`}
+        onChange={(e) => {
+          dispatch({
+            type: 'SET_SEARCH_NAME',
+            payload: e.target.value,
+          });
 
-          return setSearch(
-            e.target.value
-          );
+          return setSearch(e.target.value);
         }}
       />
       <select
         value={state.sortOrder}
-        onChange={(
-          e
-        ) => {
-          return dispatch(
-            {
-              type   : 'SET_SORT',
-              payload: e.target.value as 'ASC' | 'DESC' | 'NONE',
-            }
-          );
+        onChange={(e) => {
+          return dispatch({
+            type: 'SET_SORT',
+            payload: e.target.value as 'ASC' | 'DESC' | 'NONE',
+          });
         }}
       >
         <option value="NONE">Sort: None</option>
@@ -86,26 +64,16 @@ export const InputSearchBar = () => {
         className={searchbar.icon}
         type="button"
         onClick={() => {
-          setSearch(
-            ''
-          );
-          dispatch(
-            {
-              type: 'RESET_FILTERS',
-            }
-          );
-          const params = new URLSearchParams(
-            searchParams.toString()
-          );
+          setSearch('');
+          dispatch({
+            type: 'RESET_FILTERS',
+          });
+          const params = new URLSearchParams(searchParams.toString());
 
-          params.delete(
-            'search'
-          );
-          router.replace(
-            `${ pathname }?${ params.toString() }` as Route, {
-              scroll: false,
-            }
-          );
+          params.delete('search');
+          router.replace(`${pathname}?${params.toString()}` as Route, {
+            scroll: false,
+          });
         }}
       >
         <span className="material-symbols-outlined">close</span>

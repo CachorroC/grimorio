@@ -1,7 +1,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { ObjectId } from 'mongodb';
 import clientPromise from '../connection/mongodb';
-import { EspecimenType, PreparacionType, Taxon } from '../types/especimenTypes';
+import {
+  ChakraType,
+  ElementosType,
+  EspecimenType,
+  PolaridadEnergeticaType,
+  PreparacionType,
+  Taxon,
+} from '../types/especimenTypes';
 
 /**
  * @class EspecimenModel
@@ -21,6 +28,9 @@ export default class EspecimenModel implements EspecimenType {
   partesUtiles: string[];
   esenciasFlorales: string[];
   _id: string | undefined;
+  elementosAsociados: ElementosType;
+  chakrasAsociados: ChakraType[];
+  polaridadEnergetica: PolaridadEnergeticaType;
 
   constructor({
     nombreCientifico,
@@ -34,6 +44,9 @@ export default class EspecimenModel implements EspecimenType {
     preparaciones,
     imageUrl,
     partesUtiles,
+    elementosAsociados,
+    chakrasAsociados,
+    polaridadEnergetica,
   }: {
     nombreCientifico: string;
     imageUrl: string;
@@ -46,6 +59,9 @@ export default class EspecimenModel implements EspecimenType {
     malesFisicos: string[];
     taxon: Taxon;
     preparaciones: PreparacionType[];
+    elementosAsociados: ElementosType;
+    chakrasAsociados: ChakraType[];
+    polaridadEnergetica: PolaridadEnergeticaType;
   }) {
     this.nombreCientifico = nombreCientifico;
     this.nombresComunes = nombresComunes;
@@ -58,6 +74,9 @@ export default class EspecimenModel implements EspecimenType {
     this.imageUrl = imageUrl;
     this.partesUtiles = partesUtiles;
     this.esenciasFlorales = esenciasFlorales;
+    this.elementosAsociados = elementosAsociados;
+    this.chakrasAsociados = chakrasAsociados;
+    this.polaridadEnergetica = polaridadEnergetica;
   }
 
   /**
