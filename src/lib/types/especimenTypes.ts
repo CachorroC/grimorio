@@ -14,7 +14,23 @@ export type EspecimenType = {
   elementosAsociados         : ElementosType;
   chakrasAsociados           : ChakraType[];
   polaridadEnergetica        : PolaridadEnergeticaType;
+  imagenes?                  : PlantDictionary;
 };
+
+// 1. Define the base and specific parts
+interface PlantBase {
+  src: string;
+  alt: string;
+}
+
+// 1. Define the Object structure
+export interface PlantDictionary {
+  flor        : PlantBase;                           // Required
+  hojas       : PlantBase;                          // Required
+  tallo?      : PlantBase;                         // Optional (?)
+  preparacion?: PlantBase;          // Optional (?)
+}
+
 
 export type PolaridadEnergeticaType = [
   'Masculine' | 'Feminine',
