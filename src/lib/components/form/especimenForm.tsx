@@ -821,6 +821,11 @@ export default function EspecimenForm(
         },
       };
 
+      // ADDED: Logic to include semillas if populated
+      if ( formData.imagenes?.semillas?.src || formData.imagenes?.semillas?.alt ) {
+        payloadImagenes.semillas = formData.imagenes.semillas;
+      }
+
       if ( formData.imagenes?.tallo?.src || formData.imagenes?.tallo?.alt ) {
         payloadImagenes.tallo = formData.imagenes.tallo;
       }
@@ -1198,6 +1203,54 @@ export default function EspecimenForm(
                       }}
                       placeholder="Ej. Detalle de las hojas..."
                       required={includeImagenes} // Solo es requerido si el toggle está activo
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className={styles.subSection} style={{
+                marginBottom: '1rem'
+              }}
+              >
+                <h4>Semillas (Opcional)</h4>
+                <div className={styles.row}>
+                  <div className={styles.inputGroup} style={{
+                    flex: 1
+                  }}
+                  >
+                    <label className={styles.label}>URL (src)</label>
+                    <input
+                      type="text"
+                      className={styles.inputFilled}
+                      value={formData.imagenes?.semillas?.src || ''}
+                      onChange={(
+                        e
+                      ) => {
+                        return handleImagenChange(
+                          'semillas', 'src', e.target.value
+                        );
+                      }}
+                      placeholder="Ej. https://.../semillas.jpg"
+                      // REMOVED required={includeImagenes} so it behaves as truly optional
+                    />
+                  </div>
+                  <div className={styles.inputGroup} style={{
+                    flex: 1
+                  }}
+                  >
+                    <label className={styles.label}>Descripción (alt)</label>
+                    <input
+                      type="text"
+                      className={styles.inputFilled}
+                      value={formData.imagenes?.semillas?.alt || ''}
+                      onChange={(
+                        e
+                      ) => {
+                        return handleImagenChange(
+                          'semillas', 'alt', e.target.value
+                        );
+                      }}
+                      placeholder="Ej. Detalle de las semillas..."
+                      // REMOVED required={includeImagenes} so it behaves as truly optional
                     />
                   </div>
                 </div>

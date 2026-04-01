@@ -26,7 +26,8 @@ interface PlantBase {
 // 1. Define the Object structure
 export interface PlantDictionary {
   flor        : PlantBase;                           // Required
-  hojas       : PlantBase;                          // Required
+  hojas       : PlantBase;
+  semillas?   : PlantBase;// Required
   tallo?      : PlantBase;                         // Optional (?)
   preparacion?: PlantBase;          // Optional (?)
 }
