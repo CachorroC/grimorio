@@ -35,6 +35,12 @@ export default function SpecimenEditSelection(
   ] = useState(
     0
   );
+  const [
+    isAutoPlay,
+    setIsAutoPlay
+  ] = useState(
+    true
+  );
   const {
     cardRefs
   } = useAccordionScroll();
@@ -81,7 +87,7 @@ export default function SpecimenEditSelection(
   // Handle the automatic 5-second carousel timer
   useEffect(
     () => {
-      if ( carouselImages.length <= 1 ) {
+      if ( carouselImages.length <= 1 || !isAutoPlay ) {
         return () => {
         };
       } // No need to auto-play if 1 or 0 images
@@ -104,12 +110,14 @@ export default function SpecimenEditSelection(
         );
       };
     }, [
-      carouselImages.length
+      carouselImages.length,
+      isAutoPlay
     ]
   );
 
   // Manual navigation handlers
   const handleNextImage = () => {
+    setIsAutoPlay(false);
     setCurrentImageIndex(
       (
         prev
@@ -120,6 +128,7 @@ export default function SpecimenEditSelection(
   };
 
   const handlePrevImage = () => {
+    setIsAutoPlay(false);
     setCurrentImageIndex(
       (
         prev

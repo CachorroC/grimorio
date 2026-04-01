@@ -22,6 +22,7 @@ import { upsertSpecimen, deleteSpecimen } from '#@/app/actions/specimen';
 import { icon } from '#@/lib/styles/buttons.module.css';
 import ConfirmModal from '../confirmModal';
 import toggleStyles from '#@/lib/styles/toggle.module.css';
+import ToggleButton from './toggleButton';
 
 // Helper component for the Custom Toggle Switch
 const ToggleSwitch = (
@@ -1355,6 +1356,18 @@ export default function EspecimenForm(
               >
                 Masculina
               </ToggleSwitch>
+
+              <ToggleButton
+                checked={formData.polaridadEnergetica.includes(
+                  'Masculine'
+                )}
+                onChange={() => {
+                  return togglePolaridad(
+                    'Masculine'
+                  );
+                }}
+                label={'Masculine'}
+              />
 
               <ToggleSwitch
                 checked={formData.polaridadEnergetica.includes(
