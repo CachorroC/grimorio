@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
@@ -5,18 +6,50 @@ import { ChangeEvent,
   Dispatch,
   SetStateAction,
   SubmitEventHandler,
-  useState, } from 'react';
+  useState,
+  ReactNode,
+  CSSProperties } from 'react';
 import styles from '#@/lib/styles/form.module.css';
 import { EspecimenType,
   IngredientesType,
   PreparacionType,
   Taxon,
   PolaridadEnergeticaType,
-  listaChakras, } from '#@/lib/types/especimenTypes';
+  listaChakras,
+  PlantDictionary, } from '#@/lib/types/especimenTypes';
 import { displayLarge } from '#@/lib/styles/fonts/typography.module.css';
 import { upsertSpecimen, deleteSpecimen } from '#@/app/actions/specimen';
 import { icon } from '#@/lib/styles/buttons.module.css';
 import ConfirmModal from '../confirmModal';
+import toggleStyles from '#@/lib/styles/toggle.module.css';
+
+// Helper component for the Custom Toggle Switch
+const ToggleSwitch = (
+  {
+    checked,
+    onChange,
+    children,
+    style
+  }: {
+    checked : boolean;
+    onChange: ( e: ChangeEvent<HTMLInputElement> ) => void;
+    children: ReactNode;
+    style?  : CSSProperties;
+  }
+) => {
+  return (
+    <label className={toggleStyles.toggleContainer} style={style}>
+      <input
+        type="checkbox"
+        className={toggleStyles.toggleInput}
+        checked={checked}
+        onChange={onChange}
+      />
+      <span className={toggleStyles.toggleSlider}></span>
+      <span className={toggleStyles.toggleLabel}>{children}</span>
+    </label>
+  );
+};
 
 const initialState: EspecimenType = {
   nombreCientifico: '',
@@ -56,11 +89,22 @@ const initialState: EspecimenType = {
     ],
   },
   preparaciones      : [],
-  elementosAsociados : 'Tierra', // Default base value
+  elementosAsociados : 'Tierra',
   chakrasAsociados   : [],
   polaridadEnergetica: [
     'Feminine'
-  ], // Requires at least one value to satisfy the tuple
+  ],
+  // Mantenemos una estructura inicial segura en el estado para evitar errores de undefined en los inputs
+  imagenes: {
+    flor: {
+      src: '',
+      alt: ''
+    },
+    hojas: {
+      src: '',
+      alt: ''
+    },
+  },
 };
 
 export default function EspecimenForm(
@@ -85,6 +129,16 @@ export default function EspecimenForm(
     false
   );
 
+  // Nuevo estado para controlar la inclusión de la propiedad "imagenes"
+  const [
+    includeImagenes,
+    setIncludeImagenes
+  ] = useState<boolean>(
+    () => {
+      return !!initialData?.imagenes;
+    }
+  );
+
   const [
     formData,
     setFormData
@@ -97,25 +151,34 @@ export default function EspecimenForm(
       return {
         ...initialState,
         ...initialData,
-        partesUtiles          : initialData.partesUtiles || [],
-        nombresComunes        : initialData.nombresComunes || [],
-        propiedadesMedicinales: initialData.propiedadesMedicinales || [],
-        esenciasFlorales      : initialData.esenciasFlorales || [],
-        correspondenciasEnergeticas:
-        initialData.correspondenciasEnergeticas || [],
-        malesEmocionales: initialData.malesEmocionales || [],
-        malesFisicos    : initialData.malesFisicos || [],
-        preparaciones   : initialData.preparaciones || [],
-        taxon           : {
+        partesUtiles               : initialData.partesUtiles || [],
+        nombresComunes             : initialData.nombresComunes || [],
+        propiedadesMedicinales     : initialData.propiedadesMedicinales || [],
+        esenciasFlorales           : initialData.esenciasFlorales || [],
+        correspondenciasEnergeticas: initialData.correspondenciasEnergeticas || [],
+        malesEmocionales           : initialData.malesEmocionales || [],
+        malesFisicos               : initialData.malesFisicos || [],
+        preparaciones              : initialData.preparaciones || [],
+        taxon                      : {
           ...initialState.taxon,
           ...( initialData.taxon || {} ),
           clados: initialData.taxon?.clados || [],
         },
         elementosAsociados : initialData.elementosAsociados || 'Tierra',
         chakrasAsociados   : initialData.chakrasAsociados || [],
-        polaridadEnergética: initialData.polaridadEnergetica || [
+        polaridadEnergetica: initialData.polaridadEnergetica || [
           'Feminine'
         ],
+        imagenes: initialData.imagenes || {
+          flor: {
+            src: '',
+            alt: ''
+          },
+          hojas: {
+            src: '',
+            alt: ''
+          },
+        },
       };
     }
   );
@@ -220,6 +283,43 @@ export default function EspecimenForm(
     );
   };
 
+  const handleImagenChange = (
+    plantKey: keyof PlantDictionary,
+    field: 'src' | 'alt',
+    value: string,
+  ) => {
+    setFormData(
+      (
+        prev
+      ) => {
+        const currentImagenes = prev.imagenes || {
+          flor: {
+            src: '',
+            alt: ''
+          },
+          hojas: {
+            src: '',
+            alt: ''
+          },
+        };
+
+        return {
+          ...prev,
+          imagenes: {
+            ...currentImagenes,
+            [ plantKey ]: {
+              ...( currentImagenes[ plantKey ] || {
+                src: '',
+                alt: ''
+              } ),
+              [ field ]: value,
+            },
+          },
+        };
+      }
+    );
+  };
+
   const togglePolaridad = (
     val: 'Masculine' | 'Feminine'
   ) => {
@@ -243,7 +343,6 @@ export default function EspecimenForm(
               val
             ];
 
-        // Enforce the tuple type requirement: array must have at least one element
         if ( next.length === 0 ) {
           next = [
             val
@@ -252,7 +351,7 @@ export default function EspecimenForm(
 
         return {
           ...prev,
-          polaridadEnergética: next as PolaridadEnergeticaType,
+          polaridadEnergetica: next as PolaridadEnergeticaType,
         };
       }
     );
@@ -368,7 +467,7 @@ export default function EspecimenForm(
                 _, index
               ) => {
                 return index !== indexToRemove;
-              }
+              },
             ),
           },
         };
@@ -412,7 +511,7 @@ export default function EspecimenForm(
               _, index
             ) => {
               return index !== indexToRemove;
-            }
+            },
           ),
         };
       }
@@ -460,7 +559,7 @@ export default function EspecimenForm(
             ...( newPreps[ prepIndex ].ingredientes || [] ),
             {
               ingrediente: '',
-              cantidad   : '',
+              cantidad   : ''
             },
           ],
         };
@@ -555,9 +654,10 @@ export default function EspecimenForm(
                 ) => {
                   return p[ 0 ];
                 }
-              ),
+              )
             ) + 1
             : 1;
+
         newPreps[ prepIndex ] = {
           ...newPreps[ prepIndex ],
           pasos: [
@@ -624,7 +724,7 @@ export default function EspecimenForm(
               _, i
             ) => {
               return i !== pasoIndexToRemove;
-            }
+            },
           ),
         };
 
@@ -672,11 +772,9 @@ export default function EspecimenForm(
           val
         ) => {
           return val.trim() !== '';
-        },
+        }
       ),
-      correspondenciasEnergeticas: (
-        formData.correspondenciasEnergeticas || []
-      ).filter(
+      correspondenciasEnergeticas: ( formData.correspondenciasEnergeticas || [] ).filter(
         (
           val
         ) => {
@@ -709,6 +807,33 @@ export default function EspecimenForm(
       },
     };
 
+    // Lógica condicional para la propiedad imagenes
+    if ( includeImagenes ) {
+      const payloadImagenes: PlantDictionary = {
+        flor: formData.imagenes?.flor || {
+          src: '',
+          alt: ''
+        },
+        hojas: formData.imagenes?.hojas || {
+          src: '',
+          alt: ''
+        },
+      };
+
+      if ( formData.imagenes?.tallo?.src || formData.imagenes?.tallo?.alt ) {
+        payloadImagenes.tallo = formData.imagenes.tallo;
+      }
+
+      if ( formData.imagenes?.preparacion?.src || formData.imagenes?.preparacion?.alt ) {
+        payloadImagenes.preparacion = formData.imagenes.preparacion;
+      }
+
+      payloadToSave.imagenes = payloadImagenes;
+    } else {
+      // Si el toggle está apagado, nos aseguramos de que no se envíe la propiedad
+      delete payloadToSave.imagenes;
+    }
+
     try {
       const response = await upsertSpecimen(
         {
@@ -721,16 +846,15 @@ export default function EspecimenForm(
         setFormData(
           {
             ...savedData,
-            nombresComunes        : savedData.nombresComunes || [],
-            partesUtiles          : savedData.partesUtiles || [],
-            esenciasFlorales      : savedData.esenciasFlorales || [],
-            propiedadesMedicinales: savedData.propiedadesMedicinales || [],
-            correspondenciasEnergeticas:
-            savedData.correspondenciasEnergeticas || [],
-            malesEmocionales: savedData.malesEmocionales || [],
-            malesFisicos    : savedData.malesFisicos || [],
-            preparaciones   : savedData.preparaciones || [],
-            taxon           : {
+            nombresComunes             : savedData.nombresComunes || [],
+            partesUtiles               : savedData.partesUtiles || [],
+            esenciasFlorales           : savedData.esenciasFlorales || [],
+            propiedadesMedicinales     : savedData.propiedadesMedicinales || [],
+            correspondenciasEnergeticas: savedData.correspondenciasEnergeticas || [],
+            malesEmocionales           : savedData.malesEmocionales || [],
+            malesFisicos               : savedData.malesFisicos || [],
+            preparaciones              : savedData.preparaciones || [],
+            taxon                      : {
               ...savedData.taxon,
               clados: savedData.taxon?.clados || [],
             },
@@ -739,7 +863,22 @@ export default function EspecimenForm(
             polaridadEnergetica: savedData.polaridadEnergetica || [
               'Feminine'
             ],
+            imagenes: savedData.imagenes || {
+              flor: {
+                src: '',
+                alt: ''
+              },
+              hojas: {
+                src: '',
+                alt: ''
+              },
+            },
           }
+        );
+
+        // Sincronizar el toggle visual con la data guardada
+        setIncludeImagenes(
+          !!savedData.imagenes
         );
 
         if ( response.failed === 'file' ) {
@@ -770,7 +909,6 @@ export default function EspecimenForm(
     }
   };
 
-  // --- DELETE HANDLER (Triggers Server Action) ---
   const executeDelete = async () => {
     if ( !initialData ) {
       return;
@@ -839,10 +977,7 @@ export default function EspecimenForm(
             item, index
           ) => {
             return (
-              <div
-                key={`${ field }-${ index }`}
-                className={styles.arrayItem}
-              >
+              <div key={`${ field }-${ index }`} className={styles.arrayItem}>
                 <input
                   type="text"
                   className={styles.inputFilled}
@@ -888,10 +1023,7 @@ export default function EspecimenForm(
 
   return (
     <>
-      <form
-        className={styles.formContainer}
-        onSubmit={handleSubmit}
-      >
+      <form className={styles.formContainer} onSubmit={handleSubmit}>
         <h2 className={displayLarge}>Registrar Espécimen</h2>
 
         {/* Main Information */}
@@ -907,14 +1039,15 @@ export default function EspecimenForm(
               onChange={handleInputChange}
               required
             />
-            <label className={styles.label}>URL de la imagen</label>
+            <label className={styles.label}>URL de la imagen principal</label>
+            <input
+              type="text"
+              name="imageUrl"
+              className={styles.inputFilled}
+              value={formData.imageUrl ?? ''}
+              onChange={handleInputChange}
+            />
           </div>
-          <input
-            name="imageUrl"
-            className={styles.inputFilled}
-            value={formData.imageUrl ?? ''}
-            onChange={handleInputChange}
-          />
         </div>
 
         {/* Arrays */}
@@ -925,13 +1058,10 @@ export default function EspecimenForm(
           'Partes Útiles', 'partesUtiles'
         )}
         {renderStringArrayInput(
-          'Propiedades Medicinales',
-          'propiedadesMedicinales',
+          'Propiedades Medicinales', 'propiedadesMedicinales'
         )}
-
         {renderStringArrayInput(
-          'Qué males emocionales cura',
-          'malesEmocionales',
+          'Qué males emocionales cura', 'malesEmocionales'
         )}
         {renderStringArrayInput(
           'Que males físicos cura', 'malesFisicos'
@@ -940,15 +1070,238 @@ export default function EspecimenForm(
           'Esencias Florales', 'esenciasFlorales'
         )}
 
+        {/* IMÁGENES SECUNDARIAS CON TOGGLE */}
+        <div className={styles.section}>
+          <div style={{
+            display       : 'flex',
+            alignItems    : 'center',
+            justifyContent: 'space-between',
+            marginBottom  : '1rem'
+          }}
+          >
+            <h3 className={styles.sectionSubTitle} style={{
+              margin: 0
+            }}
+            >Imágenes Detalladas</h3>
+
+            <ToggleSwitch
+              checked={includeImagenes}
+              onChange={(
+                e
+              ) => {
+                return setIncludeImagenes(
+                  e.target.checked
+                );
+              }}
+              style={{
+                fontWeight: 'bold'
+              }}
+            >
+              Habilitar Galería de Imágenes
+            </ToggleSwitch>
+
+          </div>
+
+          {includeImagenes && (
+            <>
+              <div className={styles.subSection} style={{
+                marginBottom: '1rem'
+              }}
+              >
+                <h4>Flor (Requerida)</h4>
+                <div className={styles.row}>
+                  <div className={styles.inputGroup} style={{
+                    flex: 1
+                  }}
+                  >
+                    <label className={styles.label}>URL (src)</label>
+                    <input
+                      type="text"
+                      className={styles.inputFilled}
+                      value={formData.imagenes?.flor?.src || ''}
+                      onChange={(
+                        e
+                      ) => {
+                        return handleImagenChange(
+                          'flor', 'src', e.target.value
+                        );
+                      }}
+                      placeholder="Ej. https://.../flor.jpg"
+                      required={includeImagenes} // Solo es requerido si el toggle está activo
+                    />
+                  </div>
+                  <div className={styles.inputGroup} style={{
+                    flex: 1
+                  }}
+                  >
+                    <label className={styles.label}>Descripción (alt)</label>
+                    <input
+                      type="text"
+                      className={styles.inputFilled}
+                      value={formData.imagenes?.flor?.alt || ''}
+                      onChange={(
+                        e
+                      ) => {
+                        return handleImagenChange(
+                          'flor', 'alt', e.target.value
+                        );
+                      }}
+                      placeholder="Ej. Fotografía detallada de la flor..."
+                      required={includeImagenes} // Solo es requerido si el toggle está activo
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.subSection} style={{
+                marginBottom: '1rem'
+              }}
+              >
+                <h4>Hojas (Requerida)</h4>
+                <div className={styles.row}>
+                  <div className={styles.inputGroup} style={{
+                    flex: 1
+                  }}
+                  >
+                    <label className={styles.label}>URL (src)</label>
+                    <input
+                      type="text"
+                      className={styles.inputFilled}
+                      value={formData.imagenes?.hojas?.src || ''}
+                      onChange={(
+                        e
+                      ) => {
+                        return handleImagenChange(
+                          'hojas', 'src', e.target.value
+                        );
+                      }}
+                      placeholder="Ej. https://.../hojas.jpg"
+                      required={includeImagenes} // Solo es requerido si el toggle está activo
+                    />
+                  </div>
+                  <div className={styles.inputGroup} style={{
+                    flex: 1
+                  }}
+                  >
+                    <label className={styles.label}>Descripción (alt)</label>
+                    <input
+                      type="text"
+                      className={styles.inputFilled}
+                      value={formData.imagenes?.hojas?.alt || ''}
+                      onChange={(
+                        e
+                      ) => {
+                        return handleImagenChange(
+                          'hojas', 'alt', e.target.value
+                        );
+                      }}
+                      placeholder="Ej. Detalle de las hojas..."
+                      required={includeImagenes} // Solo es requerido si el toggle está activo
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.subSection} style={{
+                marginBottom: '1rem'
+              }}
+              >
+                <h4>Tallo (Opcional)</h4>
+                <div className={styles.row}>
+                  <div className={styles.inputGroup} style={{
+                    flex: 1
+                  }}
+                  >
+                    <label className={styles.label}>URL (src)</label>
+                    <input
+                      type="text"
+                      className={styles.inputFilled}
+                      value={formData.imagenes?.tallo?.src || ''}
+                      onChange={(
+                        e
+                      ) => {
+                        return handleImagenChange(
+                          'tallo', 'src', e.target.value
+                        );
+                      }}
+                      placeholder="Opcional"
+                    />
+                  </div>
+                  <div className={styles.inputGroup} style={{
+                    flex: 1
+                  }}
+                  >
+                    <label className={styles.label}>Descripción (alt)</label>
+                    <input
+                      type="text"
+                      className={styles.inputFilled}
+                      value={formData.imagenes?.tallo?.alt || ''}
+                      onChange={(
+                        e
+                      ) => {
+                        return handleImagenChange(
+                          'tallo', 'alt', e.target.value
+                        );
+                      }}
+                      placeholder="Opcional"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.subSection}>
+                <h4>Preparación (Opcional)</h4>
+                <div className={styles.row}>
+                  <div className={styles.inputGroup} style={{
+                    flex: 1
+                  }}
+                  >
+                    <label className={styles.label}>URL (src)</label>
+                    <input
+                      type="text"
+                      className={styles.inputFilled}
+                      value={formData.imagenes?.preparacion?.src || ''}
+                      onChange={(
+                        e
+                      ) => {
+                        return handleImagenChange(
+                          'preparacion', 'src', e.target.value
+                        );
+                      }}
+                      placeholder="Opcional"
+                    />
+                  </div>
+                  <div className={styles.inputGroup} style={{
+                    flex: 1
+                  }}
+                  >
+                    <label className={styles.label}>Descripción (alt)</label>
+                    <input
+                      type="text"
+                      className={styles.inputFilled}
+                      value={formData.imagenes?.preparacion?.alt || ''}
+                      onChange={(
+                        e
+                      ) => {
+                        return handleImagenChange(
+                          'preparacion', 'alt', e.target.value
+                        );
+                      }}
+                      placeholder="Opcional"
+                    />
+                  </div>
+                </div>
+              </div>
+            </>
+          )}
+        </div>
+
         <div className={styles.section}>
           <h3 className={styles.sectionTitle}>Propiedades Energéticas</h3>
           {renderStringArrayInput(
-            'Correspondencias Energéticas',
-            'correspondenciasEnergeticas',
+            'Correspondencias Energéticas', 'correspondenciasEnergeticas'
           )}
-          {renderStringArrayInput(
-            'Esencias Florales', 'esenciasFlorales'
-          )}
+
           <div className={styles.inputGroup}>
             <label className={styles.label}>Elemento Asociado</label>
             <select
@@ -969,91 +1322,67 @@ export default function EspecimenForm(
                   el
                 ) => {
                   return (
-                    <option
-                      key={el}
-                      value={el}
-                    >
+                    <option key={el} value={el}>
                       {el}
                     </option>
                   );
-                },
+                }
               )}
             </select>
           </div>
 
           {/* Polaridad Energética */}
-          <div
-            className={styles.inputGroup}
-            style={{
-              marginTop: '1rem',
-            }}
+          <div className={styles.inputGroup} style={{
+            marginTop: '1rem'
+          }}
           >
             <label className={styles.label}>Polaridad Energética</label>
-            <div
-              style={{
-                display  : 'flex',
-                gap      : '1.5rem',
-                marginTop: '0.5rem',
-              }}
+            <div style={{
+              display  : 'flex',
+              gap      : '1.5rem',
+              marginTop: '0.5rem'
+            }}
             >
-              <label
-                style={{
-                  display   : 'flex',
-                  alignItems: 'center',
-                  gap       : '0.5rem',
-                }}
-              >
-                <input
-                  type="checkbox"
-                  checked={formData.polaridadEnergetica.includes(
+              <ToggleSwitch
+                checked={formData.polaridadEnergetica.includes(
+                  'Masculine'
+                )}
+                onChange={() => {
+                  return togglePolaridad(
                     'Masculine'
-                  )}
-                  onChange={() => {
-                    return togglePolaridad(
-                      'Masculine'
-                    );
-                  }}
-                />
-                Masculina
-              </label>
-              <label
-                style={{
-                  display   : 'flex',
-                  alignItems: 'center',
-                  gap       : '0.5rem',
+                  );
                 }}
               >
-                <input
-                  type="checkbox"
-                  checked={formData.polaridadEnergetica.includes(
+                Masculina
+              </ToggleSwitch>
+
+              <ToggleSwitch
+                checked={formData.polaridadEnergetica.includes(
+                  'Feminine'
+                )}
+                onChange={() => {
+                  return togglePolaridad(
                     'Feminine'
-                  )}
-                  onChange={() => {
-                    return togglePolaridad(
-                      'Feminine'
-                    );
-                  }}
-                />
+                  );
+                }}
+              >
                 Femenina
-              </label>
+              </ToggleSwitch>
             </div>
           </div>
 
           {/* Chakras Asociados */}
-          <div
-            className={styles.inputGroup}
-            style={{
-              marginTop: '1.5rem',
-            }}
+          <div className={styles.inputGroup} style={{
+            marginTop: '1.5rem'
+          }}
           >
             <label className={styles.label}>Chakras Asociados</label>
-            <div
-              style={{
-                display      : 'flex',
-                flexDirection: 'column',
-                gap          : '0.5rem',
-                marginTop    : '0.5rem',
-              }}
+            <div style={{
+              display      : 'flex',
+              flexDirection: 'column',
+              gap          : '0.75rem', /* slightly increased gap for better spacing with toggles */
+              marginTop    : '0.5rem'
+            }}
             >
               {listaChakras.map(
                 (
@@ -1068,28 +1397,19 @@ export default function EspecimenForm(
                   );
 
                   return (
-                    <label
+                    <ToggleSwitch
                       key={chakra.nombre}
-                      style={{
-                        display   : 'flex',
-                        alignItems: 'center',
-                        gap       : '0.5rem',
+                      checked={isChecked}
+                      onChange={() => {
+                        return toggleChakra(
+                          chakra.nombre
+                        );
                       }}
                     >
-                      <input
-                        type="checkbox"
-                        checked={isChecked}
-                        onChange={() => {
-                          return toggleChakra(
-                            chakra.nombre
-                          );
-                        }}
-                      />
                       <span>
-                        <strong>{chakra.nombre}</strong> -{' '}
-                        <em>{chakra.nombreSanscrito}</em> ({chakra.color})
+                        <strong>{chakra.nombre}</strong> - <em>{chakra.nombreSanscrito}</em> ({chakra.color})
                       </span>
-                    </label>
+                    </ToggleSwitch>
                   );
                 }
               )}
@@ -1109,18 +1429,15 @@ export default function EspecimenForm(
               'orden',
               'familia',
               'genero',
-              'especie',
+              'especie'
             ].map(
               (
                 taxRank
               ) => {
                 return (
-                  <div
-                    key={taxRank}
-                    className={`${ styles.inputGroup } ${ styles.flex1 }`}
-                    style={{
-                      minWidth: '200px',
-                    }}
+                  <div key={taxRank} className={`${ styles.inputGroup } ${ styles.flex1 }`} style={{
+                    minWidth: '200px'
+                  }}
                   >
                     <label className={styles.label}>
                       {taxRank.charAt(
@@ -1133,15 +1450,12 @@ export default function EspecimenForm(
                     <input
                       type="text"
                       className={styles.inputFilled}
-                      value={
-                        ( formData.taxon[ taxRank as keyof Taxon ] as string ) || ''
-                      }
+                      value={( formData.taxon[ taxRank as keyof Taxon ] as string ) || ''}
                       onChange={(
                         e
                       ) => {
                         return handleTaxonChange(
-                          taxRank as keyof Taxon,
-                          e.target.value,
+                          taxRank as keyof Taxon, e.target.value
                         );
                       }}
                     />
@@ -1151,11 +1465,9 @@ export default function EspecimenForm(
             )}
           </div>
 
-          <div
-            className={styles.subSection}
-            style={{
-              marginTop: '1rem',
-            }}
+          <div className={styles.subSection} style={{
+            marginTop: '1rem'
+          }}
           >
             <h4>Clados</h4>
             {( formData.taxon.clados || [] ).map(
@@ -1163,10 +1475,7 @@ export default function EspecimenForm(
                 clado, index
               ) => {
                 return (
-                  <div
-                    key={`clado-${ index }`}
-                    className={styles.arrayItem}
-                  >
+                  <div key={`clado-${ index }`} className={styles.arrayItem}>
                     <input
                       type="text"
                       className={styles.inputOutlined}
@@ -1213,10 +1522,7 @@ export default function EspecimenForm(
               prep, prepIndex
             ) => {
               return (
-                <div
-                  key={`prep-${ prepIndex }`}
-                  className={styles.subSection}
-                >
+                <div key={`prep-${ prepIndex }`} className={styles.subSection}>
                   <div className={styles.inputGroup}>
                     <label className={styles.label}>Uso Terapéutico</label>
                     <input
@@ -1227,9 +1533,7 @@ export default function EspecimenForm(
                         e
                       ) => {
                         return updatePreparacionField(
-                          prepIndex,
-                          'usoTerapeutico',
-                          e.target.value,
+                          prepIndex, 'usoTerapeutico', e.target.value
                         );
                       }}
                       placeholder="Ej. Para el dolor de estómago"
@@ -1246,20 +1550,16 @@ export default function EspecimenForm(
                         e
                       ) => {
                         return updatePreparacionField(
-                          prepIndex,
-                          'formaDeAplicacion',
-                          e.target.value,
+                          prepIndex, 'formaDeAplicacion', e.target.value
                         );
                       }}
                       placeholder="Ej. Cataplasma, Infusión, Tintura..."
                     />
                   </div>
 
-                  <div
-                    className={styles.subSection}
-                    style={{
-                      backgroundColor: 'var(--surface-container-high)',
-                    }}
+                  <div className={styles.subSection} style={{
+                    backgroundColor: 'var(--surface-container-high)'
+                  }}
                   >
                     <label className={styles.label}>Ingredientes</label>
                     {( prep.ingredientes || [] ).map(
@@ -1267,12 +1567,9 @@ export default function EspecimenForm(
                         ing, ingIndex
                       ) => {
                         return (
-                          <div
-                            key={`ing-${ prepIndex }-${ ingIndex }`}
-                            className={styles.row}
-                            style={{
-                              marginBottom: '0.5rem',
-                            }}
+                          <div key={`ing-${ prepIndex }-${ ingIndex }`} className={styles.row} style={{
+                            marginBottom: '0.5rem'
+                          }}
                           >
                             <input
                               type="text"
@@ -1283,10 +1580,7 @@ export default function EspecimenForm(
                                 e
                               ) => {
                                 return updateIngrediente(
-                                  prepIndex,
-                                  ingIndex,
-                                  'ingrediente',
-                                  e.target.value,
+                                  prepIndex, ingIndex, 'ingrediente', e.target.value
                                 );
                               }}
                             />
@@ -1299,10 +1593,7 @@ export default function EspecimenForm(
                                 e
                               ) => {
                                 return updateIngrediente(
-                                  prepIndex,
-                                  ingIndex,
-                                  'cantidad',
-                                  e.target.value,
+                                  prepIndex, ingIndex, 'cantidad', e.target.value
                                 );
                               }}
                             />
@@ -1352,10 +1643,7 @@ export default function EspecimenForm(
                         ] = pasoTuple;
 
                         return (
-                          <div
-                            key={`paso-${ prepIndex }-${ pasoNum }`}
-                            className={styles.arrayItem}
-                          >
+                          <div key={`paso-${ prepIndex }-${ pasoNum }`} className={styles.arrayItem}>
                             <div className={styles.stepNumber}>{pasoNum}</div>
                             <input
                               type="text"
@@ -1366,9 +1654,7 @@ export default function EspecimenForm(
                                 e
                               ) => {
                                 return updatePaso(
-                                  prepIndex,
-                                  pasoIndex,
-                                  e.target.value,
+                                  prepIndex, pasoIndex, e.target.value
                                 );
                               }}
                             />
@@ -1404,7 +1690,7 @@ export default function EspecimenForm(
                     type="button"
                     className={`${ styles.button } ${ styles.deleteBtn }`}
                     style={{
-                      marginTop: '1rem',
+                      marginTop: '1rem'
                     }}
                     onClick={() => {
                       return removePreparacion(
@@ -1428,12 +1714,11 @@ export default function EspecimenForm(
         </div>
 
         {/* Main Action Buttons */}
-        <div
-          style={{
-            display  : 'flex',
-            gap      : '1rem',
-            marginTop: '2rem',
-          }}
+        <div style={{
+          display  : 'flex',
+          gap      : '1rem',
+          marginTop: '2rem'
+        }}
         >
           {initialData && (
             <button
@@ -1464,7 +1749,7 @@ export default function EspecimenForm(
             type="submit"
             className={`${ styles.button } ${ styles.submitBtn }`}
             style={{
-              flex: 1,
+              flex: 1
             }}
             disabled={isProcessing}
           >

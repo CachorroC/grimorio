@@ -37,55 +37,67 @@ export async function getData() {
       {}
     )
       .toArray();
+
+    const newArray = allItems.map(
+      (
+        e
+      ) => {
+        const {
+          _id, ...restData
+        } = e;
+        console.log(
+          _id
+        );
+
+        return restData;
+
+      }
+    );
     console.log(
-      `✅ Se recuperaron ${ allItems.length } registros.`
+      `✅ Se recuperaron ${ newArray.length } registros.`
     );
 
-    // 5. Chunk the array into arrays of 20 items each for pagination
-    const chunkSize = 20;
-    const paginatedItems: EspecimenType[][] = [];
-
-    for ( let i = 0; i < allItems.length; i += chunkSize ) {
-      paginatedItems.push(
-        allItems.slice(
-          i, i + chunkSize
-        )
-      );
-    }
-
-    console.log(
-      `✅ Datos divididos en ${ paginatedItems.length } páginas de hasta ${ chunkSize } ítems.`,
+    // 5. Prepare the JSON file content
+    // We strictly stringify the flat array of items
+    const fileContent = JSON.stringify(
+      newArray, null, 2
     );
 
-    // 6. Prepare the TypeScript file content
-    // Note: The exported type is now EspecimenType[][]
-    const fileContent = `import { EspecimenType } from '../types/especimenTypes';\n\nexport const plantList: EspecimenType[][] = ${ JSON.stringify(
-      paginatedItems,
-      null,
-      2,
-    ) };\n`;
+    const fileContentWithIds = JSON.stringify(
+      allItems, null, 2
+    );
 
-    // 7. Define the output file path and write the file
+    // 6. Define the output file path and write the file
     const outputPath = path.join(
       process.cwd(),
-      'src/lib/json/exportedEspecimenes.ts',
+      'src/lib/json/plantListDB.json' // Updated target filename and extension
+    );
+
+    const outPathWithIds = path.join(
+      process.cwd(),
+      'src/lib/json/plantListDBWithIds.json' // Updated target filename and extension
     );
 
     console.log(
-      `Escribiendo archivo en: ${ outputPath }...`
+      `Escribiendo archivo JSON en: ${ outputPath }...`
     );
     await fs.writeFile(
       outputPath, fileContent, 'utf-8'
     );
+
+    await fs.writeFile(
+      outPathWithIds, fileContentWithIds, 'utf-8'
+    );
+
     console.log(
-      '✅ Archivo .ts escrito con éxito.'
+      '✅ Archivo .json escrito con éxito.'
     );
   } catch ( error ) {
     console.error(
       '❌ Error durante la operación de base de datos:', error
     );
   } finally {
-    // 8. Ensure the connection is always closed, even if an error occurs
+    // 7. Ensure the connection is always closed, even if an error occurs
     await client.close();
     console.log(
       'Conexión a MongoDB cerrada.'
