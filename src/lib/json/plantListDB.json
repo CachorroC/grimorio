@@ -5770,7 +5770,17 @@
     "elementosAsociados": "Tierra",
     "polaridadEnergetica": [
       "Masculine"
-    ]
+    ],
+    "imagenes": {
+      "flor": {
+        "src": "https://media-plants.earth.com/images/2019/5/14/518926729190996/arcytophyllumnitidum.jpg",
+        "alt": "flor de la planta"
+      },
+      "hojas": {
+        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIrlIIxjJdOE74RdL0e9RzSlyUDqOPS0uT2A&s",
+        "alt": "hojas de la planta"
+      }
+    }
   },
   {
     "nombreCientifico": "Tibouchina grossa",
@@ -6220,7 +6230,6 @@
     ],
     "correspondenciasEnergeticas": [
       "Protección contra mal de ojo y entidades parásitas",
-      "Elemento Aire",
       "Purificación del prana en el hogar"
     ],
     "malesEmocionales": [

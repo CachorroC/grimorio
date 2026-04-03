@@ -1,37 +1,34 @@
 'use client';
 
 import React, { Dispatch, SetStateAction } from 'react';
-import { Box,
-  CardContent,
-  Typography,
-  Chip,
-  Grid,
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
-  List,
-  ListItem,
-  ListItemText,
-  ListItemIcon,
-  Divider,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableRow,
-  Paper,
-  Button,
-  Tooltip,
-  ListItemButton, } from '@mui/material';
+import Box from '@mui/material/Box';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import Divider from '@mui/material/Divider';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import CardContent from '@mui/material/CardContent';
+import Typography from '@mui/material/Typography';
+import Chip from '@mui/material/Chip';
+import Grid from '@mui/material/Grid';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
+import Button from '@mui/material/Button';
+import Tooltip from '@mui/material/Tooltip';
 import CircleIcon from '@mui/icons-material/Circle';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import { EspecimenType,
   ChakraType,
   ElementosType, } from '#@/lib/types/especimenTypes';
 import { useAccordionScroll } from '#@/app/context/AcordionScrollContext';
-import InboxIcon from '@mui/icons-material/Inbox';
-import DraftsIcon from '@mui/icons-material/Drafts';
 
 interface PlantCookbookProps {
   plant        : EspecimenType;
@@ -127,74 +124,86 @@ const TagSection = (
     return null;
   }
 
+  console.log(
+    color
+  );
+  let icon = 'call_made';
+
+  if ( title === 'Partes Útiles' ) {
+    icon = 'nest_eco_leaf';
+  } else if ( title === 'Esencias Florales' ) {
+    icon = 'deceased';
+  } else if ( title === 'Propiedades Medicinales' ) {
+    icon = 'medical_services';
+  } else if ( title === 'Correspondencias Energéticas' ) {
+    icon = 'energy_savings_leaf';
+  } else if ( title === 'Males Físicos' ) {
+    icon = 'personal_injury';
+  } else if ( title === 'Males Emocionales' ) {
+    icon = 'heart_broken';
+  }
+
   return (
-    <><Box
-      sx={{
-        mb: 2,
-      }}
-      >
-      <Typography
-        variant="subtitle1"
-        color="textPrimary"
-        gutterBottom
-      >
-        {title}
-      </Typography>
+    <>
       <Box
         sx={{
-          display : 'flex',
-          flexWrap: 'wrap',
-          gap     : 1,
+          mb: 2,
         }}
       >
-        {tags.map(
-          (
-            tag, index
-          ) => {
-            return (
-              <Chip
-                key={index}
-                label={tag}
-                size="small"
-                color={color}
-                variant="outlined"
-              />
-            );
-          }
-        )}
-      </Box>
-      <List>
-        {tags.map(
-          (
-            tag 
-          ) => {
-            return (
-              <ListItem disablePadding key={tag}>
-                <ListItemButton>
-                  <ListItemIcon>
-                    <DraftsIcon />
+        <Typography
+          variant="subtitle1"
+          color="textPrimary"
+          gutterBottom
+        >
+          {title}
+        </Typography>
+        {/* <Box
+          sx={{
+            display : 'flex',
+            flexWrap: 'wrap',
+            gap     : 1,
+          }}
+        >
+          {tags.map(
+            (
+              tag, index
+            ) => {
+              return (
+                <Chip
+                  key={index}
+                  label={tag}
+                  size="small"
+                  color={color}
+                  variant="outlined"
+                />
+              );
+            }
+          )}
+        </Box> */}
+        <List>
+          {tags.map(
+            (
+              tag
+            ) => {
+              return (
+                <ListItem disablePadding key={tag}>
+
+                  <ListItemIcon sx={{
+                    color: `${ color }.light`
+                  }}
+                  >
+                    <span className='material-symbols-outlined'>{icon}</span>
                   </ListItemIcon>
                   <ListItemText primary={tag} />
-                </ListItemButton>
-              </ListItem>
-            );
-          } 
-        )}
-      </List>
-      <Divider />
-      <List>
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemText primary="Trash" />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton component="a" href="#simple-list">
-            <ListItemText primary="Spam" />
-          </ListItemButton>
-        </ListItem>
-      </List>
-    </Box></>
+
+                </ListItem>
+              );
+            }
+          )}
+        </List>
+        <Divider />
+
+      </Box></>
   );
 };
 
