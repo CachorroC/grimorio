@@ -19,7 +19,7 @@ const ptserif = PT_Serif_Caption({
   preload: false,
   variable: '--ptserif',
   weight: '400',
-});
+})
 
 const josefina = Josefin_Sans({
   subsets: ['latin'],

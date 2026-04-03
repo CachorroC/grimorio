@@ -1,5 +1,4 @@
-.container,
-.containerEnabled {
+.container, .containerEnabled {
   position: relative;
   box-sizing: border-box;
   flex: 1;
@@ -10,8 +9,7 @@
   border-radius: var(--shape-corner-medium);
   transition: box-shadow 0.3s;
 }
-.container:hover,
-.containerEnabled:hover {
+.container:hover, .containerEnabled:hover {
   box-shadow: var(--elevation-1);
 }
 .containerEnabled {

@@ -87,6 +87,37 @@ export async function generatePropertySets(
         `✅ Successfully saved ${ sortedArray.length } unique items to ${ filePath }`
       );
     }
+
+    const allValues: Record<string, string[]> = {};
+
+    for ( const key of keysToExtract ) {
+      const sortedArray = Array.from(
+        uniqueValues[ key ]
+      ).sort(
+        (
+          a, b
+        ) => {
+          return a.localeCompare(
+            b
+          );
+        }
+      );
+      allValues[ key ] = sortedArray;
+    }
+
+    const allValuesFilePath = path.join(
+      outputDir, 'allValues.json'
+    );
+    await fs.writeFile(
+      allValuesFilePath,
+      JSON.stringify(
+        allValues, null, 2
+      ),
+      'utf-8'
+    );
+    console.log(
+      `✅ Successfully saved all unique items to ${ allValuesFilePath }`
+    );
   } catch ( error ) {
     console.error(
       '❌ Error writing JSON files:', error

@@ -1,5 +1,4 @@
 'use client';
-import { josefina } from '#@/lib/styles/fonts';
 import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
@@ -56,7 +55,8 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: josefina.style.fontFamily,
+    fontFamily: 'var(--josefa)',
+
   },
   shape: {
     borderRadius: 8,

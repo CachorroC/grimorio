@@ -1,8 +1,7 @@
 'use client';
 
 import React, { Dispatch, SetStateAction } from 'react';
-import {
-  Box,
+import { Box,
   CardContent,
   Typography,
   Chip,
@@ -23,91 +22,98 @@ import {
   Paper,
   Button,
   Tooltip,
-} from '@mui/material';
+  ListItemButton, } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import CircleIcon from '@mui/icons-material/Circle';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
-import {
-  EspecimenType,
+import { EspecimenType,
   ChakraType,
-  ElementosType,
-} from '#@/lib/types/especimenTypes';
+  ElementosType, } from '#@/lib/types/especimenTypes';
 import { useAccordionScroll } from '#@/app/context/AcordionScrollContext';
+import InboxIcon from '@mui/icons-material/Inbox';
+import DraftsIcon from '@mui/icons-material/Drafts';
 
 interface PlantCookbookProps {
-  plant: EspecimenType;
+  plant        : EspecimenType;
   setIsEditing?: Dispatch<SetStateAction<boolean>>;
 }
 
 // --- Color Mappings ---
 
-const getChakraColor = (colorDescription: ChakraType['color']): string => {
-  switch (colorDescription) {
-    case 'Rojo':
-      return 'var(--chakra-rojo)'; // Red
+const getChakraColor = (
+  colorDescription: ChakraType['color']
+): string => {
+  switch ( colorDescription ) {
+      case 'Rojo':
+        return 'var(--chakra-rojo)'; // Red
 
-    case 'Naranja':
-      return 'var(--chakra-naranja)'; // Orange
+      case 'Naranja':
+        return 'var(--chakra-naranja)'; // Orange
 
-    case 'Amarillo':
-      return 'var(--chakra-amarillo)'; // Yellow
+      case 'Amarillo':
+        return 'var(--chakra-amarillo)'; // Yellow
 
-    case 'Verde o rosa':
-      return 'var(--chakra-verde)'; // Green
+      case 'Verde o rosa':
+        return 'var(--chakra-verde)'; // Green
 
-    case 'Azul claro':
-      return 'var(--chakra-azul)'; // Light Blue
+      case 'Azul claro':
+        return 'var(--chakra-azul)'; // Light Blue
 
-    case 'Índigo':
-      return 'var(--chakra-indigo)'; // Indigo
+      case 'Índigo':
+        return 'var(--chakra-indigo)'; // Indigo
 
-    case 'Blanco o violeta':
-      return 'var(--chakra-violeta)'; // Violet
-    default:
-      return 'var(--chakra-default)';
+      case 'Blanco o violeta':
+        return 'var(--chakra-violeta)'; // Violet
+      default:
+        return 'var(--chakra-default)';
   }
 };
 
-const getPolarityColor = (polarity: 'Masculine' | 'Feminine'): string => {
+const getPolarityColor = (
+  polarity: 'Masculine' | 'Feminine'
+): string => {
   return polarity === 'Masculine'
     ? 'var(--masculine-color)'
     : 'var(--feminine-color)'; // Strong Blue vs Deep Pink
 };
 
-const getElementColor = (element: ElementosType): string => {
-  switch (element) {
-    case 'Metal':
-      return 'var(--element-metal)'; // Grey/Silver
+const getElementColor = (
+  element: ElementosType
+): string => {
+  switch ( element ) {
+      case 'Metal':
+        return 'var(--element-metal)'; // Grey/Silver
 
-    case 'Madera':
-      return 'var(--element-madera)'; // Green
+      case 'Madera':
+        return 'var(--element-madera)'; // Green
 
-    case 'Fuego':
-      return 'var(--element-fuego)'; // Red
+      case 'Fuego':
+        return 'var(--element-fuego)'; // Red
 
-    case 'Tierra':
-      return 'var(--element-tierra)'; // Brown
+      case 'Tierra':
+        return 'var(--element-tierra)'; // Brown
 
-    case 'Aire':
-      return 'var(--element-aire)'; // Cyan
+      case 'Aire':
+        return 'var(--element-aire)'; // Cyan
 
-    case 'Agua':
-      return 'var(--element-agua)'; // Blue
-    default:
-      return 'var(--element-default)';
+      case 'Agua':
+        return 'var(--element-agua)'; // Blue
+      default:
+        return 'var(--element-default)';
   }
 };
 
 // --- Components ---
 
-const TagSection = ({
-  title,
-  tags,
-  color,
-}: {
-  title: string;
-  tags: string[];
-  color:
+const TagSection = (
+  {
+    title,
+    tags,
+    color,
+  }: {
+    title: string;
+    tags : string[];
+    color:
     | 'default'
     | 'primary'
     | 'secondary'
@@ -115,17 +121,18 @@ const TagSection = ({
     | 'info'
     | 'success'
     | 'warning';
-}) => {
-  if (!tags || tags.length === 0) {
+  }
+) => {
+  if ( !tags || tags.length === 0 ) {
     return null;
   }
 
   return (
-    <Box
+    <><Box
       sx={{
         mb: 2,
       }}
-    >
+      >
       <Typography
         variant="subtitle1"
         color="textPrimary"
@@ -135,101 +142,148 @@ const TagSection = ({
       </Typography>
       <Box
         sx={{
-          display: 'flex',
+          display : 'flex',
           flexWrap: 'wrap',
-          gap: 1,
+          gap     : 1,
         }}
       >
-        {tags.map((tag, index) => {
-          return (
-            <Chip
-              key={index}
-              label={tag}
-              size="small"
-              color={color}
-              variant="outlined"
-            />
-          );
-        })}
-      </Box>
-    </Box>
-  );
-};
-
-const CustomColorTagSection = ({
-  title,
-  tags,
-}: {
-  title: string;
-  tags: { label: string; hexColor: string; tooltipContent?: React.ReactNode }[];
-}) => {
-  if (!tags || tags.length === 0) {
-    return null;
-  }
-
-  return (
-    <Box
-      sx={{
-        mb: 2,
-      }}
-    >
-      <Typography
-        variant="subtitle1"
-        color="textPrimary"
-        gutterBottom
-      >
-        {title}
-      </Typography>
-      <Box
-        sx={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          gap: 1,
-        }}
-      >
-        {tags.map((tag, index) => {
-          const chip = (
-            <Chip
-              label={tag.label}
-              size="small"
-              variant="outlined"
-              sx={{
-                borderColor: tag.hexColor,
-                color: tag.hexColor,
-                bacºkgroundColor: tag.hexColor,
-                fontWeight: 500,
-                cursor: tag.tooltipContent ? 'help' : 'default',
-              }}
-            />
-          );
-
-          // Wrap in a Tooltip if tooltipContent is provided
-          if (tag.tooltipContent) {
+        {tags.map(
+          (
+            tag, index
+          ) => {
             return (
-              <Tooltip
+              <Chip
                 key={index}
-                title={tag.tooltipContent}
-                arrow
-                placement="top"
-              >
-                {chip}
-              </Tooltip>
+                label={tag}
+                size="small"
+                color={color}
+                variant="outlined"
+              />
             );
           }
+        )}
+      </Box>
+      <List>
+        {tags.map(
+          (
+            tag 
+          ) => {
+            return (
+              <ListItem disablePadding key={tag}>
+                <ListItemButton>
+                  <ListItemIcon>
+                    <DraftsIcon />
+                  </ListItemIcon>
+                  <ListItemText primary={tag} />
+                </ListItemButton>
+              </ListItem>
+            );
+          } 
+        )}
+      </List>
+      <Divider />
+      <List>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemText primary="Trash" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton component="a" href="#simple-list">
+            <ListItemText primary="Spam" />
+          </ListItemButton>
+        </ListItem>
+      </List>
+    </Box></>
+  );
+};
 
-          // Otherwise, return just the chip with the key applied
-          return <React.Fragment key={index}>{chip}</React.Fragment>;
-        })}
+const CustomColorTagSection = (
+  {
+    title,
+    tags,
+  }: {
+    title: string;
+    tags : { label: string; hexColor: string; tooltipContent?: React.ReactNode }[];
+  }
+) => {
+  if ( !tags || tags.length === 0 ) {
+    return null;
+  }
+
+  return (
+    <Box
+      sx={{
+        mb: 2,
+      }}
+    >
+      <Typography
+        variant="subtitle1"
+        color="textPrimary"
+        gutterBottom
+      >
+        {title}
+      </Typography>
+      <Box
+        sx={{
+          display : 'flex',
+          flexWrap: 'wrap',
+          gap     : 1,
+        }}
+      >
+        {tags.map(
+          (
+            tag, index
+          ) => {
+            const chip = (
+              <Chip
+                label={tag.label}
+                size="small"
+                variant="outlined"
+                sx={{
+                  borderColor     : tag.hexColor,
+                  color           : tag.hexColor,
+                  bacºkgroundColor: tag.hexColor,
+                  fontWeight      : 500,
+                  cursor          : tag.tooltipContent
+                    ? 'help'
+                    : 'default',
+                }}
+              />
+            );
+
+            // Wrap in a Tooltip if tooltipContent is provided
+            if ( tag.tooltipContent ) {
+              return (
+                <Tooltip
+                  key={index}
+                  title={tag.tooltipContent}
+                  arrow
+                  placement="top"
+                >
+                  {chip}
+                </Tooltip>
+              );
+            }
+
+            // Otherwise, return just the chip with the key applied
+            return <React.Fragment key={index}>{chip}</React.Fragment>;
+          }
+        )}
       </Box>
     </Box>
   );
 };
 
-export default function PlantCookbook({
-  plant,
-  setIsEditing,
-}: PlantCookbookProps) {
-  const { expanded, handleAccordionChange } = useAccordionScroll();
+export default function PlantCookbook(
+  {
+    plant,
+    setIsEditing,
+  }: PlantCookbookProps
+) {
+  const {
+    expanded, handleAccordionChange
+  } = useAccordionScroll();
 
   return (
     <>
@@ -245,10 +299,10 @@ export default function PlantCookbook({
         >
           <CardContent
             sx={{
-              display: 'flex',
-              flexDirection: 'column',
+              display       : 'flex',
+              flexDirection : 'column',
               justifyContent: 'center',
-              p: {
+              p             : {
                 xs: 0,
                 md: 2,
               },
@@ -259,7 +313,7 @@ export default function PlantCookbook({
               component="h1"
               gutterBottom
               sx={{
-                fontStyle: 'italic',
+                fontStyle : 'italic',
                 fontWeight: 'bold',
               }}
             >
@@ -270,7 +324,9 @@ export default function PlantCookbook({
               color="text.secondary"
               gutterBottom
             >
-              {plant.nombresComunes.join(', ')}
+              {plant.nombresComunes.join(
+                ', '
+              )}
             </Typography>
 
             <Divider
@@ -312,9 +368,9 @@ export default function PlantCookbook({
 
             <Box
               sx={{
-                display: 'flex',
+                display : 'flex',
                 flexWrap: 'wrap',
-                gap: {
+                gap     : {
                   xs: 0,
                   sm: 4,
                 },
@@ -323,54 +379,66 @@ export default function PlantCookbook({
               {plant.chakrasAsociados && (
                 <CustomColorTagSection
                   title="Chakras Asociados"
-                  tags={plant.chakrasAsociados.map((chakra) => {
-                    return {
-                      label: chakra.nombre,
-                      hexColor: getChakraColor(chakra.color),
-                      // Building the custom hover popup content here
-                      tooltipContent: (
-                        <Box
-                          sx={{
-                            p: 0.5,
-                            maxWidth: 280,
-                          }}
-                        >
-                          <Typography
-                            variant="subtitle2"
+                  tags={plant.chakrasAsociados.map(
+                    (
+                      chakra
+                    ) => {
+                      return {
+                        label   : chakra.nombre,
+                        hexColor: getChakraColor(
+                          chakra.color
+                        ),
+                        // Building the custom hover popup content here
+                        tooltipContent: (
+                          <Box
                             sx={{
-                              fontWeight: 'bold',
-                              mb: 0.5,
+                              p       : 0.5,
+                              maxWidth: 280,
                             }}
                           >
-                            {chakra.nombreSanscrito}
-                          </Typography>
-                          <Typography
-                            variant="body2"
-                            sx={{
-                              mb: 0.5,
-                            }}
-                          >
-                            <strong>Ubicación:</strong> {chakra.ubicacion}
-                          </Typography>
-                          <Typography variant="body2">
-                            <strong>Significado:</strong> {chakra.significado}
-                          </Typography>
-                        </Box>
-                      ),
-                    };
-                  })}
+                            <Typography
+                              variant="subtitle2"
+                              sx={{
+                                fontWeight: 'bold',
+                                mb        : 0.5,
+                              }}
+                            >
+                              {chakra.nombreSanscrito}
+                            </Typography>
+                            <Typography
+                              variant="body2"
+                              sx={{
+                                mb: 0.5,
+                              }}
+                            >
+                              <strong>Ubicación:</strong> {chakra.ubicacion}
+                            </Typography>
+                            <Typography variant="body2">
+                              <strong>Significado:</strong> {chakra.significado}
+                            </Typography>
+                          </Box>
+                        ),
+                      };
+                    }
+                  )}
                 />
               )}
 
               {plant.polaridadEnergetica && (
                 <CustomColorTagSection
                   title="Polaridad Energética"
-                  tags={plant.polaridadEnergetica.map((polaridad) => {
-                    return {
-                      label: polaridad,
-                      hexColor: getPolarityColor(polaridad),
-                    };
-                  })}
+                  tags={plant.polaridadEnergetica.map(
+                    (
+                      polaridad
+                    ) => {
+                      return {
+                        label   : polaridad,
+                        hexColor: getPolarityColor(
+                          polaridad
+                        ),
+                      };
+                    }
+                  )}
                 />
               )}
 
@@ -379,8 +447,10 @@ export default function PlantCookbook({
                   title="Elemento Asociado"
                   tags={[
                     {
-                      label: plant.elementosAsociados,
-                      hexColor: getElementColor(plant.elementosAsociados),
+                      label   : plant.elementosAsociados,
+                      hexColor: getElementColor(
+                        plant.elementosAsociados
+                      ),
                     },
                   ]}
                 />
@@ -393,9 +463,9 @@ export default function PlantCookbook({
       <CardContent
         sx={{
           flexGrow: 1,
-          px: 0,
-          mt: 2,
-          p: 2,
+          px      : 0,
+          mt      : 2,
+          p       : 2,
         }}
       >
         <Grid
@@ -413,9 +483,9 @@ export default function PlantCookbook({
               component="h2"
               gutterBottom
               sx={{
-                display: 'flex',
+                display   : 'flex',
                 alignItems: 'center',
-                gap: 1,
+                gap       : 1,
               }}
             >
               <InfoOutlinedIcon /> Taxonomía
@@ -427,31 +497,45 @@ export default function PlantCookbook({
             >
               <Table size="small">
                 <TableBody>
-                  {Object.entries(plant.taxon).map(([key, value]) => {
-                    if (!value) {
-                      return null;
-                    }
+                  {Object.entries(
+                    plant.taxon
+                  )
+                    .map(
+                      (
+                        [
+                          key,
+                          value
+                        ]
+                      ) => {
+                        if ( !value ) {
+                          return null;
+                        }
 
-                    const displayValue = Array.isArray(value)
-                      ? value.join(', ')
-                      : value;
+                        const displayValue = Array.isArray(
+                          value
+                        )
+                          ? value.join(
+                              ', '
+                            )
+                          : value;
 
-                    return (
-                      <TableRow key={key}>
-                        <TableCell
-                          component="th"
-                          scope="row"
-                          sx={{
-                            fontWeight: 'bold',
-                            textTransform: 'capitalize',
-                          }}
-                        >
-                          {key}
-                        </TableCell>
-                        <TableCell align="right">{displayValue}</TableCell>
-                      </TableRow>
-                    );
-                  })}
+                        return (
+                          <TableRow key={key}>
+                            <TableCell
+                              component="th"
+                              scope="row"
+                              sx={{
+                                fontWeight   : 'bold',
+                                textTransform: 'capitalize',
+                              }}
+                            >
+                              {key}
+                            </TableCell>
+                            <TableCell align="right">{displayValue}</TableCell>
+                          </TableRow>
+                        );
+                      }
+                    )}
                 </TableBody>
               </Table>
             </TableContainer>
@@ -468,181 +552,200 @@ export default function PlantCookbook({
               component="h2"
               gutterBottom
               sx={{
-                fontWeight: 'bold',
+                fontWeight  : 'bold',
                 borderBottom: '2px solid',
-                borderColor: 'primary.main',
-                pb: 1,
+                borderColor : 'primary.main',
+                pb          : 1,
               }}
             >
               Recetario / Preparaciones
             </Typography>
 
-            {plant.preparaciones.map((prep, index) => {
-              const panelId = `${plant.nombreCientifico}-prep-${prep.usoTerapeutico}-${index}`;
+            {plant.preparaciones.map(
+              (
+                prep, index
+              ) => {
+                const panelId = `${ plant.nombreCientifico }-prep-${ prep.usoTerapeutico }-${ index }`;
 
-              return (
-                <Accordion
-                  key={panelId}
-                  disableGutters
-                  expanded={expanded === panelId}
-                  onChange={handleAccordionChange(
-                    panelId,
-                    plant.nombreCientifico,
-                  )}
-                  elevation={0}
-                  sx={{
-                    '&:before': {
-                      display: 'none',
-                    },
-                    border: '1px solid',
-                    borderColor: 'divider',
-                    mb: 1,
-                    borderRadius: 1,
-                  }}
-                >
-                  <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
+                return (
+                  <Accordion
+                    key={panelId}
+                    disableGutters
+                    expanded={expanded === panelId}
+                    onChange={handleAccordionChange(
+                      panelId,
+                      plant.nombreCientifico,
+                    )}
+                    elevation={0}
                     sx={{
-                      backgroundColor: 'action.hover',
+                      '&:before': {
+                        display: 'none',
+                      },
+                      border      : '1px solid',
+                      borderColor : 'divider',
+                      mb          : 1,
+                      borderRadius: 1,
                     }}
                   >
-                    <Typography
-                      variant="subtitle1"
+                    <AccordionSummary
+                      expandIcon={<ExpandMoreIcon />}
                       sx={{
-                        fontWeight: 'bold',
-                        textTransform: 'capitalize',
+                        backgroundColor: 'action.hover',
                       }}
                     >
-                      Para: {prep.usoTerapeutico}
-                    </Typography>
-                  </AccordionSummary>
-
-                  <AccordionDetails>
-                    <Grid
-                      container
-                      spacing={3}
-                    >
-                      <Grid
+                      <Typography
+                        variant="subtitle1"
                         sx={{
-                          xs: 12,
-                          sm: 5,
+                          fontWeight   : 'bold',
+                          textTransform: 'capitalize',
                         }}
                       >
-                        <Typography
-                          variant="h6"
-                          gutterBottom
-                          color="primary"
-                        >
-                          Ingredientes
-                        </Typography>
-                        <List
-                          dense
-                          disablePadding
-                        >
-                          {prep.ingredientes.map((ing, i) => {
-                            return (
-                              <ListItem
-                                key={i}
-                                disableGutters
-                                sx={{
-                                  alignItems: 'flex-start',
-                                }}
-                              >
-                                <ListItemIcon
-                                  sx={{
-                                    minWidth: 24,
-                                    mt: 0.5,
-                                  }}
-                                >
-                                  <CircleIcon
-                                    sx={{
-                                      fontSize: 8,
-                                    }}
-                                  />
-                                </ListItemIcon>
-                                <ListItemText
-                                  primary={ing.ingrediente}
-                                  secondary={ing.cantidad}
-                                  primaryTypographyProps={{
-                                    variant: 'body2',
-                                    fontWeight: 'medium',
-                                  }}
-                                />
-                              </ListItem>
-                            );
-                          })}
-                        </List>
-                      </Grid>
+                        Para: {prep.usoTerapeutico}
+                      </Typography>
+                    </AccordionSummary>
 
+                    <AccordionDetails>
                       <Grid
-                        sx={{
-                          xs: 12,
-                          sm: 7,
-                        }}
+                        container
+                        spacing={3}
                       >
-                        <Typography
-                          variant="h6"
-                          gutterBottom
-                          color="primary"
-                        >
-                          Preparación
-                        </Typography>
-                        <List disablePadding>
-                          {prep.pasos.map(([stepNumber, instruction], i) => {
-                            return (
-                              <ListItem
-                                key={i}
-                                disableGutters
-                                alignItems="flex-start"
-                              >
-                                <Box
-                                  sx={{
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    minWidth: 24,
-                                    height: 24,
-                                    borderRadius: '50%',
-                                    backgroundColor: 'primary.main',
-                                    color: 'primary.contrastText',
-                                    fontSize: '0.875rem',
-                                    fontWeight: 'bold',
-                                    mr: 2,
-                                    mt: 0.5,
-                                  }}
-                                >
-                                  {stepNumber}
-                                </Box>
-                                <ListItemText primary={instruction} />
-                              </ListItem>
-                            );
-                          })}
-                        </List>
-                        <Typography
-                          variant="subtitle2"
+                        <Grid
                           sx={{
-                            fontWeight: 'bold',
-                            textTransform: 'capitalize',
-                            mt: 2,
+                            xs: 12,
+                            sm: 5,
                           }}
                         >
-                          Forma de aplicación: {prep.formaDeAplicacion}
-                        </Typography>
+                          <Typography
+                            variant="h6"
+                            gutterBottom
+                            color="primary"
+                          >
+                            Ingredientes
+                          </Typography>
+                          <List
+                            dense
+                            disablePadding
+                          >
+                            {prep.ingredientes.map(
+                              (
+                                ing, i
+                              ) => {
+                                return (
+                                  <ListItem
+                                    key={i}
+                                    disableGutters
+                                    sx={{
+                                      alignItems: 'flex-start',
+                                    }}
+                                  >
+                                    <ListItemIcon
+                                      sx={{
+                                        minWidth: 24,
+                                        mt      : 0.5,
+                                      }}
+                                    >
+                                      <CircleIcon
+                                        sx={{
+                                          fontSize: 8,
+                                        }}
+                                      />
+                                    </ListItemIcon>
+                                    <ListItemText
+                                      primary={ing.ingrediente}
+                                      secondary={ing.cantidad}
+                                      primaryTypographyProps={{
+                                        variant   : 'body2',
+                                        fontWeight: 'medium',
+                                      }}
+                                    />
+                                  </ListItem>
+                                );
+                              }
+                            )}
+                          </List>
+                        </Grid>
+
+                        <Grid
+                          sx={{
+                            xs: 12,
+                            sm: 7,
+                          }}
+                        >
+                          <Typography
+                            variant="h6"
+                            gutterBottom
+                            color="primary"
+                          >
+                            Preparación
+                          </Typography>
+                          <List disablePadding>
+                            {prep.pasos.map(
+                              (
+                                [
+                                  stepNumber,
+                                  instruction
+                                ], i
+                              ) => {
+                                return (
+                                  <ListItem
+                                    key={i}
+                                    disableGutters
+                                    alignItems="flex-start"
+                                  >
+                                    <Box
+                                      sx={{
+                                        display        : 'flex',
+                                        alignItems     : 'center',
+                                        justifyContent : 'center',
+                                        minWidth       : 24,
+                                        height         : 24,
+                                        borderRadius   : '50%',
+                                        backgroundColor: 'primary.main',
+                                        color          : 'primary.contrastText',
+                                        fontSize       : '0.875rem',
+                                        fontWeight     : 'bold',
+                                        mr             : 2,
+                                        mt             : 0.5,
+                                      }}
+                                    >
+                                      {stepNumber}
+                                    </Box>
+                                    <ListItemText primary={instruction} />
+                                  </ListItem>
+                                );
+                              }
+                            )}
+                          </List>
+                          <Typography
+                            variant="subtitle2"
+                            sx={{
+                              fontWeight   : 'bold',
+                              textTransform: 'capitalize',
+                              mt           : 2,
+                            }}
+                          >
+                            Forma de aplicación: {prep.formaDeAplicacion}
+                          </Typography>
+                        </Grid>
                       </Grid>
-                    </Grid>
-                  </AccordionDetails>
-                </Accordion>
-              );
-            })}
+                    </AccordionDetails>
+                  </Accordion>
+                );
+              }
+            )}
           </Grid>
         </Grid>
       </CardContent>
 
       <Button
         onClick={() => {
-          return setIsEditing?.((e) => {
-            return !e;
-          });
+          return setIsEditing?.(
+            (
+              e
+            ) => {
+              return !e;
+            }
+          );
         }}
       >
         Editar

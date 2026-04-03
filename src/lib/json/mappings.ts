@@ -1,0 +1,440 @@
+// mappings.ts
+
+// Helper function to invert our grouped maps into a flat lookup dictionary: { "Analgésico leve": "Analgésico", ... }
+function createLookup(
+  groupedMap: Record<string, string[]>
+): Record<string, string> {
+  const lookup: Record<string, string> = {};
+
+  for ( const [
+    unifiedValue,
+    variations
+  ] of Object.entries(
+      groupedMap
+    ) ) {
+    for ( const variation of variations ) {
+      lookup[ variation ] = unifiedValue;
+    }
+  }
+
+  return lookup;
+}
+
+const propiedadesMedicinalesGrupos: Record<string, string[]> = {
+  'Analgésico': [
+    'Analgésica',
+    'Analgésico',
+    'Analgésico externo',
+    'Analgésico leve',
+    'Analgésico local',
+    'Analgésico nervioso (neuralgias)',
+    'Analgésico potente (alto contenido natural de salicilato de metilo)',
+    'Analgésico tópico'
+  ],
+  'Analgésico articular': [
+    'Analgésico articular',
+    'Analgésico articular (planta caliente)',
+    'Analgésico articular externo potente (por aceites volátiles)',
+    'Analgésico articular extremo (Tópico)',
+  ],
+  'Antiinflamatorio': [
+    'Antiinflamatoria',
+    'antiinflamatorio',
+    'Antiinflamatorio',
+    'Antiinflamatorio (uso tópico estricto)',
+    'Antiinflamatorio articular',
+    'Antiinflamatorio articular y muscular',
+    'Antiinflamatorio celular',
+    'Antiinflamatorio de vías respiratorias',
+    'Antiinflamatorio de vías urinarias',
+    'Antiinflamatorio externo',
+    'Antiinflamatorio leve (en baños)',
+    'Antiinflamatorio local',
+    'Antiinflamatorio potente',
+    'Antiinflamatorio respiratorio',
+    'Antiinflamatorio tópico'
+  ],
+  'Antiespasmódico': [
+    'Antiespasmódico',
+    'Antiespasmódico (Tópico)',
+    'Antiespasmódico bronquial',
+    'Antiespasmódico estomacal',
+    'Antiespasmódico gastrointestinal (de origen nervioso)',
+    'Antiespasmódico infantil',
+    'Antiespasmódico muscular',
+    'Antiespasmódico nervioso',
+    'Antiespasmódico respiratorio'
+  ],
+  'Cicatrizante y Vulnerario': [
+    'cicatrizante',
+    'Cicatrizante',
+    'Cicatrizante (cera)',
+    'Cicatrizante altamente potente',
+    'Cicatrizante cutáneo',
+    'Cicatrizante externo',
+    'Cicatrizante potente (látex)',
+    'Cicatrizantes',
+    'Vulnerario',
+    'Vulnerario (cierra heridas)',
+    'Vulnerario (cura heridas y quemaduras)',
+    'Vulnerario (cura heridas)',
+    'Vulnerario (excelente cicatrizante)',
+    'Vulnerario (hojas tópicas)',
+    'Vulnerario (lava y sella heridas)',
+    'Vulnerario (reparación de tejidos)',
+    'Vulnerario (traumatismos cerrados)',
+    'Vulnerario (uso externo)',
+    'Vulnerario tópico'
+  ],
+  'Antiséptico y Antimicrobiano': [
+    'Antibacteriano',
+    'Antifúngico',
+    'Antimicótico',
+    'Antimicótico tópico',
+    'Antimicótico tópico (látex)',
+    'antimicrobiana',
+    'Antimicrobiano',
+    'Antimicrobiano (alto contenido de berberina)',
+    'Antimicrobiano tópico',
+    'Antiséptico',
+    'Antiséptico bucal',
+    'Antiséptico cutáneo',
+    'Antiséptico de vías urinarias',
+    'Antiséptico externo',
+    'Antiséptico potente',
+    'Antiséptico pulmonar y de vías urinarias',
+    'Antiséptico respiratorio',
+    'Antiséptico urinario'
+  ],
+  'Sedante y Calmante': [
+    'Ansiolítico',
+    'Ansiolítico leve',
+    'Calmante',
+    'Calmante nervioso',
+    'Calmante nervioso leve',
+    'Inductor del sueño',
+    'Inductor del sueño profundo',
+    'Relajante del sistema nervioso',
+    'Relajante muscular (hidroterapia)',
+    'Relajante nervioso leve (uso en aromaterapia andina)',
+    'Sedante del sistema nervioso central',
+    'Sedante estomacal',
+    'Sedante fuerte',
+    'Sedante nervioso',
+    'Sedante nervioso (requiere precaución por alcaloides)',
+    'Sedante poderoso del sistema nervioso',
+    'Sedante suave'
+  ],
+  'Digestivo y Carminativo': [
+    'Carminativo',
+    'Carminativo (alivia gases)',
+    'digestiva',
+    'Digestivo',
+    'Digestivo (arilo del fruto)',
+    'Digestivo estomacal',
+    'Estimulante digestivo'
+  ],
+  'Expectorante y Antitusivo': [
+    'Antiasmático',
+    'Anticatarral',
+    'Anticatarral (vahos)',
+    'Antitusivo',
+    'Antitusivo (Béquico)',
+    'Antitusivo y expectorante',
+    'Béquico (alivia la tos)',
+    'Béquico (calma la tos)',
+    'Béquico (para la tos)',
+    'Béquico (para tos persistente)',
+    'Expectorante',
+    'Expectorante de vías bajas',
+    'Expectorante profundo',
+    'Expectorante pulmonar',
+    'Expectorante suave'
+  ]
+};
+
+const malesEmocionalesGrupos: Record<string, string[]> = {
+  'Ansiedad y Pánico': [
+    'Ansiedad crónica y ataques de pánico',
+    'Ansiedad crónica y pensamientos pesimistas',
+    'Ansiedad paralizante',
+    'Ansiedad social extrema',
+    'Ataques de pánico',
+    'Ataques de pánico incontrolables',
+    'Ataques de pánico nocturnos',
+    'Cuadros de pánico leves'
+  ],
+  'Depresión y Tristeza': [
+    'Depresión clínica leve a moderada',
+    'Depresión clínica profunda resistente a tratamientos',
+    'Depresión estacional o leve',
+    'Depresión invernal o por frío',
+    'Depresión profunda',
+    'Desesperanza',
+    'Melancolía',
+    'Melancolía andina',
+    'Melancolía asociada al aislamiento',
+    'Melancolía asociada al clima frío',
+    'Melancolía y tristeza profunda',
+    'Tristeza crónica por migración',
+    'Tristeza enquistada',
+    'Tristeza profunda',
+    'Tristeza profunda por rechazo',
+    'Tristeza sin causa aparente',
+    'Tristeza y el frio del alma'
+  ],
+  'Estrés y Agotamiento': [
+    'Agotamiento ante la lucha constante',
+    'Agotamiento ante pruebas largas',
+    'Agotamiento emocional constante',
+    'Agotamiento maternal',
+    'Agotamiento mental extremo',
+    'Agotamiento nervioso severo',
+    'Agotamiento por exceso de trabajo (burnout)',
+    'Agotamiento por hipervigilancia',
+    'Agotamiento psíquico por ataque energético',
+    'Estrés agudo',
+    'Estrés laboral agudo',
+    'Estrés paralizante',
+    'Estrés por falta de límites personales',
+    'Estrés por resistencia al cambio',
+    'Estrés y agotamiento nervioso'
+  ],
+  'Apatía y Falta de Voluntad': [
+    'Apatía',
+    'Apatía crónica',
+    'Apatía estacional',
+    'Apatía extrema',
+    'Apatía extrema y letargo',
+    'Apatía profunda y depresión inerte',
+    'Apatía sexual o vital',
+    'Desánimo crónico',
+    'Falta de motivación',
+    'Falta de motivación vital',
+    'Falta de voluntad',
+    'Falta de deseo de vivir'
+  ],
+  'Insomnio y Alteraciones del Sueño': [
+    'Insomnio por ansiedad',
+    'Insomnio por pensamientos acelerados',
+    'Insomnio por sobrecarga de pensamientos',
+    'Insomnio severo',
+    'Insomnio severo por hiperactividad mental',
+    'Terrores nocturnos',
+    'Miedos cíclicos o terrores nocturnos',
+    'Miedos infundados o terrores nocturnos',
+    'Miedos nocturnos (especialmente en niños)'
+  ]
+};
+
+const malesFisicosGrupos: Record<string, string[]> = {
+  'Cefalea': [
+    'Cefáleas',
+    'Cefaleas tensionales',
+    'Dolores de cabeza por cansancio',
+    'Dolores de cabeza por mala oxigenación',
+    'Dolor de cabeza tensional (frotación)'
+  ],
+  'Afecciones Respiratorias': [
+    'Afecciones bronquiales por clima extremo',
+    'Afecciones pulmonares',
+    'Afecciones respiratorias por frío extremo',
+    'Afecciones respiratorias severas',
+    'Afecciones respiratorias severas (inhalaciones)',
+    'Asma',
+    'Asma bronquial',
+    'Asma endémica por clima frío',
+    'Bronquitis',
+    'Bronquitis aguda y crónica',
+    'Bronquitis crónica',
+    'Bronquitis leve',
+    'Congestión de pecho',
+    'Congestión nasal',
+    'Congestión nasal (inhalaciones)',
+    'Congestión nasal severa',
+    'Congestión pulmonar',
+    'Espasmos bronquiales',
+    'Gripe y catarro',
+    'Resfriados crónicos',
+    'Resfriados prolongados',
+    'Resfriados y catarros crónicos',
+    'Tos crónica',
+    'Tos ferina',
+    'Tos nerviosa e inflamación de las vías respiratorias',
+    'Tos nerviosa o ferina',
+    'Tos por frío extremo',
+    'Tos productiva crónica',
+    'Tos productiva resistente',
+    'Tos seca irritativa',
+    'Tos seca y persistente',
+    'Sinusitis',
+    'Sinusitis aguda'
+  ],
+  'Dolores Articulares y Reumáticos': [
+    'artritis',
+    'Artritis',
+    'Dolor articular por frío intenso',
+    'dolores articulares',
+    'Dolores articulares causados por acumulación de toxinas (como el ácido úrico)',
+    'Dolores articulares crónicos por frío',
+    'Dolores articulares generalizados',
+    'Dolores articulares intensos',
+    'Dolores articulares por frío interno',
+    'Hinchazón articular',
+    'reumatismo',
+    'Reumatismo',
+    'Reumatismo (uso externo de la resina)',
+    'Reumatismo articular frío',
+    'Reumatismo crónico',
+    'Reumatismo deformante agudo (dolor insoportable)',
+    'Reumatismo frío',
+    'Dolores reumáticos',
+    'Dolores reumáticos (uso externo)',
+    'Dolores reumáticos agravados por el frío'
+  ],
+  'Problemas Digestivos y Gastrointestinales': [
+    'Acidez estomacal (reflujo)',
+    'Afecciones digestivas',
+    'Afecciones estomacales',
+    'Cólicos estomacales',
+    'Cólicos estomacales por frío',
+    'Cólicos gastrointestinales infantiles',
+    'Cólicos por gases (meteorismo)',
+    'Diarrea',
+    'Diarrea (corteza)',
+    'Diarrea leve',
+    'Diarrea moderada',
+    'Diarrea severa',
+    'Diarreas',
+    'Diarreas crónicas',
+    'Diarreas crónicas o disentería',
+    'Diarreas leves',
+    'digestion',
+    'Digestiones pesadas',
+    'gases',
+    'Indigestión',
+    'Indigestión crónica',
+    'Indigestión crónica y pesadez',
+    'Indigestión nerviosa',
+    'Indigestión severa'
+  ],
+  'Problemas de la Piel y Heridas': [
+    'Afecciones cutáneas recurrentes por impurezas en la sangre',
+    'Afecciones de la piel (lavados)',
+    'Afecciones de la piel (llagas, sabañones)',
+    'Afecciones inflamatorias cutáneas',
+    'Heridas abiertas de difícil cierre',
+    'Heridas abiertas y cortes',
+    'Heridas cutáneas y úlceras',
+    'Heridas de difícil cicatrización',
+    'Heridas e incisiones quirúrgicas (para cicatrizar sin marca)',
+    'Heridas infectadas',
+    'Heridas menores',
+    'Heridas que tardan en cerrar',
+    'Heridas sangrantes',
+    'Heridas tórpidas de difícil curación',
+    'Hongos en la piel',
+    'Hongos persistentes en la piel',
+    'Infecciones cutáneas',
+    'Infecciones cutáneas persistentes',
+    'Infecciones de la piel',
+    'Infecciones leves de la piel',
+    'Infecciones por hongos en la piel',
+    'par alas cicatrices',
+    'problemas de la piel',
+    'Quemaduras leves',
+    'Quemaduras leves (como sustituto de sábila)',
+    'Quemaduras menores',
+    'Quemaduras menores y heridas',
+    'Quemaduras solares',
+    'Quemaduras y cicatrices queloides'
+  ]
+};
+
+const correspondenciasEnergeticasGrupos: Record<string, string[]> = {
+  'Limpieza y Purificación': [
+    'Baños de despojo',
+    'Baños de despojo en medicina tradicional andina',
+    'Limpieza de campos áuricos',
+    'Limpieza de campos áuricos densos',
+    'Limpieza de energías estancadas',
+    'Limpieza de espacios cargados de negatividad',
+    'Limpieza de espacios con presencias densas',
+    'Limpieza de espacios mediante sahumerios',
+    'Limpieza de espacios pesados',
+    'Limpieza de espacios tensos',
+    'Limpieza de fluidos energéticos pesados',
+    'Limpieza de insectos astrales (parasitismo energético)',
+    'Limpieza de miasmas (energías residuales en espacios)',
+    'Limpieza de palabras dañinas',
+    'Limpieza de parásitos astrales',
+    'Limpieza del chakra del tercer ojo',
+    'limpieza energetica',
+    'Purificación del aire y del prana',
+    'Purificación del prana en el hogar',
+    'Purificación por agua y espuma (por sus saponinas)',
+    'Purificación profunda a través del elemento Fuego y el hígado',
+    'Purificador de la energia vital',
+    'purificacion'
+  ],
+  'Protección Energética': [
+    'Escudo astral espinoso',
+    'Escudo protector contra energias externas',
+    'proteccion',
+    'Protección chamánica contra ataques psíquicos',
+    'Protección chamánica contra el frío del alma',
+    'Protección contra el frío espiritual',
+    'Protección contra energías densas',
+    'Protección contra envidias y energías punzantes',
+    'Protección contra la rigidez del espíritu',
+    'Protección contra mal de ojo y entidades parásitas',
+    'Protección del aura',
+    'Protección del hogar',
+    'Protección divina',
+    'Protección durante cambios drásticos de vida',
+    'Protección energética de espacios',
+    'Protector contra entidades oscuras (malos aires)',
+    'Sello de protección astral',
+    'Sello espiritual',
+    'Sello protector del aura',
+    'Símbolo de fuerza protectora (como la pata de un oso)',
+    'Magia defensiva (espinas)',
+    'Magia de protección y de repeler enemigos (por sus espinas)',
+    'Magia de protección y sellado de portales'
+  ],
+  'Conexión Espiritual y Ancestral': [
+    'Conexión ancestral',
+    'Conexión con el arquetipo de la Madre Nutricia',
+    'Conexión con el chakra corona',
+    'Conexión con el chakra garganta',
+    'Conexión con el espíritu de la montaña',
+    'Conexión con la energía de la eterna juventud y la memoria',
+    'Conexión con la sabiduría ancestral masculina',
+    'Conexión con la sabiduría del agua subterránea',
+    'Conexión con los ancestros del territorio Muisca',
+    'Conexión con los espíritus del aire y la humedad',
+    'Conexión con los espíritus tutelares y el origen del universo',
+    'Conexión con los mundos sutiles (al no tocar la tierra)',
+    'Conexión crística y compasión',
+    'Conexión estelar y extraterrestre (en cosmología ancestral)',
+    'Conexión lunar (por su color plateado)',
+    'Conexión solar (por sus flores y resina)'
+  ]
+};
+
+// Generate the fast lookup dictionaries
+export const mapMedicinales = createLookup(
+  propiedadesMedicinalesGrupos
+);
+
+export const mapEmocionales = createLookup(
+  malesEmocionalesGrupos
+);
+
+export const mapFisicos = createLookup(
+  malesFisicosGrupos
+);
+
+export const mapEnergeticas = createLookup(
+  correspondenciasEnergeticasGrupos
+);

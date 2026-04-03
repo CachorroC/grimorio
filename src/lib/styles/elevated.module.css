@@ -1,6 +1,4 @@
-.container,
-.containerDisabled,
-.containerEnabled {
+.container, .containerDisabled, .containerEnabled {
   position: relative;
   box-sizing: border-box;
   flex: 1;
@@ -15,10 +13,8 @@
   box-shadow: var(--elevation-1);
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
-.container::before,
-.containerDisabled::before,
-.containerEnabled::before {
-  content: '';
+.container::before, .containerDisabled::before, .containerEnabled::before {
+  content: "";
   position: absolute;
   inset: 0;
   display: block;
@@ -28,26 +24,18 @@
   z-index: -1;
   transition: opacity 0.3s;
 }
-.container:hover,
-.containerDisabled:hover,
-.containerEnabled:hover {
+.container:hover, .containerDisabled:hover, .containerEnabled:hover {
   box-shadow: var(--elevation-2);
   background-color: var(--surface-container-high);
 }
-.container:hover::before,
-.containerDisabled:hover::before,
-.containerEnabled:hover::before {
+.container:hover::before, .containerDisabled:hover::before, .containerEnabled:hover::before {
   opacity: 0.5;
 }
-.container:focus,
-.containerDisabled:focus,
-.containerEnabled:focus {
+.container:focus, .containerDisabled:focus, .containerEnabled:focus {
   border: 0.3rem solid var(--secondary);
   box-shadow: var(--elevation-1);
 }
-.container:focus::before,
-.containerDisabled:focus::before,
-.containerEnabled:focus::before {
+.container:focus::before, .containerDisabled:focus::before, .containerEnabled:focus::before {
   opacity: 0.08;
 }
 .containerEnabled {
