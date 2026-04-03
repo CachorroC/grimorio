@@ -18,7 +18,19 @@
     opacity: 0;
   }
 }
-.button, .buttonChip, .buttonHome, .buttonModal, .buttonDrawerMenuClosed, .buttonDrawerMenu, .buttonDrawerClosed, .buttonDrawer, .buttonBackwards, .buttonForward, .buttonPassiveCategory, .buttonActiveCategory, .buttonEdit {
+.button,
+.buttonChip,
+.buttonHome,
+.buttonModal,
+.buttonDrawerMenuClosed,
+.buttonDrawerMenu,
+.buttonDrawerClosed,
+.buttonDrawer,
+.buttonBackwards,
+.buttonForward,
+.buttonPassiveCategory,
+.buttonActiveCategory,
+.buttonEdit {
   position: relative;
   box-sizing: border-box;
   display: flex;
@@ -36,15 +48,51 @@
   transition: all 0.3s;
 }
 @media (600px < width < 1200px) {
-  .button, .buttonChip, .buttonHome, .buttonModal, .buttonDrawerMenuClosed, .buttonDrawerMenu, .buttonDrawerClosed, .buttonDrawer, .buttonBackwards, .buttonForward, .buttonPassiveCategory, .buttonActiveCategory, .buttonEdit {
+  .button,
+  .buttonChip,
+  .buttonHome,
+  .buttonModal,
+  .buttonDrawerMenuClosed,
+  .buttonDrawerMenu,
+  .buttonDrawerClosed,
+  .buttonDrawer,
+  .buttonBackwards,
+  .buttonForward,
+  .buttonPassiveCategory,
+  .buttonActiveCategory,
+  .buttonEdit {
     flex-flow: row nowrap;
   }
 }
-.button, .buttonChip, .buttonHome, .buttonModal, .buttonDrawerMenuClosed, .buttonDrawerMenu, .buttonDrawerClosed, .buttonDrawer, .buttonBackwards, .buttonForward, .buttonPassiveCategory, .buttonActiveCategory, .buttonEdit {
+.button,
+.buttonChip,
+.buttonHome,
+.buttonModal,
+.buttonDrawerMenuClosed,
+.buttonDrawerMenu,
+.buttonDrawerClosed,
+.buttonDrawer,
+.buttonBackwards,
+.buttonForward,
+.buttonPassiveCategory,
+.buttonActiveCategory,
+.buttonEdit {
   position: relative;
 }
-.button::before, .buttonChip::before, .buttonHome::before, .buttonModal::before, .buttonDrawerMenuClosed::before, .buttonDrawerMenu::before, .buttonDrawerClosed::before, .buttonDrawer::before, .buttonBackwards::before, .buttonForward::before, .buttonPassiveCategory::before, .buttonActiveCategory::before, .buttonEdit::before {
-  content: "";
+.button::before,
+.buttonChip::before,
+.buttonHome::before,
+.buttonModal::before,
+.buttonDrawerMenuClosed::before,
+.buttonDrawerMenu::before,
+.buttonDrawerClosed::before,
+.buttonDrawer::before,
+.buttonBackwards::before,
+.buttonForward::before,
+.buttonPassiveCategory::before,
+.buttonActiveCategory::before,
+.buttonEdit::before {
+  content: '';
   position: absolute;
   inset: 0;
   border-radius: inherit;
@@ -54,16 +102,90 @@
   pointer-events: none;
   z-index: auto;
 }
-.button:hover::before, .buttonChip:hover::before, .buttonHome:hover::before, .buttonModal:hover::before, .buttonDrawerMenuClosed:hover::before, .buttonDrawerMenu:hover::before, .buttonDrawerClosed:hover::before, .buttonDrawer:hover::before, .buttonBackwards:hover::before, .buttonForward:hover::before, .buttonPassiveCategory:hover::before, .buttonActiveCategory:hover::before, .buttonEdit:hover::before {
+.button:hover::before,
+.buttonChip:hover::before,
+.buttonHome:hover::before,
+.buttonModal:hover::before,
+.buttonDrawerMenuClosed:hover::before,
+.buttonDrawerMenu:hover::before,
+.buttonDrawerClosed:hover::before,
+.buttonDrawer:hover::before,
+.buttonBackwards:hover::before,
+.buttonForward:hover::before,
+.buttonPassiveCategory:hover::before,
+.buttonActiveCategory:hover::before,
+.buttonEdit:hover::before {
   opacity: 0.08;
 }
-.button:focus::before, .buttonChip:focus::before, .buttonHome:focus::before, .buttonModal:focus::before, .buttonDrawerMenuClosed:focus::before, .buttonDrawerMenu:focus::before, .buttonDrawerClosed:focus::before, .buttonDrawer:focus::before, .buttonBackwards:focus::before, .buttonForward:focus::before, .buttonPassiveCategory:focus::before, .buttonActiveCategory:focus::before, .buttonEdit:focus::before, .button:active::before, .buttonChip:active::before, .buttonHome:active::before, .buttonModal:active::before, .buttonDrawerMenuClosed:active::before, .buttonDrawerMenu:active::before, .buttonDrawerClosed:active::before, .buttonDrawer:active::before, .buttonBackwards:active::before, .buttonForward:active::before, .buttonPassiveCategory:active::before, .buttonActiveCategory:active::before, .buttonEdit:active::before, .button:focus-visible::before, .buttonChip:focus-visible::before, .buttonHome:focus-visible::before, .buttonModal:focus-visible::before, .buttonDrawerMenuClosed:focus-visible::before, .buttonDrawerMenu:focus-visible::before, .buttonDrawerClosed:focus-visible::before, .buttonDrawer:focus-visible::before, .buttonBackwards:focus-visible::before, .buttonForward:focus-visible::before, .buttonPassiveCategory:focus-visible::before, .buttonActiveCategory:focus-visible::before, .buttonEdit:focus-visible::before {
+.button:focus::before,
+.buttonChip:focus::before,
+.buttonHome:focus::before,
+.buttonModal:focus::before,
+.buttonDrawerMenuClosed:focus::before,
+.buttonDrawerMenu:focus::before,
+.buttonDrawerClosed:focus::before,
+.buttonDrawer:focus::before,
+.buttonBackwards:focus::before,
+.buttonForward:focus::before,
+.buttonPassiveCategory:focus::before,
+.buttonActiveCategory:focus::before,
+.buttonEdit:focus::before,
+.button:active::before,
+.buttonChip:active::before,
+.buttonHome:active::before,
+.buttonModal:active::before,
+.buttonDrawerMenuClosed:active::before,
+.buttonDrawerMenu:active::before,
+.buttonDrawerClosed:active::before,
+.buttonDrawer:active::before,
+.buttonBackwards:active::before,
+.buttonForward:active::before,
+.buttonPassiveCategory:active::before,
+.buttonActiveCategory:active::before,
+.buttonEdit:active::before,
+.button:focus-visible::before,
+.buttonChip:focus-visible::before,
+.buttonHome:focus-visible::before,
+.buttonModal:focus-visible::before,
+.buttonDrawerMenuClosed:focus-visible::before,
+.buttonDrawerMenu:focus-visible::before,
+.buttonDrawerClosed:focus-visible::before,
+.buttonDrawer:focus-visible::before,
+.buttonBackwards:focus-visible::before,
+.buttonForward:focus-visible::before,
+.buttonPassiveCategory:focus-visible::before,
+.buttonActiveCategory:focus-visible::before,
+.buttonEdit:focus-visible::before {
   opacity: 0.1;
 }
-.button > .icon, .buttonChip > .icon, .buttonHome > .icon, .buttonModal > .icon, .buttonDrawerMenuClosed > .icon, .buttonDrawerMenu > .icon, .buttonDrawerClosed > .icon, .buttonDrawer > .icon, .buttonBackwards > .icon, .buttonForward > .icon, .buttonPassiveCategory > .icon, .buttonActiveCategory > .icon, .buttonEdit > .icon {
+.button > .icon,
+.buttonChip > .icon,
+.buttonHome > .icon,
+.buttonModal > .icon,
+.buttonDrawerMenuClosed > .icon,
+.buttonDrawerMenu > .icon,
+.buttonDrawerClosed > .icon,
+.buttonDrawer > .icon,
+.buttonBackwards > .icon,
+.buttonForward > .icon,
+.buttonPassiveCategory > .icon,
+.buttonActiveCategory > .icon,
+.buttonEdit > .icon {
   font-size: 1.1rem;
 }
-.button > .text, .buttonChip > .text, .buttonHome > .text, .buttonModal > .text, .buttonDrawerMenuClosed > .text, .buttonDrawerMenu > .text, .buttonDrawerClosed > .text, .buttonDrawer > .text, .buttonBackwards > .text, .buttonForward > .text, .buttonPassiveCategory > .text, .buttonActiveCategory > .text, .buttonEdit > .text {
+.button > .text,
+.buttonChip > .text,
+.buttonHome > .text,
+.buttonModal > .text,
+.buttonDrawerMenuClosed > .text,
+.buttonDrawerMenu > .text,
+.buttonDrawerClosed > .text,
+.buttonDrawer > .text,
+.buttonBackwards > .text,
+.buttonForward > .text,
+.buttonPassiveCategory > .text,
+.buttonActiveCategory > .text,
+.buttonEdit > .text {
   font-family: var(--raleway);
   word-wrap: break-word;
   word-break: break-all;
@@ -75,23 +197,105 @@
   text-transform: var(--label-medium-text-transform);
   text-decoration: var(--label-medium-text-decoration);
 }
-.button > .ButtonTextHelper, .buttonChip > .ButtonTextHelper, .buttonHome > .ButtonTextHelper, .buttonModal > .ButtonTextHelper, .buttonDrawerMenuClosed > .ButtonTextHelper, .buttonDrawerMenu > .ButtonTextHelper, .buttonDrawerClosed > .ButtonTextHelper, .buttonDrawer > .ButtonTextHelper, .buttonBackwards > .ButtonTextHelper, .buttonForward > .ButtonTextHelper, .buttonPassiveCategory > .ButtonTextHelper, .buttonActiveCategory > .ButtonTextHelper, .buttonEdit > .ButtonTextHelper {
+.button > .ButtonTextHelper,
+.buttonChip > .ButtonTextHelper,
+.buttonHome > .ButtonTextHelper,
+.buttonModal > .ButtonTextHelper,
+.buttonDrawerMenuClosed > .ButtonTextHelper,
+.buttonDrawerMenu > .ButtonTextHelper,
+.buttonDrawerClosed > .ButtonTextHelper,
+.buttonDrawer > .ButtonTextHelper,
+.buttonBackwards > .ButtonTextHelper,
+.buttonForward > .ButtonTextHelper,
+.buttonPassiveCategory > .ButtonTextHelper,
+.buttonActiveCategory > .ButtonTextHelper,
+.buttonEdit > .ButtonTextHelper {
   display: none;
   opacity: 0;
   transition: all 1s;
 }
-.button:hover > .icon, .buttonChip:hover > .icon, .buttonHome:hover > .icon, .buttonModal:hover > .icon, .buttonDrawerMenuClosed:hover > .icon, .buttonDrawerMenu:hover > .icon, .buttonDrawerClosed:hover > .icon, .buttonDrawer:hover > .icon, .buttonBackwards:hover > .icon, .buttonForward:hover > .icon, .buttonPassiveCategory:hover > .icon, .buttonActiveCategory:hover > .icon, .buttonEdit:hover > .icon {
+.button:hover > .icon,
+.buttonChip:hover > .icon,
+.buttonHome:hover > .icon,
+.buttonModal:hover > .icon,
+.buttonDrawerMenuClosed:hover > .icon,
+.buttonDrawerMenu:hover > .icon,
+.buttonDrawerClosed:hover > .icon,
+.buttonDrawer:hover > .icon,
+.buttonBackwards:hover > .icon,
+.buttonForward:hover > .icon,
+.buttonPassiveCategory:hover > .icon,
+.buttonActiveCategory:hover > .icon,
+.buttonEdit:hover > .icon {
   color: var(--primary-container);
-  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
 }
-.button:hover, .buttonChip:hover, .buttonHome:hover, .buttonModal:hover, .buttonDrawerMenuClosed:hover, .buttonDrawerMenu:hover, .buttonDrawerClosed:hover, .buttonDrawer:hover, .buttonBackwards:hover, .buttonForward:hover, .buttonPassiveCategory:hover, .buttonActiveCategory:hover, .buttonEdit:hover, .button:active, .buttonChip:active, .buttonHome:active, .buttonModal:active, .buttonDrawerMenuClosed:active, .buttonDrawerMenu:active, .buttonDrawerClosed:active, .buttonDrawer:active, .buttonBackwards:active, .buttonForward:active, .buttonPassiveCategory:active, .buttonActiveCategory:active, .buttonEdit:active {
+.button:hover,
+.buttonChip:hover,
+.buttonHome:hover,
+.buttonModal:hover,
+.buttonDrawerMenuClosed:hover,
+.buttonDrawerMenu:hover,
+.buttonDrawerClosed:hover,
+.buttonDrawer:hover,
+.buttonBackwards:hover,
+.buttonForward:hover,
+.buttonPassiveCategory:hover,
+.buttonActiveCategory:hover,
+.buttonEdit:hover,
+.button:active,
+.buttonChip:active,
+.buttonHome:active,
+.buttonModal:active,
+.buttonDrawerMenuClosed:active,
+.buttonDrawerMenu:active,
+.buttonDrawerClosed:active,
+.buttonDrawer:active,
+.buttonBackwards:active,
+.buttonForward:active,
+.buttonPassiveCategory:active,
+.buttonActiveCategory:active,
+.buttonEdit:active {
   background-color: var(--primary-fixed);
   box-shadow: var(--dp6);
   border: 2px solid var(--outline);
 }
-.button:hover > span, .buttonChip:hover > span, .buttonHome:hover > span, .buttonModal:hover > span, .buttonDrawerMenuClosed:hover > span, .buttonDrawerMenu:hover > span, .buttonDrawerClosed:hover > span, .buttonDrawer:hover > span, .buttonBackwards:hover > span, .buttonForward:hover > span, .buttonPassiveCategory:hover > span, .buttonActiveCategory:hover > span, .buttonEdit:hover > span, .button:active > span, .buttonChip:active > span, .buttonHome:active > span, .buttonModal:active > span, .buttonDrawerMenuClosed:active > span, .buttonDrawerMenu:active > span, .buttonDrawerClosed:active > span, .buttonDrawer:active > span, .buttonBackwards:active > span, .buttonForward:active > span, .buttonPassiveCategory:active > span, .buttonActiveCategory:active > span, .buttonEdit:active > span {
+.button:hover > span,
+.buttonChip:hover > span,
+.buttonHome:hover > span,
+.buttonModal:hover > span,
+.buttonDrawerMenuClosed:hover > span,
+.buttonDrawerMenu:hover > span,
+.buttonDrawerClosed:hover > span,
+.buttonDrawer:hover > span,
+.buttonBackwards:hover > span,
+.buttonForward:hover > span,
+.buttonPassiveCategory:hover > span,
+.buttonActiveCategory:hover > span,
+.buttonEdit:hover > span,
+.button:active > span,
+.buttonChip:active > span,
+.buttonHome:active > span,
+.buttonModal:active > span,
+.buttonDrawerMenuClosed:active > span,
+.buttonDrawerMenu:active > span,
+.buttonDrawerClosed:active > span,
+.buttonDrawer:active > span,
+.buttonBackwards:active > span,
+.buttonForward:active > span,
+.buttonPassiveCategory:active > span,
+.buttonActiveCategory:active > span,
+.buttonEdit:active > span {
   color: var(--on-primary-fixed);
-  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 200, "opsz" 24;
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 200,
+    'opsz' 24;
 }
 .buttonEdit {
   background-color: var(--secondary-container);
@@ -207,10 +411,12 @@
 .buttonModal:hover::before {
   background-color: var(--on-primary);
 }
-.buttonModal:focus, .buttonModal:active {
+.buttonModal:focus,
+.buttonModal:active {
   box-shadow: var(--dp9);
 }
-.buttonModal:focus::before, .buttonModal:active::before {
+.buttonModal:focus::before,
+.buttonModal:active::before {
   background-color: var(--on-primary-container);
 }
 .buttonHome {
@@ -251,10 +457,14 @@
 }
 .snackbar.show {
   visibility: visible;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation:
+    fadein 0.5s,
+    fadeout 0.5s 2.5s;
 }
 
-.searchBarLink, .isActive, .notActive,
+.searchBarLink,
+.isActive,
+.notActive,
 .link,
 .searchBarLinkIsActive,
 .linkIsActive,
@@ -283,7 +493,9 @@
   transition: all 0.3s;
   position: relative;
 }
-.searchBarLink::before, .isActive::before, .notActive::before,
+.searchBarLink::before,
+.isActive::before,
+.notActive::before,
 .link::before,
 .searchBarLinkIsActive::before,
 .linkIsActive::before,
@@ -295,7 +507,7 @@
 .linkOpenActive::before,
 .searchBarLinkActive::before,
 .linkActive::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   border-radius: inherit;
@@ -305,7 +517,9 @@
   pointer-events: none;
   z-index: auto;
 }
-.searchBarLink:hover::before, .isActive:hover::before, .notActive:hover::before,
+.searchBarLink:hover::before,
+.isActive:hover::before,
+.notActive:hover::before,
 .link:hover::before,
 .searchBarLinkIsActive:hover::before,
 .linkIsActive:hover::before,
@@ -319,7 +533,15 @@
 .linkActive:hover::before {
   opacity: 0.08;
 }
-.searchBarLink:focus::before, .isActive:focus::before, .notActive:focus::before, .searchBarLink:active::before, .isActive:active::before, .notActive:active::before, .searchBarLink:focus-visible::before, .isActive:focus-visible::before, .notActive:focus-visible::before,
+.searchBarLink:focus::before,
+.isActive:focus::before,
+.notActive:focus::before,
+.searchBarLink:active::before,
+.isActive:active::before,
+.notActive:active::before,
+.searchBarLink:focus-visible::before,
+.isActive:focus-visible::before,
+.notActive:focus-visible::before,
 .link:focus::before,
 .searchBarLinkIsActive:focus::before,
 .linkIsActive:focus::before,
@@ -355,7 +577,9 @@
 .linkActive:focus-visible::before {
   opacity: 0.1;
 }
-.searchBarLink > .icon, .isActive > .icon, .notActive > .icon,
+.searchBarLink > .icon,
+.isActive > .icon,
+.notActive > .icon,
 .link > .icon,
 .searchBarLinkIsActive > .icon,
 .linkIsActive > .icon,
@@ -370,7 +594,9 @@
   color: var(--on-surface-variant);
   text-align: center;
 }
-.searchBarLink > .text, .isActive > .text, .notActive > .text,
+.searchBarLink > .text,
+.isActive > .text,
+.notActive > .text,
 .link > .text,
 .searchBarLinkIsActive > .text,
 .linkIsActive > .text,
@@ -388,7 +614,7 @@
   font-style: var(--label-medium-font-family-style);
   font-weight: var(--label-medium-font-weight);
   font-size: 0.7rem;
-  font-variation-settings: "wght" 500;
+  font-variation-settings: 'wght' 500;
   letter-spacing: var(--label-medium-tracking);
   line-height: var(--label-medium-height);
   text-align: center;
@@ -398,7 +624,9 @@
   text-overflow: ellipsis;
   opacity: 1;
 }
-.searchBarLink .date, .isActive .date, .notActive .date,
+.searchBarLink .date,
+.isActive .date,
+.notActive .date,
 .link .date,
 .searchBarLinkIsActive .date,
 .linkIsActive .date,
@@ -418,7 +646,9 @@
   border-radius: 2vmin;
   font-family: var(--play-display);
 }
-.searchBarLink .sub, .isActive .sub, .notActive .sub,
+.searchBarLink .sub,
+.isActive .sub,
+.notActive .sub,
 .link .sub,
 .searchBarLinkIsActive .sub,
 .linkIsActive .sub,
@@ -480,7 +710,15 @@
   background-color: var(--primary);
   color: var(--on-primary);
 }
-.searchBarLink:hover > .icon, .isActive:hover > .icon, .notActive:hover > .icon, .searchBarLink:focus > .icon, .isActive:focus > .icon, .notActive:focus > .icon, .searchBarLink:active > .icon, .isActive:active > .icon, .notActive:active > .icon,
+.searchBarLink:hover > .icon,
+.isActive:hover > .icon,
+.notActive:hover > .icon,
+.searchBarLink:focus > .icon,
+.isActive:focus > .icon,
+.notActive:focus > .icon,
+.searchBarLink:active > .icon,
+.isActive:active > .icon,
+.notActive:active > .icon,
 .link:hover > .icon,
 .searchBarLinkActive:hover > .icon,
 .linkActive:hover > .icon,
@@ -514,7 +752,11 @@
 .linkNotActive:active > .icon,
 .searchBarLinkIsActive:active > .icon,
 .linkIsActive:active > .icon {
-  font-variation-settings: "FILL" 1, "wght" 600, "GRAD" 200, "opsz" 40;
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 600,
+    'GRAD' 200,
+    'opsz' 40;
 }
 
 .notActive .date {
@@ -525,7 +767,9 @@
   display: flex;
 }
 
-.md3Btn, .md3BtnTonalPrimary, .md3BtnTonal {
+.md3Btn,
+.md3BtnTonalPrimary,
+.md3BtnTonal {
   position: relative;
   box-sizing: border-box;
   display: inline-flex;
@@ -541,14 +785,20 @@
   text-decoration: none;
   cursor: pointer;
   overflow: hidden;
-  transition: background-color var(--md-sys-motion-duration-short) var(--md-sys-motion-easing-standard), color var(--md-sys-motion-duration-short) var(--md-sys-motion-easing-standard);
+  transition:
+    background-color var(--md-sys-motion-duration-short)
+      var(--md-sys-motion-easing-standard),
+    color var(--md-sys-motion-duration-short)
+      var(--md-sys-motion-easing-standard);
   font-family: var(--label-large-font-family-name);
   font-size: var(--label-large-font-size);
   font-weight: var(--label-large-font-weight);
   line-height: var(--label-large-line-height);
   letter-spacing: var(--label-large-letter-spacing);
 }
-.md3Btn:has(.md3BtnIcon), .md3BtnTonalPrimary:has(.md3BtnIcon), .md3BtnTonal:has(.md3BtnIcon) {
+.md3Btn:has(.md3BtnIcon),
+.md3BtnTonalPrimary:has(.md3BtnIcon),
+.md3BtnTonal:has(.md3BtnIcon) {
   padding-left: var(--md-btn-icon-padding-start);
   padding-right: var(--md-btn-icon-padding-end);
 }
@@ -557,7 +807,8 @@
   flex-shrink: 0;
   width: var(--md-btn-icon-size);
   height: var(--md-btn-icon-size);
-  transition: color var(--md-sys-motion-duration-short) var(--md-sys-motion-easing-standard);
+  transition: color var(--md-sys-motion-duration-short)
+    var(--md-sys-motion-easing-standard);
 }
 
 .md3BtnTonal {
@@ -567,20 +818,25 @@
 .md3BtnTonal .md3BtnIcon {
   color: var(--on-secondary-container);
 }
-.md3BtnTonal:hover, .md3BtnTonal:active, .md3BtnTonal:focus {
+.md3BtnTonal:hover,
+.md3BtnTonal:active,
+.md3BtnTonal:focus {
   background-color: var(--secondary);
   color: var(--on-secondary);
 }
-.md3BtnTonal:hover .md3BtnIcon, .md3BtnTonal:active .md3BtnIcon, .md3BtnTonal:focus .md3BtnIcon {
+.md3BtnTonal:hover .md3BtnIcon,
+.md3BtnTonal:active .md3BtnIcon,
+.md3BtnTonal:focus .md3BtnIcon {
   color: var(--on-secondary);
 }
 .md3BtnTonal::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   background-color: var(--on-secondary-container);
   opacity: 0;
-  transition: opacity var(--md-sys-motion-duration-short) var(--md-sys-motion-easing-standard);
+  transition: opacity var(--md-sys-motion-duration-short)
+    var(--md-sys-motion-easing-standard);
 }
 .md3BtnTonal > * {
   z-index: 1;
@@ -615,20 +871,25 @@
 .md3BtnTonalPrimary .md3BtnIcon {
   color: var(--on-primary);
 }
-.md3BtnTonalPrimary:hover, .md3BtnTonalPrimary:active, .md3BtnTonalPrimary:focus {
+.md3BtnTonalPrimary:hover,
+.md3BtnTonalPrimary:active,
+.md3BtnTonalPrimary:focus {
   background-color: var(--primary-container);
   color: var(--on-primary-container);
 }
-.md3BtnTonalPrimary:hover .md3BtnIcon, .md3BtnTonalPrimary:active .md3BtnIcon, .md3BtnTonalPrimary:focus .md3BtnIcon {
+.md3BtnTonalPrimary:hover .md3BtnIcon,
+.md3BtnTonalPrimary:active .md3BtnIcon,
+.md3BtnTonalPrimary:focus .md3BtnIcon {
   color: var(--on-primary-container);
 }
 .md3BtnTonalPrimary::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   background-color: var(--on-primary-container);
   opacity: 0;
-  transition: opacity var(--md-sys-motion-duration-short) var(--md-sys-motion-easing-standard);
+  transition: opacity var(--md-sys-motion-duration-short)
+    var(--md-sys-motion-easing-standard);
 }
 .md3BtnTonalPrimary > * {
   z-index: 1;

@@ -5,8 +5,8 @@ export default function Page() {
     <div
       style={{
         gridColumn: 'span 8',
-        gridRow   : 'span 10',
-        overflow  : 'auto',
+        gridRow: 'span 10',
+        overflow: 'auto',
       }}
     >
       <EspecimenForm />

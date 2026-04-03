@@ -61,7 +61,6 @@
   color: var(--on-surface, #1c1b1f);
 }
 
-
 /* --- Toggle Switch Styles --- */
 .toggleContainer {
   display: inline-flex;
@@ -91,7 +90,7 @@
 }
 
 .toggleSlider::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 18px;
   width: 18px;
@@ -99,7 +98,9 @@
   bottom: 3px;
   background-color: var(--surface, #ffffff);
   border-radius: 50%;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 

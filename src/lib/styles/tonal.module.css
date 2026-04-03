@@ -17,7 +17,7 @@
   position: relative;
 }
 .button::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   border-radius: inherit;
@@ -30,10 +30,13 @@
 .button:hover::before {
   opacity: 0.08;
 }
-.button:focus::before, .button:active::before, .button:focus-visible::before {
+.button:focus::before,
+.button:active::before,
+.button:focus-visible::before {
   opacity: 0.1;
 }
-.button > .icon, .button > .text {
+.button > .icon,
+.button > .text {
   color: var(--on-secondary-container);
 }
 .button > .icon {

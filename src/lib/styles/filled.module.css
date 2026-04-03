@@ -1,4 +1,6 @@
-.container, .containerDisabled, .containerEnabled {
+.container,
+.containerDisabled,
+.containerEnabled {
   position: relative;
   box-sizing: border-box;
   flex: 1;
@@ -9,7 +11,9 @@
   border-radius: var(--shape-corner-medium);
   transition: box-shadow 0.3s;
 }
-.container:hover, .containerDisabled:hover, .containerEnabled:hover {
+.container:hover,
+.containerDisabled:hover,
+.containerEnabled:hover {
   box-shadow: var(--elevation-1);
 }
 .containerEnabled {
@@ -28,13 +32,15 @@
   pointer-events: none;
 }
 
-.button, .buttonEnabled {
+.button,
+.buttonEnabled {
   border-radius: var(--shape-corner-full);
   height: 2.8rem;
   box-shadow: var(--elevation-0);
   transition: box-shadow 0.3s;
 }
-.button:hover, .buttonEnabled:hover {
+.button:hover,
+.buttonEnabled:hover {
   box-shadow: var(--elevation-1);
 }
 .buttonEnabled:link {

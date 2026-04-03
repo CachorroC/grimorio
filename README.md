@@ -1,4 +1,5 @@
 # 🌿 Grimorio: Un Herbario Digital de Plantas Ancestrales Colombianas - Fitoterapia y Medicina Ancestral Colombiana
+
 ## Visión del Proyecto
 
 **Grimorio** es una aplicación web diseñada como una compilación completa e interactiva de plantas medicinales nativas de Colombia. El objetivo principal del proyecto es preservar y difundir el conocimiento sobre la fitoterapia ancestral, centrándose en las propiedades energéticas de las plantas, sus usos medicinales tradicionales y su aplicación en el tratamiento de diversos tipos de dolor.
@@ -14,17 +15,18 @@ Este proyecto fue desarrollado como trabajo de grado para el **Diplomado de Fito
 - **Base de Datos de Plantas:** Un catálogo rico y consultable de plantas medicinales colombianas.
 - **Vista Detallada del Espécimen:** Cada planta tiene una página detallada que incluye sus nombres científicos y comunes, imágenes en alta resolución y clasificación taxonómica.
 - **Perfiles Energéticos y Medicinales:** Información detallada sobre:
-    - Propiedades medicinales y dolencias físicas que tratan.
-    - Correspondencias energéticas (elementos asociados, chakras y polaridad energética).
-    - Usos para la sanación emocional y espiritual.
+  - Propiedades medicinales y dolencias físicas que tratan.
+  - Correspondencias energéticas (elementos asociados, chakras y polaridad energética).
+  - Usos para la sanación emocional y espiritual.
 - **Guías de Preparación:** Instrucciones paso a paso para preparar remedios (infusiones, bálsamos, etc.), incluyendo ingredientes y casos de uso.
 - **Habilitada como PWA:** La aplicación es una Aplicación Web Progresiva (PWA), lo que permite instalarla en dispositivos móviles para acceso sin conexión y una experiencia similar a la de una aplicación nativa.
 
 ## 📖 Sobre el Proyecto
 
-**Grimorio** es un compendio digital especializado en la flora medicinal nativa de Colombia. Este proyecto ha sido desarrollado como trabajo final para el **Diplomado de Fitoterapia y Medicina Ancestral de la Universidad del Rosario**. 
+**Grimorio** es un compendio digital especializado en la flora medicinal nativa de Colombia. Este proyecto ha sido desarrollado como trabajo final para el **Diplomado de Fitoterapia y Medicina Ancestral de la Universidad del Rosario**.
 
 El objetivo principal de este repositorio es documentar, estructurar y preservar el conocimiento ancestral sobre nuestras plantas medicinales, enfocándose en su doble naturaleza:
+
 1. **Propiedades Energéticas:** El uso tradicional de las plantas para la limpieza, protección, armonización y equilibrio del ser.
 2. **Tratamientos Medicinales (Enfoque Analgésico):** La aplicación botánica orientada específicamente a mitigar, tratar y aliviar múltiples y diferentes tipos de dolores (físicos, emocionales, agudos, crónicos, musculares, articulares, etc.).
 
@@ -51,27 +53,52 @@ export interface PlantaMedicinal {
 // Categorización del tipo de dolor que la planta ayuda a mitigar
 export interface TratamientoDolor {
   categoriaDolor: 'Físico' | 'Emocional' | 'Espiritual';
-  tipoEspecifico: 'Muscular' | 'Articular' | 'Cefalea' | 'Menstrual' | 'Neuropático' | 'Gastrointestinal' | 'Duelo';
+  tipoEspecifico:
+    | 'Muscular'
+    | 'Articular'
+    | 'Cefalea'
+    | 'Menstrual'
+    | 'Neuropático'
+    | 'Gastrointestinal'
+    | 'Duelo';
   nivelEfectividad: 'Alta' | 'Media' | 'Auxiliar';
   descripcionMecanismo: string;
 }
 
 // Aspecto espiritual y vibracional de la planta
 export interface PropiedadEnergetica {
-  proposito: 'Limpieza' | 'Protección' | 'Atracción' | 'Equilibrio' | 'Relajación';
+  proposito:
+    | 'Limpieza'
+    | 'Protección'
+    | 'Atracción'
+    | 'Equilibrio'
+    | 'Relajación';
   elementoAfin: 'Agua' | 'Fuego' | 'Tierra' | 'Aire';
   usoRitual: string;
 }
 
 // Métodos de extracción y aplicación
 export interface Preparacion {
-  tipo: 'Infusión' | 'Decocción' | 'Cataplasma' | 'Tintura' | 'Sahumerio' | 'Baño' | 'Aceite Esencial';
+  tipo:
+    | 'Infusión'
+    | 'Decocción'
+    | 'Cataplasma'
+    | 'Tintura'
+    | 'Sahumerio'
+    | 'Baño'
+    | 'Aceite Esencial';
   instrucciones: string;
   dosisRecomendada: string;
 }
 
-export type RegionColombia = 'Amazonía' | 'Andina' | 'Caribe' | 'Orinoquía' | 'Pacífica';
+export type RegionColombia =
+  | 'Amazonía'
+  | 'Andina'
+  | 'Caribe'
+  | 'Orinoquía'
+  | 'Pacífica';
 ```
+
 ## El Modelo de Datos: `EspecimenType`
 
 El corazón de la aplicación es el modelo de datos `Especimen`, que estructura la rica información de cada planta. Este modelo asegura que los datos sean consistentes, detallados y holísticos. Los campos clave incluyen:
@@ -100,6 +127,7 @@ El corazón de la aplicación es el modelo de datos `Especimen`, que estructura 
 Para ejecutar el proyecto localmente, sigue estos pasos:
 
 1.  **Clona el repositorio:**
+
     ```bash
     git clone <repository-url>
     cd grimorio
@@ -107,12 +135,14 @@ Para ejecutar el proyecto localmente, sigue estos pasos:
 
 2.  **Instala las dependencias:**
     Este proyecto usa `pnpm` como gestor de paquetes.
+
     ```bash
     pnpm install
     ```
 
 3.  **Configura las variables de entorno:**
     Crea un archivo `.env.local` en la raíz del proyecto y añade tu cadena de conexión de MongoDB:
+
     ```
     MONGODB_URI=tu_cadena_de_conexion_de_mongodb
     ```
@@ -124,14 +154,11 @@ Para ejecutar el proyecto localmente, sigue estos pasos:
 
 Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver el resultado.
 
-
-
-
-
 ## 🗄️ Gestión y Lógica de Datos
 
 La información es gestionada a través de un estado centralizado que compila el catálogo de plantas. El flujo de datos está diseñado para permitir:
-- **Búsqueda y Filtrado Especializado:** Los usuarios pueden buscar remedios cruzando variables; por ejemplo, filtrar plantas que alivien el *dolor articular* mediante *cataplasmas*, o aquellas que traten el *dolor emocional* a través de *sahumerios*.
+
+- **Búsqueda y Filtrado Especializado:** Los usuarios pueden buscar remedios cruzando variables; por ejemplo, filtrar plantas que alivien el _dolor articular_ mediante _cataplasmas_, o aquellas que traten el _dolor emocional_ a través de _sahumerios_.
 - **Relación Holística:** El modelo de datos vincula directamente el tratamiento físico del dolor con el espectro energético, respetando la cosmovisión ancestral donde el cuerpo físico y el espíritu son un todo interconectado.
 - **Uso Seguro y Responsable:** La estructura de datos exige la inclusión de métodos de preparación exactos, dosis recomendadas y precauciones, manteniendo un registro seguro del conocimiento.
 
@@ -157,4 +184,4 @@ Este desarrollo representa la culminación del aprendizaje en el **Diplomado de 
 
 ---
 
-*Desarrollado con respeto por la naturaleza, la tecnología y la sabiduría ancestral.*
+_Desarrollado con respeto por la naturaleza, la tecnología y la sabiduría ancestral._

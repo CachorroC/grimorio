@@ -4283,7 +4283,25 @@
     "elementosAsociados": "Aire",
     "polaridadEnergetica": [
       "Masculine"
-    ]
+    ],
+    "imagenes": {
+      "flor": {
+        "src": "https://d2seqvvyy3b8p2.cloudfront.net/457648c758deeaadc46e99537907fe29.jpg",
+        "alt": "flor de la planta"
+      },
+      "hojas": {
+        "src": "https://inaturalist-open-data.s3.amazonaws.com/photos/65918888/medium.jpeg",
+        "alt": "hojas de la planta"
+      },
+      "tallo": {
+        "src": "https://www.picturethisai.com/wiki-image/1080/153448654563180549.jpeg",
+        "alt": "tallo de la planta"
+      },
+      "preparacion": {
+        "src": "https://paramo.uniandes.edu.co/fic/chingaza/Genera/images/DSCN5681.JPG",
+        "alt": "preparacion"
+      }
+    }
   },
   {
     "nombreCientifico": "Halenia asclepiadea",
