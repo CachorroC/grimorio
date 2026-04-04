@@ -124,9 +124,6 @@ const TagSection = (
     return null;
   }
 
-  console.log(
-    color
-  );
   let icon = 'call_made';
 
   if ( title === 'Partes Útiles' ) {

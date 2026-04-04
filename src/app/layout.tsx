@@ -7,7 +7,7 @@ import { josefina,
   playDisp,
   ptserif,
   radio,
-  raleway, } from '#@/lib/styles/fonts';
+  raleway, lora } from '#@/lib/styles/fonts';
 import { Loader } from '#@/lib/components/Loader/loader';
 import PushManagerComponent from '#@/lib/components/PushManager';
 import { ModalProvider } from './context/ModalContext';
@@ -31,7 +31,7 @@ const hostname
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    hostname 
+    hostname
   ),
   title: 'Vademecum y compendio Colombiano',
   description:
@@ -110,7 +110,7 @@ export default function RootLayout(
   }: {
     children: ReactNode;
     modal   : ReactNode;
-  } 
+  }
 ) {
   return (
     <html
@@ -118,7 +118,7 @@ export default function RootLayout(
       suppressHydrationWarning
     >
       <body
-        className={`${ playDisp.variable } ${ josefina.variable } ${ raleway.variable } ${ radio.variable } ${ ptserif.variable } [ color-scheme: light dark ]`}
+        className={`${ playDisp.variable } ${ josefina.variable } ${ raleway.variable } ${ radio.variable } ${ ptserif.variable } ${ lora.variable } [ color-scheme: light dark ]`}
       >
         <AppRouterCacheProvider>
           <InitColorSchemeScript

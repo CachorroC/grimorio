@@ -149,4 +149,4 @@ export async function generatePropertySets(
   console.log(
     'Process complete.'
   );
-} )();<
+} )();

@@ -99,7 +99,7 @@ const initialState: EspecimenType = {
     'Feminine'
   ],
   // Mantenemos una estructura inicial segura en el estado para evitar errores de undefined en los inputs
-  imagenes            : {
+  imagenes: {
     flor: {
       src: '',
       alt: '',
@@ -161,10 +161,10 @@ export default function EspecimenForm(
         esenciasFlorales      : initialData.esenciasFlorales || [],
         correspondenciasEnergeticas:
         initialData.correspondenciasEnergeticas || [],
-        malesEmocionales    : initialData.malesEmocionales || [],
-        malesFisicos        : initialData.malesFisicos || [],
-        preparaciones       : initialData.preparaciones || [],
-        taxon               : {
+        malesEmocionales: initialData.malesEmocionales || [],
+        malesFisicos    : initialData.malesFisicos || [],
+        preparaciones   : initialData.preparaciones || [],
+        taxon           : {
           ...initialState.taxon,
           ...( initialData.taxon || {} ),
           clados: initialData.taxon?.clados || [],
@@ -870,10 +870,10 @@ export default function EspecimenForm(
             propiedadesMedicinales: savedData.propiedadesMedicinales || [],
             correspondenciasEnergeticas:
             savedData.correspondenciasEnergeticas || [],
-            malesEmocionales    : savedData.malesEmocionales || [],
-            malesFisicos        : savedData.malesFisicos || [],
-            preparaciones       : savedData.preparaciones || [],
-            taxon               : {
+            malesEmocionales: savedData.malesEmocionales || [],
+            malesFisicos    : savedData.malesFisicos || [],
+            preparaciones   : savedData.preparaciones || [],
+            taxon           : {
               ...savedData.taxon,
               clados: savedData.taxon?.clados || [],
             },
@@ -1477,18 +1477,6 @@ export default function EspecimenForm(
                 marginTop: '0.5rem',
               }}
             >
-              <ToggleSwitch
-                checked={formData.polaridadEnergetica.includes(
-                  'Masculine'
-                )}
-                onChange={() => {
-                  return togglePolaridad(
-                    'Masculine'
-                  );
-                }}
-              >
-                Masculina
-              </ToggleSwitch>
 
               <ToggleButton
                 checked={formData.polaridadEnergetica.includes(

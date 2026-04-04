@@ -33,6 +33,7 @@
   background-color: var(--surface-container-highest, #79747e);
   transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 24px;
+  border: var(--outline);
 }
 
 .slider:before {
