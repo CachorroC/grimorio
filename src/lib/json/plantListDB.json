@@ -788,129 +788,6 @@
     ]
   },
   {
-    "nombreCientifico": "Alnus acuminata",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Alnus_acuminata_1.jpg/250px-Alnus_acuminata_1.jpg",
-    "nombresComunes": [
-      "Aliso",
-      "Aliso andino",
-      "Cerezo (en algunas regiones)"
-    ],
-    "propiedadesMedicinales": [
-      "Astringente",
-      "Antiséptico",
-      "Antirreumático",
-      "Cicatrizante cutáneo"
-    ],
-    "partesUtiles": [
-      "Hojas",
-      "Corteza"
-    ],
-    "esenciasFlorales": [
-      "Aceptación de la propia sombra",
-      "Fluidez emocional",
-      "Alivio de la sensación de impureza"
-    ],
-    "correspondenciasEnergeticas": [
-      "Elemento Agua y Tierra (crece cerca a ríos)",
-      "Protección de cuencas energéticas",
-      "Símbolo de regeneración (fija nitrógeno en el suelo)"
-    ],
-    "malesEmocionales": [
-      "Sentimientos de culpa",
-      "Rigidez emocional",
-      "Estancamiento vital"
-    ],
-    "malesFisicos": [
-      "Afecciones de la piel (llagas, sabañones)",
-      "Dolores reumáticos",
-      "Amigdalitis (gargarismos)"
-    ],
-    "taxon": {
-      "dominio": "Eukaryota",
-      "reino": "Plantae",
-      "filo": "Tracheophyta",
-      "clase": "Magnoliopsida",
-      "orden": "Fagales",
-      "familia": "Betulaceae",
-      "genero": "Alnus",
-      "especie": "acuminata",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas"
-      ]
-    },
-    "preparaciones": [
-      {
-        "usoTerapeutico": "Para limpiar heridas, tratar llagas en la piel o aliviar reumatismo local",
-        "formaDeAplicacion": "Lavar la zona afectada con la decocción fría o aplicar compresas empapadas durante 20 minutos.",
-        "ingredientes": [
-          {
-            "ingrediente": "Corteza de aliso triturada",
-            "cantidad": "20 gramos"
-          },
-          {
-            "ingrediente": "Agua",
-            "cantidad": "1 litro"
-          }
-        ],
-        "pasos": [
-          [
-            1,
-            "Hervir el litro de agua."
-          ],
-          [
-            2,
-            "Agregar la corteza de aliso triturada."
-          ],
-          [
-            3,
-            "Dejar hervir a fuego medio durante 15 minutos."
-          ],
-          [
-            4,
-            "Dejar enfriar completamente y colar."
-          ],
-          [
-            5,
-            "Empapar un paño limpio en el líquido y aplicar sobre la piel."
-          ]
-        ]
-      }
-    ],
-    "chakrasAsociados": [
-      {
-        "nombre": "Chakra del Corazón",
-        "nombreSanscrito": "Anahata",
-        "ubicacion": "Centro del pecho",
-        "color": "Verde o rosa",
-        "significado": "Amor, compasión, relaciones"
-      }
-    ],
-    "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Feminine"
-    ],
-    "imagenes": {
-      "flor": {
-        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Alnus_acuminata_1.jpg/250px-Alnus_acuminata_1.jpg",
-        "alt": "flor de la planta"
-      },
-      "hojas": {
-        "src": "https://d2seqvvyy3b8p2.cloudfront.net/84359df7ad689a3789d24a9c0592eca1.jpg",
-        "alt": "hojas de la planta"
-      },
-      "tallo": {
-        "src": "https://antipode-peru.com/info/aliso-alnus-acuminata--1-1.jpeg",
-        "alt": "tallo de la planta"
-      },
-      "preparacion": {
-        "src": "https://imgv2-1-f.scribdassets.com/img/document/385317019/original/63f7b42e30/1?v=1",
-        "alt": "taxonomia nacional "
-      }
-    }
-  },
-  {
     "nombreCientifico": "Phytolacca bogotensis",
     "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/2521480/large.jpg",
     "nombresComunes": [
@@ -1117,6 +994,237 @@
     "elementosAsociados": "Aire",
     "polaridadEnergetica": [
       "Feminine"
+    ]
+  },
+  {
+    "nombreCientifico": "Alnus acuminata",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Alnus_acuminata_1.jpg/250px-Alnus_acuminata_1.jpg",
+    "nombresComunes": [
+      "Aliso",
+      "Aliso andino",
+      "Cerezo (en algunas regiones)"
+    ],
+    "propiedadesMedicinales": [
+      "Astringente",
+      "Antiséptico",
+      "Antirreumático",
+      "Cicatrizante cutáneo"
+    ],
+    "partesUtiles": [
+      "Hojas",
+      "Corteza"
+    ],
+    "esenciasFlorales": [
+      "Aceptación de la propia sombra",
+      "Fluidez emocional",
+      "Alivio de la sensación de impureza"
+    ],
+    "correspondenciasEnergeticas": [
+      "Elemento Agua y Tierra (crece cerca a ríos)",
+      "Protección de cuencas energéticas",
+      "Símbolo de regeneración (fija nitrógeno en el suelo)"
+    ],
+    "malesEmocionales": [
+      "Sentimientos de culpa",
+      "Rigidez emocional",
+      "Estancamiento vital"
+    ],
+    "malesFisicos": [
+      "Afecciones de la piel (llagas, sabañones)",
+      "Dolores reumáticos",
+      "Amigdalitis (gargarismos)"
+    ],
+    "taxon": {
+      "dominio": "Eukaryota",
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "clase": "Magnoliopsida",
+      "orden": "Fagales",
+      "familia": "Betulaceae",
+      "genero": "Alnus",
+      "especie": "acuminata",
+      "clados": [
+        "Angiospermas",
+        "Eudicotiledóneas",
+        "Rósidas"
+      ]
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "Para limpiar heridas, tratar llagas en la piel o aliviar reumatismo local",
+        "formaDeAplicacion": "Lavar la zona afectada con la decocción fría o aplicar compresas empapadas durante 20 minutos.",
+        "ingredientes": [
+          {
+            "ingrediente": "Corteza de aliso triturada",
+            "cantidad": "20 gramos"
+          },
+          {
+            "ingrediente": "Agua",
+            "cantidad": "1 litro"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "Hervir el litro de agua."
+          ],
+          [
+            2,
+            "Agregar la corteza de aliso triturada."
+          ],
+          [
+            3,
+            "Dejar hervir a fuego medio durante 15 minutos."
+          ],
+          [
+            4,
+            "Dejar enfriar completamente y colar."
+          ],
+          [
+            5,
+            "Empapar un paño limpio en el líquido y aplicar sobre la piel."
+          ]
+        ]
+      }
+    ],
+    "chakrasAsociados": [
+      {
+        "nombre": "Chakra del Corazón",
+        "nombreSanscrito": "Anahata",
+        "ubicacion": "Centro del pecho",
+        "color": "Verde o rosa",
+        "significado": "Amor, compasión, relaciones"
+      }
+    ],
+    "elementosAsociados": "Tierra",
+    "polaridadEnergetica": [
+      "Feminine"
+    ],
+    "imagenes": {
+      "flor": {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Alnus_acuminata_1.jpg/250px-Alnus_acuminata_1.jpg",
+        "alt": "flor de la planta"
+      },
+      "hojas": {
+        "src": "https://d2seqvvyy3b8p2.cloudfront.net/84359df7ad689a3789d24a9c0592eca1.jpg",
+        "alt": "hojas de la planta"
+      },
+      "tallo": {
+        "src": "https://antipode-peru.com/info/aliso-alnus-acuminata--1-1.jpeg",
+        "alt": "tallo de la planta"
+      },
+      "preparacion": {
+        "src": "https://imgv2-1-f.scribdassets.com/img/document/385317019/original/63f7b42e30/1?v=1",
+        "alt": "taxonomia nacional "
+      }
+    }
+  },
+  {
+    "nombreCientifico": "Clusia multiflora",
+    "imageUrl": "https://plantasdecolombia.com/wp-content/uploads/2018/07/2017-07-18-15-01-49.jpg",
+    "nombresComunes": [
+      "Gaque",
+      "Chagualo",
+      "Cucharo"
+    ],
+    "propiedadesMedicinales": [
+      "Cicatrizante potente (látex)",
+      "Analgésico local",
+      "Antirreumático",
+      "Antimicrobiano"
+    ],
+    "partesUtiles": [
+      "Látex (resina amarilla o blanca)",
+      "Hojas",
+      "Flores"
+    ],
+    "esenciasFlorales": [
+      "Apertura del chakra del corazón",
+      "Sanación de heridas afectivas profundas",
+      "Fomento de la confianza en uno mismo"
+    ],
+    "correspondenciasEnergeticas": [
+      "Planta de sellado energético",
+      "Uso ancestral para cerrar el cuerpo a malas energías",
+      "Conexión solar (por sus flores y resina)"
+    ],
+    "malesEmocionales": [
+      "Corazón cerrado por traumas",
+      "Desconfianza crónica",
+      "Sensación de vulnerabilidad extrema"
+    ],
+    "malesFisicos": [
+      "Fracturas (uso tradicional para inmovilizar y desinflamar)",
+      "Dolores articulares intensos",
+      "Heridas de difícil cicatrización",
+      "Verrugas"
+    ],
+    "taxon": {
+      "dominio": "Eukaryota",
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "clase": "Magnoliopsida",
+      "orden": "Malpighiales",
+      "familia": "Clusiaceae",
+      "genero": "Clusia",
+      "especie": "multiflora",
+      "clados": [
+        "Angiospermas",
+        "Eudicotiledóneas",
+        "Rósidas",
+        "Eurosidas I"
+      ]
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "Para aliviar dolores articulares fuertes o sellar heridas superficiales (uso externo)",
+        "formaDeAplicacion": "Aplicar el emplasto de resina directamente sobre la zona adolorida o cubrir con una hoja tibia.",
+        "ingredientes": [
+          {
+            "ingrediente": "Látex/resina fresca de gaque",
+            "cantidad": "10 gramos"
+          },
+          {
+            "ingrediente": "Hojas grandes de la misma planta",
+            "cantidad": "2 unidades"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "Hacer pequeñas incisiones en el tallo o arrancar una hoja para recolectar las gotas de látex."
+          ],
+          [
+            2,
+            "Limpiar la zona de la piel donde hay dolor o la herida menor."
+          ],
+          [
+            3,
+            "Untar el látex directamente sobre la piel."
+          ],
+          [
+            4,
+            "Calentar ligeramente una hoja de gaque al fuego (sin quemarla) para ablandarla."
+          ],
+          [
+            5,
+            "Colocar la hoja tibia sobre el látex a modo de parche natural y fijar con una venda."
+          ]
+        ]
+      }
+    ],
+    "chakrasAsociados": [
+      {
+        "nombre": "Chakra del Corazón",
+        "nombreSanscrito": "Anahata",
+        "ubicacion": "Centro del pecho",
+        "color": "Verde o rosa",
+        "significado": "Amor, compasión, relaciones"
+      }
+    ],
+    "elementosAsociados": "Fuego",
+    "polaridadEnergetica": [
+      "Masculine"
     ]
   },
   {
@@ -1337,6 +1445,112 @@
     ]
   },
   {
+    "nombreCientifico": "Weinmannia tomentosa",
+    "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/54317988/large.jpeg",
+    "nombresComunes": [
+      "Encenillo",
+      "Encenillo de páramo"
+    ],
+    "propiedadesMedicinales": [
+      "Astringente",
+      "Hemostático",
+      "Cicatrizante",
+      "Antiséptico"
+    ],
+    "partesUtiles": [
+      "Corteza",
+      "Hojas"
+    ],
+    "esenciasFlorales": [
+      "Anclaje a la realidad",
+      "Protección del campo áurico",
+      "Soporte para personalidades dispersas"
+    ],
+    "correspondenciasEnergeticas": [
+      "Árbol protector de los bosques de niebla",
+      "Conexión con los espíritus del aire y la humedad",
+      "Símbolo de resistencia y adaptabilidad"
+    ],
+    "malesEmocionales": [
+      "Desconexión del momento presente",
+      "Falta de concentración",
+      "Miedos infundados o terrores nocturnos"
+    ],
+    "malesFisicos": [
+      "Hemorragias superficiales",
+      "Úlceras cutáneas",
+      "Diarreas leves",
+      "Inflamación de garganta"
+    ],
+    "taxon": {
+      "dominio": "Eukaryota",
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "clase": "Magnoliopsida",
+      "orden": "Oxalidales",
+      "familia": "Cunoniaceae",
+      "genero": "Weinmannia",
+      "especie": "tomentosa",
+      "clados": [
+        "Angiospermas",
+        "Eudicotiledóneas",
+        "Rósidas",
+        "Eurosidas I"
+      ]
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "Para detener sangrados leves, limpiar heridas y favorecer la cicatrización",
+        "formaDeAplicacion": "Lavar la herida con la decocción fría 2 veces al día o aplicar compresas.",
+        "ingredientes": [
+          {
+            "ingrediente": "Corteza triturada de encenillo",
+            "cantidad": "15 gramos"
+          },
+          {
+            "ingrediente": "Agua purificada",
+            "cantidad": "500 ml"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "Hervir el agua en un recipiente limpio."
+          ],
+          [
+            2,
+            "Añadir la corteza de encenillo y mantener a fuego lento por 10 minutos."
+          ],
+          [
+            3,
+            "Apagar y dejar reposar tapado hasta que alcance temperatura ambiente."
+          ],
+          [
+            4,
+            "Colar con un filtro fino para retirar cualquier astilla."
+          ],
+          [
+            5,
+            "Empapar una gasa estéril y aplicar sobre la zona afectada."
+          ]
+        ]
+      }
+    ],
+    "chakrasAsociados": [
+      {
+        "nombre": "Chakra del Tercer Ojo",
+        "nombreSanscrito": "Ajna",
+        "ubicacion": "Entrecejo",
+        "color": "Índigo",
+        "significado": "Intuición, percepción espiritual, claridad mental"
+      }
+    ],
+    "elementosAsociados": "Aire",
+    "polaridadEnergetica": [
+      "Feminine"
+    ]
+  },
+  {
     "nombreCientifico": "Morella parvifolia",
     "imageUrl": "https://plantasdecolombia.com/wp-content/uploads/2011/10/morella-parvifolia1.jpg",
     "nombresComunes": [
@@ -1546,220 +1760,6 @@
     ]
   },
   {
-    "nombreCientifico": "Weinmannia tomentosa",
-    "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/54317988/large.jpeg",
-    "nombresComunes": [
-      "Encenillo",
-      "Encenillo de páramo"
-    ],
-    "propiedadesMedicinales": [
-      "Astringente",
-      "Hemostático",
-      "Cicatrizante",
-      "Antiséptico"
-    ],
-    "partesUtiles": [
-      "Corteza",
-      "Hojas"
-    ],
-    "esenciasFlorales": [
-      "Anclaje a la realidad",
-      "Protección del campo áurico",
-      "Soporte para personalidades dispersas"
-    ],
-    "correspondenciasEnergeticas": [
-      "Árbol protector de los bosques de niebla",
-      "Conexión con los espíritus del aire y la humedad",
-      "Símbolo de resistencia y adaptabilidad"
-    ],
-    "malesEmocionales": [
-      "Desconexión del momento presente",
-      "Falta de concentración",
-      "Miedos infundados o terrores nocturnos"
-    ],
-    "malesFisicos": [
-      "Hemorragias superficiales",
-      "Úlceras cutáneas",
-      "Diarreas leves",
-      "Inflamación de garganta"
-    ],
-    "taxon": {
-      "dominio": "Eukaryota",
-      "reino": "Plantae",
-      "filo": "Tracheophyta",
-      "clase": "Magnoliopsida",
-      "orden": "Oxalidales",
-      "familia": "Cunoniaceae",
-      "genero": "Weinmannia",
-      "especie": "tomentosa",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
-    },
-    "preparaciones": [
-      {
-        "usoTerapeutico": "Para detener sangrados leves, limpiar heridas y favorecer la cicatrización",
-        "formaDeAplicacion": "Lavar la herida con la decocción fría 2 veces al día o aplicar compresas.",
-        "ingredientes": [
-          {
-            "ingrediente": "Corteza triturada de encenillo",
-            "cantidad": "15 gramos"
-          },
-          {
-            "ingrediente": "Agua purificada",
-            "cantidad": "500 ml"
-          }
-        ],
-        "pasos": [
-          [
-            1,
-            "Hervir el agua en un recipiente limpio."
-          ],
-          [
-            2,
-            "Añadir la corteza de encenillo y mantener a fuego lento por 10 minutos."
-          ],
-          [
-            3,
-            "Apagar y dejar reposar tapado hasta que alcance temperatura ambiente."
-          ],
-          [
-            4,
-            "Colar con un filtro fino para retirar cualquier astilla."
-          ],
-          [
-            5,
-            "Empapar una gasa estéril y aplicar sobre la zona afectada."
-          ]
-        ]
-      }
-    ],
-    "chakrasAsociados": [
-      {
-        "nombre": "Chakra del Tercer Ojo",
-        "nombreSanscrito": "Ajna",
-        "ubicacion": "Entrecejo",
-        "color": "Índigo",
-        "significado": "Intuición, percepción espiritual, claridad mental"
-      }
-    ],
-    "elementosAsociados": "Aire",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
-  },
-  {
-    "nombreCientifico": "Clusia multiflora",
-    "imageUrl": "https://plantasdecolombia.com/wp-content/uploads/2018/07/2017-07-18-15-01-49.jpg",
-    "nombresComunes": [
-      "Gaque",
-      "Chagualo",
-      "Cucharo"
-    ],
-    "propiedadesMedicinales": [
-      "Cicatrizante potente (látex)",
-      "Analgésico local",
-      "Antirreumático",
-      "Antimicrobiano"
-    ],
-    "partesUtiles": [
-      "Látex (resina amarilla o blanca)",
-      "Hojas",
-      "Flores"
-    ],
-    "esenciasFlorales": [
-      "Apertura del chakra del corazón",
-      "Sanación de heridas afectivas profundas",
-      "Fomento de la confianza en uno mismo"
-    ],
-    "correspondenciasEnergeticas": [
-      "Planta de sellado energético",
-      "Uso ancestral para cerrar el cuerpo a malas energías",
-      "Conexión solar (por sus flores y resina)"
-    ],
-    "malesEmocionales": [
-      "Corazón cerrado por traumas",
-      "Desconfianza crónica",
-      "Sensación de vulnerabilidad extrema"
-    ],
-    "malesFisicos": [
-      "Fracturas (uso tradicional para inmovilizar y desinflamar)",
-      "Dolores articulares intensos",
-      "Heridas de difícil cicatrización",
-      "Verrugas"
-    ],
-    "taxon": {
-      "dominio": "Eukaryota",
-      "reino": "Plantae",
-      "filo": "Tracheophyta",
-      "clase": "Magnoliopsida",
-      "orden": "Malpighiales",
-      "familia": "Clusiaceae",
-      "genero": "Clusia",
-      "especie": "multiflora",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
-    },
-    "preparaciones": [
-      {
-        "usoTerapeutico": "Para aliviar dolores articulares fuertes o sellar heridas superficiales (uso externo)",
-        "formaDeAplicacion": "Aplicar el emplasto de resina directamente sobre la zona adolorida o cubrir con una hoja tibia.",
-        "ingredientes": [
-          {
-            "ingrediente": "Látex/resina fresca de gaque",
-            "cantidad": "10 gramos"
-          },
-          {
-            "ingrediente": "Hojas grandes de la misma planta",
-            "cantidad": "2 unidades"
-          }
-        ],
-        "pasos": [
-          [
-            1,
-            "Hacer pequeñas incisiones en el tallo o arrancar una hoja para recolectar las gotas de látex."
-          ],
-          [
-            2,
-            "Limpiar la zona de la piel donde hay dolor o la herida menor."
-          ],
-          [
-            3,
-            "Untar el látex directamente sobre la piel."
-          ],
-          [
-            4,
-            "Calentar ligeramente una hoja de gaque al fuego (sin quemarla) para ablandarla."
-          ],
-          [
-            5,
-            "Colocar la hoja tibia sobre el látex a modo de parche natural y fijar con una venda."
-          ]
-        ]
-      }
-    ],
-    "chakrasAsociados": [
-      {
-        "nombre": "Chakra del Corazón",
-        "nombreSanscrito": "Anahata",
-        "ubicacion": "Centro del pecho",
-        "color": "Verde o rosa",
-        "significado": "Amor, compasión, relaciones"
-      }
-    ],
-    "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
-  },
-  {
     "nombreCientifico": "Vallea stipularis",
     "imageUrl": "https://www.picturethisai.com/wiki-image/1080/357136825710116864.jpeg",
     "nombresComunes": [
@@ -1859,6 +1859,112 @@
       }
     ],
     "elementosAsociados": "Fuego",
+    "polaridadEnergetica": [
+      "Feminine"
+    ]
+  },
+  {
+    "nombreCientifico": "Myrsine dependens",
+    "imageUrl": "https://www.google.com/search?q=Myrsine+dependens&tbm=isch",
+    "nombresComunes": [
+      "Cucharo de páramo",
+      "Cucharito",
+      "Sanalo todo"
+    ],
+    "propiedadesMedicinales": [
+      "Antimicrobiano",
+      "Digestivo",
+      "Antidiarreico",
+      "Depurativo sanguíneo"
+    ],
+    "partesUtiles": [
+      "Hojas",
+      "Frutos (pequeñas drupas)"
+    ],
+    "esenciasFlorales": [
+      "Limpieza de resentimientos",
+      "Favorece el perdón",
+      "Claridad mental para asimilar experiencias duras"
+    ],
+    "correspondenciasEnergeticas": [
+      "Planta de purificación",
+      "Equilibrio de líquidos corporales y emocionales",
+      "Conexión con la sabiduría del agua subterránea"
+    ],
+    "malesEmocionales": [
+      "Amargura crónica",
+      "Resentimiento acumulado",
+      "Estancamiento emocional"
+    ],
+    "malesFisicos": [
+      "Digestiones pesadas",
+      "Diarrea",
+      "Infecciones estomacales leves",
+      "Afecciones hepáticas (uso tradicional)"
+    ],
+    "taxon": {
+      "dominio": "Eukaryota",
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "clase": "Magnoliopsida",
+      "orden": "Ericales",
+      "familia": "Primulaceae",
+      "genero": "Myrsine",
+      "especie": "dependens",
+      "clados": [
+        "Angiospermas",
+        "Eudicotiledóneas",
+        "Astéridas"
+      ]
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "Para detener la diarrea, calmar el estómago y ayudar en la digestión lenta",
+        "formaDeAplicacion": "Tomar 1 taza de infusión después de las comidas principales.",
+        "ingredientes": [
+          {
+            "ingrediente": "Hojas secas de cucharo de páramo",
+            "cantidad": "1 cucharadita (5g)"
+          },
+          {
+            "ingrediente": "Agua hirviendo",
+            "cantidad": "250 ml"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "Colocar las hojas secas en un recipiente o tetera."
+          ],
+          [
+            2,
+            "Verter el agua hirviendo sobre las hojas."
+          ],
+          [
+            3,
+            "Tapar y dejar infundir por 10 minutos para extraer los principios activos."
+          ],
+          [
+            4,
+            "Colar la preparación."
+          ],
+          [
+            5,
+            "Beber lentamente sin añadir azúcar para no alterar su efecto digestivo."
+          ]
+        ]
+      }
+    ],
+    "chakrasAsociados": [
+      {
+        "nombre": "Chakra Sacro",
+        "nombreSanscrito": "Svadhisthana",
+        "ubicacion": "Región pélvica, bajo el ombligo",
+        "color": "Naranja",
+        "significado": "Creatividad, sexualidad, emociones"
+      }
+    ],
+    "elementosAsociados": "Agua",
     "polaridadEnergetica": [
       "Feminine"
     ]
@@ -1971,112 +2077,6 @@
     "elementosAsociados": "Tierra",
     "polaridadEnergetica": [
       "Masculine"
-    ]
-  },
-  {
-    "nombreCientifico": "Myrsine dependens",
-    "imageUrl": "https://www.google.com/search?q=Myrsine+dependens&tbm=isch",
-    "nombresComunes": [
-      "Cucharo de páramo",
-      "Cucharito",
-      "Sanalo todo"
-    ],
-    "propiedadesMedicinales": [
-      "Antimicrobiano",
-      "Digestivo",
-      "Antidiarreico",
-      "Depurativo sanguíneo"
-    ],
-    "partesUtiles": [
-      "Hojas",
-      "Frutos (pequeñas drupas)"
-    ],
-    "esenciasFlorales": [
-      "Limpieza de resentimientos",
-      "Favorece el perdón",
-      "Claridad mental para asimilar experiencias duras"
-    ],
-    "correspondenciasEnergeticas": [
-      "Planta de purificación",
-      "Equilibrio de líquidos corporales y emocionales",
-      "Conexión con la sabiduría del agua subterránea"
-    ],
-    "malesEmocionales": [
-      "Amargura crónica",
-      "Resentimiento acumulado",
-      "Estancamiento emocional"
-    ],
-    "malesFisicos": [
-      "Digestiones pesadas",
-      "Diarrea",
-      "Infecciones estomacales leves",
-      "Afecciones hepáticas (uso tradicional)"
-    ],
-    "taxon": {
-      "dominio": "Eukaryota",
-      "reino": "Plantae",
-      "filo": "Tracheophyta",
-      "clase": "Magnoliopsida",
-      "orden": "Ericales",
-      "familia": "Primulaceae",
-      "genero": "Myrsine",
-      "especie": "dependens",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas"
-      ]
-    },
-    "preparaciones": [
-      {
-        "usoTerapeutico": "Para detener la diarrea, calmar el estómago y ayudar en la digestión lenta",
-        "formaDeAplicacion": "Tomar 1 taza de infusión después de las comidas principales.",
-        "ingredientes": [
-          {
-            "ingrediente": "Hojas secas de cucharo de páramo",
-            "cantidad": "1 cucharadita (5g)"
-          },
-          {
-            "ingrediente": "Agua hirviendo",
-            "cantidad": "250 ml"
-          }
-        ],
-        "pasos": [
-          [
-            1,
-            "Colocar las hojas secas en un recipiente o tetera."
-          ],
-          [
-            2,
-            "Verter el agua hirviendo sobre las hojas."
-          ],
-          [
-            3,
-            "Tapar y dejar infundir por 10 minutos para extraer los principios activos."
-          ],
-          [
-            4,
-            "Colar la preparación."
-          ],
-          [
-            5,
-            "Beber lentamente sin añadir azúcar para no alterar su efecto digestivo."
-          ]
-        ]
-      }
-    ],
-    "chakrasAsociados": [
-      {
-        "nombre": "Chakra Sacro",
-        "nombreSanscrito": "Svadhisthana",
-        "ubicacion": "Región pélvica, bajo el ombligo",
-        "color": "Naranja",
-        "significado": "Creatividad, sexualidad, emociones"
-      }
-    ],
-    "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Feminine"
     ]
   },
   {
@@ -2503,112 +2503,6 @@
     ]
   },
   {
-    "nombreCientifico": "Gaultheria anastomosans",
-    "imageUrl": "https://www.google.com/search?q=Gaultheria+anastomosans&tbm=isch",
-    "nombresComunes": [
-      "Reventadera",
-      "Uva de monte",
-      "Baya de perdiz (variante)"
-    ],
-    "propiedadesMedicinales": [
-      "Analgésico potente (alto contenido natural de salicilato de metilo)",
-      "Antiespasmódico muscular",
-      "Antirreumático externo",
-      "Rubefaciente"
-    ],
-    "partesUtiles": [
-      "Hojas",
-      "Frutos (consumo muy moderado)"
-    ],
-    "esenciasFlorales": [
-      "Liberación de tensión extrema",
-      "Ruptura de patrones de estrés crónico",
-      "Relajación profunda"
-    ],
-    "correspondenciasEnergeticas": [
-      "Ruptura de bloqueos (Reventadera)",
-      "Destrucción de obstáculos",
-      "Descompresión de energías densas acumuladas en el cuerpo"
-    ],
-    "malesEmocionales": [
-      "Estrés paralizante",
-      "Tensión nerviosa acumulada a punto de estallar",
-      "Rigidez de pensamientos por presión externa"
-    ],
-    "malesFisicos": [
-      "Dolores musculares intensos",
-      "Reumatismo crónico",
-      "Lumbago y ciática",
-      "Dolor de cabeza tensional (frotación)"
-    ],
-    "taxon": {
-      "dominio": "Eukaryota",
-      "reino": "Plantae",
-      "filo": "Tracheophyta",
-      "clase": "Magnoliopsida",
-      "orden": "Ericales",
-      "familia": "Ericaceae",
-      "genero": "Gaultheria",
-      "especie": "anastomosans",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas"
-      ]
-    },
-    "preparaciones": [
-      {
-        "usoTerapeutico": "Para aliviar dolores reumáticos, ciática, lumbago o contracturas musculares severas",
-        "formaDeAplicacion": "Usar como fricción o masaje vigoroso sobre la zona adolorida, 2 a 3 veces al día.",
-        "ingredientes": [
-          {
-            "ingrediente": "Hojas frescas de reventadera",
-            "cantidad": "50 gramos"
-          },
-          {
-            "ingrediente": "Alcohol etílico al 70% o alcohol de fricción",
-            "cantidad": "250 ml"
-          }
-        ],
-        "pasos": [
-          [
-            1,
-            "Lavar y secar bien las hojas frescas."
-          ],
-          [
-            2,
-            "Triturar ligeramente las hojas con las manos para romper sus glándulas y liberar el aroma característico a mentol/salicilato."
-          ],
-          [
-            3,
-            "Colocar las hojas en un frasco de vidrio oscuro."
-          ],
-          [
-            4,
-            "Cubrir completamente con el alcohol, cerrar bien y dejar macerar en un lugar oscuro durante 15 días, agitando a diario."
-          ],
-          [
-            5,
-            "Filtrar el alcohol y usarlo para masajear las zonas con dolor muscular o articular."
-          ]
-        ]
-      }
-    ],
-    "chakrasAsociados": [
-      {
-        "nombre": "Chakra del Plexo Solar",
-        "nombreSanscrito": "Manipura",
-        "ubicacion": "Entre el diafragma y el ombligo",
-        "color": "Amarillo",
-        "significado": "Poder personal, autoestima, fuerza de voluntad"
-      }
-    ],
-    "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
-  },
-  {
     "nombreCientifico": "Myrcianthes leucoxyla",
     "imageUrl": "https://www.reddearboles.org/nwlib6/includes/phpthumb/phpThumb.php?src=/imagenes/nwproject5.forms.f_productoscatalogo/1/myrcianthesleucoxylass23.jpg&w=550&f=webp",
     "nombresComunes": [
@@ -2817,6 +2711,216 @@
     ]
   },
   {
+    "nombreCientifico": "Miconia squamulosa",
+    "imageUrl": "https://www.google.com/search?q=Miconia+squamulosa&tbm=isch",
+    "nombresComunes": [
+      "Tuno esmeraldo",
+      "Tuno",
+      "Pava"
+    ],
+    "propiedadesMedicinales": [
+      "Cicatrizante",
+      "Astringente",
+      "Colorante natural (uso tradicional para la piel)"
+    ],
+    "partesUtiles": [
+      "Hojas",
+      "Frutos"
+    ],
+    "esenciasFlorales": [
+      "Limpieza de la propia imagen",
+      "Aceptación de la belleza única",
+      "Integración social"
+    ],
+    "correspondenciasEnergeticas": [
+      "Asociado a las aves del bosque andino",
+      "Colorido y magnetismo",
+      "Protección del aura"
+    ],
+    "malesEmocionales": [
+      "Baja autoestima física",
+      "Timidez excesiva",
+      "Aislamiento social"
+    ],
+    "malesFisicos": [
+      "Erupciones cutáneas leves",
+      "Raspones",
+      "Diarrea leve"
+    ],
+    "taxon": {
+      "dominio": "Eukaryota",
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "clase": "Magnoliopsida",
+      "orden": "Myrtales",
+      "familia": "Melastomataceae",
+      "genero": "Miconia",
+      "especie": "squamulosa",
+      "clados": [
+        "Angiospermas",
+        "Eudicotiledóneas",
+        "Rósidas"
+      ]
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "Para secar erupciones de la piel y ayudar a cicatrizar raspones superficiales",
+        "formaDeAplicacion": "Lavar la piel afectada con la infusión a temperatura ambiente 2 veces al día.",
+        "ingredientes": [
+          {
+            "ingrediente": "Hojas de tuno esmeraldo",
+            "cantidad": "15 gramos"
+          },
+          {
+            "ingrediente": "Agua hirviendo",
+            "cantidad": "500 ml"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "Lavar las hojas del tuno."
+          ],
+          [
+            2,
+            "Colocar las hojas en un recipiente de cerámica."
+          ],
+          [
+            3,
+            "Verter el agua hirviendo y tapar inmediatamente."
+          ],
+          [
+            4,
+            "Dejar infundir hasta que el líquido se enfríe."
+          ],
+          [
+            5,
+            "Colar y usar el líquido para limpiar suavemente la piel."
+          ]
+        ]
+      }
+    ],
+    "chakrasAsociados": [
+      {
+        "nombre": "Chakra de la Garganta",
+        "nombreSanscrito": "Vishuddha",
+        "ubicacion": "Garganta",
+        "color": "Azul claro",
+        "significado": "Comunicación, autenticidad, expresión verbal"
+      }
+    ],
+    "elementosAsociados": "Aire",
+    "polaridadEnergetica": [
+      "Feminine"
+    ]
+  },
+  {
+    "nombreCientifico": "Gaultheria anastomosans",
+    "imageUrl": "https://www.google.com/search?q=Gaultheria+anastomosans&tbm=isch",
+    "nombresComunes": [
+      "Reventadera",
+      "Uva de monte",
+      "Baya de perdiz (variante)"
+    ],
+    "propiedadesMedicinales": [
+      "Analgésico potente (alto contenido natural de salicilato de metilo)",
+      "Antiespasmódico muscular",
+      "Antirreumático externo",
+      "Rubefaciente"
+    ],
+    "partesUtiles": [
+      "Hojas",
+      "Frutos (consumo muy moderado)"
+    ],
+    "esenciasFlorales": [
+      "Liberación de tensión extrema",
+      "Ruptura de patrones de estrés crónico",
+      "Relajación profunda"
+    ],
+    "correspondenciasEnergeticas": [
+      "Ruptura de bloqueos (Reventadera)",
+      "Destrucción de obstáculos",
+      "Descompresión de energías densas acumuladas en el cuerpo"
+    ],
+    "malesEmocionales": [
+      "Estrés paralizante",
+      "Tensión nerviosa acumulada a punto de estallar",
+      "Rigidez de pensamientos por presión externa"
+    ],
+    "malesFisicos": [
+      "Dolores musculares intensos",
+      "Reumatismo crónico",
+      "Lumbago y ciática",
+      "Dolor de cabeza tensional (frotación)"
+    ],
+    "taxon": {
+      "dominio": "Eukaryota",
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "clase": "Magnoliopsida",
+      "orden": "Ericales",
+      "familia": "Ericaceae",
+      "genero": "Gaultheria",
+      "especie": "anastomosans",
+      "clados": [
+        "Angiospermas",
+        "Eudicotiledóneas",
+        "Astéridas"
+      ]
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "Para aliviar dolores reumáticos, ciática, lumbago o contracturas musculares severas",
+        "formaDeAplicacion": "Usar como fricción o masaje vigoroso sobre la zona adolorida, 2 a 3 veces al día.",
+        "ingredientes": [
+          {
+            "ingrediente": "Hojas frescas de reventadera",
+            "cantidad": "50 gramos"
+          },
+          {
+            "ingrediente": "Alcohol etílico al 70% o alcohol de fricción",
+            "cantidad": "250 ml"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "Lavar y secar bien las hojas frescas."
+          ],
+          [
+            2,
+            "Triturar ligeramente las hojas con las manos para romper sus glándulas y liberar el aroma característico a mentol/salicilato."
+          ],
+          [
+            3,
+            "Colocar las hojas en un frasco de vidrio oscuro."
+          ],
+          [
+            4,
+            "Cubrir completamente con el alcohol, cerrar bien y dejar macerar en un lugar oscuro durante 15 días, agitando a diario."
+          ],
+          [
+            5,
+            "Filtrar el alcohol y usarlo para masajear las zonas con dolor muscular o articular."
+          ]
+        ]
+      }
+    ],
+    "chakrasAsociados": [
+      {
+        "nombre": "Chakra del Plexo Solar",
+        "nombreSanscrito": "Manipura",
+        "ubicacion": "Entre el diafragma y el ombligo",
+        "color": "Amarillo",
+        "significado": "Poder personal, autoestima, fuerza de voluntad"
+      }
+    ],
+    "elementosAsociados": "Fuego",
+    "polaridadEnergetica": [
+      "Masculine"
+    ]
+  },
+  {
     "nombreCientifico": "Tibouchina lepidota",
     "imageUrl": "https://www.picturethisai.com/wiki-image/1080/154035166707187715.jpeg",
     "nombresComunes": [
@@ -2923,6 +3027,106 @@
     ]
   },
   {
+    "nombreCientifico": "Bucquetia glutinosa",
+    "imageUrl": "https://www.picturethisai.com/wiki-image/1080/218653413494587392.jpeg",
+    "nombresComunes": [
+      "Saltón",
+      "Charne",
+      "Tuno pegajoso"
+    ],
+    "propiedadesMedicinales": [
+      "Vulnerario (cura heridas)",
+      "Emoliente tópico (resina/exudado)",
+      "Antiinflamatorio local"
+    ],
+    "partesUtiles": [
+      "Hojas tiernas y resinosas",
+      "Flores"
+    ],
+    "esenciasFlorales": [
+      "Cohesión en las relaciones",
+      "Ayuda a reparar vínculos rotos",
+      "Fomenta la adaptabilidad"
+    ],
+    "correspondenciasEnergeticas": [
+      "Planta de pegamento energético",
+      "Reparación de fracturas en el cuerpo etérico",
+      "Atracción de energías positivas"
+    ],
+    "malesEmocionales": [
+      "Sensación de estar roto por dentro",
+      "Desconexión emocional con la pareja o familia",
+      "Rigidez de carácter"
+    ],
+    "malesFisicos": [
+      "Heridas abiertas de difícil cierre",
+      "Inflamaciones superficiales",
+      "Piel agrietada y seca"
+    ],
+    "taxon": {
+      "dominio": "Eukaryota",
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "clase": "Magnoliopsida",
+      "orden": "Myrtales",
+      "familia": "Melastomataceae",
+      "genero": "Bucquetia",
+      "especie": "glutinosa",
+      "clados": [
+        "Angiospermas",
+        "Eudicotiledóneas",
+        "Rósidas"
+      ]
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "Para proteger heridas abiertas, crear una barrera física y promover la regeneración de tejidos",
+        "formaDeAplicacion": "Aplicar un cataplasma de las hojas pegajosas sobre la zona afectada y cubrir con una venda limpia.",
+        "ingredientes": [
+          {
+            "ingrediente": "Hojas jóvenes y glutinosas (pegajosas) de charne",
+            "cantidad": "5 a 10 hojas"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "Recolectar las hojas más jóvenes, que contienen la mayor cantidad de exudado resinoso."
+          ],
+          [
+            2,
+            "Limpiar cuidadosamente la herida a tratar."
+          ],
+          [
+            3,
+            "Macerar levemente las hojas para aumentar la liberación de la resina."
+          ],
+          [
+            4,
+            "Colocar las hojas directamente sobre la herida o inflamación a modo de parche natural."
+          ],
+          [
+            5,
+            "Fijar con una venda y dejar actuar por varias horas, cambiando el emplasto a diario."
+          ]
+        ]
+      }
+    ],
+    "chakrasAsociados": [
+      {
+        "nombre": "Chakra del Corazón",
+        "nombreSanscrito": "Anahata",
+        "ubicacion": "Centro del pecho",
+        "color": "Verde o rosa",
+        "significado": "Amor, compasión, relaciones"
+      }
+    ],
+    "elementosAsociados": "Tierra",
+    "polaridadEnergetica": [
+      "Feminine"
+    ]
+  },
+  {
     "nombreCientifico": "Escallonia myrtilloides",
     "imageUrl": "https://www.google.com/search?q=Escallonia+myrtilloides&tbm=isch",
     "nombresComunes": [
@@ -3024,210 +3228,6 @@
     "elementosAsociados": "Aire",
     "polaridadEnergetica": [
       "Masculine"
-    ]
-  },
-  {
-    "nombreCientifico": "Miconia squamulosa",
-    "imageUrl": "https://www.google.com/search?q=Miconia+squamulosa&tbm=isch",
-    "nombresComunes": [
-      "Tuno esmeraldo",
-      "Tuno",
-      "Pava"
-    ],
-    "propiedadesMedicinales": [
-      "Cicatrizante",
-      "Astringente",
-      "Colorante natural (uso tradicional para la piel)"
-    ],
-    "partesUtiles": [
-      "Hojas",
-      "Frutos"
-    ],
-    "esenciasFlorales": [
-      "Limpieza de la propia imagen",
-      "Aceptación de la belleza única",
-      "Integración social"
-    ],
-    "correspondenciasEnergeticas": [
-      "Asociado a las aves del bosque andino",
-      "Colorido y magnetismo",
-      "Protección del aura"
-    ],
-    "malesEmocionales": [
-      "Baja autoestima física",
-      "Timidez excesiva",
-      "Aislamiento social"
-    ],
-    "malesFisicos": [
-      "Erupciones cutáneas leves",
-      "Raspones",
-      "Diarrea leve"
-    ],
-    "taxon": {
-      "dominio": "Eukaryota",
-      "reino": "Plantae",
-      "filo": "Tracheophyta",
-      "clase": "Magnoliopsida",
-      "orden": "Myrtales",
-      "familia": "Melastomataceae",
-      "genero": "Miconia",
-      "especie": "squamulosa",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas"
-      ]
-    },
-    "preparaciones": [
-      {
-        "usoTerapeutico": "Para secar erupciones de la piel y ayudar a cicatrizar raspones superficiales",
-        "formaDeAplicacion": "Lavar la piel afectada con la infusión a temperatura ambiente 2 veces al día.",
-        "ingredientes": [
-          {
-            "ingrediente": "Hojas de tuno esmeraldo",
-            "cantidad": "15 gramos"
-          },
-          {
-            "ingrediente": "Agua hirviendo",
-            "cantidad": "500 ml"
-          }
-        ],
-        "pasos": [
-          [
-            1,
-            "Lavar las hojas del tuno."
-          ],
-          [
-            2,
-            "Colocar las hojas en un recipiente de cerámica."
-          ],
-          [
-            3,
-            "Verter el agua hirviendo y tapar inmediatamente."
-          ],
-          [
-            4,
-            "Dejar infundir hasta que el líquido se enfríe."
-          ],
-          [
-            5,
-            "Colar y usar el líquido para limpiar suavemente la piel."
-          ]
-        ]
-      }
-    ],
-    "chakrasAsociados": [
-      {
-        "nombre": "Chakra de la Garganta",
-        "nombreSanscrito": "Vishuddha",
-        "ubicacion": "Garganta",
-        "color": "Azul claro",
-        "significado": "Comunicación, autenticidad, expresión verbal"
-      }
-    ],
-    "elementosAsociados": "Aire",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
-  },
-  {
-    "nombreCientifico": "Bucquetia glutinosa",
-    "imageUrl": "https://www.picturethisai.com/wiki-image/1080/218653413494587392.jpeg",
-    "nombresComunes": [
-      "Saltón",
-      "Charne",
-      "Tuno pegajoso"
-    ],
-    "propiedadesMedicinales": [
-      "Vulnerario (cura heridas)",
-      "Emoliente tópico (resina/exudado)",
-      "Antiinflamatorio local"
-    ],
-    "partesUtiles": [
-      "Hojas tiernas y resinosas",
-      "Flores"
-    ],
-    "esenciasFlorales": [
-      "Cohesión en las relaciones",
-      "Ayuda a reparar vínculos rotos",
-      "Fomenta la adaptabilidad"
-    ],
-    "correspondenciasEnergeticas": [
-      "Planta de pegamento energético",
-      "Reparación de fracturas en el cuerpo etérico",
-      "Atracción de energías positivas"
-    ],
-    "malesEmocionales": [
-      "Sensación de estar roto por dentro",
-      "Desconexión emocional con la pareja o familia",
-      "Rigidez de carácter"
-    ],
-    "malesFisicos": [
-      "Heridas abiertas de difícil cierre",
-      "Inflamaciones superficiales",
-      "Piel agrietada y seca"
-    ],
-    "taxon": {
-      "dominio": "Eukaryota",
-      "reino": "Plantae",
-      "filo": "Tracheophyta",
-      "clase": "Magnoliopsida",
-      "orden": "Myrtales",
-      "familia": "Melastomataceae",
-      "genero": "Bucquetia",
-      "especie": "glutinosa",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas"
-      ]
-    },
-    "preparaciones": [
-      {
-        "usoTerapeutico": "Para proteger heridas abiertas, crear una barrera física y promover la regeneración de tejidos",
-        "formaDeAplicacion": "Aplicar un cataplasma de las hojas pegajosas sobre la zona afectada y cubrir con una venda limpia.",
-        "ingredientes": [
-          {
-            "ingrediente": "Hojas jóvenes y glutinosas (pegajosas) de charne",
-            "cantidad": "5 a 10 hojas"
-          }
-        ],
-        "pasos": [
-          [
-            1,
-            "Recolectar las hojas más jóvenes, que contienen la mayor cantidad de exudado resinoso."
-          ],
-          [
-            2,
-            "Limpiar cuidadosamente la herida a tratar."
-          ],
-          [
-            3,
-            "Macerar levemente las hojas para aumentar la liberación de la resina."
-          ],
-          [
-            4,
-            "Colocar las hojas directamente sobre la herida o inflamación a modo de parche natural."
-          ],
-          [
-            5,
-            "Fijar con una venda y dejar actuar por varias horas, cambiando el emplasto a diario."
-          ]
-        ]
-      }
-    ],
-    "chakrasAsociados": [
-      {
-        "nombre": "Chakra del Corazón",
-        "nombreSanscrito": "Anahata",
-        "ubicacion": "Centro del pecho",
-        "color": "Verde o rosa",
-        "significado": "Amor, compasión, relaciones"
-      }
-    ],
-    "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Feminine"
     ]
   },
   {
@@ -3441,6 +3441,113 @@
     ]
   },
   {
+    "nombreCientifico": "Hesperomeles goudotiana",
+    "imageUrl": "https://www.google.com/search?q=Hesperomeles+goudotiana&tbm=isch",
+    "nombresComunes": [
+      "Cerote",
+      "Mortiño (en algunas zonas de Cundinamarca)",
+      "Manzano de páramo"
+    ],
+    "propiedadesMedicinales": [
+      "Antidiarreico",
+      "Astringente",
+      "Antioxidante nutritivo",
+      "Tónico capilar (raíz)"
+    ],
+    "partesUtiles": [
+      "Frutos (pequeñas drupas)",
+      "Hojas"
+    ],
+    "esenciasFlorales": [
+      "Nutrición afectiva",
+      "Firmeza y enraizamiento",
+      "Fortaleza para sostener proyectos a largo plazo"
+    ],
+    "correspondenciasEnergeticas": [
+      "Alimento de supervivencia andina",
+      "Resistencia y longevidad",
+      "Madera dura, voluntad de hierro"
+    ],
+    "malesEmocionales": [
+      "Debilidad de carácter",
+      "Desnutrición espiritual o falta de propósito",
+      "Inestabilidad emocional"
+    ],
+    "malesFisicos": [
+      "Diarreas crónicas o disentería",
+      "Fatiga y falta de vitalidad",
+      "Caída del cabello (uso tópico)",
+      "Afecciones estomacales"
+    ],
+    "taxon": {
+      "dominio": "Eukaryota",
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "clase": "Magnoliopsida",
+      "orden": "Rosales",
+      "familia": "Rosaceae",
+      "genero": "Hesperomeles",
+      "especie": "goudotiana",
+      "clados": [
+        "Angiospermas",
+        "Eudicotiledóneas",
+        "Rósidas",
+        "Eurosidas I"
+      ]
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "Para detener cuadros de diarrea y regularizar la mucosa intestinal",
+        "formaDeAplicacion": "Tomar 1 taza de decocción de hojas y frutos 3 veces al día hasta que cesen los síntomas.",
+        "ingredientes": [
+          {
+            "ingrediente": "Hojas de cerote y algunos frutos secos",
+            "cantidad": "1 cucharada colmada"
+          },
+          {
+            "ingrediente": "Agua",
+            "cantidad": "300 ml"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "Lavar los frutos y las hojas gruesas del cerote."
+          ],
+          [
+            2,
+            "Colocarlos en el agua fría en una olla pequeña."
+          ],
+          [
+            3,
+            "Llevar a punto de ebullición y dejar hervir a fuego medio por 10 a 15 minutos."
+          ],
+          [
+            4,
+            "Retirar del fuego y dejar enfriar hasta que esté tibio."
+          ],
+          [
+            5,
+            "Colar presionando los frutos para extraer sus taninos, y beber el líquido astringente."
+          ]
+        ]
+      }
+    ],
+    "chakrasAsociados": [
+      {
+        "nombre": "Chakra Raíz",
+        "nombreSanscrito": "Muladhara",
+        "ubicacion": "Base de la columna vertebral (coxis)",
+        "color": "Rojo",
+        "significado": "Supervivencia, seguridad, arraigo"
+      }
+    ],
+    "elementosAsociados": "Tierra",
+    "polaridadEnergetica": [
+      "Masculine"
+    ]
+  },
+  {
     "nombreCientifico": "Berberis rigidifolia",
     "imageUrl": "https://plantasdecolombia.com/wp-content/uploads/2014/11/img_1812.jpg",
     "nombresComunes": [
@@ -3540,6 +3647,110 @@
       }
     ],
     "elementosAsociados": "Fuego",
+    "polaridadEnergetica": [
+      "Masculine"
+    ]
+  },
+  {
+    "nombreCientifico": "Chusquea tessellata",
+    "imageUrl": "https://static.inaturalist.org/photos/11883942/large.jpeg",
+    "nombresComunes": [
+      "Chusque",
+      "Bambú de páramo",
+      "Carrizo"
+    ],
+    "propiedadesMedicinales": [
+      "Diurético suave",
+      "Depurativo",
+      "Estructural (uso en ferulización tradicional de fracturas)"
+    ],
+    "partesUtiles": [
+      "Hojas tiernas",
+      "Tallos (cañas para uso externo/estructural)"
+    ],
+    "esenciasFlorales": [
+      "Flexibilidad inquebrantable",
+      "Fluidez ante las tormentas de la vida",
+      "Resiliencia comunitaria"
+    ],
+    "correspondenciasEnergeticas": [
+      "Canalización de energía vital (forma tubular)",
+      "Elemento Viento",
+      "Danza y adaptabilidad"
+    ],
+    "malesEmocionales": [
+      "Rigidez mental extrema",
+      "Miedo a ceder el control",
+      "Tensión nerviosa por estrés"
+    ],
+    "malesFisicos": [
+      "Retención de líquidos",
+      "Problemas urinarios leves",
+      "Fracturas óseas (como entablillado externo)"
+    ],
+    "taxon": {
+      "dominio": "Eukaryota",
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "clase": "Liliopsida",
+      "orden": "Poales",
+      "familia": "Poaceae",
+      "genero": "Chusquea",
+      "especie": "tessellata",
+      "clados": [
+        "Angiospermas",
+        "Monocotiledóneas",
+        "Comelínidas"
+      ]
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "Para ayudar a eliminar líquidos retenidos y limpiar las vías urinarias",
+        "formaDeAplicacion": "Beber 1 taza de infusión de hojas tiernas, 2 veces al día.",
+        "ingredientes": [
+          {
+            "ingrediente": "Hojas frescas y tiernas de chusque",
+            "cantidad": "10 gramos"
+          },
+          {
+            "ingrediente": "Agua hirviendo",
+            "cantidad": "300 ml"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "Lavar las hojas tiernas (brotes) del chusque."
+          ],
+          [
+            2,
+            "Trozar las hojas finamente con las manos o tijeras."
+          ],
+          [
+            3,
+            "Colocar en una taza y verter el agua hirviendo."
+          ],
+          [
+            4,
+            "Tapar y dejar infundir por 10 minutos."
+          ],
+          [
+            5,
+            "Colar y consumir la bebida (tiene un sabor muy neutro, ligeramente a pasto fresco)."
+          ]
+        ]
+      }
+    ],
+    "chakrasAsociados": [
+      {
+        "nombre": "Chakra Raíz",
+        "nombreSanscrito": "Muladhara",
+        "ubicacion": "Base de la columna vertebral (coxis)",
+        "color": "Rojo",
+        "significado": "Supervivencia, seguridad, arraigo"
+      }
+    ],
+    "elementosAsociados": "Aire",
     "polaridadEnergetica": [
       "Masculine"
     ]
@@ -3760,6 +3971,215 @@
     ]
   },
   {
+    "nombreCientifico": "Calamagrostis effusa",
+    "imageUrl": "https://static.inaturalist.org/photos/50805746/large.jpeg",
+    "nombresComunes": [
+      "Paja de páramo",
+      "Pajonal",
+      "Paja maciega"
+    ],
+    "propiedadesMedicinales": [
+      "Termorregulador (aislante térmico uso externo)",
+      "Antiinflamatorio leve (en baños)",
+      "Relajante muscular (hidroterapia)"
+    ],
+    "partesUtiles": [
+      "Tallos y hojas secas"
+    ],
+    "esenciasFlorales": [
+      "Sentido de comunidad",
+      "Humildad y servicio",
+      "Sostén de la red de la vida"
+    ],
+    "correspondenciasEnergeticas": [
+      "Manto protector de la Madre Tierra",
+      "Retención de la memoria del agua",
+      "Acumulación pasiva de energía solar"
+    ],
+    "malesEmocionales": [
+      "Individualismo exacerbado",
+      "Aislamiento emocional",
+      "Sentimiento de insignificancia"
+    ],
+    "malesFisicos": [
+      "Enfriamiento corporal agudo",
+      "Espasmos musculares por frío",
+      "Dolores articulares generalizados"
+    ],
+    "taxon": {
+      "dominio": "Eukaryota",
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "clase": "Liliopsida",
+      "orden": "Poales",
+      "familia": "Poaceae",
+      "genero": "Calamagrostis",
+      "especie": "effusa",
+      "clados": [
+        "Angiospermas",
+        "Monocotiledóneas",
+        "Comelínidas"
+      ]
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "Para reactivar el calor corporal, relajar músculos tensos por el frío y aliviar dolores generalizados",
+        "formaDeAplicacion": "Realizar un baño de inmersión caliente (hidroterapia andina) durante 15-20 minutos.",
+        "ingredientes": [
+          {
+            "ingrediente": "Manojo grande de paja de páramo seca",
+            "cantidad": "500 gramos"
+          },
+          {
+            "ingrediente": "Agua",
+            "cantidad": "5 litros (para preparar concentrado)"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "Lavar la paja para retirar tierra superficial."
+          ],
+          [
+            2,
+            "Hervir los 5 litros de agua en una olla grande."
+          ],
+          [
+            3,
+            "Introducir la paja y dejar hervir a fuego fuerte durante 20 minutos para extraer sus sílices y aceites suaves."
+          ],
+          [
+            4,
+            "Verter la decocción (con todo y pajas si se desea) en una tina con agua caliente suficiente para inmersión."
+          ],
+          [
+            5,
+            "Sumergirse en el baño termal artesanal hasta que el cuerpo recupere su temperatura natural."
+          ]
+        ]
+      }
+    ],
+    "chakrasAsociados": [
+      {
+        "nombre": "Chakra Raíz",
+        "nombreSanscrito": "Muladhara",
+        "ubicacion": "Base de la columna vertebral (coxis)",
+        "color": "Rojo",
+        "significado": "Supervivencia, seguridad, arraigo"
+      }
+    ],
+    "elementosAsociados": "Tierra",
+    "polaridadEnergetica": [
+      "Feminine"
+    ]
+  },
+  {
+    "nombreCientifico": "Halenia asclepiadea",
+    "imageUrl": "https://www.google.com/search?q=Halenia+asclepiadea&tbm=isch",
+    "nombresComunes": [
+      "Cachitos",
+      "Flor de cuernos"
+    ],
+    "propiedadesMedicinales": [
+      "Tónico amargo intenso",
+      "Colagogo (estimula la liberación de bilis)",
+      "Digestivo estomacal",
+      "Estimulante del apetito"
+    ],
+    "partesUtiles": [
+      "Flores",
+      "Hojas superiores"
+    ],
+    "esenciasFlorales": [
+      "Digestión de la amargura de la vida",
+      "Apertura a la magia y al asombro",
+      "Canalización de energías sutiles"
+    ],
+    "correspondenciasEnergeticas": [
+      "Geometría sagrada (forma de sus espolones)",
+      "Receptáculos de rocío cósmico",
+      "Sintonización con frecuencias celestiales"
+    ],
+    "malesEmocionales": [
+      "Resentimiento crónico",
+      "Amargura emocional proyectada hacia otros",
+      "Pérdida de la capacidad de asombro"
+    ],
+    "malesFisicos": [
+      "Indigestión crónica y pesadez",
+      "Hígado perezoso",
+      "Falta de apetito (anorexia temporal)",
+      "Dificultad para digerir grasas"
+    ],
+    "taxon": {
+      "dominio": "Eukaryota",
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "clase": "Magnoliopsida",
+      "orden": "Gentianales",
+      "familia": "Gentianaceae",
+      "genero": "Halenia",
+      "especie": "asclepiadea",
+      "clados": [
+        "Angiospermas",
+        "Eudicotiledóneas",
+        "Astéridas",
+        "Lamíidas"
+      ]
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "Para activar los jugos gástricos, estimular el apetito y vaciar la vesícula biliar antes de comer",
+        "formaDeAplicacion": "Beber media taza de infusión 15 minutos antes de la comida principal.",
+        "ingredientes": [
+          {
+            "ingrediente": "Flores secas y hojas de cachitos",
+            "cantidad": "1 cucharadita (2g)"
+          },
+          {
+            "ingrediente": "Agua hirviendo",
+            "cantidad": "150 ml"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "Colocar la planta seca en una taza pequeña."
+          ],
+          [
+            2,
+            "Verter el agua caliente."
+          ],
+          [
+            3,
+            "Tapar y dejar reposar brevemente, solo entre 3 a 5 minutos (es extremadamente amarga)."
+          ],
+          [
+            4,
+            "Colar la bebida."
+          ],
+          [
+            5,
+            "Tomar a pequeños sorbos. NUNCA endulzar, ya que el sabor amargo en la lengua es el que desencadena el reflejo digestivo y hepático."
+          ]
+        ]
+      }
+    ],
+    "chakrasAsociados": [
+      {
+        "nombre": "Chakra Corona",
+        "nombreSanscrito": "Sahasrara",
+        "ubicacion": "Parte superior de la cabeza",
+        "color": "Blanco o violeta",
+        "significado": "Espiritualidad, conexión con lo divino, sabiduría"
+      }
+    ],
+    "elementosAsociados": "Aire",
+    "polaridadEnergetica": [
+      "Feminine"
+    ]
+  },
+  {
     "nombreCientifico": "Polylepis quadrijuga",
     "imageUrl": "https://plantasdecolombia.com/wp-content/uploads/2020/06/img_0465.png?w=900",
     "nombresComunes": [
@@ -3863,213 +4283,6 @@
     "elementosAsociados": "Fuego",
     "polaridadEnergetica": [
       "Masculine"
-    ]
-  },
-  {
-    "nombreCientifico": "Chusquea tessellata",
-    "imageUrl": "https://static.inaturalist.org/photos/11883942/large.jpeg",
-    "nombresComunes": [
-      "Chusque",
-      "Bambú de páramo",
-      "Carrizo"
-    ],
-    "propiedadesMedicinales": [
-      "Diurético suave",
-      "Depurativo",
-      "Estructural (uso en ferulización tradicional de fracturas)"
-    ],
-    "partesUtiles": [
-      "Hojas tiernas",
-      "Tallos (cañas para uso externo/estructural)"
-    ],
-    "esenciasFlorales": [
-      "Flexibilidad inquebrantable",
-      "Fluidez ante las tormentas de la vida",
-      "Resiliencia comunitaria"
-    ],
-    "correspondenciasEnergeticas": [
-      "Canalización de energía vital (forma tubular)",
-      "Elemento Viento",
-      "Danza y adaptabilidad"
-    ],
-    "malesEmocionales": [
-      "Rigidez mental extrema",
-      "Miedo a ceder el control",
-      "Tensión nerviosa por estrés"
-    ],
-    "malesFisicos": [
-      "Retención de líquidos",
-      "Problemas urinarios leves",
-      "Fracturas óseas (como entablillado externo)"
-    ],
-    "taxon": {
-      "dominio": "Eukaryota",
-      "reino": "Plantae",
-      "filo": "Tracheophyta",
-      "clase": "Liliopsida",
-      "orden": "Poales",
-      "familia": "Poaceae",
-      "genero": "Chusquea",
-      "especie": "tessellata",
-      "clados": [
-        "Angiospermas",
-        "Monocotiledóneas",
-        "Comelínidas"
-      ]
-    },
-    "preparaciones": [
-      {
-        "usoTerapeutico": "Para ayudar a eliminar líquidos retenidos y limpiar las vías urinarias",
-        "formaDeAplicacion": "Beber 1 taza de infusión de hojas tiernas, 2 veces al día.",
-        "ingredientes": [
-          {
-            "ingrediente": "Hojas frescas y tiernas de chusque",
-            "cantidad": "10 gramos"
-          },
-          {
-            "ingrediente": "Agua hirviendo",
-            "cantidad": "300 ml"
-          }
-        ],
-        "pasos": [
-          [
-            1,
-            "Lavar las hojas tiernas (brotes) del chusque."
-          ],
-          [
-            2,
-            "Trozar las hojas finamente con las manos o tijeras."
-          ],
-          [
-            3,
-            "Colocar en una taza y verter el agua hirviendo."
-          ],
-          [
-            4,
-            "Tapar y dejar infundir por 10 minutos."
-          ],
-          [
-            5,
-            "Colar y consumir la bebida (tiene un sabor muy neutro, ligeramente a pasto fresco)."
-          ]
-        ]
-      }
-    ],
-    "chakrasAsociados": [
-      {
-        "nombre": "Chakra Raíz",
-        "nombreSanscrito": "Muladhara",
-        "ubicacion": "Base de la columna vertebral (coxis)",
-        "color": "Rojo",
-        "significado": "Supervivencia, seguridad, arraigo"
-      }
-    ],
-    "elementosAsociados": "Aire",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
-  },
-  {
-    "nombreCientifico": "Calamagrostis effusa",
-    "imageUrl": "https://static.inaturalist.org/photos/50805746/large.jpeg",
-    "nombresComunes": [
-      "Paja de páramo",
-      "Pajonal",
-      "Paja maciega"
-    ],
-    "propiedadesMedicinales": [
-      "Termorregulador (aislante térmico uso externo)",
-      "Antiinflamatorio leve (en baños)",
-      "Relajante muscular (hidroterapia)"
-    ],
-    "partesUtiles": [
-      "Tallos y hojas secas"
-    ],
-    "esenciasFlorales": [
-      "Sentido de comunidad",
-      "Humildad y servicio",
-      "Sostén de la red de la vida"
-    ],
-    "correspondenciasEnergeticas": [
-      "Manto protector de la Madre Tierra",
-      "Retención de la memoria del agua",
-      "Acumulación pasiva de energía solar"
-    ],
-    "malesEmocionales": [
-      "Individualismo exacerbado",
-      "Aislamiento emocional",
-      "Sentimiento de insignificancia"
-    ],
-    "malesFisicos": [
-      "Enfriamiento corporal agudo",
-      "Espasmos musculares por frío",
-      "Dolores articulares generalizados"
-    ],
-    "taxon": {
-      "dominio": "Eukaryota",
-      "reino": "Plantae",
-      "filo": "Tracheophyta",
-      "clase": "Liliopsida",
-      "orden": "Poales",
-      "familia": "Poaceae",
-      "genero": "Calamagrostis",
-      "especie": "effusa",
-      "clados": [
-        "Angiospermas",
-        "Monocotiledóneas",
-        "Comelínidas"
-      ]
-    },
-    "preparaciones": [
-      {
-        "usoTerapeutico": "Para reactivar el calor corporal, relajar músculos tensos por el frío y aliviar dolores generalizados",
-        "formaDeAplicacion": "Realizar un baño de inmersión caliente (hidroterapia andina) durante 15-20 minutos.",
-        "ingredientes": [
-          {
-            "ingrediente": "Manojo grande de paja de páramo seca",
-            "cantidad": "500 gramos"
-          },
-          {
-            "ingrediente": "Agua",
-            "cantidad": "5 litros (para preparar concentrado)"
-          }
-        ],
-        "pasos": [
-          [
-            1,
-            "Lavar la paja para retirar tierra superficial."
-          ],
-          [
-            2,
-            "Hervir los 5 litros de agua en una olla grande."
-          ],
-          [
-            3,
-            "Introducir la paja y dejar hervir a fuego fuerte durante 20 minutos para extraer sus sílices y aceites suaves."
-          ],
-          [
-            4,
-            "Verter la decocción (con todo y pajas si se desea) en una tina con agua caliente suficiente para inmersión."
-          ],
-          [
-            5,
-            "Sumergirse en el baño termal artesanal hasta que el cuerpo recupere su temperatura natural."
-          ]
-        ]
-      }
-    ],
-    "chakrasAsociados": [
-      {
-        "nombre": "Chakra Raíz",
-        "nombreSanscrito": "Muladhara",
-        "ubicacion": "Base de la columna vertebral (coxis)",
-        "color": "Rojo",
-        "significado": "Supervivencia, seguridad, arraigo"
-      }
-    ],
-    "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Feminine"
     ]
   },
   {
@@ -4304,216 +4517,110 @@
     }
   },
   {
-    "nombreCientifico": "Halenia asclepiadea",
-    "imageUrl": "https://www.google.com/search?q=Halenia+asclepiadea&tbm=isch",
+    "nombreCientifico": "Espeletia argentea",
+    "imageUrl": "https://www.google.com/search?q=Espeletia+argentea&tbm=isch",
     "nombresComunes": [
-      "Cachitos",
-      "Flor de cuernos"
+      "Frailejón plateado",
+      "Frailejón blanco"
     ],
     "propiedadesMedicinales": [
-      "Tónico amargo intenso",
-      "Colagogo (estimula la liberación de bilis)",
-      "Digestivo estomacal",
-      "Estimulante del apetito"
+      "Antiinflamatorio respiratorio",
+      "Antitusivo",
+      "Expectorante",
+      "Cicatrizante"
     ],
     "partesUtiles": [
-      "Flores",
-      "Hojas superiores"
+      "Hojas secas",
+      "Resina",
+      "Pelusa (pubescencia)"
     ],
     "esenciasFlorales": [
-      "Digestión de la amargura de la vida",
-      "Apertura a la magia y al asombro",
-      "Canalización de energías sutiles"
+      "Purificación del campo astral",
+      "Elevación de la conciencia",
+      "Claridad en el propósito de vida"
     ],
     "correspondenciasEnergeticas": [
-      "Geometría sagrada (forma de sus espolones)",
-      "Receptáculos de rocío cósmico",
-      "Sintonización con frecuencias celestiales"
+      "Conexión lunar (por su color plateado)",
+      "Elemento Agua",
+      "Símbolo de sabiduría antigua y contemplación"
     ],
     "malesEmocionales": [
-      "Resentimiento crónico",
-      "Amargura emocional proyectada hacia otros",
-      "Pérdida de la capacidad de asombro"
+      "Confusión existencial",
+      "Falta de claridad vital",
+      "Pesadez energética o contaminación psíquica"
     ],
     "malesFisicos": [
-      "Indigestión crónica y pesadez",
-      "Hígado perezoso",
-      "Falta de apetito (anorexia temporal)",
-      "Dificultad para digerir grasas"
+      "Afecciones pulmonares",
+      "Asma",
+      "Tos crónica",
+      "Dolores articulares por frío interno"
     ],
     "taxon": {
       "dominio": "Eukaryota",
       "reino": "Plantae",
       "filo": "Tracheophyta",
       "clase": "Magnoliopsida",
-      "orden": "Gentianales",
-      "familia": "Gentianaceae",
-      "genero": "Halenia",
-      "especie": "asclepiadea",
+      "orden": "Asterales",
+      "familia": "Asteraceae",
+      "genero": "Espeletia",
+      "especie": "argentea",
       "clados": [
         "Angiospermas",
         "Eudicotiledóneas",
         "Astéridas",
-        "Lamíidas"
+        "Campanúlidas"
       ]
     },
     "preparaciones": [
       {
-        "usoTerapeutico": "Para activar los jugos gástricos, estimular el apetito y vaciar la vesícula biliar antes de comer",
-        "formaDeAplicacion": "Beber media taza de infusión 15 minutos antes de la comida principal.",
+        "usoTerapeutico": "Para calmar la tos crónica y desinflamar vías respiratorias en climas fríos",
+        "formaDeAplicacion": "Tomar 1 taza de decocción caliente 2 veces al día.",
         "ingredientes": [
           {
-            "ingrediente": "Flores secas y hojas de cachitos",
-            "cantidad": "1 cucharadita (2g)"
+            "ingrediente": "Hojas secas de frailejón plateado",
+            "cantidad": "10 gramos"
           },
           {
-            "ingrediente": "Agua hirviendo",
-            "cantidad": "150 ml"
+            "ingrediente": "Agua purificada",
+            "cantidad": "500 ml"
           }
         ],
         "pasos": [
           [
             1,
-            "Colocar la planta seca en una taza pequeña."
+            "Llevar el agua a punto de ebullición."
           ],
           [
             2,
-            "Verter el agua caliente."
+            "Añadir las hojas (nunca verdes, siempre las secas de la base) y cocinar a fuego lento 5 minutos."
           ],
           [
             3,
-            "Tapar y dejar reposar brevemente, solo entre 3 a 5 minutos (es extremadamente amarga)."
+            "Apagar el fuego, tapar y dejar reposar 10 minutos."
           ],
           [
             4,
-            "Colar la bebida."
+            "Filtrar la infusión muy bien, preferiblemente con un colador de tela fina para retirar los pelos microscópicos de la planta."
           ],
           [
             5,
-            "Tomar a pequeños sorbos. NUNCA endulzar, ya que el sabor amargo en la lengua es el que desencadena el reflejo digestivo y hepático."
+            "Beber la preparación lo más caliente que se tolere."
           ]
         ]
       }
     ],
     "chakrasAsociados": [
       {
-        "nombre": "Chakra Corona",
-        "nombreSanscrito": "Sahasrara",
-        "ubicacion": "Parte superior de la cabeza",
-        "color": "Blanco o violeta",
-        "significado": "Espiritualidad, conexión con lo divino, sabiduría"
+        "nombre": "Chakra del Tercer Ojo",
+        "nombreSanscrito": "Ajna",
+        "ubicacion": "Entrecejo",
+        "color": "Índigo",
+        "significado": "Intuición, percepción espiritual, claridad mental"
       }
     ],
-    "elementosAsociados": "Aire",
+    "elementosAsociados": "Agua",
     "polaridadEnergetica": [
       "Feminine"
-    ]
-  },
-  {
-    "nombreCientifico": "Hesperomeles goudotiana",
-    "imageUrl": "https://www.google.com/search?q=Hesperomeles+goudotiana&tbm=isch",
-    "nombresComunes": [
-      "Cerote",
-      "Mortiño (en algunas zonas de Cundinamarca)",
-      "Manzano de páramo"
-    ],
-    "propiedadesMedicinales": [
-      "Antidiarreico",
-      "Astringente",
-      "Antioxidante nutritivo",
-      "Tónico capilar (raíz)"
-    ],
-    "partesUtiles": [
-      "Frutos (pequeñas drupas)",
-      "Hojas"
-    ],
-    "esenciasFlorales": [
-      "Nutrición afectiva",
-      "Firmeza y enraizamiento",
-      "Fortaleza para sostener proyectos a largo plazo"
-    ],
-    "correspondenciasEnergeticas": [
-      "Alimento de supervivencia andina",
-      "Resistencia y longevidad",
-      "Madera dura, voluntad de hierro"
-    ],
-    "malesEmocionales": [
-      "Debilidad de carácter",
-      "Desnutrición espiritual o falta de propósito",
-      "Inestabilidad emocional"
-    ],
-    "malesFisicos": [
-      "Diarreas crónicas o disentería",
-      "Fatiga y falta de vitalidad",
-      "Caída del cabello (uso tópico)",
-      "Afecciones estomacales"
-    ],
-    "taxon": {
-      "dominio": "Eukaryota",
-      "reino": "Plantae",
-      "filo": "Tracheophyta",
-      "clase": "Magnoliopsida",
-      "orden": "Rosales",
-      "familia": "Rosaceae",
-      "genero": "Hesperomeles",
-      "especie": "goudotiana",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
-    },
-    "preparaciones": [
-      {
-        "usoTerapeutico": "Para detener cuadros de diarrea y regularizar la mucosa intestinal",
-        "formaDeAplicacion": "Tomar 1 taza de decocción de hojas y frutos 3 veces al día hasta que cesen los síntomas.",
-        "ingredientes": [
-          {
-            "ingrediente": "Hojas de cerote y algunos frutos secos",
-            "cantidad": "1 cucharada colmada"
-          },
-          {
-            "ingrediente": "Agua",
-            "cantidad": "300 ml"
-          }
-        ],
-        "pasos": [
-          [
-            1,
-            "Lavar los frutos y las hojas gruesas del cerote."
-          ],
-          [
-            2,
-            "Colocarlos en el agua fría en una olla pequeña."
-          ],
-          [
-            3,
-            "Llevar a punto de ebullición y dejar hervir a fuego medio por 10 a 15 minutos."
-          ],
-          [
-            4,
-            "Retirar del fuego y dejar enfriar hasta que esté tibio."
-          ],
-          [
-            5,
-            "Colar presionando los frutos para extraer sus taninos, y beber el líquido astringente."
-          ]
-        ]
-      }
-    ],
-    "chakrasAsociados": [
-      {
-        "nombre": "Chakra Raíz",
-        "nombreSanscrito": "Muladhara",
-        "ubicacion": "Base de la columna vertebral (coxis)",
-        "color": "Rojo",
-        "significado": "Supervivencia, seguridad, arraigo"
-      }
-    ],
-    "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Masculine"
     ]
   },
   {
@@ -4622,113 +4729,6 @@
     "elementosAsociados": "Fuego",
     "polaridadEnergetica": [
       "Masculine"
-    ]
-  },
-  {
-    "nombreCientifico": "Espeletia argentea",
-    "imageUrl": "https://www.google.com/search?q=Espeletia+argentea&tbm=isch",
-    "nombresComunes": [
-      "Frailejón plateado",
-      "Frailejón blanco"
-    ],
-    "propiedadesMedicinales": [
-      "Antiinflamatorio respiratorio",
-      "Antitusivo",
-      "Expectorante",
-      "Cicatrizante"
-    ],
-    "partesUtiles": [
-      "Hojas secas",
-      "Resina",
-      "Pelusa (pubescencia)"
-    ],
-    "esenciasFlorales": [
-      "Purificación del campo astral",
-      "Elevación de la conciencia",
-      "Claridad en el propósito de vida"
-    ],
-    "correspondenciasEnergeticas": [
-      "Conexión lunar (por su color plateado)",
-      "Elemento Agua",
-      "Símbolo de sabiduría antigua y contemplación"
-    ],
-    "malesEmocionales": [
-      "Confusión existencial",
-      "Falta de claridad vital",
-      "Pesadez energética o contaminación psíquica"
-    ],
-    "malesFisicos": [
-      "Afecciones pulmonares",
-      "Asma",
-      "Tos crónica",
-      "Dolores articulares por frío interno"
-    ],
-    "taxon": {
-      "dominio": "Eukaryota",
-      "reino": "Plantae",
-      "filo": "Tracheophyta",
-      "clase": "Magnoliopsida",
-      "orden": "Asterales",
-      "familia": "Asteraceae",
-      "genero": "Espeletia",
-      "especie": "argentea",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas",
-        "Campanúlidas"
-      ]
-    },
-    "preparaciones": [
-      {
-        "usoTerapeutico": "Para calmar la tos crónica y desinflamar vías respiratorias en climas fríos",
-        "formaDeAplicacion": "Tomar 1 taza de decocción caliente 2 veces al día.",
-        "ingredientes": [
-          {
-            "ingrediente": "Hojas secas de frailejón plateado",
-            "cantidad": "10 gramos"
-          },
-          {
-            "ingrediente": "Agua purificada",
-            "cantidad": "500 ml"
-          }
-        ],
-        "pasos": [
-          [
-            1,
-            "Llevar el agua a punto de ebullición."
-          ],
-          [
-            2,
-            "Añadir las hojas (nunca verdes, siempre las secas de la base) y cocinar a fuego lento 5 minutos."
-          ],
-          [
-            3,
-            "Apagar el fuego, tapar y dejar reposar 10 minutos."
-          ],
-          [
-            4,
-            "Filtrar la infusión muy bien, preferiblemente con un colador de tela fina para retirar los pelos microscópicos de la planta."
-          ],
-          [
-            5,
-            "Beber la preparación lo más caliente que se tolere."
-          ]
-        ]
-      }
-    ],
-    "chakrasAsociados": [
-      {
-        "nombre": "Chakra del Tercer Ojo",
-        "nombreSanscrito": "Ajna",
-        "ubicacion": "Entrecejo",
-        "color": "Índigo",
-        "significado": "Intuición, percepción espiritual, claridad mental"
-      }
-    ],
-    "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Feminine"
     ]
   },
   {
@@ -4944,105 +4944,6 @@
     ]
   },
   {
-    "nombreCientifico": "Puya goudotiana",
-    "imageUrl": "https://www.google.com/search?q=Puya+goudotiana&tbm=isch",
-    "nombresComunes": [
-      "Cardón",
-      "Puya",
-      "Piñuela de páramo"
-    ],
-    "propiedadesMedicinales": [
-      "Antiinflamatorio tópico",
-      "Emoliente",
-      "Cicatrizante"
-    ],
-    "partesUtiles": [
-      "Base carnosa de las hojas (médula blanca)"
-    ],
-    "esenciasFlorales": [
-      "Defensa de la propia vulnerabilidad",
-      "Fuerza para sostener el espacio vital",
-      "Coraje ante la intimidación"
-    ],
-    "correspondenciasEnergeticas": [
-      "Protector de las aguas subterráneas",
-      "Escudo astral espinoso",
-      "Símbolo de resistencia inquebrantable en ambientes áridos y fríos"
-    ],
-    "malesEmocionales": [
-      "Miedo a ser invadido emocionalmente",
-      "Debilidad o sumisión ante figuras de autoridad",
-      "Sentimiento de desprotección e indefensión"
-    ],
-    "malesFisicos": [
-      "Inflamaciones articulares locales",
-      "Quemaduras leves (como sustituto de sábila)",
-      "Golpes y hematomas"
-    ],
-    "taxon": {
-      "dominio": "Eukaryota",
-      "reino": "Plantae",
-      "filo": "Tracheophyta",
-      "clase": "Liliopsida",
-      "orden": "Poales",
-      "familia": "Bromeliaceae",
-      "genero": "Puya",
-      "especie": "goudotiana",
-      "clados": [
-        "Angiospermas",
-        "Monocotiledóneas",
-        "Comelínidas"
-      ]
-    },
-    "preparaciones": [
-      {
-        "usoTerapeutico": "Para refrescar y desinflamar quemaduras leves, roces o golpes cerrados",
-        "formaDeAplicacion": "Aplicar la pulpa fresca y fría sobre la zona afectada a modo de cataplasma.",
-        "ingredientes": [
-          {
-            "ingrediente": "Bases carnosas de las hojas de puya",
-            "cantidad": "3 o 4 piezas de hojas anchas"
-          }
-        ],
-        "pasos": [
-          [
-            1,
-            "Con guantes protectores, cortar las bases de las hojas evitando las espinas de los bordes."
-          ],
-          [
-            2,
-            "Retirar la cutícula dura exterior con un cuchillo limpio."
-          ],
-          [
-            3,
-            "Extraer la pulpa o gel interior, que tiene una textura muy mucilaginosa."
-          ],
-          [
-            4,
-            "Macerar o triturar un poco la pulpa blanca hasta lograr una consistencia manejable."
-          ],
-          [
-            5,
-            "Colocar directamente sobre el golpe o la quemadura y fijar con un vendaje ligero."
-          ]
-        ]
-      }
-    ],
-    "chakrasAsociados": [
-      {
-        "nombre": "Chakra Raíz",
-        "nombreSanscrito": "Muladhara",
-        "ubicacion": "Base de la columna vertebral (coxis)",
-        "color": "Rojo",
-        "significado": "Supervivencia, seguridad, arraigo"
-      }
-    ],
-    "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
-  },
-  {
     "nombreCientifico": "Lupinus alopecuroides",
     "imageUrl": "https://www.google.com/search?q=Lupinus+alopecuroides&tbm=isch",
     "nombresComunes": [
@@ -5142,6 +5043,105 @@
       }
     ],
     "elementosAsociados": "Fuego",
+    "polaridadEnergetica": [
+      "Masculine"
+    ]
+  },
+  {
+    "nombreCientifico": "Puya goudotiana",
+    "imageUrl": "https://www.google.com/search?q=Puya+goudotiana&tbm=isch",
+    "nombresComunes": [
+      "Cardón",
+      "Puya",
+      "Piñuela de páramo"
+    ],
+    "propiedadesMedicinales": [
+      "Antiinflamatorio tópico",
+      "Emoliente",
+      "Cicatrizante"
+    ],
+    "partesUtiles": [
+      "Base carnosa de las hojas (médula blanca)"
+    ],
+    "esenciasFlorales": [
+      "Defensa de la propia vulnerabilidad",
+      "Fuerza para sostener el espacio vital",
+      "Coraje ante la intimidación"
+    ],
+    "correspondenciasEnergeticas": [
+      "Protector de las aguas subterráneas",
+      "Escudo astral espinoso",
+      "Símbolo de resistencia inquebrantable en ambientes áridos y fríos"
+    ],
+    "malesEmocionales": [
+      "Miedo a ser invadido emocionalmente",
+      "Debilidad o sumisión ante figuras de autoridad",
+      "Sentimiento de desprotección e indefensión"
+    ],
+    "malesFisicos": [
+      "Inflamaciones articulares locales",
+      "Quemaduras leves (como sustituto de sábila)",
+      "Golpes y hematomas"
+    ],
+    "taxon": {
+      "dominio": "Eukaryota",
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "clase": "Liliopsida",
+      "orden": "Poales",
+      "familia": "Bromeliaceae",
+      "genero": "Puya",
+      "especie": "goudotiana",
+      "clados": [
+        "Angiospermas",
+        "Monocotiledóneas",
+        "Comelínidas"
+      ]
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "Para refrescar y desinflamar quemaduras leves, roces o golpes cerrados",
+        "formaDeAplicacion": "Aplicar la pulpa fresca y fría sobre la zona afectada a modo de cataplasma.",
+        "ingredientes": [
+          {
+            "ingrediente": "Bases carnosas de las hojas de puya",
+            "cantidad": "3 o 4 piezas de hojas anchas"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "Con guantes protectores, cortar las bases de las hojas evitando las espinas de los bordes."
+          ],
+          [
+            2,
+            "Retirar la cutícula dura exterior con un cuchillo limpio."
+          ],
+          [
+            3,
+            "Extraer la pulpa o gel interior, que tiene una textura muy mucilaginosa."
+          ],
+          [
+            4,
+            "Macerar o triturar un poco la pulpa blanca hasta lograr una consistencia manejable."
+          ],
+          [
+            5,
+            "Colocar directamente sobre el golpe o la quemadura y fijar con un vendaje ligero."
+          ]
+        ]
+      }
+    ],
+    "chakrasAsociados": [
+      {
+        "nombre": "Chakra Raíz",
+        "nombreSanscrito": "Muladhara",
+        "ubicacion": "Base de la columna vertebral (coxis)",
+        "color": "Rojo",
+        "significado": "Supervivencia, seguridad, arraigo"
+      }
+    ],
+    "elementosAsociados": "Agua",
     "polaridadEnergetica": [
       "Masculine"
     ]
@@ -6415,114 +6415,6 @@
     ]
   },
   {
-    "nombreCientifico": "Passiflora bogotensis",
-    "imageUrl": "https://www.google.com/search?q=Passiflora+bogotensis&tbm=isch",
-    "nombresComunes": [
-      "Curuba de monte",
-      "Curuba silvestre"
-    ],
-    "propiedadesMedicinales": [
-      "Sedante fuerte",
-      "Ansiolítico",
-      "Antiespasmódico",
-      "Hipotensor leve"
-    ],
-    "partesUtiles": [
-      "Hojas",
-      "Zarcillos",
-      "Flores"
-    ],
-    "esenciasFlorales": [
-      "Paz espiritual absoluta",
-      "Trascendencia del sufrimiento",
-      "Calma para el agotamiento nervioso extremo"
-    ],
-    "correspondenciasEnergeticas": [
-      "Geometría sagrada (flor de la pasión)",
-      "Conexión crística y compasión",
-      "Apertura del chakra corona"
-    ],
-    "malesEmocionales": [
-      "Insomnio severo",
-      "Ataques de pánico nocturnos",
-      "Agotamiento por hipervigilancia",
-      "Nerviosismo crónico"
-    ],
-    "malesFisicos": [
-      "Insomnio de conciliación y mantenimiento",
-      "Palpitaciones nerviosas",
-      "Espasmos gastrointestinales por estrés",
-      "Hipertensión ligada a ansiedad"
-    ],
-    "taxon": {
-      "dominio": "Eukaryota",
-      "reino": "Plantae",
-      "filo": "Tracheophyta",
-      "clase": "Magnoliopsida",
-      "orden": "Malpighiales",
-      "familia": "Passifloraceae",
-      "genero": "Passiflora",
-      "especie": "bogotensis",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
-    },
-    "preparaciones": [
-      {
-        "usoTerapeutico": "Para inducir un sueño profundo, combatir el insomnio crónico y apaciguar ataques de ansiedad",
-        "formaDeAplicacion": "Beber 1 taza de infusión concentrada 45 minutos antes de dormir.",
-        "ingredientes": [
-          {
-            "ingrediente": "Hojas, flores y zarcillos secos de curuba de monte",
-            "cantidad": "10 gramos"
-          },
-          {
-            "ingrediente": "Agua hirviendo",
-            "cantidad": "250 ml"
-          }
-        ],
-        "pasos": [
-          [
-            1,
-            "Colocar la planta seca y troceada en una tetera."
-          ],
-          [
-            2,
-            "Añadir el agua hirviendo inmediatamente."
-          ],
-          [
-            3,
-            "Tapar y dejar reposar durante 15 minutos para extraer los alcaloides y flavonoides sedantes."
-          ],
-          [
-            4,
-            "Colar finamente."
-          ],
-          [
-            5,
-            "Beber en sorbos lentos en un ambiente ya oscuro y relajado."
-          ]
-        ]
-      }
-    ],
-    "chakrasAsociados": [
-      {
-        "nombre": "Chakra Corona",
-        "nombreSanscrito": "Sahasrara",
-        "ubicacion": "Parte superior de la cabeza",
-        "color": "Blanco o violeta",
-        "significado": "Espiritualidad, conexión con lo divino, sabiduría"
-      }
-    ],
-    "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
-  },
-  {
     "nombreCientifico": "Mutisia clematis",
     "imageUrl": "https://www.google.com/search?q=Mutisia+clematis&tbm=isch",
     "nombresComunes": [
@@ -6734,6 +6626,114 @@
       }
     ],
     "elementosAsociados": "Metal",
+    "polaridadEnergetica": [
+      "Feminine"
+    ]
+  },
+  {
+    "nombreCientifico": "Passiflora bogotensis",
+    "imageUrl": "https://www.google.com/search?q=Passiflora+bogotensis&tbm=isch",
+    "nombresComunes": [
+      "Curuba de monte",
+      "Curuba silvestre"
+    ],
+    "propiedadesMedicinales": [
+      "Sedante fuerte",
+      "Ansiolítico",
+      "Antiespasmódico",
+      "Hipotensor leve"
+    ],
+    "partesUtiles": [
+      "Hojas",
+      "Zarcillos",
+      "Flores"
+    ],
+    "esenciasFlorales": [
+      "Paz espiritual absoluta",
+      "Trascendencia del sufrimiento",
+      "Calma para el agotamiento nervioso extremo"
+    ],
+    "correspondenciasEnergeticas": [
+      "Geometría sagrada (flor de la pasión)",
+      "Conexión crística y compasión",
+      "Apertura del chakra corona"
+    ],
+    "malesEmocionales": [
+      "Insomnio severo",
+      "Ataques de pánico nocturnos",
+      "Agotamiento por hipervigilancia",
+      "Nerviosismo crónico"
+    ],
+    "malesFisicos": [
+      "Insomnio de conciliación y mantenimiento",
+      "Palpitaciones nerviosas",
+      "Espasmos gastrointestinales por estrés",
+      "Hipertensión ligada a ansiedad"
+    ],
+    "taxon": {
+      "dominio": "Eukaryota",
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "clase": "Magnoliopsida",
+      "orden": "Malpighiales",
+      "familia": "Passifloraceae",
+      "genero": "Passiflora",
+      "especie": "bogotensis",
+      "clados": [
+        "Angiospermas",
+        "Eudicotiledóneas",
+        "Rósidas",
+        "Eurosidas I"
+      ]
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "Para inducir un sueño profundo, combatir el insomnio crónico y apaciguar ataques de ansiedad",
+        "formaDeAplicacion": "Beber 1 taza de infusión concentrada 45 minutos antes de dormir.",
+        "ingredientes": [
+          {
+            "ingrediente": "Hojas, flores y zarcillos secos de curuba de monte",
+            "cantidad": "10 gramos"
+          },
+          {
+            "ingrediente": "Agua hirviendo",
+            "cantidad": "250 ml"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "Colocar la planta seca y troceada en una tetera."
+          ],
+          [
+            2,
+            "Añadir el agua hirviendo inmediatamente."
+          ],
+          [
+            3,
+            "Tapar y dejar reposar durante 15 minutos para extraer los alcaloides y flavonoides sedantes."
+          ],
+          [
+            4,
+            "Colar finamente."
+          ],
+          [
+            5,
+            "Beber en sorbos lentos en un ambiente ya oscuro y relajado."
+          ]
+        ]
+      }
+    ],
+    "chakrasAsociados": [
+      {
+        "nombre": "Chakra Corona",
+        "nombreSanscrito": "Sahasrara",
+        "ubicacion": "Parte superior de la cabeza",
+        "color": "Blanco o violeta",
+        "significado": "Espiritualidad, conexión con lo divino, sabiduría"
+      }
+    ],
+    "elementosAsociados": "Agua",
     "polaridadEnergetica": [
       "Feminine"
     ]
@@ -7045,103 +7045,209 @@
     ]
   },
   {
-    "nombreCientifico": "Hypericum goyanesii",
-    "imageUrl": "https://www.google.com/search?q=Hypericum+goyanesii&tbm=isch",
+    "nombreCientifico": "Myroxylon balsamum",
+    "imageUrl": "https://www.google.com/search?q=Myroxylon+balsamum&tbm=isch",
     "nombresComunes": [
-      "Chite",
-      "San Juanito de páramo"
+      "Bálsamo de Tolú",
+      "Tolu"
     ],
     "propiedadesMedicinales": [
-      "Antidepresivo",
-      "Vulnerario (excelente cicatrizante)",
-      "Antiespasmódico",
-      "Antiséptico"
+      "Expectorante profundo",
+      "Antiséptico pulmonar y de vías urinarias",
+      "Cicatrizante"
     ],
     "partesUtiles": [
-      "Flores",
-      "Hojas"
+      "Resina oleosa (bálsamo)",
+      "Corteza"
     ],
     "esenciasFlorales": [
-      "Optimismo y vitalidad",
-      "Disuelve la melancolía profunda",
-      "Integra la luz en los procesos de sombra"
+      "Bálsamo para el dolor emocional",
+      "Suaviza el temperamento irritable",
+      "Consuelo en etapas de transición difíciles"
     ],
     "correspondenciasEnergeticas": [
-      "Rayo amarillo de sabiduría",
-      "Protección contra energías densas",
-      "Portador del fuego solar en el páramo"
+      "Sellado áurico (magia de resinas)",
+      "Atrae la dulzura a la vida",
+      "Elevación vibracional a través del aroma"
     ],
     "malesEmocionales": [
-      "Depresión clínica leve a moderada",
-      "Desesperanza",
-      "Tristeza sin causa aparente"
+      "Corazón endurecido por el dolor",
+      "Incapacidad para recibir afecto",
+      "Tristeza enquistada"
     ],
     "malesFisicos": [
-      "Heridas e incisiones quirúrgicas (para cicatrizar sin marca)",
-      "Quemaduras solares",
-      "Neuralgias"
+      "Bronquitis aguda y crónica",
+      "Tos productiva resistente",
+      "Heridas infectadas",
+      "Cistitis"
     ],
     "taxon": {
       "dominio": "Eukaryota",
       "reino": "Plantae",
       "filo": "Tracheophyta",
       "clase": "Magnoliopsida",
-      "orden": "Malpighiales",
-      "familia": "Hypericaceae",
-      "genero": "Hypericum",
-      "especie": "goyanesii",
+      "orden": "Fabales",
+      "familia": "Fabaceae",
+      "genero": "Myroxylon",
+      "especie": "balsamum",
       "clados": [
         "Angiospermas",
         "Eudicotiledóneas",
         "Rósidas",
-        "Eurosidas I"
+        "Fábidas"
       ]
     },
     "preparaciones": [
       {
-        "usoTerapeutico": "Para aliviar estados depresivos leves y calmar los nervios",
-        "formaDeAplicacion": "Beber 1 taza de infusión en la mañana y otra en la tarde (evitar exposición solar intensa durante su uso prolongado).",
+        "usoTerapeutico": "Para expulsar flemas endurecidas, calmar la tos y desinfectar las vías respiratorias",
+        "formaDeAplicacion": "Tomar en forma de jarabe o inhalar los vapores de la resina fundida en agua.",
         "ingredientes": [
           {
-            "ingrediente": "Sumidades floridas secas de chite",
-            "cantidad": "1 cucharadita (3 gramos)"
+            "ingrediente": "Resina de Bálsamo de Tolú pura",
+            "cantidad": "10 gramos"
           },
           {
             "ingrediente": "Agua hirviendo",
-            "cantidad": "250 ml"
+            "cantidad": "1 litro (para vahos)"
           }
         ],
         "pasos": [
           [
             1,
-            "Colocar las flores secas en una taza."
+            "Para inhalaciones: Hervir el litro de agua."
           ],
           [
             2,
-            "Verter el agua recién hervida sobre las flores."
+            "Retirar del fuego y disolver la resina en el agua caliente."
           ],
           [
             3,
-            "Tapar y dejar en infusión por 8 minutos."
+            "Cubrir la cabeza con una toalla e inhalar profundamente los vapores aromáticos por 15 minutos."
           ],
           [
             4,
-            "Colar para retirar los restos de la planta."
+            "Para uso oral: Mezclar 1 gramo de resina con una cucharada de miel pura de abejas."
           ],
           [
             5,
-            "Consumir tibio. Precaución: puede interactuar con medicamentos antidepresivos convencionales."
+            "Tomar la mezcla lentamente permitiendo que recubra la garganta, máximo 2 veces al día."
           ]
         ]
       }
     ],
     "chakrasAsociados": [
       {
-        "nombre": "Chakra del Plexo Solar",
-        "nombreSanscrito": "Manipura",
-        "ubicacion": "Entre el diafragma y el ombligo",
-        "color": "Amarillo",
-        "significado": "Poder personal, autoestima, fuerza de voluntad"
+        "nombre": "Chakra del Corazón",
+        "nombreSanscrito": "Anahata",
+        "ubicacion": "Centro del pecho",
+        "color": "Verde o rosa",
+        "significado": "Amor, compasión, relaciones"
+      }
+    ],
+    "elementosAsociados": "Tierra",
+    "polaridadEnergetica": [
+      "Feminine"
+    ]
+  },
+  {
+    "nombreCientifico": "Cinchona pitayensis",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_DbbHfEv0nQGU07Ml3PmBfVorT8FS_8dZ7w&s",
+    "nombresComunes": [
+      "Quina andina",
+      "Quina del Cauca",
+      "Cascarilla"
+    ],
+    "propiedadesMedicinales": [
+      "Antipalúdico (cura la malaria por su contenido de quinina)",
+      "Antipirético potente (baja la fiebre)",
+      "Analgésico",
+      "Tónico amargo digestivo"
+    ],
+    "partesUtiles": [
+      "Corteza"
+    ],
+    "esenciasFlorales": [
+      "Restauración del orden mental ante el caos",
+      "Ayuda a asimilar lecciones kármicas repetitivas",
+      "Vitalidad ante el decaimiento absoluto"
+    ],
+    "correspondenciasEnergeticas": [
+      "Limpieza de parásitos astrales",
+      "Árbol de la salvación (históricamente salvó millones de vidas)",
+      "Elemento Fuego (quema la enfermedad)"
+    ],
+    "malesEmocionales": [
+      "Pensamientos circulares y obsesivos (como fiebre mental)",
+      "Agotamiento psíquico por ataque energético",
+      "Miedos cíclicos o terrores nocturnos"
+    ],
+    "malesFisicos": [
+      "Malaria (paludismo)",
+      "Fiebres altas recurrentes",
+      "Calambres musculares nocturnos",
+      "Debilidad extrema"
+    ],
+    "taxon": {
+      "dominio": "Eukaryota",
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "clase": "Magnoliopsida",
+      "orden": "Gentianales",
+      "familia": "Rubiaceae",
+      "genero": "Cinchona",
+      "especie": "pitayensis",
+      "clados": [
+        "Angiospermas",
+        "Eudicotiledóneas",
+        "Astéridas",
+        "Lamíidas"
+      ]
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "Para reducir fiebres persistentes, combatir debilidad profunda y como tónico amargo",
+        "formaDeAplicacion": "Beber media taza de la decocción fría antes de las comidas.",
+        "ingredientes": [
+          {
+            "ingrediente": "Corteza seca y triturada de Quina",
+            "cantidad": "5 gramos"
+          },
+          {
+            "ingrediente": "Agua",
+            "cantidad": "500 ml"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "Lavar la corteza y molerla hasta obtener un polvo grueso."
+          ],
+          [
+            2,
+            "Colocar en el agua fría y llevar a fuego."
+          ],
+          [
+            3,
+            "Hervir lentamente por 20 minutos para extraer los alcaloides amargos."
+          ],
+          [
+            4,
+            "Retirar, dejar reposar hasta que se enfríe y colar cuidadosamente."
+          ],
+          [
+            5,
+            "Tomar en pequeñas dosis (es extremadamente amarga). No consumir en embarazo ni en dosis altas prolongadas."
+          ]
+        ]
+      }
+    ],
+    "chakrasAsociados": [
+      {
+        "nombre": "Chakra Raíz",
+        "nombreSanscrito": "Muladhara",
+        "ubicacion": "Base de la columna vertebral (coxis)",
+        "color": "Rojo",
+        "significado": "Supervivencia, seguridad, arraigo"
       }
     ],
     "elementosAsociados": "Fuego",
@@ -7150,194 +7256,88 @@
     ]
   },
   {
-    "nombreCientifico": "Buddleja bullata",
-    "imageUrl": "https://catalogofloraaltamontana.eia.edu.co/storage/images/c199f76b5ad7c2770410a632ecbf660b0cf036bd.jpg",
+    "nombreCientifico": "Bocconia frutescens",
+    "imageUrl": "https://catalogofloravalleaburra.eia.edu.co/storage/images/73a84cd87cb3775d88d70f95c11adb6aa0d0c60f.jpg",
     "nombresComunes": [
-      "Salvia de Páramo",
-      "Lengua de vaca"
+      "Trompeto",
+      "Siete camisas",
+      "Celidonia andina"
     ],
     "propiedadesMedicinales": [
-      "Vulnerario (lava y sella heridas)",
-      "Antiinflamatorio tópico",
-      "Febrífugo (en baños)"
+      "Queratolítico (destruye verrugas y callos)",
+      "Cicatrizante externo",
+      "Antiséptico potente",
+      "Antimicrobiano tópico"
     ],
     "partesUtiles": [
+      "Látex anaranjado/amarillo",
       "Hojas"
     ],
     "esenciasFlorales": [
-      "Comunicación pacífica",
-      "Enfriamiento de la ira",
-      "Consuelo en la soledad extrema"
+      "Desprendimiento de viejas estructuras",
+      "Renovación de la perspectiva",
+      "Liberación de creencias limitantes incrustadas"
     ],
     "correspondenciasEnergeticas": [
-      "Limpieza de miasmas (energías residuales en espacios)",
-      "Baños de despojo",
-      "Equilibrio térmico espiritual"
+      "Fuego corrosivo que purifica",
+      "Magia de destierro de entidades menores",
+      "Transmutación (color alquímico de su savia)"
     ],
     "malesEmocionales": [
-      "Ira ardiente",
-      "Frustración desbordada",
-      "Dificultad para perdonar ofensas"
+      "Ideas fijas y prejuicios (callosidades mentales)",
+      "Resistencia extrema a cambiar de opinión",
+      "Aferramiento a relaciones dolorosas"
     ],
     "malesFisicos": [
-      "Fiebre alta",
-      "Heridas infectadas",
-      "Hinchazón por golpes"
+      "Verrugas persistentes (papilomas)",
+      "Callosidades dolorosas",
+      "Úlceras cutáneas",
+      "Infecciones en la piel"
     ],
     "taxon": {
       "dominio": "Eukaryota",
       "reino": "Plantae",
       "filo": "Tracheophyta",
       "clase": "Magnoliopsida",
-      "orden": "Lamiales",
-      "familia": "Scrophulariaceae",
-      "genero": "Buddleja",
-      "especie": "bullata",
+      "orden": "Ranunculales",
+      "familia": "Papaveraceae",
+      "genero": "Bocconia",
+      "especie": "frutescens",
       "clados": [
         "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas"
+        "Eudicotiledóneas"
       ]
     },
     "preparaciones": [
       {
-        "usoTerapeutico": "Para lavar heridas sucias, desinfectar cortes y bajar la fiebre mediante baños",
-        "formaDeAplicacion": "Realizar lavados externos sobre la herida o aplicar como baño general para la fiebre.",
+        "usoTerapeutico": "Para erradicar verrugas y ablandar callosidades endurecidas (SOLO USO EXTERNO)",
+        "formaDeAplicacion": "Aplicar el látex directamente sobre la verruga 1 vez al día hasta que se seque y caiga.",
         "ingredientes": [
           {
-            "ingrediente": "Hojas frescas de salvia de páramo",
-            "cantidad": "30 gramos"
-          },
-          {
-            "ingrediente": "Agua",
-            "cantidad": "1 litro"
+            "ingrediente": "Látex fresco anaranjado del trompeto",
+            "cantidad": "1 o 2 gotas"
           }
         ],
         "pasos": [
           [
             1,
-            "Lavar las hojas, que suelen ser afelpadas."
+            "Quebrar una rama tierna, pedúnculo foliar o hacer una incisión en la corteza de la planta."
           ],
           [
             2,
-            "Hervir el agua e introducir las hojas trituradas."
+            "Recolectar las gotas de látex espeso y anaranjado que emergen casi de inmediato."
           ],
           [
             3,
-            "Dejar hervir por 10 minutos para una correcta extracción."
+            "Proteger la piel sana alrededor de la verruga o callo con un poco de vaselina."
           ],
           [
             4,
-            "Retirar del fuego y dejar enfriar a temperatura ambiente."
+            "Aplicar la gota de látex exclusivamente sobre el tejido anormal a tratar."
           ],
           [
             5,
-            "Filtrar el líquido y usar en compresas sobre la frente para fiebre o como lavado para desinfectar."
-          ]
-        ]
-      }
-    ],
-    "chakrasAsociados": [
-      {
-        "nombre": "Chakra de la Garganta",
-        "nombreSanscrito": "Vishuddha",
-        "ubicacion": "Garganta",
-        "color": "Azul claro",
-        "significado": "Comunicación, autenticidad, expresión verbal"
-      }
-    ],
-    "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
-  },
-  {
-    "nombreCientifico": "Hedyosmum bonplandianum",
-    "imageUrl": "https://www.google.com/search?q=Hedyosmum+bonplandianum&tbm=isch",
-    "nombresComunes": [
-      "Granizo",
-      "Silbador",
-      "Bebedero"
-    ],
-    "propiedadesMedicinales": [
-      "Antiespasmódico estomacal",
-      "Analgésico articular (planta caliente)",
-      "Diurético",
-      "Anticatarral"
-    ],
-    "partesUtiles": [
-      "Hojas (muy aromáticas)",
-      "Tallos tiernos"
-    ],
-    "esenciasFlorales": [
-      "Recuperación de la fluidez vital",
-      "Limpieza de miedos paralizantes",
-      "Vitalidad y chispa interna"
-    ],
-    "correspondenciasEnergeticas": [
-      "Planta sagrada de calor para sacar el frío del cuerpo (malos vientos)",
-      "Armonización de la dualidad frío/calor",
-      "Sahumerio aromático protector"
-    ],
-    "malesEmocionales": [
-      "Miedo escénico o parálisis por terror",
-      "Estancamiento vital",
-      "Melancolía asociada al clima frío"
-    ],
-    "malesFisicos": [
-      "Cólicos estomacales por frío",
-      "Dolor en las articulaciones (viento en los huesos)",
-      "Resfriados crónicos",
-      "Retención de líquidos"
-    ],
-    "taxon": {
-      "dominio": "Eukaryota",
-      "reino": "Plantae",
-      "filo": "Tracheophyta",
-      "clase": "Magnoliopsida",
-      "orden": "Chloranthales",
-      "familia": "Chloranthaceae",
-      "genero": "Hedyosmum",
-      "especie": "bonplandianum",
-      "clados": [
-        "Angiospermas",
-        "Magnolíidas"
-      ]
-    },
-    "preparaciones": [
-      {
-        "usoTerapeutico": "Para sacar el frío del cuerpo, aliviar el reumatismo articular y calmar cólicos estomacales",
-        "formaDeAplicacion": "Para el estómago: tomar 1 taza de infusión tibia. Para reumatismo: realizar frotaciones con la tintura.",
-        "ingredientes": [
-          {
-            "ingrediente": "Hojas frescas de granizo",
-            "cantidad": "10 gramos"
-          },
-          {
-            "ingrediente": "Agua hirviendo",
-            "cantidad": "300 ml"
-          }
-        ],
-        "pasos": [
-          [
-            1,
-            "Trozar las hojas aromáticas para exponer sus aceites esenciales."
-          ],
-          [
-            2,
-            "Colocar en un recipiente y verter el agua a punto de ebullición."
-          ],
-          [
-            3,
-            "Tapar herméticamente de inmediato para que los aromas no se evaporen."
-          ],
-          [
-            4,
-            "Infundir durante 10 minutos."
-          ],
-          [
-            5,
-            "Colar y beber lentamente después de las comidas."
+            "Dejar secar; el área se teñirá de un color oscuro. Repetir diariamente sin intentar arrancar la verruga a la fuerza."
           ]
         ]
       }
@@ -7459,219 +7459,6 @@
     "elementosAsociados": "Fuego",
     "polaridadEnergetica": [
       "Masculine"
-    ]
-  },
-  {
-    "nombreCientifico": "Inga edulis",
-    "imageUrl": "https://www.google.com/search?q=Inga+edulis&tbm=isch",
-    "nombresComunes": [
-      "Guamo",
-      "Guaba",
-      "Guamo machete"
-    ],
-    "propiedadesMedicinales": [
-      "Astringente (corteza)",
-      "Antiinflamatorio",
-      "Cicatrizante",
-      "Digestivo (arilo del fruto)"
-    ],
-    "partesUtiles": [
-      "Corteza",
-      "Hojas",
-      "Arilo blanco (comestible)"
-    ],
-    "esenciasFlorales": [
-      "Nutrición del alma",
-      "Generosidad y altruismo",
-      "Protección de los más vulnerables (árbol de sombra)"
-    ],
-    "correspondenciasEnergeticas": [
-      "Símbolo de paternidad protectora",
-      "Acogida y refugio",
-      "Madre de los ecosistemas (fija nitrógeno)"
-    ],
-    "malesEmocionales": [
-      "Egoísmo",
-      "Sensación de desamparo",
-      "Falta de dulzura en la vida"
-    ],
-    "malesFisicos": [
-      "Llagas bucales (corteza)",
-      "Diarrea (corteza)",
-      "Inflamación intestinal leve",
-      "Heridas menores"
-    ],
-    "taxon": {
-      "dominio": "Eukaryota",
-      "reino": "Plantae",
-      "filo": "Tracheophyta",
-      "clase": "Magnoliopsida",
-      "orden": "Fabales",
-      "familia": "Fabaceae",
-      "genero": "Inga",
-      "especie": "edulis",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
-    },
-    "preparaciones": [
-      {
-        "usoTerapeutico": "Para desinflamar encías, curar aftas bucales y actuar como astringente en llagas",
-        "formaDeAplicacion": "Realizar gargarismos o enjuagues con la decocción fría de la corteza, 3 veces al día.",
-        "ingredientes": [
-          {
-            "ingrediente": "Corteza triturada de guamo",
-            "cantidad": "15 gramos"
-          },
-          {
-            "ingrediente": "Agua",
-            "cantidad": "500 ml"
-          }
-        ],
-        "pasos": [
-          [
-            1,
-            "Lavar la corteza y trozarla en pedazos pequeños."
-          ],
-          [
-            2,
-            "Hervir en el agua durante 15 a 20 minutos para extraer correctamente los taninos."
-          ],
-          [
-            3,
-            "Retirar del fuego y dejar enfriar por completo."
-          ],
-          [
-            4,
-            "Colar para asegurar que no queden astillas o residuos."
-          ],
-          [
-            5,
-            "Usar el líquido como enjuague bucal sin tragarlo."
-          ]
-        ]
-      }
-    ],
-    "chakrasAsociados": [
-      {
-        "nombre": "Chakra del Corazón",
-        "nombreSanscrito": "Anahata",
-        "ubicacion": "Centro del pecho",
-        "color": "Verde o rosa",
-        "significado": "Amor, compasión, relaciones"
-      }
-    ],
-    "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
-  },
-  {
-    "nombreCientifico": "Erythrina poeppigiana",
-    "imageUrl": "https://www.google.com/search?q=Erythrina+poeppigiana&tbm=isch",
-    "nombresComunes": [
-      "Bucare",
-      "Cámbulo",
-      "Pízamo"
-    ],
-    "propiedadesMedicinales": [
-      "Sedante nervioso (requiere precaución por alcaloides)",
-      "Antiespasmódico",
-      "Sudorífico (diaforético)"
-    ],
-    "partesUtiles": [
-      "Flores",
-      "Corteza (uso muy restringido)"
-    ],
-    "esenciasFlorales": [
-      "Paz profunda",
-      "Aceptación del ciclo de descanso",
-      "Liberación de la culpa por no ser productivo"
-    ],
-    "correspondenciasEnergeticas": [
-      "Renacimiento (florece cuando pierde sus hojas)",
-      "Asociación al elemento Fuego (flores rojas/naranjas)",
-      "Atracción de abundancia (néctar)"
-    ],
-    "malesEmocionales": [
-      "Hiperactividad",
-      "Culpa por descansar",
-      "Insomnio por sobrecarga de pensamientos"
-    ],
-    "malesFisicos": [
-      "Nerviosismo agudo",
-      "Insomnio",
-      "Espasmos musculares"
-    ],
-    "taxon": {
-      "dominio": "Eukaryota",
-      "reino": "Plantae",
-      "filo": "Tracheophyta",
-      "clase": "Magnoliopsida",
-      "orden": "Fabales",
-      "familia": "Fabaceae",
-      "genero": "Erythrina",
-      "especie": "poeppigiana",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
-    },
-    "preparaciones": [
-      {
-        "usoTerapeutico": "Para relajar el sistema nervioso central e inducir el sueño en cuadros de insomnio ocasional",
-        "formaDeAplicacion": "Beber media taza de infusión de flores estrictamente antes de acostarse.",
-        "ingredientes": [
-          {
-            "ingrediente": "Flores frescas o secas de bucare",
-            "cantidad": "1 o 2 flores (no exceder)"
-          },
-          {
-            "ingrediente": "Agua hirviendo",
-            "cantidad": "150 ml"
-          }
-        ],
-        "pasos": [
-          [
-            1,
-            "Lavar los pétalos de las flores rojas/anaranjadas."
-          ],
-          [
-            2,
-            "Colocarlos en una taza y verter el agua caliente."
-          ],
-          [
-            3,
-            "Infundir durante no más de 5 a 7 minutos."
-          ],
-          [
-            4,
-            "Colar y endulzar ligeramente si se desea."
-          ],
-          [
-            5,
-            "Beber en la noche. No administrar a niños, mujeres embarazadas o personas medicadas con sedantes, dado el contenido de alcaloides."
-          ]
-        ]
-      }
-    ],
-    "chakrasAsociados": [
-      {
-        "nombre": "Chakra del Corazón",
-        "nombreSanscrito": "Anahata",
-        "ubicacion": "Centro del pecho",
-        "color": "Verde o rosa",
-        "significado": "Amor, compasión, relaciones"
-      }
-    ],
-    "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Feminine"
     ]
   },
   {
@@ -7886,41 +7673,358 @@
     ]
   },
   {
-    "nombreCientifico": "Myroxylon balsamum",
-    "imageUrl": "https://www.google.com/search?q=Myroxylon+balsamum&tbm=isch",
+    "nombreCientifico": "Valeriana clematitis",
+    "imageUrl": "https://www.google.com/search?q=Valeriana+clematitis&tbm=isch",
     "nombresComunes": [
-      "Bálsamo de Tolú",
-      "Tolu"
+      "Valeriana de páramo",
+      "Valeriana andina"
     ],
     "propiedadesMedicinales": [
-      "Expectorante profundo",
-      "Antiséptico pulmonar y de vías urinarias",
-      "Cicatrizante"
+      "Sedante poderoso del sistema nervioso",
+      "Inductor del sueño",
+      "Antiespasmódico gastrointestinal (de origen nervioso)"
     ],
     "partesUtiles": [
-      "Resina oleosa (bálsamo)",
-      "Corteza"
+      "Raíces y rizomas (característico olor penetrante)"
     ],
     "esenciasFlorales": [
-      "Bálsamo para el dolor emocional",
-      "Suaviza el temperamento irritable",
-      "Consuelo en etapas de transición difíciles"
+      "Paz en la tormenta",
+      "Desconexión del ruido mental",
+      "Entrega confiada al descanso y a la noche"
     ],
     "correspondenciasEnergeticas": [
-      "Sellado áurico (magia de resinas)",
-      "Atrae la dulzura a la vida",
-      "Elevación vibracional a través del aroma"
+      "Anclaje a la profundidad de la tierra",
+      "Magia de los sueños premonitorios",
+      "Sostén telúrico en momentos de pánico"
     ],
     "malesEmocionales": [
-      "Corazón endurecido por el dolor",
-      "Incapacidad para recibir afecto",
-      "Tristeza enquistada"
+      "Ansiedad paralizante",
+      "Ataques de pánico incontrolables",
+      "Nerviosismo crónico",
+      "Insomnio severo por hiperactividad mental"
     ],
     "malesFisicos": [
-      "Bronquitis aguda y crónica",
-      "Tos productiva resistente",
+      "Dificultad aguda para conciliar el sueño",
+      "Taquicardia nerviosa",
+      "Dolor de estómago por nervios",
+      "Tics nerviosos"
+    ],
+    "taxon": {
+      "dominio": "Eukaryota",
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "clase": "Magnoliopsida",
+      "orden": "Dipsacales",
+      "familia": "Caprifoliaceae",
+      "genero": "Valeriana",
+      "especie": "clematitis",
+      "clados": [
+        "Angiospermas",
+        "Eudicotiledóneas",
+        "Astéridas",
+        "Campanúlidas"
+      ]
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "Para combatir el insomnio crónico, relajar ataques de ansiedad y espasmos nerviosos",
+        "formaDeAplicacion": "Tomar 1 taza de decocción corta de la raíz, 1 hora antes de dormir.",
+        "ingredientes": [
+          {
+            "ingrediente": "Raíz limpia y triturada de valeriana andina",
+            "cantidad": "5 gramos"
+          },
+          {
+            "ingrediente": "Agua",
+            "cantidad": "250 ml"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "Lavar muy bien las raíces para retirar toda la tierra."
+          ],
+          [
+            2,
+            "Triturarlas ligeramente (liberarán un fuerte olor característico, similar a tierra húmeda o calcetín sucio)."
+          ],
+          [
+            3,
+            "Colocar en el agua y llevar al fuego."
+          ],
+          [
+            4,
+            "Apenas rompa a hervir, apagar inmediatamente (no hervir en exceso para no degradar los valepotriatos)."
+          ],
+          [
+            5,
+            "Tapar, dejar reposar 10 minutos, colar y beber. (No mezclar con alcohol ni medicación psiquiátrica sedante)."
+          ]
+        ]
+      }
+    ],
+    "chakrasAsociados": [
+      {
+        "nombre": "Chakra del Tercer Ojo",
+        "nombreSanscrito": "Ajna",
+        "ubicacion": "Entrecejo",
+        "color": "Índigo",
+        "significado": "Intuición, percepción espiritual, claridad mental"
+      }
+    ],
+    "elementosAsociados": "Tierra",
+    "polaridadEnergetica": [
+      "Feminine"
+    ]
+  },
+  {
+    "nombreCientifico": "Banisteriopsis caapi",
+    "imageUrl": "https://orders.fairchildgarden.org/cdn/shop/files/fullsizeoutput_1ff7.jpg?v=1686502747&width=1024",
+    "nombresComunes": [
+      "Yagé",
+      "Ayahuasca",
+      "Bejuco del alma"
+    ],
+    "propiedadesMedicinales": [
+      "Antidepresivo potente (inhibidor de la MAO natural)",
+      "Purgante físico y espiritual (emético/catártico)",
+      "Desparasitante profundo",
+      "Enteógeno (induce estados alterados de conciencia)"
+    ],
+    "partesUtiles": [
+      "Corteza del bejuco maduro"
+    ],
+    "esenciasFlorales": [
+      "Visión profunda de la verdad cósmica",
+      "Limpieza absoluta del inconsciente",
+      "Aceptación de la vida, la muerte y el propósito espiritual"
+    ],
+    "correspondenciasEnergeticas": [
+      "Planta Maestra por excelencia del chamanismo colombiano",
+      "Conexión con los espíritus tutelares y el origen del universo",
+      "Portal entre dimensiones"
+    ],
+    "malesEmocionales": [
+      "Traumas psicológicos severos incrustados",
+      "Adicciones (uso terapéutico asistido)",
+      "Depresión clínica profunda resistente a tratamientos",
+      "Ceguera espiritual y desconexión existencial"
+    ],
+    "malesFisicos": [
+      "Parasitismo severo",
+      "Intoxicación sistémica (limpieza hepática/gastrointestinal extrema)",
+      "Desequilibrios neuroquímicos (requiere contexto ritual/médico)"
+    ],
+    "taxon": {
+      "dominio": "Eukaryota",
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "clase": "Magnoliopsida",
+      "orden": "Malpighiales",
+      "familia": "Malpighiaceae",
+      "genero": "Banisteriopsis",
+      "especie": "caapi",
+      "clados": [
+        "Angiospermas",
+        "Eudicotiledóneas",
+        "Rósidas",
+        "Eurosidas I"
+      ]
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "Para purgas físicas y espirituales profundas (ADVERTENCIA: USO EXCLUSIVAMENTE RITUAL Y BAJO GUÍA CHAMÁNICA O PSIQUIÁTRICA EXPERTA)",
+        "formaDeAplicacion": "Beber una pequeña copa (toma) durante una ceremonia nocturna guiada. JAMÁS AUTORECETARSE.",
+        "ingredientes": [
+          {
+            "ingrediente": "Trozos macerados de bejuco de Yagé",
+            "cantidad": "1 kilo (para varias dosis grupales)"
+          },
+          {
+            "ingrediente": "Hojas de Chacruna (Psychotria viridis) o Chagropanga (Diplopterys cabrerana)",
+            "cantidad": "Proporción variable según el médico tradicional"
+          },
+          {
+            "ingrediente": "Agua purificada",
+            "cantidad": "Varios litros"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "El sabedor (Taita o Chamán) machaca el bejuco con mazos de madera rezando la medicina."
+          ],
+          [
+            2,
+            "Se coloca el bejuco y las hojas de la planta acompañante (para el DMT) en grandes ollas con agua."
+          ],
+          [
+            3,
+            "Se somete a un proceso de cocción a fuego de leña que puede durar desde 12 hasta 24 horas continuas."
+          ],
+          [
+            4,
+            "Se reduce y filtra constantemente hasta obtener una decocción densa, oscura y muy amarga."
+          ],
+          [
+            5,
+            "La bebida resultante solo se administra en un entorno ceremonial, con dieta estricta previa (sin sal, azúcar, alcohol ni carnes rojas), debido a sus profundos efectos purgativos y psicoactivos."
+          ]
+        ]
+      }
+    ],
+    "chakrasAsociados": [
+      {
+        "nombre": "Chakra del Tercer Ojo",
+        "nombreSanscrito": "Ajna",
+        "ubicacion": "Entrecejo",
+        "color": "Índigo",
+        "significado": "Intuición, percepción espiritual, claridad mental"
+      }
+    ],
+    "elementosAsociados": "Agua",
+    "polaridadEnergetica": [
+      "Masculine"
+    ]
+  },
+  {
+    "nombreCientifico": "Buddleja bullata",
+    "imageUrl": "https://catalogofloraaltamontana.eia.edu.co/storage/images/c199f76b5ad7c2770410a632ecbf660b0cf036bd.jpg",
+    "nombresComunes": [
+      "Salvia de Páramo",
+      "Lengua de vaca"
+    ],
+    "propiedadesMedicinales": [
+      "Vulnerario (lava y sella heridas)",
+      "Antiinflamatorio tópico",
+      "Febrífugo (en baños)"
+    ],
+    "partesUtiles": [
+      "Hojas"
+    ],
+    "esenciasFlorales": [
+      "Comunicación pacífica",
+      "Enfriamiento de la ira",
+      "Consuelo en la soledad extrema"
+    ],
+    "correspondenciasEnergeticas": [
+      "Limpieza de miasmas (energías residuales en espacios)",
+      "Baños de despojo",
+      "Equilibrio térmico espiritual"
+    ],
+    "malesEmocionales": [
+      "Ira ardiente",
+      "Frustración desbordada",
+      "Dificultad para perdonar ofensas"
+    ],
+    "malesFisicos": [
+      "Fiebre alta",
       "Heridas infectadas",
-      "Cistitis"
+      "Hinchazón por golpes"
+    ],
+    "taxon": {
+      "dominio": "Eukaryota",
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "clase": "Magnoliopsida",
+      "orden": "Lamiales",
+      "familia": "Scrophulariaceae",
+      "genero": "Buddleja",
+      "especie": "bullata",
+      "clados": [
+        "Angiospermas",
+        "Eudicotiledóneas",
+        "Astéridas"
+      ]
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "Para lavar heridas sucias, desinfectar cortes y bajar la fiebre mediante baños",
+        "formaDeAplicacion": "Realizar lavados externos sobre la herida o aplicar como baño general para la fiebre.",
+        "ingredientes": [
+          {
+            "ingrediente": "Hojas frescas de salvia de páramo",
+            "cantidad": "30 gramos"
+          },
+          {
+            "ingrediente": "Agua",
+            "cantidad": "1 litro"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "Lavar las hojas, que suelen ser afelpadas."
+          ],
+          [
+            2,
+            "Hervir el agua e introducir las hojas trituradas."
+          ],
+          [
+            3,
+            "Dejar hervir por 10 minutos para una correcta extracción."
+          ],
+          [
+            4,
+            "Retirar del fuego y dejar enfriar a temperatura ambiente."
+          ],
+          [
+            5,
+            "Filtrar el líquido y usar en compresas sobre la frente para fiebre o como lavado para desinfectar."
+          ]
+        ]
+      }
+    ],
+    "chakrasAsociados": [
+      {
+        "nombre": "Chakra de la Garganta",
+        "nombreSanscrito": "Vishuddha",
+        "ubicacion": "Garganta",
+        "color": "Azul claro",
+        "significado": "Comunicación, autenticidad, expresión verbal"
+      }
+    ],
+    "elementosAsociados": "Agua",
+    "polaridadEnergetica": [
+      "Feminine"
+    ]
+  },
+  {
+    "nombreCientifico": "Erythrina poeppigiana",
+    "imageUrl": "https://www.google.com/search?q=Erythrina+poeppigiana&tbm=isch",
+    "nombresComunes": [
+      "Bucare",
+      "Cámbulo",
+      "Pízamo"
+    ],
+    "propiedadesMedicinales": [
+      "Sedante nervioso (requiere precaución por alcaloides)",
+      "Antiespasmódico",
+      "Sudorífico (diaforético)"
+    ],
+    "partesUtiles": [
+      "Flores",
+      "Corteza (uso muy restringido)"
+    ],
+    "esenciasFlorales": [
+      "Paz profunda",
+      "Aceptación del ciclo de descanso",
+      "Liberación de la culpa por no ser productivo"
+    ],
+    "correspondenciasEnergeticas": [
+      "Renacimiento (florece cuando pierde sus hojas)",
+      "Asociación al elemento Fuego (flores rojas/naranjas)",
+      "Atracción de abundancia (néctar)"
+    ],
+    "malesEmocionales": [
+      "Hiperactividad",
+      "Culpa por descansar",
+      "Insomnio por sobrecarga de pensamientos"
+    ],
+    "malesFisicos": [
+      "Nerviosismo agudo",
+      "Insomnio",
+      "Espasmos musculares"
     ],
     "taxon": {
       "dominio": "Eukaryota",
@@ -7929,49 +8033,49 @@
       "clase": "Magnoliopsida",
       "orden": "Fabales",
       "familia": "Fabaceae",
-      "genero": "Myroxylon",
-      "especie": "balsamum",
+      "genero": "Erythrina",
+      "especie": "poeppigiana",
       "clados": [
         "Angiospermas",
         "Eudicotiledóneas",
         "Rósidas",
-        "Fábidas"
+        "Eurosidas I"
       ]
     },
     "preparaciones": [
       {
-        "usoTerapeutico": "Para expulsar flemas endurecidas, calmar la tos y desinfectar las vías respiratorias",
-        "formaDeAplicacion": "Tomar en forma de jarabe o inhalar los vapores de la resina fundida en agua.",
+        "usoTerapeutico": "Para relajar el sistema nervioso central e inducir el sueño en cuadros de insomnio ocasional",
+        "formaDeAplicacion": "Beber media taza de infusión de flores estrictamente antes de acostarse.",
         "ingredientes": [
           {
-            "ingrediente": "Resina de Bálsamo de Tolú pura",
-            "cantidad": "10 gramos"
+            "ingrediente": "Flores frescas o secas de bucare",
+            "cantidad": "1 o 2 flores (no exceder)"
           },
           {
             "ingrediente": "Agua hirviendo",
-            "cantidad": "1 litro (para vahos)"
+            "cantidad": "150 ml"
           }
         ],
         "pasos": [
           [
             1,
-            "Para inhalaciones: Hervir el litro de agua."
+            "Lavar los pétalos de las flores rojas/anaranjadas."
           ],
           [
             2,
-            "Retirar del fuego y disolver la resina en el agua caliente."
+            "Colocarlos en una taza y verter el agua caliente."
           ],
           [
             3,
-            "Cubrir la cabeza con una toalla e inhalar profundamente los vapores aromáticos por 15 minutos."
+            "Infundir durante no más de 5 a 7 minutos."
           ],
           [
             4,
-            "Para uso oral: Mezclar 1 gramo de resina con una cucharada de miel pura de abejas."
+            "Colar y endulzar ligeramente si se desea."
           ],
           [
             5,
-            "Tomar la mezcla lentamente permitiendo que recubra la garganta, máximo 2 veces al día."
+            "Beber en la noche. No administrar a niños, mujeres embarazadas o personas medicadas con sedantes, dado el contenido de alcaloides."
           ]
         ]
       }
@@ -7985,115 +8089,9 @@
         "significado": "Amor, compasión, relaciones"
       }
     ],
-    "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
-  },
-  {
-    "nombreCientifico": "Cinchona pitayensis",
-    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_DbbHfEv0nQGU07Ml3PmBfVorT8FS_8dZ7w&s",
-    "nombresComunes": [
-      "Quina andina",
-      "Quina del Cauca",
-      "Cascarilla"
-    ],
-    "propiedadesMedicinales": [
-      "Antipalúdico (cura la malaria por su contenido de quinina)",
-      "Antipirético potente (baja la fiebre)",
-      "Analgésico",
-      "Tónico amargo digestivo"
-    ],
-    "partesUtiles": [
-      "Corteza"
-    ],
-    "esenciasFlorales": [
-      "Restauración del orden mental ante el caos",
-      "Ayuda a asimilar lecciones kármicas repetitivas",
-      "Vitalidad ante el decaimiento absoluto"
-    ],
-    "correspondenciasEnergeticas": [
-      "Limpieza de parásitos astrales",
-      "Árbol de la salvación (históricamente salvó millones de vidas)",
-      "Elemento Fuego (quema la enfermedad)"
-    ],
-    "malesEmocionales": [
-      "Pensamientos circulares y obsesivos (como fiebre mental)",
-      "Agotamiento psíquico por ataque energético",
-      "Miedos cíclicos o terrores nocturnos"
-    ],
-    "malesFisicos": [
-      "Malaria (paludismo)",
-      "Fiebres altas recurrentes",
-      "Calambres musculares nocturnos",
-      "Debilidad extrema"
-    ],
-    "taxon": {
-      "dominio": "Eukaryota",
-      "reino": "Plantae",
-      "filo": "Tracheophyta",
-      "clase": "Magnoliopsida",
-      "orden": "Gentianales",
-      "familia": "Rubiaceae",
-      "genero": "Cinchona",
-      "especie": "pitayensis",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas",
-        "Lamíidas"
-      ]
-    },
-    "preparaciones": [
-      {
-        "usoTerapeutico": "Para reducir fiebres persistentes, combatir debilidad profunda y como tónico amargo",
-        "formaDeAplicacion": "Beber media taza de la decocción fría antes de las comidas.",
-        "ingredientes": [
-          {
-            "ingrediente": "Corteza seca y triturada de Quina",
-            "cantidad": "5 gramos"
-          },
-          {
-            "ingrediente": "Agua",
-            "cantidad": "500 ml"
-          }
-        ],
-        "pasos": [
-          [
-            1,
-            "Lavar la corteza y molerla hasta obtener un polvo grueso."
-          ],
-          [
-            2,
-            "Colocar en el agua fría y llevar a fuego."
-          ],
-          [
-            3,
-            "Hervir lentamente por 20 minutos para extraer los alcaloides amargos."
-          ],
-          [
-            4,
-            "Retirar, dejar reposar hasta que se enfríe y colar cuidadosamente."
-          ],
-          [
-            5,
-            "Tomar en pequeñas dosis (es extremadamente amarga). No consumir en embarazo ni en dosis altas prolongadas."
-          ]
-        ]
-      }
-    ],
-    "chakrasAsociados": [
-      {
-        "nombre": "Chakra Raíz",
-        "nombreSanscrito": "Muladhara",
-        "ubicacion": "Base de la columna vertebral (coxis)",
-        "color": "Rojo",
-        "significado": "Supervivencia, seguridad, arraigo"
-      }
-    ],
     "elementosAsociados": "Fuego",
     "polaridadEnergetica": [
-      "Masculine"
+      "Feminine"
     ]
   },
   {
@@ -8189,6 +8187,427 @@
         "ubicacion": "Base de la columna vertebral (coxis)",
         "color": "Rojo",
         "significado": "Supervivencia, seguridad, arraigo"
+      }
+    ],
+    "elementosAsociados": "Tierra",
+    "polaridadEnergetica": [
+      "Masculine"
+    ]
+  },
+  {
+    "nombreCientifico": "Caryodendron orinocense",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Frutos_de_Cacay.jpg",
+    "nombresComunes": [
+      "Cacay",
+      "Inchi",
+      "Nuez de Barinas"
+    ],
+    "propiedadesMedicinales": [
+      "Regenerador celular cutáneo avanzado",
+      "Antioxidante tópico",
+      "Cicatrizante",
+      "Nutracéutico (almendra)"
+    ],
+    "partesUtiles": [
+      "Aceite extraído de la nuez/semilla",
+      "Almendras"
+    ],
+    "esenciasFlorales": [
+      "Rejuvenecimiento espiritual",
+      "Recuperación de la autoestima",
+      "Borrado de cicatrices del alma"
+    ],
+    "correspondenciasEnergeticas": [
+      "Elixir de la eterna juventud orinoquense",
+      "Brillo áurico y expansión",
+      "Restaura la capa protectora del cuerpo sutil"
+    ],
+    "malesEmocionales": [
+      "Baja autoimagen",
+      "Sensación de deterioro vital o envejecimiento interno",
+      "Falta de resplandor personal"
+    ],
+    "malesFisicos": [
+      "Quemaduras y cicatrices queloides",
+      "Envejecimiento prematuro de la piel (arrugas)",
+      "Afecciones inflamatorias cutáneas",
+      "Falta de elasticidad celular"
+    ],
+    "taxon": {
+      "dominio": "Eukaryota",
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "clase": "Magnoliopsida",
+      "orden": "Malpighiales",
+      "familia": "Euphorbiaceae",
+      "genero": "Caryodendron",
+      "especie": "orinocense",
+      "clados": [
+        "Angiospermas",
+        "Eudicotiledóneas",
+        "Rósidas",
+        "Eurosidas I"
+      ]
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "Para regenerar la piel en caso de cicatrices profundas, quemaduras o como tratamiento antiedad natural",
+        "formaDeAplicacion": "Aplicar de 3 a 5 gotas del aceite puro prensado en frío sobre la piel limpia, en la noche.",
+        "ingredientes": [
+          {
+            "ingrediente": "Nueces peladas de cacay (para extracción) o Aceite puro de cacay comercial",
+            "cantidad": "5 gotas diarias"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "Adquirir aceite de cacay 100% puro prensado en frío (extraerlo artesanalmente requiere maquinaria de prensado oleaginoso)."
+          ],
+          [
+            2,
+            "Lavar y secar muy bien el rostro o la zona de la piel afectada con la cicatriz."
+          ],
+          [
+            3,
+            "Colocar de 3 a 5 gotas de aceite de cacay en la palma de la mano."
+          ],
+          [
+            4,
+            "Calentar ligeramente el aceite frotando las yemas de los dedos."
+          ],
+          [
+            5,
+            "Masajear suavemente sobre la piel con movimientos circulares ascendentes hasta su total absorción. Dejar actuar toda la noche."
+          ]
+        ]
+      }
+    ],
+    "chakrasAsociados": [
+      {
+        "nombre": "Chakra Sacro",
+        "nombreSanscrito": "Svadhisthana",
+        "ubicacion": "Región pélvica, bajo el ombligo",
+        "color": "Naranja",
+        "significado": "Creatividad, sexualidad, emociones"
+      }
+    ],
+    "elementosAsociados": "Agua",
+    "polaridadEnergetica": [
+      "Feminine"
+    ]
+  },
+  {
+    "nombreCientifico": "Hypericum goyanesii",
+    "imageUrl": "https://www.google.com/search?q=Hypericum+goyanesii&tbm=isch",
+    "nombresComunes": [
+      "Chite",
+      "San Juanito de páramo"
+    ],
+    "propiedadesMedicinales": [
+      "Antidepresivo",
+      "Vulnerario (excelente cicatrizante)",
+      "Antiespasmódico",
+      "Antiséptico"
+    ],
+    "partesUtiles": [
+      "Flores",
+      "Hojas"
+    ],
+    "esenciasFlorales": [
+      "Optimismo y vitalidad",
+      "Disuelve la melancolía profunda",
+      "Integra la luz en los procesos de sombra"
+    ],
+    "correspondenciasEnergeticas": [
+      "Rayo amarillo de sabiduría",
+      "Protección contra energías densas",
+      "Portador del fuego solar en el páramo"
+    ],
+    "malesEmocionales": [
+      "Depresión clínica leve a moderada",
+      "Desesperanza",
+      "Tristeza sin causa aparente"
+    ],
+    "malesFisicos": [
+      "Heridas e incisiones quirúrgicas (para cicatrizar sin marca)",
+      "Quemaduras solares",
+      "Neuralgias"
+    ],
+    "taxon": {
+      "dominio": "Eukaryota",
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "clase": "Magnoliopsida",
+      "orden": "Malpighiales",
+      "familia": "Hypericaceae",
+      "genero": "Hypericum",
+      "especie": "goyanesii",
+      "clados": [
+        "Angiospermas",
+        "Eudicotiledóneas",
+        "Rósidas",
+        "Eurosidas I"
+      ]
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "Para aliviar estados depresivos leves y calmar los nervios",
+        "formaDeAplicacion": "Beber 1 taza de infusión en la mañana y otra en la tarde (evitar exposición solar intensa durante su uso prolongado).",
+        "ingredientes": [
+          {
+            "ingrediente": "Sumidades floridas secas de chite",
+            "cantidad": "1 cucharadita (3 gramos)"
+          },
+          {
+            "ingrediente": "Agua hirviendo",
+            "cantidad": "250 ml"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "Colocar las flores secas en una taza."
+          ],
+          [
+            2,
+            "Verter el agua recién hervida sobre las flores."
+          ],
+          [
+            3,
+            "Tapar y dejar en infusión por 8 minutos."
+          ],
+          [
+            4,
+            "Colar para retirar los restos de la planta."
+          ],
+          [
+            5,
+            "Consumir tibio. Precaución: puede interactuar con medicamentos antidepresivos convencionales."
+          ]
+        ]
+      }
+    ],
+    "chakrasAsociados": [
+      {
+        "nombre": "Chakra del Plexo Solar",
+        "nombreSanscrito": "Manipura",
+        "ubicacion": "Entre el diafragma y el ombligo",
+        "color": "Amarillo",
+        "significado": "Poder personal, autoestima, fuerza de voluntad"
+      }
+    ],
+    "elementosAsociados": "Fuego",
+    "polaridadEnergetica": [
+      "Masculine"
+    ]
+  },
+  {
+    "nombreCientifico": "Hedyosmum bonplandianum",
+    "imageUrl": "https://www.google.com/search?q=Hedyosmum+bonplandianum&tbm=isch",
+    "nombresComunes": [
+      "Granizo",
+      "Silbador",
+      "Bebedero"
+    ],
+    "propiedadesMedicinales": [
+      "Antiespasmódico estomacal",
+      "Analgésico articular (planta caliente)",
+      "Diurético",
+      "Anticatarral"
+    ],
+    "partesUtiles": [
+      "Hojas (muy aromáticas)",
+      "Tallos tiernos"
+    ],
+    "esenciasFlorales": [
+      "Recuperación de la fluidez vital",
+      "Limpieza de miedos paralizantes",
+      "Vitalidad y chispa interna"
+    ],
+    "correspondenciasEnergeticas": [
+      "Planta sagrada de calor para sacar el frío del cuerpo (malos vientos)",
+      "Armonización de la dualidad frío/calor",
+      "Sahumerio aromático protector"
+    ],
+    "malesEmocionales": [
+      "Miedo escénico o parálisis por terror",
+      "Estancamiento vital",
+      "Melancolía asociada al clima frío"
+    ],
+    "malesFisicos": [
+      "Cólicos estomacales por frío",
+      "Dolor en las articulaciones (viento en los huesos)",
+      "Resfriados crónicos",
+      "Retención de líquidos"
+    ],
+    "taxon": {
+      "dominio": "Eukaryota",
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "clase": "Magnoliopsida",
+      "orden": "Chloranthales",
+      "familia": "Chloranthaceae",
+      "genero": "Hedyosmum",
+      "especie": "bonplandianum",
+      "clados": [
+        "Angiospermas",
+        "Magnolíidas"
+      ]
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "Para sacar el frío del cuerpo, aliviar el reumatismo articular y calmar cólicos estomacales",
+        "formaDeAplicacion": "Para el estómago: tomar 1 taza de infusión tibia. Para reumatismo: realizar frotaciones con la tintura.",
+        "ingredientes": [
+          {
+            "ingrediente": "Hojas frescas de granizo",
+            "cantidad": "10 gramos"
+          },
+          {
+            "ingrediente": "Agua hirviendo",
+            "cantidad": "300 ml"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "Trozar las hojas aromáticas para exponer sus aceites esenciales."
+          ],
+          [
+            2,
+            "Colocar en un recipiente y verter el agua a punto de ebullición."
+          ],
+          [
+            3,
+            "Tapar herméticamente de inmediato para que los aromas no se evaporen."
+          ],
+          [
+            4,
+            "Infundir durante 10 minutos."
+          ],
+          [
+            5,
+            "Colar y beber lentamente después de las comidas."
+          ]
+        ]
+      }
+    ],
+    "chakrasAsociados": [
+      {
+        "nombre": "Chakra del Plexo Solar",
+        "nombreSanscrito": "Manipura",
+        "ubicacion": "Entre el diafragma y el ombligo",
+        "color": "Amarillo",
+        "significado": "Poder personal, autoestima, fuerza de voluntad"
+      }
+    ],
+    "elementosAsociados": "Fuego",
+    "polaridadEnergetica": [
+      "Masculine"
+    ]
+  },
+  {
+    "nombreCientifico": "Inga edulis",
+    "imageUrl": "https://www.google.com/search?q=Inga+edulis&tbm=isch",
+    "nombresComunes": [
+      "Guamo",
+      "Guaba",
+      "Guamo machete"
+    ],
+    "propiedadesMedicinales": [
+      "Astringente (corteza)",
+      "Antiinflamatorio",
+      "Cicatrizante",
+      "Digestivo (arilo del fruto)"
+    ],
+    "partesUtiles": [
+      "Corteza",
+      "Hojas",
+      "Arilo blanco (comestible)"
+    ],
+    "esenciasFlorales": [
+      "Nutrición del alma",
+      "Generosidad y altruismo",
+      "Protección de los más vulnerables (árbol de sombra)"
+    ],
+    "correspondenciasEnergeticas": [
+      "Símbolo de paternidad protectora",
+      "Acogida y refugio",
+      "Madre de los ecosistemas (fija nitrógeno)"
+    ],
+    "malesEmocionales": [
+      "Egoísmo",
+      "Sensación de desamparo",
+      "Falta de dulzura en la vida"
+    ],
+    "malesFisicos": [
+      "Llagas bucales (corteza)",
+      "Diarrea (corteza)",
+      "Inflamación intestinal leve",
+      "Heridas menores"
+    ],
+    "taxon": {
+      "dominio": "Eukaryota",
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "clase": "Magnoliopsida",
+      "orden": "Fabales",
+      "familia": "Fabaceae",
+      "genero": "Inga",
+      "especie": "edulis",
+      "clados": [
+        "Angiospermas",
+        "Eudicotiledóneas",
+        "Rósidas",
+        "Eurosidas I"
+      ]
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "Para desinflamar encías, curar aftas bucales y actuar como astringente en llagas",
+        "formaDeAplicacion": "Realizar gargarismos o enjuagues con la decocción fría de la corteza, 3 veces al día.",
+        "ingredientes": [
+          {
+            "ingrediente": "Corteza triturada de guamo",
+            "cantidad": "15 gramos"
+          },
+          {
+            "ingrediente": "Agua",
+            "cantidad": "500 ml"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "Lavar la corteza y trozarla en pedazos pequeños."
+          ],
+          [
+            2,
+            "Hervir en el agua durante 15 a 20 minutos para extraer correctamente los taninos."
+          ],
+          [
+            3,
+            "Retirar del fuego y dejar enfriar por completo."
+          ],
+          [
+            4,
+            "Colar para asegurar que no queden astillas o residuos."
+          ],
+          [
+            5,
+            "Usar el líquido como enjuague bucal sin tragarlo."
+          ]
+        ]
+      }
+    ],
+    "chakrasAsociados": [
+      {
+        "nombre": "Chakra del Corazón",
+        "nombreSanscrito": "Anahata",
+        "ubicacion": "Centro del pecho",
+        "color": "Verde o rosa",
+        "significado": "Amor, compasión, relaciones"
       }
     ],
     "elementosAsociados": "Tierra",
@@ -8406,425 +8825,6 @@
       }
     ],
     "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
-  },
-  {
-    "nombreCientifico": "Bocconia frutescens",
-    "imageUrl": "https://catalogofloravalleaburra.eia.edu.co/storage/images/73a84cd87cb3775d88d70f95c11adb6aa0d0c60f.jpg",
-    "nombresComunes": [
-      "Trompeto",
-      "Siete camisas",
-      "Celidonia andina"
-    ],
-    "propiedadesMedicinales": [
-      "Queratolítico (destruye verrugas y callos)",
-      "Cicatrizante externo",
-      "Antiséptico potente",
-      "Antimicrobiano tópico"
-    ],
-    "partesUtiles": [
-      "Látex anaranjado/amarillo",
-      "Hojas"
-    ],
-    "esenciasFlorales": [
-      "Desprendimiento de viejas estructuras",
-      "Renovación de la perspectiva",
-      "Liberación de creencias limitantes incrustadas"
-    ],
-    "correspondenciasEnergeticas": [
-      "Fuego corrosivo que purifica",
-      "Magia de destierro de entidades menores",
-      "Transmutación (color alquímico de su savia)"
-    ],
-    "malesEmocionales": [
-      "Ideas fijas y prejuicios (callosidades mentales)",
-      "Resistencia extrema a cambiar de opinión",
-      "Aferramiento a relaciones dolorosas"
-    ],
-    "malesFisicos": [
-      "Verrugas persistentes (papilomas)",
-      "Callosidades dolorosas",
-      "Úlceras cutáneas",
-      "Infecciones en la piel"
-    ],
-    "taxon": {
-      "dominio": "Eukaryota",
-      "reino": "Plantae",
-      "filo": "Tracheophyta",
-      "clase": "Magnoliopsida",
-      "orden": "Ranunculales",
-      "familia": "Papaveraceae",
-      "genero": "Bocconia",
-      "especie": "frutescens",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas"
-      ]
-    },
-    "preparaciones": [
-      {
-        "usoTerapeutico": "Para erradicar verrugas y ablandar callosidades endurecidas (SOLO USO EXTERNO)",
-        "formaDeAplicacion": "Aplicar el látex directamente sobre la verruga 1 vez al día hasta que se seque y caiga.",
-        "ingredientes": [
-          {
-            "ingrediente": "Látex fresco anaranjado del trompeto",
-            "cantidad": "1 o 2 gotas"
-          }
-        ],
-        "pasos": [
-          [
-            1,
-            "Quebrar una rama tierna, pedúnculo foliar o hacer una incisión en la corteza de la planta."
-          ],
-          [
-            2,
-            "Recolectar las gotas de látex espeso y anaranjado que emergen casi de inmediato."
-          ],
-          [
-            3,
-            "Proteger la piel sana alrededor de la verruga o callo con un poco de vaselina."
-          ],
-          [
-            4,
-            "Aplicar la gota de látex exclusivamente sobre el tejido anormal a tratar."
-          ],
-          [
-            5,
-            "Dejar secar; el área se teñirá de un color oscuro. Repetir diariamente sin intentar arrancar la verruga a la fuerza."
-          ]
-        ]
-      }
-    ],
-    "chakrasAsociados": [
-      {
-        "nombre": "Chakra del Plexo Solar",
-        "nombreSanscrito": "Manipura",
-        "ubicacion": "Entre el diafragma y el ombligo",
-        "color": "Amarillo",
-        "significado": "Poder personal, autoestima, fuerza de voluntad"
-      }
-    ],
-    "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
-  },
-  {
-    "nombreCientifico": "Valeriana clematitis",
-    "imageUrl": "https://www.google.com/search?q=Valeriana+clematitis&tbm=isch",
-    "nombresComunes": [
-      "Valeriana de páramo",
-      "Valeriana andina"
-    ],
-    "propiedadesMedicinales": [
-      "Sedante poderoso del sistema nervioso",
-      "Inductor del sueño",
-      "Antiespasmódico gastrointestinal (de origen nervioso)"
-    ],
-    "partesUtiles": [
-      "Raíces y rizomas (característico olor penetrante)"
-    ],
-    "esenciasFlorales": [
-      "Paz en la tormenta",
-      "Desconexión del ruido mental",
-      "Entrega confiada al descanso y a la noche"
-    ],
-    "correspondenciasEnergeticas": [
-      "Anclaje a la profundidad de la tierra",
-      "Magia de los sueños premonitorios",
-      "Sostén telúrico en momentos de pánico"
-    ],
-    "malesEmocionales": [
-      "Ansiedad paralizante",
-      "Ataques de pánico incontrolables",
-      "Nerviosismo crónico",
-      "Insomnio severo por hiperactividad mental"
-    ],
-    "malesFisicos": [
-      "Dificultad aguda para conciliar el sueño",
-      "Taquicardia nerviosa",
-      "Dolor de estómago por nervios",
-      "Tics nerviosos"
-    ],
-    "taxon": {
-      "dominio": "Eukaryota",
-      "reino": "Plantae",
-      "filo": "Tracheophyta",
-      "clase": "Magnoliopsida",
-      "orden": "Dipsacales",
-      "familia": "Caprifoliaceae",
-      "genero": "Valeriana",
-      "especie": "clematitis",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas",
-        "Campanúlidas"
-      ]
-    },
-    "preparaciones": [
-      {
-        "usoTerapeutico": "Para combatir el insomnio crónico, relajar ataques de ansiedad y espasmos nerviosos",
-        "formaDeAplicacion": "Tomar 1 taza de decocción corta de la raíz, 1 hora antes de dormir.",
-        "ingredientes": [
-          {
-            "ingrediente": "Raíz limpia y triturada de valeriana andina",
-            "cantidad": "5 gramos"
-          },
-          {
-            "ingrediente": "Agua",
-            "cantidad": "250 ml"
-          }
-        ],
-        "pasos": [
-          [
-            1,
-            "Lavar muy bien las raíces para retirar toda la tierra."
-          ],
-          [
-            2,
-            "Triturarlas ligeramente (liberarán un fuerte olor característico, similar a tierra húmeda o calcetín sucio)."
-          ],
-          [
-            3,
-            "Colocar en el agua y llevar al fuego."
-          ],
-          [
-            4,
-            "Apenas rompa a hervir, apagar inmediatamente (no hervir en exceso para no degradar los valepotriatos)."
-          ],
-          [
-            5,
-            "Tapar, dejar reposar 10 minutos, colar y beber. (No mezclar con alcohol ni medicación psiquiátrica sedante)."
-          ]
-        ]
-      }
-    ],
-    "chakrasAsociados": [
-      {
-        "nombre": "Chakra del Tercer Ojo",
-        "nombreSanscrito": "Ajna",
-        "ubicacion": "Entrecejo",
-        "color": "Índigo",
-        "significado": "Intuición, percepción espiritual, claridad mental"
-      }
-    ],
-    "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
-  },
-  {
-    "nombreCientifico": "Caryodendron orinocense",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Frutos_de_Cacay.jpg",
-    "nombresComunes": [
-      "Cacay",
-      "Inchi",
-      "Nuez de Barinas"
-    ],
-    "propiedadesMedicinales": [
-      "Regenerador celular cutáneo avanzado",
-      "Antioxidante tópico",
-      "Cicatrizante",
-      "Nutracéutico (almendra)"
-    ],
-    "partesUtiles": [
-      "Aceite extraído de la nuez/semilla",
-      "Almendras"
-    ],
-    "esenciasFlorales": [
-      "Rejuvenecimiento espiritual",
-      "Recuperación de la autoestima",
-      "Borrado de cicatrices del alma"
-    ],
-    "correspondenciasEnergeticas": [
-      "Elixir de la eterna juventud orinoquense",
-      "Brillo áurico y expansión",
-      "Restaura la capa protectora del cuerpo sutil"
-    ],
-    "malesEmocionales": [
-      "Baja autoimagen",
-      "Sensación de deterioro vital o envejecimiento interno",
-      "Falta de resplandor personal"
-    ],
-    "malesFisicos": [
-      "Quemaduras y cicatrices queloides",
-      "Envejecimiento prematuro de la piel (arrugas)",
-      "Afecciones inflamatorias cutáneas",
-      "Falta de elasticidad celular"
-    ],
-    "taxon": {
-      "dominio": "Eukaryota",
-      "reino": "Plantae",
-      "filo": "Tracheophyta",
-      "clase": "Magnoliopsida",
-      "orden": "Malpighiales",
-      "familia": "Euphorbiaceae",
-      "genero": "Caryodendron",
-      "especie": "orinocense",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
-    },
-    "preparaciones": [
-      {
-        "usoTerapeutico": "Para regenerar la piel en caso de cicatrices profundas, quemaduras o como tratamiento antiedad natural",
-        "formaDeAplicacion": "Aplicar de 3 a 5 gotas del aceite puro prensado en frío sobre la piel limpia, en la noche.",
-        "ingredientes": [
-          {
-            "ingrediente": "Nueces peladas de cacay (para extracción) o Aceite puro de cacay comercial",
-            "cantidad": "5 gotas diarias"
-          }
-        ],
-        "pasos": [
-          [
-            1,
-            "Adquirir aceite de cacay 100% puro prensado en frío (extraerlo artesanalmente requiere maquinaria de prensado oleaginoso)."
-          ],
-          [
-            2,
-            "Lavar y secar muy bien el rostro o la zona de la piel afectada con la cicatriz."
-          ],
-          [
-            3,
-            "Colocar de 3 a 5 gotas de aceite de cacay en la palma de la mano."
-          ],
-          [
-            4,
-            "Calentar ligeramente el aceite frotando las yemas de los dedos."
-          ],
-          [
-            5,
-            "Masajear suavemente sobre la piel con movimientos circulares ascendentes hasta su total absorción. Dejar actuar toda la noche."
-          ]
-        ]
-      }
-    ],
-    "chakrasAsociados": [
-      {
-        "nombre": "Chakra Sacro",
-        "nombreSanscrito": "Svadhisthana",
-        "ubicacion": "Región pélvica, bajo el ombligo",
-        "color": "Naranja",
-        "significado": "Creatividad, sexualidad, emociones"
-      }
-    ],
-    "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
-  },
-  {
-    "nombreCientifico": "Banisteriopsis caapi",
-    "imageUrl": "https://orders.fairchildgarden.org/cdn/shop/files/fullsizeoutput_1ff7.jpg?v=1686502747&width=1024",
-    "nombresComunes": [
-      "Yagé",
-      "Ayahuasca",
-      "Bejuco del alma"
-    ],
-    "propiedadesMedicinales": [
-      "Antidepresivo potente (inhibidor de la MAO natural)",
-      "Purgante físico y espiritual (emético/catártico)",
-      "Desparasitante profundo",
-      "Enteógeno (induce estados alterados de conciencia)"
-    ],
-    "partesUtiles": [
-      "Corteza del bejuco maduro"
-    ],
-    "esenciasFlorales": [
-      "Visión profunda de la verdad cósmica",
-      "Limpieza absoluta del inconsciente",
-      "Aceptación de la vida, la muerte y el propósito espiritual"
-    ],
-    "correspondenciasEnergeticas": [
-      "Planta Maestra por excelencia del chamanismo colombiano",
-      "Conexión con los espíritus tutelares y el origen del universo",
-      "Portal entre dimensiones"
-    ],
-    "malesEmocionales": [
-      "Traumas psicológicos severos incrustados",
-      "Adicciones (uso terapéutico asistido)",
-      "Depresión clínica profunda resistente a tratamientos",
-      "Ceguera espiritual y desconexión existencial"
-    ],
-    "malesFisicos": [
-      "Parasitismo severo",
-      "Intoxicación sistémica (limpieza hepática/gastrointestinal extrema)",
-      "Desequilibrios neuroquímicos (requiere contexto ritual/médico)"
-    ],
-    "taxon": {
-      "dominio": "Eukaryota",
-      "reino": "Plantae",
-      "filo": "Tracheophyta",
-      "clase": "Magnoliopsida",
-      "orden": "Malpighiales",
-      "familia": "Malpighiaceae",
-      "genero": "Banisteriopsis",
-      "especie": "caapi",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
-    },
-    "preparaciones": [
-      {
-        "usoTerapeutico": "Para purgas físicas y espirituales profundas (ADVERTENCIA: USO EXCLUSIVAMENTE RITUAL Y BAJO GUÍA CHAMÁNICA O PSIQUIÁTRICA EXPERTA)",
-        "formaDeAplicacion": "Beber una pequeña copa (toma) durante una ceremonia nocturna guiada. JAMÁS AUTORECETARSE.",
-        "ingredientes": [
-          {
-            "ingrediente": "Trozos macerados de bejuco de Yagé",
-            "cantidad": "1 kilo (para varias dosis grupales)"
-          },
-          {
-            "ingrediente": "Hojas de Chacruna (Psychotria viridis) o Chagropanga (Diplopterys cabrerana)",
-            "cantidad": "Proporción variable según el médico tradicional"
-          },
-          {
-            "ingrediente": "Agua purificada",
-            "cantidad": "Varios litros"
-          }
-        ],
-        "pasos": [
-          [
-            1,
-            "El sabedor (Taita o Chamán) machaca el bejuco con mazos de madera rezando la medicina."
-          ],
-          [
-            2,
-            "Se coloca el bejuco y las hojas de la planta acompañante (para el DMT) en grandes ollas con agua."
-          ],
-          [
-            3,
-            "Se somete a un proceso de cocción a fuego de leña que puede durar desde 12 hasta 24 horas continuas."
-          ],
-          [
-            4,
-            "Se reduce y filtra constantemente hasta obtener una decocción densa, oscura y muy amarga."
-          ],
-          [
-            5,
-            "La bebida resultante solo se administra en un entorno ceremonial, con dieta estricta previa (sin sal, azúcar, alcohol ni carnes rojas), debido a sus profundos efectos purgativos y psicoactivos."
-          ]
-        ]
-      }
-    ],
-    "chakrasAsociados": [
-      {
-        "nombre": "Chakra del Tercer Ojo",
-        "nombreSanscrito": "Ajna",
-        "ubicacion": "Entrecejo",
-        "color": "Índigo",
-        "significado": "Intuición, percepción espiritual, claridad mental"
-      }
-    ],
-    "elementosAsociados": "Agua",
     "polaridadEnergetica": [
       "Masculine"
     ]
@@ -9250,107 +9250,6 @@
     ]
   },
   {
-    "nombreCientifico": "Passiflora ligularis",
-    "imageUrl": "https://www.google.com/search?q=Passiflora+ligularis&tbm=isch",
-    "nombresComunes": [
-      "Granadilla",
-      "Granadilla andina"
-    ],
-    "propiedadesMedicinales": [
-      "Regulador gástrico",
-      "Antiespasmódico infantil",
-      "Laxante muy suave (mucílagos del fruto)",
-      "Calmante nervioso leve"
-    ],
-    "partesUtiles": [
-      "Fruto (pulpa y semillas)",
-      "Hojas tiernas"
-    ],
-    "esenciasFlorales": [
-      "Nutrición afectiva materno-infantil",
-      "Consuelo en la tristeza pura",
-      "Protección de la inocencia"
-    ],
-    "correspondenciasEnergeticas": [
-      "Elemento Agua",
-      "Fluidez emocional y suavidad",
-      "Sanación del niño interior"
-    ],
-    "malesEmocionales": [
-      "Miedos nocturnos (especialmente en niños)",
-      "Llanto inexplicable",
-      "Dificultad para recibir afecto materno"
-    ],
-    "malesFisicos": [
-      "Cólicos gastrointestinales infantiles",
-      "Estreñimiento leve",
-      "Acidez estomacal (reflujo)"
-    ],
-    "taxon": {
-      "dominio": "Eukaryota",
-      "reino": "Plantae",
-      "filo": "Tracheophyta",
-      "clase": "Magnoliopsida",
-      "orden": "Malpighiales",
-      "familia": "Passifloraceae",
-      "genero": "Passiflora",
-      "especie": "ligularis",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
-    },
-    "preparaciones": [
-      {
-        "usoTerapeutico": "Para aliviar cólicos, acidez y calmar a los niños antes de dormir",
-        "formaDeAplicacion": "Consumir el jugo natural sin colar o comer la pulpa directamente.",
-        "ingredientes": [
-          {
-            "ingrediente": "Frutos de granadilla maduros",
-            "cantidad": "2 unidades"
-          }
-        ],
-        "pasos": [
-          [
-            1,
-            "Romper la cáscara dura de la granadilla."
-          ],
-          [
-            2,
-            "Extraer toda la pulpa mucilaginosa y las semillas con una cuchara."
-          ],
-          [
-            3,
-            "Para niños pequeños, se puede pasar por un colador presionando suavemente para obtener solo el néctar."
-          ],
-          [
-            4,
-            "Para adultos, consumir directamente con las semillas masticándolas bien (aportan fibra)."
-          ],
-          [
-            5,
-            "Dar de beber a temperatura ambiente."
-          ]
-        ]
-      }
-    ],
-    "chakrasAsociados": [
-      {
-        "nombre": "Chakra del Corazón",
-        "nombreSanscrito": "Anahata",
-        "ubicacion": "Centro del pecho",
-        "color": "Verde o rosa",
-        "significado": "Amor, compasión, relaciones"
-      }
-    ],
-    "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
-  },
-  {
     "nombreCientifico": "Passiflora quadrangularis",
     "imageUrl": "https://www.google.com/search?q=Passiflora+quadrangularis&tbm=isch",
     "nombresComunes": [
@@ -9450,6 +9349,107 @@
         "ubicacion": "Entrecejo",
         "color": "Índigo",
         "significado": "Intuición, percepción espiritual, claridad mental"
+      }
+    ],
+    "elementosAsociados": "Agua",
+    "polaridadEnergetica": [
+      "Feminine"
+    ]
+  },
+  {
+    "nombreCientifico": "Passiflora ligularis",
+    "imageUrl": "https://www.google.com/search?q=Passiflora+ligularis&tbm=isch",
+    "nombresComunes": [
+      "Granadilla",
+      "Granadilla andina"
+    ],
+    "propiedadesMedicinales": [
+      "Regulador gástrico",
+      "Antiespasmódico infantil",
+      "Laxante muy suave (mucílagos del fruto)",
+      "Calmante nervioso leve"
+    ],
+    "partesUtiles": [
+      "Fruto (pulpa y semillas)",
+      "Hojas tiernas"
+    ],
+    "esenciasFlorales": [
+      "Nutrición afectiva materno-infantil",
+      "Consuelo en la tristeza pura",
+      "Protección de la inocencia"
+    ],
+    "correspondenciasEnergeticas": [
+      "Elemento Agua",
+      "Fluidez emocional y suavidad",
+      "Sanación del niño interior"
+    ],
+    "malesEmocionales": [
+      "Miedos nocturnos (especialmente en niños)",
+      "Llanto inexplicable",
+      "Dificultad para recibir afecto materno"
+    ],
+    "malesFisicos": [
+      "Cólicos gastrointestinales infantiles",
+      "Estreñimiento leve",
+      "Acidez estomacal (reflujo)"
+    ],
+    "taxon": {
+      "dominio": "Eukaryota",
+      "reino": "Plantae",
+      "filo": "Tracheophyta",
+      "clase": "Magnoliopsida",
+      "orden": "Malpighiales",
+      "familia": "Passifloraceae",
+      "genero": "Passiflora",
+      "especie": "ligularis",
+      "clados": [
+        "Angiospermas",
+        "Eudicotiledóneas",
+        "Rósidas",
+        "Eurosidas I"
+      ]
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "Para aliviar cólicos, acidez y calmar a los niños antes de dormir",
+        "formaDeAplicacion": "Consumir el jugo natural sin colar o comer la pulpa directamente.",
+        "ingredientes": [
+          {
+            "ingrediente": "Frutos de granadilla maduros",
+            "cantidad": "2 unidades"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "Romper la cáscara dura de la granadilla."
+          ],
+          [
+            2,
+            "Extraer toda la pulpa mucilaginosa y las semillas con una cuchara."
+          ],
+          [
+            3,
+            "Para niños pequeños, se puede pasar por un colador presionando suavemente para obtener solo el néctar."
+          ],
+          [
+            4,
+            "Para adultos, consumir directamente con las semillas masticándolas bien (aportan fibra)."
+          ],
+          [
+            5,
+            "Dar de beber a temperatura ambiente."
+          ]
+        ]
+      }
+    ],
+    "chakrasAsociados": [
+      {
+        "nombre": "Chakra del Corazón",
+        "nombreSanscrito": "Anahata",
+        "ubicacion": "Centro del pecho",
+        "color": "Verde o rosa",
+        "significado": "Amor, compasión, relaciones"
       }
     ],
     "elementosAsociados": "Agua",

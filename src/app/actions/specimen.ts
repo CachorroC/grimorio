@@ -27,7 +27,8 @@ async function upsertSpecimenToDB(
     );
 
     const {
-      _id, ...updateData
+      _id,
+      ...updateData
     } = data as any;
 
     const query = _id

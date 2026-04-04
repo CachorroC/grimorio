@@ -111,7 +111,9 @@ export async function generatePropertySets(
     await fs.writeFile(
       allValuesFilePath,
       JSON.stringify(
-        allValues, null, 2
+        allValues,
+        null,
+        2
       ),
       'utf-8'
     );
@@ -140,11 +142,11 @@ export async function generatePropertySets(
 
   if ( data ) {
     await generatePropertySets(
-      data, './plant-dictionaries'
+      data, './src/lib/data/dictionaries'
     );
   }
 
   console.log(
     'Process complete.'
   );
-} )();
+} )();<

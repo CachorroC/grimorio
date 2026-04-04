@@ -98,7 +98,6 @@ const initialState: EspecimenType = {
   polaridadEnergetica: [
     'Feminine'
   ],
-  informacionAdicional: '',
   // Mantenemos una estructura inicial segura en el estado para evitar errores de undefined en los inputs
   imagenes            : {
     flor: {
@@ -164,7 +163,6 @@ export default function EspecimenForm(
         initialData.correspondenciasEnergeticas || [],
         malesEmocionales    : initialData.malesEmocionales || [],
         malesFisicos        : initialData.malesFisicos || [],
-        informacionAdicional: initialData.informacionAdicional || '',
         preparaciones       : initialData.preparaciones || [],
         taxon               : {
           ...initialState.taxon,
@@ -874,7 +872,6 @@ export default function EspecimenForm(
             savedData.correspondenciasEnergeticas || [],
             malesEmocionales    : savedData.malesEmocionales || [],
             malesFisicos        : savedData.malesFisicos || [],
-            informacionAdicional: savedData.informacionAdicional || '',
             preparaciones       : savedData.preparaciones || [],
             taxon               : {
               ...savedData.taxon,
@@ -1074,19 +1071,6 @@ export default function EspecimenForm(
               className={styles.inputFilled}
               value={formData.imageUrl ?? ''}
               onChange={handleInputChange}
-            />
-          </div>
-          <div className={styles.inputGroup} style={{
-            marginTop: '1rem' 
-          }}
-          >
-            <label className={styles.label}>Información Adicional (Opcional)</label>
-            <textarea
-              name="informacionAdicional"
-              className={styles.inputFilled}
-              value={formData.informacionAdicional ?? ''}
-              onChange={handleInputChange}
-              rows={4}
             />
           </div>
         </div>

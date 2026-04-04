@@ -15,7 +15,6 @@ export type EspecimenType = {
   chakrasAsociados           : ChakraType[];
   polaridadEnergetica        : PolaridadEnergeticaType;
   imagenes?                  : PlantDictionary;
-  informacionAdicional?      : string;
 };
 
 // 1. Define the base and specific parts
