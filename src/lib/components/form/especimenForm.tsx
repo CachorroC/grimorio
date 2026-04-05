@@ -21,39 +21,7 @@ import { displayLarge } from '#@/lib/styles/fonts/typography.module.css';
 import { upsertSpecimen, deleteSpecimen } from '#@/app/actions/specimen';
 import { icon } from '#@/lib/styles/buttons.module.css';
 import ConfirmModal from '../confirmModal';
-import toggleStyles from '#@/lib/styles/toggle.module.css';
 import ToggleButton from './toggleButton';
-
-// Helper component for the Custom Toggle Switch
-const ToggleSwitch = (
-  {
-    checked,
-    onChange,
-    children,
-    style,
-  }: {
-    checked : boolean;
-    onChange: ( e: ChangeEvent<HTMLInputElement> ) => void;
-    children: ReactNode;
-    style?  : CSSProperties;
-  }
-) => {
-  return (
-    <label
-      className={toggleStyles.toggleContainer}
-      style={style}
-    >
-      <input
-        type="checkbox"
-        className={toggleStyles.toggleInput}
-        checked={checked}
-        onChange={onChange}
-      />
-      <span className={toggleStyles.toggleSlider}></span>
-      <span className={toggleStyles.toggleLabel}>{children}</span>
-    </label>
-  );
-};
 
 const initialState: EspecimenType = {
   nombreCientifico: '',
@@ -1116,7 +1084,7 @@ export default function EspecimenForm(
               Imágenes Detalladas de la planta
             </h3>
 
-            <ToggleSwitch
+            <ToggleButton
               checked={includeImagenes}
               onChange={(
                 e
@@ -1130,7 +1098,7 @@ export default function EspecimenForm(
               }}
             >
               Habilitar Galería de Imágenes
-            </ToggleSwitch>
+            </ToggleButton>
           </div>
 
           {includeImagenes && (
@@ -1487,10 +1455,11 @@ export default function EspecimenForm(
                     'Masculine'
                   );
                 }}
-                label={'Masculine'}
-              />
+              >
+                Masculine
+              </ToggleButton>
 
-              <ToggleSwitch
+              <ToggleButton
                 checked={formData.polaridadEnergetica.includes(
                   'Feminine'
                 )}
@@ -1501,7 +1470,7 @@ export default function EspecimenForm(
                 }}
               >
                 Femenina
-              </ToggleSwitch>
+              </ToggleButton>
             </div>
           </div>
 
@@ -1534,7 +1503,7 @@ export default function EspecimenForm(
                   );
 
                   return (
-                    <ToggleSwitch
+                    <ToggleButton
                       key={chakra.nombre}
                       checked={isChecked}
                       onChange={() => {
@@ -1547,7 +1516,7 @@ export default function EspecimenForm(
                         <strong>{chakra.nombre}</strong> -{' '}
                         <em>{chakra.nombreSanscrito}</em> ({chakra.color})
                       </span>
-                    </ToggleSwitch>
+                    </ToggleButton>
                   );
                 }
               )}

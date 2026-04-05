@@ -1,24 +1,26 @@
 // components/ui/ToggleButton.tsx
 'use client';
 
-import { ChangeEventHandler, ReactNode } from 'react';
+import { ChangeEventHandler, ReactNode, CSSProperties } from 'react';
 import styles from '#@/lib/styles/toggle.module.css';
 
 interface ToggleButtonProps {
   checked  : boolean;
   onChange : ChangeEventHandler<HTMLInputElement>;
-  label?   : ReactNode;
+  children?: ReactNode;
   name?    : string;
   disabled?: boolean;
+  style?   : CSSProperties;
 }
 
 export default function ToggleButton(
   {
     checked,
     onChange,
-    label,
+    children,
     name,
     disabled = false,
+    style,
   }: ToggleButtonProps
 ) {
   return (
@@ -28,6 +30,7 @@ export default function ToggleButton(
         opacity: disabled
           ? 0.6
           : 1,
+        ...style,
       }}
     >
       <div className={styles.switch}>
@@ -40,7 +43,7 @@ export default function ToggleButton(
         />
         <span className={styles.slider}></span>
       </div>
-      {label && <span className={styles.labelText}>{label}</span>}
+      {children && <span className={styles.labelText}>{children}</span>}
     </label>
   );
 }

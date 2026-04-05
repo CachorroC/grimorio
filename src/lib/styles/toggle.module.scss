@@ -72,98 +72,13 @@
   background-color: var(--on-primary, #ffffff);
 }
 
-.labelText {
-  font-size: 1rem;
-  color: var(--on-surface, #1c1b1f);
-}
-
-/* --- Toggle Switch Styles --- */
-/* The outer wrapper that groups the text label and the switch itself */
-.toggleContainer {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  cursor: pointer;
-  user-select: none;
-}
-
-/* Visually hidden actual checkbox input. Kept strictly for accessibility and form state tracking. */
-.toggleInput {
-  opacity: 0;
-  width: 0;
-  height: 0;
-  position: absolute;
-}
-
-/* .toggleSlider is the visually rendered TRACK (the pill-shaped background) of the switch.
- * Material Design 3 Spec:
- * - Unselected track is 52x32px.
- * - Uses '--surface-container-highest' (gray-ish) background color.
- * - Adds a 2px outline matching the '--outline' color.
- */
-.toggleSlider {
-  position: relative;
-  width: 52px;
-  height: 32px;
-  /* Adjust fallback colors to match your theme if the variables aren't set */
-  background-color: var(--surface-container-highest, #e6e0e9);
-  border-radius: 16px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  flex-shrink: 0;
-  display: inline-block;
-  border: 2px solid var(--outline, #79747e);
-  box-sizing: border-box;
-
-  /* The &::before pseudo-element is the HANDLE (the central dot/circle) inside the track.
-   * Material Design 3 Spec (Unselected):
-   * - Handle shrinks to a 16x16px circle.
-   * - Uses '--outline' for its solid background color.
-   * - Perfectly centered vertically via translateY(-50%), but forced 6px inward from the left side.
-   */
-  &::before {
-    content: '';
-    position: absolute;
-    height: 16px;
-    width: 16px;
-    left: 6px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: var(--outline, #79747e);
-    border-radius: 50%;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-
-
-/* When the hidden input is checked (selected state), the adjacent .toggleSlider TRACK changes:
- * Material Design 3 Spec (Selected Track):
- * - Switches to '--primary' color for both its background filling and the outer outline.
- */
-.toggleInput:checked + .toggleSlider {
-  background-color: var(--primary, #6750a4);
-  border-color: var(--primary, #6750a4);
-}
-
-/* When the hidden input is checked, the adjacent HANDLE (the dot/circle) also changes dynamically:
- * Material Design 3 Spec (Selected Handle):
- * - Expands dramatically from 16px to 24x24px.
- * - Shifts to the right side seamlessly (leaves precisely a 4px gap from the inner right edge).
- * - Changes its background to '--on-primary' (such as white) to pop out strongly against the primary track.
- */
-.toggleInput:checked + .toggleSlider::before {
-  height: 24px;
-  width: 24px;
-  left: calc(100% - 24px - 4px);
-  background-color: var(--on-primary, #ffffff);
-}
-
 /* Optional keyboard focus indicator for accessibility tab navigation */
-.toggleInput:focus-visible + .toggleSlider {
+.switch input:focus-visible + .slider {
   outline: 2px solid var(--primary, #6750a4);
   outline-offset: 2px;
 }
 
-.toggleLabel {
+.labelText {
   font-size: 1rem;
-  color: var(--on-surface, inherit);
+  color: var(--on-surface, #1c1b1f);
 }
