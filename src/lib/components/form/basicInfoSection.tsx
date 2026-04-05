@@ -1,15 +1,24 @@
+/* eslint-disable no-unused-vars */
 import { ChangeEvent } from 'react';
 import styles from '#@/lib/styles/form.module.css';
 
 interface BasicInfoSectionProps {
   nombreCientifico: string;
-  imageUrl?: string;
-  onChange: (field: 'nombreCientifico' | 'imageUrl', value: string) => void;
+  imageUrl?       : string;
+  onChange        : ( field: 'nombreCientifico' | 'imageUrl', value: string ) => void;
 }
 
-export default function BasicInfoSection({ nombreCientifico, imageUrl, onChange }: BasicInfoSectionProps) {
-  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
-    onChange(e.target.name as 'nombreCientifico' | 'imageUrl', e.target.value);
+export default function BasicInfoSection(
+  {
+    nombreCientifico, imageUrl, onChange 
+  }: BasicInfoSectionProps 
+) {
+  const handleInputChange = (
+    e: ChangeEvent<HTMLInputElement> 
+  ) => {
+    onChange(
+      e.target.name as 'nombreCientifico' | 'imageUrl', e.target.value 
+    );
   };
 
   return (
