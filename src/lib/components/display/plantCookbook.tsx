@@ -481,7 +481,7 @@ export default function PlantCookbook(
           <Grid
             sx={{
               xs: 12,
-              md: 4,
+              md: 12,
             }}
           >
             <Typography
@@ -550,7 +550,7 @@ export default function PlantCookbook(
           <Grid
             sx={{
               xs: 12,
-              md: 8,
+              md: 12,
             }}
           >
             <Typography
