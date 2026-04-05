@@ -10126,5 +10126,96 @@
     "polaridadEnergetica": [
       "Feminine"
     ]
+  },
+  {
+    "nombreCientifico": "Popo condientes",
+    "imageUrl": "https://idk",
+    "partesUtiles": [
+      "Popo"
+    ],
+    "nombresComunes": [
+      "Popo"
+    ],
+    "propiedadesMedicinales": [
+      "Popo",
+      "Popo"
+    ],
+    "esenciasFlorales": [
+      "popo"
+    ],
+    "correspondenciasEnergeticas": [
+      "popo",
+      "popo"
+    ],
+    "malesEmocionales": [
+      "popoi"
+    ],
+    "malesFisicos": [
+      "popo"
+    ],
+    "taxon": {
+      "dominio": "popo",
+      "reino": "popo",
+      "filo": "poopo",
+      "clase": "popo",
+      "orden": "popo",
+      "familia": "popop",
+      "genero": "popo",
+      "especie": "popo",
+      "clados": [
+        "popo",
+        "popo"
+      ]
+    },
+    "preparaciones": [
+      {
+        "usoTerapeutico": "para el popo",
+        "formaDeAplicacion": "se aplica en el popo",
+        "ingredientes": [
+          {
+            "ingrediente": "popo en balde",
+            "cantidad": "5 gramos"
+          }
+        ],
+        "pasos": [
+          [
+            1,
+            "se usa el popo en el popo "
+          ],
+          [
+            2,
+            "se aplica el popo en popo "
+          ]
+        ]
+      }
+    ],
+    "elementosAsociados": "Madera",
+    "chakrasAsociados": [
+      {
+        "nombre": "Chakra de la Garganta",
+        "nombreSanscrito": "Vishuddha",
+        "ubicacion": "Garganta",
+        "color": "Azul claro",
+        "significado": "Comunicación, autenticidad, expresión verbal"
+      },
+      {
+        "nombre": "Chakra Raíz",
+        "nombreSanscrito": "Muladhara",
+        "ubicacion": "Base de la columna vertebral (coxis)",
+        "color": "Rojo",
+        "significado": "Supervivencia, seguridad, arraigo"
+      },
+      {
+        "nombre": "Chakra del Plexo Solar",
+        "nombreSanscrito": "Manipura",
+        "ubicacion": "Entre el diafragma y el ombligo",
+        "color": "Amarillo",
+        "significado": "Poder personal, autoestima, fuerza de voluntad"
+      }
+    ],
+    "polaridadEnergetica": [
+      "Feminine",
+      "Masculine"
+    ]
   }
 ]

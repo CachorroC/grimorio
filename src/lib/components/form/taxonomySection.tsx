@@ -9,22 +9,22 @@ interface TaxonomySectionProps {
 
 export default function TaxonomySection(
   {
-    taxon, onChange 
-  }: TaxonomySectionProps 
+    taxon, onChange
+  }: TaxonomySectionProps
 ) {
   const handleTaxonChange = (
-    field: keyof Taxon, value: string 
+    field: keyof Taxon, value: string
   ) => {
     onChange(
       {
         ...taxon,
         [ field ]: value,
-      } 
+      }
     );
   };
 
   const handleCladoChange = (
-    index: number, value: string 
+    index: number, value: string
   ) => {
     const newClados = [
       ...( taxon.clados || [] )
@@ -34,7 +34,7 @@ export default function TaxonomySection(
       {
         ...taxon,
         clados: newClados,
-      } 
+      }
     );
   };
 
@@ -46,24 +46,24 @@ export default function TaxonomySection(
           ...( taxon.clados || [] ),
           ''
         ],
-      } 
+      }
     );
   };
 
   const removeClado = (
-    indexToRemove: number 
+    indexToRemove: number
   ) => {
     onChange(
       {
         ...taxon,
         clados: ( taxon.clados || [] ).filter(
           (
-            _, index 
+            _, index
           ) => {
             return index !== indexToRemove;
-          } 
+          }
         ),
-      } 
+      }
     );
   };
 
@@ -82,21 +82,21 @@ export default function TaxonomySection(
           'especie'
         ].map(
           (
-            taxRank 
+            taxRank
           ) => {
             return (
               <div
                 key={taxRank}
                 className={`${ styles.inputGroup } ${ styles.flex1 }`}
                 style={{
-                  minWidth: '200px' 
+                  minWidth: '200px'
                 }}
               >
                 <label className={styles.label}>
                   {taxRank.charAt(
-                    0 
+                    0
                   ).toUpperCase() + taxRank.slice(
-                    1 
+                    1
                   )}
                 </label>
                 <input
@@ -104,27 +104,27 @@ export default function TaxonomySection(
                   className={styles.inputFilled}
                   value={( taxon[ taxRank as keyof Taxon ] as string ) || ''}
                   onChange={(
-                    e 
+                    e
                   ) => {
                     return handleTaxonChange(
-                      taxRank as keyof Taxon, e.target.value 
+                      taxRank as keyof Taxon, e.target.value
                     );
                   }}
                 />
               </div>
             );
-          } 
+          }
         )}
       </div>
 
       <div className={styles.subSection} style={{
-        marginTop: '1rem' 
+        marginTop: '1rem'
       }}
       >
         <h4>Clados</h4>
         {( taxon.clados || [] ).map(
           (
-            clado, index 
+            clado, index
           ) => {
             return (
               <div key={`clado-${ index }`} className={styles.arrayItem}>
@@ -133,10 +133,10 @@ export default function TaxonomySection(
                   className={styles.inputOutlined}
                   value={clado}
                   onChange={(
-                    e 
+                    e
                   ) => {
                     return handleCladoChange(
-                      index, e.target.value 
+                      index, e.target.value
                     );
                   }}
                   placeholder="Ej. Angiospermas"
@@ -146,7 +146,7 @@ export default function TaxonomySection(
                   className={`${ styles.button } ${ styles.deleteBtn }`}
                   onClick={() => {
                     return removeClado(
-                      index 
+                      index
                     );
                   }}
                 >
@@ -154,7 +154,7 @@ export default function TaxonomySection(
                 </button>
               </div>
             );
-          } 
+          }
         )}
         <button
           type="button"
