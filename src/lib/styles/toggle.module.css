@@ -33,9 +33,9 @@
   background-color: var(--surface-container-highest, #79747e);
   transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 24px;
-  border: var(--outline);
+  border: 0.14rem solid var(--outline);
+  box-sizing: border-box;
 }
-
 .slider:before {
   position: absolute;
   content: "";
@@ -43,14 +43,16 @@
   width: 18px;
   left: 3px;
   bottom: 3px;
-  background-color: var(--on-primary, #ffffff);
+  background-color: var(--on-primary);
   transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 50%;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border: 0.14rem solid var(--outline);
+  box-sizing: border-box;
 }
 
 .switch input:checked + .slider {
-  background-color: var(--primary, #6750a4);
+  background-color: var(--primary);
 }
 
 .switch input:checked + .slider:before {
@@ -83,13 +85,14 @@
   width: 44px;
   height: 24px;
   /* Adjust fallback colors to match your theme if the variables aren't set */
-  background-color: var(--surface-variant, #9e9e9e);
+  background-color: var(--surface-container-highest);
   border-radius: 24px;
   transition: background-color 0.3s ease;
   flex-shrink: 0;
   display: inline-block;
+  border: 0.14rem solid var(--outline);
+  box-sizing: border-box;
 }
-
 .toggleSlider::before {
   content: "";
   position: absolute;
@@ -97,7 +100,7 @@
   width: 18px;
   left: 3px;
   bottom: 3px;
-  background-color: var(--surface, #ffffff);
+  background-color: var(--surface);
   border-radius: 50%;
   transition: transform 0.3s ease, background-color 0.3s ease;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
