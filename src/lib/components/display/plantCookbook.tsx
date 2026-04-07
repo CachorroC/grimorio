@@ -177,27 +177,33 @@ const TagSection = (
             }
           )}
         </Box> */}
-        <List>
-          {tags.map(
-            (
-              tag
-            ) => {
-              return (
-                <ListItem disablePadding key={tag}>
+        <Box sx={{
+          boxShadow   : 'var(--elevation-5)',
+          borderRadius: 'var(--shape-corner-medium)'
+        }}
+        >
+          <List>
+            {tags.map(
+              (
+                tag
+              ) => {
+                return (
+                  <ListItem disablePadding key={tag}>
 
-                  <ListItemIcon sx={{
-                    color: `${ color }.light`
-                  }}
-                  >
-                    <span className='material-symbols-outlined'>{icon}</span>
-                  </ListItemIcon>
-                  <ListItemText primary={tag} />
+                    <ListItemIcon sx={{
+                      color: `${ color }.light`
+                    }}
+                    >
+                      <span className='material-symbols-outlined'>{icon}</span>
+                    </ListItemIcon>
+                    <ListItemText primary={tag} />
 
-                </ListItem>
-              );
-            }
-          )}
-        </List>
+                  </ListItem>
+                );
+              }
+            )}
+          </List>
+        </Box>
         <Divider />
 
       </Box></>
