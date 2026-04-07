@@ -142,10 +142,12 @@ const TagSection = (
 
   return (
     <>
-      <Box
-        sx={{
+      <Box sx={
+        {
           mb: 2,
-        }}
+
+        }
+      }
       >
         <Typography
           variant="subtitle1"
@@ -177,38 +179,35 @@ const TagSection = (
             }
           )}
         </Box> */}
-        <Box sx={{
-          boxShadow   : 'var(--elevation-2)',
-          borderRadius: 'var(--shape-corner-medium)',
-          p           : 'var(--spacing-md)',
-          bgcolor     : 'var(--primary-container)'
-        }}
-        >
-          <List>
-            {tags.map(
-              (
-                tag
-              ) => {
-                return (
-                  <ListItem disablePadding key={tag}>
 
-                    <ListItemIcon sx={{
-                      color: `${ color }.light`
-                    }}
-                    >
-                      <span className='material-symbols-outlined'>{icon}</span>
-                    </ListItemIcon>
-                    <ListItemText primary={tag} />
 
-                  </ListItem>
-                );
-              }
-            )}
-          </List>
-        </Box>
+        <List>
+          {tags.map(
+            (
+              tag
+            ) => {
+              return (
+                <ListItem disablePadding key={tag}>
+
+                  <ListItemIcon sx={{
+                    color: `${ color }.light`
+                  }}
+                  >
+                    <span className='material-symbols-outlined'>
+                      {icon}
+                    </span>
+                  </ListItemIcon>
+                  <ListItemText primary={tag} />
+                </ListItem>
+              );
+            }
+          )}
+        </List>
+
         <Divider />
 
-      </Box></>
+      </Box >
+    </>
   );
 };
 
@@ -348,38 +347,46 @@ export default function PlantCookbook(
                 my: 2,
               }}
             />
+            <Box sx={{
+              boxShadow   : 'var(--elevation-2)',
+              borderRadius: 'var(--shape-corner-medium)',
+              p           : 'var(--spacing-md)',
+              bgcolor     : 'var(--surface-container-low)'
+            }}
+            >
 
-            <TagSection
-              title="Partes Útiles"
-              tags={plant.partesUtiles}
-              color="secondary"
-            />
-            <TagSection
-              title="Esencias Florales"
-              tags={plant.esenciasFlorales}
-              color="primary"
-            />
-            <TagSection
-              title="Propiedades Medicinales"
-              tags={plant.propiedadesMedicinales}
-              color="success"
-            />
-            <TagSection
-              title="Correspondencias Energéticas"
-              tags={plant.correspondenciasEnergeticas}
-              color="success"
-            />
-            <TagSection
-              title="Males Físicos"
-              tags={plant.malesFisicos}
-              color="error"
-            />
-            <TagSection
-              title="Males Emocionales"
-              tags={plant.malesEmocionales}
-              color="error"
-            />
 
+              <TagSection
+                title="Partes Útiles"
+                tags={plant.partesUtiles}
+                color="secondary"
+              />
+              <TagSection
+                title="Esencias Florales"
+                tags={plant.esenciasFlorales}
+                color="primary"
+              />
+              <TagSection
+                title="Propiedades Medicinales"
+                tags={plant.propiedadesMedicinales}
+                color="success"
+              />
+              <TagSection
+                title="Correspondencias Energéticas"
+                tags={plant.correspondenciasEnergeticas}
+                color="success"
+              />
+              <TagSection
+                title="Males Físicos"
+                tags={plant.malesFisicos}
+                color="error"
+              />
+              <TagSection
+                title="Males Emocionales"
+                tags={plant.malesEmocionales}
+                color="error"
+              />
+            </Box>
             <Box
               sx={{
                 display : 'flex',
