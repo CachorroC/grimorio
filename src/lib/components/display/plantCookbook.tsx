@@ -178,8 +178,10 @@ const TagSection = (
           )}
         </Box> */}
         <Box sx={{
-          boxShadow   : 'var(--elevation-5)',
-          borderRadius: 'var(--shape-corner-medium)'
+          boxShadow   : 'var(--elevation-2)',
+          borderRadius: 'var(--shape-corner-medium)',
+          p           : 'var(--spacing-md)',
+          bgcolor     : 'var(--primary-container)'
         }}
         >
           <List>
