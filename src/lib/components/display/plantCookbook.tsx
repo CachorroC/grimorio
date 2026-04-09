@@ -33,6 +33,7 @@ import { useAccordionScroll } from '#@/app/context/AcordionScrollContext';
 interface PlantCookbookProps {
   plant        : EspecimenType;
   setIsEditing?: Dispatch<SetStateAction<boolean>>;
+  isStandalone?: boolean;
 }
 
 // --- Color Mappings ---
@@ -142,12 +143,10 @@ const TagSection = (
 
   return (
     <>
-      <Box sx={
-        {
+      <Box
+        sx={{
           mb: 2,
-
-        }
-      }
+        }}
       >
         <Typography
           variant="subtitle1"
@@ -180,22 +179,22 @@ const TagSection = (
           )}
         </Box> */}
 
-
         <List>
           {tags.map(
             (
               tag
             ) => {
               return (
-                <ListItem disablePadding key={tag}>
-
-                  <ListItemIcon sx={{
-                    color: `${ color }.light`
-                  }}
+                <ListItem
+                  disablePadding
+                  key={tag}
+                >
+                  <ListItemIcon
+                    sx={{
+                      color: `${ color }.light`,
+                    }}
                   >
-                    <span className='material-symbols-outlined'>
-                      {icon}
-                    </span>
+                    <span className="material-symbols-outlined">{icon}</span>
                   </ListItemIcon>
                   <ListItemText primary={tag} />
                 </ListItem>
@@ -205,8 +204,7 @@ const TagSection = (
         </List>
 
         <Divider />
-
-      </Box >
+      </Box>
     </>
   );
 };
@@ -228,6 +226,7 @@ const CustomColorTagSection = (
     <Box
       sx={{
         mb: 2,
+        mt: 2
       }}
     >
       <Typography
@@ -292,6 +291,7 @@ export default function PlantCookbook(
   {
     plant,
     setIsEditing,
+    isStandalone,
   }: PlantCookbookProps
 ) {
   const {
@@ -347,15 +347,17 @@ export default function PlantCookbook(
                 my: 2,
               }}
             />
-            <Box sx={{
-              boxShadow   : 'var(--elevation-2)',
-              borderRadius: 'var(--shape-corner-medium)',
-              p           : 'var(--spacing-md)',
-              bgcolor     : 'var(--surface-container-low)'
-            }}
+            <Box
+              sx={{
+                borderRadius: 'var(--shape-corner-medium)',
+                p           : 'var(--spacing-md)',
+                bgcolor     : 'var(--surface-container-low)',
+                gap         : {
+                  xs: 0,
+                  sm: 4,
+                },
+              }}
             >
-
-
               <TagSection
                 title="Partes Útiles"
                 tags={plant.partesUtiles}
@@ -393,7 +395,7 @@ export default function PlantCookbook(
                 flexWrap: 'wrap',
                 gap     : {
                   xs: 0,
-                  sm: 4,
+                  sm: 2,
                 },
               }}
             >
@@ -493,35 +495,35 @@ export default function PlantCookbook(
           container
           spacing={4}
         >
-          <Grid
-            sx={{
-              xs: 12,
-              md: 12,
-            }}
-          >
-            <Typography
-              variant="h5"
-              component="h2"
-              gutterBottom
+          {isStandalone && (
+            <Grid
               sx={{
-                display   : 'flex',
-                alignItems: 'center',
-                gap       : 1,
+                xs: 12,
+                md: 12,
               }}
             >
-              <InfoOutlinedIcon /> Taxonomía
-            </Typography>
-            <TableContainer
-              component={Paper}
-              elevation={8}
-              variant="elevation"
-            >
-              <Table size="small">
-                <TableBody>
-                  {Object.entries(
-                    plant.taxon
-                  )
-                    .map(
+              <Typography
+                variant="h5"
+                component="h2"
+                gutterBottom
+                sx={{
+                  display   : 'flex',
+                  alignItems: 'center',
+                  gap       : 1,
+                }}
+              >
+                <InfoOutlinedIcon /> Taxonomía
+              </Typography>
+              <TableContainer
+                component={Paper}
+                elevation={8}
+                variant="elevation"
+              >
+                <Table size="small">
+                  <TableBody>
+                    {Object.entries(
+                      plant.taxon
+                    ).map(
                       (
                         [
                           key,
@@ -557,10 +559,11 @@ export default function PlantCookbook(
                         );
                       }
                     )}
-                </TableBody>
-              </Table>
-            </TableContainer>
-          </Grid>
+                  </TableBody>
+                </Table>
+              </TableContainer>
+            </Grid>
+          )}
 
           <Grid
             sx={{
@@ -758,19 +761,21 @@ export default function PlantCookbook(
         </Grid>
       </CardContent>
 
-      <Button
-        onClick={() => {
-          return setIsEditing?.(
-            (
-              e
-            ) => {
-              return !e;
-            }
-          );
-        }}
-      >
-        Editar
-      </Button>
+      {isStandalone && (
+        <Button
+          onClick={() => {
+            return setIsEditing?.(
+              (
+                e
+              ) => {
+                return !e;
+              }
+            );
+          }}
+        >
+          Editar
+        </Button>
+      )}
     </>
   );
 }

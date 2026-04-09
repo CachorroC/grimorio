@@ -7,37 +7,24 @@ import { EspecimenType } from '../types/especimenTypes';
 export const getHierbas = unstable_cache(
   async () => {
     const client = await clientPromise;
-    const database = client.db(
-      'botany_db'
-    );
+    const database = client.db('botany_db');
     const plantasMedicinalesCollection = database.collection<EspecimenType>(
       'plantas_medicinales',
     );
 
-    const data = await plantasMedicinalesCollection.find(
-      {}
-    )
-      .toArray();
+    const data = await plantasMedicinalesCollection.find({}).toArray();
 
-    return data.map(
-      (
-        item
-      ) => {
-        return {
-          ...item,
-          // Serialize the BSON ObjectId
-          _id: item._id.toString(),
-        };
-      }
-    );
+    return data.map((item) => {
+      return {
+        ...item,
+        // Serialize the BSON ObjectId
+        _id: item._id.toString(),
+      };
+    });
   },
-  [
-    'hierbas-list-cache'
-  ], // Updated cache key to reflect a list
+  ['hierbas-list-cache'], // Updated cache key to reflect a list
   {
-    tags: [
-      'hierbas'
-    ], // Invalidate this list whenever a new herb is added/updated
-    revalidate: false  // Cache indefinitely until revalidated
-  }
+    tags: ['hierbas'], // Invalidate this list whenever a new herb is added/updated
+    revalidate: false, // Cache indefinitely until revalidated
+  },
 );

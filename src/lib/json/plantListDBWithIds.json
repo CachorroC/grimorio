@@ -3,9 +3,7 @@
     "_id": "69c06c26f66d6088e46a4575",
     "nombreCientifico": "Espletia spp",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Frailejon_Espeletia_sp..JPG",
-    "nombresComunes": [
-      "Frailejón"
-    ],
+    "nombresComunes": ["Frailejón"],
     "propiedadesMedicinales": [
       "Monoterpenos (especialmente alpha-pineno)",
       "Sesquiterpenos",
@@ -97,10 +95,7 @@
             2,
             "Tritura con las manos las hojas secas de frailejón. notaras que son un poco pegajosas esa es la resina medicinal"
           ],
-          [
-            3,
-            "colocar el picado de hojas sobre el carbon"
-          ],
+          [3, "colocar el picado de hojas sobre el carbon"],
           [
             4,
             "Pasa el humo alrededor de la persona de cabeza hasta los pies o por los rincones de la casa. la persona debe inhalar suavemente el aroma mientras visualiza cómo la niebla de su mente se disipa, tal como el viento despeja el páramo"
@@ -132,10 +127,7 @@
             1,
             "Pon el agua a hervir. Cuando alcance el punto de ebullicion, añade las plantas"
           ],
-          [
-            2,
-            "Deja hervir por solo 3 minutos y apaga el fuego"
-          ],
+          [2, "Deja hervir por solo 3 minutos y apaga el fuego"],
           [
             3,
             "Tapa la olla y deja reposar hasta que el agua esté a una temperatura tibia, agradable para la piela"
@@ -176,10 +168,7 @@
             2,
             "Tritura con las manos las hojas secas de frailejón. notaras que son un poco pegajosas esa es la resina medicinal"
           ],
-          [
-            3,
-            "colocar el picado de hojas sobre el carbon"
-          ],
+          [3, "colocar el picado de hojas sobre el carbon"],
           [
             4,
             "Pasa el humo alrededor de la persona de cabeza hasta los pies o por los rincones de la casa. la persona debe inhalar suavemente el aroma mientras visualiza cómo la niebla de su mente se disipa, tal como el viento despeja el páramo"
@@ -212,10 +201,7 @@
             1,
             "Pon el agua a hervir. Cuando alcance el punto de ebullicion, añade las plantas"
           ],
-          [
-            2,
-            "Deja hervir por solo 3 minutos y apaga el fuego"
-          ],
+          [2, "Deja hervir por solo 3 minutos y apaga el fuego"],
           [
             3,
             "Tapa la olla y deja reposar hasta que el agua esté a una temperatura tibia, agradable para la piela"
@@ -237,9 +223,7 @@
       }
     ],
     "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c1633bf66d6088e46a4599",
@@ -266,11 +250,7 @@
       "Hemostático",
       "Antiséptico"
     ],
-    "partesUtiles": [
-      "Corteza",
-      "Hojas",
-      "Bellotas"
-    ],
+    "partesUtiles": ["Corteza", "Hojas", "Bellotas"],
     "esenciasFlorales": [
       "Aporta fuerza y estructura",
       "Ayuda a superar el agotamiento profundo",
@@ -312,11 +292,7 @@
       "familia": "Fagaceae",
       "genero": "Quercus",
       "especie": "humboldtii",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas"]
     },
     "preparaciones": [
       {
@@ -337,22 +313,13 @@
             1,
             "Llevar el agua a ebullición en un recipiente que no sea de aluminio."
           ],
-          [
-            2,
-            "Añadir la corteza de roble al agua hirviendo."
-          ],
+          [2, "Añadir la corteza de roble al agua hirviendo."],
           [
             3,
             "Reducir el fuego y dejar hervir a fuego lento durante 15 minutos para extraer los taninos."
           ],
-          [
-            4,
-            "Retirar del fuego, tapar y dejar reposar por 10 minutos."
-          ],
-          [
-            5,
-            "Colar la preparación y dejar entibiar antes de su uso."
-          ]
+          [4, "Retirar del fuego, tapar y dejar reposar por 10 minutos."],
+          [5, "Colar la preparación y dejar entibiar antes de su uso."]
         ]
       }
     ],
@@ -366,38 +333,27 @@
       }
     ],
     "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c1b214f66d6088e46a45a9",
     "nombreCientifico": "Bixa orellana",
     "imageUrl": "https://catalogofloravalleaburra.eia.edu.co/storage/images/9742380e146825c00f71a8b5dfe5b2a8a824abbd.jpg",
-    "nombresComunes": [
-      "Achiote"
-    ],
+    "nombresComunes": ["Achiote"],
     "propiedadesMedicinales": [
       "Cicatrizante",
       "Antiinflamatorio",
       "Quemaduras",
       "Antidiarréico"
     ],
-    "partesUtiles": [
-      "Semillas",
-      "Hojas"
-    ],
+    "partesUtiles": ["Semillas", "Hojas"],
     "esenciasFlorales": [],
     "correspondenciasEnergeticas": [
       "Escudo protector contra energias externas",
       "Abre los caminos"
     ],
-    "malesEmocionales": [
-      "Falta de toma de desición, caminos inciertos."
-    ],
-    "malesFisicos": [
-      "par alas cicatrices"
-    ],
+    "malesEmocionales": ["Falta de toma de desición, caminos inciertos."],
+    "malesFisicos": ["par alas cicatrices"],
     "taxon": {
       "dominio": "Eukaryota",
       "reino": "Plantae",
@@ -418,12 +374,7 @@
             "cantidad": "10 a 15 gramos "
           }
         ],
-        "pasos": [
-          [
-            1,
-            "Hervir. poner a hervir el agua"
-          ]
-        ]
+        "pasos": [[1, "Hervir. poner a hervir el agua"]]
       },
       {
         "usoTerapeutico": "Decoccion de achiote",
@@ -434,12 +385,7 @@
             "cantidad": "10 a 15 gramos "
           }
         ],
-        "pasos": [
-          [
-            1,
-            "Hervir. poner a hervir el agua"
-          ]
-        ]
+        "pasos": [[1, "Hervir. poner a hervir el agua"]]
       }
     ],
     "chakrasAsociados": [
@@ -452,19 +398,13 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c30edbf66d6088e46a467a",
     "nombreCientifico": "Baccharis bogotensis",
     "imageUrl": "https://i.pinimg.com/736x/60/17/c2/6017c25b9ec598512873f4e1cdd0d36a.jpg",
-    "nombresComunes": [
-      "Ciro",
-      "Chilca",
-      "Chilca blanca"
-    ],
+    "nombresComunes": ["Ciro", "Chilca", "Chilca blanca"],
     "propiedadesMedicinales": [
       "Antiinflamatoria",
       "Analgésica",
@@ -473,10 +413,7 @@
       "Antiespasmódico",
       "Febrífugo leve"
     ],
-    "partesUtiles": [
-      "Hojas",
-      "Sumidades floridas"
-    ],
+    "partesUtiles": ["Hojas", "Sumidades floridas"],
     "esenciasFlorales": [
       "Digestión de emociones difíciles",
       "Ligereza de espíritu",
@@ -507,11 +444,7 @@
       "familia": "Asteraceae",
       "genero": "Baccharis",
       "especie": "bogotensis",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Astéridas"]
     },
     "preparaciones": [
       {
@@ -534,26 +467,14 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Colocar las hojas de ciro en una taza."
-          ],
-          [
-            2,
-            "Agregar el agua hirviendo."
-          ],
+          [1, "Colocar las hojas de ciro en una taza."],
+          [2, "Agregar el agua hirviendo."],
           [
             3,
             "Tapar inmediatamente para no perder los aceites esenciales volátiles responsables de su acción digestiva."
           ],
-          [
-            4,
-            "Dejar infundir por 5 a 7 minutos."
-          ],
-          [
-            5,
-            "Colar y beber lentamente mientras esté caliente."
-          ]
+          [4, "Dejar infundir por 5 a 7 minutos."],
+          [5, "Colar y beber lentamente mientras esté caliente."]
         ]
       },
       {
@@ -573,19 +494,13 @@
       }
     ],
     "elementosAsociados": "Aire",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4706",
     "nombreCientifico": "Drimys granadensis",
     "imageUrl": "https://orchidroots.com/static/utils/images/Winteraceae/Drimys_3AwUdeHyNnHoERJek5UcRh.jpg",
-    "nombresComunes": [
-      "Ají de páramo",
-      "Canelo de Páramo",
-      "Palo de ají"
-    ],
+    "nombresComunes": ["Ají de páramo", "Canelo de Páramo", "Palo de ají"],
     "propiedadesMedicinales": [
       "Estimulante digestivo",
       "Carminativo",
@@ -593,10 +508,7 @@
       "Analgésico leve",
       "Antibacteriano"
     ],
-    "partesUtiles": [
-      "Corteza",
-      "Hojas"
-    ],
+    "partesUtiles": ["Corteza", "Hojas"],
     "esenciasFlorales": [
       "Estimula el fuego interior",
       "Disuelve la apatía",
@@ -628,10 +540,7 @@
       "familia": "Winteraceae",
       "genero": "Drimys",
       "especie": "granadensis",
-      "clados": [
-        "Angiospermas",
-        "Magnolíidas"
-      ]
+      "clados": ["Angiospermas", "Magnolíidas"]
     },
     "preparaciones": [
       {
@@ -648,26 +557,14 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Colocar las hojas o la corteza en una taza de cerámica."
-          ],
-          [
-            2,
-            "Verter el agua hirviendo directamente sobre la planta."
-          ],
+          [1, "Colocar las hojas o la corteza en una taza de cerámica."],
+          [2, "Verter el agua hirviendo directamente sobre la planta."],
           [
             3,
             "Tapar la taza inmediatamente para evitar que los aceites esenciales volátiles escapen."
           ],
-          [
-            4,
-            "Dejar infundir entre 5 y 8 minutos."
-          ],
-          [
-            5,
-            "Colar y consumir mientras aún está caliente."
-          ]
+          [4, "Dejar infundir entre 5 y 8 minutos."],
+          [5, "Colar y consumir mientras aún está caliente."]
         ]
       }
     ],
@@ -681,19 +578,13 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4707",
     "nombreCientifico": "Baccharis latifolia",
     "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/530918375/original.jpg",
-    "nombresComunes": [
-      "Chilco común",
-      "Chilco",
-      "Chilca"
-    ],
+    "nombresComunes": ["Chilco común", "Chilco", "Chilca"],
     "propiedadesMedicinales": [
       "Antiinflamatorio potente",
       "Antirreumático",
@@ -701,10 +592,7 @@
       "Antiséptico",
       "Febrífugo"
     ],
-    "partesUtiles": [
-      "Hojas",
-      "Tallos tiernos"
-    ],
+    "partesUtiles": ["Hojas", "Tallos tiernos"],
     "esenciasFlorales": [
       "Flexibilidad mental",
       "Ayuda a soltar la rigidez en los pensamientos",
@@ -735,11 +623,7 @@
       "familia": "Asteraceae",
       "genero": "Baccharis",
       "especie": "latifolia",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Astéridas"]
     },
     "preparaciones": [
       {
@@ -756,10 +640,7 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar bien las hojas frescas de chilco."
-          ],
+          [1, "Lavar bien las hojas frescas de chilco."],
           [
             2,
             "Macerar o machacar las hojas en un mortero hasta obtener una pasta."
@@ -768,10 +649,7 @@
             3,
             "Agregar un poco de agua caliente o alcohol para humedecer y activar la pasta."
           ],
-          [
-            4,
-            "Calentar ligeramente la mezcla a baño maría (sin hervir)."
-          ],
+          [4, "Calentar ligeramente la mezcla a baño maría (sin hervir)."],
           [
             5,
             "Aplicar la pasta tibia sobre una gasa y colocar sobre la articulación dolorida."
@@ -789,9 +667,7 @@
       }
     ],
     "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4709",
@@ -808,11 +684,7 @@
       "Antiinflamatorio (uso tópico estricto)",
       "Saponificante superficial"
     ],
-    "partesUtiles": [
-      "Raíz",
-      "Hojas",
-      "Frutos (Tóxicos si se ingieren)"
-    ],
+    "partesUtiles": ["Raíz", "Hojas", "Frutos (Tóxicos si se ingieren)"],
     "esenciasFlorales": [
       "Purificación profunda",
       "Ayuda a soltar toxicidad en relaciones",
@@ -842,10 +714,7 @@
       "familia": "Phytolaccaceae",
       "genero": "Phytolacca",
       "especie": "bogotensis",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas"]
     },
     "preparaciones": [
       {
@@ -862,10 +731,7 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Utilizar guantes para manipular la raíz o las bayas."
-          ],
+          [1, "Utilizar guantes para manipular la raíz o las bayas."],
           [
             2,
             "Macerar (machacar) bien el material vegetal hasta exponer sus jugos ricos en saponinas."
@@ -874,10 +740,7 @@
             3,
             "Mezclar fuertemente con el agua tibia hasta que genere un poco de espuma."
           ],
-          [
-            4,
-            "Filtrar el líquido resultante."
-          ],
+          [4, "Filtrar el líquido resultante."],
           [
             5,
             "Aplicar externamente sobre la piel afectada, dejar actuar 5 minutos y enjuagar profundamente."
@@ -895,30 +758,20 @@
       }
     ],
     "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a470a",
     "nombreCientifico": "Passiflora mixta",
     "imageUrl": "https://www.google.com/search?q=Passiflora+mixta&tbm=isch",
-    "nombresComunes": [
-      "Curuba de monte",
-      "Curuba india",
-      "Tumbo"
-    ],
+    "nombresComunes": ["Curuba de monte", "Curuba india", "Tumbo"],
     "propiedadesMedicinales": [
       "Sedante nervioso",
       "Ansiolítico leve",
       "Antiespasmódico",
       "Hipotensor"
     ],
-    "partesUtiles": [
-      "Hojas",
-      "Flores",
-      "Fruto (alimenticio)"
-    ],
+    "partesUtiles": ["Hojas", "Flores", "Fruto (alimenticio)"],
     "esenciasFlorales": [
       "Paz interior",
       "Asimilación espiritual",
@@ -950,11 +803,7 @@
       "familia": "Passifloraceae",
       "genero": "Passiflora",
       "especie": "mixta",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas"]
     },
     "preparaciones": [
       {
@@ -971,18 +820,9 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Colocar las hojas y flores en el fondo de una taza."
-          ],
-          [
-            2,
-            "Verter el agua hirviendo."
-          ],
-          [
-            3,
-            "Tapar y dejar en infusión durante 10 a 15 minutos."
-          ],
+          [1, "Colocar las hojas y flores en el fondo de una taza."],
+          [2, "Verter el agua hirviendo."],
+          [3, "Tapar y dejar en infusión durante 10 a 15 minutos."],
           [
             4,
             "Colar y beber lentamente. Se puede endulzar con miel para potenciar la relajación."
@@ -1000,29 +840,20 @@
       }
     ],
     "elementosAsociados": "Aire",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4708",
     "nombreCientifico": "Alnus acuminata",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Alnus_acuminata_1.jpg/250px-Alnus_acuminata_1.jpg",
-    "nombresComunes": [
-      "Aliso",
-      "Aliso andino",
-      "Cerezo (en algunas regiones)"
-    ],
+    "nombresComunes": ["Aliso", "Aliso andino", "Cerezo (en algunas regiones)"],
     "propiedadesMedicinales": [
       "Astringente",
       "Antiséptico",
       "Antirreumático",
       "Cicatrizante cutáneo"
     ],
-    "partesUtiles": [
-      "Hojas",
-      "Corteza"
-    ],
+    "partesUtiles": ["Hojas", "Corteza"],
     "esenciasFlorales": [
       "Aceptación de la propia sombra",
       "Fluidez emocional",
@@ -1052,11 +883,7 @@
       "familia": "Betulaceae",
       "genero": "Alnus",
       "especie": "acuminata",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas"]
     },
     "preparaciones": [
       {
@@ -1073,26 +900,11 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Hervir el litro de agua."
-          ],
-          [
-            2,
-            "Agregar la corteza de aliso triturada."
-          ],
-          [
-            3,
-            "Dejar hervir a fuego medio durante 15 minutos."
-          ],
-          [
-            4,
-            "Dejar enfriar completamente y colar."
-          ],
-          [
-            5,
-            "Empapar un paño limpio en el líquido y aplicar sobre la piel."
-          ]
+          [1, "Hervir el litro de agua."],
+          [2, "Agregar la corteza de aliso triturada."],
+          [3, "Dejar hervir a fuego medio durante 15 minutos."],
+          [4, "Dejar enfriar completamente y colar."],
+          [5, "Empapar un paño limpio en el líquido y aplicar sobre la piel."]
         ]
       }
     ],
@@ -1106,9 +918,7 @@
       }
     ],
     "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Feminine"
-    ],
+    "polaridadEnergetica": ["Feminine"],
     "imagenes": {
       "flor": {
         "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Alnus_acuminata_1.jpg/250px-Alnus_acuminata_1.jpg",
@@ -1132,22 +942,14 @@
     "_id": "69c5d9c6f66d6088e46a4710",
     "nombreCientifico": "Clusia multiflora",
     "imageUrl": "https://plantasdecolombia.com/wp-content/uploads/2018/07/2017-07-18-15-01-49.jpg",
-    "nombresComunes": [
-      "Gaque",
-      "Chagualo",
-      "Cucharo"
-    ],
+    "nombresComunes": ["Gaque", "Chagualo", "Cucharo"],
     "propiedadesMedicinales": [
       "Cicatrizante potente (látex)",
       "Analgésico local",
       "Antirreumático",
       "Antimicrobiano"
     ],
-    "partesUtiles": [
-      "Látex (resina amarilla o blanca)",
-      "Hojas",
-      "Flores"
-    ],
+    "partesUtiles": ["Látex (resina amarilla o blanca)", "Hojas", "Flores"],
     "esenciasFlorales": [
       "Apertura del chakra del corazón",
       "Sanación de heridas afectivas profundas",
@@ -1178,12 +980,7 @@
       "familia": "Clusiaceae",
       "genero": "Clusia",
       "especie": "multiflora",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Eurosidas I"]
     },
     "preparaciones": [
       {
@@ -1204,14 +1001,8 @@
             1,
             "Hacer pequeñas incisiones en el tallo o arrancar una hoja para recolectar las gotas de látex."
           ],
-          [
-            2,
-            "Limpiar la zona de la piel donde hay dolor o la herida menor."
-          ],
-          [
-            3,
-            "Untar el látex directamente sobre la piel."
-          ],
+          [2, "Limpiar la zona de la piel donde hay dolor o la herida menor."],
+          [3, "Untar el látex directamente sobre la piel."],
           [
             4,
             "Calentar ligeramente una hoja de gaque al fuego (sin quemarla) para ablandarla."
@@ -1233,30 +1024,20 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a470b",
     "nombreCientifico": "Erythrina edulis",
     "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/7955719/original.jpg",
-    "nombresComunes": [
-      "Chachafruto",
-      "Balú",
-      "Frijol nupal"
-    ],
+    "nombresComunes": ["Chachafruto", "Balú", "Frijol nupal"],
     "propiedadesMedicinales": [
       "Diurético",
       "Hipotensor",
       "Nutracéutico (alto en proteínas)",
       "Galactagogo (estimula la leche materna)"
     ],
-    "partesUtiles": [
-      "Semillas (cocidas)",
-      "Hojas",
-      "Flores"
-    ],
+    "partesUtiles": ["Semillas (cocidas)", "Hojas", "Flores"],
     "esenciasFlorales": [
       "Nutrición maternal",
       "Abundancia y generosidad",
@@ -1287,11 +1068,7 @@
       "familia": "Fabaceae",
       "genero": "Erythrina",
       "especie": "edulis",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas"]
     },
     "preparaciones": [
       {
@@ -1312,10 +1089,7 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Extraer las semillas de las vainas grandes del balú."
-          ],
+          [1, "Extraer las semillas de las vainas grandes del balú."],
           [
             2,
             "Lavar las semillas y retirar la cutícula externa si se desea un puré más fino."
@@ -1345,29 +1119,20 @@
       }
     ],
     "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a470c",
     "nombreCientifico": "Cedrela montana",
     "imageUrl": "https://catalogofloravalleaburra.eia.edu.co/storage/images/5937e15ea21a329476b6ff6a39cbb81df1520f16.jpg",
-    "nombresComunes": [
-      "Cedro de altura",
-      "Cedro rosado",
-      "Cedro cebollo"
-    ],
+    "nombresComunes": ["Cedro de altura", "Cedro rosado", "Cedro cebollo"],
     "propiedadesMedicinales": [
       "Febrífugo",
       "Tónico amargo",
       "Astringente",
       "Antiséptico"
     ],
-    "partesUtiles": [
-      "Corteza",
-      "Madera (aserrín/viruta)"
-    ],
+    "partesUtiles": ["Corteza", "Madera (aserrín/viruta)"],
     "esenciasFlorales": [
       "Estructura moral",
       "Limpieza de pensamientos parasitarios",
@@ -1398,11 +1163,7 @@
       "familia": "Meliaceae",
       "genero": "Cedrela",
       "especie": "montana",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas"]
     },
     "preparaciones": [
       {
@@ -1419,22 +1180,13 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar la corteza para retirar impurezas."
-          ],
-          [
-            2,
-            "Colocar la corteza en el agua fría y llevar a fuego."
-          ],
+          [1, "Lavar la corteza para retirar impurezas."],
+          [2, "Colocar la corteza en el agua fría y llevar a fuego."],
           [
             3,
             "Hervir a fuego muy lento hasta que el líquido se reduzca a unos 400ml."
           ],
-          [
-            4,
-            "Dejar reposar, colar y embotellar."
-          ],
+          [4, "Dejar reposar, colar y embotellar."],
           [
             5,
             "Tomar en dosis pequeñas debido a su fuerte sabor amargo y potencia astringente."
@@ -1452,28 +1204,20 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a470f",
     "nombreCientifico": "Weinmannia tomentosa",
     "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/54317988/large.jpeg",
-    "nombresComunes": [
-      "Encenillo",
-      "Encenillo de páramo"
-    ],
+    "nombresComunes": ["Encenillo", "Encenillo de páramo"],
     "propiedadesMedicinales": [
       "Astringente",
       "Hemostático",
       "Cicatrizante",
       "Antiséptico"
     ],
-    "partesUtiles": [
-      "Corteza",
-      "Hojas"
-    ],
+    "partesUtiles": ["Corteza", "Hojas"],
     "esenciasFlorales": [
       "Anclaje a la realidad",
       "Protección del campo áurico",
@@ -1504,12 +1248,7 @@
       "familia": "Cunoniaceae",
       "genero": "Weinmannia",
       "especie": "tomentosa",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Eurosidas I"]
     },
     "preparaciones": [
       {
@@ -1526,10 +1265,7 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Hervir el agua en un recipiente limpio."
-          ],
+          [1, "Hervir el agua en un recipiente limpio."],
           [
             2,
             "Añadir la corteza de encenillo y mantener a fuego lento por 10 minutos."
@@ -1538,14 +1274,8 @@
             3,
             "Apagar y dejar reposar tapado hasta que alcance temperatura ambiente."
           ],
-          [
-            4,
-            "Colar con un filtro fino para retirar cualquier astilla."
-          ],
-          [
-            5,
-            "Empapar una gasa estéril y aplicar sobre la zona afectada."
-          ]
+          [4, "Colar con un filtro fino para retirar cualquier astilla."],
+          [5, "Empapar una gasa estéril y aplicar sobre la zona afectada."]
         ]
       }
     ],
@@ -1559,29 +1289,20 @@
       }
     ],
     "elementosAsociados": "Aire",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a470d",
     "nombreCientifico": "Morella parvifolia",
     "imageUrl": "https://plantasdecolombia.com/wp-content/uploads/2011/10/morella-parvifolia1.jpg",
-    "nombresComunes": [
-      "Laurel de cera",
-      "Laurel de Olivo",
-      "Árbol de cera"
-    ],
+    "nombresComunes": ["Laurel de cera", "Laurel de Olivo", "Árbol de cera"],
     "propiedadesMedicinales": [
       "Cicatrizante",
       "Emoliente (la cera)",
       "Anticatarral",
       "Astringente leve"
     ],
-    "partesUtiles": [
-      "Frutos (cera)",
-      "Hojas"
-    ],
+    "partesUtiles": ["Frutos (cera)", "Hojas"],
     "esenciasFlorales": [
       "Iluminación interior",
       "Claridad en momentos de oscuridad mental",
@@ -1592,11 +1313,7 @@
       "Elemento Fuego y Aire",
       "Rituales de iluminación y apertura de caminos"
     ],
-    "malesEmocionales": [
-      "Pesimismo",
-      "Dureza de corazón",
-      "Confusión vital"
-    ],
+    "malesEmocionales": ["Pesimismo", "Dureza de corazón", "Confusión vital"],
     "malesFisicos": [
       "Resequedad severa en la piel",
       "Congestión nasal (inhalaciones)",
@@ -1611,11 +1328,7 @@
       "familia": "Myricaceae",
       "genero": "Morella",
       "especie": "parvifolia",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas"]
     },
     "preparaciones": [
       {
@@ -1632,18 +1345,12 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Fundir la cera de los frutos al baño maría a fuego muy bajo."
-          ],
+          [1, "Fundir la cera de los frutos al baño maría a fuego muy bajo."],
           [
             2,
             "Una vez líquida, incorporar el aceite vegetal y remover suavemente para integrar."
           ],
-          [
-            3,
-            "Retirar del fuego antes de que humee."
-          ],
+          [3, "Retirar del fuego antes de que humee."],
           [
             4,
             "Verter en un recipiente de vidrio estéril y dejar solidificar a temperatura ambiente."
@@ -1665,19 +1372,13 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a470e",
     "nombreCientifico": "Lupinus bogotensis",
     "imageUrl": "https://www.google.com/search?q=Lupinus+bogotensis&tbm=isch",
-    "nombresComunes": [
-      "Chocho",
-      "Chochito",
-      "Altramuz de Bogotá"
-    ],
+    "nombresComunes": ["Chocho", "Chochito", "Altramuz de Bogotá"],
     "propiedadesMedicinales": [
       "Desparasitante (altamente tóxico si no se procesa)",
       "Ectoparasiticida (uso veterinario/externo)",
@@ -1716,11 +1417,7 @@
       "familia": "Fabaceae",
       "genero": "Lupinus",
       "especie": "bogotensis",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas"]
     },
     "preparaciones": [
       {
@@ -1737,14 +1434,8 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Triturar las semillas amargas de chocho en un mortero."
-          ],
-          [
-            2,
-            "Hervir el agua y añadir las semillas trituradas."
-          ],
+          [1, "Triturar las semillas amargas de chocho en un mortero."],
+          [2, "Hervir el agua y añadir las semillas trituradas."],
           [
             3,
             "Dejar hervir por 20 minutos para extraer los alcaloides tóxicos al agua."
@@ -1770,28 +1461,19 @@
       }
     ],
     "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4711",
     "nombreCientifico": "Vallea stipularis",
     "imageUrl": "https://www.picturethisai.com/wiki-image/1080/357136825710116864.jpeg",
-    "nombresComunes": [
-      "Raque",
-      "Palo de cruz"
-    ],
+    "nombresComunes": ["Raque", "Palo de cruz"],
     "propiedadesMedicinales": [
       "Antiinflamatorio",
       "Febrífugo",
       "Astringente leve"
     ],
-    "partesUtiles": [
-      "Hojas",
-      "Flores",
-      "Corteza tierna"
-    ],
+    "partesUtiles": ["Hojas", "Flores", "Corteza tierna"],
     "esenciasFlorales": [
       "Fomenta la alegría de vivir",
       "Alivia el pesimismo",
@@ -1821,11 +1503,7 @@
       "familia": "Elaeocarpaceae",
       "genero": "Vallea",
       "especie": "stipularis",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas"]
     },
     "preparaciones": [
       {
@@ -1842,26 +1520,11 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Calentar el agua hasta el punto de ebullición."
-          ],
-          [
-            2,
-            "Agregar las hojas y las flores campanuladas rojas del raque."
-          ],
-          [
-            3,
-            "Apagar el fuego, tapar y dejar infundir por 8 minutos."
-          ],
-          [
-            4,
-            "Colar la infusión."
-          ],
-          [
-            5,
-            "Tomar a sorbos lentos mientras aún está tibia."
-          ]
+          [1, "Calentar el agua hasta el punto de ebullición."],
+          [2, "Agregar las hojas y las flores campanuladas rojas del raque."],
+          [3, "Apagar el fuego, tapar y dejar infundir por 8 minutos."],
+          [4, "Colar la infusión."],
+          [5, "Tomar a sorbos lentos mientras aún está tibia."]
         ]
       }
     ],
@@ -1875,29 +1538,20 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4713",
     "nombreCientifico": "Myrsine dependens",
     "imageUrl": "https://www.google.com/search?q=Myrsine+dependens&tbm=isch",
-    "nombresComunes": [
-      "Cucharo de páramo",
-      "Cucharito",
-      "Sanalo todo"
-    ],
+    "nombresComunes": ["Cucharo de páramo", "Cucharito", "Sanalo todo"],
     "propiedadesMedicinales": [
       "Antimicrobiano",
       "Digestivo",
       "Antidiarreico",
       "Depurativo sanguíneo"
     ],
-    "partesUtiles": [
-      "Hojas",
-      "Frutos (pequeñas drupas)"
-    ],
+    "partesUtiles": ["Hojas", "Frutos (pequeñas drupas)"],
     "esenciasFlorales": [
       "Limpieza de resentimientos",
       "Favorece el perdón",
@@ -1928,11 +1582,7 @@
       "familia": "Primulaceae",
       "genero": "Myrsine",
       "especie": "dependens",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Astéridas"]
     },
     "preparaciones": [
       {
@@ -1949,22 +1599,13 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Colocar las hojas secas en un recipiente o tetera."
-          ],
-          [
-            2,
-            "Verter el agua hirviendo sobre las hojas."
-          ],
+          [1, "Colocar las hojas secas en un recipiente o tetera."],
+          [2, "Verter el agua hirviendo sobre las hojas."],
           [
             3,
             "Tapar y dejar infundir por 10 minutos para extraer los principios activos."
           ],
-          [
-            4,
-            "Colar la preparación."
-          ],
+          [4, "Colar la preparación."],
           [
             5,
             "Beber lentamente sin añadir azúcar para no alterar su efecto digestivo."
@@ -1982,28 +1623,20 @@
       }
     ],
     "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4712",
     "nombreCientifico": "Oreopanax bogotensis",
     "imageUrl": "https://bs.plantnet.org/image/o/081392eacd408487213af3cc9f02db55759f1416",
-    "nombresComunes": [
-      "Mano de oso",
-      "Pate danta"
-    ],
+    "nombresComunes": ["Mano de oso", "Pate danta"],
     "propiedadesMedicinales": [
       "Expectorante",
       "Antitusivo (Béquico)",
       "Vulnerario (cura heridas)",
       "Emoliente"
     ],
-    "partesUtiles": [
-      "Hojas",
-      "Brotes tiernos"
-    ],
+    "partesUtiles": ["Hojas", "Brotes tiernos"],
     "esenciasFlorales": [
       "Otorga protección y contención",
       "Ayuda a establecer límites personales",
@@ -2064,22 +1697,10 @@
             1,
             "Lavar cuidadosamente las hojas para retirar las pubescencias (pelitos) si son muy frescas."
           ],
-          [
-            2,
-            "Hervir el agua y añadir las hojas fragmentadas."
-          ],
-          [
-            3,
-            "Dejar hervir por 5 minutos y luego apagar el fuego."
-          ],
-          [
-            4,
-            "Dejar reposar tapado por 10 minutos y colar muy bien."
-          ],
-          [
-            5,
-            "Servir caliente, agregar la miel, remover y consumir."
-          ]
+          [2, "Hervir el agua y añadir las hojas fragmentadas."],
+          [3, "Dejar hervir por 5 minutos y luego apagar el fuego."],
+          [4, "Dejar reposar tapado por 10 minutos y colar muy bien."],
+          [5, "Servir caliente, agregar la miel, remover y consumir."]
         ]
       }
     ],
@@ -2093,29 +1714,20 @@
       }
     ],
     "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4714",
     "nombreCientifico": "Solanum ovalifolium",
     "imageUrl": "https://www.google.com/search?q=Solanum+ovalifolium&tbm=isch",
-    "nombresComunes": [
-      "Cucubo",
-      "Tomatillo",
-      "Falso lulo"
-    ],
+    "nombresComunes": ["Cucubo", "Tomatillo", "Falso lulo"],
     "propiedadesMedicinales": [
       "Desinfectante externo",
       "Cicatrizante",
       "Resolutivo (ayuda a madurar abscesos)",
       "Antimicótico tópico"
     ],
-    "partesUtiles": [
-      "Hojas (uso estrictamente externo)",
-      "Tallo"
-    ],
+    "partesUtiles": ["Hojas (uso estrictamente externo)", "Tallo"],
     "esenciasFlorales": [
       "Aceptación de la propia sombra",
       "Transmutación de la vergüenza",
@@ -2146,12 +1758,7 @@
       "familia": "Solanaceae",
       "genero": "Solanum",
       "especie": "ovalifolium",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas",
-        "Lamíidas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Astéridas", "Lamíidas"]
     },
     "preparaciones": [
       {
@@ -2168,18 +1775,12 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar muy bien las hojas frescas."
-          ],
+          [1, "Lavar muy bien las hojas frescas."],
           [
             2,
             "Machacar las hojas en un mortero hasta formar una pasta verde oscuro."
           ],
-          [
-            3,
-            "Mezclar la pasta con un poco de aceite de ricino o de oliva."
-          ],
+          [3, "Mezclar la pasta con un poco de aceite de ricino o de oliva."],
           [
             4,
             "Calentar la mezcla muy ligeramente al fuego (que sea soportable al tacto)."
@@ -2201,9 +1802,7 @@
       }
     ],
     "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4715",
@@ -2220,10 +1819,7 @@
       "Hemostático",
       "Antiulceroso"
     ],
-    "partesUtiles": [
-      "Látex rojo (savia)",
-      "Corteza"
-    ],
+    "partesUtiles": ["Látex rojo (savia)", "Corteza"],
     "esenciasFlorales": [
       "Regeneración vital",
       "Cura de heridas en el alma",
@@ -2254,12 +1850,7 @@
       "familia": "Euphorbiaceae",
       "genero": "Croton",
       "especie": "bogotanus",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Eurosidas I"]
     },
     "preparaciones": [
       {
@@ -2272,22 +1863,13 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar muy bien la herida o corte con agua y jabón neutro."
-          ],
-          [
-            2,
-            "Secar suavemente la zona afectada."
-          ],
+          [1, "Lavar muy bien la herida o corte con agua y jabón neutro."],
+          [2, "Secar suavemente la zona afectada."],
           [
             3,
             "Extraer el látex de la corteza del árbol haciendo un pequeño corte (si se tiene acceso directo) o usar tintura de resina comercial."
           ],
-          [
-            4,
-            "Dejar caer las gotas directamente sobre la herida."
-          ],
+          [4, "Dejar caer las gotas directamente sobre la herida."],
           [
             5,
             "Dejar secar al aire libre; el látex formará una película protectora rojiza similar a una costra artificial."
@@ -2305,29 +1887,20 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4716",
     "nombreCientifico": "Smallanthus pyramidalis",
     "imageUrl": "https://www.google.com/search?q=Smallanthus+pyramidalis&tbm=isch",
-    "nombresComunes": [
-      "Arboloco",
-      "Palo bobo",
-      "Falso girasol"
-    ],
+    "nombresComunes": ["Arboloco", "Palo bobo", "Falso girasol"],
     "propiedadesMedicinales": [
       "Antiinflamatorio articular",
       "Emoliente",
       "Analgésico externo",
       "Vulnerario"
     ],
-    "partesUtiles": [
-      "Hojas grandes",
-      "Médula del tallo (esponjosa)"
-    ],
+    "partesUtiles": ["Hojas grandes", "Médula del tallo (esponjosa)"],
     "esenciasFlorales": [
       "Orden mental",
       "Estabilidad en tiempos de crecimiento rápido y caótico",
@@ -2380,10 +1953,7 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar las hojas grandes y vellosas del arboloco."
-          ],
+          [1, "Lavar las hojas grandes y vellosas del arboloco."],
           [
             2,
             "Pasar las hojas rápidamente por una fuente de calor (comal o llama baja) para marchitarlas un poco y activar sus aceites, cuidando de no quemarlas."
@@ -2392,10 +1962,7 @@
             3,
             "Aplicar un poco de aceite de masaje sobre la articulación dolorida (opcional)."
           ],
-          [
-            4,
-            "Envolver la rodilla, codo o tobillo con las hojas calientes."
-          ],
+          [4, "Envolver la rodilla, codo o tobillo con las hojas calientes."],
           [
             5,
             "Fijar con una venda elástica y dejar el emplasto durante toda la noche."
@@ -2413,29 +1980,20 @@
       }
     ],
     "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4717",
     "nombreCientifico": "Vaccinium floribundum",
     "imageUrl": "https://www.google.com/search?q=Vaccinium+floribundum&tbm=isch",
-    "nombresComunes": [
-      "Mortiño",
-      "Agráz",
-      "Mortiño de páramo"
-    ],
+    "nombresComunes": ["Mortiño", "Agráz", "Mortiño de páramo"],
     "propiedadesMedicinales": [
       "Antioxidante de altísimo espectro",
       "Hipoglucemiante (regula el azúcar)",
       "Protector capilar y cardiovascular",
       "Antiséptico urinario"
     ],
-    "partesUtiles": [
-      "Frutos (bayas)",
-      "Hojas"
-    ],
+    "partesUtiles": ["Frutos (bayas)", "Hojas"],
     "esenciasFlorales": [
       "Claridad de visión (física y mental)",
       "Vitalidad y rejuvenecimiento",
@@ -2466,11 +2024,7 @@
       "familia": "Ericaceae",
       "genero": "Vaccinium",
       "especie": "floribundum",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Astéridas"]
     },
     "preparaciones": [
       {
@@ -2491,14 +2045,8 @@
             1,
             "Para infusión hipoglucemiante: colocar la cucharada de hojas secas en una taza."
           ],
-          [
-            2,
-            "Añadir el agua hirviendo, tapar y dejar reposar 10 minutos."
-          ],
-          [
-            3,
-            "Colar y beber sin azúcar."
-          ],
+          [2, "Añadir el agua hirviendo, tapar y dejar reposar 10 minutos."],
+          [3, "Colar y beber sin azúcar."],
           [
             4,
             "Para el jugo (antioxidante/urinario): Lavar muy bien los frutos frescos del agraz/mortiño."
@@ -2520,29 +2068,20 @@
       }
     ],
     "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4719",
     "nombreCientifico": "Myrcianthes leucoxyla",
     "imageUrl": "https://www.reddearboles.org/nwlib6/includes/phpthumb/phpThumb.php?src=/imagenes/nwproject5.forms.f_productoscatalogo/1/myrcianthesleucoxylass23.jpg&w=550&f=webp",
-    "nombresComunes": [
-      "Arrayán blanco",
-      "Arrayán",
-      "Guayabillo"
-    ],
+    "nombresComunes": ["Arrayán blanco", "Arrayán", "Guayabillo"],
     "propiedadesMedicinales": [
       "Astringente",
       "Antiséptico bucal",
       "Antidiarreico",
       "Tónico estomacal"
     ],
-    "partesUtiles": [
-      "Hojas",
-      "Frutos"
-    ],
+    "partesUtiles": ["Hojas", "Frutos"],
     "esenciasFlorales": [
       "Limpieza de apegos del pasado",
       "Frescura y renovación mental",
@@ -2573,11 +2112,7 @@
       "familia": "Myrtaceae",
       "genero": "Myrcianthes",
       "especie": "leucoxyla",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas"]
     },
     "preparaciones": [
       {
@@ -2594,26 +2129,11 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar las hojas de arrayán."
-          ],
-          [
-            2,
-            "Hervir el agua y añadir las hojas."
-          ],
-          [
-            3,
-            "Mantener a fuego lento por 8 minutos para extraer los taninos."
-          ],
-          [
-            4,
-            "Apagar, tapar y dejar enfriar hasta que esté tibio."
-          ],
-          [
-            5,
-            "Colar y almacenar en un frasco limpio. No ingerir el enjuague."
-          ]
+          [1, "Lavar las hojas de arrayán."],
+          [2, "Hervir el agua y añadir las hojas."],
+          [3, "Mantener a fuego lento por 8 minutos para extraer los taninos."],
+          [4, "Apagar, tapar y dejar enfriar hasta que esté tibio."],
+          [5, "Colar y almacenar en un frasco limpio. No ingerir el enjuague."]
         ]
       }
     ],
@@ -2627,29 +2147,20 @@
       }
     ],
     "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a471a",
     "nombreCientifico": "Macleania rupestris",
     "imageUrl": "https://www.google.com/search?q=Macleania+rupestris&tbm=isch",
-    "nombresComunes": [
-      "Uva camarona",
-      "Camarona",
-      "Joyapa"
-    ],
+    "nombresComunes": ["Uva camarona", "Camarona", "Joyapa"],
     "propiedadesMedicinales": [
       "Antioxidante",
       "Vitamínico (alto en Vitamina C y antocianinas)",
       "Astringente leve",
       "Expectorante suave"
     ],
-    "partesUtiles": [
-      "Frutos (bayas carnosas)",
-      "Hojas"
-    ],
+    "partesUtiles": ["Frutos (bayas carnosas)", "Hojas"],
     "esenciasFlorales": [
       "Apertura a la dulzura de la vida",
       "Nutrición del niño interior",
@@ -2680,11 +2191,7 @@
       "familia": "Ericaceae",
       "genero": "Macleania",
       "especie": "rupestris",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Astéridas"]
     },
     "preparaciones": [
       {
@@ -2701,14 +2208,8 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar cuidadosamente las bayas, retirando cualquier pedúnculo."
-          ],
-          [
-            2,
-            "Licuar las bayas con el agua purificada."
-          ],
+          [1, "Lavar cuidadosamente las bayas, retirando cualquier pedúnculo."],
+          [2, "Licuar las bayas con el agua purificada."],
           [
             3,
             "Pasar por un colador para retirar las pequeñas semillas si se desea una textura más suave."
@@ -2730,28 +2231,19 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a471d",
     "nombreCientifico": "Miconia squamulosa",
     "imageUrl": "https://www.google.com/search?q=Miconia+squamulosa&tbm=isch",
-    "nombresComunes": [
-      "Tuno esmeraldo",
-      "Tuno",
-      "Pava"
-    ],
+    "nombresComunes": ["Tuno esmeraldo", "Tuno", "Pava"],
     "propiedadesMedicinales": [
       "Cicatrizante",
       "Astringente",
       "Colorante natural (uso tradicional para la piel)"
     ],
-    "partesUtiles": [
-      "Hojas",
-      "Frutos"
-    ],
+    "partesUtiles": ["Hojas", "Frutos"],
     "esenciasFlorales": [
       "Limpieza de la propia imagen",
       "Aceptación de la belleza única",
@@ -2767,11 +2259,7 @@
       "Timidez excesiva",
       "Aislamiento social"
     ],
-    "malesFisicos": [
-      "Erupciones cutáneas leves",
-      "Raspones",
-      "Diarrea leve"
-    ],
+    "malesFisicos": ["Erupciones cutáneas leves", "Raspones", "Diarrea leve"],
     "taxon": {
       "dominio": "Eukaryota",
       "reino": "Plantae",
@@ -2781,11 +2269,7 @@
       "familia": "Melastomataceae",
       "genero": "Miconia",
       "especie": "squamulosa",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas"]
     },
     "preparaciones": [
       {
@@ -2802,26 +2286,11 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar las hojas del tuno."
-          ],
-          [
-            2,
-            "Colocar las hojas en un recipiente de cerámica."
-          ],
-          [
-            3,
-            "Verter el agua hirviendo y tapar inmediatamente."
-          ],
-          [
-            4,
-            "Dejar infundir hasta que el líquido se enfríe."
-          ],
-          [
-            5,
-            "Colar y usar el líquido para limpiar suavemente la piel."
-          ]
+          [1, "Lavar las hojas del tuno."],
+          [2, "Colocar las hojas en un recipiente de cerámica."],
+          [3, "Verter el agua hirviendo y tapar inmediatamente."],
+          [4, "Dejar infundir hasta que el líquido se enfríe."],
+          [5, "Colar y usar el líquido para limpiar suavemente la piel."]
         ]
       }
     ],
@@ -2835,9 +2304,7 @@
       }
     ],
     "elementosAsociados": "Aire",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4718",
@@ -2854,10 +2321,7 @@
       "Antirreumático externo",
       "Rubefaciente"
     ],
-    "partesUtiles": [
-      "Hojas",
-      "Frutos (consumo muy moderado)"
-    ],
+    "partesUtiles": ["Hojas", "Frutos (consumo muy moderado)"],
     "esenciasFlorales": [
       "Liberación de tensión extrema",
       "Ruptura de patrones de estrés crónico",
@@ -2888,11 +2352,7 @@
       "familia": "Ericaceae",
       "genero": "Gaultheria",
       "especie": "anastomosans",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Astéridas"]
     },
     "preparaciones": [
       {
@@ -2909,18 +2369,12 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar y secar bien las hojas frescas."
-          ],
+          [1, "Lavar y secar bien las hojas frescas."],
           [
             2,
             "Triturar ligeramente las hojas con las manos para romper sus glándulas y liberar el aroma característico a mentol/salicilato."
           ],
-          [
-            3,
-            "Colocar las hojas en un frasco de vidrio oscuro."
-          ],
+          [3, "Colocar las hojas en un frasco de vidrio oscuro."],
           [
             4,
             "Cubrir completamente con el alcohol, cerrar bien y dejar macerar en un lugar oscuro durante 15 días, agitando a diario."
@@ -2942,18 +2396,13 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a471b",
     "nombreCientifico": "Tibouchina lepidota",
     "imageUrl": "https://www.picturethisai.com/wiki-image/1080/154035166707187715.jpeg",
-    "nombresComunes": [
-      "Sietecueros",
-      "Flor de mayo"
-    ],
+    "nombresComunes": ["Sietecueros", "Flor de mayo"],
     "propiedadesMedicinales": [
       "Hemostático (detiene sangrados)",
       "Cicatrizante",
@@ -2995,11 +2444,7 @@
       "familia": "Melastomataceae",
       "genero": "Tibouchina",
       "especie": "lepidota",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas"]
     },
     "preparaciones": [
       {
@@ -3020,18 +2465,9 @@
             1,
             "Recolectar las láminas secas de corteza que se desprenden naturalmente del tronco."
           ],
-          [
-            2,
-            "Hervir el agua y añadir la corteza."
-          ],
-          [
-            3,
-            "Dejar en ebullición por 10 minutos."
-          ],
-          [
-            4,
-            "Retirar del fuego y dejar enfriar completamente."
-          ],
+          [2, "Hervir el agua y añadir la corteza."],
+          [3, "Dejar en ebullición por 10 minutos."],
+          [4, "Retirar del fuego y dejar enfriar completamente."],
           [
             5,
             "Filtrar el líquido para lavar la herida y utilizar parte de la corteza ablandada sobre el corte."
@@ -3049,28 +2485,19 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a471e",
     "nombreCientifico": "Bucquetia glutinosa",
     "imageUrl": "https://www.picturethisai.com/wiki-image/1080/218653413494587392.jpeg",
-    "nombresComunes": [
-      "Saltón",
-      "Charne",
-      "Tuno pegajoso"
-    ],
+    "nombresComunes": ["Saltón", "Charne", "Tuno pegajoso"],
     "propiedadesMedicinales": [
       "Vulnerario (cura heridas)",
       "Emoliente tópico (resina/exudado)",
       "Antiinflamatorio local"
     ],
-    "partesUtiles": [
-      "Hojas tiernas y resinosas",
-      "Flores"
-    ],
+    "partesUtiles": ["Hojas tiernas y resinosas", "Flores"],
     "esenciasFlorales": [
       "Cohesión en las relaciones",
       "Ayuda a reparar vínculos rotos",
@@ -3100,11 +2527,7 @@
       "familia": "Melastomataceae",
       "genero": "Bucquetia",
       "especie": "glutinosa",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas"]
     },
     "preparaciones": [
       {
@@ -3121,10 +2544,7 @@
             1,
             "Recolectar las hojas más jóvenes, que contienen la mayor cantidad de exudado resinoso."
           ],
-          [
-            2,
-            "Limpiar cuidadosamente la herida a tratar."
-          ],
+          [2, "Limpiar cuidadosamente la herida a tratar."],
           [
             3,
             "Macerar levemente las hojas para aumentar la liberación de la resina."
@@ -3150,28 +2570,20 @@
       }
     ],
     "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a471c",
     "nombreCientifico": "Escallonia myrtilloides",
     "imageUrl": "https://www.google.com/search?q=Escallonia+myrtilloides&tbm=isch",
-    "nombresComunes": [
-      "Rodamonte",
-      "Tibar (en algunas zonas)"
-    ],
+    "nombresComunes": ["Rodamonte", "Tibar (en algunas zonas)"],
     "propiedadesMedicinales": [
       "Antirreumático",
       "Béquico (para la tos)",
       "Febrífugo",
       "Astringente"
     ],
-    "partesUtiles": [
-      "Hojas",
-      "Ramas tiernas"
-    ],
+    "partesUtiles": ["Hojas", "Ramas tiernas"],
     "esenciasFlorales": [
       "Resistencia extrema",
       "Paciencia ante las adversidades prolongadas",
@@ -3201,11 +2613,7 @@
       "familia": "Escalloniaceae",
       "genero": "Escallonia",
       "especie": "myrtilloides",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Astéridas"]
     },
     "preparaciones": [
       {
@@ -3222,22 +2630,10 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Trocear las ramas y hojas del rodamonte."
-          ],
-          [
-            2,
-            "Poner a hervir los 2 litros de agua en una olla grande."
-          ],
-          [
-            3,
-            "Añadir la planta y hervir a fuego fuerte durante 15 minutos."
-          ],
-          [
-            4,
-            "Apagar el fuego y dejar reposar 10 minutos."
-          ],
+          [1, "Trocear las ramas y hojas del rodamonte."],
+          [2, "Poner a hervir los 2 litros de agua en una olla grande."],
+          [3, "Añadir la planta y hervir a fuego fuerte durante 15 minutos."],
+          [4, "Apagar el fuego y dejar reposar 10 minutos."],
           [
             5,
             "Verter la preparación, sin colar, en una tina de baño o usar en compresas muy calientes sobre las articulaciones."
@@ -3255,29 +2651,20 @@
       }
     ],
     "elementosAsociados": "Aire",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a471f",
     "nombreCientifico": "Diplostephium rosmarinifolium",
     "imageUrl": "https://www.google.com/search?q=Diplostephium+rosmarinifolium&tbm=isch",
-    "nombresComunes": [
-      "Romero blanco",
-      "Romero de páramo",
-      "Romero andino"
-    ],
+    "nombresComunes": ["Romero blanco", "Romero de páramo", "Romero andino"],
     "propiedadesMedicinales": [
       "Rubefaciente (calienta la piel y músculos)",
       "Antirreumático",
       "Estimulante circulatorio tópico",
       "Anticatarral"
     ],
-    "partesUtiles": [
-      "Ramas foliosas",
-      "Hojas"
-    ],
+    "partesUtiles": ["Ramas foliosas", "Hojas"],
     "esenciasFlorales": [
       "Recuperación de la memoria vital",
       "Despierta el letargo espiritual",
@@ -3308,11 +2695,7 @@
       "familia": "Asteraceae",
       "genero": "Diplostephium",
       "especie": "rosmarinifolium",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Astéridas"]
     },
     "preparaciones": [
       {
@@ -3329,18 +2712,9 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar y secar muy bien las hojas de romero de páramo."
-          ],
-          [
-            2,
-            "Introducirlas en un frasco de vidrio oscuro y esterilizado."
-          ],
-          [
-            3,
-            "Cubrir completamente con el alcohol."
-          ],
+          [1, "Lavar y secar muy bien las hojas de romero de páramo."],
+          [2, "Introducirlas en un frasco de vidrio oscuro y esterilizado."],
+          [3, "Cubrir completamente con el alcohol."],
           [
             4,
             "Cerrar herméticamente y dejar macerar en un lugar fresco y oscuro durante 21 días, agitando cada 2 días."
@@ -3362,26 +2736,20 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4720",
     "nombreCientifico": "Symplocos theiformis",
     "imageUrl": "https://www.google.com/search?q=Symplocos+theiformis&tbm=isch",
-    "nombresComunes": [
-      "Té de Bogotá"
-    ],
+    "nombresComunes": ["Té de Bogotá"],
     "propiedadesMedicinales": [
       "Estimulante del sistema nervioso central leve",
       "Digestivo",
       "Diurético suave",
       "Tónico general"
     ],
-    "partesUtiles": [
-      "Hojas"
-    ],
+    "partesUtiles": ["Hojas"],
     "esenciasFlorales": [
       "Agudeza mental",
       "Enfoque y concentración",
@@ -3413,11 +2781,7 @@
       "familia": "Symplocaceae",
       "genero": "Symplocos",
       "especie": "theiformis",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Astéridas"]
     },
     "preparaciones": [
       {
@@ -3438,10 +2802,7 @@
             1,
             "Calentar la tetera o taza previamente con un poco de agua caliente y desecharla."
           ],
-          [
-            2,
-            "Colocar las hojas secas en el recipiente caliente."
-          ],
+          [2, "Colocar las hojas secas en el recipiente caliente."],
           [
             3,
             "Verter los 250ml de agua a punto de ebullición sobre las hojas."
@@ -3450,10 +2811,7 @@
             4,
             "Tapar y dejar reposar entre 3 y 5 minutos (más tiempo puede amargar la bebida)."
           ],
-          [
-            5,
-            "Colar y consumir, puede endulzarse ligeramente si se desea."
-          ]
+          [5, "Colar y consumir, puede endulzarse ligeramente si se desea."]
         ]
       }
     ],
@@ -3467,9 +2825,7 @@
       }
     ],
     "elementosAsociados": "Aire",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a472a",
@@ -3486,10 +2842,7 @@
       "Antioxidante nutritivo",
       "Tónico capilar (raíz)"
     ],
-    "partesUtiles": [
-      "Frutos (pequeñas drupas)",
-      "Hojas"
-    ],
+    "partesUtiles": ["Frutos (pequeñas drupas)", "Hojas"],
     "esenciasFlorales": [
       "Nutrición afectiva",
       "Firmeza y enraizamiento",
@@ -3520,12 +2873,7 @@
       "familia": "Rosaceae",
       "genero": "Hesperomeles",
       "especie": "goudotiana",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Eurosidas I"]
     },
     "preparaciones": [
       {
@@ -3542,22 +2890,13 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar los frutos y las hojas gruesas del cerote."
-          ],
-          [
-            2,
-            "Colocarlos en el agua fría en una olla pequeña."
-          ],
+          [1, "Lavar los frutos y las hojas gruesas del cerote."],
+          [2, "Colocarlos en el agua fría en una olla pequeña."],
           [
             3,
             "Llevar a punto de ebullición y dejar hervir a fuego medio por 10 a 15 minutos."
           ],
-          [
-            4,
-            "Retirar del fuego y dejar enfriar hasta que esté tibio."
-          ],
+          [4, "Retirar del fuego y dejar enfriar hasta que esté tibio."],
           [
             5,
             "Colar presionando los frutos para extraer sus taninos, y beber el líquido astringente."
@@ -3575,9 +2914,7 @@
       }
     ],
     "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4721",
@@ -3593,10 +2930,7 @@
       "Antimicrobiano (alto contenido de berberina)",
       "Antiparasitario intestinal"
     ],
-    "partesUtiles": [
-      "Raíz",
-      "Corteza del tallo (parte amarilla interior)"
-    ],
+    "partesUtiles": ["Raíz", "Corteza del tallo (parte amarilla interior)"],
     "esenciasFlorales": [
       "Definición de límites personales",
       "Protección contra invasiones energéticas",
@@ -3627,10 +2961,7 @@
       "familia": "Berberidaceae",
       "genero": "Berberis",
       "especie": "rigidifolia",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas"]
     },
     "preparaciones": [
       {
@@ -3647,10 +2978,7 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar muy bien la raíz o la corteza obtenida."
-          ],
+          [1, "Lavar muy bien la raíz o la corteza obtenida."],
           [
             2,
             "Colocar la corteza en el agua fría en un recipiente que no sea de aluminio."
@@ -3659,10 +2987,7 @@
             3,
             "Llevar a fuego y hervir lentamente durante 15 minutos para extraer la berberina (el líquido se tornará amarillento)."
           ],
-          [
-            4,
-            "Dejar reposar, colar y desechar la corteza."
-          ],
+          [4, "Dejar reposar, colar y desechar la corteza."],
           [
             5,
             "Beber la decocción amarga. Precaución: Está contraindicado en mujeres embarazadas."
@@ -3680,19 +3005,13 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4725",
     "nombreCientifico": "Chusquea tessellata",
     "imageUrl": "https://static.inaturalist.org/photos/11883942/large.jpeg",
-    "nombresComunes": [
-      "Chusque",
-      "Bambú de páramo",
-      "Carrizo"
-    ],
+    "nombresComunes": ["Chusque", "Bambú de páramo", "Carrizo"],
     "propiedadesMedicinales": [
       "Diurético suave",
       "Depurativo",
@@ -3731,11 +3050,7 @@
       "familia": "Poaceae",
       "genero": "Chusquea",
       "especie": "tessellata",
-      "clados": [
-        "Angiospermas",
-        "Monocotiledóneas",
-        "Comelínidas"
-      ]
+      "clados": ["Angiospermas", "Monocotiledóneas", "Comelínidas"]
     },
     "preparaciones": [
       {
@@ -3752,22 +3067,10 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar las hojas tiernas (brotes) del chusque."
-          ],
-          [
-            2,
-            "Trozar las hojas finamente con las manos o tijeras."
-          ],
-          [
-            3,
-            "Colocar en una taza y verter el agua hirviendo."
-          ],
-          [
-            4,
-            "Tapar y dejar infundir por 10 minutos."
-          ],
+          [1, "Lavar las hojas tiernas (brotes) del chusque."],
+          [2, "Trozar las hojas finamente con las manos o tijeras."],
+          [3, "Colocar en una taza y verter el agua hirviendo."],
+          [4, "Tapar y dejar infundir por 10 minutos."],
           [
             5,
             "Colar y consumir la bebida (tiene un sabor muy neutro, ligeramente a pasto fresco)."
@@ -3785,29 +3088,20 @@
       }
     ],
     "elementosAsociados": "Aire",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4722",
     "nombreCientifico": "Espeletia grandiflora",
     "imageUrl": "https://www.google.com/search?q=Espeletia+grandiflora&tbm=isch",
-    "nombresComunes": [
-      "Frailejón gigante",
-      "Frailejón Mayor",
-      "Frailejón"
-    ],
+    "nombresComunes": ["Frailejón gigante", "Frailejón Mayor", "Frailejón"],
     "propiedadesMedicinales": [
       "Antiasmático",
       "Béquico (alivia la tos)",
       "Antiinflamatorio respiratorio",
       "Hipotensor leve"
     ],
-    "partesUtiles": [
-      "Hojas secas",
-      "Resina (exudado del tallo)"
-    ],
+    "partesUtiles": ["Hojas secas", "Resina (exudado del tallo)"],
     "esenciasFlorales": [
       "Sabiduría ancestral",
       "Paciencia infinita",
@@ -3865,18 +3159,12 @@
             1,
             "Recolectar únicamente las hojas secas que cuelgan del tallo, nunca arrancar el cogollo vivo."
           ],
-          [
-            2,
-            "Hervir el agua en un recipiente con tapa."
-          ],
+          [2, "Hervir el agua en un recipiente con tapa."],
           [
             3,
             "Añadir las hojas y dejar hervir a fuego muy lento por 5 minutos para extraer la resina atrapada en la pubescencia."
           ],
-          [
-            4,
-            "Retirar del fuego y respirar el vapor con cuidado (vahos)."
-          ],
+          [4, "Retirar del fuego y respirar el vapor con cuidado (vahos)."],
           [
             5,
             "Colar pasándolo por un filtro de tela fina (para evitar los pelillos), endulzar y beber caliente."
@@ -3894,26 +3182,19 @@
       }
     ],
     "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4723",
     "nombreCientifico": "Espeletiopsis rabanalensis",
     "imageUrl": "https://static.inaturalist.org/photos/39748543/large.jpg",
-    "nombresComunes": [
-      "Frailejón de Rabanal"
-    ],
+    "nombresComunes": ["Frailejón de Rabanal"],
     "propiedadesMedicinales": [
       "Expectorante",
       "Antiespasmódico bronquial",
       "Emoliente (suaviza mucosas)"
     ],
-    "partesUtiles": [
-      "Hojas maduras",
-      "Resina"
-    ],
+    "partesUtiles": ["Hojas maduras", "Resina"],
     "esenciasFlorales": [
       "Resiliencia extrema ante la pérdida",
       "Adaptabilidad a entornos hostiles",
@@ -3973,18 +3254,12 @@
             1,
             "Hervir el agua junto con la panela hasta formar un melado o almíbar ligero."
           ],
-          [
-            2,
-            "Añadir las hojas de frailejón al almíbar hirviendo."
-          ],
+          [2, "Añadir las hojas de frailejón al almíbar hirviendo."],
           [
             3,
             "Bajar el fuego al mínimo y cocinar tapado durante 20 minutos para que la resina se integre con el azúcar."
           ],
-          [
-            4,
-            "Apagar el fuego y dejar reposar hasta que esté tibio."
-          ],
+          [4, "Apagar el fuego y dejar reposar hasta que esté tibio."],
           [
             5,
             "Colar a través de una manta o filtro fino para retirar todos los pelos foliares y envasar en vidrio oscuro."
@@ -4002,27 +3277,19 @@
       }
     ],
     "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4726",
     "nombreCientifico": "Calamagrostis effusa",
     "imageUrl": "https://static.inaturalist.org/photos/50805746/large.jpeg",
-    "nombresComunes": [
-      "Paja de páramo",
-      "Pajonal",
-      "Paja maciega"
-    ],
+    "nombresComunes": ["Paja de páramo", "Pajonal", "Paja maciega"],
     "propiedadesMedicinales": [
       "Termorregulador (aislante térmico uso externo)",
       "Antiinflamatorio leve (en baños)",
       "Relajante muscular (hidroterapia)"
     ],
-    "partesUtiles": [
-      "Tallos y hojas secas"
-    ],
+    "partesUtiles": ["Tallos y hojas secas"],
     "esenciasFlorales": [
       "Sentido de comunidad",
       "Humildad y servicio",
@@ -4052,11 +3319,7 @@
       "familia": "Poaceae",
       "genero": "Calamagrostis",
       "especie": "effusa",
-      "clados": [
-        "Angiospermas",
-        "Monocotiledóneas",
-        "Comelínidas"
-      ]
+      "clados": ["Angiospermas", "Monocotiledóneas", "Comelínidas"]
     },
     "preparaciones": [
       {
@@ -4073,14 +3336,8 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar la paja para retirar tierra superficial."
-          ],
-          [
-            2,
-            "Hervir los 5 litros de agua en una olla grande."
-          ],
+          [1, "Lavar la paja para retirar tierra superficial."],
+          [2, "Hervir los 5 litros de agua en una olla grande."],
           [
             3,
             "Introducir la paja y dejar hervir a fuego fuerte durante 20 minutos para extraer sus sílices y aceites suaves."
@@ -4106,28 +3363,20 @@
       }
     ],
     "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4729",
     "nombreCientifico": "Halenia asclepiadea",
     "imageUrl": "https://www.google.com/search?q=Halenia+asclepiadea&tbm=isch",
-    "nombresComunes": [
-      "Cachitos",
-      "Flor de cuernos"
-    ],
+    "nombresComunes": ["Cachitos", "Flor de cuernos"],
     "propiedadesMedicinales": [
       "Tónico amargo intenso",
       "Colagogo (estimula la liberación de bilis)",
       "Digestivo estomacal",
       "Estimulante del apetito"
     ],
-    "partesUtiles": [
-      "Flores",
-      "Hojas superiores"
-    ],
+    "partesUtiles": ["Flores", "Hojas superiores"],
     "esenciasFlorales": [
       "Digestión de la amargura de la vida",
       "Apertura a la magia y al asombro",
@@ -4158,12 +3407,7 @@
       "familia": "Gentianaceae",
       "genero": "Halenia",
       "especie": "asclepiadea",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas",
-        "Lamíidas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Astéridas", "Lamíidas"]
     },
     "preparaciones": [
       {
@@ -4180,22 +3424,13 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Colocar la planta seca en una taza pequeña."
-          ],
-          [
-            2,
-            "Verter el agua caliente."
-          ],
+          [1, "Colocar la planta seca en una taza pequeña."],
+          [2, "Verter el agua caliente."],
           [
             3,
             "Tapar y dejar reposar brevemente, solo entre 3 a 5 minutos (es extremadamente amarga)."
           ],
-          [
-            4,
-            "Colar la bebida."
-          ],
+          [4, "Colar la bebida."],
           [
             5,
             "Tomar a pequeños sorbos. NUNCA endulzar, ya que el sabor amargo en la lengua es el que desencadena el reflejo digestivo y hepático."
@@ -4213,28 +3448,20 @@
       }
     ],
     "elementosAsociados": "Aire",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4724",
     "nombreCientifico": "Polylepis quadrijuga",
     "imageUrl": "https://plantasdecolombia.com/wp-content/uploads/2020/06/img_0465.png?w=900",
-    "nombresComunes": [
-      "Coloradito",
-      "Siete Cueros de páramo",
-      "Colorado"
-    ],
+    "nombresComunes": ["Coloradito", "Siete Cueros de páramo", "Colorado"],
     "propiedadesMedicinales": [
       "Astringente",
       "Hemostático",
       "Cicatrizante",
       "Tónico respiratorio"
     ],
-    "partesUtiles": [
-      "Corteza exfoliante (las láminas rojas)"
-    ],
+    "partesUtiles": ["Corteza exfoliante (las láminas rojas)"],
     "esenciasFlorales": [
       "Despojarse del dolor pasado",
       "Abrigo emocional en la frialdad",
@@ -4265,12 +3492,7 @@
       "familia": "Rosaceae",
       "genero": "Polylepis",
       "especie": "quadrijuga",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Eurosidas I"]
     },
     "preparaciones": [
       {
@@ -4291,18 +3513,9 @@
             1,
             "Desprender suavemente las láminas de corteza suelta del árbol sin dañar el tronco interior."
           ],
-          [
-            2,
-            "Lavar la corteza para retirar polvo o musgo."
-          ],
-          [
-            3,
-            "Hervir en el agua durante 15 minutos."
-          ],
-          [
-            4,
-            "Dejar reposar y enfriar completamente."
-          ],
+          [2, "Lavar la corteza para retirar polvo o musgo."],
+          [3, "Hervir en el agua durante 15 minutos."],
+          [4, "Dejar reposar y enfriar completamente."],
           [
             5,
             "Filtrar el líquido, el cual tendrá un tono rojizo/ambarino rico en taninos, y aplicar sobre la piel."
@@ -4320,28 +3533,19 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4727",
     "nombreCientifico": "Puya nitida",
     "imageUrl": "https://www.google.com/search?q=Puya+nitida&tbm=isch",
-    "nombresComunes": [
-      "Puya",
-      "Cardón",
-      "Piña de páramo"
-    ],
+    "nombresComunes": ["Puya", "Cardón", "Piña de páramo"],
     "propiedadesMedicinales": [
       "Purgante fuerte (uso ancestral muy restringido)",
       "Vulnerario (uso externo)",
       "Antiinflamatorio tópico"
     ],
-    "partesUtiles": [
-      "Corazón (médula carnosa)",
-      "Raíz"
-    ],
+    "partesUtiles": ["Corazón (médula carnosa)", "Raíz"],
     "esenciasFlorales": [
       "Protección feroz del mundo interior",
       "Revelación de la belleza oculta",
@@ -4371,11 +3575,7 @@
       "familia": "Bromeliaceae",
       "genero": "Puya",
       "especie": "nitida",
-      "clados": [
-        "Angiospermas",
-        "Monocotiledóneas",
-        "Comelínidas"
-      ]
+      "clados": ["Angiospermas", "Monocotiledóneas", "Comelínidas"]
     },
     "preparaciones": [
       {
@@ -4392,22 +3592,13 @@
             1,
             "Con mucho cuidado y guantes gruesos, extraer una de las hojas desde la base."
           ],
-          [
-            2,
-            "Pelar las espinas laterales y la cutícula exterior dura."
-          ],
+          [2, "Pelar las espinas laterales y la cutícula exterior dura."],
           [
             3,
             "Extraer el interior blanco, mucilaginoso y carnoso (similar al aloe vera)."
           ],
-          [
-            4,
-            "Macerar esta pulpa hasta formar un gel espeso."
-          ],
-          [
-            5,
-            "Aplicar directamente sobre el hematoma o la inflamación."
-          ]
+          [4, "Macerar esta pulpa hasta formar un gel espeso."],
+          [5, "Aplicar directamente sobre el hematoma o la inflamación."]
         ]
       }
     ],
@@ -4421,28 +3612,20 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4728",
     "nombreCientifico": "Aragoa cleefii",
     "imageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/65918888/large.jpeg",
-    "nombresComunes": [
-      "Pino de páramo",
-      "Pinito"
-    ],
+    "nombresComunes": ["Pino de páramo", "Pinito"],
     "propiedadesMedicinales": [
       "Antiséptico respiratorio",
       "Expectorante pulmonar",
       "Balsámico",
       "Rubefaciente"
     ],
-    "partesUtiles": [
-      "Ramas tiernas",
-      "Hojas aciculares (agujas)"
-    ],
+    "partesUtiles": ["Ramas tiernas", "Hojas aciculares (agujas)"],
     "esenciasFlorales": [
       "Elevación del pensamiento",
       "Visión superior y perspectiva",
@@ -4473,12 +3656,7 @@
       "familia": "Plantaginaceae",
       "genero": "Aragoa",
       "especie": "cleefii",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas",
-        "Lamíidas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Astéridas", "Lamíidas"]
     },
     "preparaciones": [
       {
@@ -4499,10 +3677,7 @@
             1,
             "Colocar las ramitas de pino de páramo en un bol o recipiente amplio que soporte calor."
           ],
-          [
-            2,
-            "Verter el litro de agua hirviendo sobre las plantas."
-          ],
+          [2, "Verter el litro de agua hirviendo sobre las plantas."],
           [
             3,
             "Inmediatamente, inclinar el rostro sobre el recipiente a una distancia segura para no quemarse."
@@ -4535,9 +3710,7 @@
       }
     ],
     "elementosAsociados": "Aire",
-    "polaridadEnergetica": [
-      "Masculine"
-    ],
+    "polaridadEnergetica": ["Masculine"],
     "imagenes": {
       "flor": {
         "src": "https://d2seqvvyy3b8p2.cloudfront.net/457648c758deeaadc46e99537907fe29.jpg",
@@ -4561,21 +3734,14 @@
     "_id": "69c5d9c6f66d6088e46a472c",
     "nombreCientifico": "Espeletia argentea",
     "imageUrl": "https://www.google.com/search?q=Espeletia+argentea&tbm=isch",
-    "nombresComunes": [
-      "Frailejón plateado",
-      "Frailejón blanco"
-    ],
+    "nombresComunes": ["Frailejón plateado", "Frailejón blanco"],
     "propiedadesMedicinales": [
       "Antiinflamatorio respiratorio",
       "Antitusivo",
       "Expectorante",
       "Cicatrizante"
     ],
-    "partesUtiles": [
-      "Hojas secas",
-      "Resina",
-      "Pelusa (pubescencia)"
-    ],
+    "partesUtiles": ["Hojas secas", "Resina", "Pelusa (pubescencia)"],
     "esenciasFlorales": [
       "Purificación del campo astral",
       "Elevación de la conciencia",
@@ -4628,26 +3794,17 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Llevar el agua a punto de ebullición."
-          ],
+          [1, "Llevar el agua a punto de ebullición."],
           [
             2,
             "Añadir las hojas (nunca verdes, siempre las secas de la base) y cocinar a fuego lento 5 minutos."
           ],
-          [
-            3,
-            "Apagar el fuego, tapar y dejar reposar 10 minutos."
-          ],
+          [3, "Apagar el fuego, tapar y dejar reposar 10 minutos."],
           [
             4,
             "Filtrar la infusión muy bien, preferiblemente con un colador de tela fina para retirar los pelos microscópicos de la planta."
           ],
-          [
-            5,
-            "Beber la preparación lo más caliente que se tolere."
-          ]
+          [5, "Beber la preparación lo más caliente que se tolere."]
         ]
       }
     ],
@@ -4661,29 +3818,20 @@
       }
     ],
     "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a472b",
     "nombreCientifico": "Hypericum juniperinum",
     "imageUrl": "https://www.google.com/search?q=Hypericum+juniperinum&tbm=isch",
-    "nombresComunes": [
-      "Chite",
-      "Guardarocío",
-      "Hierba de San Juan andina"
-    ],
+    "nombresComunes": ["Chite", "Guardarocío", "Hierba de San Juan andina"],
     "propiedadesMedicinales": [
       "Antidepresivo natural",
       "Vulnerario (cura heridas y quemaduras)",
       "Antiviral (tópico)",
       "Analgésico nervioso (neuralgias)"
     ],
-    "partesUtiles": [
-      "Sumidades floridas (flores amarillas)",
-      "Hojas"
-    ],
+    "partesUtiles": ["Sumidades floridas (flores amarillas)", "Hojas"],
     "esenciasFlorales": [
       "Luz interior",
       "Ahuyenta las sombras y la melancolía",
@@ -4715,12 +3863,7 @@
       "familia": "Hypericaceae",
       "genero": "Hypericum",
       "especie": "juniperinum",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Eurosidas I"]
     },
     "preparaciones": [
       {
@@ -4745,10 +3888,7 @@
             2,
             "Colocar las flores ligeramente machacadas en un frasco de vidrio transparente."
           ],
-          [
-            3,
-            "Cubrir completamente con el aceite de oliva."
-          ],
+          [3, "Cubrir completamente con el aceite de oliva."],
           [
             4,
             "Cerrar el frasco y dejar macerar bajo la luz directa del sol durante 40 días (el aceite se tornará rojo sangre gracias a la hipericina)."
@@ -4770,27 +3910,19 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a472d",
     "nombreCientifico": "Espeletia corymbosa",
     "imageUrl": "https://www.google.com/search?q=Espeletia+corymbosa&tbm=isch",
-    "nombresComunes": [
-      "Frailejón liso",
-      "Frailejón de flores agrupadas"
-    ],
+    "nombresComunes": ["Frailejón liso", "Frailejón de flores agrupadas"],
     "propiedadesMedicinales": [
       "Emoliente de mucosas",
       "Béquico (calma la tos)",
       "Antiespasmódico respiratorio"
     ],
-    "partesUtiles": [
-      "Hojas maduras",
-      "Resina (trementina de páramo)"
-    ],
+    "partesUtiles": ["Hojas maduras", "Resina (trementina de páramo)"],
     "esenciasFlorales": [
       "Suavidad en la palabra",
       "Ayuda a la comunicación compasiva",
@@ -4846,26 +3978,14 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Llevar el agua a ebullición en una olla de acero o cerámica."
-          ],
-          [
-            2,
-            "Añadir las hojas, tapar inmediatamente y retirar del fuego."
-          ],
+          [1, "Llevar el agua a ebullición en una olla de acero o cerámica."],
+          [2, "Añadir las hojas, tapar inmediatamente y retirar del fuego."],
           [
             3,
             "Dejar en infusión por 10 minutos para extraer los principios emolientes."
           ],
-          [
-            4,
-            "Colar con filtro muy fino."
-          ],
-          [
-            5,
-            "Añadir la cucharada de miel, remover bien y consumir."
-          ]
+          [4, "Colar con filtro muy fino."],
+          [5, "Añadir la cucharada de miel, remover bien y consumir."]
         ]
       }
     ],
@@ -4879,28 +3999,19 @@
       }
     ],
     "elementosAsociados": "Aire",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a472e",
     "nombreCientifico": "Bejaria resinosa",
     "imageUrl": "https://plantasdecolombia.com/wp-content/uploads/2011/10/bejaria-resinosa.jpg?w=863&h=0&crop=1",
-    "nombresComunes": [
-      "Pegamosco",
-      "Rosa de los Andes",
-      "Azalea andina"
-    ],
+    "nombresComunes": ["Pegamosco", "Rosa de los Andes", "Azalea andina"],
     "propiedadesMedicinales": [
       "Purgante fuerte (uso ancestral muy restringido)",
       "Antiséptico externo",
       "Vulnerario tópico"
     ],
-    "partesUtiles": [
-      "Flores resinosas",
-      "Hojas"
-    ],
+    "partesUtiles": ["Flores resinosas", "Hojas"],
     "esenciasFlorales": [
       "Atrapasueños energético",
       "Retención de las experiencias positivas",
@@ -4930,11 +4041,7 @@
       "familia": "Ericaceae",
       "genero": "Bejaria",
       "especie": "resinosa",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Astéridas"]
     },
     "preparaciones": [
       {
@@ -4951,26 +4058,14 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Calentar el agua sin dejar que llegue a ebullición fuerte."
-          ],
-          [
-            2,
-            "Agregar las flores y las hojas ricas en resina."
-          ],
+          [1, "Calentar el agua sin dejar que llegue a ebullición fuerte."],
+          [2, "Agregar las flores y las hojas ricas en resina."],
           [
             3,
             "Dejar reposar tapado hasta que el agua extraiga las resinas y alcance temperatura ambiente."
           ],
-          [
-            4,
-            "Filtrar el líquido para retirar el material vegetal."
-          ],
-          [
-            5,
-            "Lavar la herida meticulosamente con la preparación fría."
-          ]
+          [4, "Filtrar el líquido para retirar el material vegetal."],
+          [5, "Lavar la herida meticulosamente con la preparación fría."]
         ]
       }
     ],
@@ -4984,27 +4079,19 @@
       }
     ],
     "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4730",
     "nombreCientifico": "Lupinus alopecuroides",
     "imageUrl": "https://www.google.com/search?q=Lupinus+alopecuroides&tbm=isch",
-    "nombresComunes": [
-      "Chocho de páramo",
-      "Lupino lanudo"
-    ],
+    "nombresComunes": ["Chocho de páramo", "Lupino lanudo"],
     "propiedadesMedicinales": [
       "Ectoparasiticida externo potente",
       "Antifúngico",
       "Tóxico (contiene alcaloides quinolizidínicos, letal si se ingiere sin procesamiento riguroso)"
     ],
-    "partesUtiles": [
-      "Semillas (uso externo)",
-      "Hojas"
-    ],
+    "partesUtiles": ["Semillas (uso externo)", "Hojas"],
     "esenciasFlorales": [
       "Calor de hogar interior",
       "Aceptación de la propia rareza o diferencia",
@@ -5034,12 +4121,7 @@
       "familia": "Fabaceae",
       "genero": "Lupinus",
       "especie": "alopecuroides",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Eurosidas I"]
     },
     "preparaciones": [
       {
@@ -5056,14 +4138,8 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Macerar las semillas crudas y amargas en un mortero profundo."
-          ],
-          [
-            2,
-            "Hervir el agua y añadir las semillas trituradas."
-          ],
+          [1, "Macerar las semillas crudas y amargas en un mortero profundo."],
+          [2, "Hervir el agua y añadir las semillas trituradas."],
           [
             3,
             "Cocinar a fuego vivo por 20 a 30 minutos para forzar la extracción de los alcaloides tóxicos hacia el agua."
@@ -5089,27 +4165,19 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a472f",
     "nombreCientifico": "Puya goudotiana",
     "imageUrl": "https://www.google.com/search?q=Puya+goudotiana&tbm=isch",
-    "nombresComunes": [
-      "Cardón",
-      "Puya",
-      "Piñuela de páramo"
-    ],
+    "nombresComunes": ["Cardón", "Puya", "Piñuela de páramo"],
     "propiedadesMedicinales": [
       "Antiinflamatorio tópico",
       "Emoliente",
       "Cicatrizante"
     ],
-    "partesUtiles": [
-      "Base carnosa de las hojas (médula blanca)"
-    ],
+    "partesUtiles": ["Base carnosa de las hojas (médula blanca)"],
     "esenciasFlorales": [
       "Defensa de la propia vulnerabilidad",
       "Fuerza para sostener el espacio vital",
@@ -5139,11 +4207,7 @@
       "familia": "Bromeliaceae",
       "genero": "Puya",
       "especie": "goudotiana",
-      "clados": [
-        "Angiospermas",
-        "Monocotiledóneas",
-        "Comelínidas"
-      ]
+      "clados": ["Angiospermas", "Monocotiledóneas", "Comelínidas"]
     },
     "preparaciones": [
       {
@@ -5160,10 +4224,7 @@
             1,
             "Con guantes protectores, cortar las bases de las hojas evitando las espinas de los bordes."
           ],
-          [
-            2,
-            "Retirar la cutícula dura exterior con un cuchillo limpio."
-          ],
+          [2, "Retirar la cutícula dura exterior con un cuchillo limpio."],
           [
             3,
             "Extraer la pulpa o gel interior, que tiene una textura muy mucilaginosa."
@@ -5189,27 +4250,19 @@
       }
     ],
     "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4731",
     "nombreCientifico": "Pentacalia pulchella",
     "imageUrl": "https://www.google.com/search?q=Pentacalia+pulchella&tbm=isch",
-    "nombresComunes": [
-      "Arnica de monte",
-      "Margarita amarilla de páramo"
-    ],
+    "nombresComunes": ["Arnica de monte", "Margarita amarilla de páramo"],
     "propiedadesMedicinales": [
       "Analgésico tópico",
       "Antiinflamatorio articular y muscular",
       "Vulnerario (traumatismos cerrados)"
     ],
-    "partesUtiles": [
-      "Flores",
-      "Hojas tiernas"
-    ],
+    "partesUtiles": ["Flores", "Hojas tiernas"],
     "esenciasFlorales": [
       "Consuelo en el trauma agudo",
       "Recuperación de choques emocionales",
@@ -5262,18 +4315,12 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar y secar meticulosamente las flores y hojas amarillas."
-          ],
+          [1, "Lavar y secar meticulosamente las flores y hojas amarillas."],
           [
             2,
             "Trozarlas con las manos y colocarlas en un frasco de vidrio oscuro."
           ],
-          [
-            3,
-            "Cubrir completamente el material vegetal con el alcohol."
-          ],
+          [3, "Cubrir completamente el material vegetal con el alcohol."],
           [
             4,
             "Dejar macerar en un lugar oscuro y fresco por 15 a 21 días, agitando el frasco cada 2 días."
@@ -5295,28 +4342,19 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4732",
     "nombreCientifico": "Gaiadendron punctatum",
     "imageUrl": "https://www.google.com/search?q=Gaiadendron+punctatum&tbm=isch",
-    "nombresComunes": [
-      "Tagua",
-      "Fosforito",
-      "Matapalo de tierra"
-    ],
+    "nombresComunes": ["Tagua", "Fosforito", "Matapalo de tierra"],
     "propiedadesMedicinales": [
       "Antimicrobiano",
       "Astringente",
       "Potencial antitumoral y modulador (bajo estudio por ser hemiparásita radical)"
     ],
-    "partesUtiles": [
-      "Hojas",
-      "Flores amarillas tubulares"
-    ],
+    "partesUtiles": ["Hojas", "Flores amarillas tubulares"],
     "esenciasFlorales": [
       "Simbiosis equilibrada",
       "Independencia emocional",
@@ -5346,10 +4384,7 @@
       "familia": "Loranthaceae",
       "genero": "Gaiadendron",
       "especie": "punctatum",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas"]
     },
     "preparaciones": [
       {
@@ -5366,10 +4401,7 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Llevar el medio litro de agua a ebullición."
-          ],
+          [1, "Llevar el medio litro de agua a ebullición."],
           [
             2,
             "Añadir las hojas de la planta hemiparásita y cocinar a fuego lento por 10 minutos."
@@ -5378,10 +4410,7 @@
             3,
             "Retirar del fuego, tapar y dejar enfriar a temperatura ambiente."
           ],
-          [
-            4,
-            "Filtrar cuidadosamente usando un colador o tela limpia."
-          ],
+          [4, "Filtrar cuidadosamente usando un colador o tela limpia."],
           [
             5,
             "Usar el líquido exclusivamente para asepsia tópica en zonas afectadas."
@@ -5399,29 +4428,20 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4733",
     "nombreCientifico": "Clethra fimbriata",
     "imageUrl": "https://bogota.gov.co/sites/default/files/inline-images/manzanito-de-paramo_0.jpg",
-    "nombresComunes": [
-      "Tíbar",
-      "Jabonero",
-      "Cucharo blanco"
-    ],
+    "nombresComunes": ["Tíbar", "Jabonero", "Cucharo blanco"],
     "propiedadesMedicinales": [
       "Depurativo sanguíneo",
       "Diurético",
       "Antirreumático",
       "Saponificante externo (jabón natural)"
     ],
-    "partesUtiles": [
-      "Corteza interna",
-      "Hojas"
-    ],
+    "partesUtiles": ["Corteza interna", "Hojas"],
     "esenciasFlorales": [
       "Limpieza de culpa",
       "Apertura a nuevas oportunidades vitales",
@@ -5451,11 +4471,7 @@
       "familia": "Clethraceae",
       "genero": "Clethra",
       "especie": "fimbriata",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Astéridas"]
     },
     "preparaciones": [
       {
@@ -5476,18 +4492,12 @@
             1,
             "Colocar las hojas secas en el fondo de una taza grande de cerámica."
           ],
-          [
-            2,
-            "Verter el agua caliente recién hervida."
-          ],
+          [2, "Verter el agua caliente recién hervida."],
           [
             3,
             "Tapar la taza para no perder los aceites volátiles y dejar infundir por 5 a 7 minutos."
           ],
-          [
-            4,
-            "Colar para retirar el material vegetal."
-          ],
+          [4, "Colar para retirar el material vegetal."],
           [
             5,
             "Beber la infusión sin añadir azúcares para no alterar su efecto depurativo sobre el riñón y el hígado."
@@ -5505,27 +4515,19 @@
       }
     ],
     "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4734",
     "nombreCientifico": "Paepalanthus alpinus",
     "imageUrl": "https://www.google.com/search?q=Paepalanthus+alpinus&tbm=isch",
-    "nombresComunes": [
-      "Estrella de páramo",
-      "Botoncillo",
-      "Pajilla blanca"
-    ],
+    "nombresComunes": ["Estrella de páramo", "Botoncillo", "Pajilla blanca"],
     "propiedadesMedicinales": [
       "Diurético suave",
       "Antiinflamatorio de vías urinarias",
       "Relajante nervioso leve (uso en aromaterapia andina)"
     ],
-    "partesUtiles": [
-      "Inflorescencias (cabezuelas florales secas)"
-    ],
+    "partesUtiles": ["Inflorescencias (cabezuelas florales secas)"],
     "esenciasFlorales": [
       "Geometría sagrada interior",
       "Encuentro con la luz divina en medio de la oscuridad",
@@ -5555,11 +4557,7 @@
       "familia": "Eriocaulaceae",
       "genero": "Paepalanthus",
       "especie": "alpinus",
-      "clados": [
-        "Angiospermas",
-        "Monocotiledóneas",
-        "Comelínidas"
-      ]
+      "clados": ["Angiospermas", "Monocotiledóneas", "Comelínidas"]
     },
     "preparaciones": [
       {
@@ -5576,10 +4574,7 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Calentar el agua hasta alcanzar el punto de ebullición."
-          ],
+          [1, "Calentar el agua hasta alcanzar el punto de ebullición."],
           [
             2,
             "Añadir las pequeñas flores secas blanquecinas en forma de botón estrellado."
@@ -5588,10 +4583,7 @@
             3,
             "Apagar el fuego, tapar el recipiente y dejar infundir durante 8 a 10 minutos."
           ],
-          [
-            4,
-            "Colar la bebida (las cabezuelas se pueden compostar)."
-          ],
+          [4, "Colar la bebida (las cabezuelas se pueden compostar)."],
           [
             5,
             "Beber lentamente; si se toma para el insomnio, se puede endulzar con una pizca de miel."
@@ -5609,19 +4601,13 @@
       }
     ],
     "elementosAsociados": "Metal",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4735",
     "nombreCientifico": "Pernettya prostrata",
     "imageUrl": "https://www.google.com/search?q=Pernettya+prostrata&tbm=isch",
-    "nombresComunes": [
-      "Reventadera",
-      "Ericácea",
-      "Borrachera de páramo"
-    ],
+    "nombresComunes": ["Reventadera", "Ericácea", "Borrachera de páramo"],
     "propiedadesMedicinales": [
       "Tóxico narcótico (afecta severamente el SNC si se ingiere, produciendo embriaguez o delirio)",
       "Analgésico articular externo potente (por aceites volátiles)",
@@ -5660,11 +4646,7 @@
       "familia": "Ericaceae",
       "genero": "Pernettya",
       "especie": "prostrata",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Astéridas"]
     },
     "preparaciones": [
       {
@@ -5681,10 +4663,7 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar las hojas pequeñas de la planta."
-          ],
+          [1, "Lavar las hojas pequeñas de la planta."],
           [
             2,
             "Machacarlas en un mortero levemente para romper las células vegetales y liberar los compuestos analgésicos."
@@ -5714,28 +4693,19 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4736",
     "nombreCientifico": "Arcytophyllum nitidum",
     "imageUrl": "https://media-plants.earth.com/images/2019/5/14/518926729190996/arcytophyllumnitidum.jpg",
-    "nombresComunes": [
-      "Piquito",
-      "Mortiño",
-      "Huesito"
-    ],
+    "nombresComunes": ["Piquito", "Mortiño", "Huesito"],
     "propiedadesMedicinales": [
       "Astringente",
       "Diurético suave",
       "Antiséptico de vías urinarias"
     ],
-    "partesUtiles": [
-      "Hojas pequeñas",
-      "Ramas tiernas"
-    ],
+    "partesUtiles": ["Hojas pequeñas", "Ramas tiernas"],
     "esenciasFlorales": [
       "Firmeza en las decisiones",
       "Establecimiento de límites saludables",
@@ -5766,12 +4736,7 @@
       "familia": "Rubiaceae",
       "genero": "Arcytophyllum",
       "especie": "nitidum",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas",
-        "Lamíidas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Astéridas", "Lamíidas"]
     },
     "preparaciones": [
       {
@@ -5788,26 +4753,14 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar las ramas finas de la planta."
-          ],
-          [
-            2,
-            "Trozar las ramas y hojas e introducirlas en una tetera."
-          ],
-          [
-            3,
-            "Verter el agua a punto de ebullición sobre la planta."
-          ],
+          [1, "Lavar las ramas finas de la planta."],
+          [2, "Trozar las ramas y hojas e introducirlas en una tetera."],
+          [3, "Verter el agua a punto de ebullición sobre la planta."],
           [
             4,
             "Tapar y dejar infundir por 10 minutos para extraer los compuestos astringentes."
           ],
-          [
-            5,
-            "Colar y consumir tibio sin endulzar."
-          ]
+          [5, "Colar y consumir tibio sin endulzar."]
         ]
       }
     ],
@@ -5821,9 +4774,7 @@
       }
     ],
     "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Masculine"
-    ],
+    "polaridadEnergetica": ["Masculine"],
     "imagenes": {
       "flor": {
         "src": "https://media-plants.earth.com/images/2019/5/14/518926729190996/arcytophyllumnitidum.jpg",
@@ -5839,21 +4790,13 @@
     "_id": "69c5d9c6f66d6088e46a4737",
     "nombreCientifico": "Tibouchina grossa",
     "imageUrl": "https://www.naturepl.com/cache/pcache2/01347142.jpg",
-    "nombresComunes": [
-      "Tuno roso",
-      "Mayo",
-      "Sietecueros rojo"
-    ],
+    "nombresComunes": ["Tuno roso", "Mayo", "Sietecueros rojo"],
     "propiedadesMedicinales": [
       "Cicatrizante",
       "Hemostático (detiene sangrados)",
       "Antioxidante"
     ],
-    "partesUtiles": [
-      "Flores rojas",
-      "Hojas",
-      "Corteza escamosa"
-    ],
+    "partesUtiles": ["Flores rojas", "Hojas", "Corteza escamosa"],
     "esenciasFlorales": [
       "Pasión por la vida",
       "Reactivación del fuego interior",
@@ -5884,11 +4827,7 @@
       "familia": "Melastomataceae",
       "genero": "Tibouchina",
       "especie": "grossa",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas"]
     },
     "preparaciones": [
       {
@@ -5905,22 +4844,13 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Extraer con cuidado las escamas de corteza suelta del árbol."
-          ],
-          [
-            2,
-            "Lavar la corteza y las hojas frescas."
-          ],
+          [1, "Extraer con cuidado las escamas de corteza suelta del árbol."],
+          [2, "Lavar la corteza y las hojas frescas."],
           [
             3,
             "Hervir en el agua durante 15 minutos para liberar sus taninos hemostáticos."
           ],
-          [
-            4,
-            "Retirar del fuego y dejar enfriar completamente."
-          ],
+          [4, "Retirar del fuego y dejar enfriar completamente."],
           [
             5,
             "Filtrar el líquido para el lavado de la herida, aplicando luego los restos blandos de la decocción sobre el corte."
@@ -5938,27 +4868,19 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4738",
     "nombreCientifico": "Oreopanax incisus",
     "imageUrl": "https://google.com/search?q=Oreopanax+incisus",
-    "nombresComunes": [
-      "Mano de Oso",
-      "Pate danta"
-    ],
+    "nombresComunes": ["Mano de Oso", "Pate danta"],
     "propiedadesMedicinales": [
       "Expectorante profundo",
       "Antitusivo",
       "Vulnerario (reparación de tejidos)"
     ],
-    "partesUtiles": [
-      "Hojas lobuladas",
-      "Brotes tiernos"
-    ],
+    "partesUtiles": ["Hojas lobuladas", "Brotes tiernos"],
     "esenciasFlorales": [
       "Sensación de abrazo materno/paterno",
       "Sostén durante crisis de pánico",
@@ -6019,18 +4941,9 @@
             1,
             "Lavar minuciosamente las hojas para eliminar polvillo y pelusas naturales de la planta."
           ],
-          [
-            2,
-            "Trozar las hojas y colocarlas en el agua fría."
-          ],
-          [
-            3,
-            "Hervir a fuego medio durante 10 minutos."
-          ],
-          [
-            4,
-            "Tapar la olla y dejar reposar 5 minutos más."
-          ],
+          [2, "Trozar las hojas y colocarlas en el agua fría."],
+          [3, "Hervir a fuego medio durante 10 minutos."],
+          [4, "Tapar la olla y dejar reposar 5 minutos más."],
           [
             5,
             "Colar con filtro fino, añadir la miel y beber mientras emana vapor."
@@ -6048,28 +4961,20 @@
       }
     ],
     "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4739",
     "nombreCientifico": "Salvia rufula",
     "imageUrl": "https://google.com/search?q=Salvia+rufula",
-    "nombresComunes": [
-      "Salvia roja",
-      "Salvia de páramo"
-    ],
+    "nombresComunes": ["Salvia roja", "Salvia de páramo"],
     "propiedadesMedicinales": [
       "Emenagogo (regula el ciclo menstrual)",
       "Digestivo",
       "Tónico circulatorio",
       "Antimicrobiano"
     ],
-    "partesUtiles": [
-      "Sumidades floridas",
-      "Hojas"
-    ],
+    "partesUtiles": ["Sumidades floridas", "Hojas"],
     "esenciasFlorales": [
       "Sabiduría femenina ancestral",
       "Purificación de linajes familiares",
@@ -6100,12 +5005,7 @@
       "familia": "Lamiaceae",
       "genero": "Salvia",
       "especie": "rufula",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas",
-        "Lamíidas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Astéridas", "Lamíidas"]
     },
     "preparaciones": [
       {
@@ -6122,26 +5022,17 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Colocar la salvia roja en una taza resistente al calor."
-          ],
+          [1, "Colocar la salvia roja en una taza resistente al calor."],
           [
             2,
             "Verter el agua hirviendo y tapar herméticamente (los aceites esenciales son muy volátiles)."
           ],
-          [
-            3,
-            "Dejar infundir durante 8 minutos."
-          ],
+          [3, "Dejar infundir durante 8 minutos."],
           [
             4,
             "Destapar y respirar profundamente el aroma medicinal antes de colar."
           ],
-          [
-            5,
-            "Colar y consumir inmediatamente."
-          ]
+          [5, "Colar y consumir inmediatamente."]
         ]
       }
     ],
@@ -6155,26 +5046,19 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a473a",
     "nombreCientifico": "Espeletia chocontana",
     "imageUrl": "https://www.google.com/search?q=Espeletia+chocontana&tbm=isch",
-    "nombresComunes": [
-      "Frailejón de Chocontá"
-    ],
+    "nombresComunes": ["Frailejón de Chocontá"],
     "propiedadesMedicinales": [
       "Antiasmático",
       "Expectorante de vías bajas",
       "Antiinflamatorio de vías respiratorias"
     ],
-    "partesUtiles": [
-      "Hojas secas (necromasa foliar)",
-      "Resina"
-    ],
+    "partesUtiles": ["Hojas secas (necromasa foliar)", "Resina"],
     "esenciasFlorales": [
       "Arraigo territorial",
       "Sentido de pertenencia",
@@ -6226,18 +5110,9 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Llevar el agua a punto de ebullición en una olla grande."
-          ],
-          [
-            2,
-            "Añadir las hojas secas maduras."
-          ],
-          [
-            3,
-            "Hervir a fuego lento por 10 minutos para liberar las resinas."
-          ],
+          [1, "Llevar el agua a punto de ebullición en una olla grande."],
+          [2, "Añadir las hojas secas maduras."],
+          [3, "Hervir a fuego lento por 10 minutos para liberar las resinas."],
           [
             4,
             "Retirar del fuego, cubrir la cabeza con una toalla sobre la olla y aspirar los vapores calientes por 10 minutos."
@@ -6259,28 +5134,20 @@
       }
     ],
     "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a473b",
     "nombreCientifico": "Aragoa cupressina",
     "imageUrl": "https://d2seqvvyy3b8p2.cloudfront.net/e78f1b9010c7f553b9408396f75a1d0f.jpg",
-    "nombresComunes": [
-      "Romero de Páramo",
-      "Pinito"
-    ],
+    "nombresComunes": ["Romero de Páramo", "Pinito"],
     "propiedadesMedicinales": [
       "Balsámico",
       "Anticatarral",
       "Rubefaciente (calienta el cuerpo)",
       "Analgésico articular"
     ],
-    "partesUtiles": [
-      "Ramas tiernas",
-      "Hojas aciculares"
-    ],
+    "partesUtiles": ["Ramas tiernas", "Hojas aciculares"],
     "esenciasFlorales": [
       "Claridad mental cristalina",
       "Corteza espiritual contra malas influencias",
@@ -6310,12 +5177,7 @@
       "familia": "Plantaginaceae",
       "genero": "Aragoa",
       "especie": "cupressina",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas",
-        "Lamíidas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Astéridas", "Lamíidas"]
     },
     "preparaciones": [
       {
@@ -6332,18 +5194,12 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar y secar muy bien las ramas del romero de páramo."
-          ],
+          [1, "Lavar y secar muy bien las ramas del romero de páramo."],
           [
             2,
             "Macerarlas o golpearlas suavemente para liberar sus aceites esenciales resinosos."
           ],
-          [
-            3,
-            "Introducirlas en un recipiente de vidrio."
-          ],
+          [3, "Introducirlas en un recipiente de vidrio."],
           [
             4,
             "Añadir el alcohol, sellar y dejar macerar en la oscuridad durante 15 días."
@@ -6365,28 +5221,19 @@
       }
     ],
     "elementosAsociados": "Aire",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a473c",
     "nombreCientifico": "Aetanthus mutisii",
     "imageUrl": "https://static.inaturalist.org/photos/479407521/large.jpg",
-    "nombresComunes": [
-      "Matapalo",
-      "Injerto",
-      "Muérdago andino"
-    ],
+    "nombresComunes": ["Matapalo", "Injerto", "Muérdago andino"],
     "propiedadesMedicinales": [
       "Hipotensor (baja la presión arterial, requiere dosificación experta)",
       "Antiespasmódico nervioso",
       "Cicatrizante externo"
     ],
-    "partesUtiles": [
-      "Hojas",
-      "Flores rojas tubulares"
-    ],
+    "partesUtiles": ["Hojas", "Flores rojas tubulares"],
     "esenciasFlorales": [
       "Independencia vital",
       "Ruptura de lazos de vampirismo energético",
@@ -6416,10 +5263,7 @@
       "familia": "Loranthaceae",
       "genero": "Aetanthus",
       "especie": "mutisii",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas"]
     },
     "preparaciones": [
       {
@@ -6444,14 +5288,8 @@
             2,
             "Pesar exactamente la planta, ya que es potente y no debe sobredosificarse."
           ],
-          [
-            3,
-            "Colocar en una taza y verter el agua caliente."
-          ],
-          [
-            4,
-            "Infundir tapado por solo 5 minutos."
-          ],
+          [3, "Colocar en una taza y verter el agua caliente."],
+          [4, "Infundir tapado por solo 5 minutos."],
           [
             5,
             "Colar y consumir. (En la medicina tradicional andina esta preparación es supervisada por sabedores)."
@@ -6469,29 +5307,20 @@
       }
     ],
     "elementosAsociados": "Aire",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a473e",
     "nombreCientifico": "Mutisia clematis",
     "imageUrl": "https://www.google.com/search?q=Mutisia+clematis&tbm=isch",
-    "nombresComunes": [
-      "Clavellino",
-      "Bejuco",
-      "Flor de Mutis"
-    ],
+    "nombresComunes": ["Clavellino", "Bejuco", "Flor de Mutis"],
     "propiedadesMedicinales": [
       "Tónico cardiaco (uso ancestral)",
       "Béquico (para tos persistente)",
       "Antidepresivo natural",
       "Estimulante digestivo"
     ],
-    "partesUtiles": [
-      "Flores (péndulas y rojas)",
-      "Hojas"
-    ],
+    "partesUtiles": ["Flores (péndulas y rojas)", "Hojas"],
     "esenciasFlorales": [
       "Apertura del corazón a la alegría",
       "Expansión y asimilación de experiencias hermosas",
@@ -6548,14 +5377,8 @@
             1,
             "Seleccionar las flores rojas del clavellino y retirarles el polvo."
           ],
-          [
-            2,
-            "Depositarlas en una taza de porcelana o vidrio templado."
-          ],
-          [
-            3,
-            "Verter el agua hirviendo suavemente sobre los pétalos."
-          ],
+          [2, "Depositarlas en una taza de porcelana o vidrio templado."],
+          [3, "Verter el agua hirviendo suavemente sobre los pétalos."],
           [
             4,
             "Tapar y dejar infundir por 7 minutos, el agua tomará un color ámbar-rojizo."
@@ -6577,9 +5400,7 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a473f",
@@ -6630,10 +5451,7 @@
       "familia": "Orchidaceae",
       "genero": "Masdevallia",
       "especie": "coccinea",
-      "clados": [
-        "Angiospermas",
-        "Monocotiledóneas"
-      ]
+      "clados": ["Angiospermas", "Monocotiledóneas"]
     },
     "preparaciones": [
       {
@@ -6666,10 +5484,7 @@
             3,
             "Dejar expuesta la flor y el bol a la luz del sol matutino durante 3 a 4 horas para transferir la firma vibracional de la orquídea al agua."
           ],
-          [
-            4,
-            "Retirar el bol con cuidado de no dañar la planta."
-          ],
+          [4, "Retirar el bol con cuidado de no dañar la planta."],
           [
             5,
             "Mezclar el agua activada con brandy a partes iguales para crear la Tintura Madre, y diluir posteriormente para el uso en frascos goteros."
@@ -6687,29 +5502,20 @@
       }
     ],
     "elementosAsociados": "Metal",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a473d",
     "nombreCientifico": "Passiflora bogotensis",
     "imageUrl": "https://www.google.com/search?q=Passiflora+bogotensis&tbm=isch",
-    "nombresComunes": [
-      "Curuba de monte",
-      "Curuba silvestre"
-    ],
+    "nombresComunes": ["Curuba de monte", "Curuba silvestre"],
     "propiedadesMedicinales": [
       "Sedante fuerte",
       "Ansiolítico",
       "Antiespasmódico",
       "Hipotensor leve"
     ],
-    "partesUtiles": [
-      "Hojas",
-      "Zarcillos",
-      "Flores"
-    ],
+    "partesUtiles": ["Hojas", "Zarcillos", "Flores"],
     "esenciasFlorales": [
       "Paz espiritual absoluta",
       "Trascendencia del sufrimiento",
@@ -6741,12 +5547,7 @@
       "familia": "Passifloraceae",
       "genero": "Passiflora",
       "especie": "bogotensis",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Eurosidas I"]
     },
     "preparaciones": [
       {
@@ -6763,26 +5564,14 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Colocar la planta seca y troceada en una tetera."
-          ],
-          [
-            2,
-            "Añadir el agua hirviendo inmediatamente."
-          ],
+          [1, "Colocar la planta seca y troceada en una tetera."],
+          [2, "Añadir el agua hirviendo inmediatamente."],
           [
             3,
             "Tapar y dejar reposar durante 15 minutos para extraer los alcaloides y flavonoides sedantes."
           ],
-          [
-            4,
-            "Colar finamente."
-          ],
-          [
-            5,
-            "Beber en sorbos lentos en un ambiente ya oscuro y relajado."
-          ]
+          [4, "Colar finamente."],
+          [5, "Beber en sorbos lentos en un ambiente ya oscuro y relajado."]
         ]
       }
     ],
@@ -6796,27 +5585,19 @@
       }
     ],
     "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4740",
     "nombreCientifico": "Viburnum suratense",
     "imageUrl": "https://www.google.com/search?q=Viburnum+suratense&tbm=isch",
-    "nombresComunes": [
-      "Garrocho",
-      "Pela"
-    ],
+    "nombresComunes": ["Garrocho", "Pela"],
     "propiedadesMedicinales": [
       "Antiespasmódico",
       "Astringente",
       "Antiinflamatorio tópico"
     ],
-    "partesUtiles": [
-      "Hojas",
-      "Corteza"
-    ],
+    "partesUtiles": ["Hojas", "Corteza"],
     "esenciasFlorales": [
       "Relajación de la tensión extrema",
       "Ayuda a soltar el control",
@@ -6868,22 +5649,13 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar las hojas y la corteza cuidadosamente."
-          ],
-          [
-            2,
-            "Hervir el agua en una olla grande."
-          ],
+          [1, "Lavar las hojas y la corteza cuidadosamente."],
+          [2, "Hervir el agua en una olla grande."],
           [
             3,
             "Añadir el material vegetal y dejar hervir a fuego medio durante 15 minutos."
           ],
-          [
-            4,
-            "Retirar del fuego y dejar reposar 5 minutos."
-          ],
+          [4, "Retirar del fuego y dejar reposar 5 minutos."],
           [
             5,
             "Sumergir un paño limpio en el líquido caliente (soportable al tacto) y colocar sobre el músculo contraído."
@@ -6901,26 +5673,19 @@
       }
     ],
     "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4741",
     "nombreCientifico": "Ceroxylon vogelianum",
     "imageUrl": "https://tropical.theferns.info/plantimages/sized/6/2/62f6f3d599645246fb091212a1a98031a8a0e71d_308px.jpg",
-    "nombresComunes": [
-      "Palma de Cera",
-      "Palma de ramo"
-    ],
+    "nombresComunes": ["Palma de Cera", "Palma de ramo"],
     "propiedadesMedicinales": [
       "Cicatrizante (cera)",
       "Emoliente cutáneo",
       "Protector dérmico"
     ],
-    "partesUtiles": [
-      "Cera del tronco (recolección no destructiva)"
-    ],
+    "partesUtiles": ["Cera del tronco (recolección no destructiva)"],
     "esenciasFlorales": [
       "Elevación del espíritu",
       "Conexión Cielo-Tierra",
@@ -6950,11 +5715,7 @@
       "familia": "Arecaceae",
       "genero": "Ceroxylon",
       "especie": "vogelianum",
-      "clados": [
-        "Angiospermas",
-        "Monocotiledóneas",
-        "Comelínidas"
-      ]
+      "clados": ["Angiospermas", "Monocotiledóneas", "Comelínidas"]
     },
     "preparaciones": [
       {
@@ -7004,27 +5765,19 @@
       }
     ],
     "elementosAsociados": "Aire",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4742",
     "nombreCientifico": "Centropogon granulosus",
     "imageUrl": "https://ecosdelbosque.com/sites/default/files/styles/specie_slider/public/2021-05/centropogon_granulosus_01.jpg?itok=mvwjDVNS",
-    "nombresComunes": [
-      "Campanilla",
-      "Bocado de puerco"
-    ],
+    "nombresComunes": ["Campanilla", "Bocado de puerco"],
     "propiedadesMedicinales": [
       "Vulnerario",
       "Antimicótico tópico (látex)",
       "Tóxico (uso interno estrictamente prohibido)"
     ],
-    "partesUtiles": [
-      "Látex blanco",
-      "Hojas maceradas"
-    ],
+    "partesUtiles": ["Látex blanco", "Hojas maceradas"],
     "esenciasFlorales": [
       "Aceptación de la propia intuición",
       "Despierta la voz interior",
@@ -7076,18 +5829,9 @@
             1,
             "Quebrar cuidadosamente un tallo u hoja fresca para liberar el látex blanco (usar guantes para no irritar las manos)."
           ],
-          [
-            2,
-            "Proteger la piel sana alrededor de la verruga con vaselina."
-          ],
-          [
-            3,
-            "Aplicar la gota de látex directamente sobre la lesión."
-          ],
-          [
-            4,
-            "Dejar secar al aire libre."
-          ],
+          [2, "Proteger la piel sana alrededor de la verruga con vaselina."],
+          [3, "Aplicar la gota de látex directamente sobre la lesión."],
+          [4, "Dejar secar al aire libre."],
           [
             5,
             "Lavar bien las manos después de la aplicación y evitar cualquier contacto con los ojos o la boca."
@@ -7105,27 +5849,19 @@
       }
     ],
     "elementosAsociados": "Metal",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a474b",
     "nombreCientifico": "Myroxylon balsamum",
     "imageUrl": "https://www.google.com/search?q=Myroxylon+balsamum&tbm=isch",
-    "nombresComunes": [
-      "Bálsamo de Tolú",
-      "Tolu"
-    ],
+    "nombresComunes": ["Bálsamo de Tolú", "Tolu"],
     "propiedadesMedicinales": [
       "Expectorante profundo",
       "Antiséptico pulmonar y de vías urinarias",
       "Cicatrizante"
     ],
-    "partesUtiles": [
-      "Resina oleosa (bálsamo)",
-      "Corteza"
-    ],
+    "partesUtiles": ["Resina oleosa (bálsamo)", "Corteza"],
     "esenciasFlorales": [
       "Bálsamo para el dolor emocional",
       "Suaviza el temperamento irritable",
@@ -7156,12 +5892,7 @@
       "familia": "Fabaceae",
       "genero": "Myroxylon",
       "especie": "balsamum",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Fábidas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Fábidas"]
     },
     "preparaciones": [
       {
@@ -7178,14 +5909,8 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Para inhalaciones: Hervir el litro de agua."
-          ],
-          [
-            2,
-            "Retirar del fuego y disolver la resina en el agua caliente."
-          ],
+          [1, "Para inhalaciones: Hervir el litro de agua."],
+          [2, "Retirar del fuego y disolver la resina en el agua caliente."],
           [
             3,
             "Cubrir la cabeza con una toalla e inhalar profundamente los vapores aromáticos por 15 minutos."
@@ -7211,28 +5936,20 @@
       }
     ],
     "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a474c",
     "nombreCientifico": "Cinchona pitayensis",
     "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_DbbHfEv0nQGU07Ml3PmBfVorT8FS_8dZ7w&s",
-    "nombresComunes": [
-      "Quina andina",
-      "Quina del Cauca",
-      "Cascarilla"
-    ],
+    "nombresComunes": ["Quina andina", "Quina del Cauca", "Cascarilla"],
     "propiedadesMedicinales": [
       "Antipalúdico (cura la malaria por su contenido de quinina)",
       "Antipirético potente (baja la fiebre)",
       "Analgésico",
       "Tónico amargo digestivo"
     ],
-    "partesUtiles": [
-      "Corteza"
-    ],
+    "partesUtiles": ["Corteza"],
     "esenciasFlorales": [
       "Restauración del orden mental ante el caos",
       "Ayuda a asimilar lecciones kármicas repetitivas",
@@ -7263,12 +5980,7 @@
       "familia": "Rubiaceae",
       "genero": "Cinchona",
       "especie": "pitayensis",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas",
-        "Lamíidas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Astéridas", "Lamíidas"]
     },
     "preparaciones": [
       {
@@ -7285,14 +5997,8 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar la corteza y molerla hasta obtener un polvo grueso."
-          ],
-          [
-            2,
-            "Colocar en el agua fría y llevar a fuego."
-          ],
+          [1, "Lavar la corteza y molerla hasta obtener un polvo grueso."],
+          [2, "Colocar en el agua fría y llevar a fuego."],
           [
             3,
             "Hervir lentamente por 20 minutos para extraer los alcaloides amargos."
@@ -7318,29 +6024,20 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4750",
     "nombreCientifico": "Bocconia frutescens",
     "imageUrl": "https://catalogofloravalleaburra.eia.edu.co/storage/images/73a84cd87cb3775d88d70f95c11adb6aa0d0c60f.jpg",
-    "nombresComunes": [
-      "Trompeto",
-      "Siete camisas",
-      "Celidonia andina"
-    ],
+    "nombresComunes": ["Trompeto", "Siete camisas", "Celidonia andina"],
     "propiedadesMedicinales": [
       "Queratolítico (destruye verrugas y callos)",
       "Cicatrizante externo",
       "Antiséptico potente",
       "Antimicrobiano tópico"
     ],
-    "partesUtiles": [
-      "Látex anaranjado/amarillo",
-      "Hojas"
-    ],
+    "partesUtiles": ["Látex anaranjado/amarillo", "Hojas"],
     "esenciasFlorales": [
       "Desprendimiento de viejas estructuras",
       "Renovación de la perspectiva",
@@ -7371,10 +6068,7 @@
       "familia": "Papaveraceae",
       "genero": "Bocconia",
       "especie": "frutescens",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas"]
     },
     "preparaciones": [
       {
@@ -7420,28 +6114,20 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4746",
     "nombreCientifico": "Myrica pubescens",
     "imageUrl": "https://www.google.com/search?q=Myrica+pubescens&tbm=isch",
-    "nombresComunes": [
-      "Laurel de Cera",
-      "Laurel andino"
-    ],
+    "nombresComunes": ["Laurel de Cera", "Laurel andino"],
     "propiedadesMedicinales": [
       "Astringente",
       "Cicatrizante (cera)",
       "Emoliente cutáneo",
       "Anticatarral (vahos)"
     ],
-    "partesUtiles": [
-      "Hojas",
-      "Cera de los frutos"
-    ],
+    "partesUtiles": ["Hojas", "Cera de los frutos"],
     "esenciasFlorales": [
       "Iluminación del camino vital",
       "Constancia y dedicación",
@@ -7471,12 +6157,7 @@
       "familia": "Myricaceae",
       "genero": "Myrica",
       "especie": "pubescens",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Fábidas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Fábidas"]
     },
     "preparaciones": [
       {
@@ -7493,18 +6174,9 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Poner a hervir el litro de agua en una olla amplia."
-          ],
-          [
-            2,
-            "Añadir las hojas y dejar hervir por 3 minutos."
-          ],
-          [
-            3,
-            "Retirar del fuego y colocar sobre una mesa segura."
-          ],
+          [1, "Poner a hervir el litro de agua en una olla amplia."],
+          [2, "Añadir las hojas y dejar hervir por 3 minutos."],
+          [3, "Retirar del fuego y colocar sobre una mesa segura."],
           [
             4,
             "Cubrir la cabeza con una toalla formando una carpa sobre la olla."
@@ -7526,27 +6198,19 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4749",
     "nombreCientifico": "Dalea coerulea",
     "imageUrl": "https://www.google.com/search?q=Dalea+coerulea&tbm=isch",
-    "nombresComunes": [
-      "Dalea",
-      "Falso añil"
-    ],
+    "nombresComunes": ["Dalea", "Falso añil"],
     "propiedadesMedicinales": [
       "Vulnerario (cura heridas)",
       "Antiséptico cutáneo",
       "Antiinflamatorio externo"
     ],
-    "partesUtiles": [
-      "Hojas",
-      "Flores azules/violáceas"
-    ],
+    "partesUtiles": ["Hojas", "Flores azules/violáceas"],
     "esenciasFlorales": [
       "Confianza en el propio valor",
       "Tranquilidad ante la adversidad",
@@ -7576,12 +6240,7 @@
       "familia": "Fabaceae",
       "genero": "Dalea",
       "especie": "coerulea",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Eurosidas I"]
     },
     "preparaciones": [
       {
@@ -7598,22 +6257,10 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Recolectar las ramas tiernas con flores de la planta."
-          ],
-          [
-            2,
-            "Hervir el agua y añadir el material vegetal triturado."
-          ],
-          [
-            3,
-            "Mantener en ebullición suave por 10 minutos."
-          ],
-          [
-            4,
-            "Retirar, tapar y dejar enfriar por completo."
-          ],
+          [1, "Recolectar las ramas tiernas con flores de la planta."],
+          [2, "Hervir el agua y añadir el material vegetal triturado."],
+          [3, "Mantener en ebullición suave por 10 minutos."],
+          [4, "Retirar, tapar y dejar enfriar por completo."],
           [
             5,
             "Filtrar a través de una tela limpia y aplicar el líquido a modo de lavado sobre la piel afectada."
@@ -7631,29 +6278,20 @@
       }
     ],
     "elementosAsociados": "Aire",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a474a",
     "nombreCientifico": "Erythroxylum novogranatense",
     "imageUrl": "https://www.google.com/search?q=Erythroxylum+novogranatense&tbm=isch",
-    "nombresComunes": [
-      "Coca colombiana",
-      "Pajarito",
-      "Ayo",
-      "Hayó"
-    ],
+    "nombresComunes": ["Coca colombiana", "Pajarito", "Ayo", "Hayó"],
     "propiedadesMedicinales": [
       "Estimulante del sistema nervioso central",
       "Anestésico local",
       "Supresor del apetito",
       "Estimulante respiratorio (mal de altura)"
     ],
-    "partesUtiles": [
-      "Hojas"
-    ],
+    "partesUtiles": ["Hojas"],
     "esenciasFlorales": [
       "Asimilación de la palabra y el pensamiento",
       "Fomenta la escucha activa y la comunidad",
@@ -7684,12 +6322,7 @@
       "familia": "Erythroxylaceae",
       "genero": "Erythroxylum",
       "especie": "novogranatense",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Fábidas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Fábidas"]
     },
     "preparaciones": [
       {
@@ -7718,10 +6351,7 @@
             3,
             "Introducir un puñado de hojas en el carrillo (interior de la mejilla) sin tragarlas."
           ],
-          [
-            4,
-            "Humedecer con la saliva hasta formar un bolo (acuyico)."
-          ],
+          [4, "Humedecer con la saliva hasta formar un bolo (acuyico)."],
           [
             5,
             "Agregar la pizca de cal/ceniza para activar la extracción alcaloide y mantener el bolo en la boca liberando su jugo."
@@ -7739,26 +6369,19 @@
       }
     ],
     "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4751",
     "nombreCientifico": "Valeriana clematitis",
     "imageUrl": "https://www.google.com/search?q=Valeriana+clematitis&tbm=isch",
-    "nombresComunes": [
-      "Valeriana de páramo",
-      "Valeriana andina"
-    ],
+    "nombresComunes": ["Valeriana de páramo", "Valeriana andina"],
     "propiedadesMedicinales": [
       "Sedante poderoso del sistema nervioso",
       "Inductor del sueño",
       "Antiespasmódico gastrointestinal (de origen nervioso)"
     ],
-    "partesUtiles": [
-      "Raíces y rizomas (característico olor penetrante)"
-    ],
+    "partesUtiles": ["Raíces y rizomas (característico olor penetrante)"],
     "esenciasFlorales": [
       "Paz en la tormenta",
       "Desconexión del ruido mental",
@@ -7812,18 +6435,12 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar muy bien las raíces para retirar toda la tierra."
-          ],
+          [1, "Lavar muy bien las raíces para retirar toda la tierra."],
           [
             2,
             "Triturarlas ligeramente (liberarán un fuerte olor característico, similar a tierra húmeda o calcetín sucio)."
           ],
-          [
-            3,
-            "Colocar en el agua y llevar al fuego."
-          ],
+          [3, "Colocar en el agua y llevar al fuego."],
           [
             4,
             "Apenas rompa a hervir, apagar inmediatamente (no hervir en exceso para no degradar los valepotriatos)."
@@ -7845,28 +6462,20 @@
       }
     ],
     "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4753",
     "nombreCientifico": "Banisteriopsis caapi",
     "imageUrl": "https://orders.fairchildgarden.org/cdn/shop/files/fullsizeoutput_1ff7.jpg?v=1686502747&width=1024",
-    "nombresComunes": [
-      "Yagé",
-      "Ayahuasca",
-      "Bejuco del alma"
-    ],
+    "nombresComunes": ["Yagé", "Ayahuasca", "Bejuco del alma"],
     "propiedadesMedicinales": [
       "Antidepresivo potente (inhibidor de la MAO natural)",
       "Purgante físico y espiritual (emético/catártico)",
       "Desparasitante profundo",
       "Enteógeno (induce estados alterados de conciencia)"
     ],
-    "partesUtiles": [
-      "Corteza del bejuco maduro"
-    ],
+    "partesUtiles": ["Corteza del bejuco maduro"],
     "esenciasFlorales": [
       "Visión profunda de la verdad cósmica",
       "Limpieza absoluta del inconsciente",
@@ -7897,12 +6506,7 @@
       "familia": "Malpighiaceae",
       "genero": "Banisteriopsis",
       "especie": "caapi",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Eurosidas I"]
     },
     "preparaciones": [
       {
@@ -7956,26 +6560,19 @@
       }
     ],
     "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4744",
     "nombreCientifico": "Buddleja bullata",
     "imageUrl": "https://catalogofloraaltamontana.eia.edu.co/storage/images/c199f76b5ad7c2770410a632ecbf660b0cf036bd.jpg",
-    "nombresComunes": [
-      "Salvia de Páramo",
-      "Lengua de vaca"
-    ],
+    "nombresComunes": ["Salvia de Páramo", "Lengua de vaca"],
     "propiedadesMedicinales": [
       "Vulnerario (lava y sella heridas)",
       "Antiinflamatorio tópico",
       "Febrífugo (en baños)"
     ],
-    "partesUtiles": [
-      "Hojas"
-    ],
+    "partesUtiles": ["Hojas"],
     "esenciasFlorales": [
       "Comunicación pacífica",
       "Enfriamiento de la ira",
@@ -8005,11 +6602,7 @@
       "familia": "Scrophulariaceae",
       "genero": "Buddleja",
       "especie": "bullata",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Astéridas"]
     },
     "preparaciones": [
       {
@@ -8026,22 +6619,10 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar las hojas, que suelen ser afelpadas."
-          ],
-          [
-            2,
-            "Hervir el agua e introducir las hojas trituradas."
-          ],
-          [
-            3,
-            "Dejar hervir por 10 minutos para una correcta extracción."
-          ],
-          [
-            4,
-            "Retirar del fuego y dejar enfriar a temperatura ambiente."
-          ],
+          [1, "Lavar las hojas, que suelen ser afelpadas."],
+          [2, "Hervir el agua e introducir las hojas trituradas."],
+          [3, "Dejar hervir por 10 minutos para una correcta extracción."],
+          [4, "Retirar del fuego y dejar enfriar a temperatura ambiente."],
           [
             5,
             "Filtrar el líquido y usar en compresas sobre la frente para fiebre o como lavado para desinfectar."
@@ -8059,28 +6640,19 @@
       }
     ],
     "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4748",
     "nombreCientifico": "Erythrina poeppigiana",
     "imageUrl": "https://www.google.com/search?q=Erythrina+poeppigiana&tbm=isch",
-    "nombresComunes": [
-      "Bucare",
-      "Cámbulo",
-      "Pízamo"
-    ],
+    "nombresComunes": ["Bucare", "Cámbulo", "Pízamo"],
     "propiedadesMedicinales": [
       "Sedante nervioso (requiere precaución por alcaloides)",
       "Antiespasmódico",
       "Sudorífico (diaforético)"
     ],
-    "partesUtiles": [
-      "Flores",
-      "Corteza (uso muy restringido)"
-    ],
+    "partesUtiles": ["Flores", "Corteza (uso muy restringido)"],
     "esenciasFlorales": [
       "Paz profunda",
       "Aceptación del ciclo de descanso",
@@ -8096,11 +6668,7 @@
       "Culpa por descansar",
       "Insomnio por sobrecarga de pensamientos"
     ],
-    "malesFisicos": [
-      "Nerviosismo agudo",
-      "Insomnio",
-      "Espasmos musculares"
-    ],
+    "malesFisicos": ["Nerviosismo agudo", "Insomnio", "Espasmos musculares"],
     "taxon": {
       "dominio": "Eukaryota",
       "reino": "Plantae",
@@ -8110,12 +6678,7 @@
       "familia": "Fabaceae",
       "genero": "Erythrina",
       "especie": "poeppigiana",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Eurosidas I"]
     },
     "preparaciones": [
       {
@@ -8132,22 +6695,10 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar los pétalos de las flores rojas/anaranjadas."
-          ],
-          [
-            2,
-            "Colocarlos en una taza y verter el agua caliente."
-          ],
-          [
-            3,
-            "Infundir durante no más de 5 a 7 minutos."
-          ],
-          [
-            4,
-            "Colar y endulzar ligeramente si se desea."
-          ],
+          [1, "Lavar los pétalos de las flores rojas/anaranjadas."],
+          [2, "Colocarlos en una taza y verter el agua caliente."],
+          [3, "Infundir durante no más de 5 a 7 minutos."],
+          [4, "Colar y endulzar ligeramente si se desea."],
           [
             5,
             "Beber en la noche. No administrar a niños, mujeres embarazadas o personas medicadas con sedantes, dado el contenido de alcaloides."
@@ -8165,28 +6716,20 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a474d",
     "nombreCientifico": "Piper bogotense",
     "imageUrl": "https://www.google.com/search?q=Piper+bogotense&tbm=isch",
-    "nombresComunes": [
-      "Cordoncillo",
-      "Matico andino"
-    ],
+    "nombresComunes": ["Cordoncillo", "Matico andino"],
     "propiedadesMedicinales": [
       "Hemostático muy potente (detiene el sangrado al instante)",
       "Vulnerario (cierra heridas)",
       "Analgésico local",
       "Astringente"
     ],
-    "partesUtiles": [
-      "Hojas frescas",
-      "Sumidades florales (espigas)"
-    ],
+    "partesUtiles": ["Hojas frescas", "Sumidades florales (espigas)"],
     "esenciasFlorales": [
       "Cierre de ciclos abiertos",
       "Cicatrización del aura",
@@ -8217,10 +6760,7 @@
       "familia": "Piperaceae",
       "genero": "Piper",
       "especie": "bogotense",
-      "clados": [
-        "Angiospermas",
-        "Magnolíidas"
-      ]
+      "clados": ["Angiospermas", "Magnolíidas"]
     },
     "preparaciones": [
       {
@@ -8233,10 +6773,7 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar rápidamente las hojas frescas bajo el agua."
-          ],
+          [1, "Lavar rápidamente las hojas frescas bajo el agua."],
           [
             2,
             "Triturarlas entre las manos limpias o en un mortero hasta extraer un jugo verdoso oscuro."
@@ -8245,10 +6782,7 @@
             3,
             "Colocar la masa vegetal directamente sobre el corte o herida que está sangrando."
           ],
-          [
-            4,
-            "Presionar firmemente con una gasa o venda."
-          ],
+          [4, "Presionar firmemente con una gasa o venda."],
           [
             5,
             "Dejar actuar hasta que el sangrado se detenga por completo. El matico actuará como un tapón biológico."
@@ -8266,29 +6800,20 @@
       }
     ],
     "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4752",
     "nombreCientifico": "Caryodendron orinocense",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Frutos_de_Cacay.jpg",
-    "nombresComunes": [
-      "Cacay",
-      "Inchi",
-      "Nuez de Barinas"
-    ],
+    "nombresComunes": ["Cacay", "Inchi", "Nuez de Barinas"],
     "propiedadesMedicinales": [
       "Regenerador celular cutáneo avanzado",
       "Antioxidante tópico",
       "Cicatrizante",
       "Nutracéutico (almendra)"
     ],
-    "partesUtiles": [
-      "Aceite extraído de la nuez/semilla",
-      "Almendras"
-    ],
+    "partesUtiles": ["Aceite extraído de la nuez/semilla", "Almendras"],
     "esenciasFlorales": [
       "Rejuvenecimiento espiritual",
       "Recuperación de la autoestima",
@@ -8319,12 +6844,7 @@
       "familia": "Euphorbiaceae",
       "genero": "Caryodendron",
       "especie": "orinocense",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Eurosidas I"]
     },
     "preparaciones": [
       {
@@ -8370,28 +6890,20 @@
       }
     ],
     "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4743",
     "nombreCientifico": "Hypericum goyanesii",
     "imageUrl": "https://www.google.com/search?q=Hypericum+goyanesii&tbm=isch",
-    "nombresComunes": [
-      "Chite",
-      "San Juanito de páramo"
-    ],
+    "nombresComunes": ["Chite", "San Juanito de páramo"],
     "propiedadesMedicinales": [
       "Antidepresivo",
       "Vulnerario (excelente cicatrizante)",
       "Antiespasmódico",
       "Antiséptico"
     ],
-    "partesUtiles": [
-      "Flores",
-      "Hojas"
-    ],
+    "partesUtiles": ["Flores", "Hojas"],
     "esenciasFlorales": [
       "Optimismo y vitalidad",
       "Disuelve la melancolía profunda",
@@ -8421,12 +6933,7 @@
       "familia": "Hypericaceae",
       "genero": "Hypericum",
       "especie": "goyanesii",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Eurosidas I"]
     },
     "preparaciones": [
       {
@@ -8443,22 +6950,10 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Colocar las flores secas en una taza."
-          ],
-          [
-            2,
-            "Verter el agua recién hervida sobre las flores."
-          ],
-          [
-            3,
-            "Tapar y dejar en infusión por 8 minutos."
-          ],
-          [
-            4,
-            "Colar para retirar los restos de la planta."
-          ],
+          [1, "Colocar las flores secas en una taza."],
+          [2, "Verter el agua recién hervida sobre las flores."],
+          [3, "Tapar y dejar en infusión por 8 minutos."],
+          [4, "Colar para retirar los restos de la planta."],
           [
             5,
             "Consumir tibio. Precaución: puede interactuar con medicamentos antidepresivos convencionales."
@@ -8476,29 +6971,20 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4745",
     "nombreCientifico": "Hedyosmum bonplandianum",
     "imageUrl": "https://www.google.com/search?q=Hedyosmum+bonplandianum&tbm=isch",
-    "nombresComunes": [
-      "Granizo",
-      "Silbador",
-      "Bebedero"
-    ],
+    "nombresComunes": ["Granizo", "Silbador", "Bebedero"],
     "propiedadesMedicinales": [
       "Antiespasmódico estomacal",
       "Analgésico articular (planta caliente)",
       "Diurético",
       "Anticatarral"
     ],
-    "partesUtiles": [
-      "Hojas (muy aromáticas)",
-      "Tallos tiernos"
-    ],
+    "partesUtiles": ["Hojas (muy aromáticas)", "Tallos tiernos"],
     "esenciasFlorales": [
       "Recuperación de la fluidez vital",
       "Limpieza de miedos paralizantes",
@@ -8529,10 +7015,7 @@
       "familia": "Chloranthaceae",
       "genero": "Hedyosmum",
       "especie": "bonplandianum",
-      "clados": [
-        "Angiospermas",
-        "Magnolíidas"
-      ]
+      "clados": ["Angiospermas", "Magnolíidas"]
     },
     "preparaciones": [
       {
@@ -8561,14 +7044,8 @@
             3,
             "Tapar herméticamente de inmediato para que los aromas no se evaporen."
           ],
-          [
-            4,
-            "Infundir durante 10 minutos."
-          ],
-          [
-            5,
-            "Colar y beber lentamente después de las comidas."
-          ]
+          [4, "Infundir durante 10 minutos."],
+          [5, "Colar y beber lentamente después de las comidas."]
         ]
       }
     ],
@@ -8582,30 +7059,20 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a4747",
     "nombreCientifico": "Inga edulis",
     "imageUrl": "https://www.google.com/search?q=Inga+edulis&tbm=isch",
-    "nombresComunes": [
-      "Guamo",
-      "Guaba",
-      "Guamo machete"
-    ],
+    "nombresComunes": ["Guamo", "Guaba", "Guamo machete"],
     "propiedadesMedicinales": [
       "Astringente (corteza)",
       "Antiinflamatorio",
       "Cicatrizante",
       "Digestivo (arilo del fruto)"
     ],
-    "partesUtiles": [
-      "Corteza",
-      "Hojas",
-      "Arilo blanco (comestible)"
-    ],
+    "partesUtiles": ["Corteza", "Hojas", "Arilo blanco (comestible)"],
     "esenciasFlorales": [
       "Nutrición del alma",
       "Generosidad y altruismo",
@@ -8636,12 +7103,7 @@
       "familia": "Fabaceae",
       "genero": "Inga",
       "especie": "edulis",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Eurosidas I"]
     },
     "preparaciones": [
       {
@@ -8658,26 +7120,14 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar la corteza y trozarla en pedazos pequeños."
-          ],
+          [1, "Lavar la corteza y trozarla en pedazos pequeños."],
           [
             2,
             "Hervir en el agua durante 15 a 20 minutos para extraer correctamente los taninos."
           ],
-          [
-            3,
-            "Retirar del fuego y dejar enfriar por completo."
-          ],
-          [
-            4,
-            "Colar para asegurar que no queden astillas o residuos."
-          ],
-          [
-            5,
-            "Usar el líquido como enjuague bucal sin tragarlo."
-          ]
+          [3, "Retirar del fuego y dejar enfriar por completo."],
+          [4, "Colar para asegurar que no queden astillas o residuos."],
+          [5, "Usar el líquido como enjuague bucal sin tragarlo."]
         ]
       }
     ],
@@ -8691,28 +7141,19 @@
       }
     ],
     "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a474e",
     "nombreCientifico": "Brugmansia sanguinea",
     "imageUrl": "https://www.gardenia.net/wp-content/uploads/2023/04/Brugmansia-sanguineaOptimized-780x520.webp",
-    "nombresComunes": [
-      "Cacao sabanero",
-      "Borrachera roja",
-      "Floripondio rojo"
-    ],
+    "nombresComunes": ["Cacao sabanero", "Borrachera roja", "Floripondio rojo"],
     "propiedadesMedicinales": [
       "Analgésico articular extremo (Tópico)",
       "Antiespasmódico (Tópico)",
       "Tóxico delirante (altísimo riesgo si se ingiere, contiene escopolamina y atropina)"
     ],
-    "partesUtiles": [
-      "Hojas frescas",
-      "Flores (solo uso externo/ritual)"
-    ],
+    "partesUtiles": ["Hojas frescas", "Flores (solo uso externo/ritual)"],
     "esenciasFlorales": [
       "Despertar espiritual",
       "Confrontación profunda con la propia sombra",
@@ -8742,12 +7183,7 @@
       "familia": "Solanaceae",
       "genero": "Brugmansia",
       "especie": "sanguinea",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas",
-        "Lamíidas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Astéridas", "Lamíidas"]
     },
     "preparaciones": [
       {
@@ -8764,14 +7200,8 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar las hojas y secarlas cuidadosamente."
-          ],
-          [
-            2,
-            "Untar la superficie de la hoja con un poco de aceite."
-          ],
+          [1, "Lavar las hojas y secarlas cuidadosamente."],
+          [2, "Untar la superficie de la hoja con un poco de aceite."],
           [
             3,
             "Pasar la hoja rápidamente por el fuego de la estufa para ablandarla y liberar sus alcaloides, sin dejar que se queme."
@@ -8797,27 +7227,20 @@
       }
     ],
     "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c5d9c6f66d6088e46a474f",
     "nombreCientifico": "Borojoa patinoi",
     "imageUrl": "https://tropical.theferns.info/plantimages/sized/e/8/e862f1b56bc7bacbea1c3539de25830c825d601b_480px.jpg",
-    "nombresComunes": [
-      "Borojó",
-      "Fruta de la energía"
-    ],
+    "nombresComunes": ["Borojó", "Fruta de la energía"],
     "propiedadesMedicinales": [
       "Vitamínico y remineralizante de alto impacto",
       "Estimulante y energizante celular",
       "Hipotensor (regula presión arterial)",
       "Equilibrador del azúcar en sangre"
     ],
-    "partesUtiles": [
-      "Fruto maduro"
-    ],
+    "partesUtiles": ["Fruto maduro"],
     "esenciasFlorales": [
       "Recarga de la batería vital",
       "Pasión y fuerza física",
@@ -8848,12 +7271,7 @@
       "familia": "Rubiaceae",
       "genero": "Borojoa",
       "especie": "patinoi",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Astéridas",
-        "Lamíidas"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Astéridas", "Lamíidas"]
     },
     "preparaciones": [
       {
@@ -8878,14 +7296,8 @@
             1,
             "Abrir el fruto maduro (que debe estar muy suave, de color pardo) y extraer la pulpa con una cuchara."
           ],
-          [
-            2,
-            "Colocar la pulpa en la licuadora junto con el agua o la leche."
-          ],
-          [
-            3,
-            "Añadir la miel o panela."
-          ],
+          [2, "Colocar la pulpa en la licuadora junto con el agua o la leche."],
+          [3, "Añadir la miel o panela."],
           [
             4,
             "Licuar a velocidad media hasta obtener un batido denso y espumoso."
@@ -8907,17 +7319,13 @@
       }
     ],
     "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c6a752f66d6088e46a4775",
     "nombreCientifico": "Salvia rosmarinus",
     "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKN62Z67ri2NUtWJmCODzbEx-TcSH0bW_Hfg&s",
-    "nombresComunes": [
-      "romero"
-    ],
+    "nombresComunes": ["romero"],
     "propiedadesMedicinales": [
       "antioxidante",
       "antiinflamatorio",
@@ -8926,15 +7334,8 @@
       "cicatrizante",
       "estimula la circulacion"
     ],
-    "partesUtiles": [
-      "Hojas",
-      "Tallos tiernos"
-    ],
-    "esenciasFlorales": [
-      "Claridad mental",
-      "Fuerza interior",
-      "Enraizamiento"
-    ],
+    "partesUtiles": ["Hojas", "Tallos tiernos"],
+    "esenciasFlorales": ["Claridad mental", "Fuerza interior", "Enraizamiento"],
     "correspondenciasEnergeticas": [
       "proteccion",
       "limpieza energetica",
@@ -8987,22 +7388,10 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Echar el romero en un recipiente vacio"
-          ],
-          [
-            2,
-            "echar el agua encima del romero en el recipiente"
-          ],
-          [
-            3,
-            "batir fuertemente"
-          ],
-          [
-            4,
-            "colar el liquido "
-          ]
+          [1, "Echar el romero en un recipiente vacio"],
+          [2, "echar el agua encima del romero en el recipiente"],
+          [3, "batir fuertemente"],
+          [4, "colar el liquido "]
         ],
         "formaDeAplicacion": ""
       },
@@ -9019,18 +7408,9 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "colocar el romero en un recipiente"
-          ],
-          [
-            2,
-            "echar el aceite vegetal"
-          ],
-          [
-            3,
-            "dejar reposar por 20 días en un entorno oscuro y sin luz"
-          ],
+          [1, "colocar el romero en un recipiente"],
+          [2, "echar el aceite vegetal"],
+          [3, "dejar reposar por 20 días en un entorno oscuro y sin luz"],
           [
             4,
             "sinecesitas la cocción inmediatamente, poner a baño de maría en fuego lento por 2 horas"
@@ -9052,22 +7432,10 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Echar el romero en un recipiente vacio"
-          ],
-          [
-            2,
-            "echar el agua encima del romero en el recipiente"
-          ],
-          [
-            3,
-            "batir fuertemente"
-          ],
-          [
-            4,
-            "colar el liquido "
-          ]
+          [1, "Echar el romero en un recipiente vacio"],
+          [2, "echar el agua encima del romero en el recipiente"],
+          [3, "batir fuertemente"],
+          [4, "colar el liquido "]
         ]
       },
       {
@@ -9084,18 +7452,9 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "colocar el romero en un recipiente"
-          ],
-          [
-            2,
-            "echar el aceite vegetal"
-          ],
-          [
-            3,
-            "dejar reposar por 20 días en un entorno oscuro y sin luz"
-          ],
+          [1, "colocar el romero en un recipiente"],
+          [2, "echar el aceite vegetal"],
+          [3, "dejar reposar por 20 días en un entorno oscuro y sin luz"],
           [
             4,
             "sinecesitas la cocción inmediatamente, poner a baño de maría en fuego lento por 2 horas"
@@ -9113,30 +7472,20 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c6a752f66d6088e46a4778",
     "nombreCientifico": "Passiflora incarnata",
     "imageUrl": "https://www.google.com/search?q=Passiflora+incarnata&tbm=isch",
-    "nombresComunes": [
-      "Flor de la pasión",
-      "Pasionaria",
-      "Maypop"
-    ],
+    "nombresComunes": ["Flor de la pasión", "Pasionaria", "Maypop"],
     "propiedadesMedicinales": [
       "Sedante del sistema nervioso central",
       "Ansiolítico",
       "Antiespasmódico",
       "Hipotensor leve"
     ],
-    "partesUtiles": [
-      "Hojas",
-      "Flores",
-      "Partes aéreas"
-    ],
+    "partesUtiles": ["Hojas", "Flores", "Partes aéreas"],
     "esenciasFlorales": [
       "Paz interior profunda",
       "Conexión con la conciencia crística",
@@ -9167,12 +7516,7 @@
       "familia": "Passifloraceae",
       "genero": "Passiflora",
       "especie": "incarnata",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Eurosidas I"]
     },
     "preparaciones": [
       {
@@ -9189,26 +7533,14 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Colocar la hierba seca en una taza de cerámica."
-          ],
+          [1, "Colocar la hierba seca en una taza de cerámica."],
           [
             2,
             "Verter el agua hirviendo y tapar inmediatamente para no perder aceites volátiles."
           ],
-          [
-            3,
-            "Dejar en infusión por 10 a 15 minutos."
-          ],
-          [
-            4,
-            "Colar y endulzar ligeramente si se desea."
-          ],
-          [
-            5,
-            "Beber en sorbos lentos en un ambiente tranquilo."
-          ]
+          [3, "Dejar en infusión por 10 a 15 minutos."],
+          [4, "Colar y endulzar ligeramente si se desea."],
+          [5, "Beber en sorbos lentos en un ambiente tranquilo."]
         ]
       }
     ],
@@ -9222,9 +7554,7 @@
       }
     ],
     "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c6a752f66d6088e46a4779",
@@ -9241,10 +7571,7 @@
       "Hipolipemiante (ayuda a reducir colesterol)",
       "Antioxidante celular"
     ],
-    "partesUtiles": [
-      "Hojas (para medicina)",
-      "Fruto (alimento y jugo)"
-    ],
+    "partesUtiles": ["Hojas (para medicina)", "Fruto (alimento y jugo)"],
     "esenciasFlorales": [
       "Pasión por la vida",
       "Asimilación de la dulzura y la vitalidad",
@@ -9275,12 +7602,7 @@
       "familia": "Passifloraceae",
       "genero": "Passiflora",
       "especie": "edulis",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Eurosidas I"]
     },
     "preparaciones": [
       {
@@ -9297,26 +7619,11 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar las hojas de la enredadera."
-          ],
-          [
-            2,
-            "Trozarlas con las manos y colocarlas en una tetera."
-          ],
-          [
-            3,
-            "Agregar el agua caliente, tapar y dejar reposar 8 minutos."
-          ],
-          [
-            4,
-            "Colar el líquido, que tendrá un color verde pálido."
-          ],
-          [
-            5,
-            "Beber sin azúcar para maximizar el efecto hipotensor."
-          ]
+          [1, "Lavar las hojas de la enredadera."],
+          [2, "Trozarlas con las manos y colocarlas en una tetera."],
+          [3, "Agregar el agua caliente, tapar y dejar reposar 8 minutos."],
+          [4, "Colar el líquido, que tendrá un color verde pálido."],
+          [5, "Beber sin azúcar para maximizar el efecto hipotensor."]
         ]
       }
     ],
@@ -9330,19 +7637,13 @@
       }
     ],
     "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c6a752f66d6088e46a477b",
     "nombreCientifico": "Passiflora quadrangularis",
     "imageUrl": "https://www.google.com/search?q=Passiflora+quadrangularis&tbm=isch",
-    "nombresComunes": [
-      "Badea",
-      "Corvejo",
-      "Granadilla gigante"
-    ],
+    "nombresComunes": ["Badea", "Corvejo", "Granadilla gigante"],
     "propiedadesMedicinales": [
       "Sedante fuerte",
       "Diurético",
@@ -9383,12 +7684,7 @@
       "familia": "Passifloraceae",
       "genero": "Passiflora",
       "especie": "quadrangularis",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Eurosidas I"]
     },
     "preparaciones": [
       {
@@ -9405,22 +7701,13 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Lavar las hojas grandes de la planta."
-          ],
-          [
-            2,
-            "Colocarlas en el agua y llevar a fuego bajo."
-          ],
+          [1, "Lavar las hojas grandes de la planta."],
+          [2, "Colocarlas en el agua y llevar a fuego bajo."],
           [
             3,
             "Hervir por 5 minutos para extraer los alcaloides sedantes (passiflorina)."
           ],
-          [
-            4,
-            "Dejar reposar, colar y consumir tibio."
-          ],
+          [4, "Dejar reposar, colar y consumir tibio."],
           [
             5,
             "Aviso: No ingerir decocciones de la raíz sin supervisión experta por riesgo de toxicidad."
@@ -9438,28 +7725,20 @@
       }
     ],
     "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c6a752f66d6088e46a477a",
     "nombreCientifico": "Passiflora ligularis",
     "imageUrl": "https://www.google.com/search?q=Passiflora+ligularis&tbm=isch",
-    "nombresComunes": [
-      "Granadilla",
-      "Granadilla andina"
-    ],
+    "nombresComunes": ["Granadilla", "Granadilla andina"],
     "propiedadesMedicinales": [
       "Regulador gástrico",
       "Antiespasmódico infantil",
       "Laxante muy suave (mucílagos del fruto)",
       "Calmante nervioso leve"
     ],
-    "partesUtiles": [
-      "Fruto (pulpa y semillas)",
-      "Hojas tiernas"
-    ],
+    "partesUtiles": ["Fruto (pulpa y semillas)", "Hojas tiernas"],
     "esenciasFlorales": [
       "Nutrición afectiva materno-infantil",
       "Consuelo en la tristeza pura",
@@ -9489,12 +7768,7 @@
       "familia": "Passifloraceae",
       "genero": "Passiflora",
       "especie": "ligularis",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Eurosidas I"]
     },
     "preparaciones": [
       {
@@ -9507,10 +7781,7 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Romper la cáscara dura de la granadilla."
-          ],
+          [1, "Romper la cáscara dura de la granadilla."],
           [
             2,
             "Extraer toda la pulpa mucilaginosa y las semillas con una cuchara."
@@ -9523,10 +7794,7 @@
             4,
             "Para adultos, consumir directamente con las semillas masticándolas bien (aportan fibra)."
           ],
-          [
-            5,
-            "Dar de beber a temperatura ambiente."
-          ]
+          [5, "Dar de beber a temperatura ambiente."]
         ]
       }
     ],
@@ -9540,29 +7808,20 @@
       }
     ],
     "elementosAsociados": "Agua",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c6a752f66d6088e46a477c",
     "nombreCientifico": "Passiflora maliformis",
     "imageUrl": "https://www.google.com/search?q=Passiflora+maliformis&tbm=isch",
-    "nombresComunes": [
-      "Cholupa",
-      "Chulupa",
-      "Granadilla de piedra"
-    ],
+    "nombresComunes": ["Cholupa", "Chulupa", "Granadilla de piedra"],
     "propiedadesMedicinales": [
       "Calmante nervioso",
       "Febrífugo leve (refrescante)",
       "Antioxidante",
       "Antiespasmódico"
     ],
-    "partesUtiles": [
-      "Fruto",
-      "Hojas"
-    ],
+    "partesUtiles": ["Fruto", "Hojas"],
     "esenciasFlorales": [
       "Estabilidad emocional",
       "Protección de la propia vulnerabilidad (representado en su cáscara dura como piedra)",
@@ -9593,12 +7852,7 @@
       "familia": "Passifloraceae",
       "genero": "Passiflora",
       "especie": "maliformis",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Eurosidas I"]
     },
     "preparaciones": [
       {
@@ -9615,26 +7869,14 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Quebrar la dura cáscara de la cholupa con un golpe seco."
-          ],
-          [
-            2,
-            "Extraer la pulpa aromática."
-          ],
+          [1, "Quebrar la dura cáscara de la cholupa con un golpe seco."],
+          [2, "Extraer la pulpa aromática."],
           [
             3,
             "Licuar a velocidad muy baja (pulsos) con el agua para no triturar completamente las semillas."
           ],
-          [
-            4,
-            "Colar para separar los fragmentos de semillas del jugo."
-          ],
-          [
-            5,
-            "Servir frío y beber para refrescar el organismo."
-          ]
+          [4, "Colar para separar los fragmentos de semillas del jugo."],
+          [5, "Servir frío y beber para refrescar el organismo."]
         ]
       }
     ],
@@ -9648,29 +7890,20 @@
       }
     ],
     "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c6a752f66d6088e46a477d",
     "nombreCientifico": "Passiflora tarminiana",
     "imageUrl": "https://www.google.com/search?q=Passiflora+tarminiana&tbm=isch",
-    "nombresComunes": [
-      "Curuba de Castilla",
-      "Curuba india",
-      "Tacso"
-    ],
+    "nombresComunes": ["Curuba de Castilla", "Curuba india", "Tacso"],
     "propiedadesMedicinales": [
       "Astringente gástrico",
       "Sedante estomacal",
       "Antioxidante potente (vitamina C)",
       "Vulnerario (hojas tópicas)"
     ],
-    "partesUtiles": [
-      "Fruto",
-      "Hojas secas"
-    ],
+    "partesUtiles": ["Fruto", "Hojas secas"],
     "esenciasFlorales": [
       "Adaptabilidad a entornos fríos o inexplorados",
       "Fluidez emocional",
@@ -9701,12 +7934,7 @@
       "familia": "Passifloraceae",
       "genero": "Passiflora",
       "especie": "tarminiana",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Eurosidas I"]
     },
     "preparaciones": [
       {
@@ -9723,22 +7951,10 @@
           }
         ],
         "pasos": [
-          [
-            1,
-            "Triturar las hojas secas finamente."
-          ],
-          [
-            2,
-            "Colocarlas en una taza y verter el agua caliente."
-          ],
-          [
-            3,
-            "Tapar y dejar reposar 10 minutos."
-          ],
-          [
-            4,
-            "Colar la infusión."
-          ],
+          [1, "Triturar las hojas secas finamente."],
+          [2, "Colocarlas en una taza y verter el agua caliente."],
+          [3, "Tapar y dejar reposar 10 minutos."],
+          [4, "Colar la infusión."],
           [
             5,
             "Beber tibio; sus taninos ayudarán a regular la mucosa estomacal irritada por el estrés."
@@ -9756,9 +7972,7 @@
       }
     ],
     "elementosAsociados": "Aire",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c6a752f66d6088e46a477e",
@@ -9775,10 +7989,7 @@
       "Antitusivo y expectorante",
       "Antioxidante"
     ],
-    "partesUtiles": [
-      "Hojas",
-      "Flores rojas"
-    ],
+    "partesUtiles": ["Hojas", "Flores rojas"],
     "esenciasFlorales": [
       "Despertar de la fuerza de voluntad",
       "Reactivación de la libido vital",
@@ -9809,12 +8020,7 @@
       "familia": "Passifloraceae",
       "genero": "Passiflora",
       "especie": "vitifolia",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Eurosidas I"]
     },
     "preparaciones": [
       {
@@ -9835,22 +8041,10 @@
             1,
             "Lavar las hojas (que se asemejan a las de la vid, de ahí 'vitifolia')."
           ],
-          [
-            2,
-            "Hervir en agua a fuego medio por 5 a 8 minutos."
-          ],
-          [
-            3,
-            "Apagar y dejar en reposo."
-          ],
-          [
-            4,
-            "Filtrar el líquido para retirar las vellosidades de la planta."
-          ],
-          [
-            5,
-            "Tomar tibio para mejorar la vasodilatación."
-          ]
+          [2, "Hervir en agua a fuego medio por 5 a 8 minutos."],
+          [3, "Apagar y dejar en reposo."],
+          [4, "Filtrar el líquido para retirar las vellosidades de la planta."],
+          [5, "Tomar tibio para mejorar la vasodilatación."]
         ]
       },
       {
@@ -9871,22 +8065,10 @@
             1,
             "Lavar las hojas (que se asemejan a las de la vid, de ahí vitifolia)."
           ],
-          [
-            2,
-            "Hervir en agua a fuego medio por 5 a 8 minutos."
-          ],
-          [
-            3,
-            "Apagar y dejar en reposo."
-          ],
-          [
-            4,
-            "Filtrar el líquido para retirar las vellosidades de la planta."
-          ],
-          [
-            5,
-            "Tomar tibio para mejorar la vasodilatación."
-          ]
+          [2, "Hervir en agua a fuego medio por 5 a 8 minutos."],
+          [3, "Apagar y dejar en reposo."],
+          [4, "Filtrar el líquido para retirar las vellosidades de la planta."],
+          [5, "Tomar tibio para mejorar la vasodilatación."]
         ]
       }
     ],
@@ -9900,18 +8082,13 @@
       }
     ],
     "elementosAsociados": "Fuego",
-    "polaridadEnergetica": [
-      "Masculine"
-    ]
+    "polaridadEnergetica": ["Masculine"]
   },
   {
     "_id": "69c6a752f66d6088e46a477f",
     "nombreCientifico": "Passiflora danielii",
     "imageUrl": "https://www.google.com/search?q=Passiflora+danielii&tbm=isch",
-    "nombresComunes": [
-      "Pasionaria de Antioquia",
-      "Flor de pasión endémica"
-    ],
+    "nombresComunes": ["Pasionaria de Antioquia", "Flor de pasión endémica"],
     "propiedadesMedicinales": [
       "Relajante del sistema nervioso",
       "Ansiolítico leve"
@@ -9949,12 +8126,7 @@
       "familia": "Passifloraceae",
       "genero": "Passiflora",
       "especie": "danielii",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Eurosidas I"]
     },
     "preparaciones": [
       {
@@ -9983,10 +8155,7 @@
             3,
             "Dejar expuesta a la luz solar durante 3 horas para imprimir su huella vibracional."
           ],
-          [
-            4,
-            "Retirar el cuenco cuidadosamente."
-          ],
+          [4, "Retirar el cuenco cuidadosamente."],
           [
             5,
             "Mezclar el agua con brandy al 50% para conservar la esencia madre, que luego se diluirá en goteros comerciales."
@@ -10004,27 +8173,19 @@
       }
     ],
     "elementosAsociados": "Tierra",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c6a752f66d6088e46a4780",
     "nombreCientifico": "Passiflora antioquiensis",
     "imageUrl": "https://www.google.com/search?q=Passiflora+antioquiensis&tbm=isch",
-    "nombresComunes": [
-      "Curuba antioqueña",
-      "Curuba de monte"
-    ],
+    "nombresComunes": ["Curuba antioqueña", "Curuba de monte"],
     "propiedadesMedicinales": [
       "Sedante nervioso",
       "Ansiolítico",
       "Vitamínico y remineralizante"
     ],
-    "partesUtiles": [
-      "Fruto",
-      "Hojas"
-    ],
+    "partesUtiles": ["Fruto", "Hojas"],
     "esenciasFlorales": [
       "Fuerza en la adversidad",
       "Apertura a la propia belleza interior",
@@ -10054,12 +8215,7 @@
       "familia": "Passifloraceae",
       "genero": "Passiflora",
       "especie": "antioquiensis",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Eurosidas I"]
     },
     "preparaciones": [
       {
@@ -10080,18 +8236,9 @@
             1,
             "Para la infusión nocturna: Colocar las hojas limpias en una taza."
           ],
-          [
-            2,
-            "Añadir el agua caliente y tapar."
-          ],
-          [
-            3,
-            "Infundir durante 10 minutos."
-          ],
-          [
-            4,
-            "Filtrar el líquido resultante."
-          ],
+          [2, "Añadir el agua caliente y tapar."],
+          [3, "Infundir durante 10 minutos."],
+          [4, "Filtrar el líquido resultante."],
           [
             5,
             "Beber en un ambiente oscuro y sin pantallas para relajar el sistema nervioso central."
@@ -10109,28 +8256,19 @@
       }
     ],
     "elementosAsociados": "Aire",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   },
   {
     "_id": "69c6a752f66d6088e46a4781",
     "nombreCientifico": "Passiflora alata",
     "imageUrl": "https://www.google.com/search?q=Passiflora+alata&tbm=isch",
-    "nombresComunes": [
-      "Maracuyá dulce",
-      "Pasionaria fragante",
-      "Badea chica"
-    ],
+    "nombresComunes": ["Maracuyá dulce", "Pasionaria fragante", "Badea chica"],
     "propiedadesMedicinales": [
       "Inductor del sueño profundo",
       "Calmante",
       "Regulador cardíaco (taquicardias menores)"
     ],
-    "partesUtiles": [
-      "Hojas grandes",
-      "Flores (altamente aromáticas)"
-    ],
+    "partesUtiles": ["Hojas grandes", "Flores (altamente aromáticas)"],
     "esenciasFlorales": [
       "Magnetismo personal",
       "Dulzura en el trato",
@@ -10161,12 +8299,7 @@
       "familia": "Passifloraceae",
       "genero": "Passiflora",
       "especie": "alata",
-      "clados": [
-        "Angiospermas",
-        "Eudicotiledóneas",
-        "Rósidas",
-        "Eurosidas I"
-      ]
+      "clados": ["Angiospermas", "Eudicotiledóneas", "Rósidas", "Eurosidas I"]
     },
     "preparaciones": [
       {
@@ -10195,10 +8328,7 @@
             3,
             "Retirar del fuego inmediatamente, tapar y dejar en reposo 10 minutos."
           ],
-          [
-            4,
-            "Colar la preparación."
-          ],
+          [4, "Colar la preparación."],
           [
             5,
             "Tomar a sorbos lentos, enfocándose conscientemente en disminuir el ritmo respiratorio."
@@ -10216,8 +8346,6 @@
       }
     ],
     "elementosAsociados": "Aire",
-    "polaridadEnergetica": [
-      "Feminine"
-    ]
+    "polaridadEnergetica": ["Feminine"]
   }
 ]

@@ -80,6 +80,12 @@ export default function SpecimenEditSelection(
             plantData.imagenes.preparacion
           );
         }
+
+        if ( plantData.imagenes.semillas ) {
+          imgs.push(
+            plantData.imagenes.semillas
+          );
+        }
       }
 
       return imgs;
@@ -230,6 +236,7 @@ export default function SpecimenEditSelection(
                           chevron_left
                         </span>
                       </IconButton>
+
                       <IconButton
                         onClick={handleNextImage}
                         sx={{
@@ -292,6 +299,7 @@ export default function SpecimenEditSelection(
             : (
                 <PlantCookbook
                   plant={plantData}
+                  isStandalone={isStandalone}
                   setIsEditing={setIsEditing}
                 />
               )}
@@ -305,7 +313,7 @@ export default function SpecimenEditSelection(
             }}
           >
             <button
-              className={`${ buttonStyles.md3Btn } ${ buttonStyles.md3BtnTonalPrimary }`}
+              className={buttonStyles.md3Btn}
               onClick={() => {
                 return setIsEditing(
                   (

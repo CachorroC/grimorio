@@ -12,37 +12,34 @@ import { EspecimenType } from '../types/especimenTypes';
  * @param outputDir The directory where the JSON files will be saved
  */
 export async function generatePropertySets(
-  data: EspecimenType[], outputDir: string = './output'
+  data: EspecimenType[],
+  outputDir: string = './output',
 ): Promise<void> {
   // Define exactly which keys we want to extract to ensure type safety
   const keysToExtract = [
     'propiedadesMedicinales',
     'correspondenciasEnergeticas',
     'malesEmocionales',
-    'malesFisicos'
+    'malesFisicos',
   ] as const;
 
   // Initialize a dictionary to hold our Sets
-  const uniqueValues: Record<typeof keysToExtract[number], Set<string>> = {
-    propiedadesMedicinales     : new Set<string>(),
+  const uniqueValues: Record<(typeof keysToExtract)[number], Set<string>> = {
+    propiedadesMedicinales: new Set<string>(),
     correspondenciasEnergeticas: new Set<string>(),
-    malesEmocionales           : new Set<string>(),
-    malesFisicos               : new Set<string>(),
+    malesEmocionales: new Set<string>(),
+    malesFisicos: new Set<string>(),
   };
 
   // Iterate over the specimen data and populate the Sets
-  for ( const specimen of data ) {
-    for ( const key of keysToExtract ) {
-      const propertiesArray = specimen[ key ];
+  for (const specimen of data) {
+    for (const key of keysToExtract) {
+      const propertiesArray = specimen[key];
 
-      if ( Array.isArray(
-        propertiesArray
-      ) ) {
-        for ( const value of propertiesArray ) {
+      if (Array.isArray(propertiesArray)) {
+        for (const value of propertiesArray) {
           // Trimming ensures "Ansiedad " and "Ansiedad" are treated as the same
-          uniqueValues[ key ].add(
-            value.trim()
-          );
+          uniqueValues[key].add(value.trim());
         }
       }
     }
@@ -50,103 +47,64 @@ export async function generatePropertySets(
 
   try {
     // Ensure the output directory exists
-    await fs.mkdir(
-      outputDir, {
-        recursive: true
-      }
-    );
+    await fs.mkdir(outputDir, {
+      recursive: true,
+    });
 
     // Iterate through our populated Sets, convert them to arrays, sort them, and save
-    for ( const key of keysToExtract ) {
+    for (const key of keysToExtract) {
       // Convert Set to an alphabetically sorted array for a cleaner JSON output
-      const sortedArray = Array.from(
-        uniqueValues[ key ]
-      )
-        .sort(
-          (
-            a, b
-          ) => {
-            return a.localeCompare(
-              b
-            );
-          }
-        );
+      const sortedArray = Array.from(uniqueValues[key]).sort((a, b) => {
+        return a.localeCompare(b);
+      });
 
-      const filePath = path.join(
-        outputDir, `${ key }.json`
-      );
+      const filePath = path.join(outputDir, `${key}.json`);
 
       // Stringify with an indentation of 2 spaces for readability
       await fs.writeFile(
-        filePath, JSON.stringify(
-          sortedArray, null, 2
-        ), 'utf-8'
+        filePath,
+        JSON.stringify(sortedArray, null, 2),
+        'utf-8',
       );
 
       console.log(
-        `✅ Successfully saved ${ sortedArray.length } unique items to ${ filePath }`
+        `✅ Successfully saved ${sortedArray.length} unique items to ${filePath}`,
       );
     }
 
     const allValues: Record<string, string[]> = {};
 
-    for ( const key of keysToExtract ) {
-      const sortedArray = Array.from(
-        uniqueValues[ key ]
-      ).sort(
-        (
-          a, b
-        ) => {
-          return a.localeCompare(
-            b
-          );
-        }
-      );
-      allValues[ key ] = sortedArray;
+    for (const key of keysToExtract) {
+      const sortedArray = Array.from(uniqueValues[key]).sort((a, b) => {
+        return a.localeCompare(b);
+      });
+      allValues[key] = sortedArray;
     }
 
-    const allValuesFilePath = path.join(
-      outputDir, 'allValues.json'
-    );
+    const allValuesFilePath = path.join(outputDir, 'allValues.json');
     await fs.writeFile(
       allValuesFilePath,
-      JSON.stringify(
-        allValues,
-        null,
-        2
-      ),
-      'utf-8'
+      JSON.stringify(allValues, null, 2),
+      'utf-8',
     );
     console.log(
-      `✅ Successfully saved all unique items to ${ allValuesFilePath }`
+      `✅ Successfully saved all unique items to ${allValuesFilePath}`,
     );
-  } catch ( error ) {
-    console.error(
-      '❌ Error writing JSON files:', error
-    );
+  } catch (error) {
+    console.error('❌ Error writing JSON files:', error);
 
     throw error;
   }
 }
 
-
-
 // Self-executing function to run the script
-( async () => {
-  console.log(
-    'Starting extraction process...'
-  );
-  const {
-    data
-  } = await getData();
+(async () => {
+  console.log('Starting extraction process...');
+  const { data } = await getData();
 
-  if ( data ) {
-    await generatePropertySets(
-      data, './src/lib/data/dictionaries'
-    );
+  if (data) {
+    await generatePropertySets(data, './src/lib/data/dictionaries');
   }
 
-  console.log(
-    'Process complete.'
-  );
-} )();
+  console.log('Process complete.');
+})();

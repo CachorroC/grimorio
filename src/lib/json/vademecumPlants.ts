@@ -1,4 +1,4 @@
-import { VademecumPlantData } from "../types/VademecumTypes";
+import { VademecumPlantData } from '../types/VademecumTypes';
 
 export const vademecumPlants: VademecumPlantData[] = [
   {

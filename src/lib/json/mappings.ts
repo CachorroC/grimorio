@@ -2,18 +2,13 @@
 
 // Helper function to invert our grouped maps into a flat lookup dictionary: { "Analgésico leve": "Analgésico", ... }
 function createLookup(
-  groupedMap: Record<string, string[]>
+  groupedMap: Record<string, string[]>,
 ): Record<string, string> {
   const lookup: Record<string, string> = {};
 
-  for ( const [
-    unifiedValue,
-    variations
-  ] of Object.entries(
-      groupedMap
-    ) ) {
-    for ( const variation of variations ) {
-      lookup[ variation ] = unifiedValue;
+  for (const [unifiedValue, variations] of Object.entries(groupedMap)) {
+    for (const variation of variations) {
+      lookup[variation] = unifiedValue;
     }
   }
 
@@ -21,7 +16,7 @@ function createLookup(
 }
 
 const propiedadesMedicinalesGrupos: Record<string, string[]> = {
-  'Analgésico': [
+  Analgésico: [
     'Analgésica',
     'Analgésico',
     'Analgésico externo',
@@ -29,7 +24,7 @@ const propiedadesMedicinalesGrupos: Record<string, string[]> = {
     'Analgésico local',
     'Analgésico nervioso (neuralgias)',
     'Analgésico potente (alto contenido natural de salicilato de metilo)',
-    'Analgésico tópico'
+    'Analgésico tópico',
   ],
   'Analgésico articular': [
     'Analgésico articular',
@@ -37,7 +32,7 @@ const propiedadesMedicinalesGrupos: Record<string, string[]> = {
     'Analgésico articular externo potente (por aceites volátiles)',
     'Analgésico articular extremo (Tópico)',
   ],
-  'Antiinflamatorio': [
+  Antiinflamatorio: [
     'Antiinflamatoria',
     'antiinflamatorio',
     'Antiinflamatorio',
@@ -52,9 +47,9 @@ const propiedadesMedicinalesGrupos: Record<string, string[]> = {
     'Antiinflamatorio local',
     'Antiinflamatorio potente',
     'Antiinflamatorio respiratorio',
-    'Antiinflamatorio tópico'
+    'Antiinflamatorio tópico',
   ],
-  'Antiespasmódico': [
+  Antiespasmódico: [
     'Antiespasmódico',
     'Antiespasmódico (Tópico)',
     'Antiespasmódico bronquial',
@@ -63,7 +58,7 @@ const propiedadesMedicinalesGrupos: Record<string, string[]> = {
     'Antiespasmódico infantil',
     'Antiespasmódico muscular',
     'Antiespasmódico nervioso',
-    'Antiespasmódico respiratorio'
+    'Antiespasmódico respiratorio',
   ],
   'Cicatrizante y Vulnerario': [
     'cicatrizante',
@@ -84,7 +79,7 @@ const propiedadesMedicinalesGrupos: Record<string, string[]> = {
     'Vulnerario (reparación de tejidos)',
     'Vulnerario (traumatismos cerrados)',
     'Vulnerario (uso externo)',
-    'Vulnerario tópico'
+    'Vulnerario tópico',
   ],
   'Antiséptico y Antimicrobiano': [
     'Antibacteriano',
@@ -104,7 +99,7 @@ const propiedadesMedicinalesGrupos: Record<string, string[]> = {
     'Antiséptico potente',
     'Antiséptico pulmonar y de vías urinarias',
     'Antiséptico respiratorio',
-    'Antiséptico urinario'
+    'Antiséptico urinario',
   ],
   'Sedante y Calmante': [
     'Ansiolítico',
@@ -123,7 +118,7 @@ const propiedadesMedicinalesGrupos: Record<string, string[]> = {
     'Sedante nervioso',
     'Sedante nervioso (requiere precaución por alcaloides)',
     'Sedante poderoso del sistema nervioso',
-    'Sedante suave'
+    'Sedante suave',
   ],
   'Digestivo y Carminativo': [
     'Carminativo',
@@ -132,7 +127,7 @@ const propiedadesMedicinalesGrupos: Record<string, string[]> = {
     'Digestivo',
     'Digestivo (arilo del fruto)',
     'Digestivo estomacal',
-    'Estimulante digestivo'
+    'Estimulante digestivo',
   ],
   'Expectorante y Antitusivo': [
     'Antiasmático',
@@ -149,8 +144,8 @@ const propiedadesMedicinalesGrupos: Record<string, string[]> = {
     'Expectorante de vías bajas',
     'Expectorante profundo',
     'Expectorante pulmonar',
-    'Expectorante suave'
-  ]
+    'Expectorante suave',
+  ],
 };
 
 const malesEmocionalesGrupos: Record<string, string[]> = {
@@ -162,7 +157,7 @@ const malesEmocionalesGrupos: Record<string, string[]> = {
     'Ataques de pánico',
     'Ataques de pánico incontrolables',
     'Ataques de pánico nocturnos',
-    'Cuadros de pánico leves'
+    'Cuadros de pánico leves',
   ],
   'Depresión y Tristeza': [
     'Depresión clínica leve a moderada',
@@ -181,7 +176,7 @@ const malesEmocionalesGrupos: Record<string, string[]> = {
     'Tristeza profunda',
     'Tristeza profunda por rechazo',
     'Tristeza sin causa aparente',
-    'Tristeza y el frio del alma'
+    'Tristeza y el frio del alma',
   ],
   'Estrés y Agotamiento': [
     'Agotamiento ante la lucha constante',
@@ -198,7 +193,7 @@ const malesEmocionalesGrupos: Record<string, string[]> = {
     'Estrés paralizante',
     'Estrés por falta de límites personales',
     'Estrés por resistencia al cambio',
-    'Estrés y agotamiento nervioso'
+    'Estrés y agotamiento nervioso',
   ],
   'Apatía y Falta de Voluntad': [
     'Apatía',
@@ -212,7 +207,7 @@ const malesEmocionalesGrupos: Record<string, string[]> = {
     'Falta de motivación',
     'Falta de motivación vital',
     'Falta de voluntad',
-    'Falta de deseo de vivir'
+    'Falta de deseo de vivir',
   ],
   'Insomnio y Alteraciones del Sueño': [
     'Insomnio por ansiedad',
@@ -223,17 +218,17 @@ const malesEmocionalesGrupos: Record<string, string[]> = {
     'Terrores nocturnos',
     'Miedos cíclicos o terrores nocturnos',
     'Miedos infundados o terrores nocturnos',
-    'Miedos nocturnos (especialmente en niños)'
-  ]
+    'Miedos nocturnos (especialmente en niños)',
+  ],
 };
 
 const malesFisicosGrupos: Record<string, string[]> = {
-  'Cefalea': [
+  Cefalea: [
     'Cefáleas',
     'Cefaleas tensionales',
     'Dolores de cabeza por cansancio',
     'Dolores de cabeza por mala oxigenación',
-    'Dolor de cabeza tensional (frotación)'
+    'Dolor de cabeza tensional (frotación)',
   ],
   'Afecciones Respiratorias': [
     'Afecciones bronquiales por clima extremo',
@@ -268,7 +263,7 @@ const malesFisicosGrupos: Record<string, string[]> = {
     'Tos seca irritativa',
     'Tos seca y persistente',
     'Sinusitis',
-    'Sinusitis aguda'
+    'Sinusitis aguda',
   ],
   'Dolores Articulares y Reumáticos': [
     'artritis',
@@ -290,7 +285,7 @@ const malesFisicosGrupos: Record<string, string[]> = {
     'Reumatismo frío',
     'Dolores reumáticos',
     'Dolores reumáticos (uso externo)',
-    'Dolores reumáticos agravados por el frío'
+    'Dolores reumáticos agravados por el frío',
   ],
   'Problemas Digestivos y Gastrointestinales': [
     'Acidez estomacal (reflujo)',
@@ -316,7 +311,7 @@ const malesFisicosGrupos: Record<string, string[]> = {
     'Indigestión crónica',
     'Indigestión crónica y pesadez',
     'Indigestión nerviosa',
-    'Indigestión severa'
+    'Indigestión severa',
   ],
   'Problemas de la Piel y Heridas': [
     'Afecciones cutáneas recurrentes por impurezas en la sangre',
@@ -347,8 +342,8 @@ const malesFisicosGrupos: Record<string, string[]> = {
     'Quemaduras menores',
     'Quemaduras menores y heridas',
     'Quemaduras solares',
-    'Quemaduras y cicatrices queloides'
-  ]
+    'Quemaduras y cicatrices queloides',
+  ],
 };
 
 const correspondenciasEnergeticasGrupos: Record<string, string[]> = {
@@ -375,7 +370,7 @@ const correspondenciasEnergeticasGrupos: Record<string, string[]> = {
     'Purificación por agua y espuma (por sus saponinas)',
     'Purificación profunda a través del elemento Fuego y el hígado',
     'Purificador de la energia vital',
-    'purificacion'
+    'purificacion',
   ],
   'Protección Energética': [
     'Escudo astral espinoso',
@@ -400,7 +395,7 @@ const correspondenciasEnergeticasGrupos: Record<string, string[]> = {
     'Símbolo de fuerza protectora (como la pata de un oso)',
     'Magia defensiva (espinas)',
     'Magia de protección y de repeler enemigos (por sus espinas)',
-    'Magia de protección y sellado de portales'
+    'Magia de protección y sellado de portales',
   ],
   'Conexión Espiritual y Ancestral': [
     'Conexión ancestral',
@@ -418,23 +413,15 @@ const correspondenciasEnergeticasGrupos: Record<string, string[]> = {
     'Conexión crística y compasión',
     'Conexión estelar y extraterrestre (en cosmología ancestral)',
     'Conexión lunar (por su color plateado)',
-    'Conexión solar (por sus flores y resina)'
-  ]
+    'Conexión solar (por sus flores y resina)',
+  ],
 };
 
 // Generate the fast lookup dictionaries
-export const mapMedicinales = createLookup(
-  propiedadesMedicinalesGrupos
-);
+export const mapMedicinales = createLookup(propiedadesMedicinalesGrupos);
 
-export const mapEmocionales = createLookup(
-  malesEmocionalesGrupos
-);
+export const mapEmocionales = createLookup(malesEmocionalesGrupos);
 
-export const mapFisicos = createLookup(
-  malesFisicosGrupos
-);
+export const mapFisicos = createLookup(malesFisicosGrupos);
 
-export const mapEnergeticas = createLookup(
-  correspondenciasEnergeticasGrupos
-);
+export const mapEnergeticas = createLookup(correspondenciasEnergeticasGrupos);

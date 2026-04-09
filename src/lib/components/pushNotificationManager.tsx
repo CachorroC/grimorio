@@ -15,159 +15,107 @@ export function PushNotificationManager() {
     subscribeToPush,
     unsubscribeFromPush,
   } = usePushNotifications();
-  const [
-    message,
-    setMessage
-  ] = useState(
-    '' 
-  );
+  const [message, setMessage] = useState('');
 
-  if ( !isSupported ) {
+  if (!isSupported) {
     return (
       <p className={styles.statusText}>Push notifications not supported.</p>
     );
   }
 
   async function sendTestNotification() {
-    if ( subscription && message.trim() ) {
+    if (subscription && message.trim()) {
       const serializedSub = JSON.parse(
-        JSON.stringify(
-          subscription 
-        ),
+        JSON.stringify(subscription),
       ) as WebPushSubscription;
-      await sendNotification(
-        message, serializedSub 
-      );
-      setMessage(
-        '' 
-      );
+      await sendNotification(message, serializedSub);
+      setMessage('');
     }
   }
 
   return (
     <div className={styles.container}>
       <h3 className={styles.title}>Push Notifications</h3>
-      {isSubscribed
-        ? (
-            <div className={styles.flexGroup}>
-              <p
-                className={styles.statusText}
-                style={{
-                  color: '#16a34a',
-                }}
-              >
-                Status: Subscribed
-              </p>
-              <button
-                onClick={unsubscribeFromPush}
-                className={`${ styles.button } ${ styles.btnGhost }`}
-              >
-                Unsubscribe
-              </button>
-              <div className={styles.row}>
-                <input
-                  type="text"
-                  className={styles.inputField}
-                  placeholder="Message..."
-                  value={message}
-                  onChange={(
-                    e 
-                  ) => {
-                    return setMessage(
-                      e.target.value 
-                    );
-                  }}
-                />
-                <button
-                  onClick={sendTestNotification}
-                  className={`${ styles.button } ${ styles.btnPrimary }`}
-                >
-                  Send Test
-                </button>
-              </div>
-            </div>
-          )
-        : (
-            <div>
-              <p className={styles.statusText}>Not currently subscribed.</p>
-              <button
-                onClick={subscribeToPush}
-                className={`${ styles.button } ${ styles.btnSuccess }`}
-              >
-                Enable Notifications
-              </button>
-            </div>
-          )}
+      {isSubscribed ? (
+        <div className={styles.flexGroup}>
+          <p
+            className={styles.statusText}
+            style={{
+              color: '#16a34a',
+            }}
+          >
+            Status: Subscribed
+          </p>
+          <button
+            onClick={unsubscribeFromPush}
+            className={`${styles.button} ${styles.btnGhost}`}
+          >
+            Unsubscribe
+          </button>
+          <div className={styles.row}>
+            <input
+              type="text"
+              className={styles.inputField}
+              placeholder="Message..."
+              value={message}
+              onChange={(e) => {
+                return setMessage(e.target.value);
+              }}
+            />
+            <button
+              onClick={sendTestNotification}
+              className={`${styles.button} ${styles.btnPrimary}`}
+            >
+              Send Test
+            </button>
+          </div>
+        </div>
+      ) : (
+        <div>
+          <p className={styles.statusText}>Not currently subscribed.</p>
+          <button
+            onClick={subscribeToPush}
+            className={`${styles.button} ${styles.btnSuccess}`}
+          >
+            Enable Notifications
+          </button>
+        </div>
+      )}
     </div>
   );
 }
 
 export function InstallPrompt() {
-  const [
-    isIOS,
-    setIsIOS
-  ] = useState(
-    false 
-  );
-  const [
-    isStandalone,
-    setIsStandalone
-  ] = useState(
-    false 
-  );
-  const [
-    deferredPrompt,
-    setDeferredPrompt
-  ] = useState<any>(
-    null 
-  );
+  const [isIOS, setIsIOS] = useState(false);
+  const [isStandalone, setIsStandalone] = useState(false);
+  const [deferredPrompt, setDeferredPrompt] = useState<any>(null);
 
-  useEffect(
-    () => {
-      const isIOSDevice = /iPad|iPhone|iPod/.test(
-        navigator.userAgent 
-      ) && !( window as any ).MSStream;
-      setIsIOS(
-        isIOSDevice 
-      );
-      setIsStandalone(
-        window.matchMedia(
-          '(display-mode: standalone)' 
-        ).matches 
-      );
+  useEffect(() => {
+    const isIOSDevice =
+      /iPad|iPhone|iPod/.test(navigator.userAgent) && !(window as any).MSStream;
+    setIsIOS(isIOSDevice);
+    setIsStandalone(window.matchMedia('(display-mode: standalone)').matches);
 
-      const handler = (
-        e: Event 
-      ) => {
+    const handler = (e: Event) => {
+      setDeferredPrompt(e);
+    };
 
-        setDeferredPrompt(
-          e 
-        );
-      };
+    window.addEventListener('beforeinstallprompt', handler);
 
-      window.addEventListener(
-        'beforeinstallprompt', handler
-      );
-
-      return () => {
-        return window.removeEventListener(
-          'beforeinstallprompt', handler
-        );
-      };
-    }, []
-  );
+    return () => {
+      return window.removeEventListener('beforeinstallprompt', handler);
+    };
+  }, []);
 
   async function handleInstallClick() {
-    if ( deferredPrompt ) {
+    if (deferredPrompt) {
       deferredPrompt.prompt();
       await deferredPrompt.userChoice;
-      setDeferredPrompt(
-        null 
-      );
+      setDeferredPrompt(null);
     }
   }
 
-  if ( isStandalone ) {
+  if (isStandalone) {
     return null;
   }
 
@@ -176,7 +124,7 @@ export function InstallPrompt() {
       <h3 className={styles.title}>Install App</h3>
       <button
         onClick={handleInstallClick}
-        className={`${ styles.button } ${ styles.btnPrimary }`}
+        className={`${styles.button} ${styles.btnPrimary}`}
         disabled={!isIOS && !deferredPrompt}
       >
         Add to Home Screen
