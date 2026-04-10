@@ -268,7 +268,8 @@ export async function upsertEspecimenesConMerge(
             doshas: mergeStringArrays(
               existing.doshas,
               incoming.doshas
-            ) as TridoshasType[]
+            ) as TridoshasType[],
+            nativa: incoming.nativa ?? existing.nativa ?? false
           };
 
           return {

@@ -31,7 +31,8 @@ export default class EspecimenModel implements EspecimenType {
   elementosAsociados         : ElementosType;
   chakrasAsociados           : ChakraType[];
   polaridadEnergetica        : PolaridadEnergeticaType;
-  doshas          : TridoshasType[];
+  doshas                     : TridoshasType[];
+  nativa                     : boolean;
   imagenes?                  : PlantDictionary | undefined;
 
   constructor(
@@ -50,7 +51,8 @@ export default class EspecimenModel implements EspecimenType {
       elementosAsociados,
       chakrasAsociados,
       polaridadEnergetica,
-      doshas
+      doshas,
+      nativa
     }: {
       nombreCientifico           : string;
       imageUrl                   : string;
@@ -66,7 +68,8 @@ export default class EspecimenModel implements EspecimenType {
       elementosAsociados         : ElementosType;
       chakrasAsociados           : ChakraType[];
       polaridadEnergetica        : PolaridadEnergeticaType;
-      doshas          : TridoshasType[];
+      doshas                     : TridoshasType[];
+      nativa                     : boolean;
     }
   ) {
     this.nombreCientifico = nombreCientifico;
@@ -83,7 +86,8 @@ export default class EspecimenModel implements EspecimenType {
     this.elementosAsociados = elementosAsociados;
     this.chakrasAsociados = chakrasAsociados;
     this.polaridadEnergetica = polaridadEnergetica;
-    this.doshas =doshas;
+    this.doshas = doshas;
+    this.nativa = nativa;
   }
 
 

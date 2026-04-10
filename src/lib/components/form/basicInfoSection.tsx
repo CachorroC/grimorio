@@ -1,20 +1,33 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable no-unused-vars */
 import { ChangeEvent } from 'react';
 import styles from '#@/lib/styles/form.module.css';
+import ToggleButton from './toggleButton';
 
 interface BasicInfoSectionProps {
   nombreCientifico: string;
-  imageUrl?: string;
-  onChange: (field: 'nombreCientifico' | 'imageUrl', value: string) => void;
+  imageUrl?       : string;
+  nativa          : boolean;
+  onChange        : ( field: 'nombreCientifico' | 'imageUrl' | 'nativa', value: any ) => void;
 }
 
-export default function BasicInfoSection({
-  nombreCientifico,
-  imageUrl,
-  onChange,
-}: BasicInfoSectionProps) {
-  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
-    onChange(e.target.name as 'nombreCientifico' | 'imageUrl', e.target.value);
+export default function BasicInfoSection(
+  {
+    nombreCientifico,
+    imageUrl,
+    nativa,
+    onChange,
+  }: BasicInfoSectionProps
+) {
+  const handleInputChange = (
+    e: ChangeEvent<HTMLInputElement>
+  ) => {
+    const value = e.target.type === 'checkbox'
+      ? e.target.checked
+      : e.target.value;
+    onChange(
+      e.target.name as any, value
+    );
   };
 
   return (
@@ -38,6 +51,18 @@ export default function BasicInfoSection({
           value={imageUrl ?? ''}
           onChange={handleInputChange}
         />
+        <div style={{
+          marginTop: '1rem'
+        }}
+        >
+          <ToggleButton
+            name="nativa"
+            checked={nativa}
+            onChange={handleInputChange}
+          >
+            ¿Es una planta nativa?
+          </ToggleButton>
+        </div>
       </div>
     </div>
   );

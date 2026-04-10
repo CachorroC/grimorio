@@ -339,17 +339,39 @@ export default function PlantCookbook(
               },
             }}
           >
-            <Typography
-              variant="h3"
-              component="h1"
-              gutterBottom
-              sx={{
-                fontStyle : 'italic',
-                fontWeight: 'bold',
-              }}
+            <Box sx={{
+              display   : 'flex',
+              alignItems: 'center',
+              gap       : 2,
+              flexWrap  : 'wrap'
+            }}
             >
-              {plant.nombreCientifico}
-            </Typography>
+              <Typography
+                variant="h3"
+                component="h1"
+                gutterBottom
+                sx={{
+                  fontStyle : 'italic',
+                  fontWeight: 'bold',
+                  mb        : 0
+                }}
+              >
+                {plant.nombreCientifico}
+              </Typography>
+              <Chip
+                label={plant.nativa
+                  ? 'Nativa'
+                  : 'Exótica / Introducida'}
+                color={plant.nativa
+                  ? 'success'
+                  : 'default'}
+                variant="outlined"
+                size="small"
+                sx={{
+                  mb: 1
+                }}
+              />
+            </Box>
             <Typography
               variant="h6"
               color="text.secondary"

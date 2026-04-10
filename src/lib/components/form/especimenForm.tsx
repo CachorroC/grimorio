@@ -60,7 +60,8 @@ const initialState: EspecimenType = {
   polaridadEnergetica: [
     'Feminine'
   ],
-  doshas: [],
+  doshas  : [],
+  nativa  : true,
   // Mantenemos una estructura inicial segura en el estado para evitar errores de undefined en los inputs
   imagenes: {
     flor: {
@@ -137,8 +138,9 @@ export default function EspecimenForm(
         polaridadEnergetica: initialData.polaridadEnergetica || [
           'Feminine'
         ],
-        doshas: initialData.doshas || [],
-        imagenes         : initialData.imagenes || {
+        doshas  : initialData.doshas || [],
+        nativa  : initialData.nativa ?? false,
+        imagenes: initialData.imagenes || {
           flor: {
             src: '',
             alt: '',
@@ -418,6 +420,7 @@ export default function EspecimenForm(
         <BasicInfoSection
           nombreCientifico={formData.nombreCientifico}
           imageUrl={formData.imageUrl}
+          nativa={formData.nativa}
           onChange={(
             field, value
           ) => {
