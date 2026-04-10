@@ -5,27 +5,31 @@ import { ChangeEventHandler, ReactNode, CSSProperties } from 'react';
 import styles from '#@/lib/styles/toggle.module.css';
 
 interface ToggleButtonProps {
-  checked: boolean;
-  onChange: ChangeEventHandler<HTMLInputElement>;
+  checked  : boolean;
+  onChange : ChangeEventHandler<HTMLInputElement>;
   children?: ReactNode;
-  name?: string;
+  name?    : string;
   disabled?: boolean;
-  style?: CSSProperties;
+  style?   : CSSProperties;
 }
 
-export default function ToggleButton({
-  checked,
-  onChange,
-  children,
-  name,
-  disabled = false,
-  style,
-}: ToggleButtonProps) {
+export default function ToggleButton(
+  {
+    checked,
+    onChange,
+    children,
+    name,
+    disabled = false,
+    style,
+  }: ToggleButtonProps
+) {
   return (
     <label
       className={styles.toggleWrapper}
       style={{
-        opacity: disabled ? 0.6 : 1,
+        opacity: disabled
+          ? 0.6
+          : 1,
         ...style,
       }}
     >

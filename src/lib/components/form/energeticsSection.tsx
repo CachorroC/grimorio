@@ -14,13 +14,13 @@ interface EnergeticsSectionProps {
   elementosAsociados: string;
   polaridadEnergetica: PolaridadEnergeticaType;
   chakrasAsociados: ChakraType[];
-  doshasQueControla: TridoshasType[];
+  doshas: TridoshasType[];
   onChange: (
     field:
       | 'elementosAsociados'
       | 'polaridadEnergetica'
       | 'chakrasAsociados'
-      | 'doshasQueControla',
+      | 'doshas',
     value: any,
   ) => void;
 }
@@ -29,7 +29,7 @@ export default function EnergeticsSection({
   elementosAsociados,
   polaridadEnergetica,
   chakrasAsociados,
-  doshasQueControla,
+  doshas,
   onChange,
 }: EnergeticsSectionProps) {
   const togglePolaridad = (val: 'Masculine' | 'Feminine') => {
@@ -74,14 +74,14 @@ export default function EnergeticsSection({
   };
 
   const toggleDosha = (dosha: TridoshasType) => {
-    const current = doshasQueControla || [];
+    const current = doshas || [];
     const next = current.includes(dosha)
       ? current.filter((d) => {
           return d !== dosha;
         })
       : [...current, dosha];
 
-    onChange('doshasQueControla', next);
+    onChange('doshas', next);
   };
 
   return (
@@ -129,7 +129,7 @@ export default function EnergeticsSection({
             return (
               <ToggleButton
                 key={dosha}
-                checked={(doshasQueControla || []).includes(dosha)}
+                checked={(doshas || []).includes(dosha)}
                 onChange={() => {
                   return toggleDosha(dosha);
                 }}
@@ -216,4 +216,3 @@ export default function EnergeticsSection({
     </div>
   );
 }
-

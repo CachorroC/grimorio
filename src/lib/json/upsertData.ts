@@ -265,9 +265,9 @@ export async function upsertEspecimenesConMerge(
             polaridadEnergetica: ( mergedPolaridad.length > 0
               ? mergedPolaridad
               : incoming.polaridadEnergetica ) as PolaridadEnergeticaType,
-            doshasQueControla: mergeStringArrays(
-              existing.doshasQueControla,
-              incoming.doshasQueControla
+            doshas: mergeStringArrays(
+              existing.doshas,
+              incoming.doshas
             ) as TridoshasType[]
           };
 

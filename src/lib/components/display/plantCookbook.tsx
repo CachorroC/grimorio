@@ -497,10 +497,10 @@ export default function PlantCookbook(
                 />
               )}
 
-              {plant.doshasQueControla && plant.doshasQueControla.length > 0 && (
+              {plant.doshas && plant.doshas.length > 0 && (
                 <CustomColorTagSection
-                  title="Doshas (Ayurveda)"
-                  tags={plant.doshasQueControla.map(
+                  title="Doshas que controla (Ayurveda)"
+                  tags={plant.doshas.map(
                     (
                       dosha
                     ) => {

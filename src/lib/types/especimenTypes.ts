@@ -9,21 +9,24 @@ export type EspecimenType = {
   correspondenciasEnergeticas: string[];
   malesEmocionales           : string[];
   malesFisicos               : string[];
+  nativa                     : boolean;
   taxon                      : Taxon;
   preparaciones              : PreparacionType[];
   elementosAsociados         : ElementosType;
   chakrasAsociados           : ChakraType[];
   polaridadEnergetica        : PolaridadEnergeticaType;
-  doshasQueControla          : TridoshasType[];
+  doshas                     : TridoshasType[];
   imagenes?                  : PlantDictionary;
 };
 
-export type AyurvedaType = {
-  controla: TridoshasType[]
-}
 
 export type TridoshasType = 'Vata' | 'Pitta' | 'Kapha';
-export const listaDoshas: TridoshasType[] = ['Vata', 'Pitta', 'Kapha'];
+
+export const listaDoshas: TridoshasType[] = [
+  'Vata',
+  'Pitta',
+  'Kapha'
+];
 // 1. Define the base and specific parts
 interface PlantBase {
   src: string;
