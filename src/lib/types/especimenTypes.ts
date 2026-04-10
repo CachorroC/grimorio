@@ -14,9 +14,15 @@ export type EspecimenType = {
   elementosAsociados         : ElementosType;
   chakrasAsociados           : ChakraType[];
   polaridadEnergetica        : PolaridadEnergeticaType;
+  doshasQueControla          : TridoshasType[];
   imagenes?                  : PlantDictionary;
 };
 
+export type AyurvedaType = {
+  controla: TridoshasType[]
+}
+
+export type TridoshasType = 'Vata'| 'Pitta' | 'Kapha'
 // 1. Define the base and specific parts
 interface PlantBase {
   src: string;

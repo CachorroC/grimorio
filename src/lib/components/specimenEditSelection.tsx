@@ -216,6 +216,30 @@ export default function SpecimenEditSelection(
                     alt={carouselImages[ currentImageIndex ].alt}
                   />
 
+                  <Box
+                    sx={{
+                      position       : 'absolute',
+                      bottom         : 16,
+                      left           : '50%',
+                      transform      : 'translateX(-50%)',
+                      backgroundColor: 'rgba(0, 0, 0, 0.4)',
+                      backdropFilter : 'blur(8px)',
+                      color          : 'white',
+                      px             : 2,
+                      py             : 0.5,
+                      borderRadius   : '20px',
+                      fontSize       : '0.875rem',
+                      fontWeight     : 500,
+                      pointerEvents  : 'none',
+                      zIndex         : 1,
+                      maxWidth       : '80%',
+                      textAlign      : 'center',
+                      border         : '1px solid rgba(255, 255, 255, 0.1)',
+                    }}
+                  >
+                    {carouselImages[ currentImageIndex ].alt}
+                  </Box>
+
                   {carouselImages.length > 1 && (
                     <>
                       <IconButton
