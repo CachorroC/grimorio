@@ -1,14 +1,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { ObjectId } from 'mongodb';
 import clientPromise from '../connection/mongodb';
-import {
-  ChakraType,
+import { ChakraType,
   ElementosType,
   EspecimenType,
+  PlantDictionary,
   PolaridadEnergeticaType,
   PreparacionType,
   Taxon,
-} from '../types/especimenTypes';
+  TridoshasType, } from '../types/especimenTypes';
 
 /**
  * @class EspecimenModel
@@ -16,53 +16,59 @@ import {
  * Implements the EspecimenType interface to ensure data consistency.
  */
 export default class EspecimenModel implements EspecimenType {
-  nombreCientifico: string;
-  nombresComunes: string[];
-  propiedadesMedicinales: string[];
+  nombreCientifico           : string;
+  nombresComunes             : string[];
+  propiedadesMedicinales     : string[];
   correspondenciasEnergeticas: string[];
-  malesEmocionales: string[];
-  malesFisicos: string[];
-  taxon: Taxon;
-  preparaciones: PreparacionType[];
-  imageUrl: string;
-  partesUtiles: string[];
-  esenciasFlorales: string[];
-  _id: string | undefined;
-  elementosAsociados: ElementosType;
-  chakrasAsociados: ChakraType[];
-  polaridadEnergetica: PolaridadEnergeticaType;
+  malesEmocionales           : string[];
+  malesFisicos               : string[];
+  taxon                      : Taxon;
+  preparaciones              : PreparacionType[];
+  imageUrl                   : string;
+  partesUtiles               : string[];
+  esenciasFlorales           : string[];
+  _id                        : string | undefined;
+  elementosAsociados         : ElementosType;
+  chakrasAsociados           : ChakraType[];
+  polaridadEnergetica        : PolaridadEnergeticaType;
+  doshasQueControla          : TridoshasType[];
+  imagenes?                  : PlantDictionary | undefined;
 
-  constructor({
-    nombreCientifico,
-    nombresComunes,
-    propiedadesMedicinales,
-    correspondenciasEnergeticas,
-    malesEmocionales,
-    malesFisicos,
-    esenciasFlorales,
-    taxon,
-    preparaciones,
-    imageUrl,
-    partesUtiles,
-    elementosAsociados,
-    chakrasAsociados,
-    polaridadEnergetica,
-  }: {
-    nombreCientifico: string;
-    imageUrl: string;
-    nombresComunes: string[];
-    propiedadesMedicinales: string[];
-    correspondenciasEnergeticas: string[];
-    esenciasFlorales: string[];
-    malesEmocionales: string[];
-    partesUtiles: string[];
-    malesFisicos: string[];
-    taxon: Taxon;
-    preparaciones: PreparacionType[];
-    elementosAsociados: ElementosType;
-    chakrasAsociados: ChakraType[];
-    polaridadEnergetica: PolaridadEnergeticaType;
-  }) {
+  constructor(
+    {
+      nombreCientifico,
+      nombresComunes,
+      propiedadesMedicinales,
+      correspondenciasEnergeticas,
+      malesEmocionales,
+      malesFisicos,
+      esenciasFlorales,
+      taxon,
+      preparaciones,
+      imageUrl,
+      partesUtiles,
+      elementosAsociados,
+      chakrasAsociados,
+      polaridadEnergetica,
+      doshasQueControla
+    }: {
+      nombreCientifico           : string;
+      imageUrl                   : string;
+      nombresComunes             : string[];
+      propiedadesMedicinales     : string[];
+      correspondenciasEnergeticas: string[];
+      esenciasFlorales           : string[];
+      malesEmocionales           : string[];
+      partesUtiles               : string[];
+      malesFisicos               : string[];
+      taxon                      : Taxon;
+      preparaciones              : PreparacionType[];
+      elementosAsociados         : ElementosType;
+      chakrasAsociados           : ChakraType[];
+      polaridadEnergetica        : PolaridadEnergeticaType;
+      doshasQueControla          : TridoshasType[];
+    }
+  ) {
     this.nombreCientifico = nombreCientifico;
     this.nombresComunes = nombresComunes;
     this.correspondenciasEnergeticas = correspondenciasEnergeticas;
@@ -77,7 +83,9 @@ export default class EspecimenModel implements EspecimenType {
     this.elementosAsociados = elementosAsociados;
     this.chakrasAsociados = chakrasAsociados;
     this.polaridadEnergetica = polaridadEnergetica;
+    this.doshasQueControla =doshasQueControla;
   }
+
 
   /**
    * Retrieves a single medicinal plant document by its scientific name.
@@ -86,39 +94,47 @@ export default class EspecimenModel implements EspecimenType {
    * @param {string} params.nombreCientifico - The scientific name to search for.
    * @returns {Promise<{success: boolean, data?: EspecimenType, error?: unknown}>}
    */
-  static async getPlantaMedicinalByNombreCientifico({
-    nombreCientifico,
-  }: {
-    nombreCientifico: string;
-  }) {
+  static async getPlantaMedicinalByNombreCientifico(
+    {
+      nombreCientifico,
+    }: {
+      nombreCientifico: string;
+    }
+  ) {
     // Opt out of static rendering for this dynamic DB call
 
     try {
       const client = await clientPromise;
-      const database = client.db('botany_db');
+      const database = client.db(
+        'botany_db'
+      );
       const plantasMedicinalesCollection = database.collection<EspecimenType>(
         'plantas_medicinales',
       );
 
-      const especimenByNombre = await plantasMedicinalesCollection.findOne({
-        nombreCientifico: nombreCientifico,
-      });
+      const especimenByNombre = await plantasMedicinalesCollection.findOne(
+        {
+          nombreCientifico: nombreCientifico,
+        }
+      );
 
-      if (!especimenByNombre) {
+      if ( !especimenByNombre ) {
         throw new Error(
-          `No specimen found with nombreCientifico: ${nombreCientifico}`,
+          `No specimen found with nombreCientifico: ${ nombreCientifico }`,
         );
       }
 
       return {
         success: true,
-        data: {
+        data   : {
           ...especimenByNombre,
           _id: especimenByNombre._id.toString(),
         },
       };
-    } catch (error) {
-      console.error('Database Error:', error);
+    } catch ( error ) {
+      console.error(
+        'Database Error:', error
+      );
 
       return {
         success: false,
@@ -134,19 +150,29 @@ export default class EspecimenModel implements EspecimenType {
    * @param {EspecimenType} params.data - The complete specimen data to save.
    * @returns {Promise<{success: boolean, data?: EspecimenType, error?: string}>}
    */
-  static async upsertPlantaMedicinal({ data }: { data: EspecimenType }) {
+  static async upsertPlantaMedicinal(
+    {
+      data
+    }: { data: EspecimenType }
+  ) {
     try {
       const client = await clientPromise;
-      const database = client.db('botany_db');
+      const database = client.db(
+        'botany_db'
+      );
       const plantasMedicinalesCollection = database.collection<EspecimenType>(
         'plantas_medicinales',
       );
 
-      const { _id, ...updateData } = data as any;
+      const {
+        _id, ...updateData
+      } = data as any;
 
       const query = _id
         ? {
-            _id: new ObjectId(_id),
+            _id: new ObjectId(
+              _id
+            ),
           }
         : {
             nombreCientifico: data.nombreCientifico,
@@ -159,28 +185,34 @@ export default class EspecimenModel implements EspecimenType {
         },
         {
           returnDocument: 'after',
-          upsert: true,
+          upsert        : true,
         },
       );
 
-      if (!result) {
-        throw new Error('Failed to update or create document in MongoDB.');
+      if ( !result ) {
+        throw new Error(
+          'Failed to update or create document in MongoDB.'
+        );
       }
 
       return {
         success: true,
-        data: {
+        data   : {
           ...result,
           _id: result._id.toString(),
         },
       };
-    } catch (error) {
-      console.error('Database Error:', error);
+    } catch ( error ) {
+      console.error(
+        'Database Error:', error
+      );
 
       return {
         success: false,
         error:
-          error instanceof Error ? error.message : 'Unknown database error',
+          error instanceof Error
+            ? error.message
+            : 'Unknown database error',
       };
     }
   }
@@ -194,18 +226,26 @@ export default class EspecimenModel implements EspecimenType {
     // Opt out of static rendering for this dynamic DB call
 
     const client = await clientPromise;
-    const database = client.db('botany_db');
+    const database = client.db(
+      'botany_db'
+    );
     const plantasMedicinalesCollection = database.collection<EspecimenType>(
       'plantas_medicinales',
     );
 
-    const data = await plantasMedicinalesCollection.find({}).toArray();
+    const data = await plantasMedicinalesCollection.find(
+      {}
+    ).toArray();
 
-    return data.map((item) => {
-      return {
-        ...item,
-        _id: item._id.toString(),
-      };
-    });
+    return data.map(
+      (
+        item
+      ) => {
+        return {
+          ...item,
+          _id: item._id.toString(),
+        };
+      }
+    );
   }
 }

@@ -22,7 +22,8 @@ export type AyurvedaType = {
   controla: TridoshasType[]
 }
 
-export type TridoshasType = 'Vata'| 'Pitta' | 'Kapha'
+export type TridoshasType = 'Vata' | 'Pitta' | 'Kapha';
+export const listaDoshas: TridoshasType[] = ['Vata', 'Pitta', 'Kapha'];
 // 1. Define the base and specific parts
 interface PlantBase {
   src: string;

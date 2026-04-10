@@ -82,9 +82,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'AJO',
     nombreCientífico: 'Allium sativum L.',
-    sinónimos: 'Allium pekinense Prokhavnov',
-    nombresComunes: 'Ajo, chilote, ajo elefante',
-    parteUtilizada: 'Bulbos',
+    sinónimos       : 'Allium pekinense Prokhavnov',
+    nombresComunes  : 'Ajo, chilote, ajo elefante',
+    parteUtilizada  : 'Bulbos',
     usosTradicionales:
       'Se ha empleado como antihelmíntico, hipotensor, hipoglicemiante, antiespasmódico, hipolipemiante y para desórdenes intestinales (Bootth S. y col., 1993; Ziyyat A. y col., 1997).',
     principalesConstituyentes:
@@ -104,7 +104,7 @@ export const vademecumPlants: VademecumPlantData[] = [
     formasFarmacéuticasYOtrasPreparaciones:
       'Ajo deshidratado en polvo. Tabletas, cápsulas y grageas con ajo deshidratado. Cápsulas blandas con aceite de ajo.',
     bibliografía:
-      "• Al Qattan K., Khan I., Alnaqeeb M., Ali M., (2003), Mechanism of garlic (Allium sativum) induced reduction of hypertension in 2K-1C rats: a possible mediation of Na/H exchanger isoform-1, Prostaglandins Leukot. Essent. Fatty Acids, 69, 217-222. • Allison G., Lowe G., Rahman K., (2006), Aged garlic extract and its constituents inhibit platelet aggregation through multiple mechanisms, J. Nutr., 136, 782S-788S. • Amagase H., (2006), Clarifying the real bioactive constituents of garlic, J. Nutr., 136, 71. • Bakri I., Douglas C., (2005), Inhibitory effect of garlic extract on oral bacteria. Arch. Oral Biol., 50, 645-651. • Betoni J., Mantovani R., Barbosa L., Di Stasi L., Fernandes J., (2006), Synergism between plant extract and antimicrobial drugs used on Staphylococcus aureus diseases, Mem. Inst. Oswaldo Cruz, 101, 387-390. • Bonaduce I., Colombini M., Diring S., (2006), Identification of garlic in old gildings by gas chromatography-mass spectrometry, J. Chromatogr., 1107, 226-232. • Booth S., Johns T., López-Palacios C., (1993), Factors influencing self-diagnosis and treatment of perceived helminthic infection in a rural Guatemalan community, Soc. Sci. Med., 37, 531-539. • Bordia A., Verma S., Srivastava K., (1998), Effect of garlic (Allium sativum) on blood lipids, blood sugar, fibrinogen and fibrinolytic activity in patients with coronary artery disease, Prostaglandins Leukot. Essent. Fatty Acids, 58, 257-263. • Cellini L., Di Campli E., Masulli M., Di Bartolomeo S., Allocati N., (1996), Inhibition of Helicobacter pylori by garlic extract (Allium sativum), FEMS Immunol. Med. Microbiol., 13, 273-277. • Chi M., Koh E., Stewart T., (1982), Effects of garlic on lipid metabolism in rats fed cholesterol or lard, J. Nutr., 112, 241-248. • Davis S., Perrie R., Apitz-Castro R., (2003), The in vitro susceptibility of Scedosporium prolificans to ajoene, allitridium and a raw extract of garlic (Allium sativum), J. Antimicrob. Chemother., 51, 593-597. • Fugh-Berman A., (2000), Herb-drug interactions. Lancet, 355, 134-138. • Gardner C., Lawson L., Block E., Chatterjee L., Kiazand A., Balise R., Kraemer H., (2007), Effect of raw garlic vs commercial garlic supplements on plasma lipid concentrations in adults with moderate hypercholesterolemia: a randomized clinical trial, Arch. Intern. Med., 167, 346-353. • Kannar D., Wattanapenpaiboon N., Savige G., Wahlqvist M., (2001), Hypocholesterolemic effect of an enteric-coated garlic supplement, J. Am. Coll. Nutr., 20, 225-231. • Kojuri J., Vosoughi A., Akrami M., (2007), Effects of Anethum graveolens and garlic on lipid profile in hyperlipidemic patients, Lipids Health Dis., 6, 5. • Kubec R., Svobodova M., Velisek J., (1999), Gas chromatographic determination of S-alk(en)ylcysteine sulfoxides, J. Chromatogr. A., 862, 85-94. • Kuda T., Iwai A., Yano T., (2004), Effect of red pepper Capsicum annuum var. conoides and garlic Allium sativum on plasma lipid levels and fecal microflora in mice fed beef tallow, Food Chem. Toxicol., 42, 1695-1700. • Lanzotti V., (2006), The analysis of onion and garlic, J. Chromatogr. A., 1112, 3-22. • Lawson L., Ransom D., Hughes B., (1992), Inhibition of whole blood platelet- aggregation by compounds in garlic clove extracts and commercial garlic products, Thromb. Res., 65, 141-156. • Lemar K., Passa O., Aon M., Cortassa S., Muller C., Plummer S., O'Rourke B., Lloyd D., (2005), Allyl alcohol and garlic (Allium sativum) extract produce oxidative stress in Candida albicans, Microbiology, 151, 3257-3265. • Macan H., Uykimpang R., Alconcel M., Takasu J., Razon R., Amagase H., Niihara Y., (2006), Aged garlic extract may be safe for patients on warfarin therapy, J. Nutr., 136, 793S-795S. • Matsura H., (2001), Saponins in garlic as modifiers of the risk of cardiovascular disease, J. Nutr., 131, 1000S-1005S. • Missouri                     Botanical                 Garden,                (10-2007) http://mobot.mobot.org/W3T/Search/vast.html. • Motsei M., Lindsey K., van Staden J., Jager A., (2003), Screening of traditionally used South African plants for antifungal activity against Candida albicans, J.Ethnopharmacol., 86, 235-241. • Pedraza-Chaverri J., Medina-Campos O., Granados-Silvestre M., Maldonado P., Olivares-Corichi I., Hernandez-Pando R., (2000), Garlic ameliorates hyperlipidemia in chronic aminonucleoside nephrosis, Mol.Cell Biochem., 211, 69-77. • Rahman K., Billington D., (2000), Dietary supplementation with aged garlic extract inhibits ADP-induced platelet aggregation in humans, J. Nutr., 130, 2662-2665. • Ross Z., O'Gara E., Hill D., Sleightholme H., Maslin D., (2001), Antimicrobial properties of garlic oil against human enteric bacteria: evaluation of methodologies and comparisons with garlic oil sulfides and garlic powder, Appl. Environ. Microbiol., 67, 475-480. • Saw J.T., Bahari M.B., Ang H.H., Lim Y.H., (2006), Potential drug-herb interaction with antiplatelet/anticoagulant drugs, Complement Ther. Clin. Pract., 12, 236-241. • Silagy C., Neil A., (1994), Garlic as a lipid lowering agent, a meta-analysis, J. R. Coll. Physicians Lond., 28, 39-45. • Slowing K., Ganado P., Sanz M., Ruiz E., Tejerina T., (2001), Study of garlic extracts and fractions on cholesterol plasma levels and vascular reactivity in cholesterol- fed rats, J. Nutr., 131, 994S-999S. • Steiner M., Khan A., Holbert D., Lin R., (1996), A double-blind crossover study in moderately hypercholesterolemic men that compared the effect of aged garlic extract and placebo administration on blood lipids, Am. J. Clin. Nutr., 64, 866-870. • Wang H., Ng T., (2001), Purification of allivin, a novel antifungal protein from bulbs of the round-cloved garlic, Life Sci., 70, 357-365. • Zhang X., Lowe D., Giles P., Fell S., Connock M., Maslin D., (2001), Gender may affect the action of garlic oil on plasma cholesterol and glucose levels of normal subjects, J. Nutr., 131, 1471-1478. • Ziyyat A., Legssyer A., Mekhfi H., Dassouli A., Serhrouchni M., Benjelloun W., (1997), Phytotherapy of hypertension and diabetes in oriental Morocco, J. Ethnopharmacol., 58, 45-54. ALBAHACA",
+      '• Al Qattan K., Khan I., Alnaqeeb M., Ali M., (2003), Mechanism of garlic (Allium sativum) induced reduction of hypertension in 2K-1C rats: a possible mediation of Na/H exchanger isoform-1, Prostaglandins Leukot. Essent. Fatty Acids, 69, 217-222. • Allison G., Lowe G., Rahman K., (2006), Aged garlic extract and its constituents inhibit platelet aggregation through multiple mechanisms, J. Nutr., 136, 782S-788S. • Amagase H., (2006), Clarifying the real bioactive constituents of garlic, J. Nutr., 136, 71. • Bakri I., Douglas C., (2005), Inhibitory effect of garlic extract on oral bacteria. Arch. Oral Biol., 50, 645-651. • Betoni J., Mantovani R., Barbosa L., Di Stasi L., Fernandes J., (2006), Synergism between plant extract and antimicrobial drugs used on Staphylococcus aureus diseases, Mem. Inst. Oswaldo Cruz, 101, 387-390. • Bonaduce I., Colombini M., Diring S., (2006), Identification of garlic in old gildings by gas chromatography-mass spectrometry, J. Chromatogr., 1107, 226-232. • Booth S., Johns T., López-Palacios C., (1993), Factors influencing self-diagnosis and treatment of perceived helminthic infection in a rural Guatemalan community, Soc. Sci. Med., 37, 531-539. • Bordia A., Verma S., Srivastava K., (1998), Effect of garlic (Allium sativum) on blood lipids, blood sugar, fibrinogen and fibrinolytic activity in patients with coronary artery disease, Prostaglandins Leukot. Essent. Fatty Acids, 58, 257-263. • Cellini L., Di Campli E., Masulli M., Di Bartolomeo S., Allocati N., (1996), Inhibition of Helicobacter pylori by garlic extract (Allium sativum), FEMS Immunol. Med. Microbiol., 13, 273-277. • Chi M., Koh E., Stewart T., (1982), Effects of garlic on lipid metabolism in rats fed cholesterol or lard, J. Nutr., 112, 241-248. • Davis S., Perrie R., Apitz-Castro R., (2003), The in vitro susceptibility of Scedosporium prolificans to ajoene, allitridium and a raw extract of garlic (Allium sativum), J. Antimicrob. Chemother., 51, 593-597. • Fugh-Berman A., (2000), Herb-drug interactions. Lancet, 355, 134-138. • Gardner C., Lawson L., Block E., Chatterjee L., Kiazand A., Balise R., Kraemer H., (2007), Effect of raw garlic vs commercial garlic supplements on plasma lipid concentrations in adults with moderate hypercholesterolemia: a randomized clinical trial, Arch. Intern. Med., 167, 346-353. • Kannar D., Wattanapenpaiboon N., Savige G., Wahlqvist M., (2001), Hypocholesterolemic effect of an enteric-coated garlic supplement, J. Am. Coll. Nutr., 20, 225-231. • Kojuri J., Vosoughi A., Akrami M., (2007), Effects of Anethum graveolens and garlic on lipid profile in hyperlipidemic patients, Lipids Health Dis., 6, 5. • Kubec R., Svobodova M., Velisek J., (1999), Gas chromatographic determination of S-alk(en)ylcysteine sulfoxides, J. Chromatogr. A., 862, 85-94. • Kuda T., Iwai A., Yano T., (2004), Effect of red pepper Capsicum annuum var. conoides and garlic Allium sativum on plasma lipid levels and fecal microflora in mice fed beef tallow, Food Chem. Toxicol., 42, 1695-1700. • Lanzotti V., (2006), The analysis of onion and garlic, J. Chromatogr. A., 1112, 3-22. • Lawson L., Ransom D., Hughes B., (1992), Inhibition of whole blood platelet- aggregation by compounds in garlic clove extracts and commercial garlic products, Thromb. Res., 65, 141-156. • Lemar K., Passa O., Aon M., Cortassa S., Muller C., Plummer S., O\'Rourke B., Lloyd D., (2005), Allyl alcohol and garlic (Allium sativum) extract produce oxidative stress in Candida albicans, Microbiology, 151, 3257-3265. • Macan H., Uykimpang R., Alconcel M., Takasu J., Razon R., Amagase H., Niihara Y., (2006), Aged garlic extract may be safe for patients on warfarin therapy, J. Nutr., 136, 793S-795S. • Matsura H., (2001), Saponins in garlic as modifiers of the risk of cardiovascular disease, J. Nutr., 131, 1000S-1005S. • Missouri                     Botanical                 Garden,                (10-2007) http://mobot.mobot.org/W3T/Search/vast.html. • Motsei M., Lindsey K., van Staden J., Jager A., (2003), Screening of traditionally used South African plants for antifungal activity against Candida albicans, J.Ethnopharmacol., 86, 235-241. • Pedraza-Chaverri J., Medina-Campos O., Granados-Silvestre M., Maldonado P., Olivares-Corichi I., Hernandez-Pando R., (2000), Garlic ameliorates hyperlipidemia in chronic aminonucleoside nephrosis, Mol.Cell Biochem., 211, 69-77. • Rahman K., Billington D., (2000), Dietary supplementation with aged garlic extract inhibits ADP-induced platelet aggregation in humans, J. Nutr., 130, 2662-2665. • Ross Z., O\'Gara E., Hill D., Sleightholme H., Maslin D., (2001), Antimicrobial properties of garlic oil against human enteric bacteria: evaluation of methodologies and comparisons with garlic oil sulfides and garlic powder, Appl. Environ. Microbiol., 67, 475-480. • Saw J.T., Bahari M.B., Ang H.H., Lim Y.H., (2006), Potential drug-herb interaction with antiplatelet/anticoagulant drugs, Complement Ther. Clin. Pract., 12, 236-241. • Silagy C., Neil A., (1994), Garlic as a lipid lowering agent, a meta-analysis, J. R. Coll. Physicians Lond., 28, 39-45. • Slowing K., Ganado P., Sanz M., Ruiz E., Tejerina T., (2001), Study of garlic extracts and fractions on cholesterol plasma levels and vascular reactivity in cholesterol- fed rats, J. Nutr., 131, 994S-999S. • Steiner M., Khan A., Holbert D., Lin R., (1996), A double-blind crossover study in moderately hypercholesterolemic men that compared the effect of aged garlic extract and placebo administration on blood lipids, Am. J. Clin. Nutr., 64, 866-870. • Wang H., Ng T., (2001), Purification of allivin, a novel antifungal protein from bulbs of the round-cloved garlic, Life Sci., 70, 357-365. • Zhang X., Lowe D., Giles P., Fell S., Connock M., Maslin D., (2001), Gender may affect the action of garlic oil on plasma cholesterol and glucose levels of normal subjects, J. Nutr., 131, 1471-1478. • Ziyyat A., Legssyer A., Mekhfi H., Dassouli A., Serhrouchni M., Benjelloun W., (1997), Phytotherapy of hypertension and diabetes in oriental Morocco, J. Ethnopharmacol., 58, 45-54. ALBAHACA',
   },
   {
     nombreDeLaPlanta: 'ALBAHACA',
@@ -136,7 +136,7 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'ALCACHOFA',
     nombreCientífico: 'Cynara scolymus L.',
-    sinónimos: 'Cynara cardunculus L. (Missouri Botanical Garden, 2007)',
+    sinónimos       : 'Cynara cardunculus L. (Missouri Botanical Garden, 2007)',
     nombresComunes:
       'Alcachofa, alcachofra, alcaulera, alcaucil, alcaucique, alcancil, alcacil, morrillera, cardón.',
     parteUtilizada: 'Hojas',
@@ -214,7 +214,7 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'ANAMU',
     nombreCientífico: 'Petiveria alliacea L.',
-    sinónimos: 'Petiveria foetida Salisb (Missouri Botanical Garden, 2007)',
+    sinónimos       : 'Petiveria foetida Salisb (Missouri Botanical Garden, 2007)',
     nombresComunes:
       'Anamú, apacin, mapurito, ajillo, zorrillo, hierba hedionda, jazmillo, mazote, chanviro, mucurá, tipi, raíz de pipí, anamo,urgat.',
     parteUtilizada: 'Planta completa, especialmente hojas',
@@ -292,7 +292,7 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'ARNICA',
     nombreCientífico: 'Arnica montana L.',
-    sinónimos: 'No se conocen (Missouri Botanical Garden, 2007)',
+    sinónimos       : 'No se conocen (Missouri Botanical Garden, 2007)',
     nombresComunes:
       'Arnica de las montañas, estornudadera, tabaco de montaña, quina de los pobres.',
     parteUtilizada: 'Flores',
@@ -342,9 +342,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'AZUCENA',
     nombreCientífico: 'Lilium candidum L.',
-    sinónimos: 'No se reportan (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Azucena, lirio blanco, flor de la virgen',
-    parteUtilizada: 'Flores',
+    sinónimos       : 'No se reportan (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Azucena, lirio blanco, flor de la virgen',
+    parteUtilizada  : 'Flores',
     usosTradicionales:
       'El aceite de la planta se emplea como emoliente, para curar quemaduras, úlceras, manchas cutáneas, pecas, eczemas y otras imperfecciones de la piel; el té de las flores sirve como sudorífico y la tisana, como diurético. El polen es estimulante y antiespasmódico (Pérez E., 1996).',
     principalesConstituyentes:
@@ -355,8 +355,8 @@ export const vademecumPlants: VademecumPlantData[] = [
     posología:
       'Modo de empleo: Tópico Ungüento y loción: aplicar varias veces al día',
     contraindicacionesYPrecauciones: 'Sólo para uso externo.',
-    toxicidad: 'No se conocen reportes sobre estudios realizados.',
-    formasFarmacéuticas: 'Loción . Ungüento con extracto de las flores.',
+    toxicidad                      : 'No se conocen reportes sobre estudios realizados.',
+    formasFarmacéuticas            : 'Loción . Ungüento con extracto de las flores.',
     bibliografía:
       '• Bezakova L., Mucaji P., Eisenreichová E., Haladová M., Pauliková I., Oblozinsky M., (2004), Effect of different compounds from Lilium candidum L on lipoxygenase activity, Acta Facultatis Pharmaceuticae Universitatis Comenianae, 51, 45-50 • Eisenreichová, E., Haladová, M., Mucaji, P., Grancai, D., (2004), The study of constituents of Lilium Candidum L., Acta Facultatis Pharmaceuticae Universitatis Comenianae, Tomus LI, Bratislava, pp. 27-37. • Masterová, I.,Bucková, A., Esisenreichová, E.,Tomko, J., (1985), Dicarboxylic acids from Lilium Candidum L., Ceskoslov. Farm., 34, 410-411. • Missouri                   Botanical               Garden.              (12-2007), http://mobot.mobot.org/W3T/Search/vast.html. • Pérez E., (1996), Plantas útiles de Colombia. DAMA, Fondo FEN, Jardín Botánico José Celestino Mutis, 5ª edición, Bogotá, pp. 456-458. BALSAMINA',
   },
@@ -392,9 +392,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'BELLADONA',
     nombreCientífico: 'Atropa belladonna L.',
-    sinónimos: 'No se encuentran reportados (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Belladona, botón negro',
-    parteUtilizada: 'Hojas',
+    sinónimos       : 'No se encuentran reportados (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Belladona, botón negro',
+    parteUtilizada  : 'Hojas',
     usosTradicionales:
       'Se usa principalmente por vía oral como sedante y para inhibir secreciones. La planta tiene propiedades midriáticas, antiespasmódicas, sedantes y narcóticas; disminuye algunas secreciones por lo que se emplea en el tratamiento de sudores nocturnos y secreción excesiva de ácido clorhídrico en el estómago. Algunas preparaciones de la planta son empleadas para el asma, bronquitis, úlceras gástricas, cálculos renales, neuralgias y reumatismo (Duke J., 1985; Font Quer P., 1985).',
     principalesConstituyentes:
@@ -416,9 +416,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'BOLDO',
     nombreCientífico: 'Peumus boldus Molina',
-    sinónimos: 'No se encuentran reportados (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Boldo',
-    parteUtilizada: 'Hojas',
+    sinónimos       : 'No se encuentran reportados (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Boldo',
+    parteUtilizada  : 'Hojas',
     usosTradicionales:
       'Las hojas y el té son usados especialmente para afecciones hepáticas como ictericia y para la dispepsia. También hay referencias de su uso como colerético y hepatotónico. La infusión se emplea para tratar problemas estomacales y hepáticos (Cáceres A., 1999; Duke J., 2001; Wichtl M., 2004).',
     principalesConstituyentes:
@@ -544,9 +544,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'CALENDULA',
     nombreCientífico: 'Calendula officinalis L.',
-    sinónimos: 'No reportados. (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Caléndula, maravilla del crisol, flor de todos los meses',
-    parteUtilizada: 'Flores',
+    sinónimos       : 'No reportados. (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Caléndula, maravilla del crisol, flor de todos los meses',
+    parteUtilizada  : 'Flores',
     usosTradicionales:
       'Las flores se usan por sus propiedades antiflogística, antiséptica, antiespasmódica, astringente, diaforética, antibacteriana, cicatrizante, antiinflamatoria, emenagoga e inmunomoduladora. Se emplean en caso de acné, contusiones, golpes, torceduras, eczemas, quemaduras, picaduras de insectos, irritaciones cutáneas, amenorrea, dismenorrea y vulvovaginitis (Cáceres A., 1996; Roig J., 1998; Aguila B. y col., 2000; Lorenzi H. y col., 2002; Del Rio P., 2005; Krapp K., 2005).',
     principalesConstituyentes:
@@ -571,9 +571,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'CANELA',
     nombreCientífico: 'Cinnamomum zeylanicum Nees.',
-    sinónimos: 'No se encuentran (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Canelo de Ceilán, canelo',
-    parteUtilizada: 'Corteza',
+    sinónimos       : 'No se encuentran (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Canelo de Ceilán, canelo',
+    parteUtilizada  : 'Corteza',
     usosTradicionales:
       'Estimulante de las funciones digestivas, carminativo y antiespasmódico. Se emplea en caso de dispepsias flatulentas, cólicos, diarrea y como eupéptico y aperitivo (García Barriga H., 1974; De Faría E., 1983; Vanaclocha B. y col., 2003).',
     principalesConstituyentes:
@@ -621,9 +621,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'CARDAMOMO',
     nombreCientífico: 'Elettaria cardamomun L.',
-    sinónimos: 'No se reportan sinónimos (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Cardamomo, cardamomi, cardamomo menor',
-    parteUtilizada: 'Semillas',
+    sinónimos       : 'No se reportan sinónimos (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Cardamomo, cardamomi, cardamomo menor',
+    parteUtilizada  : 'Semillas',
     usosTradicionales:
       'La decocción de las semillas se usa para tratar halitosis y flatulencia. La tintura de cardamomo se usa contra la flatulencia y en la industria farmacéutica como saborizante y aromatizante. El cardamomo se utiliza como estimulante del apetito y para tratar desórdenes gastrointestinales y dispepsia, como digestivo y carminativo (Cáceres A., 1996; Al-zuhair H. y col., 1996; Fetrow C. y col.., 2000; Jamal y col., 2006).',
     principalesConstituyentes:
@@ -668,12 +668,12 @@ export const vademecumPlants: VademecumPlantData[] = [
     formasFarmacéuticasYOtrasPreparaciones:
       'Cápsulas con polvo de los frutos de cardo mariano, extracto fluido, infusión.',
     bibliografía:
-      "• Alikaridis F., Papadakis D., Pantelia K., Kephalas T., (2000), Flavonolignan production from Silybum marianum transformed and untransforemed root cultures, Fitoterapia, 71, 379-384. • Cáceres A., (1996), Plantas de Uso Medicinal en Guatemala. Editorial Universitaria, Universidad de San Carlos de Guatemala, pp.120-122. • DerMardesorian A., Beutler J., (2002), The Review of Natural Products. The Most Complete Source of Natural Products Information. Published by Facts and Comparisons. St Louis, Missouri, pp. 441-443. • Duke's Phytochemical and Ethnobotanical Databases, (10-2007), Http://www.ars- grin.gov/duke/plants.html . • Missouri Botanical Garden (10-2007) http://robot.mobot.org/cgi_bin/search • Krapp K., Longe J., (2005), Enciclopedia de las Medicinas Alternativas. Editorial Océano, Barcelona, pp. 301-303. • Maghrani M., Zeggwagh N., Lemhadri A., Amraoui M., Michel J., Eddouks M., (2004), Study of the hypoglycaemic activity of Fraxinus excelsor and Silybum marianum in an animal model of type 1 diabetes mellitus, J. Ethnopharm., 90,309-316. • OMS., (2002), Monographs on Selected Medicinal Plants. Geneva. Vol 2, pp.300. • Singh R., Deep G., Chittezhath M., Kaur M., Dwyer-Nield L., Malkinson A., Agarwal R., (2006), Effect of silibinin on the growth and progression of primary lung tumors in mice, J. Nat. Cancer Inst., 98,846-855. • Skottová N., Kazdova L., Oliyarnyk O., Vecera R., Sobolova L., Ulrichová J., (2004), Phenolics-rich extracts from Silybum marianum and Prunella vulgaris reduce a high-sucrose diet induced oxidative stress in hereditary hypertriglyceridemic rat, Pharm. Res., 50,123-130. • Tedesco D., Steidler S., Tameni M., Sonzogni O., Ravarotto L., (2004), Efficacy of silymarin-phospholipid complex in reducing the toxicity of aflatoxin B1 in broiler chicks, Poultry Science, 83,1839-1843. • Vanaclocha B, Cañigueral S., (2003), Fitoterapia. Vademécum de Prescripción. 4ª Edición. Editorial Masson, Barcelona, pp.164, 165. CASCARA SAGRADA (Vademecum escanear)",
+      '• Alikaridis F., Papadakis D., Pantelia K., Kephalas T., (2000), Flavonolignan production from Silybum marianum transformed and untransforemed root cultures, Fitoterapia, 71, 379-384. • Cáceres A., (1996), Plantas de Uso Medicinal en Guatemala. Editorial Universitaria, Universidad de San Carlos de Guatemala, pp.120-122. • DerMardesorian A., Beutler J., (2002), The Review of Natural Products. The Most Complete Source of Natural Products Information. Published by Facts and Comparisons. St Louis, Missouri, pp. 441-443. • Duke\'s Phytochemical and Ethnobotanical Databases, (10-2007), Http://www.ars- grin.gov/duke/plants.html . • Missouri Botanical Garden (10-2007) http://robot.mobot.org/cgi_bin/search • Krapp K., Longe J., (2005), Enciclopedia de las Medicinas Alternativas. Editorial Océano, Barcelona, pp. 301-303. • Maghrani M., Zeggwagh N., Lemhadri A., Amraoui M., Michel J., Eddouks M., (2004), Study of the hypoglycaemic activity of Fraxinus excelsor and Silybum marianum in an animal model of type 1 diabetes mellitus, J. Ethnopharm., 90,309-316. • OMS., (2002), Monographs on Selected Medicinal Plants. Geneva. Vol 2, pp.300. • Singh R., Deep G., Chittezhath M., Kaur M., Dwyer-Nield L., Malkinson A., Agarwal R., (2006), Effect of silibinin on the growth and progression of primary lung tumors in mice, J. Nat. Cancer Inst., 98,846-855. • Skottová N., Kazdova L., Oliyarnyk O., Vecera R., Sobolova L., Ulrichová J., (2004), Phenolics-rich extracts from Silybum marianum and Prunella vulgaris reduce a high-sucrose diet induced oxidative stress in hereditary hypertriglyceridemic rat, Pharm. Res., 50,123-130. • Tedesco D., Steidler S., Tameni M., Sonzogni O., Ravarotto L., (2004), Efficacy of silymarin-phospholipid complex in reducing the toxicity of aflatoxin B1 in broiler chicks, Poultry Science, 83,1839-1843. • Vanaclocha B, Cañigueral S., (2003), Fitoterapia. Vademécum de Prescripción. 4ª Edición. Editorial Masson, Barcelona, pp.164, 165. CASCARA SAGRADA (Vademecum escanear)',
   },
   {
     nombreDeLaPlanta: 'CASCARA SAGRADA',
     nombreCientífico: 'Rhamnus purshiana DC.',
-    sinónimos: 'No se encuentran reportados (Missouri Botanical Garden, 2007)',
+    sinónimos       : 'No se encuentran reportados (Missouri Botanical Garden, 2007)',
     nombresComunes:
       'Cáscara sagrada, cáscara santa, corteza persa, corteza amarga',
     parteUtilizada: 'Corteza',
@@ -727,9 +727,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'CASTAÑO DE INDIAS',
     nombreCientífico: 'Aesculus hippocastanum L.',
-    sinónimos: 'No se encuentran (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Castaño de Indias',
-    parteUtilizada: 'Semillas',
+    sinónimos       : 'No se encuentran (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Castaño de Indias',
+    parteUtilizada  : 'Semillas',
     usosTradicionales:
       'Se emplea en forma interna y externa para el tratamiento de venas varicosas, flebitis, hemorroides, afecciones cutáneas, úlceras y llagas varicosas y como antiinflamatorio. (Krapp K., 2005).',
     principalesConstituyentes:
@@ -861,9 +861,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'CHUCHUHUAZA',
     nombreCientífico: 'Maytenus laevis Reissek',
-    sinónimos: 'Maytenus jauaensis Steyerm (Missouri Botanical Garden, 2006)',
-    nombresComunes: 'Chuchuhuasha, chuchuaso, chuchuguasi',
-    parteUtilizada: 'Corteza',
+    sinónimos       : 'Maytenus jauaensis Steyerm (Missouri Botanical Garden, 2006)',
+    nombresComunes  : 'Chuchuhuasha, chuchuaso, chuchuguasi',
+    parteUtilizada  : 'Corteza',
     usosTradicionales:
       'Los indios Siona de Putumayo preparan una decocción de la corteza de la cual toman dos tazas al día durante una semana para tratar el reumatismo y la artritis (García-Barriga H., 1975). En la hoya del Amazonas es utilizada por diversas tribus en forma de extracto alcohólico como tónico general para el tratamiento del reumatismo (Gupta M., 1995).',
     principalesConstituyentes:
@@ -909,7 +909,7 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'CIMICIFUGA',
     nombreCientífico: 'Cimicifuga racemosa (L.) Nutt.',
-    sinónimos: 'Actaea racemosa L. (Missouri Botanical Garden, 2007)',
+    sinónimos       : 'Actaea racemosa L. (Missouri Botanical Garden, 2007)',
     nombresComunes:
       'Hierba de San Cristóbal, raíces de cohosh negro, raíz de culebra negra, cimicifuga, hierba rica, raíz de cascabel, raíz de serpiente de cascabel, hierba de cascabel.',
     parteUtilizada: 'Rizomas',
@@ -931,14 +931,14 @@ export const vademecumPlants: VademecumPlantData[] = [
     formasFarmacéuticasYOtrasPreparaciones:
       'Comprimidos con extracto seco de rizoma. Extracto fluido. Tintura.',
     bibliografía:
-      "• Alonso J.R., (1999), Monografia sobre la Cimicifuga racemosa, Fitociencia, 2, 35- 38. • Baber R., Hickey M., Kwik M., (2005), Therapy for menopausal symptoms during and after treatment for breast cancer: safety considerations, Drug Saf., 28, 1085-1100. • Bai W., Henneicke-von H., Wang S., Zheng S., Liu J., Zhang Z., Geng L., Hu L., Jiao C., Liske E., (2007), Efficacy and tolerability of a medicinal product containing an isopropanolic black cohosh extract in Chinese women with menopausal symptoms: a randomized, double blind, parallel-controlled study versus tibolone, Maturitas, 58, 31- 41. • Bolle S., Mastrangelo S., Perrone F., Evandri M., (2007), Estrogen-like effect of a Cimicifuga racemosa extract sub-fraction as assessed by in vivo, ex vivo and in vitro assays, J. Steroid Biochem. Molec. Biol., 107, 262-269. • Briese V., Stammwitz U., Friede M., Henneicke-von H., (2007), Black cohosh with or without St. John's wort for symptom-specific climacteric treatment-results of a large- scale, controlled, observational study, Maturitas, 57, 405-414. • Del Río Pérez, P. (2005). Vademécum de Fitoterapia. Quintana de Rueda, León, España. (07-2007), Http://www.users.servicios.retacal.es/pdelrio/VF.pdf. • DerMarderosian A., Beutler J., (2002), The Review of Natural Products: the Most Complete Source of Natural Product Information. Published by Facts and Comparisons. St Louis, Missouri, pp. 90-91. • Etcheverry S., (2005), Fichas Fitoterápicas. Revista de la AQFU. Año XV. Segunda época. (07-2007). Http://www.aqfu.org.uy/revista/42/8.pdf • Frei-Kleiner S., Schaffner W., Rahlfs V.W., Bodmer C., Birkhauser M., (2005), Cimicifuga racemosa dried ethanolic extract in menopausal disorders: a double-blind placebo-controlled clinical trial, Maturitas, 51, 397-404. • Kennelly E.J., Baggett S., Nuntanakorn P., Ososki A.L., Mori S.A., Duke J., Coleton M., Kronenberg F., (2002), Analysis of thirteen populations of black cohosh for formononetin, Phytomedicine, 9, 461-467. • Lai G.F., Wang Y.F., Fan L.M., Cao J.X., Luo S.D., (2005), Triterpenoid glycoside from Cimicifuga racemosa, J. Asian Nat. Prod. Res., 7, 695-699. • Lyon D.E., Roux G., Voll S., (2006), Hormonal breast cancer agents: implications for the primary care provider, J. Am. Acad. Nurse Pract., 18, 518-523. • Missouri Botanical Garden (07-2007). Http://mobot.mobot.org/cgi-bin/search_vast • Nappi R.E., Malavasi B., Brundu B., Facchinetti F., (2005), Efficacy of Cimicifuga racemosa on climacteric complaints: a randomized study versus low-dose transdermal estradiol, Gynecol. Endocrinol., 20, 30-35. • NCCAM, National Institutes of Health, Office of Dietary Supplements and National Center for Complementary and Alternative Medicine. Questions and Answers about Black Cohosh and the Symptoms of Menopause. Web site, (07-2007), Http://nccam.nih.gov/health/blackcohosh/ • Nisslein T., Freudenstein J., (2003), Effects of an isopropanolic extract of Cimicifuga racemosa on urinary crosslinks and other parameters of bone quality in an ovariectomized rat model of osteoporosis, J. Bone Miner. Metab., 21, 370-376. • Osmers R., Friede M., Liske E., Schnitker J., Freudenstein J., Henneicke-von Zepelin, H., (2005), Efficacy and safety of isopropanolic black cohosh extract for climacteric symptoms, Obstet. Gynecol., 105, 1074-1083. • Seidlová-Wuttke D., Pitzel L., Thelen P., Wuttke W., (2006), Inhibition of 5 α- reductase in the rat prostate by Cimicifuga racemosa, Maturitas, The European Menopause Journal, 55S, S75-S82. • Seidlova-Wuttke D., Jarry H., Pitzel L., Wuttke W., (2005), Effects of estradiol-17β, testosterone and a black cohosh preparation on bone and prostate in orchidectomized rats, Maturitas, 51, 177-186. • Steven Foster. Black Cohosh. Foreword in the history and folklore of North American wildflowers, by Timothy Coffey, Houghton Mifflin Co., Boston.1993. (07- 2007). Http://www.stevenfoster.com/education/monograph/bkcohosh.html • Vermes G., Banhidy F., Acs N., (2005), The effects of remifemin on subjective symptoms of menopause, Adv. Ther., 22, 148-154. • Zierau O., Bodinet C., Kolba S., Wulf M., Vollmer G., (2002), Antiestrogenic activities of Cimicifuga racemosa extracts, J. Steroid Biochem. Mol. Biol., 80, 125-130. COL",
+      '• Alonso J.R., (1999), Monografia sobre la Cimicifuga racemosa, Fitociencia, 2, 35- 38. • Baber R., Hickey M., Kwik M., (2005), Therapy for menopausal symptoms during and after treatment for breast cancer: safety considerations, Drug Saf., 28, 1085-1100. • Bai W., Henneicke-von H., Wang S., Zheng S., Liu J., Zhang Z., Geng L., Hu L., Jiao C., Liske E., (2007), Efficacy and tolerability of a medicinal product containing an isopropanolic black cohosh extract in Chinese women with menopausal symptoms: a randomized, double blind, parallel-controlled study versus tibolone, Maturitas, 58, 31- 41. • Bolle S., Mastrangelo S., Perrone F., Evandri M., (2007), Estrogen-like effect of a Cimicifuga racemosa extract sub-fraction as assessed by in vivo, ex vivo and in vitro assays, J. Steroid Biochem. Molec. Biol., 107, 262-269. • Briese V., Stammwitz U., Friede M., Henneicke-von H., (2007), Black cohosh with or without St. John\'s wort for symptom-specific climacteric treatment-results of a large- scale, controlled, observational study, Maturitas, 57, 405-414. • Del Río Pérez, P. (2005). Vademécum de Fitoterapia. Quintana de Rueda, León, España. (07-2007), Http://www.users.servicios.retacal.es/pdelrio/VF.pdf. • DerMarderosian A., Beutler J., (2002), The Review of Natural Products: the Most Complete Source of Natural Product Information. Published by Facts and Comparisons. St Louis, Missouri, pp. 90-91. • Etcheverry S., (2005), Fichas Fitoterápicas. Revista de la AQFU. Año XV. Segunda época. (07-2007). Http://www.aqfu.org.uy/revista/42/8.pdf • Frei-Kleiner S., Schaffner W., Rahlfs V.W., Bodmer C., Birkhauser M., (2005), Cimicifuga racemosa dried ethanolic extract in menopausal disorders: a double-blind placebo-controlled clinical trial, Maturitas, 51, 397-404. • Kennelly E.J., Baggett S., Nuntanakorn P., Ososki A.L., Mori S.A., Duke J., Coleton M., Kronenberg F., (2002), Analysis of thirteen populations of black cohosh for formononetin, Phytomedicine, 9, 461-467. • Lai G.F., Wang Y.F., Fan L.M., Cao J.X., Luo S.D., (2005), Triterpenoid glycoside from Cimicifuga racemosa, J. Asian Nat. Prod. Res., 7, 695-699. • Lyon D.E., Roux G., Voll S., (2006), Hormonal breast cancer agents: implications for the primary care provider, J. Am. Acad. Nurse Pract., 18, 518-523. • Missouri Botanical Garden (07-2007). Http://mobot.mobot.org/cgi-bin/search_vast • Nappi R.E., Malavasi B., Brundu B., Facchinetti F., (2005), Efficacy of Cimicifuga racemosa on climacteric complaints: a randomized study versus low-dose transdermal estradiol, Gynecol. Endocrinol., 20, 30-35. • NCCAM, National Institutes of Health, Office of Dietary Supplements and National Center for Complementary and Alternative Medicine. Questions and Answers about Black Cohosh and the Symptoms of Menopause. Web site, (07-2007), Http://nccam.nih.gov/health/blackcohosh/ • Nisslein T., Freudenstein J., (2003), Effects of an isopropanolic extract of Cimicifuga racemosa on urinary crosslinks and other parameters of bone quality in an ovariectomized rat model of osteoporosis, J. Bone Miner. Metab., 21, 370-376. • Osmers R., Friede M., Liske E., Schnitker J., Freudenstein J., Henneicke-von Zepelin, H., (2005), Efficacy and safety of isopropanolic black cohosh extract for climacteric symptoms, Obstet. Gynecol., 105, 1074-1083. • Seidlová-Wuttke D., Pitzel L., Thelen P., Wuttke W., (2006), Inhibition of 5 α- reductase in the rat prostate by Cimicifuga racemosa, Maturitas, The European Menopause Journal, 55S, S75-S82. • Seidlova-Wuttke D., Jarry H., Pitzel L., Wuttke W., (2005), Effects of estradiol-17β, testosterone and a black cohosh preparation on bone and prostate in orchidectomized rats, Maturitas, 51, 177-186. • Steven Foster. Black Cohosh. Foreword in the history and folklore of North American wildflowers, by Timothy Coffey, Houghton Mifflin Co., Boston.1993. (07- 2007). Http://www.stevenfoster.com/education/monograph/bkcohosh.html • Vermes G., Banhidy F., Acs N., (2005), The effects of remifemin on subjective symptoms of menopause, Adv. Ther., 22, 148-154. • Zierau O., Bodinet C., Kolba S., Wulf M., Vollmer G., (2002), Antiestrogenic activities of Cimicifuga racemosa extracts, J. Steroid Biochem. Mol. Biol., 80, 125-130. COL',
   },
   {
     nombreDeLaPlanta: 'COL',
     nombreCientífico: 'Brassica oleracea L. DC.',
-    sinónimos: 'No se encuentran reportados (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Col, repollo',
-    parteUtilizada: 'Hojas',
+    sinónimos       : 'No se encuentran reportados (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Col, repollo',
+    parteUtilizada  : 'Hojas',
     usosTradicionales:
       'Se emplea como diurético, antidiarreico y en el tratamiento de úlceras gástricas o duodenales, hipertiroidismo, escorbuto y colitis ulcerosa. Externamente se usa como cicatrizante, antiulceroso, demulcente y para tratar dolores reumáticos, contusiones y heridas (Vanaclocha B. y col., 2003; Guarrera P., 2005).',
     principalesConstituyentes:
@@ -951,7 +951,7 @@ export const vademecumPlants: VademecumPlantData[] = [
       'Modo de empleo: Oral Polvo deshidratado de hojas: 400-500 mg tres veces al día.',
     contraindicacionesYPrecauciones:
       'Hipotiroidismo, tratamiento con anticoagulantes tipo warfarina.',
-    toxicidad: 'No se encuentran reportes sobre estudios realizados.',
+    toxicidad          : 'No se encuentran reportes sobre estudios realizados.',
     formasFarmacéuticas: 'Cápsulas con polvo deshidratado.',
     bibliografía:
       '• Ferreres F., Sousa C., Vrchovská V., Valentão P., Pereira J., Seabra R., Andrade P., (2006), Chemical composition and antioxidant activity of tronchuda cabbage internal leaves, Eur. Food Res., 222, 88-98. • Guarrera, P.M., (2005), Traditional phytotherapy in Central Italy (Marche, Abruzzo, and Latium), Fitoterapia, 76, 1-25. • Kataya H., Hamza A., (2007), Red Cabbage (Brassica oleracea) Ameliorates Diabetic Nephropathy in Rats, Evidence-based Complementary and Alternative Medicine (eCAM), (08-2007), Http://ecam.oxfordjournals.org/cgi/reprint/nem029v1 • Kusznierewicz B., Bartoszek A., Wolska L., Drzewiecki J., Gorinstein S., Namieœnik J., (2007), Partial characterization of white cabbages (Brassica oleracea var. capitata f. alba) from different regions by glucosinolates, bioactive compounds, total antioxidant activities and proteins, LWT-Food Science and Technology, 41, 1-9. • Lo Scalzo R., Bianchi G., Genna A., Summa C., (2007), Antioxidant properties and lipidic profile as quality indexes of cauliflower (Brassica oleracea L. var. botrytis) in relation to harvest time, Food Chem., 100, 1019-1025. • Missouri Botanical Garden, (08-2007), Http://mobot.mobot.org/cgi-bin/search_vast • Podsedek A., Sosnowska D., Redzynia M., Anders B., (2006), Antioxidant capacity and content of Brassica oleracea dietary antioxidants, Inter. J. Food Sci. Tech., 41, 49- 58. • Ríos D., Aguinaga J., Apaza R., Gutierrez A., Rengifo S., (2003), Efecto antibacteriano del extracto de Brassica oleracea contra Helicobacter pylori resistente a eritromicina y amoxicilina en ratas Wistar hembra, Anales de la Facultad de Medicina, 64, 21-27. • Roman-Ramos R., Flores-Saenz J.L., Alarcon-Aguilar F.J., (1995), Anti- hyperglycemic effect of some edible plants, J Ethnopharmacol., 48, 25-32. • Singh J., Upadhyay A.K., Bahadur A., Singh B., Singh K.P., Rai M., (2006), Antioxidant phytochemicals in cabbage (Brassica oleracea L. var. capitata), Scientia Horticulturae, 108(3), 233-237. • Sisti M., Amagliani G., Brandi G., (2003), Antifungal activity of Brassica oleracea var. botrytis fresh aqueous juice, Fitoterapia, 74, 453-458. • Vanaclocha B., Cañigueral S., (2003), Fitoterapia: Vademecum de Prescripción. Plantas Medicinales. 4ª. Edición, Editorial Masson, Barcelona, pp. 141, 142. • Vijaykumar P., Bhaskara B.P., Arulmozhi Sinnathambi M., Sridhar Yeshmaina M., Purnima A., (2006), Antihyperglycaemic and antioxidant activity of Brassica Oleracea in streptozotocin diabetic rats, Internet J. Pharm., 4(2). • Vrchovská V., Sousa C., Valentão P., Ferreres F., Pereira J.A., Seabra R.M., Andrade P.B., (2006), Antioxidative properties of tronchuda cabbage (Brassica oleracea L. var. costata DC) external leaves against DPPH, superoxide radical, hydroxyl radical and hypochlorous acid, Food Chem., 98, 416-425. COLA DE CABALLO Equisetum giganteum L.',
@@ -985,7 +985,7 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'COLA DE CABALLO',
     nombreCientífico: 'Equisetum bogotense Kunth',
-    sinónimos: 'Equisetum chilense K. Presl (Missouri Botanical Garden, 2006)',
+    sinónimos       : 'Equisetum chilense K. Presl (Missouri Botanical Garden, 2006)',
     nombresComunes:
       'Cola de caballo, cola de caballo chiquita, cola de mula, canutillo, tembladera, tembladera chiquita, hierba del conejo.',
     parteUtilizada: 'Partes aéreas',
@@ -1079,7 +1079,7 @@ export const vademecumPlants: VademecumPlantData[] = [
       'Modo de empleo: Oral 1-4g de droga, tres veces al día Aceite esencial: 0.5-2mL, tres veces al día Infusión: una taza, dos a tres veces al día',
     contraindicacionesYPrecauciones:
       'El aceite esencial induce aberraciones en los cromosomas de linfocitos humanos e inhibe parcialmente la actividad mitótica (Lazutka J. y col., 2001). Puede producir fotosensibilización. Contraindicado en pacientes que requieren dieta baja en sodio (Fetrow C. y col., 2000; Invima, 2007).',
-    toxicidad: 'No se conocen reportes sobre estudios realizados.',
+    toxicidad                             : 'No se conocen reportes sobre estudios realizados.',
     formasFarmacéuticasYOtrasPreparaciones: 'Infusión. Aceite esencial.',
     bibliografía:
       '• Cankur O., Yathavakilla S., Caruso J., (2006), Selenium speciation in dill (Anethum graveolens L.) by ion pairing reversed phase and cation exchange HPLC with ICP-MS detection, Talanta 70, 784-790. • Fetrow C., Ávila J., (2000), Manual de Medicina Alternativa Para o Profissional. Editora Guanabara Koogan S.A., Rio de Janeiro, pp. 87-89. • Hajhashemi V., Abbasi N., (2007), Hypolipidemic activity of Anethum graveolens in rats, Phytotherapy Research, Published Online: Dec 2007 (12-2007) Http://www3.interscience.wiley.com/cgi-bin/abstract/117352189/ABSTRACT. • Lazutka J.R., Mierauskiené J., Slapsyté G., Dedonyté V., (2001), Genotoxicity of dill (Anethum graveolens L.), peppermint ( Mentha x piperita L.) and pine (Pinus sylvestris L.) essential oils in human lymphocytes and Drosophila melanogaster, Food and Chemical Toxicology, 39, 485-492. • Missouri Botanical Garden (11-2007). Http://mobot.mobot.org/cgi-bin/search_vast • Vanaclocha B., Cañigueral S., (2003), ‘Fitoterapia. Vademécum de Prescripción. 4a edición, Editorial Masson, Barcelona, pp. 217 • Yili A., Aisa H.A., Imamu X., Maksimov V.V., Ziyavitdinov Z.F., Veshkurova O.N., Sagdiev N.Z., Salikhov S.I., (2006), Isolation of biocidal peptides from Anethum graveolens seeds, Chemistry of Natural Compounds, 42(5), 588-591. EQUINACEA (Escanear de Vademécum)',
@@ -1087,9 +1087,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'EQUINACEA',
     nombreCientífico: 'Echinacea purpurea L.',
-    sinónimos: 'Echinacea pupurea Moench. (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Equinacea, echinacea, purple cone flower',
-    parteUtilizada: 'Raíz',
+    sinónimos       : 'Echinacea pupurea Moench. (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Equinacea, echinacea, purple cone flower',
+    parteUtilizada  : 'Raíz',
     usosTradicionales:
       'La planta se ha utilizado para curar heridas, abscesos, quemaduras, eczema y úlceras, para tratar el resfriado común y como carminativo, antiinflamatorio, antibacteriano, antifúngico, antiviral e inmunoestimulante (Winston D. y col., 2004; Del Río P., 2005).',
     principalesConstituyentes:
@@ -1109,14 +1109,14 @@ export const vademecumPlants: VademecumPlantData[] = [
     formasFarmacéuticasYOtrasPreparaciones:
       'Cápsulas con polvo o extracto estandarizado de la planta. Tintura de la raíz 1:5.',
     bibliografía:
-      "• Barrett B.P., Brown R.L., Locken K., Maberry R., Bobula J.A., D'Alessio D., (2002), Treatment of the common cold with unrefined Echinacea. A randomized, double-blind, placebo-controlled trial, Ann. Intern. Med., 137, 939-946. • Brousseau M., Miller S.C., (2005), Enhancement of natural killer cells and increased survival of aging mice fed daily Echinacea root extract from youth, Biogerontology, 6, 157-163. • Carr R.R., Nahata M.C., (2006), Complementary and alternative medicine for upper respiratory tract infection in children. Am. J. Health Syst. Pharm., 63, 33-39. • Caruso T.J., Gwaltney J.M., (2005), Treatment of the common cold with Echinacea: a structured review, Clin. Infect. Dis., 40, 807-810. • Chow, G., Johns, T., and Miller, S. C. (2006). Dietary Echinacea purpurea during murine pregnancy: effect on maternal hemopoiesis and fetal growth, Biol. Neonate, 89, 133-138. • Classen B., Thude S., Blaschek W., Wack M., Bodinet, C., (2006), Immunomodulatory effects of arabinogalactan-proteins from Baptisia and Echinacea, Phytomedicine, 13, 688-694. • Del Río Pérez, P., (2005), Vademécum de Fitoterapia. Quintana de Rueda (León - España), (09-2007), Http://users.servicios.retacal.es/pdelrio/VF.pdf. • Delorme D., Miller S.C., (2005), Dietary consumption of Echinacea by mice afflicted with autoimmune (type I) diabetes: effect of consuming the herb on hemopoietic and immune cell dynamics, Autoimmunity, 38, 453-461. • Drug               Digest:           Echinacea             purpurea           (11-2007). Http://www.drugdigest.org/DD/PrintablePages/herbMonograph/0,11475,4028,00.html • Goel V., Lovlin R., Barton R., Lyon M.R., Bauer R., Lee T.D., Basu T.K., (2004), Efficacy of a standardized Echinacea preparation (Echinilin) for the treatment of the common cold: a randomized, double-blind, placebo-controlled trial, J. Clin. Pharm. Ther. , 29, 75-83. • Grimm W., Muller H.H., (1999), A randomized controlled trial of the effect of fluid extract of Echinacea purpúrea on the incidence and severity of colds and respiratory infections, Am. J. Med., 106, 138-143. • Hudson J., Vimalanathan S., Vimalanathan S., Amiguet V., Livesey J., Arnason J., (2005), Characterization of antiviral activities in Echinacea root preparations, Pharmaceutical Biology, 43(9), 790-796. • Hwang S.A., Dasgupta A., Actor J.K., (2004), Cytokine production by non-adherent mouse splenocyte cultures to Echinacea extracts, Clin. Chim. Acta, 343, 161-166.. • Jurkstiene V., Kondrotas A.J., Kevelaitis E., (2004), Compensatory reactions of immune system and action of purple coneflower (Echinacea purpurea, (L.) Moench) preparations, Medicina (Kaunas.), 40, 657-662 • Luo W., Ang C.Y., Gehring T.A., Heinze T.M., Lin L.J., Mattia A., (2003), Determination of phenolic compounds in dietary supplements and tea blends containing Echinacea by liquid chromatography with coulorimetric electrochemical detection. J. AOAC Int. 86, 202-208. • Maass, N., Bauer, J., Paulicks, B. R., Bohmer, B. M., and Roth-Maier, D. A., (2005). Efficiency of Echinacea purpúrea on performance and immune status in pigs, J. Anim. Physiol. Anim. Nutr. (Berl), 89, 244-252. • Mengs U., Clare C.B., Poiley J.A., (1991), Toxicity of Echinacea purpúrea. Acute, subacute and genotoxicity studies, Arzneimittelforschung, 41, 1076-1081. • Miliauskas G., Venskutonis P., van Beek T., (2004), Screening of radical scavenging activity of some medicinal and aromatic plant extracts, Food Chemistry, 85(2), 231-237. • Missouri Botanical Garden (11-2007). Http://mobot.mobot.org/cgi-bin/search_vast • See D.M., Broumand N., Sahl L., Tilles, J.G., (1997), In vitro effects of Echinacea and ginseng on natural killer and antibody-dependent cell cytotoxicity in healthy subjects and chronic fatigue syndrome or acquired immunodeficiency syndrome patients, Immunopharmacology , 35, 229-235. • Skaudickas D., Kondrotas A.J., Baltrusaitis K., Vaitiekaitis G., (2003), Effect of Echinacea (Echinacea purpurea L. Moench) preparations on experimental prostate gland, Medicina (Kaunas.), 39, 761-766. • Sloley B.D., Urichuk L.J., Tywin C., Coutts R.T., Pang P.K., Shan J.J., (2001), Comparison of chemical components and antioxidants capacity of different Echinacea species, J. Pharm. Pharmacol., 53, 849-857. • Taylor J.A., Weber W., Standish L., Quinn H., Goesling J., McGann M., Calabrese C., (2003), Efficacy and safety of Echinacea in treating upper respiratory tract infections in children: a randomized controlled trial, JAMA, 290, 2824-2830. • Vonau B., Chard S., Mandalia S., Wilkinson D., Barton S.E., (2001), Does the extract of the plant Echinacea purpurea influence the clinical course of recurrent genital herpes?, Int. J. Std. Aids, 12, 154-158. • Werneke U., Earl J., Seydel C., Horn O., Crichton P., Fannon D., (2004), Potential health risks of complementary alternative medicines in cancer patients, Br. J. Cancer, 90, 408-413. • Winston D., Shannon B., Länger R., Graff A., Thor J., (2004), Echinacea purpurea Root. Standards of analysis, quality control, and therapeutics. In 'American Herbal Pharmacopoeia and Therapeutic Compendium'. American Herbal pharmacopoeia (AHP). Denver, EUA. Pg. 1-54. EUCALIPTO (Vademecum escanear)",
+      '• Barrett B.P., Brown R.L., Locken K., Maberry R., Bobula J.A., D\'Alessio D., (2002), Treatment of the common cold with unrefined Echinacea. A randomized, double-blind, placebo-controlled trial, Ann. Intern. Med., 137, 939-946. • Brousseau M., Miller S.C., (2005), Enhancement of natural killer cells and increased survival of aging mice fed daily Echinacea root extract from youth, Biogerontology, 6, 157-163. • Carr R.R., Nahata M.C., (2006), Complementary and alternative medicine for upper respiratory tract infection in children. Am. J. Health Syst. Pharm., 63, 33-39. • Caruso T.J., Gwaltney J.M., (2005), Treatment of the common cold with Echinacea: a structured review, Clin. Infect. Dis., 40, 807-810. • Chow, G., Johns, T., and Miller, S. C. (2006). Dietary Echinacea purpurea during murine pregnancy: effect on maternal hemopoiesis and fetal growth, Biol. Neonate, 89, 133-138. • Classen B., Thude S., Blaschek W., Wack M., Bodinet, C., (2006), Immunomodulatory effects of arabinogalactan-proteins from Baptisia and Echinacea, Phytomedicine, 13, 688-694. • Del Río Pérez, P., (2005), Vademécum de Fitoterapia. Quintana de Rueda (León - España), (09-2007), Http://users.servicios.retacal.es/pdelrio/VF.pdf. • Delorme D., Miller S.C., (2005), Dietary consumption of Echinacea by mice afflicted with autoimmune (type I) diabetes: effect of consuming the herb on hemopoietic and immune cell dynamics, Autoimmunity, 38, 453-461. • Drug               Digest:           Echinacea             purpurea           (11-2007). Http://www.drugdigest.org/DD/PrintablePages/herbMonograph/0,11475,4028,00.html • Goel V., Lovlin R., Barton R., Lyon M.R., Bauer R., Lee T.D., Basu T.K., (2004), Efficacy of a standardized Echinacea preparation (Echinilin) for the treatment of the common cold: a randomized, double-blind, placebo-controlled trial, J. Clin. Pharm. Ther. , 29, 75-83. • Grimm W., Muller H.H., (1999), A randomized controlled trial of the effect of fluid extract of Echinacea purpúrea on the incidence and severity of colds and respiratory infections, Am. J. Med., 106, 138-143. • Hudson J., Vimalanathan S., Vimalanathan S., Amiguet V., Livesey J., Arnason J., (2005), Characterization of antiviral activities in Echinacea root preparations, Pharmaceutical Biology, 43(9), 790-796. • Hwang S.A., Dasgupta A., Actor J.K., (2004), Cytokine production by non-adherent mouse splenocyte cultures to Echinacea extracts, Clin. Chim. Acta, 343, 161-166.. • Jurkstiene V., Kondrotas A.J., Kevelaitis E., (2004), Compensatory reactions of immune system and action of purple coneflower (Echinacea purpurea, (L.) Moench) preparations, Medicina (Kaunas.), 40, 657-662 • Luo W., Ang C.Y., Gehring T.A., Heinze T.M., Lin L.J., Mattia A., (2003), Determination of phenolic compounds in dietary supplements and tea blends containing Echinacea by liquid chromatography with coulorimetric electrochemical detection. J. AOAC Int. 86, 202-208. • Maass, N., Bauer, J., Paulicks, B. R., Bohmer, B. M., and Roth-Maier, D. A., (2005). Efficiency of Echinacea purpúrea on performance and immune status in pigs, J. Anim. Physiol. Anim. Nutr. (Berl), 89, 244-252. • Mengs U., Clare C.B., Poiley J.A., (1991), Toxicity of Echinacea purpúrea. Acute, subacute and genotoxicity studies, Arzneimittelforschung, 41, 1076-1081. • Miliauskas G., Venskutonis P., van Beek T., (2004), Screening of radical scavenging activity of some medicinal and aromatic plant extracts, Food Chemistry, 85(2), 231-237. • Missouri Botanical Garden (11-2007). Http://mobot.mobot.org/cgi-bin/search_vast • See D.M., Broumand N., Sahl L., Tilles, J.G., (1997), In vitro effects of Echinacea and ginseng on natural killer and antibody-dependent cell cytotoxicity in healthy subjects and chronic fatigue syndrome or acquired immunodeficiency syndrome patients, Immunopharmacology , 35, 229-235. • Skaudickas D., Kondrotas A.J., Baltrusaitis K., Vaitiekaitis G., (2003), Effect of Echinacea (Echinacea purpurea L. Moench) preparations on experimental prostate gland, Medicina (Kaunas.), 39, 761-766. • Sloley B.D., Urichuk L.J., Tywin C., Coutts R.T., Pang P.K., Shan J.J., (2001), Comparison of chemical components and antioxidants capacity of different Echinacea species, J. Pharm. Pharmacol., 53, 849-857. • Taylor J.A., Weber W., Standish L., Quinn H., Goesling J., McGann M., Calabrese C., (2003), Efficacy and safety of Echinacea in treating upper respiratory tract infections in children: a randomized controlled trial, JAMA, 290, 2824-2830. • Vonau B., Chard S., Mandalia S., Wilkinson D., Barton S.E., (2001), Does the extract of the plant Echinacea purpurea influence the clinical course of recurrent genital herpes?, Int. J. Std. Aids, 12, 154-158. • Werneke U., Earl J., Seydel C., Horn O., Crichton P., Fannon D., (2004), Potential health risks of complementary alternative medicines in cancer patients, Br. J. Cancer, 90, 408-413. • Winston D., Shannon B., Länger R., Graff A., Thor J., (2004), Echinacea purpurea Root. Standards of analysis, quality control, and therapeutics. In \'American Herbal Pharmacopoeia and Therapeutic Compendium\'. American Herbal pharmacopoeia (AHP). Denver, EUA. Pg. 1-54. EUCALIPTO (Vademecum escanear)',
   },
   {
     nombreDeLaPlanta: 'EUCALIPTO',
     nombreCientífico: 'Eucalyptus globulus Labill.',
-    sinónimos: 'No se reportan (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Eucalipto, ocalito ucal, eucaliptus',
-    parteUtilizada: 'Hojas',
+    sinónimos       : 'No se reportan (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Eucalipto, ocalito ucal, eucaliptus',
+    parteUtilizada  : 'Hojas',
     usosTradicionales:
       'A la planta se le atribuyen propiedades expectorantes, febrífugas, hipoglicemiantes, mucolíticas y antihelmínticas. El aceite esencial es antitusivo, expectorante y antiséptico (González D., 1988; Vanaclocha B. y col., 2003).',
     principalesConstituyentes:
@@ -1140,7 +1140,7 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'GENCIANA',
     nombreCientífico: 'Gentiana lutea L.',
-    sinónimos: 'Ninguno (Missouri Botanical Garden, 2007)',
+    sinónimos       : 'Ninguno (Missouri Botanical Garden, 2007)',
     nombresComunes:
       'Genciana, genciana mayor, genciana amarilla, xensá, errosta, gengiba, junciana, xaranzana.',
     parteUtilizada: 'Raíces y rizomas',
@@ -1166,9 +1166,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'GERANIO',
     nombreCientífico: 'Pelargonium sidoides DC.',
-    sinónimos: 'No se encuentran (Missouri Botanical Garden, 2007)',
-    nombreComún: 'Geranio',
-    parteUtilizada: 'Raíz',
+    sinónimos       : 'No se encuentran (Missouri Botanical Garden, 2007)',
+    nombreComún     : 'Geranio',
+    parteUtilizada  : 'Raíz',
     usosTradicionales:
       'Se emplea en el tratamiento de enfermedades infecciosas especialmente del tracto respiratorio, en casos de tos, diarrea, tuberculosis, bronquitis, disentería y como cicatrizante (Chuchalin A. y col., 2005; Mativandlela S. y col., 2006; Lewu F. y col., 2006; Bladt S. y col., 2007; Kolodziej H., 2007; Conrad A. y col., 2007; Biber A.y col., 2007; Nolder M. y col., 2007).',
     principalesConstituyentes:
@@ -1195,7 +1195,7 @@ export const vademecumPlants: VademecumPlantData[] = [
     nombreCientífico: 'Ginkgo biloba L.',
     sinónimos:
       'Salisburia adiantifolia Sm., Salisburia biloba Hoffmanns (Missouri Botanical Garden, 2007).',
-    nombreComún: 'Ginkgo',
+    nombreComún   : 'Ginkgo',
     parteUtilizada: 'Hojas',
     usosTradicionales:
       'Históricamente las hojas de esta planta han sido empleadas en el tratamiento de palpitaciones y disnea debida a congestión y opresión del pecho. Hoy en día se usa principalmente para mejorar la circulación y la agudeza mental, en la prevención y tratamiento de la enfermedad de Alzheimer, tratamiento de neuropatía periférica, disfunción sexual y desórdenes relacionados con falta de atención, prevención de infartos y como agente antioxidante. También se emplea en casos de nefropatías ocasionadas por diabetes, vértigo, tinnitus, alergias y asma (Upton R., 2003).',
@@ -1248,9 +1248,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'GUABA',
     nombreCientífico: 'Phytolacca bogotensis Kunth.',
-    sinónimos: 'Phytolacca australis Phil (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Guaba, cargamanta, papa cimarrona',
-    parteUtilizada: 'Raíz',
+    sinónimos       : 'Phytolacca australis Phil (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Guaba, cargamanta, papa cimarrona',
+    parteUtilizada  : 'Raíz',
     usosTradicionales:
       'La raíz desecada se emplea, en dosis menores, como antiinflamatorio y antirreumático (González D., 1998).',
     principalesConstituyentes:
@@ -1287,8 +1287,8 @@ export const vademecumPlants: VademecumPlantData[] = [
     posología:
       'Modo de empleo: Tópico Aplicar las preparaciones una o más veces al día',
     contraindicacionesYPrecauciones: 'Solo para uso externo.',
-    toxicidad: 'No existen estudios sobre el particular.',
-    formasFarmacéuticas: 'Loción y crema con extracto de la planta.',
+    toxicidad                      : 'No existen estudios sobre el particular.',
+    formasFarmacéuticas            : 'Loción y crema con extracto de la planta.',
     bibliografía:
       '• Correa J., Bernal H., (1989), Especies Vegetales Promisorias de los Países del Convenio Andrés Bello. Tomo II. SECAB, Ministerio de Educación y Ciencia de España, JUNAC. Bogotá, pp. 202-209. • Gupta M., (1995), 270 Plantas Medicinales Iberoamericanas. Convenio Andrés Bello - CYTED. Bogotá, pp. 185-187.. • Missouri Botanical Garden (09-2007). Http://mobot.mobot.org/cgi-bin/search_vast • Weniger B., Robledo S., Arango G., Deharo E., Aragon R., Muñoz V., Callapa J., Lobstein A., Anton R., (2001), Antiprotozoal activities of Colombian plants, Journal of Ethnopharm., 78, 193-200. GUARANA',
   },
@@ -1321,9 +1321,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'GUAYUSA',
     nombreCientífico: 'Ilex guayusa Loes.',
-    sinónimos: 'No se conocen (Missouri Botanical Garden, 2006)',
-    nombreComún: 'Guayusa',
-    parteUtilizada: 'Hojas',
+    sinónimos       : 'No se conocen (Missouri Botanical Garden, 2006)',
+    nombreComún     : 'Guayusa',
+    parteUtilizada  : 'Hojas',
     usosTradicionales:
       'La decocción de las hojas se emplea como estimulante, narcótico, hipnótico, tónico, diaforético, diurético y en el tratamiento de dolores de cabeza, afecciones catarrales y estados gripales (Lewis W. y col., 1991; Lee R. y col, 2006).',
     principalesConstituyentes:
@@ -1335,7 +1335,7 @@ export const vademecumPlants: VademecumPlantData[] = [
       'Modo de empleo: Oral Infusión preparada hirviendo una cucharada de las hojas en 1 a 2 tazas de agua: 2 a 3 tazas por día',
     contraindicacionesYPrecauciones:
       'Embarazo. Deben tenerse en cuenta las contraindicaciones reportadas para el consumo de cafeína. El consumo en exceso puede producir vómito y alteraciones del sistema nervioso central. Interacción con fármacos. Pueden presentarse las interacciones propias de la cafeína y, en general, de los derivados de las xantinas.',
-    toxicidad: '(Pinzón R., y col., 2003)',
+    toxicidad                             : '(Pinzón R., y col., 2003)',
     formasFarmacéuticasYOtrasPreparaciones: 'Infusión.',
     bibliografia:
       '• Bernal H., Correa J., (1990), Especies Vegetales Promisorias de los Países del Convenio Andrés Bello, Secretaría Ejecutiva del Convenio Andrés Bello (SECAB), Bogotá, Tomo I, pp. 400-419 • Gupta M., (1995), 270 Plantas Medicinales Iberoamericanas. Programa Iberoamericano de Ciencia y Tecnología para el Desarrollo CYTED-SECAB, Bogotá, pp. 42-46 . • Missouri Botanical Garden –w3- TROPICOS. Nomenclatural Data Base. (12-206), Ilex guayusa Loes. Http://mobot.mobot.org/cgi-bin/search_vast. • Lee R., Balick M., (2006), Caffeine, Explore, 2, 55-59. • Lewis W., Kennelly E., Bass G., Wedner H., Elvin-Levis M., Fast W., (1991), Ritualistic use of the holly Ilex guayusa by Amazonian Jívaro Indians, J. Ethnopharmacol., 33, 25-30. • Pinzón R., Pachón M., García L., Camero S., Ovalle D., Hata Y., (2003), Investigaciones Fitoquímicas, Farmacológicas y Estudios Preclínicos (Fase Inicial) de Tres Especies Vegetales Medicinales, Universidad Nacional de Colombia, Departamento de Farmacia-Convenio Andrés Bello. HAMAMELIS (Vademecum escanear)',
@@ -1359,7 +1359,7 @@ export const vademecumPlants: VademecumPlantData[] = [
       'Modo de empleo: Tópico Aplicar las preparaciones dos o tres veces al día',
     contraindicacionesYPrecauciones:
       'Sólo para uso externo. No se aconseja administrarla por vía oral pues contiene pequeñas cantidades de safrol y el contenido de taninos produce molestias digestivas (Fetrow C. y col., 2000; Krapp K. y col., 2005).',
-    toxicidad: 'No se conocen reportes sobre estudios realizados.',
+    toxicidad                             : 'No se conocen reportes sobre estudios realizados.',
     formasFarmacéuticasYOtrasPreparaciones: 'Ungüentos y compresas.',
     bibliografía:
       '• Cañigueral S., Vila R., Wichtl M., (1998), Plantas Medicinales y Drogas Vegetales para Infusión y Tisana. Un Manual de Base Científica para Farmacéuticos y Médicos. Editorial OEMF International. Milan, Italia, pp. 253-257. • De Faria García E., (1983), British Herbal Pharmacopoeia. Publisher by The British Herbal Medicine Association. United Kingdom, pp.109,110. • Del Río P.,(2005), Vademécum de Fitoterapia. Quintana de Rueda (León, España). http://users.servicios.retacal.es/pdelrio/VF.pdf. • Dr Duke. (12-2007). Phytochemical and Ethnobotanical Database. http://www.ars- grin.gov/duke/. • Fetrow C., Ávila J.,(2000), Manual de Medicina Alternativa para o Profissional. Editora Guanabara Koogan S.A., Rio de Janeiro, pp. 403, 404. • Krapp K., Longe J., (2005), Enciclopedia de las Medicinas Alternativas. Editorial Oceano, Barcelona, pp. 705-707. • Missouri Botanical Garden (11-2007), W3-tropicos. Nomenclatural Data Base – Hamamelis virginiana. Http://robot.Mobot.org/cgi-bin/search _vast. • OMS., (2002), Monographs on Selected Medicinal Plants. Volumen 2. Ginebra. • Schulz V., Hansel R., Tyler V., (2002), Fitoterapia Racional. Um Guía de Fitoterapia para as Ciências de Saúde. 4ª edição. Editora Manole Ltda., Tamboré, Brasil, pp. 312, 313. • Vanaclocha B., Cañigueral S., (2003), Fitoterapia. Vademécum de Prescripción. 4a Edición. Editorial Masson, Barcelona, pp.282-284. HIEDRA',
@@ -1382,7 +1382,7 @@ export const vademecumPlants: VademecumPlantData[] = [
       'Modo de empleo: Oral 0.3g diarios de droga o la cantidad equivalente de sus preparados.',
     contraindicacionesYPrecauciones:
       'Reacciones de hipersensibilidad. Embarazo y lactancia. El contacto con las hojas frescas puede producir dermatitis que se manifiesta por eritema con vesículas y enrojecimiento del área.',
-    toxicidad: 'No se encuentran reportes sobre el particular.',
+    toxicidad          : 'No se encuentran reportes sobre el particular.',
     formasFarmacéuticas: 'Jarabe con extracto de hojas.',
     bibliografía:
       '• Cañigueral S., Vila R., Wichtl M., (1998), Plantas Medicinales y Drogas Vegetales para Infusión y Tisana. Un Manual de Base Científica para Farmacéuticos y Médicos. Editorial OEMF International. Milan, Italia, pp. 261-263. • Del Río P., (12-2005), Vademécum de Fitoterapia. Quintana de Rueda (León, España). En http://users.servicios.retacal.es/pdelrio/VF.pdf. • Fazio S., Pouso J., Dolinsky D., Fernandez A., Hernandez M., Clavier G., Hecker M., (2006), Tolerance, safety and efficacy of Hedera helix extract in inflammatory bronchial diseases under clinical practice conditions: A prospective, open, multicentre postmarketing study in 9657 patients, Phytomed., Doi:10.1016/j.phymed.2006.05.003 • Missouri Botanical Garden., (27-11-2007). http://robot.mobot.org/cgi_bin/search _vast • Süleyman H., Mshvildadze V., Gepdiremen A., Elias R., (2003), Acute and chronic antiinflammatory profile of the ivy plant, Hedera helix, in rats, Phytomed., 10, 370-374. • Schulz V., Hansel R., and Tyler V., (2002), Fitoterapia Racional. Um Guía de Fitoterapia para as Ciências de Saúde. 4ª edição. Editora Manole Ltda., Tamboré, Brasil., pp.189. • Vanaclocha B., Cañigueral S., (2003), Fitoterapia. Vademécum de Prescripción. 4ª edición. Editorial Masson., Barcelona, pp.292. • Wagner H., Bladt S., Zgainski E., (1984), Plant Drug Analysis. A Thin Layer Chromatography Atlas. Springer Verlag, Berlin, pp.227. HIERBA DE SAN JUAN',
@@ -1413,14 +1413,14 @@ export const vademecumPlants: VademecumPlantData[] = [
     formasFarmacéuticasYOtrasPreparaciones:
       'Cápsulas, comprimidos y grageas con extracto seco estandarizado de la planta. Infusión',
     bibliografía:
-      "• Avato P., Guglielmi G., (2004), Determination of major constituents in St. John’s Wort under different extraction conditions, Pharm. Biol., 42, 83-89. • Bark W., (1999), American Herbal Pharmacopoeia and Therapeutic Compendium. American Herbal Pharmacopoeia (AHP). Santa Cruz, EUA, pp. 3-29. • Bilia A., Gallori S., Vincieri F., (2002), St. John´s wort and depression. Efficacy, safety and tolerability, an update, Life Sci., 70, 3077-3096. • Dr. Duke's Phytochemical and Ethnobotanical Databases (10-2007). Http://www.ars-grin.gov/cgi-bin/duke/farmacy2.pl • Krapp K., Longe J., (2005), Enciclopedia de las Medicinas Alternativas. Editorial Océano, Barcelona, pp. 751-753. • Medina A., Martínez-Poveda B., Amores-Sánchez M., Quesada A., (2006), Hyperforin: More than an antidepressant bioctive compound?, Life Sci., 19, 105-111. • Missouri Botanical Garden (11-2007). Http://mobot.mobot.org/cgi-bin/search_vast • Pages G., Delaurent C., Phan-Tan-Luu R., Sergent M., (2007), Different chemometric approaches to optimize the assay of St. John’s Wort active ingredients, Chemometrics Intell. Lab. Sys., 86, 159-167. • Rodríguez-Landa J., Contreras C., (2003), A review of clinical and experimental observations about antidepressant actions and side effects produced by Hypericum perforatum extracts, Phytomed., 10,688-699. • Schwob I., Bessiere J., Viano J., (2002), Composition of the essential oils of Hypericum perforatum L. from southeastern France, C.R. Biol., 325,781-785. • Verotta L., (2003), Hypericum perforatum, a source of neuroactive lead structure, Current Topics in Med. Chem., 3, 187-201. • Wheatley D., (1998), Hypericum extract. Potential in the treatment of depression, CNS Drugs, 9, 431-440. • World Health Organization. WHO., (2002), Monographs on Selected Medicinal Plants, Volumen 2. Ginebra, pp.149. • Wurglics M., Schubert-Zsilavecz M., (2006), Hypericum perforatum: A modern herbal antidepressant, Pharmacokinetics of active ingredients, Clin. Pharmacokinet., 45, 449-468. • Zotou A., Loukou Z., (2001), Determination of hipericin and pseudohipericin in extract from Hypericum perforatum L. and pharmaceutical preparations by liquid chromatography –fluorescence detection, Chromatography, 54,218-224. HIGUERILLA",
+      '• Avato P., Guglielmi G., (2004), Determination of major constituents in St. John’s Wort under different extraction conditions, Pharm. Biol., 42, 83-89. • Bark W., (1999), American Herbal Pharmacopoeia and Therapeutic Compendium. American Herbal Pharmacopoeia (AHP). Santa Cruz, EUA, pp. 3-29. • Bilia A., Gallori S., Vincieri F., (2002), St. John´s wort and depression. Efficacy, safety and tolerability, an update, Life Sci., 70, 3077-3096. • Dr. Duke\'s Phytochemical and Ethnobotanical Databases (10-2007). Http://www.ars-grin.gov/cgi-bin/duke/farmacy2.pl • Krapp K., Longe J., (2005), Enciclopedia de las Medicinas Alternativas. Editorial Océano, Barcelona, pp. 751-753. • Medina A., Martínez-Poveda B., Amores-Sánchez M., Quesada A., (2006), Hyperforin: More than an antidepressant bioctive compound?, Life Sci., 19, 105-111. • Missouri Botanical Garden (11-2007). Http://mobot.mobot.org/cgi-bin/search_vast • Pages G., Delaurent C., Phan-Tan-Luu R., Sergent M., (2007), Different chemometric approaches to optimize the assay of St. John’s Wort active ingredients, Chemometrics Intell. Lab. Sys., 86, 159-167. • Rodríguez-Landa J., Contreras C., (2003), A review of clinical and experimental observations about antidepressant actions and side effects produced by Hypericum perforatum extracts, Phytomed., 10,688-699. • Schwob I., Bessiere J., Viano J., (2002), Composition of the essential oils of Hypericum perforatum L. from southeastern France, C.R. Biol., 325,781-785. • Verotta L., (2003), Hypericum perforatum, a source of neuroactive lead structure, Current Topics in Med. Chem., 3, 187-201. • Wheatley D., (1998), Hypericum extract. Potential in the treatment of depression, CNS Drugs, 9, 431-440. • World Health Organization. WHO., (2002), Monographs on Selected Medicinal Plants, Volumen 2. Ginebra, pp.149. • Wurglics M., Schubert-Zsilavecz M., (2006), Hypericum perforatum: A modern herbal antidepressant, Pharmacokinetics of active ingredients, Clin. Pharmacokinet., 45, 449-468. • Zotou A., Loukou Z., (2001), Determination of hipericin and pseudohipericin in extract from Hypericum perforatum L. and pharmaceutical preparations by liquid chromatography –fluorescence detection, Chromatography, 54,218-224. HIGUERILLA',
   },
   {
     nombreDeLaPlanta: 'HIGUERILLA',
     nombreCientífico: 'Ricinus comunis L.',
-    sinónimos: 'No se conocen (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Castor, palma christi, higuerilla, ricino',
-    parteUtilizada: 'Semilla',
+    sinónimos       : 'No se conocen (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Castor, palma christi, higuerilla, ricino',
+    parteUtilizada  : 'Semilla',
     usosTradicionales:
       'Las semillas se emplean como purgante, por vía oral,          el aceite como laxante y vermífugo (Duke J., 1985; Abreu Matos F., 1997).',
     principalesConstituyentes:
@@ -1467,9 +1467,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'HISOPO',
     nombreCientífico: 'Hyssopus officinalis L.',
-    sinónimos: 'No se conocen (Missouri Botanical Garden, 2007)',
-    nombreComún: 'Hisopo',
-    parteUtilizada: 'Sumidades floridas',
+    sinónimos       : 'No se conocen (Missouri Botanical Garden, 2007)',
+    nombreComún     : 'Hisopo',
+    parteUtilizada  : 'Sumidades floridas',
     usosTradicionales:
       'La planta se ha empleado en el tratamiento de tos, resfriados, bronquitis, flatulencia, indigestión y dispepsias. Las flores y las hojas se usan como expectorante (Roig J., 1988; Fetrow C. y col., 2000; Del Río P., 2005; Krapp K. y col., 2005).',
     principalesConstituyentes:
@@ -1491,9 +1491,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'ISPAGULA',
     nombreCientífico: 'Plantago ovata Forssk',
-    sinónimos: 'No se encuentran (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Ispágula, psyllium, psilio',
-    parteUtilizada: 'Semillas, cutículas de las semillas',
+    sinónimos       : 'No se encuentran (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Ispágula, psyllium, psilio',
+    parteUtilizada  : 'Semillas, cutículas de las semillas',
     usosTradicionales:
       'La planta ha sido empleada en terapia gastrointestinal (ingerida con abundante líquido actúa como laxante) y de forma tópica en algunos problemas de la piel. El mucílago se emplea como laxante, formador de volumen, absorbente y emoliente y para reducir niveles séricos de colesterol (Fetrow C. y col., 2000).',
     principalesConstituyentes:
@@ -1551,10 +1551,10 @@ export const vademecumPlants: VademecumPlantData[] = [
     actividadFarmacológica:
       'Ensayos realizados en ratas y ratones mostraron reducción, dosis dependiente, de la nocicepción (Sayyah M. y col., 2004).',
     indicaciones: 'Uso interno: Hipnótico, tranquilizante menor, sedante.',
-    posología: 'Modo de empleo: Oral Infusión :2-3 tazas diarias.',
+    posología   : 'Modo de empleo: Oral Infusión :2-3 tazas diarias.',
     contraindicacionesYPrecauciones:
       'Evitar su uso prolongado. Dosis muy elevadas pueden producir letargia y provocar efectos graves como paro cardíaco. Hipersensibilidad a los componentes de la planta (Vila L. y col., 1998).',
-    toxicidad: 'No se encuentran estudios sobre el particular.',
+    toxicidad                             : 'No se encuentran estudios sobre el particular.',
     formasFarmacéuticasYOtrasPreparaciones: 'Infusión. Solución oral.',
     bibliografía:
       '• Acosta M., (1992), Vademécum de Plantas Medicinales del Ecuador. Ediciones ABYA-YALA. Quito, Ecuador, pp. 28, 46, 146, 150.. • García-Barriga H., (1975), Flora Medicinal de Colombia. Botánica Médica. Tomo 3º. Instituto de Ciencias Naturales. Universidad Nacional de Colombia. Bogotá, pp. 357-361. • Missouri Botanical Garden, (09-2007), http://mobot.mobot.org/cgi-bin/search_vast. • Roig J., (1988), Plantas Medicinales, Aromáticas o Venenosas de Cuba. A-L, M-Z. Editorial Científico-Técnica, La Habana, pp. 553,554. • Sayyah M., Hadidi N., Kamalinejad M., (2004), Analgesic and anti-inflammatory activity of Lactuca sativa seed extract in rats, J. Ethnopharmacol., 92, 325-329. • Vila L., Sanchez G., Sanz M.L., Dieguez I., Martinez A., Palacios R., Martinez J., (1998), Study of a case of hypersensitivity to lettuce (Lactuca sativa), Clin. Exp. Allergy, 28, 1031-1035 LIMONCILLO',
@@ -1641,9 +1641,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'LUPULO',
     nombreCientífico: 'Humulus lupulus L.',
-    sinónimos: 'Ninguno conocido (Missouri Botanical Garden,2007)',
-    nombresComunes: 'Lúpulo',
-    parteUtilizada: 'Pistilos secos, estróbilos',
+    sinónimos       : 'Ninguno conocido (Missouri Botanical Garden,2007)',
+    nombresComunes  : 'Lúpulo',
+    parteUtilizada  : 'Pistilos secos, estróbilos',
     usosTradicionales:
       'La infusión delos estróbilos se usa como sedante e hipnótico, para tratar desórdenes del sueño y estados nerviosos. La infusión se emplea externamente para el tratamiento de úlceras y lesiones cutáneas (Cañigueral S. y col., 1998; Schiller H., y col., 2006; Zeller M., y col., 2007).',
     principalesConstituyentes:
@@ -1668,19 +1668,19 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'MALVA',
     nombreCientífico: 'Malva silvestris L.',
-    sinónimos: 'No se encuentran (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Malva',
-    parteUtilizada: 'Hojas y flores',
+    sinónimos       : 'No se encuentran (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Malva',
+    parteUtilizada  : 'Hojas y flores',
     usosTradicionales:
       'La planta se usa por sus propiedades emolientes, expectorantes y laxantes. Se emplea en el tratamiento de bronquitis, estreñimiento, abscesos, tos, quemaduras, inflamaciones de la cavidad bucofaríngea. Tópicamente se utiliza para reducir edemas (Font Quer P., 1985; Muñoz F., 1987; Cañigueral S. y col., 1998; Fetrow C. y col., 2000).',
     principalesConstituyentes:
       'Contiene mucílagos de naturaleza urónica, taninos, antocianas (malvina), flavonoides y leucocianinas. La hidrólisis del mucílago proporciona galactosa, arabinosa, glucosa, ramnosa y ácido galacturónico (Muñoz F., 1987; Cañigueral S. y col., 1998; Fetrow C. y col. 2000).',
     actividadFarmacológica: 'No existen estudios sobre esta especie vegetal.',
-    indicaciones: 'Uso interno: Expectorante.',
+    indicaciones          : 'Uso interno: Expectorante.',
     posología:
       'Modo de empleo: Oral Infusión 3-5g de hojas secas en 150mL de agua: una taza antes de acostarse. Jarabe: una cucharada tres veces al día.',
     contraindicacionesYPrecauciones: 'Embarazo y lactancia.',
-    toxicidad: 'No se encuentra información sobre este particular.',
+    toxicidad                      : 'No se encuentra información sobre este particular.',
     formasFarmacéuticasYOtrasPreparaciones:
       'Jarabe con extracto 1:1 de malva en alcohol de 36%. Infusión',
     bibliografía:
@@ -1701,7 +1701,7 @@ export const vademecumPlants: VademecumPlantData[] = [
     actividadFarmacológica:
       'Diferentes ensayos clínicos corroboraron la actividad antimigrañosa de la planta (Johnson E. y col., 1985; Murphy J. y col., 1988; Palevitch D. y col., 1997). El aceite esencial y extractos de la planta evidenciaron actividad antibacteriana y antifúngica (Cáceres A. y col., 1991, 1993; Avila A. y col., 1993; Kalodera Z. y col., 1997). Extractos acuoso y clorofórmico de las hojas inhibieron agregación plaquetaria in vitro (Heptinstall S. y col., 1992; Hewlett M., 1996; Awang D. y col., 1998). Extractos de la planta mostraron actividad antiinflamatoria, in vitro e in vivo (Yasukawa K. y col., 1998; Jain N. y col., 1999; Piela-Smith T. y col, 2001). La administración oral del extracto de la planta a ratones ocasionó efecto antinonociceptivo (Jain N. y col, 1999). El extracto etanólico posee actividad frente a P. falciparum (Kuria K. y col., 2001). El extracto hidrioalcohólico de las partes aéreas indujo efecto lítico de promastigotes de L. amazonensis (Tiuman T. y col., 2005).',
     indicaciones: 'Uso interno: Coadyuvante en el tratamiento de la migraña.',
-    posología: 'Modo de empleo: Oral Sumidades floridas: 200-400 mg al día.',
+    posología   : 'Modo de empleo: Oral Sumidades floridas: 200-400 mg al día.',
     contraindicacionesYPrecauciones:
       'Embarazo y lactancia. Hipersensibilidad a los compuestos de la planta.',
     interacciónConOtrosMedicamentos:
@@ -1718,7 +1718,7 @@ export const vademecumPlants: VademecumPlantData[] = [
     nombreCientífico: 'Matricaria chamomilla L.',
     sinónimos:
       'Matricaria reculita L., Matricaria courrantiana D. (Missouri Botanical Garden, 2007).',
-    nombreComún: 'Manzanilla',
+    nombreComún   : 'Manzanilla',
     parteUtilizada: 'Flores',
     usosTradicionales:
       'La planta se emplea en caso de dolores menstruales, dolor de estómago, diarrea, cólicos, úlcera gástrica, dispesia, cefalea, hemorroides y flatulencia. Se usa además como antiinflamatorio, fungicida, bactericida, espasmolítico y expectorante (Robineau L., 1991; Matos A., 1994; Cañigueral S. y col., 1998; Duke J., 2000; Del Rio P., 2005).',
@@ -1770,9 +1770,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'MARRUBIO BLANCO',
     nombreCientífico: 'Marrubium vulgare L.',
-    sinónimos: 'No se conocen (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Marrubio blanco, marrubio, juanrubio, malvarrubia, matico',
-    parteUtilizada: 'Sumidades floridas',
+    sinónimos       : 'No se conocen (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Marrubio blanco, marrubio, juanrubio, malvarrubia, matico',
+    parteUtilizada  : 'Sumidades floridas',
     usosTradicionales:
       'Las partes aéreas de la planta se emplean como tónico digestivo, diaforético, antitusígeno, aperitivo, carminativo y expectorante. Externamente se usan en el tratamiento de heridas, úlceras y lesiones cutáneas (Fetrow C. y col., 2000.; Lorenzi H. y col., 2002.; Vanaclocha B. y col., 2003; Krapp K y col., 2005).',
     principalesConstituyentes:
@@ -1780,7 +1780,7 @@ export const vademecumPlants: VademecumPlantData[] = [
     actividadFarmacológica:
       'Estudios realizados con el extracto acuoso de la planta, en ratas, mostraron actividad hipotensora (El Bardai S. y col., 2001, 2004). Compuestos aislados del marrubio exhibieron actividad antiinflamatoria (Sahpaz S. y col.. 2002) Se determinó actividad analgésica de la marrubiína y sus derivados, en ratones (Meyre-Silva C. y col., 2005).',
     indicaciones: 'Uso interno: Expectorante',
-    posología: 'Modo de empleo: Oral 4.5g de la droga al día',
+    posología   : 'Modo de empleo: Oral 4.5g de la droga al día',
     contraindicacionesYPrecauciones:
       'Contraindicado en pacientes con problemas cardíacos o renales.',
     interacciónConOtrosMedicamentos:
@@ -1845,9 +1845,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'MEJORANA',
     nombreCientífico: 'Origanum majorana L.',
-    sinónimos: 'Origanum hortensis Moench (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Mejorana',
-    parteUtilizada: 'Hojas y flores',
+    sinónimos       : 'Origanum hortensis Moench (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Mejorana',
+    parteUtilizada  : 'Hojas y flores',
     usosTradicionales:
       'Las partes aéreas se utilizan en infusión como carminativo, antiespasmódico, sedante, estomáquico y para tratar jaquecas (García Barriga H., 1975; Pérez E., 1996).',
     principalesConstituyentes:
@@ -1922,9 +1922,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'NOGAL BLANCO',
     nombreCientífico: 'Juglans cinerea L.',
-    sinónimos: 'No se reportan (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Nogal blanco, nogal ceniciento',
-    parteUtilizada: 'Hojas',
+    sinónimos       : 'No se reportan (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Nogal blanco, nogal ceniciento',
+    parteUtilizada  : 'Hojas',
     usosTradicionales:
       'Se le atribuyen actividades como catártico mediano, colagogo y agente dermatológico. Se ha utilizado en casos de constipación crónica asociada con dispepsia y disfunción hepática. Por vía tópica se emplea en erupciones exudativas de la piel (De Faría E., 1983).',
     principalesConstituyentes:
@@ -1935,7 +1935,7 @@ export const vademecumPlants: VademecumPlantData[] = [
     posología:
       'Modo de empleo: Oral Extracto 1:1 en alcohol de 25%: 2-6mL 3 veces al día 250mg de la droga, una a 3 veces al día.',
     contraindicacionesYPrecauciones: 'Enfermedad hepática.',
-    toxicidad: 'No se encuentran reportes sobre estudios realizados.',
+    toxicidad                      : 'No se encuentran reportes sobre estudios realizados.',
     formasFarmacéuticasYOtrasPreparaciones:
       'Cápsulas con polvo de hojas de nogal blanco. Extracto 1:1 en alcohol.',
     bibliografía:
@@ -1967,7 +1967,7 @@ export const vademecumPlants: VademecumPlantData[] = [
     formasFarmacéuticasYOtrasPreparaciones:
       'Cápsulas con aceite de onagra. Tintura.',
     bibliografia:
-      "• Fetrow C., Avila J., (2000), Manual de Medicina Alternativa para o Profissional, Editora Guanabara Koogan S.A., Rio de Janeiro, pp. 264-267 • Del Río P., (12-2005), Vademécum de Fitoterapia. Quintana de Rueda (León, España). En http://users.servicios.retacal.es/pdelrio/VF.pdf • DerMarderosian A., (2001), Guide to Popular Natural Products. 2nd edition. Published by Facts and Comparisons, St Louis, Missouri, pp. 83-85 • Dr. Duke's Phytochemical and Ethnobotanical Databases (10-2007). Http://www.ars-grin.gov/cgi-bin/duke/farmacy2.pl • Ghasemnezhad A., Honermeier B., (2007), Seed yield, oil content and fatty acid composition of Oenothera biennis L. affected by harvest date and harvest method, Industrial Crops and Products, 25, 274-281. • Missouri Botanical Garden, (10-2007), Http://mobot.mobot.org/cgi-bin/search_vast • Tyler V., (2003), The Honest Herbal. A Sensible Guide to the Use of Herbs and Related Remedies. 3rd edition. Pharmaceutical Products Press. New York, pp.123-125. • Vanaclocha B, Cañigueral S., (2003), Fitoterapia. Vademécum de Prescripción. 4a edición. Editorial Masson, Barcelona, pp. 387-388 • WHO, (2002), Monographs on Selected Medicinal Plants. Vol. 2. World Health Organization, pp. 217-230. OREGANO (Vademécum escanear)",
+      '• Fetrow C., Avila J., (2000), Manual de Medicina Alternativa para o Profissional, Editora Guanabara Koogan S.A., Rio de Janeiro, pp. 264-267 • Del Río P., (12-2005), Vademécum de Fitoterapia. Quintana de Rueda (León, España). En http://users.servicios.retacal.es/pdelrio/VF.pdf • DerMarderosian A., (2001), Guide to Popular Natural Products. 2nd edition. Published by Facts and Comparisons, St Louis, Missouri, pp. 83-85 • Dr. Duke\'s Phytochemical and Ethnobotanical Databases (10-2007). Http://www.ars-grin.gov/cgi-bin/duke/farmacy2.pl • Ghasemnezhad A., Honermeier B., (2007), Seed yield, oil content and fatty acid composition of Oenothera biennis L. affected by harvest date and harvest method, Industrial Crops and Products, 25, 274-281. • Missouri Botanical Garden, (10-2007), Http://mobot.mobot.org/cgi-bin/search_vast • Tyler V., (2003), The Honest Herbal. A Sensible Guide to the Use of Herbs and Related Remedies. 3rd edition. Pharmaceutical Products Press. New York, pp.123-125. • Vanaclocha B, Cañigueral S., (2003), Fitoterapia. Vademécum de Prescripción. 4a edición. Editorial Masson, Barcelona, pp. 387-388 • WHO, (2002), Monographs on Selected Medicinal Plants. Vol. 2. World Health Organization, pp. 217-230. OREGANO (Vademécum escanear)',
   },
   {
     nombreDeLaPlanta: 'OREGANO',
@@ -2024,7 +2024,7 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'ORTIGA MENOR',
     nombreCientífico: 'Urtica urens L.',
-    sinónimos: 'No se encuentran',
+    sinónimos       : 'No se encuentran',
     nombresComunes:
       'Ortiga, ortiga negra, ortiga común, ortiga menor, picamoscas, ortiga blanca .',
     parteUtilizada: 'Hojas',
@@ -2154,7 +2154,7 @@ export const vademecumPlants: VademecumPlantData[] = [
     nombreCientífico: 'Petroselinum crispum (Mill) Nyman ex A.W. Hill',
     sinónimos:
       'Apium crispum Mill., Apium petroselinum L., Carum petroselinum (L.) Benth. & Hook, Petroselinum crispum (Mill.) Mansf., Petroselinum crispum (Mill.) Nyman., Petroselinum hortense Hoffm., Petroselinum hortense var. Crispum L.H. Bailey, Petroselinum petroselinum (L.) H. Karst., Petroselinum sativum Hoffm., Petrselinum vulgare Lag., Selinum petroselinum (L.) E.H.L. Krause. (Missouri Botanical Garden, 2007).',
-    nombreComún: 'Perejil',
+    nombreComún   : 'Perejil',
     parteUtilizada: 'Hojas, frutos y raíces',
     usosTradicionales:
       'La planta es considerada como diurética, emenagoga, sedante, emoliente y antiparasitaria. Es empleada en casos de bronquitis crónica, asma bronquial y dispepsia. Las raíces y frutos se utilizan en desórdenes menstruales, cistitis, edemas, cálculos renales e indigestión. La planta es útil en el tratamiento de afecciones hepáticas, renales y de las vías urinarias. Las semillas verdes y las hojas trituradas se aplican en forma de cataplasma como antiinflamatorio. Las semillas se emplean en afecciones gastrointestinales y neuralgias (Portilla A., 1951; Lorenzi H. y col., 2002).',
@@ -2179,9 +2179,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'PINO MARITIMO',
     nombreCientífico: 'Pinus pinaster Aiton',
-    sinónimos: 'Ninguno conocido(Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Pino marítimo, pino rodeno',
-    parteUtilizada: 'Corteza',
+    sinónimos       : 'Ninguno conocido(Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Pino marítimo, pino rodeno',
+    parteUtilizada  : 'Corteza',
     usosTradicionales:
       'La corteza se usa como cicatrizante, hipocolesterolemiante, antitumoral, contra la arteriosclerosis y la insuficiencia venosa, antihipertensivo, antiinflamatorio, en disfunciones de la circulación y mejora la microcirculación (Packer L. y col., 1999; Volker S. y col., 2002; Sridevi D. y col., 2002; Durackova Z. y col., 2003).',
     principalesConstituyentes:
@@ -2232,9 +2232,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'PSYLLIUM',
     nombreCientífico: 'Plantago psyllium L.',
-    sinónimos: 'Plantago afra L. (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Zaragatona, psyllium, indian plantago',
-    parteUtilizada: 'Semillas',
+    sinónimos       : 'Plantago afra L. (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Zaragatona, psyllium, indian plantago',
+    parteUtilizada  : 'Semillas',
     usosTradicionales:
       'Las semillas se utilizan como laxante, hipocolesterolemiante, disminuyen la absorción de glúcidos, se emplean como agente tópico en problemas de la piel, antiinflamatorio y diurético (Beth H. y col., 1997; Guido M., y col., 2004; Del Río P., 2005).',
     principalesConstituyentes:
@@ -2248,7 +2248,7 @@ export const vademecumPlants: VademecumPlantData[] = [
       'Estados inflamatorios u obstructivos del tracto digestivo, apendicitis, obstrucción biliar, embarazo y lactancia. Se debe monitorizar al paciente cuando aparecen reacciones alérgicas (dermatitis, erupciones cutáneas).',
     interacciónConOtrosMedicamentos:
       'Puede potenciar el efecto de medicamentos cardioactivos (β-bloqueadores, bloqueadores de canales de calcio, digitálicos) (Fetrow C. y col., 2000). La planta puede interactuar con litio y carbamazepina disminuyendo sus concentraciones en plasma. (DerMaresorian A., 2001). Puede disminuir la absorción de vitaminas, minerales y diversos medicamentos (Del Rio P., 2005). La ingesta de psyllium con plantas y suplementos que alteren el azúcar en la sangre puede incrementar el riesgo de hipoglicemia (Medline plus, 2007).',
-    toxicidad: 'No se encuentran reportes sobre estudios de toxicidad.',
+    toxicidad                             : 'No se encuentran reportes sobre estudios de toxicidad.',
     formasFarmacéuticasYOtrasPreparaciones: 'Polvo para reconstituir.',
     bibliografía:
       '• Beth H., Sallee M., Mark P., James W., (1997), Psyllium enriched cereals lower blood total cholesterol and LDL cholesterol, but nor HDL cholesterol, in hypercholesterolemic adults: results of a meta-analysis, J. Nut., 127, 1973-1980 • Del Rio P., (01-2005), Vademécum de Fitoterapia. Quintana de Rueda (León, España), pp.61. http://users.servicios.retacal.es/pdelrio/VF.pdf • DerMardesorian A., (2001), Guide to Popular Natural Products. 2da edition. Editorial Facts & Comparisons, St. Louis, Missouri, pp. 194-197 • Fetrow Ch., Avila R, (2000), Manual de Medicina Alternativa. Ed. Guanabara Koogan S.A., Rio de Janeiro, pp. 632-634 • Font Quer P., (1985), Las Plantas Medicinales. El Dioscorides Renovado. Ed. Labor S.A., Barcelona, pp. 720, 721. • Guido M., Eldon A., Alun L, Rollin B., (2004), Effect of time of administration on cholesterol-lowering by psyllium: a randomized cross-over study in normocholesterolemic or slighftly hypercholesterolemic subjects, Nut. J., 3,17 • Medline                                   plus.,                             (11-2007). http://www.nlm.nih.gov/medlineplus/spanish/druginfo/natural/patient-psyllium.html • McRofrie J., Daggy B., Morel J., Diersing P., (1998), Psyllium is superior to docusatfe sodium in treatment of chronic constipation, Aliment Pharm. Ther., 12, 491- 497 • Missouri Botanical Garden. (10-2007) http://mobot.mobot.org/cgi-bin/search_vast • Rodriguez M., Guerrero F., Lazcano G., (1998), Lipid and glucose lowering efficacy of Plantago psyllium in type II diabetes, J. Diabetes and Complications, 12, 273-278 • Romero A., Romero J., Galavis S., Fernandez M., (1998), Cookies enriched with Psyllium or oat bran lower plasma LDL colesterol in normal and hypercholesterolemic men from northern Mexico, J. Amer. Coll. Nut., 17(6), 601-608. QUINA',
@@ -2308,9 +2308,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'ROMERO',
     nombreCientífico: 'Rosmarinus officinalis L.',
-    sinónimos: 'Ninguno (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Romero, romeo, rosmarino, aroma de mar',
-    parteUtilizada: 'Hojas y flores',
+    sinónimos       : 'Ninguno (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Romero, romeo, rosmarino, aroma de mar',
+    parteUtilizada  : 'Hojas y flores',
     usosTradicionales:
       'La planta se emplea como colerético, colagogo, estimulante del apetito y de las secreciones gástricas y en el tratamiento de desórdenes digestivos y flatulencia. Externamente, en forma de emplasto, para tratar eczemas o acelerar la cicatrización de las heridas (Cañigueral S. y col., 1998; Krapp K. y col., 2005).',
     principalesConstituyentes:
@@ -2332,9 +2332,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'RUDA',
     nombreCientífico: 'Ruta graveolens L.',
-    sinónimos: 'Ruta hortensis Mill. (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Ruda',
-    parteUtilizada: 'Parte aérea',
+    sinónimos       : 'Ruta hortensis Mill. (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Ruda',
+    parteUtilizada  : 'Parte aérea',
     usosTradicionales:
       'Se emplea en desórdenes menstruales e inflamaciones. Se utiliza además como espasmolítico, antibacteriano, antifúngico, emenagogo, antitusivo, antihelmíntico y para picaduras de insectos y artritis (Mark B., 1988; Fetrow C. y col., 2000; Lorenzi H., y col., 2002).',
     principalesConstituyentes:
@@ -2356,7 +2356,7 @@ export const vademecumPlants: VademecumPlantData[] = [
       '• Dermardesorian A., Beutler J., (2002), The Review of Natural Products, Editorial Facts and Comparisons, St. Louis, Missouri, pp. 561, 562. • Fetrow C., Avila R. (2000), Manual de Medicina Alternativa. Ed. Guanabara Koogan S.A., Rio de Janeiro, pp. 105, 106. • James A., (2000), Handbook of Medicinal Herbs. Editorial CRC Press Inc. Bocaratón, Florida, pp. 417, 418. • Lorenzi H., Abreu M., (2002), Plantas Medicinales no Brazil. Ed. Instituto Plantarum de Estudios da Flora Lda, pp. 426, 427. • Mark B., (1988), The Complete German Commission E Monographs. Therapeutic Guide to Herbal Medicines. Ed. American Botanical Council, pp.370. • Missouri Botanical Garden, (12-2007), w3TROPICOS http://mobot.mobot.org/cgi- bin/search_vast. • Oliva A., Lahoz E., Contillo R., Aliotta G., (1999), Fungistatic activity of Ruta graveolens extract and its allelochemicals, J. Chem. Ecol., 25, 519-526. • Ratheesh M., Helen A., (2007), Anti-inflammatory activity of Ruta graveolens Linn. on carrageenan induced paw edema in wistar male rats, African J. Biotech., 6 (10), 1209-1211. • Raghav S., Gupta B., Agrawal C., Goswami K., Das H., (2006), Anti-inflammatory effect of Ruta graveolens L. in murine macrophage cells, J. Ethnoparmacology., 104, 234-239. RUIBARBO',
   },
   {
-    nombreDeLaPlanta: 'RUIBARBO',
+    nombreDeLaPlanta  : 'RUIBARBO',
     nombresCientíficos: 'Rheum officinale H. Bn. Rheum palmatum L.',
     sinónimos:
       'Para Rheum palmatum L. : Rheum potaninii Losinsk., Rheum qinlingense Y.K. Yang. J.K.Wu. & D.K. Zhang. (Missouri Botanical Garden). Para Rheum officinale H.Bn., no se reportan sinónimos. (Missouri Botanical Garden)',
@@ -2413,9 +2413,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'SALVIA',
     nombreCientífico: 'Salvia officinalis L.',
-    sinónimos: 'No se encuentran (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Salvia, salima',
-    parteUtilizada: 'Hojas',
+    sinónimos       : 'No se encuentran (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Salvia, salima',
+    parteUtilizada  : 'Hojas',
     usosTradicionales:
       'Se emplea como antiséptico, astringente, antiinflamatorio, carminativo, bacteriostático, eupéptico, antitranspirante, espasmolítico y cicatrizante (Cañigueral S. y col., 1998; Lu Y. y col., 1999; Del Río P, 2005).',
     principalesConstituyentes:
@@ -2462,14 +2462,14 @@ export const vademecumPlants: VademecumPlantData[] = [
     formasFarmacéuticasYOtrasPreparaciones:
       'Látex de sangre de drago. Extracto atomizado de la planta. Crema de sangre de drago. Solución tópica de sangre de drago',
     bibliografia:
-      "• Bettolo R.N., Scarpati M.L., (1989), Alkaloids of Croton draconoides, Phytochemistry, 18, 520. • Cai Y., Chen Z.P., Phillipson J.D., (1993), Diterpenes from Croton lechleri, Phytochemistry, 32,755–760. • Carlin L., Vaisberg A.J., Hammond G.B., (1996), Isolation of sinoacutine from the leaves of Croton lechleri, Planta. Med., 62, 90, 91. • Carlson T.J.S., King S.R., (2000), Sangre de drago (Croton lechleriMüell.-Arg.), A phytomedicine for the treatment of diarrhea, Healthnotes Rev. Complement Integrative Med., 7, 315–320. • Desmarchelier C., Witting Schaus F., Coussio J., Cicca G., (1997), Effects of sangre de drago from Croton lechleri Müell. Arg. on the production of active oxygen radicals, J. Ethnopharmacol., 58, 103–108. • Gabriel S.E., Davenport S.E., Steagall R.J., Vimal V., Carlson T., Rozhon E.J., (1999), A novel plant-derived inhibitor of cAMPmediated fluid and chloride secretion, Am. J. Physiol. Gastrointest. Liver Physiol., 276, G58–G63. • Graham J.G., Quinn M.L., Fabricant D.S., Farnsworth N.R., (2000), Plants used against cancer, an extension of the work of Jonathan Hartwell, J. Ethnopharmacology, 73, 347–377. • Hernández J., Delgado G., (1992), Terpenoids from aerial parts of Croton draco, Fitoterapia, LXIII 4, 377-378. • Holodniy M., Koch J., Mistal M., Schmidt J.M., Khandwala A., Pennington J.E., Porter S.B., (1999), A double blind, randomized, placebo-controlled phase II study to assess the safety and efficacy of orally administered SP-303 for the symptomatic treatment of diarrhoea in patients with AIDS, Am. J. Gastroenterol., 94(11), 3267– 3273. • Itokwa H., Ichihara Y., Mochizuki M., Enomori T., Morita H., Shirota O., Inamatsu M., Takeya K., (1991), A cytotoxic substance from sangre de drago, Chem. Pharm. Bull., 39, 1041–1042. • Jones K., (2003), Review of Sangre de Drago (Croton lechleri), A South American tree sap in the treatment of diarrhea, inflammation, insect bites, viral infections, and wounds: traditional uses to clinical Research. J. Altern. Complem. Med. 9(6), 877–896 • Lopes M.I., Saffi J., Echeverrigaray S., Pegas J.A., Salvador M., (2004), Mutagenic and antioxidant activities of Croton lechleri sap in biological systems, J. Ethnopharm., 95, 437–445 • Milanowski D.J., Winter R.E.K., Elvin-Lewis M.P.F., Lewis W.H., (2002), Geographic distribution of three alkaloid chemotypes of Croton lechleri, J. Nat. Prod., 65, 814–819. • Miller M.J.S., Vergnolle N., McKnight W., Musah R.A., Davison C.A., Trentacosti A.M., Thompson J.H., Sandoval M., Wallace J.L., (2001), Inhibition of neurogenic inflammation by the Amazonian herbal medicine sangre de grado, J. Invest. Dermatol., 117, 725–730 • Missouri Botanical Garden (07-2007). Http://mobot.mobot.org/cgi-bin/search_vast • Perdue G., Blomster R.N., Blake D.A., Farnsworth N.R., (1979), South American plants II: Taspine isolation and antiinflammatory activity, J. Pharm. Sci., 68, 124–126. • Pieters L., De Bruyne T., Claeys M., Vlietnick A., Calomme M., Vanden Berghe D., (1993), Isolation of a dihydrobenzofuran lignan from South American dragon's blood (Croton spp.) as an inhibitor of cell proliferation, J. Nat. Prod., 56, 899 (Abstract) • Rossi D., Bruni R., Bianchi N., Chiarabelli C., Gambari R., Medici A., Lista A., Paganetto G., (2003), Evaluation of the mutagenic, antimutagenic and antiproliferative potential of Croton lechleri (Muell. Arg.) látex, Phytomedicine, 10, 139–144. • Tamariz J.H., Capcha R., Palomino E.J., Aguilar J., (2003), Actividad antibacteriana de la sangre de grado (Croton lechleri) frente al Helicobacter pylori, Rev. Med. Hered., 14, 81-88. • Ubillas R., Jolad S.D., Bruening R.C., Kernan M.R., King S.R., Sesin D.F., Barrett M., Stoddart C.A., Flaster T., Kuo J., Ayala F., Meza E., Castañel M., McMeekin D., Rozhon E., Tempesta M.S., Barnard D., Huffman J., Smee D., Sidwell R., Soike K., Brazier A., Safrin S., (1994), SP-303, an antiviral oligomeric proanthocyanidin from the látex of Croton lechleri (sangre de drago), Phytomedicine, 1, 77–106. • Vaisberg A.J., Milla M., Del Carmen M., Cordova J.L., De Agusti E.R., Ferreyra R., Carlin L., Hammond G.B., (1989), Taspine is the cicatrizant principle in sangre de drago extracted from Croton lechleri, Planta Med., 55, 140–143. SAUCE",
+      '• Bettolo R.N., Scarpati M.L., (1989), Alkaloids of Croton draconoides, Phytochemistry, 18, 520. • Cai Y., Chen Z.P., Phillipson J.D., (1993), Diterpenes from Croton lechleri, Phytochemistry, 32,755–760. • Carlin L., Vaisberg A.J., Hammond G.B., (1996), Isolation of sinoacutine from the leaves of Croton lechleri, Planta. Med., 62, 90, 91. • Carlson T.J.S., King S.R., (2000), Sangre de drago (Croton lechleriMüell.-Arg.), A phytomedicine for the treatment of diarrhea, Healthnotes Rev. Complement Integrative Med., 7, 315–320. • Desmarchelier C., Witting Schaus F., Coussio J., Cicca G., (1997), Effects of sangre de drago from Croton lechleri Müell. Arg. on the production of active oxygen radicals, J. Ethnopharmacol., 58, 103–108. • Gabriel S.E., Davenport S.E., Steagall R.J., Vimal V., Carlson T., Rozhon E.J., (1999), A novel plant-derived inhibitor of cAMPmediated fluid and chloride secretion, Am. J. Physiol. Gastrointest. Liver Physiol., 276, G58–G63. • Graham J.G., Quinn M.L., Fabricant D.S., Farnsworth N.R., (2000), Plants used against cancer, an extension of the work of Jonathan Hartwell, J. Ethnopharmacology, 73, 347–377. • Hernández J., Delgado G., (1992), Terpenoids from aerial parts of Croton draco, Fitoterapia, LXIII 4, 377-378. • Holodniy M., Koch J., Mistal M., Schmidt J.M., Khandwala A., Pennington J.E., Porter S.B., (1999), A double blind, randomized, placebo-controlled phase II study to assess the safety and efficacy of orally administered SP-303 for the symptomatic treatment of diarrhoea in patients with AIDS, Am. J. Gastroenterol., 94(11), 3267– 3273. • Itokwa H., Ichihara Y., Mochizuki M., Enomori T., Morita H., Shirota O., Inamatsu M., Takeya K., (1991), A cytotoxic substance from sangre de drago, Chem. Pharm. Bull., 39, 1041–1042. • Jones K., (2003), Review of Sangre de Drago (Croton lechleri), A South American tree sap in the treatment of diarrhea, inflammation, insect bites, viral infections, and wounds: traditional uses to clinical Research. J. Altern. Complem. Med. 9(6), 877–896 • Lopes M.I., Saffi J., Echeverrigaray S., Pegas J.A., Salvador M., (2004), Mutagenic and antioxidant activities of Croton lechleri sap in biological systems, J. Ethnopharm., 95, 437–445 • Milanowski D.J., Winter R.E.K., Elvin-Lewis M.P.F., Lewis W.H., (2002), Geographic distribution of three alkaloid chemotypes of Croton lechleri, J. Nat. Prod., 65, 814–819. • Miller M.J.S., Vergnolle N., McKnight W., Musah R.A., Davison C.A., Trentacosti A.M., Thompson J.H., Sandoval M., Wallace J.L., (2001), Inhibition of neurogenic inflammation by the Amazonian herbal medicine sangre de grado, J. Invest. Dermatol., 117, 725–730 • Missouri Botanical Garden (07-2007). Http://mobot.mobot.org/cgi-bin/search_vast • Perdue G., Blomster R.N., Blake D.A., Farnsworth N.R., (1979), South American plants II: Taspine isolation and antiinflammatory activity, J. Pharm. Sci., 68, 124–126. • Pieters L., De Bruyne T., Claeys M., Vlietnick A., Calomme M., Vanden Berghe D., (1993), Isolation of a dihydrobenzofuran lignan from South American dragon\'s blood (Croton spp.) as an inhibitor of cell proliferation, J. Nat. Prod., 56, 899 (Abstract) • Rossi D., Bruni R., Bianchi N., Chiarabelli C., Gambari R., Medici A., Lista A., Paganetto G., (2003), Evaluation of the mutagenic, antimutagenic and antiproliferative potential of Croton lechleri (Muell. Arg.) látex, Phytomedicine, 10, 139–144. • Tamariz J.H., Capcha R., Palomino E.J., Aguilar J., (2003), Actividad antibacteriana de la sangre de grado (Croton lechleri) frente al Helicobacter pylori, Rev. Med. Hered., 14, 81-88. • Ubillas R., Jolad S.D., Bruening R.C., Kernan M.R., King S.R., Sesin D.F., Barrett M., Stoddart C.A., Flaster T., Kuo J., Ayala F., Meza E., Castañel M., McMeekin D., Rozhon E., Tempesta M.S., Barnard D., Huffman J., Smee D., Sidwell R., Soike K., Brazier A., Safrin S., (1994), SP-303, an antiviral oligomeric proanthocyanidin from the látex of Croton lechleri (sangre de drago), Phytomedicine, 1, 77–106. • Vaisberg A.J., Milla M., Del Carmen M., Cordova J.L., De Agusti E.R., Ferreyra R., Carlin L., Hammond G.B., (1989), Taspine is the cicatrizant principle in sangre de drago extracted from Croton lechleri, Planta Med., 55, 140–143. SAUCE',
   },
   {
     nombreDeLaPlanta: 'SAUCE',
     nombreCientífico: 'Salix humboldtiana Willd',
-    sinónimos: 'Salix chilensis Molina (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Sauce, sauce chileno, sauce amargo, sauz',
-    parteUtilizada: 'Corteza y hojas',
+    sinónimos       : 'Salix chilensis Molina (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Sauce, sauce chileno, sauce amargo, sauz',
+    parteUtilizada  : 'Corteza y hojas',
     usosTradicionales:
       'La corteza se emplea en infusión como febrífugo, astringente, aperitivo, emenagogo, antiespasmódico, antiinflamatorio, analgésico y afrodisíaco y en casos de reumatismo. (García-Barriga H., 1974; Roig J., 1988; Piñeros J. y col., 1988; Gupta M., 1995; Fiebich B. y col., 2004; Setty A. y col., 2005).',
     principalesConstituyentes:
@@ -2506,7 +2506,7 @@ export const vademecumPlants: VademecumPlantData[] = [
       'Modo de empleo: Oral. Decocción o infusión de las partes aéreas: una taza 2-3 veces al día.',
     contraindicacionesYPrecauciones:
       'No se han reportado contraindicaciones para el uso de la planta',
-    toxicidad: 'No se conocen reportes sobre estudios realizados.',
+    toxicidad                             : 'No se conocen reportes sobre estudios realizados.',
     formasFarmacéuticasYOtrasPreparaciones: 'Infusión. Decocción.',
     bibliografía:
       '• Arango E., Londoño B., Segura C., Solarte Y., Herrera S., Saez J., Carmona J., Blair S., (2006), Prevention of sporogony of Plasmodium vivax in Anopheles albimanus by steroids of Solanum nudum Dunal (Solanaceae), Phytother. Res., 20, 444–447. • Blair S., Correa A., Madrigal B., Zuluaga C., Franco H., (1989), Plantas Antimaláricas. Costa Pacifica Colombiana. Universidad de Antioquia. Convenio Colombo-holandés. Programa de Pequeños Proyectos Productivos-Pladercop, Medellín, pp. 266-270. • Londoño B., Arango E., Zapata C., Herrera S., Saez J., Blair S., Carmona J., (2006), Effect of solanum nudum dunal (Solanaceae) steroids on hepatic trophozoites of Plasmodium vivax, Phytother. Res., 20, 267–273. • Missouri Botanical Garden (08-2007). Http://mobot.mobot.org/cgi-bin/search_vast • Pabón A., Carmona J., Maestre A., Camargo M., Blair S., (2002), Inhibition of P. falciparum by steroids isolated from Solanum nudum, Phytother. Res., 16, 59–62. • Piro O., Castellano E., Zapata G., Trujillo S., Baran E., (2002), Low temperature crystal structure of natural diosgenone, Z. Naturforsch. Verlag der Zeitschrift für Naturforschung, Tübingen., 57c, 947-950. • Saez J., Cardona W., Espinal D., Blair S., Mesa J., Bocar M., Jossang A., (1998), Five new steroids from Solanum nudum, Tetrahedron, 54(36), 10771-10778. SAUCO',
@@ -2514,9 +2514,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'SAUCO',
     nombreCientífico: 'Sambucus nigra L.',
-    sinónimos: 'No se conocen (Missouri Botanical Garden, 2007)',
-    nombreComún: 'Saúco',
-    parteUtilizada: 'Hojas, flores y frutos',
+    sinónimos       : 'No se conocen (Missouri Botanical Garden, 2007)',
+    nombreComún     : 'Saúco',
+    parteUtilizada  : 'Hojas, flores y frutos',
     usosTradicionales:
       'Las flores son usadas en infusiones para calmar la tos, sinusitis e inflamaciones del estómago. Las flores frescas son laxantes. Las hojas se aplican en cataplasmas en caso de afecciones dermatomucosas y se emplean en infusión como antiinflamatorias, galactogogas, laxantes, expectorantes, purgantes y sudoríficas. Los frutos maduros se emplean como purgantes, diuréticos y diaforéticos y como remedio contra las neuralgias (Cáceres A., 1996; Cañigueral S. y col., 1998).',
     principalesConstituyentes:
@@ -2539,9 +2539,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'SEN',
     nombreCientífico: 'Cassia angustifolia Vahl',
-    sinónimos: 'Cassia officinalis (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Sen, sen de la India',
-    parteUtilizada: 'Hojas',
+    sinónimos       : 'Cassia officinalis (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Sen, sen de la India',
+    parteUtilizada  : 'Hojas',
     usosTradicionales:
       'Por su propiedad laxante y purgante las hojas y frutos están indicados, por vía oral, para tratar el estreñimiento y situaciones en las que se requiera un vaciado intestinal (Cáceres A., 1996).',
     principalesConstituyentes:
@@ -2584,7 +2584,7 @@ export const vademecumPlants: VademecumPlantData[] = [
       'Hipersensibilidad a alguno de los componentes. Si se ha diagnosticado un tumor estrógeno-dependiente, consultar con el médico antes de consumir el producto.',
     interacciónConOtrosMedicamentos:
       'Los antibióticos de amplio espectro pueden disminuir la eficacia de la soya. La soya puede incrementar los niveles de teofilina, analgésicos no esteroidales, fenitoina, fluoxetina, fluvastatina, tamoxifeno, warfarina, cafeina, clozapina, ciclobenzaprina, fluvoxanina, olanzapina, propanolol, tacrina y zolmitriptan (Del Río P., 2005)',
-    toxicidad: 'No se conocen reportes sobre estudios realizados.',
+    toxicidad          : 'No se conocen reportes sobre estudios realizados.',
     formasFarmacéuticas: 'Cápsulas con extracto etanólico seco.',
     bibliografía:
       '• Del Río P.,(12-2005), Vademécum de Fitoterapia. Quintana de Rueda (León, España). http://users.servicios.retecal.es/pdelrio/vadem.html. • Associated                     content,                2007.               (10-2007). Http://www.associatedcontent.com/article/406699/propiedades_y_usos_medicinales_de _la.html • Lamartiniere, C. A., Zhang, J. X., and Cotroneo, M. S., (1998), Genistein studies in rats: potential for breast cancer prevention and reproductive and developmental toxicity, Am. J. Clin. Nutr., 68, 1400S-1405S. • Lu, L.J., Anderson, K.E., Grady, J.J.and Nagamani, M., (1996), Effects of soya consumption for one month on steroid hormones in premenopausal women: implications for breast cancer risk reduction, Cancer Epidemiol. Biomarkers Prev., 5, 63-70. • Missouri                    Botanical                Garden,               (10-2007), http://mobot.mobot.org/W3T/Search/vast.html • Nestel, P.J., Yamashita, T., Sasahara, T., Pomeroy, S., Dart, A., Komesaroff, P., Owen, A. and Abbey, M., (1997), Soy isoflavones improve systemic arterial compliance but not plasma lipids in menopausal and perimenopausal women, Arterioscler. Thromb. Vasc. Biol., 17, 3392-3398. • Plantamed., Soja, (10-2007), www.plantamed.com.br. • Wagner, J. D., Cefalu, W. T., Anthony, M. S., Litwak, K. N., Zhang, L., and Clarkson, T. B. (1997). Dietary soy protein and estrogen replacement therapy improve cardiovascular risk factors and decrease aortic cholesteryl ester content in ovariectomized cynomolgus monkeys, Metabolism, 46, 698-705. TOMATE',
@@ -2592,9 +2592,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'TOMATE',
     nombreCientífico: 'Solanum lycopersicum L.',
-    sinónimos: 'Lycopersicon esculentum Mill (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Tomate, tomate de riñón, tomate grande, tomate común',
-    parteUtilizada: 'Hojas',
+    sinónimos       : 'Lycopersicon esculentum Mill (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Tomate, tomate de riñón, tomate grande, tomate común',
+    parteUtilizada  : 'Hojas',
     usosTradicionales:
       'Se emplea externamente en el tratamiento de candidiasis y sarna. Internamente se usa en el tratamiento de gastralgias y angina de pecho (Font Quer P., 1985; Piñeros J. y col., 1988; Weniger B. y col., 1989; Germosén-Robineau L., 1995).',
     principalesConstituyentes:
@@ -2605,7 +2605,7 @@ export const vademecumPlants: VademecumPlantData[] = [
     posología:
       'Modo de empleo: Tópico. Para candidiasis bucal: aplicar solución tres veces al día.',
     contraindicacionesYPrecauciones: 'Para uso externo únicamente.',
-    toxicidad: 'No se conocen reportes sobre toxicidad.',
+    toxicidad                      : 'No se conocen reportes sobre toxicidad.',
     formasFarmacéuticasYOtrasPreparaciones:
       'Solución a partir de extracto de hojas de tomate.',
     bibliografía:
@@ -2614,9 +2614,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'TORONJIL',
     nombreCientífico: 'Melissa officinalis L.',
-    sinónimos: 'No se encuentran (Missouri Botanical Garden, 2007)',
-    nombreComún: 'Toronjil',
-    parteUtilizada: 'Tallos y hojas',
+    sinónimos       : 'No se encuentran (Missouri Botanical Garden, 2007)',
+    nombreComún     : 'Toronjil',
+    parteUtilizada  : 'Tallos y hojas',
     usosTradicionales:
       'Se usa para calmar los nervios, aliviar los dolores espasmódicos y menstruales, bajar la fiebre y especialmente como carminativo, para el tratamiento de afecciones intestinales, dispepsia, dolor estomacal, flatulencia y náuseas. Tópicamente se utiliza en casos de halitosis y picaduras de insectos (García-Barriga H., 1975; Correa J. y col., 1989; Cañigueral S. y col., 1998; Martins E. y col., 2000; Lorenzi H. y col., 2002; Schulz V. y col., 2002).',
     principalesConstituyentes:
@@ -2678,8 +2678,8 @@ export const vademecumPlants: VademecumPlantData[] = [
       'Uso interno: Coadyuvante en el tratamiento de fragilidad capilar.',
     posología:
       'Modo de empleo: Oral Tabletas con planta pulverizada: una tableta tres veces al día. Infusión: 2-4g tres veces al día.',
-    contraindicacionesYPrecauciones: 'No se conocen.',
-    toxicidad: 'No se reportan estudios de toxicidad de la planta.',
+    contraindicacionesYPrecauciones       : 'No se conocen.',
+    toxicidad                             : 'No se reportan estudios de toxicidad de la planta.',
     formasFarmacéuticasYOtrasPreparaciones: 'Tabletas. Infusión',
     bibliografía:
       '• De Faria García E., (1983), British Herbal Pharmacopoeia. Publisher by The British Herbal Medicine Association, United Kingdom, pp. 90-91 • Del Río P., (2005), Vademécum de Fitoterapia. Quintana de Rueda (León, España) (11-2007). Http://users.servicios.retacal.es/pdelrio/VF.pdf.. • Jiang P., Burczynski F., Campbell C., Pierce G., Austria J., Briggs C., (2007), Rutin and flavonoid contents in three buckwheat species Fagopyrum esculentum, F. tataricum and F. homotropicum and their protective effects against lipid peroxidation, Food Research International, 40, 356-364. • Kim D., Lee W., No K., Park S., Lee M., Lim S., Roh S., (2003), Anti-allergic action of buckwheat (Fagopyrum esculentum Moench) grain extract, International immunopharmacology, 3, 129-136. • Missouri Botanical Garden (11-2007). Http://mobot.mobot.org/cgi-bin/search_vast • Mukoda T., Sun B. and Ishiguro A., (2001), Antioxidant activities of buckwheat hull extract toward various oxidative stress in vitro and in vivo, Biol. Pharm. Bull., 24, 209- 213. • Şensoy Í., Rosen R., Ho C., Karwe M., (2006), Effect of processing on buckwheat phenolics and antioxidant activity, Food Chemistry, 99, 388-393. • Sun T., Ho C., (2005), Antioxidant activities of buckwheat extracts, Food Chemistry, 90, 743-749. • Watanabe M., (2007), An anthocyanin compound in buckwheat sprouts and its contribution to antioxidant capacity, Biosci. Biotechnol. Biochem., 71, 579-582. TRIGO (Vademecum escanear)',
@@ -2707,7 +2707,7 @@ export const vademecumPlants: VademecumPlantData[] = [
     formasFarmacéuticasYOtrasPreparaciones:
       'Cápsulas blandas con aceite de germen de trigo. Salvado de trigo.',
     bibliografía:
-      "• Brodribb A., Humfreys D., (1976), Metabolic effect of bran in patients with diverticular disease, BMJ., 21, 425. • Dr. Duke's Phytochemical and Ethnobotanical Databases, (11-2007), http://www.ars- grin.gov/cgi-bin/duke/farmacy2.pl?1025 • Font Quer P., (1985), Plantas Medicinales. El Dioscórides Renovado. Editorial Labor S.A., Barcelona, pp. 713-715. • Maecka M., (2002), Antioxidant properties of the unsaponifiable matter isolated from tomato seeds, oat grains and wheat germ oil, Food Chem., 79, 327 • Missouri Botanical Garden, (11-2007), http://mobot.mobot.org/cgi-bin/search_vast. • Portilla A., (1951), Divulgación de Conocimientos Científicos sobre las Plantas más Utiles y Conocidas en Colombia, su Valor Alimenticio, Medicinal e Industrial, Editorial Luz S.A., Pasto, pp. 328-329 • Tarpila S., Miettinen T., Metsaranta L., (1978), Effects of bran on serum cholesterol, faecal mass, fat, bile acids and neutral sterols, and biliary lipids in patients with diverticular disease of the colon, Gut, 19, 137. UÑA DE GATO (Vademécum escanear)",
+      '• Brodribb A., Humfreys D., (1976), Metabolic effect of bran in patients with diverticular disease, BMJ., 21, 425. • Dr. Duke\'s Phytochemical and Ethnobotanical Databases, (11-2007), http://www.ars- grin.gov/cgi-bin/duke/farmacy2.pl?1025 • Font Quer P., (1985), Plantas Medicinales. El Dioscórides Renovado. Editorial Labor S.A., Barcelona, pp. 713-715. • Maecka M., (2002), Antioxidant properties of the unsaponifiable matter isolated from tomato seeds, oat grains and wheat germ oil, Food Chem., 79, 327 • Missouri Botanical Garden, (11-2007), http://mobot.mobot.org/cgi-bin/search_vast. • Portilla A., (1951), Divulgación de Conocimientos Científicos sobre las Plantas más Utiles y Conocidas en Colombia, su Valor Alimenticio, Medicinal e Industrial, Editorial Luz S.A., Pasto, pp. 328-329 • Tarpila S., Miettinen T., Metsaranta L., (1978), Effects of bran on serum cholesterol, faecal mass, fat, bile acids and neutral sterols, and biliary lipids in patients with diverticular disease of the colon, Gut, 19, 137. UÑA DE GATO (Vademécum escanear)',
   },
   {
     nombreDeLaPlanta: 'UÑA DE GATO',
@@ -2741,7 +2741,7 @@ export const vademecumPlants: VademecumPlantData[] = [
     nombreCientífico: 'Valeriana officinalis L.',
     sinónimos:
       'Valeriana baltica Pleijel, Valeriana exaltata J.C., Valeriana palustris Kreyer. (Missouri Botanical Garden, 2007).',
-    nombreComún: 'Valeriana',
+    nombreComún   : 'Valeriana',
     parteUtilizada: 'Raíz y rizomas',
     usosTradicionales:
       'Las raíces se usan en casos de histeria y otros trastornos nerviosos. Se emplea como calmante del dolor, antiespasmódico, sedante, carminativo, reduce la ansiedad, la tensión nerviosa, el insomnio y el dolor de cabeza. Tópicamente se usa para mejorar la irritación, las erupciones cutáneas y para tratar las articulaciones inflamadas (Krap D. y col., 2005).',
@@ -2844,9 +2844,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'VERBENA OFFICINALIS',
     nombreCientífico: 'Verbena officinalis L.',
-    sinónimos: 'Verbena setosa M. (Missouri Botanical Garden, 2007)',
-    nombreComún: 'Verbena',
-    parteUtilizada: 'Sumidades floridas',
+    sinónimos       : 'Verbena setosa M. (Missouri Botanical Garden, 2007)',
+    nombreComún     : 'Verbena',
+    parteUtilizada  : 'Sumidades floridas',
     usosTradicionales:
       'Tradicionalmente ha sido empleada en bronquitis, resfriados, cólicos, eczema, insomnio, neuralgias, distensión abdominal, dolor de cabeza, inflamaciones, tos y como antihelmíntica, antiespasmódica, astringente, expectorante, rubefaciente y febrífuga (Duke J., 1985; Fetrow C. y col., 2000).',
     principalesConstituyentes:
@@ -2867,9 +2867,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'VID',
     nombreCientífico: 'Vitis vinifera L.',
-    sinónimos: 'Cissus vinifera L. (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Uva, vid, vidueño, viduño, videira',
-    parteUtilizada: 'Hojas',
+    sinónimos       : 'Cissus vinifera L. (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Uva, vid, vidueño, viduño, videira',
+    parteUtilizada  : 'Hojas',
     usosTradicionales:
       'Las hojas son empleadas para disminuir la agregación plaquetaria y como venotónico, vasopresor, astringente y diurético. Se usan en síntomas asociados a insuficiencia venosa, hemorroides y fragilidad capilar (Lorenzi H. y col., 2002)',
     principalesConstituyentes:
@@ -2892,9 +2892,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'VIOLETA',
     nombreCientífico: 'Viola odorata L.',
-    sinónimos: 'No se encuentran (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Violeta, violeta común',
-    parteUtilizada: 'Hojas y flores',
+    sinónimos       : 'No se encuentran (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Violeta, violeta común',
+    parteUtilizada  : 'Hojas y flores',
     usosTradicionales:
       'Las flores se utilizan para ablandar la tos, fluidificar las secreciones de las vías respiratorias y facilitar la expectoración. Las hojas son utilizadas en el tratamiento de fiebres como antipirético. Las flores y las hojas se emplean en el tratamiento de la bronquitis, tos y tos ferina ( Font Quer P, 1985; De Faria E., 1999; Fetrow C y col.,2000).',
     principalesConstituyentes:
@@ -2917,9 +2917,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'VIOLETA',
     nombreCientífico: 'Achyrocline bogotensis H.B.K.',
-    sinónimos: 'Gnaphalium bogotense Kunth (Missouri Botanical Garden, 2006)',
-    nombresComunes: 'Cenizo, suso, vira-vira',
-    parteUtilizada: 'Partes aéreas',
+    sinónimos       : 'Gnaphalium bogotense Kunth (Missouri Botanical Garden, 2006)',
+    nombresComunes  : 'Cenizo, suso, vira-vira',
+    parteUtilizada  : 'Partes aéreas',
     usosTradicionales:
       'La decocción de las hojas y tallos es aplicada tópicamente para tratar enfermedades de la piel, principalmente para los barros y espinillas. El mayor uso es en forma de infusión para el tratamiento de la prostatitis. La infusión de las ramas es también empleada para el tratamiento de dolores renales y procesos inflamatorios y para limpiar las vías urinarias. Las hojas, las flores y los tallos frescos o secos en decocción son empleados contra la tos crónica y como expectorante en caso de enfermedades pulmonares (García Barriga H., 1975; Torrenegra R. y col., 1982; Girault L., 1987, Guerrero E. y col., 2005).',
     principalesConstituyentes:
@@ -2967,9 +2967,9 @@ export const vademecumPlants: VademecumPlantData[] = [
   {
     nombreDeLaPlanta: 'YERBABUENA',
     nombreCientífico: 'Mentha piperita L.',
-    sinónimos: 'Ninguno. (Missouri Botanical Garden, 2007)',
-    nombresComunes: 'Menta, hierbabuena de menta, piperita',
-    parteUtilizada: 'Tallos y hojas',
+    sinónimos       : 'Ninguno. (Missouri Botanical Garden, 2007)',
+    nombresComunes  : 'Menta, hierbabuena de menta, piperita',
+    parteUtilizada  : 'Tallos y hojas',
     usosTradicionales:
       'La infusión de las hojas se usa por vía oral para tratar afecciones gastrointestinales (atonía del estómago e intestino, dolor de estómago, flatulencia, indigestión, náuseas), respiratorias (resfrío, tos) y nerviosas (insomnio, nerviosismo, tensión, vértigo), así como fiebre, dolor de cabeza y migraña. Tópicamente se aplica en inhalaciones para resfríos, infecciones de la garganta y heridas y en cataplasmas para el prurito de la piel. El aceite esencial se usa en inhalaciones para reducir la fiebre, aliviar las náuseas y el vómito, mejorar la digestión y suavizar el sistema respiratorio (Roig J., 1988; Cáceres A., 1996; Krapp K. y col., 2005).',
     principalesConstituyentes:

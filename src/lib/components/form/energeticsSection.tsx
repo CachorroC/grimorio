@@ -6,14 +6,21 @@ import {
   PolaridadEnergeticaType,
   listaChakras,
   ChakraType,
+  listaDoshas,
+  TridoshasType,
 } from '#@/lib/types/especimenTypes';
 
 interface EnergeticsSectionProps {
   elementosAsociados: string;
   polaridadEnergetica: PolaridadEnergeticaType;
   chakrasAsociados: ChakraType[];
+  doshasQueControla: TridoshasType[];
   onChange: (
-    field: 'elementosAsociados' | 'polaridadEnergetica' | 'chakrasAsociados',
+    field:
+      | 'elementosAsociados'
+      | 'polaridadEnergetica'
+      | 'chakrasAsociados'
+      | 'doshasQueControla',
     value: any,
   ) => void;
 }
@@ -22,6 +29,7 @@ export default function EnergeticsSection({
   elementosAsociados,
   polaridadEnergetica,
   chakrasAsociados,
+  doshasQueControla,
   onChange,
 }: EnergeticsSectionProps) {
   const togglePolaridad = (val: 'Masculine' | 'Feminine') => {
@@ -65,6 +73,17 @@ export default function EnergeticsSection({
     }
   };
 
+  const toggleDosha = (dosha: TridoshasType) => {
+    const current = doshasQueControla || [];
+    const next = current.includes(dosha)
+      ? current.filter((d) => {
+          return d !== dosha;
+        })
+      : [...current, dosha];
+
+    onChange('doshasQueControla', next);
+  };
+
   return (
     <div className={styles.section}>
       <div className={styles.inputGroup}>
@@ -90,11 +109,43 @@ export default function EnergeticsSection({
         </select>
       </div>
 
+      {/* Ayurveda Doshas */}
+      <div
+        className={styles.inputGroup}
+        style={{
+          marginTop: '1.5rem',
+        }}
+      >
+        <label className={styles.label}>Doshas que Controla (Ayurveda)</label>
+        <div
+          style={{
+            display: 'flex',
+            gap: '1rem',
+            marginTop: '0.5rem',
+            flexWrap: 'wrap',
+          }}
+        >
+          {listaDoshas.map((dosha) => {
+            return (
+              <ToggleButton
+                key={dosha}
+                checked={(doshasQueControla || []).includes(dosha)}
+                onChange={() => {
+                  return toggleDosha(dosha);
+                }}
+              >
+                {dosha}
+              </ToggleButton>
+            );
+          })}
+        </div>
+      </div>
+
       {/* Polaridad Energética */}
       <div
         className={styles.inputGroup}
         style={{
-          marginTop: '1rem',
+          marginTop: '1.5rem',
         }}
       >
         <label className={styles.label}>Polaridad Energética</label>
@@ -165,3 +216,4 @@ export default function EnergeticsSection({
     </div>
   );
 }
+

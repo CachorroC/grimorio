@@ -101,7 +101,25 @@ const getElementColor = (
   }
 };
 
+const getDoshaColor = (
+  dosha: 'Vata' | 'Pitta' | 'Kapha'
+): string => {
+  switch ( dosha ) {
+      case 'Vata':
+        return 'var(--dosha-vata)';
+
+      case 'Pitta':
+        return 'var(--dosha-pitta)';
+
+      case 'Kapha':
+        return 'var(--dosha-kapha)';
+      default:
+        return 'var(--element-default)';
+  }
+};
+
 // --- Components ---
+
 
 const TagSection = (
   {
@@ -476,6 +494,24 @@ export default function PlantCookbook(
                       ),
                     },
                   ]}
+                />
+              )}
+
+              {plant.doshasQueControla && plant.doshasQueControla.length > 0 && (
+                <CustomColorTagSection
+                  title="Doshas (Ayurveda)"
+                  tags={plant.doshasQueControla.map(
+                    (
+                      dosha
+                    ) => {
+                      return {
+                        label   : dosha,
+                        hexColor: getDoshaColor(
+                          dosha
+                        ),
+                      };
+                    }
+                  )}
                 />
               )}
             </Box>

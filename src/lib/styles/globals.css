@@ -295,6 +295,9 @@
     --element-aire: #00bcd4;
     --element-agua: #1e88e5;
     --element-default: #9e9e9e;
+    --dosha-vata: #00bcd4;
+    --dosha-pitta: #ff7043;
+    --dosha-kapha: #66bb6a;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -368,6 +371,9 @@
     --element-aire: #a8e7f0; /* Brighter cyan */
     --element-agua: #b7dcfa; /* Lighter blue */
     --element-default: #eeeded; /* Lighter grey */
+    --dosha-vata: #a8e7f0;
+    --dosha-pitta: #ffab91;
+    --dosha-kapha: #c4e3c6;
   }
 }
 
