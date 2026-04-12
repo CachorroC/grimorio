@@ -393,7 +393,7 @@ export default function PlantCookbook(
                 p           : 'var(--spacing-md)',
                 bgcolor     : 'var(--surface-container-low)',
                 gap         : {
-                  xs: 0,
+                  xs: 1,
                   sm: 4,
                 },
               }}
