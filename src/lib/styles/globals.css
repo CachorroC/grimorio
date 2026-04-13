@@ -298,6 +298,7 @@
     --dosha-vata: #00bcd4;
     --dosha-pitta: #ff7043;
     --dosha-kapha: #66bb6a;
+
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -374,6 +375,19 @@
     --dosha-vata: #a8e7f0;
     --dosha-pitta: #ffab91;
     --dosha-kapha: #c4e3c6;
+    --uso-topico: #b3e5fc;
+    --uso-inhalado: #80cbc4;
+    --uso-oral: #a5d6a7;
+    --uso-sublingual: #c5e1a5;
+    --uso-nasal: #ce93d8;
+    --uso-otica: #9fa8da;
+    --uso-oftalmica: #81d4fa;
+    --uso-rectal: #bcaaa4;
+    --uso-vaginal: #f48fb1;
+    --uso-cataplasma: #ffcc80;
+    --uso-bano: #42a5f5;
+    --uso-sahumerio: #ffe082;
+    --uso-multiproposito: #bdbdbd;
   }
 }
 

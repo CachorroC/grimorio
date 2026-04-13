@@ -127,8 +127,17 @@ export default function EspecimenForm(
         initialData.correspondenciasEnergeticas || [],
         malesEmocionales: initialData.malesEmocionales || [],
         malesFisicos    : initialData.malesFisicos || [],
-        preparaciones   : initialData.preparaciones || [],
-        taxon           : {
+        preparaciones   : ( initialData.preparaciones || [] ).map(
+          (
+            p
+          ) => {
+            return {
+              ...p,
+              uso: p.uso || 'Uso Multipropósito',
+            };
+          }
+        ),
+        taxon: {
           ...initialState.taxon,
           ...( initialData.taxon || {} ),
           clados: initialData.taxon?.clados || [],
@@ -299,8 +308,17 @@ export default function EspecimenForm(
             savedData.correspondenciasEnergeticas || [],
             malesEmocionales: savedData.malesEmocionales || [],
             malesFisicos    : savedData.malesFisicos || [],
-            preparaciones   : savedData.preparaciones || [],
-            taxon           : {
+            preparaciones   : ( savedData.preparaciones || [] ).map(
+              (
+                p
+              ) => {
+                return {
+                  ...p,
+                  uso: p.uso || 'Uso Multipropósito',
+                };
+              }
+            ),
+            taxon: {
               ...savedData.taxon,
               clados: savedData.taxon?.clados || [],
             },

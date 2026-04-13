@@ -26,6 +26,7 @@ import Tooltip from '@mui/material/Tooltip';
 import CircleIcon from '@mui/icons-material/Circle';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import { EspecimenType,
+  PreparacionType,
   ChakraType,
   ElementosType, } from '#@/lib/types/especimenTypes';
 import { useAccordionScroll } from '#@/app/context/AcordionScrollContext';
@@ -115,6 +116,41 @@ const getDoshaColor = (
         return 'var(--dosha-kapha)';
       default:
         return 'var(--element-default)';
+  }
+};
+
+const getUsoColor = (
+  uso: PreparacionType['uso']
+): string => {
+  switch ( uso ) {
+      case 'Tópico':
+        return 'var(--uso-topico)';
+      case 'Inhalado':
+        return 'var(--uso-inhalado)';
+      case 'Oral':
+        return 'var(--uso-oral)';
+      case 'Sublingual':
+        return 'var(--uso-sublingual)';
+      case 'Nasal':
+        return 'var(--uso-nasal)';
+      case 'Ótica':
+        return 'var(--uso-otica)';
+      case 'Oftálmica':
+        return 'var(--uso-oftalmica)';
+      case 'Rectal':
+        return 'var(--uso-rectal)';
+      case 'Vaginal':
+        return 'var(--uso-vaginal)';
+      case 'Cataplasma':
+        return 'var(--uso-cataplasma)';
+      case 'Baño Terapéutico':
+        return 'var(--uso-bano)';
+      case 'Sahumerio':
+        return 'var(--uso-sahumerio)';
+      case 'Uso Multipropósito':
+        return 'var(--uso-multiproposito)';
+      default:
+        return 'var(--uso-multiproposito)';
   }
 };
 
@@ -667,23 +703,49 @@ export default function PlantCookbook(
                       borderColor : 'divider',
                       mb          : 1,
                       borderRadius: 1,
+                      borderLeft  : `6px solid ${ getUsoColor(
+                        prep.uso
+                      ) }`,
                     }}
                   >
                     <AccordionSummary
                       expandIcon={<ExpandMoreIcon />}
                       sx={{
-                        backgroundColor: 'action.hover',
+                        backgroundColor        : 'action.hover',
+                        borderBottom           : `2px solid ${ getUsoColor( prep.uso ) }`,
+                        borderBottomLeftRadius : 0,
+                        borderBottomRightRadius: 0,
                       }}
                     >
-                      <Typography
-                        variant="subtitle1"
-                        sx={{
-                          fontWeight   : 'bold',
-                          textTransform: 'capitalize',
-                        }}
+                      <Box sx={{
+                        display      : 'flex',
+                        flexDirection: 'column',
+                        width        : '100%'
+                      }}
                       >
-                        Para: {prep.usoTerapeutico}
-                      </Typography>
+                        <Typography
+                          variant="caption"
+                          sx={{
+                            color: getUsoColor(
+                              prep.uso
+                            ),
+                            fontWeight   : 'bold',
+                            textTransform: 'uppercase',
+                            mb           : 0.5,
+                          }}
+                        >
+                          {prep.uso || 'Uso Multipropósito'}
+                        </Typography>
+                        <Typography
+                          variant="subtitle1"
+                          sx={{
+                            fontWeight   : 'bold',
+                            textTransform: 'capitalize',
+                          }}
+                        >
+                          Para: {prep.usoTerapeutico}
+                        </Typography>
+                      </Box>
                     </AccordionSummary>
 
                     <AccordionDetails>

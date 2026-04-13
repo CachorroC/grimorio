@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import styles from '#@/lib/styles/form.module.css';
-import { PreparacionType, IngredientesType } from '#@/lib/types/especimenTypes';
+import { PreparacionType, IngredientesType, listaUsosPreparacion } from '#@/lib/types/especimenTypes';
 
 interface PreparationsSectionProps {
   preparaciones: PreparacionType[];
@@ -15,6 +15,7 @@ export default function PreparationsSection({
 
   const addPreparacion = () => {
     const newPrep: PreparacionType = {
+      uso: 'Uso Multipropósito',
       usoTerapeutico: '',
       formaDeAplicacion: '',
       ingredientes: [],
@@ -33,7 +34,10 @@ export default function PreparationsSection({
 
   const updatePreparacionField = (
     prepIndex: number,
-    field: keyof Pick<PreparacionType, 'usoTerapeutico' | 'formaDeAplicacion'>,
+    field: keyof Pick<
+      PreparacionType,
+      'uso' | 'usoTerapeutico' | 'formaDeAplicacion'
+    >,
     value: string,
   ) => {
     const newPreps = [...safePreps];
@@ -140,7 +144,33 @@ export default function PreparationsSection({
             className={styles.subSection}
           >
             <div className={styles.inputGroup}>
-              <label className={styles.label}>Uso Terapéutico</label>
+              <label className={styles.label}>Uso de la preparación</label>
+              <select
+                className={styles.inputFilled}
+                value={prep.uso || 'Uso Multipropósito'}
+                onChange={(e) => {
+                  return updatePreparacionField(
+                    prepIndex,
+                    'uso',
+                    e.target.value as PreparacionType['uso'],
+                  );
+                }}
+              >
+                {listaUsosPreparacion.map((uso) => {
+                  return (
+                    <option
+                      key={uso}
+                      value={uso}
+                    >
+                      {uso}
+                    </option>
+                  );
+                })}
+              </select>
+            </div>
+
+            <div className={styles.inputGroup}>
+              <label className={styles.label}>Para qué sirve (Uso Terapéutico)</label>
               <input
                 type="text"
                 className={styles.inputFilled}

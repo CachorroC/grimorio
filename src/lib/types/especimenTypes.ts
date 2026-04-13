@@ -57,12 +57,41 @@ export type ElementosType =
 
 export type PreparacionType = {
   //responde al para qué se usa este método de preparación, ejemplo "para el dolor del alma preparar: ingredientes, pasos"
-  uso              : 'Tópico' | 'Inhalado' | 'Oral' | 'Sublingual' | 'Nasal' | 'Ótica' | 'Oftálmica' | 'Rectal' | 'Vaginal' | 'Cataplasma' | 'Baño Terapéutico' | 'Sahumerio';
+  uso:
+    | 'Tópico'
+    | 'Inhalado'
+    | 'Oral'
+    | 'Sublingual'
+    | 'Nasal'
+    | 'Ótica'
+    | 'Oftálmica'
+    | 'Rectal'
+    | 'Vaginal'
+    | 'Cataplasma'
+    | 'Baño Terapéutico'
+    | 'Sahumerio'
+    | 'Uso Multipropósito';
   usoTerapeutico   : string;
   formaDeAplicacion: string;
   ingredientes     : IngredientesType[];
   pasos            : PasosTuple[];
 };
+
+export const listaUsosPreparacion: PreparacionType['uso'][] = [
+  'Tópico',
+  'Inhalado',
+  'Oral',
+  'Sublingual',
+  'Nasal',
+  'Ótica',
+  'Oftálmica',
+  'Rectal',
+  'Vaginal',
+  'Cataplasma',
+  'Baño Terapéutico',
+  'Sahumerio',
+  'Uso Multipropósito',
+];
 
 export type IngredientesType = { ingrediente: string; cantidad: string };
 
