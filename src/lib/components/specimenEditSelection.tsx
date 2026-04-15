@@ -42,7 +42,15 @@ export default function SpecimenEditSelection(
     isAutoPlay,
     setIsAutoPlay
   ] = useState(
-    true
+    false
+  );
+  const [
+    activeButton,
+    setActiveButton
+  ] = useState<
+    'edit' | 'more' | null
+  >(
+    null
   );
   const {
     cardRefs
@@ -151,6 +159,24 @@ export default function SpecimenEditSelection(
       }
     );
   };
+
+  // Sync activeButton with isEditing
+  useEffect(
+    () => {
+      if ( isEditing ) {
+        setActiveButton(
+          'edit'
+        );
+      } else if ( activeButton === 'edit' ) {
+        setActiveButton(
+          null
+        );
+      }
+    }, [
+      isEditing,
+      activeButton
+    ]
+  );
 
   return (
     <Card
@@ -327,18 +353,18 @@ export default function SpecimenEditSelection(
                   setIsEditing={setIsEditing}
                 />
               )}
-          <div
-            style={{
-              display       : 'flex',
-              flexFlow      : 'row nowrap',
-              justifyContent: 'space-around',
-              marginTop     : 'auto',
-              paddingTop    : '1rem',
-            }}
-          >
+          <div className={buttonStyles.md3BtnGroup}>
             <button
-              className={buttonStyles.md3Btn}
+              className={`${ buttonStyles.md3BtnTonal } ${
+                activeButton === 'edit'
+                  ? buttonStyles.active
+                  : ''
+              }`}
               onClick={() => {
+                setActiveButton(
+                  'edit'
+                );
+
                 return setIsEditing(
                   (
                     edit
@@ -351,14 +377,27 @@ export default function SpecimenEditSelection(
               <span
                 className={`material-symbols-outlined ${ buttonStyles.md3BtnIcon }`}
               >
-                edit
+                {isEditing
+                  ? 'close'
+                  : 'edit'}
               </span>
-              <p>editar</p>
+              <p>{isEditing
+                ? 'cancelar'
+                : 'editar'}</p>
             </button>
 
             <Link
               href={`/hierba/${ plantData.nombreCientifico }`}
-              className={`${ buttonStyles.md3Btn } ${ buttonStyles.md3BtnTonal }`}
+              className={`${ buttonStyles.md3BtnTonal } ${
+                activeButton === 'more'
+                  ? buttonStyles.active
+                  : ''
+              }`}
+              onClick={() => {
+                return setActiveButton(
+                  'more'
+                );
+              }}
             >
               <span
                 className={`material-symbols-outlined ${ buttonStyles.md3BtnIcon }`}

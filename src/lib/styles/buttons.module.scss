@@ -474,6 +474,48 @@
     var(--on-secondary-container),
     var(--on-secondary)
   );
+
+  &.active {
+    background-color: var(--secondary);
+    color: var(--on-secondary);
+    .md3BtnIcon {
+      color: var(--on-secondary);
+    }
+    // Highlighting active state in a tonal group
+    @include m.material-icon(1, 400, 0, 48);
+  }
+}
+
+.md3BtnGroup {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  border-radius: var(--shape-corner-full);
+  overflow: hidden;
+  border: 1px solid var(--outline-variant);
+  background-color: var(--surface-container-low);
+
+  > .md3Btn,
+  > a.md3Btn {
+    flex: 1;
+    border-radius: 0;
+    margin: 0;
+    border: none;
+    border-right: 1px solid var(--outline-variant);
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &:hover {
+      z-index: 1;
+    }
+
+    &.active {
+      background-color: var(--secondary);
+      color: var(--on-secondary);
+    }
+  }
 }
 
 .md3BtnTonalPrimary {

@@ -28,6 +28,7 @@ declare const styles: {
   readonly "linkOpen": string;
   readonly "linkOpenActive": string;
   readonly "md3Btn": string;
+  readonly "md3BtnGroup": string;
   readonly "md3BtnIcon": string;
   readonly "md3BtnTonal": string;
   readonly "md3BtnTonalPrimary": string;

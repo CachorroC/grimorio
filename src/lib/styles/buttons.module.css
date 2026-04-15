@@ -607,6 +607,47 @@
 .md3BtnTonal:disabled::before {
   display: none;
 }
+.md3BtnTonal.active {
+  background-color: var(--primary-container);
+  color: var(--on-primary-container);
+}
+.md3BtnTonal.active .md3BtnIcon {
+  color: var(--on-primary-container);
+}
+.md3BtnTonal.active {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.md3BtnGroup {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  border-radius: var(--shape-corner-full);
+  overflow: hidden;
+  border: 1px solid var(--outline-variant);
+  background-color: var(--surface-container-low);
+}
+.md3BtnGroup > .md3Btn, .md3BtnGroup > .md3BtnTonalPrimary, .md3BtnGroup > .md3BtnTonal,
+.md3BtnGroup > a.md3Btn {
+  flex: 1;
+  border-radius: 0;
+  margin: 0;
+  border: none;
+  border-right: 1px solid var(--outline-variant);
+}
+.md3BtnGroup > .md3Btn:last-child, .md3BtnGroup > .md3BtnTonalPrimary:last-child, .md3BtnGroup > .md3BtnTonal:last-child,
+.md3BtnGroup > a.md3Btn:last-child {
+  border-right: none;
+}
+.md3BtnGroup > .md3Btn:hover, .md3BtnGroup > .md3BtnTonalPrimary:hover, .md3BtnGroup > .md3BtnTonal:hover,
+.md3BtnGroup > a.md3Btn:hover {
+  z-index: 1;
+}
+.md3BtnGroup > .md3Btn.active, .md3BtnGroup > .active.md3BtnTonalPrimary, .md3BtnGroup > .active.md3BtnTonal,
+.md3BtnGroup > a.md3Btn.active {
+  background-color: var(--secondary-container);
+  color: var(--on-secondary-container);
+}
 
 .md3BtnTonalPrimary {
   background-color: var(--primary);
