@@ -10,7 +10,7 @@ function createLookup(
     unifiedValue,
     variations
   ] of Object.entries(
-      groupedMap 
+      groupedMap
     ) ) {
     for ( const variation of variations ) {
       lookup[ variation ] = unifiedValue;
@@ -424,17 +424,17 @@ const correspondenciasEnergeticasGrupos: Record<string, string[]> = {
 
 // Generate the fast lookup dictionaries
 export const mapMedicinales = createLookup(
-  propiedadesMedicinalesGrupos 
+  propiedadesMedicinalesGrupos
 );
 
 export const mapEmocionales = createLookup(
-  malesEmocionalesGrupos 
+  malesEmocionalesGrupos
 );
 
 export const mapFisicos = createLookup(
-  malesFisicosGrupos 
+  malesFisicosGrupos
 );
 
 export const mapEnergeticas = createLookup(
-  correspondenciasEnergeticasGrupos 
+  correspondenciasEnergeticasGrupos
 );
