@@ -125,28 +125,40 @@ const getUsoColor = (
   switch ( uso ) {
       case 'Tópico':
         return 'var(--uso-topico)';
+
       case 'Inhalado':
         return 'var(--uso-inhalado)';
+
       case 'Oral':
         return 'var(--uso-oral)';
+
       case 'Sublingual':
         return 'var(--uso-sublingual)';
+
       case 'Nasal':
         return 'var(--uso-nasal)';
+
       case 'Ótica':
         return 'var(--uso-otica)';
+
       case 'Oftálmica':
         return 'var(--uso-oftalmica)';
+
       case 'Rectal':
         return 'var(--uso-rectal)';
+
       case 'Vaginal':
         return 'var(--uso-vaginal)';
+
       case 'Cataplasma':
         return 'var(--uso-cataplasma)';
+
       case 'Baño Terapéutico':
         return 'var(--uso-bano)';
+
       case 'Sahumerio':
         return 'var(--uso-sahumerio)';
+
       case 'Uso Multipropósito':
         return 'var(--uso-multiproposito)';
       default:
@@ -519,7 +531,8 @@ export default function PlantCookbook(
                         ),
                       };
                     }
-                  )}
+                  )
+                  }
                 />
               )}
 
@@ -711,8 +724,10 @@ export default function PlantCookbook(
                     <AccordionSummary
                       expandIcon={<ExpandMoreIcon />}
                       sx={{
-                        backgroundColor        : 'action.hover',
-                        borderBottom           : `2px solid ${ getUsoColor( prep.uso ) }`,
+                        backgroundColor: 'action.hover',
+                        borderBottom   : `2px solid ${ getUsoColor(
+                          prep.uso
+                        ) }`,
                         borderBottomLeftRadius : 0,
                         borderBottomRightRadius: 0,
                       }}
