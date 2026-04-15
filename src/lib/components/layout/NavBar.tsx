@@ -10,7 +10,9 @@ import { DrawerMenuButton } from '../buttons/nav-buttons';
 import ThemeToggle from '../ThemeToggle';
 
 export const NavBar = () => {
-  const { isNavOpen } = useNavigationContext();
+  const {
+    isNavOpen
+  } = useNavigationContext();
 
   return (
     <div className={styles.header}>
@@ -36,6 +38,11 @@ export const NavBar = () => {
           <Drawer>
             <DrawerMenuButton />
             <ThemeToggle />
+            <NavLink
+              iconLabel={'cannabis'}
+              textLabel={'Créditos'}
+              hrefLabel={'/creditos' as Route}
+            />
             <NavLink
               iconLabel={'cannabis'}
               textLabel={'Nueva Hierba en el compendio'}

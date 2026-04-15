@@ -201,9 +201,9 @@ const TagSection = (
     icon = 'medical_services';
   } else if ( title === 'Correspondencias Energéticas' ) {
     icon = 'energy_savings_leaf';
-  } else if ( title === 'Males Físicos' ) {
+  } else if ( title === 'Síntomas Físicos' ) {
     icon = 'personal_injury';
-  } else if ( title === 'Males Emocionales' ) {
+  } else if ( title === 'Síntomas Emocionales' ) {
     icon = 'heart_broken';
   }
 
@@ -319,11 +319,10 @@ const CustomColorTagSection = (
                 size="small"
                 variant="outlined"
                 sx={{
-                  borderColor     : tag.hexColor,
-                  color           : tag.hexColor,
-                  bacºkgroundColor: tag.hexColor,
-                  fontWeight      : 500,
-                  cursor          : tag.tooltipContent
+                  borderColor: tag.hexColor,
+                  color      : tag.hexColor,
+                  fontWeight : 500,
+                  cursor     : tag.tooltipContent
                     ? 'help'
                     : 'default',
                 }}
@@ -373,7 +372,12 @@ export default function PlantCookbook(
         <Grid
           sx={{
             xs: 12,
-            md: 7,
+            md: isStandalone
+              ? 12
+              : 7,
+            minWidth: isStandalone
+              ? '100%'
+              : 'auto',
           }}
         >
           <CardContent
@@ -467,12 +471,12 @@ export default function PlantCookbook(
                 color="success"
               />
               <TagSection
-                title="Males Físicos"
+                title="Síntomas Físicos"
                 tags={plant.malesFisicos}
                 color="error"
               />
               <TagSection
-                title="Males Emocionales"
+                title="Síntomas Emocionales"
                 tags={plant.malesEmocionales}
                 color="error"
               />
@@ -570,7 +574,7 @@ export default function PlantCookbook(
 
               {plant.doshas && plant.doshas.length > 0 && (
                 <CustomColorTagSection
-                  title="Doshas que controla (Ayurveda)"
+                  title="Doshas que controla (Visión Ayurvedica)"
                   tags={plant.doshas.map(
                     (
                       dosha

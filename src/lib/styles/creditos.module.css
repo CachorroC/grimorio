@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/* Credits.module.css */
+/* Animación de entrada suave */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.creditsContainer {
+  /* Paleta de colores inspirada en la naturaleza */
+  background-color: #f9f8f4; /* Blanco lino/avena */
+  color: #2b3a2f; /* Verde bosque profundo */
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.contentWrapper {
+  max-width: 1000px;
+  width: 100%;
+  animation: fadeUp 1.2s ease-out forwards;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: #6b8e6b; /* Verde salvia */
+  margin: 1.5rem auto 0;
+  border-radius: 2px;
+}
+
+.title {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: #1a241c;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #5c6b5d;
+  margin-top: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+/* Responsive Grid para Desktop/Tablets */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.creditBlock {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.role {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #8b7355; /* Tono tierra/arcilla */
+  font-weight: 600;
+}
+
+.name {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #2b3a2f;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.institutionBlock {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 3rem;
+  border-top: 1px solid #e0ddd3;
+}
+
+.institutionName {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 1.5rem;
+  color: #2b3a2f;
+  margin-bottom: 0.5rem;
+}
+
+.diplomaName {
+  color: #6b8e6b;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.footer {
+  margin-top: 5rem;
+  text-align: center;
+  font-family: "Georgia", "Times New Roman", serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #5c6b5d;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.leafIcon {
+  margin-top: 1rem;
+  color: #8b7355;
+  font-size: 1.5rem;
+}

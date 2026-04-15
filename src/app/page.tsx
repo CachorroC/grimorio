@@ -1,20 +1,16 @@
 'use client';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import {
-  Button,
+import { Button,
   TextField,
   RadioGroup,
   FormControlLabel,
   Radio,
-  Box,
-} from '@mui/material';
+  Box, } from '@mui/material';
 import NotificationButton from '#@/lib/components/NotificationButton';
 import NotificationToggle from '#@/lib/components/NotificationToggle';
-import {
-  InstallPrompt,
-  PushNotificationManager,
-} from '#@/lib/components/pushNotificationManager';
+import { InstallPrompt,
+  PushNotificationManager, } from '#@/lib/components/pushNotificationManager';
 import styles from '#@/lib/styles/landing.module.css';
 import layout from '#@/lib/styles/layout.module.css';
 import Link from 'next/link';
@@ -22,20 +18,34 @@ import Image from 'next/image';
 
 export default function Page() {
   const router = useRouter();
-  const [searchTerm, setSearchTerm] = useState('');
+  const [
+    searchTerm,
+    setSearchTerm
+  ] = useState(
+    ''
+  );
 
   // State to track if the user is searching for a plant name or an illness
-  const [searchType, setSearchType] = useState<'name' | 'dolor'>('name');
+  const [
+    searchType,
+    setSearchType
+  ] = useState<'name' | 'dolor'>(
+    'name'
+  );
 
   // Function to handle navigation
   const handleSearch = () => {
-    if (searchTerm.trim()) {
+    if ( searchTerm.trim() ) {
       // Encode the URI component and dynamically set the parameter key (name or dolor)
       router.push(
-        `/hierbas?${searchType}=${encodeURIComponent(searchTerm.trim())}`,
+        `/hierbas?${ searchType }=${ encodeURIComponent(
+          searchTerm.trim()
+        ) }`,
       );
     } else {
-      router.push('/hierbas');
+      router.push(
+        '/hierbas'
+      );
     }
   };
 
@@ -74,33 +84,35 @@ export default function Page() {
               Botánica Medicinal Colombiana
             </span>
             <h1 className={styles.title}>
-              Encuentra calma y sanación en la sabiduría de la tierra.
+              llega a ese lugar que está dentro de ti y que has construido sin saber que allí está
             </h1>
             <p className={styles.subtitle}>
-              Un refugio para el alivio del dolor y el bienestar del espíritu.
-              Explora nuestro vademécum de plantas nativas, desde la serenidad
-              de la Passiflora hasta la resiliencia de los páramos.
+              Está lleno de plantas, amor y comprensión. no le tengas miedo, hay remedios y bálsamos de felicidad que harán que el viaje sea más corto.
             </p>
 
             {/* MUI Search Form */}
             <div className={styles.searchContainer}>
               <Box
                 sx={{
-                  display: 'flex',
+                  display      : 'flex',
                   flexDirection: 'column',
-                  width: '100%',
-                  gap: 2,
+                  width        : '100%',
+                  gap          : 2,
                 }}
               >
                 {/* Search Type Selector */}
                 <RadioGroup
                   row
                   value={searchType}
-                  onChange={(e) => {
-                    return setSearchType(e.target.value as 'name' | 'dolor');
+                  onChange={(
+                    e
+                  ) => {
+                    return setSearchType(
+                      e.target.value as 'name' | 'dolor'
+                    );
                   }}
                   sx={{
-                    color: 'text.primary',
+                    color         : 'text.primary',
                     justifyContent: 'flex-start',
                   }}
                 >
@@ -112,14 +124,14 @@ export default function Page() {
                   <FormControlLabel
                     value="dolor"
                     control={<Radio color="primary" />}
-                    label="Buscar por Dolencia"
+                    label="Buscar por Síntoma"
                   />
                 </RadioGroup>
 
                 <Box
                   sx={{
                     display: 'flex',
-                    gap: 1,
+                    gap    : 1,
                   }}
                 >
                   <TextField
@@ -133,11 +145,17 @@ export default function Page() {
                     fullWidth
                     color="primary"
                     value={searchTerm}
-                    onChange={(e) => {
-                      return setSearchTerm(e.target.value);
+                    onChange={(
+                      e
+                    ) => {
+                      return setSearchTerm(
+                        e.target.value
+                      );
                     }}
-                    onKeyDown={(e) => {
-                      if (e.key === 'Enter') {
+                    onKeyDown={(
+                      e
+                    ) => {
+                      if ( e.key === 'Enter' ) {
                         handleSearch();
                       }
                     }}
