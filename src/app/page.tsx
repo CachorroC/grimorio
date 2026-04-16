@@ -7,7 +7,6 @@ import { Button,
   FormControlLabel,
   Radio,
   Box, } from '@mui/material';
-import NotificationToggle from '#@/lib/components/NotificationToggle';
 import { InstallPrompt,
   PushNotificationManager, } from '#@/lib/components/pushNotificationManager';
 import styles from '#@/lib/styles/landing.module.css';

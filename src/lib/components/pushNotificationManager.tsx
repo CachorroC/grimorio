@@ -56,20 +56,20 @@ export function PushNotificationManager() {
                   color: '#16a34a',
                 }}
               >
-                Status: Subscribed
+                Status: Subscrito
               </p>
               <button
                 type='button'
                 onClick={unsubscribeFromPush}
                 className={`${ styles.button } ${ styles.btnGhost }`}
               >
-                Unsubscribe
+                Desactivar notificaciones
               </button>
               <div className={styles.row}>
                 <input
                   type="text"
                   className={styles.inputField}
-                  placeholder="Message..."
+                  placeholder="Mensaje..."
                   value={message}
                   onChange={(
                     e
@@ -86,13 +86,7 @@ export function PushNotificationManager() {
                 >
                   Send Test
                 </button>
-                <button
-                  type='button'
-                  onClick={unsubscribeFromPush}
-                  className={`${ styles.button } ${ styles.btnGhost }`}
-                >
-                  desactivar notificaciones
-                </button>
+
               </div>
             </div>
           )
@@ -103,7 +97,7 @@ export function PushNotificationManager() {
                 onClick={subscribeToPush}
                 className={`${ styles.button } ${ styles.btnSuccess }`}
               >
-                Enable Notifications
+                Activar notificaciones
               </button>
             </div>
           )}
@@ -188,7 +182,7 @@ export function InstallPrompt() {
         className={`${ styles.button } ${ styles.btnPrimary }`}
         disabled={!isIOS && !deferredPrompt}
       >
-        Add to Home Screen
+        Instalar App
       </button>
       {isIOS && (
         <p
@@ -197,7 +191,7 @@ export function InstallPrompt() {
             marginTop: '0.5rem',
           }}
         >
-          Tap share icon ⎋ then Add to Home Screen ➕
+          {'Toca el botón de compartir ⎋ y luego "Agregar a pantalla de inicio" ➕'}
         </p>
       )}
     </div>
