@@ -352,11 +352,7 @@ export default function EspecimenForm(
           );
         }
 
-        if ( setIsEditing ) {
-          setIsEditing(
-            false
-          );
-        }
+
       } else {
         console.error(
           'Failed to save. Point of failure:', response.failed
@@ -370,6 +366,12 @@ export default function EspecimenForm(
       setIsProcessing(
         false
       );
+
+      if ( setIsEditing ) {
+        setIsEditing(
+          false
+        );
+      }
     }
   };
 

@@ -5,11 +5,13 @@ import { EspecimenProvider } from '../context/EspecimenContext';
 import { Loader } from '#@/lib/components/Loader/loader';
 import { getHierbas } from '#@/lib/data/hierbas';
 
-async function ServerRequestHerbsContext({
-  children,
-}: {
-  children: ReactNode;
-}) {
+async function ServerRequestHerbsContext(
+  {
+    children,
+  }: {
+    children: ReactNode;
+  }
+) {
   const plants = await getHierbas();
 
   return (
@@ -17,27 +19,23 @@ async function ServerRequestHerbsContext({
   );
 }
 
-export default function MainLayout({
-  children,
-  right,
-  modal,
-}: {
-  children: ReactNode;
-  right: ReactNode;
-  modal: ReactNode;
-}) {
+export default function MainLayout(
+  {
+    children,
+    modal,
+  }: {
+    children: ReactNode;
+    modal   : ReactNode;
+  }
+) {
   return (
     <Suspense fallback={<MainLoader />}>
       <ServerRequestHerbsContext>
         <div className={styles.main}>
           <Suspense fallback={<Loader />}>
-            {/* <LayoutAsyncProcess> */}
             <Suspense fallback={<Loader />}>{modal}</Suspense>
             <Suspense fallback={<Loader />}>
               <div className={styles.mainContent}>{children}</div>
-            </Suspense>
-            <Suspense fallback={<Loader />}>
-              <div className={styles.complementaryContent}>{right}</div>
             </Suspense>
           </Suspense>
         </div>

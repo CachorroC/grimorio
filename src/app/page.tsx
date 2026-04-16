@@ -25,20 +25,22 @@ export default function Page() {
     ''
   );
 
-  // State to track if the user is searching for a plant name or an illness
+  // State to track if the user is searching for a plant name, physical symptom, or emotional wellbeing
   const [
     searchType,
     setSearchType
-  ] = useState<'name' | 'dolor'>(
+  ] = useState<'name' | 'fisico' | 'emocional'>(
     'name'
   );
 
   // Function to handle navigation
   const handleSearch = () => {
     if ( searchTerm.trim() ) {
-      // Encode the URI component and dynamically set the parameter key (name or dolor)
+      // Map 'fisico' to 'dolor' param for backward compatibility if needed in the context
+      const paramKey = searchType === 'fisico' ? 'dolor' : searchType;
+
       router.push(
-        `/hierbas?${ searchType }=${ encodeURIComponent(
+        `/hierbas?${ paramKey }=${ encodeURIComponent(
           searchTerm.trim()
         ) }`,
       );
@@ -108,7 +110,7 @@ export default function Page() {
                     e
                   ) => {
                     return setSearchType(
-                      e.target.value as 'name' | 'dolor'
+                      e.target.value as 'name' | 'fisico' | 'emocional'
                     );
                   }}
                   sx={{
@@ -122,9 +124,14 @@ export default function Page() {
                     label="Buscar por Planta"
                   />
                   <FormControlLabel
-                    value="dolor"
+                    value="fisico"
                     control={<Radio color="primary" />}
-                    label="Buscar por Síntoma"
+                    label="Buscar por Síntoma Físico"
+                  />
+                  <FormControlLabel
+                    value="emocional"
+                    control={<Radio color="primary" />}
+                    label="Bienestar Emocional"
                   />
                 </RadioGroup>
 
@@ -139,7 +146,9 @@ export default function Page() {
                     label={
                       searchType === 'name'
                         ? 'Ej. Caléndula, Árnica...'
-                        : 'Ej. Dolor de cabeza, inflamación...'
+                        : searchType === 'fisico'
+                        ? 'Ej. Dolor de cabeza, inflamación...'
+                        : 'Ej. Ansiedad, apatía, insomnio...'
                     }
                     variant="outlined"
                     fullWidth

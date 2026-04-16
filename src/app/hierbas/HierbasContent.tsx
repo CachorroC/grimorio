@@ -5,62 +5,143 @@ import { TextField, Box } from '@mui/material';
 import SpecimenEditSelection from '#@/lib/components/specimenEditSelection';
 import MasonryHolder from './MasonryHolder';
 import { useEspecimen } from '../context/EspecimenContext';
-import { InputSearchBar } from '#@/lib/components/InputSearchBar';
 import { Route } from 'next';
 
 export function HierbasContent() {
-  const { state, dispatch } = useEspecimen();
+  const {
+    state, dispatch
+  } = useEspecimen();
 
   const searchParams = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
 
   // URL parameters act as the single source of truth for the type of query
-  const nameQuery = searchParams.get('name') || '';
-  const dolorQuery = searchParams.get('dolor') || '';
+  const nameQuery = searchParams.get(
+    'name'
+  ) || '';
+  const dolorQuery = searchParams.get(
+    'dolor'
+  ) || '';
+  const emocionalQuery = searchParams.get(
+    'emocional'
+  ) || '';
 
   // Local state for the inputs
-  const [localName, setLocalName] = useState(nameQuery);
-  const [localDolor, setLocalDolor] = useState(dolorQuery);
+  const [
+    localName,
+    setLocalName
+  ] = useState(
+    nameQuery
+  );
+  const [
+    localDolor,
+    setLocalDolor
+  ] = useState(
+    dolorQuery
+  );
+  const [
+    localEmocional,
+    setLocalEmocional
+  ] = useState(
+    emocionalQuery
+  );
 
   // Sync Context with URL params
-  useEffect(() => {
-    dispatch({
-      type: 'SET_SEARCH_NAME',
-      payload: nameQuery,
-    });
-    dispatch({
-      type: 'SET_SEARCH_DOLOR',
-      payload: dolorQuery,
-    });
-  }, [nameQuery, dolorQuery, dispatch]);
+  useEffect(
+    () => {
+      dispatch(
+        {
+          type   : 'SET_SEARCH_NAME',
+          payload: nameQuery,
+        }
+      );
+      dispatch(
+        {
+          type   : 'SET_SEARCH_DOLOR',
+          payload: dolorQuery,
+        }
+      );
+      dispatch(
+        {
+          type   : 'SET_SEARCH_EMOCIONAL',
+          payload: emocionalQuery,
+        }
+      );
+    }, [
+      nameQuery,
+      dolorQuery,
+      emocionalQuery,
+      dispatch
+    ]
+  );
 
   // Update URL params when local inputs change
   const createQueryString = useCallback(
-    (name: string, value: string) => {
-      const params = new URLSearchParams(searchParams.toString());
+    (
+      name: string, value: string
+    ) => {
+      const params = new URLSearchParams(
+        searchParams.toString()
+      );
 
-      if (value) {
-        params.set(name, value);
+      if ( value ) {
+        params.set(
+          name, value
+        );
       } else {
-        params.delete(name);
+        params.delete(
+          name
+        );
       }
 
       return params.toString();
     },
-    [searchParams],
+    [
+      searchParams
+    ],
   );
 
-  const handleNameChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleNameChange = (
+    e: ChangeEvent<HTMLInputElement>
+  ) => {
     const val = e.target.value;
-    setLocalName(val);
-    router.replace(`${pathname}?${createQueryString('name', val)}` as Route);
+    setLocalName(
+      val
+    );
+    router.replace(
+      `${ pathname }?${ createQueryString(
+        'name', val
+      ) }` as Route
+    );
   };
 
-  const handleDolorChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleDolorChange = (
+    e: ChangeEvent<HTMLInputElement>
+  ) => {
     const val = e.target.value;
-    setLocalDolor(val);
-    router.replace(`${pathname}?${createQueryString('dolor', val)}` as Route);
+    setLocalDolor(
+      val
+    );
+    router.replace(
+      `${ pathname }?${ createQueryString(
+        'dolor', val
+      ) }` as Route
+    );
+  };
+
+  const handleEmocionalChange = (
+    e: ChangeEvent<HTMLInputElement>
+  ) => {
+    const val = e.target.value;
+    setLocalEmocional(
+      val
+    );
+    router.replace(
+      `${ pathname }?${ createQueryString(
+        'emocional', val
+      ) }` as Route
+    );
   };
 
   return (
@@ -68,12 +149,12 @@ export function HierbasContent() {
       {/* Two explicit search bars */}
       <Box
         sx={{
-          display: 'flex',
-          gap: 2,
-          mb: 4,
-          width: '100%',
-          height: 'auto',
-          flex: '0',
+          display : 'flex',
+          gap     : 2,
+          mb      : 4,
+          width   : '100%',
+          height  : 'auto',
+          flex    : '0',
           maxWidth: '800px',
         }}
       >
@@ -85,28 +166,46 @@ export function HierbasContent() {
           onChange={handleNameChange}
         />
         <TextField
-          label="Buscar por Dolencia (Ej. Dolor de cabeza)"
+          label="Buscar por Dolencia Física"
           variant="outlined"
           fullWidth
           value={localDolor}
           onChange={handleDolorChange}
         />
-        <InputSearchBar />
+        <TextField
+          label="Bienestar Emocional"
+          variant="outlined"
+          fullWidth
+          value={localEmocional}
+          onChange={handleEmocionalChange}
+        />
       </Box>
 
       <MasonryHolder>
-        {[...state.filteredData]
-          .sort((a, b) => {
-            return a.nombreCientifico.localeCompare(b.nombreCientifico);
-          })
-          .map((especimen) => {
-            return (
-              <SpecimenEditSelection
-                plantData={especimen}
-                key={especimen.nombreCientifico}
-              />
-            );
-          })}
+        {[
+          ...state.filteredData
+        ]
+          .sort(
+            (
+              a, b
+            ) => {
+              return a.nombreCientifico.localeCompare(
+                b.nombreCientifico
+              );
+            }
+          )
+          .map(
+            (
+              especimen
+            ) => {
+              return (
+                <SpecimenEditSelection
+                  plantData={especimen}
+                  key={especimen.nombreCientifico}
+                />
+              );
+            }
+          )}
       </MasonryHolder>
     </>
   );

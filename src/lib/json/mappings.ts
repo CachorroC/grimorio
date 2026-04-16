@@ -1,4 +1,5 @@
 // mappings.ts
+import { normalizeText } from '../utils/textUtils';
 
 // Helper function to invert our grouped maps into a flat lookup dictionary: { "Analgésico leve": "Analgésico", ... }
 function createLookup(
@@ -153,7 +154,7 @@ const propiedadesMedicinalesGrupos: Record<string, string[]> = {
   ],
 };
 
-const malesEmocionalesGrupos: Record<string, string[]> = {
+export const malesEmocionalesGrupos: Record<string, string[]> = {
   'Ansiedad y Pánico': [
     'Ansiedad crónica y ataques de pánico',
     'Ansiedad crónica y pensamientos pesimistas',
@@ -227,13 +228,15 @@ const malesEmocionalesGrupos: Record<string, string[]> = {
   ],
 };
 
-const malesFisicosGrupos: Record<string, string[]> = {
+export const malesFisicosGrupos: Record<string, string[]> = {
   Cefalea: [
     'Cefáleas',
     'Cefaleas tensionales',
     'Dolores de cabeza por cansancio',
     'Dolores de cabeza por mala oxigenación',
     'Dolor de cabeza tensional (frotación)',
+    'Dolor',
+    'Dolor de cabeza',
   ],
   'Afecciones Respiratorias': [
     'Afecciones bronquiales por clima extremo',
@@ -291,6 +294,7 @@ const malesFisicosGrupos: Record<string, string[]> = {
     'Dolores reumáticos',
     'Dolores reumáticos (uso externo)',
     'Dolores reumáticos agravados por el frío',
+    'Dolor',
   ],
   'Problemas Digestivos y Gastrointestinales': [
     'Acidez estomacal (reflujo)',
@@ -317,6 +321,7 @@ const malesFisicosGrupos: Record<string, string[]> = {
     'Indigestión crónica y pesadez',
     'Indigestión nerviosa',
     'Indigestión severa',
+    'Dolor',
   ],
   'Problemas de la Piel y Heridas': [
     'Afecciones cutáneas recurrentes por impurezas en la sangre',
@@ -348,6 +353,17 @@ const malesFisicosGrupos: Record<string, string[]> = {
     'Quemaduras menores y heridas',
     'Quemaduras solares',
     'Quemaduras y cicatrices queloides',
+  ],
+  'Procesos Inflamatorios': [
+    'Inflamación',
+    'Hinchazón',
+    'Edema',
+    'Procesos inflamatorios',
+    'Inflamación articular',
+    'Inflamación de garganta',
+    'Inflamación de encías',
+    'Inflamaciones abdominales',
+    'Afecciones inflamatorias',
   ],
 };
 
@@ -438,3 +454,67 @@ export const mapFisicos = createLookup(
 export const mapEnergeticas = createLookup(
   correspondenciasEnergeticasGrupos
 );
+
+/**
+ * Resolves a search query into a list of related symptom variations based on grouping mappings.
+ * @param query The user's search query
+ * @param groupMap The grouping map (e.g., malesFisicosGrupos)
+ * @returns A unique list of all variations in matching categories.
+ */
+export function resolveSearchTerms(
+  query: string,
+  groupMap: Record<string, string[]>
+): string[] {
+  const normalizedQuery = normalizeText(
+    query
+  );
+
+  if ( !normalizedQuery ) {
+    return [];
+  }
+
+  const relevantVariations = new Set<string>();
+
+  for ( const [
+    groupName,
+    variations
+  ] of Object.entries(
+      groupMap
+    ) ) {
+    const normalizedGroupName = normalizeText(
+      groupName
+    );
+
+    // Broaden if the query matches the group name (substring is fine for categories)
+    const isGroupMatch = normalizedGroupName.includes(
+      normalizedQuery
+    );
+
+    // Broaden ONLY if the query matches a variation EXACTLY
+    const hasExactVariationMatch = variations.some(
+      (
+        v
+      ) => {
+        return normalizeText(
+          v
+        ) === normalizedQuery;
+      }
+    );
+
+    if ( isGroupMatch || hasExactVariationMatch ) {
+      variations.forEach(
+        (
+          v
+        ) => {
+          relevantVariations.add(
+            v
+          );
+        }
+      );
+    }
+  }
+
+  return Array.from(
+    relevantVariations
+  );
+}

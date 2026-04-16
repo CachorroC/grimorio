@@ -6,43 +6,34 @@ import React, { createContext,
   ReactNode,
   Dispatch,
   useEffect, } from 'react';
+import { normalizeText } from '#@/lib/utils/textUtils';
+import { resolveSearchTerms,
+  malesFisicosGrupos,
+  malesEmocionalesGrupos } from '#@/lib/json/mappings';
 
 // --- State & Action Types ---
 interface EspecimenState {
-  data          : EspecimenType[];
-  filteredData  : EspecimenType[];
-  searchName    : string;
-  searchDolor   : string;
-  filterProperty: string;
-  sortOrder     : 'ASC' | 'DESC' | 'NONE';
+  data           : EspecimenType[];
+  filteredData   : EspecimenType[];
+  searchName     : string;
+  searchDolor    : string;
+  searchEmocional: string;
+  filterProperty : string;
+  sortOrder      : 'ASC' | 'DESC' | 'NONE';
 }
 
 type Action =
   | { type: 'INIT_DATA'; payload: EspecimenType[] }
   | { type: 'SET_SEARCH_NAME'; payload: string }
   | { type: 'SET_SEARCH_DOLOR'; payload: string }
+  | { type: 'SET_SEARCH_EMOCIONAL'; payload: string }
   | { type: 'SET_FILTER_PROPERTY'; payload: string }
   | { type: 'SET_SORT'; payload: 'ASC' | 'DESC' | 'NONE' }
   | { type: 'RESET_FILTERS' };
 
 // --- Helper Functions ---
 
-const normalizeText = (
-  text: string | undefined | null
-): string => {
-  if ( !text ) {
-    return '';
-  }
-
-  return text
-    .normalize(
-      'NFD'
-    )
-    .replace(
-      /[\u0300-\u036f]/g, ''
-    )
-    .toLowerCase();
-};
+// normalizeText moved to textUtils.ts
 
 const applyCriteria = (
   state: EspecimenState
@@ -86,10 +77,13 @@ const applyCriteria = (
     );
   }
 
-  // 2. Apply Search by Illness/Dolor (malesFisicos)
+  // 2. Apply Search by Illness/Dolor (malesFisicos) - Enhanced Categorical Search
   if ( state.searchDolor ) {
     const normalizedDolorSearch = normalizeText(
       state.searchDolor
+    );
+    const resolvedTerms = resolveSearchTerms(
+      state.searchDolor, malesFisicosGrupos
     );
 
     result = result.filter(
@@ -102,10 +96,55 @@ const applyCriteria = (
           (
             mal
           ) => {
-            return normalizeText(
+            const normalizedMal = normalizeText(
               mal
-            ).includes(
-              normalizedDolorSearch
+            );
+
+            // Match if it's in the resolved categories OR if it matches the query directly
+            return (
+              resolvedTerms.includes(
+                mal
+              )
+          || normalizedMal.includes(
+            normalizedDolorSearch
+          )
+            );
+          }
+        );
+      }
+    );
+  }
+
+  // 2.5 Apply Search by Emotional Wellbeing (malesEmocionales)
+  if ( state.searchEmocional ) {
+    const normalizedEmocionalSearch = normalizeText(
+      state.searchEmocional
+    );
+    const resolvedTerms = resolveSearchTerms(
+      state.searchEmocional, malesEmocionalesGrupos
+    );
+
+    result = result.filter(
+      (
+        e
+      ) => {
+        const safeMalesEmocionales = e.malesEmocionales || [];
+
+        return safeMalesEmocionales.some(
+          (
+            mal
+          ) => {
+            const normalizedMal = normalizeText(
+              mal
+            );
+
+            return (
+              resolvedTerms.includes(
+                mal
+              )
+          || normalizedMal.includes(
+            normalizedEmocionalSearch
+          )
             );
           }
         );
@@ -178,6 +217,11 @@ const especimenReducer = (
 
         break;
 
+      case 'SET_SEARCH_EMOCIONAL':
+        newState.searchEmocional = action.payload;
+
+        break;
+
       case 'SET_FILTER_PROPERTY':
         newState.filterProperty = action.payload;
 
@@ -191,6 +235,7 @@ const especimenReducer = (
       case 'RESET_FILTERS':
         newState.searchName = '';
         newState.searchDolor = '';
+        newState.searchEmocional = '';
         newState.filterProperty = '';
         newState.sortOrder = 'NONE';
 
@@ -233,10 +278,11 @@ export const EspecimenProvider = (
     filteredData: [
       ...initialEspecimens
     ],
-    searchName    : '',
-    searchDolor   : '',
-    filterProperty: '',
-    sortOrder     : 'NONE',
+    searchName     : '',
+    searchDolor    : '',
+    searchEmocional: '',
+    filterProperty : '',
+    sortOrder      : 'NONE',
   };
 
   const [
