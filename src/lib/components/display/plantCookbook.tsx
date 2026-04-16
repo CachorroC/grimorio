@@ -112,6 +112,9 @@ const getElementColor = (
 
       case 'Sin Elemento Asociado':
         return 'var(--element-none)';
+
+      case 'Eter':
+        return 'var(--element-eter)';
       default:
         return 'var(--element-default)';
   }
@@ -573,17 +576,21 @@ export default function PlantCookbook(
                 />
               )}
 
-              {plant.elementosAsociados && (
+              {plant.elementosAsociados && plant.elementosAsociados.length > 0 && (
                 <CustomColorTagSection
                   title="Elemento Asociado"
-                  tags={[
-                    {
-                      label   : plant.elementosAsociados,
-                      hexColor: getElementColor(
-                        plant.elementosAsociados
-                      ),
-                    },
-                  ]}
+                  tags={plant.elementosAsociados.map(
+                    (
+                      elemento
+                    ) => {
+                      return {
+                        label   : elemento,
+                        hexColor: getElementColor(
+                          elemento
+                        ),
+                      };
+                    }
+                  )}
                 />
               )}
 

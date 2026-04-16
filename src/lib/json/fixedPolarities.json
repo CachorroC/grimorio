@@ -1,0 +1,402 @@
+[
+  {
+    "plant_name": "Phytolacca bogotensis",
+    "energetic_polarity": "Femenina",
+    "associated_elements": [
+      "Tierra",
+      "Agua"
+    ]
+  },
+  {
+    "plant_name": "Erythrina edulis",
+    "doshas": [
+      "Vata balancing",
+      "Kapha increasing"
+    ],
+    "energetic_polarity": "Masculina",
+    "associated_elements": [
+      "Tierra",
+      "Madera"
+    ]
+  },
+  {
+    "plant_name": "Solanum ovalifolium",
+    "doshas": [
+      "Pitta balancing"
+    ],
+    "energetic_polarity": "Femenina",
+    "associated_elements": [
+      "Agua",
+      "Tierra"
+    ]
+  },
+  {
+    "plant_name": "Myroxylon balsamum",
+    "doshas": [
+      "Vata balancing",
+      "Kapha balancing"
+    ],
+    "energetic_polarity": "Masculina",
+    "associated_elements": [
+      "Fuego",
+      "Eter",
+      "Madera"
+    ]
+  },
+  {
+    "plant_name": "Valeriana clematitis",
+    "doshas": [
+      "Vata balancing",
+      "Pitta balancing"
+    ],
+    "energetic_polarity": "Femenina",
+    "associated_elements": [
+      "Tierra",
+      "Agua"
+    ]
+  },
+  {
+    "plant_name": "Passiflora maliformis",
+    "doshas": [
+      "Vata balancing",
+      "Pitta balancing"
+    ],
+    "energetic_polarity": "Femenina",
+    "associated_elements": [
+      "Aire",
+      "Agua"
+    ]
+  },
+  {
+    "plant_name": "Passiflora danielii",
+    "doshas": [
+      "Pitta balancing"
+    ],
+    "energetic_polarity": "Femenina",
+    "associated_elements": [
+      "Agua"
+    ]
+  },
+  {
+    "plant_name": "Capsicum frutescens L.",
+    "doshas": [
+      "Vata balancing",
+      "Kapha balancing",
+      "Pitta increasing"
+    ],
+    "energetic_polarity": "Masculina",
+    "associated_elements": [
+      "Fuego"
+    ]
+  },
+  {
+    "plant_name": "Ocimun basilicum",
+    "doshas": [
+      "Vata balancing",
+      "Kapha balancing"
+    ],
+    "energetic_polarity": "Masculina",
+    "associated_elements": [
+      "Aire",
+      "Fuego"
+    ]
+  },
+  {
+    "plant_name": "Hymenaea courbaril",
+    "energetic_polarity": "Masculina",
+    "associated_elements": [
+      "Madera",
+      "Fuego"
+    ]
+  },
+  {
+    "plant_name": "Justicia pectoralis",
+    "doshas": [
+      "Pitta balancing",
+      "Vata balancing"
+    ],
+    "energetic_polarity": "Femenina",
+    "associated_elements": [
+      "Aire",
+      "Agua"
+    ]
+  },
+  {
+    "plant_name": "Petiveria alliacea",
+    "doshas": [
+      "Vata balancing",
+      "Kapha balancing"
+    ],
+    "energetic_polarity": "Masculina",
+    "associated_elements": [
+      "Fuego",
+      "Aire",
+      "Metal"
+    ]
+  },
+  {
+    "plant_name": "Pimpinella anisum",
+    "doshas": [
+      "Vata balancing",
+      "Kapha balancing"
+    ],
+    "energetic_polarity": "Masculina",
+    "associated_elements": [
+      "Aire",
+      "Fuego"
+    ]
+  },
+  {
+    "plant_name": "Lilium candidum",
+    "doshas": [
+      "Pitta balancing"
+    ],
+    "energetic_polarity": "Femenina",
+    "associated_elements": [
+      "Agua",
+      "Tierra"
+    ]
+  },
+  {
+    "plant_name": "Momordica charantia",
+    "doshas": [
+      "Pitta balancing",
+      "Kapha balancing",
+      "Vata increasing"
+    ],
+    "energetic_polarity": "Femenina",
+    "associated_elements": [
+      "Aire",
+      "Eter"
+    ]
+  },
+  {
+    "plant_name": "Peumus boldus",
+    "doshas": [
+      "Vata balancing",
+      "Kapha balancing",
+      "Pitta increasing"
+    ],
+    "energetic_polarity": "Masculina",
+    "associated_elements": [
+      "Fuego",
+      "Madera"
+    ]
+  },
+  {
+    "plant_name": "Hyptis capitata",
+    "doshas": [
+      "Pitta balancing"
+    ],
+    "energetic_polarity": "Femenina",
+    "associated_elements": [
+      "Agua",
+      "Aire"
+    ]
+  },
+  {
+    "plant_name": "Drimys winteri",
+    "doshas": [
+      "Vata balancing",
+      "Kapha balancing"
+    ],
+    "energetic_polarity": "Masculina",
+    "associated_elements": [
+      "Fuego",
+      "Madera"
+    ]
+  },
+  {
+    "plant_name": "Elettaria cardamomun",
+    "doshas": [
+      "Vata balancing",
+      "Pitta balancing",
+      "Kapha balancing"
+    ],
+    "energetic_polarity": "Masculina",
+    "associated_elements": [
+      "Eter",
+      "Fuego",
+      "Aire"
+    ]
+  },
+  {
+    "plant_name": "Marrubium vulgare L.",
+    "doshas": [
+      "Kapha balancing",
+      "Vata increasing"
+    ],
+    "energetic_polarity": "Masculina",
+    "associated_elements": [
+      "Aire",
+      "Fuego"
+    ]
+  },
+  {
+    "plant_name": "Bixa orellana",
+    "doshas": [ "Pitta", "Kapha" ],
+    "energetic_polarity": "Masculine",
+    "associated_elements": [ "Fuego", "Tierra" ]
+  },
+  {
+    "plant_name": "Drimys winteri",
+    "doshas": [ "Vata", "Kapha" ],
+    "energetic_polarity": "Femenine",
+    "associated_elements": [ "Agua", "Aire", "Eter" ]
+  },
+  {
+    "plant_name": "Banisteriopsis caapi",
+    "doshas": [ "Vata", "Pitta" ],
+    "energetic_polarity": "Femenine",
+    "associated_elements": [ "Agua", "Eter" ]
+  },
+  {
+    "plant_name": "Brugmansia sanguinea",
+    "energetic_polarity": "Femenine",
+    "associated_elements": [ "Agua", "Eter" ]
+  },
+  {
+    "plant_name": "Salvia rosmarinus",
+    "doshas": [ "Vata", "Kapha" ],
+    "energetic_polarity": "Masculine",
+    "associated_elements": [ "Fuego", "Aire" ]
+  },
+  {
+    "plant_name": "Passiflora incarnata",
+    "doshas": [ "Pitta", "Vata" ],
+    "energetic_polarity": "Femenine",
+    "associated_elements": [ "Agua" ]
+  },
+  {
+    "plant_name": "Passiflora edulis",
+    "doshas": [ "Pitta" ],
+    "energetic_polarity": "Femenine",
+    "associated_elements": [ "Agua" ]
+  },
+  {
+    "plant_name": "Capsicum frutescens L.",
+    "doshas": [ "Pitta" ],
+    "energetic_polarity": "Masculine",
+    "associated_elements": [ "Fuego" ]
+  },
+  {
+    "plant_name": "Chamaemelum nobile",
+    "doshas": [ "Pitta", "Vata" ],
+    "energetic_polarity": "Femenine",
+    "associated_elements": [ "Agua" ]
+  },
+  {
+    "plant_name": "Artemisia absinthium",
+    "doshas": [ "Kapha", "Pitta" ],
+    "energetic_polarity": "Masculine",
+    "associated_elements": [ "Fuego" ]
+  },
+  {
+    "plant_name": "Capsicum annuum",
+    "doshas": [ "Pitta" ],
+    "energetic_polarity": "Masculine",
+    "associated_elements": [ "Fuego" ]
+  },
+  {
+    "plant_name": "Allium sativum",
+    "doshas": [ "Vata", "Kapha" ],
+    "energetic_polarity": "Masculine",
+    "associated_elements": [ "Fuego" ]
+  },
+  {
+    "plant_name": "Ocimun basilicum",
+    "doshas": [ "Vata", "Kapha" ],
+    "energetic_polarity": "Masculine",
+    "associated_elements": [ "Fuego" ]
+  },
+  {
+    "plant_name": "Cynara scolymus",
+    "doshas": [ "Pitta", "Kapha" ],
+    "energetic_polarity": "Femenine",
+    "associated_elements": [ "Tierra", "Agua" ]
+  },
+  {
+    "plant_name": "Hymenaea courbaril",
+    "energetic_polarity": "Masculine",
+    "associated_elements": [ "Fuego", "Tierra" ]
+  },
+  {
+    "plant_name": "Justicia pectoralis",
+    "energetic_polarity": "Femenine",
+    "associated_elements": [ "Aire", "Agua" ]
+  },
+  {
+    "plant_name": "Petiveria alliacea",
+    "energetic_polarity": "Masculine",
+    "associated_elements": [ "Fuego", "Aire" ]
+  },
+  {
+    "plant_name": "Pimpinella anisum",
+    "doshas": [ "Vata", "Kapha" ],
+    "energetic_polarity": "Masculine",
+    "associated_elements": [ "Aire" ]
+  },
+  {
+    "plant_name": "Apium graveolens",
+    "doshas": [ "Vata" ],
+    "energetic_polarity": "Masculine",
+    "associated_elements": [ "Fuego", "Aire" ]
+  },
+  {
+    "plant_name": "Arnica montana",
+    "energetic_polarity": "Masculine",
+    "associated_elements": [ "Fuego" ]
+  },
+  {
+    "plant_name": "Avena sativa",
+    "doshas": [ "Vata", "Pitta" ],
+    "energetic_polarity": "Femenine",
+    "associated_elements": [ "Tierra" ]
+  },
+  {
+    "plant_name": "Lilium candidum",
+    "energetic_polarity": "Femenine",
+    "associated_elements": [ "Agua" ]
+  },
+  {
+    "plant_name": "Momordica charantia",
+    "doshas": [ "Kapha", "Pitta" ],
+    "energetic_polarity": "Femenine",
+    "associated_elements": [ "Agua", "Tierra" ]
+  },
+  {
+    "plant_name": "Atropa belladonna",
+    "energetic_polarity": "Femenine",
+    "associated_elements": [ "Agua" ]
+  },
+  {
+    "plant_name": "Peumus boldus",
+    "doshas": [ "Pitta", "Kapha" ],
+    "energetic_polarity": "Masculine",
+    "associated_elements": [ "Fuego", "Aire" ]
+  },
+  {
+    "plant_name": "Coffea arabica",
+    "doshas": [ "Kapha" ],
+    "energetic_polarity": "Masculine",
+    "associated_elements": [ "Fuego" ]
+  },
+  {
+    "plant_name": "Calendula officinalis",
+    "doshas": [ "Pitta", "Kapha" ],
+    "energetic_polarity": "Femenine",
+    "associated_elements": [ "Fuego" ]
+  },
+  {
+    "plant_name": "Elettaria cardamomun",
+    "doshas": [ "Vata", "Kapha", "Pitta" ],
+    "energetic_polarity": "Femenine",
+    "associated_elements": [ "Agua", "Aire" ]
+  },
+  {
+    "plant_name": "Marrubium vulgare L.",
+    "doshas": [ "Kapha", "Pitta" ],
+    "energetic_polarity": "Masculine",
+    "associated_elements": [ "Aire" ]
+  }
+]

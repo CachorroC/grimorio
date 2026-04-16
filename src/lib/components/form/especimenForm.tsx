@@ -55,7 +55,9 @@ const initialState: EspecimenType = {
     ],
   },
   preparaciones      : [],
-  elementosAsociados : 'Sin Elemento Asociado',
+  elementosAsociados : [
+    'Sin Elemento Asociado'
+  ],
   chakrasAsociados   : [],
   polaridadEnergetica: [
     'Neutral'
@@ -142,7 +144,13 @@ export default function EspecimenForm(
           ...( initialData.taxon || {} ),
           clados: initialData.taxon?.clados || [],
         },
-        elementosAsociados : initialData.elementosAsociados || 'Sin Elemento Asociado',
+        elementosAsociados: Array.isArray(
+          initialData.elementosAsociados
+        )
+          ? initialData.elementosAsociados
+          : [
+              initialData.elementosAsociados || 'Sin Elemento Asociado',
+            ],
         chakrasAsociados   : initialData.chakrasAsociados || [],
         polaridadEnergetica: initialData.polaridadEnergetica || [
           'Neutral'
@@ -322,7 +330,13 @@ export default function EspecimenForm(
               ...savedData.taxon,
               clados: savedData.taxon?.clados || [],
             },
-            elementosAsociados : savedData.elementosAsociados || 'Sin Elemento Asociado',
+            elementosAsociados: Array.isArray(
+              savedData.elementosAsociados
+            )
+              ? savedData.elementosAsociados
+              : [
+                  savedData.elementosAsociados || 'Sin Elemento Asociado',
+                ],
             chakrasAsociados   : savedData.chakrasAsociados || [],
             polaridadEnergetica: savedData.polaridadEnergetica || [
               'Neutral'

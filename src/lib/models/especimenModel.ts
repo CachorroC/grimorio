@@ -28,7 +28,7 @@ export default class EspecimenModel implements EspecimenType {
   partesUtiles               : string[];
   esenciasFlorales           : string[];
   _id                        : string | undefined;
-  elementosAsociados         : ElementosType;
+  elementosAsociados         : ElementosType[];
   chakrasAsociados           : ChakraType[];
   polaridadEnergetica        : PolaridadEnergeticaType;
   doshas                     : TridoshasType[];
@@ -65,7 +65,7 @@ export default class EspecimenModel implements EspecimenType {
       malesFisicos               : string[];
       taxon                      : Taxon;
       preparaciones              : PreparacionType[];
-      elementosAsociados         : ElementosType;
+      elementosAsociados         : ElementosType[];
       chakrasAsociados           : ChakraType[];
       polaridadEnergetica        : PolaridadEnergeticaType;
       doshas                     : TridoshasType[];

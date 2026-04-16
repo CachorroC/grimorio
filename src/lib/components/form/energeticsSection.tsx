@@ -6,10 +6,12 @@ import { PolaridadEnergeticaType,
   listaChakras,
   ChakraType,
   listaDoshas,
-  TridoshasType, } from '#@/lib/types/especimenTypes';
+  TridoshasType,
+  listaElementos,
+  ElementosType, } from '#@/lib/types/especimenTypes';
 
 interface EnergeticsSectionProps {
-  elementosAsociados : string;
+  elementosAsociados : ElementosType[];
   polaridadEnergetica: PolaridadEnergeticaType;
   chakrasAsociados   : ChakraType[];
   doshas             : TridoshasType[];
@@ -30,8 +32,57 @@ export default function EnergeticsSection(
     chakrasAsociados,
     doshas,
     onChange,
-  }: EnergeticsSectionProps 
+  }: EnergeticsSectionProps
 ) {
+  const toggleElemento = (
+    elemento: ElementosType
+  ) => {
+    const current = elementosAsociados || [];
+    let next: ElementosType[];
+
+    if ( elemento === 'Sin Elemento Asociado' ) {
+      next = [
+        'Sin Elemento Asociado'
+      ];
+    } else {
+      // If we select a real element, remove 'Sin Elemento Asociado'
+      const base = current.filter(
+        (
+          e
+        ) => {
+          return e !== 'Sin Elemento Asociado';
+        }
+      );
+
+      if ( base.includes(
+        elemento
+      ) ) {
+        next = base.filter(
+          (
+            e
+          ) => {
+            return e !== elemento;
+          }
+        );
+      } else {
+        next = [
+          ...base,
+          elemento
+        ];
+      }
+    }
+
+    // Default to 'Sin Elemento Asociado' if empty
+    if ( next.length === 0 ) {
+      next = [
+        'Sin Elemento Asociado'
+      ];
+    }
+
+    onChange(
+      'elementosAsociados', next
+    );
+  };
   const togglePolaridad = (
     val: 'Masculine' | 'Feminine' | 'Neutral' 
   ) => {
@@ -135,42 +186,37 @@ export default function EnergeticsSection(
   return (
     <div className={styles.section}>
       <div className={styles.inputGroup}>
-        <label className={styles.label}>Elemento Asociado</label>
-        <select
-          name="elementosAsociados"
-          className={styles.inputFilled}
-          value={elementosAsociados}
-          onChange={(
-            e 
-          ) => {
-            return onChange(
-              'elementosAsociados', e.target.value 
-            );
+        <label className={styles.label}>Elementos Asociados</label>
+        <div
+          style={{
+            display  : 'flex',
+            gap      : '1rem',
+            marginTop: '0.5rem',
+            flexWrap : 'wrap',
           }}
         >
-          {[
-            'Metal',
-            'Madera',
-            'Fuego',
-            'Tierra',
-            'Aire',
-            'Agua',
-            'Sin Elemento Asociado'
-          ].map(
+          {listaElementos.map(
             (
-              el 
+              el
             ) => {
               return (
-                <option
+                <ToggleButton
                   key={el}
-                  value={el}
+                  checked={( elementosAsociados || [] ).includes(
+                    el
+                  )}
+                  onChange={() => {
+                    return toggleElemento(
+                      el
+                    );
+                  }}
                 >
                   {el}
-                </option>
+                </ToggleButton>
               );
-            } 
+            }
           )}
-        </select>
+        </div>
       </div>
 
       {/* Ayurveda Doshas */}

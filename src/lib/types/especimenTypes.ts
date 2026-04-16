@@ -12,7 +12,7 @@ export type EspecimenType = {
   nativa                     : boolean;
   taxon                      : Taxon;
   preparaciones              : PreparacionType[];
-  elementosAsociados         : ElementosType;
+  elementosAsociados         : ElementosType[];
   chakrasAsociados           : ChakraType[];
   polaridadEnergetica        : PolaridadEnergeticaType;
   doshas                     : TridoshasType[];
@@ -54,7 +54,19 @@ export type ElementosType =
   | 'Tierra'
   | 'Aire'
   | 'Agua'
+  | 'Eter'
   | 'Sin Elemento Asociado'
+
+export const listaElementos: ElementosType[] = [
+  'Metal',
+  'Madera',
+  'Fuego',
+  'Tierra',
+  'Aire',
+  'Agua',
+  'Eter',
+  'Sin Elemento Asociado',
+];
 
 export type PreparacionType = {
   //responde al para qué se usa este método de preparación, ejemplo "para el dolor del alma preparar: ingredientes, pasos"
