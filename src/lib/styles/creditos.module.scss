@@ -14,8 +14,8 @@
 
 .creditsContainer {
   /* Paleta de colores inspirada en la naturaleza */
-  background-color: #f9f8f4; /* Blanco lino/avena */
-  color: #2b3a2f; /* Verde bosque profundo */
+  background-color: var(--surface-variant); /* Blanco lino/avena */
+  color: var(--on-surface); /* Verde bosque profundo */
   min-height: 100vh;
   padding: 4rem 2rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -43,7 +43,7 @@
   display: block;
   width: 60px;
   height: 2px;
-  background-color: #6b8e6b; /* Verde salvia */
+  background-color: var(--primary); /* Verde salvia */
   margin: 1.5rem auto 0;
   border-radius: 2px;
 }
@@ -59,7 +59,7 @@
 
 .subtitle {
   font-size: 1.1rem;
-  color: #5c6b5d;
+  color: var(--tertiary);
   margin-top: 1rem;
   font-weight: 300;
   letter-spacing: 0.05em;
@@ -97,7 +97,7 @@
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: #8b7355; /* Tono tierra/arcilla */
+  color: var(--secondary); /* Tono tierra/arcilla */
   font-weight: 600;
 }
 
@@ -105,7 +105,7 @@
   font-family: 'Georgia', 'Times New Roman', serif;
   font-size: 1.4rem;
   font-weight: 400;
-  color: #2b3a2f;
+  color: var(--on-surface);
   margin: 0;
   line-height: 1.4;
 }
@@ -114,7 +114,7 @@
   text-align: center;
   margin-top: 2rem;
   padding-top: 3rem;
-  border-top: 1px solid #e0ddd3;
+  border-top: 1px solid var(--outline);
 }
 
 .institutionName {
@@ -125,7 +125,7 @@
 }
 
 .diplomaName {
-  color: #6b8e6b;
+  color: var(--primary-container);
   font-size: 1rem;
   font-weight: 500;
 }
@@ -136,7 +136,7 @@
   font-family: 'Georgia', 'Times New Roman', serif;
   font-style: italic;
   font-size: 1.2rem;
-  color: #5c6b5d;
+  color: var(--tertiary-container);
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -145,6 +145,6 @@
 
 .leafIcon {
   margin-top: 1rem;
-  color: #8b7355;
+  color: var(--secondary);
   font-size: 1.5rem;
 }

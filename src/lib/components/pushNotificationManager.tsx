@@ -19,7 +19,7 @@ export function PushNotificationManager() {
     message,
     setMessage
   ] = useState(
-    '' 
+    ''
   );
 
   if ( !isSupported ) {
@@ -32,14 +32,14 @@ export function PushNotificationManager() {
     if ( subscription && message.trim() ) {
       const serializedSub = JSON.parse(
         JSON.stringify(
-          subscription 
+          subscription
         ),
       ) as WebPushSubscription;
       await sendNotification(
-        message, serializedSub 
+        message, serializedSub
       );
       setMessage(
-        '' 
+        ''
       );
     }
   }
@@ -59,6 +59,7 @@ export function PushNotificationManager() {
                 Status: Subscribed
               </p>
               <button
+                type='button'
                 onClick={unsubscribeFromPush}
                 className={`${ styles.button } ${ styles.btnGhost }`}
               >
@@ -71,18 +72,26 @@ export function PushNotificationManager() {
                   placeholder="Message..."
                   value={message}
                   onChange={(
-                    e 
+                    e
                   ) => {
                     return setMessage(
-                      e.target.value 
+                      e.target.value
                     );
                   }}
                 />
                 <button
+                  type='button'
                   onClick={sendTestNotification}
                   className={`${ styles.button } ${ styles.btnPrimary }`}
                 >
                   Send Test
+                </button>
+                <button
+                  type='button'
+                  onClick={unsubscribeFromPush}
+                  className={`${ styles.button } ${ styles.btnGhost }`}
+                >
+                  desactivar notificaciones
                 </button>
               </div>
             </div>
@@ -107,54 +116,54 @@ export function InstallPrompt() {
     isIOS,
     setIsIOS
   ] = useState(
-    false 
+    false
   );
   const [
     isStandalone,
     setIsStandalone
   ] = useState(
-    false 
+    false
   );
   const [
     deferredPrompt,
     setDeferredPrompt
   ] = useState<any>(
-    null 
+    null
   );
 
   useEffect(
     () => {
       const isIOSDevice
         = /iPad|iPhone|iPod/.test(
-          navigator.userAgent 
+          navigator.userAgent
         ) && !( window as any ).MSStream;
       setIsIOS(
-        isIOSDevice 
+        isIOSDevice
       );
       setIsStandalone(
         window.matchMedia(
-          '(display-mode: standalone)' 
-        ).matches 
+          '(display-mode: standalone)'
+        ).matches
       );
 
       const handler = (
-        e: Event 
+        e: Event
       ) => {
         setDeferredPrompt(
-          e 
+          e
         );
       };
 
       window.addEventListener(
-        'beforeinstallprompt', handler 
+        'beforeinstallprompt', handler
       );
 
       return () => {
         return window.removeEventListener(
-          'beforeinstallprompt', handler 
+          'beforeinstallprompt', handler
         );
       };
-    }, [] 
+    }, []
   );
 
   async function handleInstallClick() {
@@ -162,7 +171,7 @@ export function InstallPrompt() {
       deferredPrompt.prompt();
       await deferredPrompt.userChoice;
       setDeferredPrompt(
-        null 
+        null
       );
     }
   }

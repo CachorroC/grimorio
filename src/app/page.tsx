@@ -7,7 +7,6 @@ import { Button,
   FormControlLabel,
   Radio,
   Box, } from '@mui/material';
-import NotificationButton from '#@/lib/components/NotificationButton';
 import NotificationToggle from '#@/lib/components/NotificationToggle';
 import { InstallPrompt,
   PushNotificationManager, } from '#@/lib/components/pushNotificationManager';
@@ -242,9 +241,7 @@ export default function Page() {
           </div>
         </section>
 
-        <NotificationButton />
         <PushNotificationManager />
-        <NotificationToggle />
         <InstallPrompt />
       </main>
     </div>
