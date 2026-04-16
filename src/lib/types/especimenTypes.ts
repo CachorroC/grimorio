@@ -43,8 +43,8 @@ export interface PlantDictionary {
 }
 
 export type PolaridadEnergeticaType = [
-  'Masculine' | 'Feminine',
-  ...( 'Masculine' | 'Feminine' )[],
+  'Masculine' | 'Feminine' | 'Neutral',
+  ...( 'Masculine' | 'Feminine' | 'Neutral' )[],
 ];
 
 export type ElementosType =
@@ -53,7 +53,8 @@ export type ElementosType =
   | 'Fuego'
   | 'Tierra'
   | 'Aire'
-  | 'Agua';
+  | 'Agua'
+  | 'Sin Elemento Asociado'
 
 export type PreparacionType = {
   //responde al para qué se usa este método de preparación, ejemplo "para el dolor del alma preparar: ingredientes, pasos"
@@ -173,6 +174,14 @@ export type ChakraCorona = {
   significado    : 'Espiritualidad, conexión con lo divino, sabiduría';
 };
 
+export type ChakraSinAsociar = {
+  nombre         : 'Sin Chakra Asociado';
+  nombreSanscrito: 'Sin Chakra Asociado';
+  ubicacion      : 'Sin Chakra Asociado';
+  color          : 'gris';
+  significado    : 'Sin Chakra Asociado';
+}
+
 // 2. Agrupamos todos en un tipo Unión (Union Type)
 export type ChakraType =
   | ChakraRaiz
@@ -181,7 +190,8 @@ export type ChakraType =
   | ChakraCorazon
   | ChakraGarganta
   | ChakraTercerOjo
-  | ChakraCorona;
+  | ChakraCorona
+  | ChakraSinAsociar;
 
 // 3. Implementamos la lista usando el tipo estricto
 export const listaChakras: ChakraType[] = [

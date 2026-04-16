@@ -55,13 +55,13 @@ const initialState: EspecimenType = {
     ],
   },
   preparaciones      : [],
-  elementosAsociados : 'Tierra',
+  elementosAsociados : 'Sin Elemento Asociado',
   chakrasAsociados   : [],
   polaridadEnergetica: [
-    'Feminine'
+    'Neutral'
   ],
   doshas  : [],
-  nativa  : true,
+  nativa  : false,
   // Mantenemos una estructura inicial segura en el estado para evitar errores de undefined en los inputs
   imagenes: {
     flor: {
