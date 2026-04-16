@@ -3,78 +3,137 @@
 import { useModalContext } from '#@/app/context/ModalContext';
 import styles from '#@/lib/styles/modal.module.css';
 import { usePathname, useRouter } from 'next/navigation';
-import {
-  MouseEventHandler,
+import { MouseEventHandler,
   ReactNode,
   useCallback,
   useEffect,
-  useRef,
-} from 'react';
+  useRef, } from 'react';
 
-export function Modal({ children }: { children: ReactNode }) {
+export function Modal(
+  {
+    children 
+  }: { children: ReactNode } 
+) {
   const pathname = usePathname();
 
-  const { setIsModalOpen } = useModalContext();
+  const {
+    setIsModalOpen 
+  } = useModalContext();
 
-  const overlay = useRef(null);
+  const overlay = useRef(
+    null 
+  );
 
-  const wrapper = useRef(null);
+  const wrapper = useRef(
+    null 
+  );
 
   const router = useRouter();
 
-  const onDismiss = useCallback(() => {
-    console.log('onDismiss');
-    setIsModalOpen(false);
-    router.back();
-  }, [router, setIsModalOpen]);
+  const onDismiss = useCallback(
+    () => {
+      console.log(
+        'onDismiss' 
+      );
+      setIsModalOpen(
+        false 
+      );
+      router.back();
+    }, [
+      router,
+      setIsModalOpen
+    ] 
+  );
 
-  const onBackspace = useCallback(() => {
-    console.log('on backspace');
-    setIsModalOpen(false);
-    router.back();
-  }, [router, setIsModalOpen]);
+  const onBackspace = useCallback(
+    () => {
+      console.log(
+        'on backspace' 
+      );
+      setIsModalOpen(
+        false 
+      );
+      router.back();
+    }, [
+      router,
+      setIsModalOpen
+    ] 
+  );
 
-  const onEnter = useCallback(() => {
-    setIsModalOpen(false);
-    router.forward();
-  }, [router, setIsModalOpen]);
+  const onEnter = useCallback(
+    () => {
+      setIsModalOpen(
+        false 
+      );
+      router.forward();
+    }, [
+      router,
+      setIsModalOpen
+    ] 
+  );
 
   const onClick: MouseEventHandler = useCallback(
-    (e) => {
-      console.log('onCLick');
+    (
+      e 
+    ) => {
+      console.log(
+        'onCLick' 
+      );
 
-      if (e.target === overlay.current || e.target === wrapper.current) {
-        if (onDismiss) {
+      if ( e.target === overlay.current || e.target === wrapper.current ) {
+        if ( onDismiss ) {
           onDismiss();
         }
       }
     },
-    [onDismiss, overlay, wrapper],
+    [
+      onDismiss,
+      overlay,
+      wrapper
+    ],
   );
 
   const onKeyDown = useCallback(
-    (e: KeyboardEvent) => {
-      console.log('onKeyDown');
+    (
+      e: KeyboardEvent 
+    ) => {
+      console.log(
+        'onKeyDown' 
+      );
 
-      if (e.key === 'Enter') {
+      if ( e.key === 'Enter' ) {
         onEnter();
       }
 
-      if (e.key === 'Escape' || e.key === 'Backspace') {
+      if ( e.key === 'Escape' || e.key === 'Backspace' ) {
         onBackspace();
       }
     },
-    [onBackspace, onEnter],
+    [
+      onBackspace,
+      onEnter
+    ],
   );
 
-  useEffect(() => {
-    console.log('on useEffect');
-    document.addEventListener('keydown', onKeyDown);
+  useEffect(
+    () => {
+      console.log(
+        'on useEffect' 
+      );
+      document.addEventListener(
+        'keydown', onKeyDown 
+      );
 
-    return () => {
-      return document.removeEventListener('keydown', onKeyDown);
-    };
-  }, [pathname, onKeyDown]);
+      return () => {
+        return document.removeEventListener(
+          'keydown', onKeyDown 
+        );
+      };
+    }, [
+      pathname,
+      onKeyDown
+    ] 
+  );
 
   return (
     <div

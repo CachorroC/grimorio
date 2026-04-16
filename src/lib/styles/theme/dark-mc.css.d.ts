@@ -1,5 +1,5 @@
 declare const styles: {
-  readonly "dark-medium-contrast": string;
+  readonly 'dark-medium-contrast': string;
 };
 export = styles;
 

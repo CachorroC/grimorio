@@ -9,9 +9,9 @@ const SkeletonCard = () => {
   return (
     <Box
       sx={{
-        display: 'flex',
+        display      : 'flex',
         flexDirection: 'column',
-        gap: 1,
+        gap          : 1,
       }}
     >
       {/* Image placeholder */}
@@ -29,7 +29,7 @@ const SkeletonCard = () => {
         animation="wave"
         sx={{
           fontSize: '1.5rem',
-          width: '80%',
+          width   : '80%',
         }}
       />
       {/* Subtitle / Description placeholder */}
@@ -51,7 +51,9 @@ export const GridSkeletonLoader = () => {
     {
       length: 8,
     },
-    (_, i) => {
+    (
+      _, i 
+    ) => {
       return i;
     },
   );
@@ -59,17 +61,17 @@ export const GridSkeletonLoader = () => {
   return (
     <Box
       sx={{
-        width: '100%',
-        flexGrow: 1,
-        height: '100vh',
+        width    : '100%',
+        flexGrow : 1,
+        height   : '100vh',
         overflowY: 'hidden', // Prevents scrolling on the skeleton itself
-        p: 2,
+        p        : 2,
       }}
     >
       <Box
         sx={{
-          display: 'grid',
-          gap: 2,
+          display            : 'grid',
+          gap                : 2,
           gridTemplateColumns: {
             xs: '1fr', // 1 column
             sm: 'repeat(2, 1fr)', // 2 columns
@@ -79,9 +81,13 @@ export const GridSkeletonLoader = () => {
           alignItems: 'start',
         }}
       >
-        {skeletons.map((index) => {
-          return <SkeletonCard key={index} />;
-        })}
+        {skeletons.map(
+          (
+            index 
+          ) => {
+            return <SkeletonCard key={index} />;
+          } 
+        )}
       </Box>
     </Box>
   );

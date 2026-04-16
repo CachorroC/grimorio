@@ -37,7 +37,9 @@ export default function Page() {
   const handleSearch = () => {
     if ( searchTerm.trim() ) {
       // Map 'fisico' to 'dolor' param for backward compatibility if needed in the context
-      const paramKey = searchType === 'fisico' ? 'dolor' : searchType;
+      const paramKey = searchType === 'fisico'
+        ? 'dolor'
+        : searchType;
 
       router.push(
         `/hierbas?${ paramKey }=${ encodeURIComponent(
@@ -147,8 +149,8 @@ export default function Page() {
                       searchType === 'name'
                         ? 'Ej. Caléndula, Árnica...'
                         : searchType === 'fisico'
-                        ? 'Ej. Dolor de cabeza, inflamación...'
-                        : 'Ej. Ansiedad, apatía, insomnio...'
+                          ? 'Ej. Dolor de cabeza, inflamación...'
+                          : 'Ej. Ansiedad, apatía, insomnio...'
                     }
                     variant="outlined"
                     fullWidth

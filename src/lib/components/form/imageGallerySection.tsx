@@ -5,17 +5,19 @@ import { PlantDictionary } from '#@/lib/types/especimenTypes';
 
 interface ImageGallerySectionProps {
   includeImagenes: boolean;
-  onToggleInclude: (enabled: boolean) => void;
-  imagenes: PlantDictionary | undefined;
-  onChange: (newImagenes: PlantDictionary) => void;
+  onToggleInclude: ( enabled: boolean ) => void;
+  imagenes       : PlantDictionary | undefined;
+  onChange       : ( newImagenes: PlantDictionary ) => void;
 }
 
-export default function ImageGallerySection({
-  includeImagenes,
-  onToggleInclude,
-  imagenes,
-  onChange,
-}: ImageGallerySectionProps) {
+export default function ImageGallerySection(
+  {
+    includeImagenes,
+    onToggleInclude,
+    imagenes,
+    onChange,
+  }: ImageGallerySectionProps 
+) {
   const currentImagenes = imagenes || {
     flor: {
       src: '',
@@ -32,26 +34,28 @@ export default function ImageGallerySection({
     field: 'src' | 'alt',
     value: string,
   ) => {
-    onChange({
-      ...currentImagenes,
-      [plantKey]: {
-        ...(currentImagenes[plantKey] || {
-          src: '',
-          alt: '',
-        }),
-        [field]: value,
-      },
-    });
+    onChange(
+      {
+        ...currentImagenes,
+        [ plantKey ]: {
+          ...( currentImagenes[ plantKey ] || {
+            src: '',
+            alt: '',
+          } ),
+          [ field ]: value,
+        },
+      } 
+    );
   };
 
   return (
     <div className={styles.section}>
       <div
         style={{
-          display: 'flex',
-          alignItems: 'center',
+          display       : 'flex',
+          alignItems    : 'center',
           justifyContent: 'space-between',
-          marginBottom: '1rem',
+          marginBottom  : '1rem',
         }}
       >
         <h3
@@ -64,8 +68,12 @@ export default function ImageGallerySection({
         </h3>
         <ToggleButton
           checked={includeImagenes}
-          onChange={(e) => {
-            return onToggleInclude(e.target.checked);
+          onChange={(
+            e 
+          ) => {
+            return onToggleInclude(
+              e.target.checked 
+            );
           }}
           style={{
             fontWeight: 'bold',
@@ -96,8 +104,12 @@ export default function ImageGallerySection({
                   type="text"
                   className={styles.inputFilled}
                   value={currentImagenes.flor?.src || ''}
-                  onChange={(e) => {
-                    return handleImagenChange('flor', 'src', e.target.value);
+                  onChange={(
+                    e 
+                  ) => {
+                    return handleImagenChange(
+                      'flor', 'src', e.target.value 
+                    );
                   }}
                   placeholder="Ej. https://.../flor.jpg"
                   required={includeImagenes}
@@ -114,8 +126,12 @@ export default function ImageGallerySection({
                   type="text"
                   className={styles.inputFilled}
                   value={currentImagenes.flor?.alt || ''}
-                  onChange={(e) => {
-                    return handleImagenChange('flor', 'alt', e.target.value);
+                  onChange={(
+                    e 
+                  ) => {
+                    return handleImagenChange(
+                      'flor', 'alt', e.target.value 
+                    );
                   }}
                   placeholder="Ej. Fotografía detallada de la flor..."
                   required={includeImagenes}
@@ -143,8 +159,12 @@ export default function ImageGallerySection({
                   type="text"
                   className={styles.inputFilled}
                   value={currentImagenes.hojas?.src || ''}
-                  onChange={(e) => {
-                    return handleImagenChange('hojas', 'src', e.target.value);
+                  onChange={(
+                    e 
+                  ) => {
+                    return handleImagenChange(
+                      'hojas', 'src', e.target.value 
+                    );
                   }}
                   placeholder="Ej. https://.../hojas.jpg"
                   required={includeImagenes}
@@ -161,8 +181,12 @@ export default function ImageGallerySection({
                   type="text"
                   className={styles.inputFilled}
                   value={currentImagenes.hojas?.alt || ''}
-                  onChange={(e) => {
-                    return handleImagenChange('hojas', 'alt', e.target.value);
+                  onChange={(
+                    e 
+                  ) => {
+                    return handleImagenChange(
+                      'hojas', 'alt', e.target.value 
+                    );
                   }}
                   placeholder="Ej. Detalle de las hojas..."
                   required={includeImagenes}
@@ -190,7 +214,9 @@ export default function ImageGallerySection({
                   type="text"
                   className={styles.inputFilled}
                   value={currentImagenes.semillas?.src || ''}
-                  onChange={(e) => {
+                  onChange={(
+                    e 
+                  ) => {
                     return handleImagenChange(
                       'semillas',
                       'src',
@@ -211,7 +237,9 @@ export default function ImageGallerySection({
                   type="text"
                   className={styles.inputFilled}
                   value={currentImagenes.semillas?.alt || ''}
-                  onChange={(e) => {
+                  onChange={(
+                    e 
+                  ) => {
                     return handleImagenChange(
                       'semillas',
                       'alt',
@@ -243,8 +271,12 @@ export default function ImageGallerySection({
                   type="text"
                   className={styles.inputFilled}
                   value={currentImagenes.tallo?.src || ''}
-                  onChange={(e) => {
-                    return handleImagenChange('tallo', 'src', e.target.value);
+                  onChange={(
+                    e 
+                  ) => {
+                    return handleImagenChange(
+                      'tallo', 'src', e.target.value 
+                    );
                   }}
                   placeholder="Opcional"
                 />
@@ -260,8 +292,12 @@ export default function ImageGallerySection({
                   type="text"
                   className={styles.inputFilled}
                   value={currentImagenes.tallo?.alt || ''}
-                  onChange={(e) => {
-                    return handleImagenChange('tallo', 'alt', e.target.value);
+                  onChange={(
+                    e 
+                  ) => {
+                    return handleImagenChange(
+                      'tallo', 'alt', e.target.value 
+                    );
                   }}
                   placeholder="Opcional"
                 />
@@ -283,7 +319,9 @@ export default function ImageGallerySection({
                   type="text"
                   className={styles.inputFilled}
                   value={currentImagenes.preparacion?.src || ''}
-                  onChange={(e) => {
+                  onChange={(
+                    e 
+                  ) => {
                     return handleImagenChange(
                       'preparacion',
                       'src',
@@ -304,7 +342,9 @@ export default function ImageGallerySection({
                   type="text"
                   className={styles.inputFilled}
                   value={currentImagenes.preparacion?.alt || ''}
-                  onChange={(e) => {
+                  onChange={(
+                    e 
+                  ) => {
                     return handleImagenChange(
                       'preparacion',
                       'alt',

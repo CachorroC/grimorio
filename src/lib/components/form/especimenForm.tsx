@@ -142,10 +142,10 @@ export default function EspecimenForm(
           ...( initialData.taxon || {} ),
           clados: initialData.taxon?.clados || [],
         },
-        elementosAsociados : initialData.elementosAsociados || 'Tierra',
+        elementosAsociados : initialData.elementosAsociados || 'Sin Elemento Asociado',
         chakrasAsociados   : initialData.chakrasAsociados || [],
         polaridadEnergetica: initialData.polaridadEnergetica || [
-          'Feminine'
+          'Neutral'
         ],
         doshas  : initialData.doshas || [],
         nativa  : initialData.nativa ?? false,
@@ -322,10 +322,10 @@ export default function EspecimenForm(
               ...savedData.taxon,
               clados: savedData.taxon?.clados || [],
             },
-            elementosAsociados : savedData.elementosAsociados || 'Tierra',
+            elementosAsociados : savedData.elementosAsociados || 'Sin Elemento Asociado',
             chakrasAsociados   : savedData.chakrasAsociados || [],
             polaridadEnergetica: savedData.polaridadEnergetica || [
-              'Feminine'
+              'Neutral'
             ],
             imagenes: savedData.imagenes || {
               flor: {

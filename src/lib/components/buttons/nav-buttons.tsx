@@ -8,7 +8,9 @@ import { segmentRow } from '#@/lib/styles/layout.module.css';
 // TODO: arreglar lo de la navegacion
 
 export const DrawerMenuButton = () => {
-  const { isNavOpen, setIsNavOpen } = useNavigationContext();
+  const {
+    isNavOpen, setIsNavOpen 
+  } = useNavigationContext();
 
   return (
     <button
@@ -19,13 +21,19 @@ export const DrawerMenuButton = () => {
           : buttonStyles.buttonDrawerMenuClosed
       }
       onClick={() => {
-        setIsNavOpen((n) => {
-          return !n;
-        });
+        setIsNavOpen(
+          (
+            n 
+          ) => {
+            return !n;
+          } 
+        );
       }}
     >
-      <span className={`material-symbols-outlined ${buttonStyles.icon}`}>
-        {isNavOpen ? 'close' : 'menu'}
+      <span className={`material-symbols-outlined ${ buttonStyles.icon }`}>
+        {isNavOpen
+          ? 'close'
+          : 'menu'}
       </span>
     </button>
   );
@@ -43,7 +51,7 @@ export function ForwardBackwardNavButtons() {
           router.back();
         }}
       >
-        <span className={`material-symbols-outlined ${buttonStyles.icon}`}>
+        <span className={`material-symbols-outlined ${ buttonStyles.icon }`}>
           chevron_left
         </span>
         <p className={buttonStyles.text}>atras</p>
@@ -55,7 +63,7 @@ export function ForwardBackwardNavButtons() {
           router.forward();
         }}
       >
-        <span className={`material-symbols-outlined ${buttonStyles.icon}`}>
+        <span className={`material-symbols-outlined ${ buttonStyles.icon }`}>
           chevron_right
         </span>
         <p className={buttonStyles.text}>entrar</p>

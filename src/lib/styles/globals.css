@@ -311,6 +311,9 @@
     --uso-bano: #1e88e5;
     --uso-sahumerio: #ffca28;
     --uso-multiproposito: #9e9e9e;
+    --neutral-color: #9e9e9e;
+    --element-none: #9e9e9e;
+    --chakra-gris: #9e9e9e;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -400,6 +403,9 @@
     --uso-bano: #42a5f5;
     --uso-sahumerio: #ffe082;
     --uso-multiproposito: #bdbdbd;
+    --neutral-color: #bdbdbd;
+    --element-none: #bdbdbd;
+    --chakra-gris: #bdbdbd;
   }
 }
 

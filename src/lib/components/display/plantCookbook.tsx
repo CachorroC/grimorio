@@ -63,17 +63,29 @@ const getChakraColor = (
 
       case 'Blanco o violeta':
         return 'var(--chakra-violeta)'; // Violet
+
+      case 'gris':
+        return 'var(--chakra-gris)';
       default:
         return 'var(--chakra-default)';
   }
 };
 
 const getPolarityColor = (
-  polarity: 'Masculine' | 'Feminine'
+  polarity: 'Masculine' | 'Feminine' | 'Neutral'
 ): string => {
-  return polarity === 'Masculine'
-    ? 'var(--masculine-color)'
-    : 'var(--feminine-color)'; // Strong Blue vs Deep Pink
+  switch ( polarity ) {
+      case 'Masculine':
+        return 'var(--masculine-color)';
+
+      case 'Feminine':
+        return 'var(--feminine-color)';
+
+      case 'Neutral':
+        return 'var(--neutral-color)';
+      default:
+        return 'var(--neutral-color)';
+  }
 };
 
 const getElementColor = (
@@ -97,6 +109,9 @@ const getElementColor = (
 
       case 'Agua':
         return 'var(--element-agua)'; // Blue
+
+      case 'Sin Elemento Asociado':
+        return 'var(--element-none)';
       default:
         return 'var(--element-default)';
   }

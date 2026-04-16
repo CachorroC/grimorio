@@ -2,19 +2,17 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import styles from '#@/lib/styles/form.module.css';
 import ToggleButton from './toggleButton';
-import {
-  PolaridadEnergeticaType,
+import { PolaridadEnergeticaType,
   listaChakras,
   ChakraType,
   listaDoshas,
-  TridoshasType,
-} from '#@/lib/types/especimenTypes';
+  TridoshasType, } from '#@/lib/types/especimenTypes';
 
 interface EnergeticsSectionProps {
-  elementosAsociados: string;
+  elementosAsociados : string;
   polaridadEnergetica: PolaridadEnergeticaType;
-  chakrasAsociados: ChakraType[];
-  doshas: TridoshasType[];
+  chakrasAsociados   : ChakraType[];
+  doshas             : TridoshasType[];
   onChange: (
     field:
       | 'elementosAsociados'
@@ -25,63 +23,113 @@ interface EnergeticsSectionProps {
   ) => void;
 }
 
-export default function EnergeticsSection({
-  elementosAsociados,
-  polaridadEnergetica,
-  chakrasAsociados,
-  doshas,
-  onChange,
-}: EnergeticsSectionProps) {
-  const togglePolaridad = (val: 'Masculine' | 'Feminine') => {
+export default function EnergeticsSection(
+  {
+    elementosAsociados,
+    polaridadEnergetica,
+    chakrasAsociados,
+    doshas,
+    onChange,
+  }: EnergeticsSectionProps 
+) {
+  const togglePolaridad = (
+    val: 'Masculine' | 'Feminine' | 'Neutral' 
+  ) => {
     const current = polaridadEnergetica || [];
-    let next = current.includes(val)
-      ? current.filter((p) => {
-          return p !== val;
-        })
-      : [...current, val];
+    let next = current.includes(
+      val 
+    )
+      ? current.filter(
+          (
+            p 
+          ) => {
+            return p !== val;
+          } 
+        )
+      : [
+          ...current,
+          val
+        ];
 
-    if (next.length === 0) {
-      next = [val];
+    // Ensure at least one is selected; if all deselected, default to 'Neutral'
+    if ( next.length === 0 ) {
+      next = [
+        'Neutral'
+      ];
     }
 
-    onChange('polaridadEnergetica', next as PolaridadEnergeticaType);
+    onChange(
+      'polaridadEnergetica', next as PolaridadEnergeticaType 
+    );
   };
 
-  const toggleChakra = (chakraNombre: string) => {
+  const toggleChakra = (
+    chakraNombre: string 
+  ) => {
     const current = chakrasAsociados || [];
-    const exists = current.some((c) => {
-      return c.nombre === chakraNombre;
-    });
+    const exists = current.some(
+      (
+        c 
+      ) => {
+        return c.nombre === chakraNombre;
+      } 
+    );
 
-    if (exists) {
+    if ( exists ) {
       onChange(
         'chakrasAsociados',
-        current.filter((c) => {
-          return c.nombre !== chakraNombre;
-        }),
+        current.filter(
+          (
+            c 
+          ) => {
+            return c.nombre !== chakraNombre;
+          } 
+        ),
       );
 
       return;
     }
 
-    const chakraToAdd = listaChakras.find((c) => {
-      return c.nombre === chakraNombre;
-    });
+    const chakraToAdd = listaChakras.find(
+      (
+        c 
+      ) => {
+        return c.nombre === chakraNombre;
+      } 
+    );
 
-    if (chakraToAdd) {
-      onChange('chakrasAsociados', [...current, chakraToAdd]);
+    if ( chakraToAdd ) {
+      onChange(
+        'chakrasAsociados', [
+          ...current,
+          chakraToAdd
+        ] 
+      );
     }
   };
 
-  const toggleDosha = (dosha: TridoshasType) => {
+  const toggleDosha = (
+    dosha: TridoshasType 
+  ) => {
     const current = doshas || [];
-    const next = current.includes(dosha)
-      ? current.filter((d) => {
-          return d !== dosha;
-        })
-      : [...current, dosha];
+    const next = current.includes(
+      dosha 
+    )
+      ? current.filter(
+          (
+            d 
+          ) => {
+            return d !== dosha;
+          } 
+        )
+      : [
+          ...current,
+          dosha
+        ];
 
-    onChange('doshas', next);
+    onChange(
+      'doshas', next 
+    );
   };
 
   return (
@@ -92,20 +140,36 @@ export default function EnergeticsSection({
           name="elementosAsociados"
           className={styles.inputFilled}
           value={elementosAsociados}
-          onChange={(e) => {
-            return onChange('elementosAsociados', e.target.value);
+          onChange={(
+            e 
+          ) => {
+            return onChange(
+              'elementosAsociados', e.target.value 
+            );
           }}
         >
-          {['Metal', 'Madera', 'Fuego', 'Tierra', 'Aire', 'Agua'].map((el) => {
-            return (
-              <option
-                key={el}
-                value={el}
-              >
-                {el}
-              </option>
-            );
-          })}
+          {[
+            'Metal',
+            'Madera',
+            'Fuego',
+            'Tierra',
+            'Aire',
+            'Agua',
+            'Sin Elemento Asociado'
+          ].map(
+            (
+              el 
+            ) => {
+              return (
+                <option
+                  key={el}
+                  value={el}
+                >
+                  {el}
+                </option>
+              );
+            } 
+          )}
         </select>
       </div>
 
@@ -119,25 +183,33 @@ export default function EnergeticsSection({
         <label className={styles.label}>Doshas que Controla (Ayurveda)</label>
         <div
           style={{
-            display: 'flex',
-            gap: '1rem',
+            display  : 'flex',
+            gap      : '1rem',
             marginTop: '0.5rem',
-            flexWrap: 'wrap',
+            flexWrap : 'wrap',
           }}
         >
-          {listaDoshas.map((dosha) => {
-            return (
-              <ToggleButton
-                key={dosha}
-                checked={(doshas || []).includes(dosha)}
-                onChange={() => {
-                  return toggleDosha(dosha);
-                }}
-              >
-                {dosha}
-              </ToggleButton>
-            );
-          })}
+          {listaDoshas.map(
+            (
+              dosha 
+            ) => {
+              return (
+                <ToggleButton
+                  key={dosha}
+                  checked={( doshas || [] ).includes(
+                    dosha 
+                  )}
+                  onChange={() => {
+                    return toggleDosha(
+                      dosha 
+                    );
+                  }}
+                >
+                  {dosha}
+                </ToggleButton>
+              );
+            } 
+          )}
         </div>
       </div>
 
@@ -151,26 +223,46 @@ export default function EnergeticsSection({
         <label className={styles.label}>Polaridad Energética</label>
         <div
           style={{
-            display: 'flex',
-            gap: '1.5rem',
+            display  : 'flex',
+            gap      : '1.5rem',
             marginTop: '0.5rem',
           }}
         >
           <ToggleButton
-            checked={polaridadEnergetica.includes('Masculine')}
+            checked={polaridadEnergetica.includes(
+              'Masculine' 
+            )}
             onChange={() => {
-              return togglePolaridad('Masculine');
+              return togglePolaridad(
+                'Masculine' 
+              );
             }}
           >
-            Masculine
+            Masculina
           </ToggleButton>
           <ToggleButton
-            checked={polaridadEnergetica.includes('Feminine')}
+            checked={polaridadEnergetica.includes(
+              'Feminine' 
+            )}
             onChange={() => {
-              return togglePolaridad('Feminine');
+              return togglePolaridad(
+                'Feminine' 
+              );
             }}
           >
             Femenina
+          </ToggleButton>
+          <ToggleButton
+            checked={polaridadEnergetica.includes(
+              'Neutral' 
+            )}
+            onChange={() => {
+              return togglePolaridad(
+                'Neutral' 
+              );
+            }}
+          >
+            Neutral
           </ToggleButton>
         </div>
       </div>
@@ -185,32 +277,42 @@ export default function EnergeticsSection({
         <label className={styles.label}>Chakras Asociados</label>
         <div
           style={{
-            display: 'flex',
+            display      : 'flex',
             flexDirection: 'column',
-            gap: '0.75rem',
-            marginTop: '0.5rem',
+            gap          : '0.75rem',
+            marginTop    : '0.5rem',
           }}
         >
-          {listaChakras.map((chakra) => {
-            const isChecked = chakrasAsociados.some((c) => {
-              return c.nombre === chakra.nombre;
-            });
+          {listaChakras.map(
+            (
+              chakra 
+            ) => {
+              const isChecked = chakrasAsociados.some(
+                (
+                  c 
+                ) => {
+                  return c.nombre === chakra.nombre;
+                } 
+              );
 
-            return (
-              <ToggleButton
-                key={chakra.nombre}
-                checked={isChecked}
-                onChange={() => {
-                  return toggleChakra(chakra.nombre);
-                }}
-              >
-                <span>
-                  <strong>{chakra.nombre}</strong> -{' '}
-                  <em>{chakra.nombreSanscrito}</em> ({chakra.color})
-                </span>
-              </ToggleButton>
-            );
-          })}
+              return (
+                <ToggleButton
+                  key={chakra.nombre}
+                  checked={isChecked}
+                  onChange={() => {
+                    return toggleChakra(
+                      chakra.nombre 
+                    );
+                  }}
+                >
+                  <span>
+                    <strong>{chakra.nombre}</strong> -{' '}
+                    <em>{chakra.nombreSanscrito}</em> ({chakra.color})
+                  </span>
+                </ToggleButton>
+              );
+            } 
+          )}
         </div>
       </div>
     </div>
