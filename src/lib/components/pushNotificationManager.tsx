@@ -21,11 +21,65 @@ export function PushNotificationManager() {
   ] = useState(
     ''
   );
+  const [
+    isVisible,
+    setIsVisible
+  ] = useState(
+    false
+  );
+  const [
+    isDismissed,
+    setIsDismissed
+  ] = useState(
+    true
+  );
 
-  if ( !isSupported ) {
-    return (
-      <p className={styles.statusText}>Push notifications not supported.</p>
+  useEffect(
+    () => {
+      const dismissed = localStorage.getItem(
+        'grimorio_notifications_dismissed'
+      ) === 'true';
+      setIsDismissed(
+        dismissed
+      );
+
+      if ( !dismissed && !isSubscribed && isSupported ) {
+        const timer = setTimeout(
+          () => {
+            return setIsVisible(
+              true
+            );
+          }, 3000
+        );
+
+        return () => {
+          return clearTimeout(
+            timer
+          );
+        };
+      }
+
+      return undefined;
+    }, [
+      isSubscribed,
+      isSupported
+    ]
+  );
+
+  const handleDismiss = () => {
+    setIsVisible(
+      false
     );
+    setIsDismissed(
+      true
+    );
+    localStorage.setItem(
+      'grimorio_notifications_dismissed', 'true'
+    );
+  };
+
+  if ( !isSupported || isDismissed || ( !isVisible && !isSubscribed ) ) {
+    return null;
   }
 
   async function sendTestNotification() {
@@ -45,31 +99,32 @@ export function PushNotificationManager() {
   }
 
   return (
-    <div className={styles.container}>
-      <h3 className={styles.title}>Push Notifications</h3>
+    <div className={`${ styles.container } ${ styles.notifications }`}>
+      <button
+        type="button"
+        className={styles.closeButton}
+        onClick={handleDismiss}
+        aria-label="Cerrar"
+      >
+        ×
+      </button>
+      <h3 className={styles.title}>Notificaciones Push</h3>
       {isSubscribed
         ? (
             <div className={styles.flexGroup}>
               <p
                 className={styles.statusText}
                 style={{
-                  color: '#16a34a',
+                  color: 'var(--chakra-verde)',
                 }}
               >
-                Status: Subscrito
+                Estado: Subscrito
               </p>
-              <button
-                type='button'
-                onClick={unsubscribeFromPush}
-                className={`${ styles.button } ${ styles.btnGhost }`}
-              >
-                Desactivar notificaciones
-              </button>
               <div className={styles.row}>
                 <input
                   type="text"
                   className={styles.inputField}
-                  placeholder="Mensaje..."
+                  placeholder="Mensaje de prueba..."
                   value={message}
                   onChange={(
                     e
@@ -84,15 +139,23 @@ export function PushNotificationManager() {
                   onClick={sendTestNotification}
                   className={`${ styles.button } ${ styles.btnPrimary }`}
                 >
-                  Send Test
+                  Enviar Prueba
                 </button>
-
               </div>
+              <button
+                type='button'
+                onClick={unsubscribeFromPush}
+                className={`${ styles.button } ${ styles.btnGhost }`}
+              >
+                Desactivar notificaciones
+              </button>
             </div>
           )
         : (
             <div>
-              <p className={styles.statusText}>Not currently subscribed.</p>
+              <p className={styles.statusText}>
+                Recibe novedades sobre tus plantas y el calendario botánico.
+              </p>
               <button
                 onClick={subscribeToPush}
                 className={`${ styles.button } ${ styles.btnSuccess }`}
@@ -124,6 +187,18 @@ export function InstallPrompt() {
   ] = useState<any>(
     null
   );
+  const [
+    isVisible,
+    setIsVisible
+  ] = useState(
+    false
+  );
+  const [
+    isDismissed,
+    setIsDismissed
+  ] = useState(
+    true
+  );
 
   useEffect(
     () => {
@@ -140,9 +215,17 @@ export function InstallPrompt() {
         ).matches
       );
 
+      const dismissed = localStorage.getItem(
+        'grimorio_install_dismissed'
+      ) === 'true';
+      setIsDismissed(
+        dismissed
+      );
+
       const handler = (
         e: Event
       ) => {
+        e.preventDefault();
         setDeferredPrompt(
           e
         );
@@ -160,23 +243,82 @@ export function InstallPrompt() {
     }, []
   );
 
+  useEffect(
+    () => {
+      if ( !isStandalone && !isDismissed && ( isIOS || deferredPrompt ) ) {
+        const timer = setTimeout(
+          () => {
+            return setIsVisible(
+              true
+            );
+          }, 3000
+        );
+
+        return () => {
+          return clearTimeout(
+            timer
+          );
+        };
+      }
+
+      return undefined;
+    }, [
+      isStandalone,
+      isDismissed,
+      isIOS,
+      deferredPrompt
+    ]
+  );
+
+  const handleDismiss = () => {
+    setIsVisible(
+      false
+    );
+    setIsDismissed(
+      true
+    );
+    localStorage.setItem(
+      'grimorio_install_dismissed', 'true'
+    );
+  };
+
   async function handleInstallClick() {
     if ( deferredPrompt ) {
       deferredPrompt.prompt();
-      await deferredPrompt.userChoice;
+      const {
+        outcome
+      } = await deferredPrompt.userChoice;
+
+      if ( outcome === 'accepted' ) {
+        setIsDismissed(
+          true
+        );
+      }
+
       setDeferredPrompt(
         null
       );
     }
   }
 
-  if ( isStandalone ) {
+  if ( isStandalone || isDismissed || !isVisible ) {
     return null;
   }
 
   return (
-    <div className={styles.container}>
-      <h3 className={styles.title}>Install App</h3>
+    <div className={`${ styles.container } ${ styles.install }`}>
+      <button
+        type="button"
+        className={styles.closeButton}
+        onClick={handleDismiss}
+        aria-label="Cerrar"
+      >
+        ×
+      </button>
+      <h3 className={styles.title}>Instalar Grimorio</h3>
+      <p className={styles.statusText}>
+        Accede rápidamente a tu compendio botánico desde tu pantalla de inicio.
+      </p>
       <button
         onClick={handleInstallClick}
         className={`${ styles.button } ${ styles.btnPrimary }`}
@@ -188,7 +330,9 @@ export function InstallPrompt() {
         <p
           className={styles.statusText}
           style={{
-            marginTop: '0.5rem',
+            marginTop: '0.75rem',
+            fontSize : '0.75rem',
+            opacity  : 0.8,
           }}
         >
           {'Toca el botón de compartir ⎋ y luego "Agregar a pantalla de inicio" ➕'}

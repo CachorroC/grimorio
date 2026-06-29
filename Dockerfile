@@ -11,6 +11,12 @@ WORKDIR /app
 # Enable pnpm via corepack
 RUN corepack enable
 
+# Enable pnpm and configure home for caching
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
+RUN corepack enable
+
+ENV PNPM_CONFIG_DANGEROUSLY_ALLOW_ALL_BUILDS=true
 # -----------------------------------------------------------------------------
 # Stage 2: Dependencies
 # -----------------------------------------------------------------------------
@@ -19,13 +25,18 @@ WORKDIR /app
 
 # Copy lockfiles first for better caching
 # Only re-run pnpm install if these files change
-COPY package.json pnpm-lock.yaml* ./
+COPY package.json pnpm-lock.yaml* pnpm-workspace.yaml* ./
 
 # Copy scripts directory for postinstall scripts
 COPY scripts/ ./scripts/
 
+
+
 # Install dependencies strictly from the lockfile for deterministic builds
 RUN pnpm install --frozen-lockfile
+
+# 2. Automatically approve all pending build scripts non-interactively
+RUN pnpm approve-builds --all
 
 # -----------------------------------------------------------------------------
 # Stage 3: Builder
